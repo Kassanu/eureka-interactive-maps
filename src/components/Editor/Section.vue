@@ -2,19 +2,25 @@
     <div class="w-full border border-gray-200 rounded overflow-hidden">
         <div class="sectionHeader p-4 flex justify-between content-center">
             <div>
-                <input :checked="showOnMap" @input="updateShowOnMap" type="checkbox" title="Show/Hide this section from the map" />
+                <input :checked="showOnMap" @input="updateShowOnMap" type="checkbox"
+                    title="Show/Hide this section from the map" />
             </div>
             <div>
-                <span class="font-bold mr-1">{{ section.name }} ({{ section.items.length }})</span>
-                <span @click="addToSection"><font-awesome-icon icon="plus" class="cursor-pointer" /></span>
+                <span class="font-bold mr-1">{{ section.name }} ({{ filteredItems.length }})</span>
+                <span @click="addToSection">
+                    <font-awesome-icon icon="plus" class="cursor-pointer" /></span>
             </div>
             <div>
-                <span v-show="expanded" @click="toggleExpanded"><font-awesome-icon icon="caret-up" class="cursor-pointer" /></span>
-                <span v-show="!expanded" @click="toggleExpanded"><font-awesome-icon icon="caret-down" class="cursor-pointer" /></span>
+                <span v-show="expanded" @click="toggleExpanded">
+                    <font-awesome-icon icon="caret-up" class="cursor-pointer" /></span>
+                <span v-show="!expanded" @click="toggleExpanded">
+                    <font-awesome-icon icon="caret-down" class="cursor-pointer" /></span>
             </div>
         </div>
-        <div v-show="expanded && section.items.length" class="sectionBody p-4 border border-gray-200 bg-gray-100">
-            <component :is="itemComponent" v-for="item in section.items" :key="item.id" :item="item" :section-key="$vnode.key" :jsonDataShow="jsonDataShow" @updateItem="updateItem" @setItemPosition="setItemPosition" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" />
+        <div v-show="expanded && filteredItems.length" class="sectionBody p-4 border border-gray-200 bg-gray-100">
+            <component :is="itemComponent" v-for="item in filteredItems" :key="item.id" :item="item"
+                :section-key="$vnode.key" :jsonDataShow="jsonDataShow" @updateItem="updateItem"
+                @setItemPosition="setItemPosition" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" />
         </div>
     </div>
 </template>
@@ -45,6 +51,10 @@
             jsonDataShow: {
                 type: Object,
                 required: true
+            },
+            searchValue: {
+                type: String,
+                required: true
             }
         },
         data() {
@@ -53,6 +63,14 @@
             }
         },
         computed: {
+            filteredItems() {
+                if (this.searchValue !== '') {
+                    return this.section.items.filter((item) => {
+                        return item.id.toLowerCase().includes(this.searchValue.toLowerCase()) || item.name.toLowerCase().includes(this.searchValue.toLowerCase())
+                    })
+                }
+                return this.section.items
+            },
             itemComponent() {
                 let componentName = ''
                 switch (this.$vnode.key) {
