@@ -8,8 +8,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^0.1.10",
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "eureka-canvas": "^0.4.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "tailwindcss": "^1.6.0",
+    "uuid": "^8.3.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.0",
@@ -32,11 +41,6 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
     }
   },
   "browserslist": [
