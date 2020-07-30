@@ -1,6 +1,6 @@
 <template>
     <div id="edit" class="relative">
-        <div v-show="addToSectionKey !== null" @click="cancelAddNewItem" class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+        <div v-show="showAddNewItemBanner" @click="cancelAddNewItem" class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
             Click on the map to add a new item for {{ addNewItemSelectedName }}. Click this message to cancel.
         </div>
         <MapDataEditor
@@ -9,6 +9,7 @@
             :clickCoordinates="clickCoordinates"
             :mapName="mapName"
             @addItemToSection="addItemToSection"
+            @setItemPosition="setItemPosition"
             @updateItem="updateItem"
             @updateShowData="updateShowData"
             @deleteItem="deleteItem"
@@ -67,7 +68,8 @@
                 icons: {},
                 jsonDataShow: {},
                 loading: true,
-                addToSectionKey: null
+                addToSectionKey: null,
+                setPositionToItem: null
             }
         },
         created() {
@@ -131,11 +133,15 @@
                 return Object.keys(this.jsonData).sort((a, b) => this.jsonData[a].order - this.jsonData[b].order)
             },
             addNewItemSelectedName() {
-                if (this.addToSectionKey === null) {
-                    return ''
+                if (this.addToSectionKey !== null) {
+                    return this.jsonData[this.addToSectionKey].name
+                } else if (this.setPositionToItem !== null) {
+                    return `${this.jsonData[this.setPositionToItem.section].name} - ${this.setPositionToItem['id']}`
                 }
-
-                return this.jsonData[this.addToSectionKey].name
+                return ''
+            },
+            showAddNewItemBanner() {
+                return this.addToSectionKey !== null || this.setPositionToItem !== null
             }
         },
         methods: {
@@ -148,12 +154,26 @@
                     this.jsonData[this.addToSectionKey].items.push(newItem)
                     this.addToSectionKey = null
                 }
+
+                if (this.setPositionToItem !== null) {
+                    const index = this.jsonData[this.setPositionToItem.section].items.findIndex((item) => {
+                        return item.id == this.setPositionToItem.id
+                    })
+                    this.jsonData[this.setPositionToItem.section].items[index].position = this.clickCoordinates
+                    this.setPositionToItem = null
+                }
             },
             addItemToSection(sectionKey) {
                 this.addToSectionKey = sectionKey
+                this.setPositionToItem = null
+            },
+            setItemPosition(setPositionToItem) {
+                this.setPositionToItem = setPositionToItem
+                this.addToSectionKey = null
             },
             cancelAddNewItem() {
                 this.addToSectionKey = null
+                this.setPositionToItem = null
             },
             updateItem(sectionKey, newItem) {
                 const index = this.jsonData[sectionKey].items.findIndex(item => {

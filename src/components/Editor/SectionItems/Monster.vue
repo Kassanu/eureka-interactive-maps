@@ -50,10 +50,15 @@
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                             Position
                         </label>
-                        <input :value="formatedPosition" @change="updatePosition"
-                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
-                            :class="{'border-gray-400': !positionError, 'border-red-400': positionError}" type="text"
-                            placeholder="(X, Y)">
+                        <div class="inline-flex">
+                            <input :value="formatedPosition" @change="updatePosition"
+                                class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
+                                :class="{'border-gray-400': !positionError, 'border-red-400': positionError}"
+                                type="text" placeholder="(X, Y)">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 rounded-r">
+                                <font-awesome-icon @click="setItemPosition" icon="plus" class="cursor-pointer" />
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -110,13 +115,16 @@
                         </select>
                     </div>
                     <div v-if="item.mutation.canMutate" class="w-full md:w-1/3 px-3 mb-6 md:mb-0 bg-blue-100">
-                        <button @click="addCondition('mutation')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <button @click="addCondition('mutation')"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             <font-awesome-icon icon="plus" class="cursor-pointer" />
                         </button>
                     </div>
                 </div>
 
-                <MutationAdaptionConditions v-if="item.mutation.canMutate" :conditions="item.mutation.conditions" :type="'mutation'" :bgClass="'bg-blue-100'" @changeConditions="changeConditions" @deleteCondition="deleteCondition" />
+                <MutationAdaptionConditions v-if="item.mutation.canMutate" :conditions="item.mutation.conditions"
+                    :type="'mutation'" :bgClass="'bg-blue-100'" @changeConditions="changeConditions"
+                    @deleteCondition="deleteCondition" />
 
                 <div class="flex flex-wrap -mx-3 mt-2">
                     <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0  bg-green-100">
@@ -129,14 +137,17 @@
                             type="checkbox">
                     </div>
                     <div v-if="item.adaptation.canAdapt" class="w-full md:w-1/3 px-3 mb-6 md:mb-0 bg-green-100">
-                        <button @click="addCondition('adaptation')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <button @click="addCondition('adaptation')"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             <font-awesome-icon icon="plus" class="cursor-pointer" />
                         </button>
                     </div>
                     <div v-if="item.adaptation.canAdapt" class="w-full md:w-1/3 px-3 mb-6 md:mb-0 bg-green-100"></div>
                 </div>
 
-                <MutationAdaptionConditions v-if="item.adaptation.canAdapt" :conditions="item.adaptation.conditions" :type="'adaptation'" :bgClass="'bg-green-100'" @changeConditions="changeConditions" @deleteCondition="deleteCondition" />
+                <MutationAdaptionConditions v-if="item.adaptation.canAdapt" :conditions="item.adaptation.conditions"
+                    :type="'adaptation'" :bgClass="'bg-green-100'" @changeConditions="changeConditions"
+                    @deleteCondition="deleteCondition" />
 
                 <div class="flex flex-wrap -mx-3 mt-2 mb-2">
                     <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -183,6 +194,14 @@
             jsonDataShow: {
                 type: Object,
                 required: true
+            }
+        },
+        methods: {
+            setItemPosition() {
+                this.$emit('setItemPosition', {
+                    section: this.sectionKey,
+                    id: this.item.id
+                })
             }
         }
     }

@@ -14,7 +14,7 @@
             </div>
         </div>
         <div v-show="expanded && section.items.length" class="sectionBody p-4 border border-gray-200 bg-gray-100">
-            <component :is="itemComponent" v-for="item in section.items" :key="item.id" :item="item" :section-key="$vnode.key" :jsonDataShow="jsonDataShow" @updateItem="updateItem" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" />
+            <component :is="itemComponent" v-for="item in section.items" :key="item.id" :item="item" :section-key="$vnode.key" :jsonDataShow="jsonDataShow" @updateItem="updateItem" @setItemPosition="setItemPosition" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" />
         </div>
     </div>
 </template>
@@ -97,6 +97,9 @@
                 this.$emit('addToSection', {
                     key: this.$vnode.key
                 })
+            },
+            setItemPosition(evt) {
+                this.$emit('setItemPosition', evt)
             },
             updateItem(sectionKey, newItem) {
                 this.$emit('updateItem', sectionKey, newItem)

@@ -15,6 +15,7 @@
                 :section="section"
                 :jsonDataShow="jsonDataShow"
                 @addToSection="addItemToSection"
+                @setItemPosition="setItemPosition"
                 @updateItem="updateItem"
                 @updateShowData="updateShowData"
                 @updateItemShowData="updateItemShowData"
@@ -56,6 +57,9 @@
         methods: {
             addItemToSection (evt) {
                 this.$emit('addItemToSection', evt.key)
+            },
+            setItemPosition (evt) {
+                this.$emit('setItemPosition', evt)
             },
             updateItem(sectionKey, newItem) {
                 this.$emit('updateItem', sectionKey, newItem)
