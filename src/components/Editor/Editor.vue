@@ -15,7 +15,8 @@
             @deleteItem="deleteItem"
         />
         <EurekaCanvas
-            :canvasImageSource="image"
+            v-if="!loading"
+            :canvasImage="image"
             :gridSizeInPixels="gridSizeInPixels"
             :coordinatesOffset="coordinatesOffset"
             :positions="positions"
@@ -37,7 +38,7 @@
             EurekaCanvas
         },
         props:{
-            image: {
+            imageSource: {
                 type: String,
                 required: true
             },
@@ -64,6 +65,7 @@
         },
         data() {
             return {
+                image: null,
                 clickCoordinates: { x: 0, y: 0 },
                 icons: {},
                 jsonDataShow: {},
@@ -72,8 +74,10 @@
                 setPositionToItem: null
             }
         },
-        created() {
-            this.loadIcons()
+        async created() {
+            this.image = await this.loadImage(this.imageSource)
+            await this.loadIcons()
+            this.loading = false
         },
         computed: {
             positions() {
@@ -217,7 +221,6 @@
                 this.icons.fate = await this.loadImage(require('@/assets/images/icons/fate.png'))
                 this.icons.blessing = await this.loadImage(require('@/assets/images/icons/blessing.png'))
                 this.icons.lock = await this.loadImage(require('@/assets/images/icons/lock.png'))
-                this.loading = false
             },
             loadImage: url => new Promise(resolve => {
                 let img = new Image()

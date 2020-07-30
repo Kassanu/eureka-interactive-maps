@@ -1,7 +1,7 @@
 <template>
     <div id="edit">
         <Editor
-            :image="image"
+            :imageSource="imageSource"
             :jsonData="jsonData"
             :mapName="mapName"
             :gridSizeInPixels="50"
@@ -25,7 +25,7 @@
                 gridSizeInPixels: 50,
                 coordinatesOffset: 1,
                 maximumZoom: 150,
-                image: require('@/assets/images/maps/hydatos.jpg'),
+                imageSource: require('@/assets/images/maps/hydatos.jpg'),
                 jsonData: require('@/assets/zoneJson/hydatos.json')
             }
         }
