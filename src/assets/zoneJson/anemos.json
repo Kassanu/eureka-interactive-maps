@@ -1,0 +1,185 @@
+{
+    "fates": {
+        "name": "FATEs",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "element": "",
+            "drops": []
+        },
+        "items": []
+    },
+    "monsters": {
+        "name": "Monsters",
+        "order": 9,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "element": null,
+            "adaptation": {
+                "canAdapt": false,
+                "conditions": []
+            },
+            "mutation": {
+                "canMutate": false,
+                "conditions": [],
+                "element": null
+            },
+            "aggro": null,
+            "ashkin": false,
+            "fate": {
+                "forFate": false,
+                "fateId": ""
+            }
+        },
+        "items": [
+            {
+                "id": "c74a51a0-21df-451b-afe1-9b99719eaad1",
+                "name": "Test",
+                "level": 0,
+                "position": {
+                    "x": 20.8,
+                    "y": 22.5
+                },
+                "element": null,
+                "adaptation": {
+                    "canAdapt": true,
+                    "conditions": [
+                        {
+                            "weather": "heatwave",
+                            "time": "day"
+                        },
+                        {
+                            "weather": "heatwave",
+                            "time": "night"
+                        }
+                    ],
+                    "canMutate": true
+                },
+                "mutation": {
+                    "canMutate": true,
+                    "conditions": [
+                        {
+                            "weather": "fairskies",
+                            "time": "night"
+                        }
+                    ],
+                    "element": "water"
+                },
+                "aggro": "sight",
+                "ashkin": true,
+                "fate": {
+                    "forFate": true,
+                    "fateId": ""
+                }
+            }
+        ]
+    },
+    "elementals": {
+        "name": "Eureka Elementals",
+        "order": 1,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "aethernet": {
+        "name": "Aethernet",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": [
+            {
+                "id": "5f10c6e4-c1b4-4240-8e80-f32dd814e5e4",
+                "name": "Port Surgate",
+                "level": 1,
+                "position": {
+                    "x": 18.7,
+                    "y": 32.4
+                }
+            },
+            {
+                "id": "7082525e-6fd7-4798-8ef0-b93a2f182fb8",
+                "name": "Windtorn Cabin",
+                "level": 9,
+                "position": {
+                    "x": 30.2,
+                    "y": 20.5
+                }
+            },
+            {
+                "id": "516e73d1-7797-4f22-8f13-4d034dce1c17",
+                "name": "Abandoned Laboratory",
+                "level": 9,
+                "position": {
+                    "x": 14,
+                    "y": 12.3
+                }
+            }
+        ]
+    },
+    "quests": {
+        "name": "Quests",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "lockboxes": {
+        "name": "Bunny Lockboxes",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "misc": {
+        "name": "Misc",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    }
+}

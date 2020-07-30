@@ -1,0 +1,116 @@
+{
+    "fates": {
+        "name": "FATEs",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "element": "",
+            "drops": []
+        },
+        "items": []
+    },
+    "monsters": {
+        "name": "Monsters",
+        "order": 9,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "element": null,
+            "adaptation": {
+                "canAdapt": false,
+                "conditions": []
+            },
+            "mutation": {
+                "canMutate": false,
+                "conditions": [],
+                "element": null
+            },
+            "aggro": null,
+            "ashkin": false,
+            "fate": {
+                "forFate": false,
+                "fateId": ""
+            }
+        },
+        "items": []
+    },
+    "elementals": {
+        "name": "Eureka Elementals",
+        "order": 1,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "aethernet": {
+        "name": "Aethernet",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "quests": {
+        "name": "Quests",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "lockboxes": {
+        "name": "Bunny Lockboxes",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "misc": {
+        "name": "Misc",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    }
+}
