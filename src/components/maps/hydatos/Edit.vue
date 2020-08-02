@@ -1,14 +1,12 @@
 <template>
-    <div id="edit">
-        <Editor
-            :imageSource="imageSource"
-            :jsonData="jsonData"
-            :mapName="mapName"
-            :gridSizeInPixels="50"
-            :coordinatesOffset="1"
-            :maximumZoom="150"
-        ></Editor>
-    </div>
+    <Editor
+        :imageSource="imageSource"
+        :jsonData="jsonData"
+        :mapName="mapName"
+        :gridSizeInPixels="50"
+        :coordinatesOffset="1"
+        :maximumZoom="150"
+    ></Editor>
 </template>
 
 <script>

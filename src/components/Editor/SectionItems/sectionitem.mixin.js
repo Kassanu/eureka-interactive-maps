@@ -33,6 +33,12 @@ export default {
 
             this.$emit('updateItem', this.sectionKey, newItem)
         },
+        updateWeather: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.weather = evt.target.value
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
         updatePosition: function (evt) {
             const coordRegex = /^\(?(\d+\.{0,1}\d{0,1}),\s{0,1}(\d+\.{0,1}\d{0,1})\)?/
             const matches = evt.target.value.match(coordRegex)
@@ -108,6 +114,12 @@ export default {
         changeConditions: function (type, newConditions) {
             let newItem = Object.assign({}, this.item)
             newItem[type].conditions = newConditions
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        updateBoss: function (event, key) {
+            let newItem = Object.assign({}, this.item)
+            newItem.boss[key] = event.target.value
 
             this.$emit('updateItem', this.sectionKey, newItem)
         }

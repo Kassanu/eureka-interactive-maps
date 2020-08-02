@@ -1,0 +1,17 @@
+#editor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    &>#editorContainer {
+        flex: 0 0 30%;
+    }
+
+    &>#eurekaCanvasContainer {
+        flex: 0 0 70%;
+    }
+
+    &>.addNewItemBanner {
+        transform: translate(-50%, 0);
+    }
+}

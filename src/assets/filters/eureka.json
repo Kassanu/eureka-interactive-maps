@@ -1,0 +1,54 @@
+{
+    "level": {
+        "from": 1,
+        "to": 70
+    },
+    "element": "",
+    "sections": {
+        "fates": {
+            "name": "FATEs",
+            "enabled": true,
+            "filters": {}
+        },
+        "monsters": {
+            "name": "Monsters",
+            "enabled": true,
+            "filters": {
+                "ashkin": false,
+                "sprite": false,
+                "fate": false,
+                "aggro": "",
+                "mutates": false,
+                "adapts": false,
+                "maweather": "",
+                "matime": "",
+                "mutateElement": ""
+            }
+        },
+        "elementals": {
+            "name": "Elementals",
+            "enabled": true,
+            "filters": {}
+        },
+        "aethernet": {
+            "name": "Aethernet",
+            "enabled": true,
+            "filters": {}
+        },
+        "quests": {
+            "name": "Quests",
+            "enabled": true,
+            "filters": {}
+        },
+        "lockboxes": {
+            "name": "Bunny Lockboxes",
+            "enabled": true,
+            "filters": {}
+        },
+        "misc": {
+            "name": "Misc",
+            "enabled": true,
+            "filters": {}
+        }
+    }
+}

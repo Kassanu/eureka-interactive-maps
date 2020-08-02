@@ -1,0 +1,21 @@
+#viewer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    #filters {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        min-height: 500px;
+    }
+
+    .itemInformation {
+        width: 20vw;
+    }
+
+    .itemInformationIcons > div {
+        display: flex;
+    }
+}

@@ -8,7 +8,7 @@
                 Save
             </button>
         </div>
-        <div class="flex-grow overflow-y-scroll">
+        <div class="flex-grow overflow-y-scroll relative">
             <component
                 :is="'Section'"
                 v-for="(section, index) in jsonData"
@@ -21,6 +21,7 @@
                 @updateItem="updateItem"
                 @updateShowData="updateShowData"
                 @updateItemShowData="updateItemShowData"
+                @updateAllItemShowData="updateAllItemShowData"
                 @deleteItem="deleteItem"
             />
         </div>
@@ -76,6 +77,9 @@
             },
             updateItemShowData(itemId, showKey, value) {
                 this.$emit('updateShowData', itemId, showKey, value)
+            },
+            updateAllItemShowData(sectionKey, showKey, value) {
+                this.$emit('updateAllItemShowData', sectionKey, showKey, value)
             },
             deleteItem(sectionKey, itemId) {
                 this.$emit('deleteItem', sectionKey, itemId)

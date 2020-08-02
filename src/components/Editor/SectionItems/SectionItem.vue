@@ -1,7 +1,10 @@
 <template>
     <div class="relative rounded overflow-hidden shadow-md bg-white mb-4 px-4 pb-4">
         <div class="mb-2 py-1 flex justify-between content-center border border-gray-100">
-            <div>
+            <div class="mr-1">
+                <input :checked="showOnMap" @click="updateShowOnMap($event, false)" type="checkbox" title="Show/Hide this section from the map" />
+            </div>
+            <div class="mr-auto">
                 <span @click="deleteItem"><font-awesome-icon icon="times" class="cursor-pointer" /></span>
             </div>
             <div>
@@ -39,9 +42,23 @@
                 }
 
                 return true
+            },
+            showOnMap() {
+                if (this.jsonDataShow.hasOwnProperty(this.item.id) && this.jsonDataShow[this.item.id].hasOwnProperty('showOnMap')) {
+                    return this.jsonDataShow[this.item.id].showOnMap
+                }
+
+                return true
             }
         },
         methods: {
+            updateShowOnMap(evt) {
+                if (evt.altKey) {
+                    this.$emit('updateAllItemShowData', this.sectionKey, 'showOnMap', evt.target.checked)
+                } else {
+                    this.$emit('updateItemShowData', this.item.id, 'showOnMap', evt.target.checked)
+                }
+            },
             toggleExpanded: function() {
                 this.$emit('updateItemShowData', this.item.id, 'expanded', !this.expanded)
             },

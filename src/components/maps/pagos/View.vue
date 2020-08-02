@@ -14,18 +14,18 @@
     import Viewer from '@/components/Viewer/Viewer'
 
     export default {
-        name: 'view-pyros',
+        name: 'view-pagos',
         components: {
             Viewer
         },
         data() {
             return {
-                mapName: 'pyros',
+                mapName: 'pagos',
                 gridSizeInPixels: 50,
                 coordinatesOffset: 1,
                 maximumZoom: 150,
-                imageSource: require('@/assets/images/maps/pyros.jpg'),
-                jsonData: require('@/assets/zoneJson/pyros.json'),
+                imageSource: require('@/assets/images/maps/pagos.jpg'),
+                jsonData: require('@/assets/zoneJson/pagos.json'),
                 filters: require('@/assets/filters/eureka.json')
             }
         }

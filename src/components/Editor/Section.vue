@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full border border-gray-200 rounded overflow-hidden">
-        <div class="sectionHeader p-4 flex justify-between content-center">
+    <div class="w-full rounded">
+        <div class="sectionHeader bg-white p-4 border-b border-gray-200 flex justify-between content-center sticky top-0 z-50">
             <div>
                 <input :checked="showOnMap" @input="updateShowOnMap" type="checkbox"
                     title="Show/Hide this section from the map" />
@@ -17,10 +17,10 @@
                     <font-awesome-icon icon="caret-down" class="cursor-pointer" /></span>
             </div>
         </div>
-        <div v-show="expanded && filteredItems.length" class="sectionBody p-4 border border-gray-200 bg-gray-100">
+        <div v-show="expanded && filteredItems.length" class="sectionBody p-4 bg-gray-100">
             <component :is="itemComponent" v-for="item in filteredItems" :key="item.id" :item="item"
                 :section-key="$vnode.key" :jsonDataShow="jsonDataShow" @updateItem="updateItem"
-                @setItemPosition="setItemPosition" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" />
+                @setItemPosition="setItemPosition" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" @updateAllItemShowData="updateAllItemShowData" />
         </div>
     </div>
 </template>
@@ -64,12 +64,23 @@
         },
         computed: {
             filteredItems() {
+                let items = []
+
                 if (this.searchValue !== '') {
-                    return this.section.items.filter((item) => {
+                    item = this.section.items.filter((item) => {
                         return item.id.toLowerCase().includes(this.searchValue.toLowerCase()) || item.name.toLowerCase().includes(this.searchValue.toLowerCase())
                     })
+                } else {
+                    items = this.section.items
                 }
-                return this.section.items
+
+                const baseItems = JSON.parse(JSON.stringify(this.section.baseItem))
+                items = JSON.parse(JSON.stringify(items))
+                items = items.map(item => {
+                    return Object.assign({}, baseItems, item)
+                })
+
+                return items
             },
             itemComponent() {
                 let componentName = ''
@@ -130,6 +141,9 @@
             },
             updateItemShowData(itemId, showKey, value) {
                 this.$emit('updateItemShowData', itemId, showKey, value)
+            },
+            updateAllItemShowData(sectionKey, showKey, value) {
+                this.$emit('updateAllItemShowData', sectionKey, showKey, value)
             },
             deleteItem(sectionKey, itemId) {
                 this.$emit('deleteItem', sectionKey, itemId)

@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@import 'partials/main';
+@import 'partials/editor';
+@import 'partials/viewer';

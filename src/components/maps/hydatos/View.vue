@@ -14,18 +14,18 @@
     import Viewer from '@/components/Viewer/Viewer'
 
     export default {
-        name: 'view-pyros',
+        name: 'view-hydatos',
         components: {
             Viewer
         },
         data() {
             return {
-                mapName: 'pyros',
+                mapName: 'hydatos',
                 gridSizeInPixels: 50,
                 coordinatesOffset: 1,
                 maximumZoom: 150,
-                imageSource: require('@/assets/images/maps/pyros.jpg'),
-                jsonData: require('@/assets/zoneJson/pyros.json'),
+                imageSource: require('@/assets/images/maps/hydatos.jpg'),
+                jsonData: require('@/assets/zoneJson/hydatos.json'),
                 filters: require('@/assets/filters/eureka.json')
             }
         }

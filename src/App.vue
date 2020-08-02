@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" class="relative">
         <router-view></router-view>
     </div>
 </template>
@@ -9,19 +9,3 @@
         name: 'app'
     }
 </script>
-
-<style>
-    body,
-    html {
-        height: 100vh;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-        color: #2c3e50;
-    }
-
-    #app {
-        width: 100%;
-        height: 100%;
-    }
-</style>

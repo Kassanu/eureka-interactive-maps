@@ -1,5 +1,5 @@
 <template>
-    <div id="edit" class="relative">
+    <div id="editor" class="relative">
         <div v-show="showAddNewItemBanner" @click="cancelAddNewItem" class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
             Click on the map to add a new item for {{ addNewItemSelectedName }}. Click this message to cancel.
         </div>
@@ -12,6 +12,7 @@
             @setItemPosition="setItemPosition"
             @updateItem="updateItem"
             @updateShowData="updateShowData"
+            @updateAllItemShowData="updateAllItemShowData"
             @deleteItem="deleteItem"
         />
         <EurekaCanvas
@@ -198,6 +199,21 @@
                 newShowData[sectionKey] = newShowKeyData
                 this.jsonDataShow = newShowData
             },
+            updateAllItemShowData(sectionKey, showKey, value) {
+                console.log('here')
+                let newShowData = Object.assign({}, this.jsonDataShow)
+                this.jsonData[sectionKey].items.forEach(item => {
+                    let newShowKeyData = {}
+                    if (newShowData.hasOwnProperty(item.id)) {
+                        newShowKeyData = Object.assign(newShowData[item.id], { [showKey]: value })
+                    } else {
+                        newShowKeyData = { [showKey]: value }
+                    }
+                    newShowData[item.id] = newShowKeyData
+                })
+                console.log(newShowData)
+                this.jsonDataShow = newShowData
+            },
             deleteItem(sectionKey, itemId) {
                 const index = this.jsonData[sectionKey].items.findIndex(item => {
                     return item.id === itemId
@@ -230,23 +246,3 @@
         }
     }
 </script>
-
-<style>
-    #edit {
-        height: 100%;
-        width: 100%;
-        display: flex;
-    }
-
-    #editorContainer {
-        flex: 0 0 30%;
-    }
-
-    #eurekaCanvasContainer {
-        flex: 0 0 70%;
-    }
-
-    .addNewItemBanner {
-        transform: translate(-50%, 0);
-    }
-</style>
