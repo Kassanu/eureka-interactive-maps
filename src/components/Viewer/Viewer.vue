@@ -109,24 +109,25 @@
                 if (this.clickedItem === false) {
                     return ''
                 }
+                let icons = ''
+
                 switch (this.clickedItem.key) {
                     case 'fates':
-                        return `<img title="FATE" src="${this.icons.fate.path}" />`
+                        icons = `<img title="FATE" src="${this.icons.fate.path}" />`
                         break
                     case 'elementals':
-                        return `<img title="Eurekan Elemental" src="${this.icons.blessing.path}" />`
+                        icons = `<img title="Eurekan Elemental" src="${this.icons.blessing.path}" />`
                         break
                     case 'lockboxes':
-                        return `<img title="Bunny Lockbox" src="${this.icons.lock.path}" />`
+                        icons = `<img title="Bunny Lockbox" src="${this.icons.lock.path}" />`
                         break
                     case 'aethernet':
-                        return `<img title="Aetheryte" src="${this.icons.aetheryte.path}" />`
+                        icons = `<img title="Aetheryte" src="${this.icons.aetheryte.path}" />`
                         break
                     case 'quests':
-                        return `<img title="Quest" src="${this.icons.quest.path}" />`
+                        icons = `<img title="Quest" src="${this.icons.quest.path}" />`
                         break
                     case 'monsters':
-                        let icons = ''
                         icons += `<img src="${this.clickedItemSourceItem.element === '' ? this.icons['noelement'].path : this.icons[this.clickedItemSourceItem.element].path}" />`
                         if (this.clickedItemSourceItem.ashkin) {
                             icons += `<img title="Ashkin" src="${this.icons.ashkin.path}" />`
@@ -137,44 +138,51 @@
                         if (this.clickedItemSourceItem.adaptation.canAdapt) {
                             icons += `<img title="Adapts" src="${this.icons.adaptation.path}" />`
                         }
-                        return icons
                         break
                 }
+
+                return icons
             },
             clickedItemLabel() {
                 if (this.clickedItem === false) {
                     return ''
                 }
+                let label = ''
                 switch (this.clickedItem.key) {
                     case 'fates':
                     case 'monsters':
                     case 'quests':
                     case 'aethernet':
-                        return this.clickedItemSourceItem.name
-                        break;
+                        label = this.clickedItemSourceItem.name
+                        break
                     case 'elementals':
-                        return `Eurekan Elementals`
-                        break;
+                        label = `Eurekan Elementals`
+                        break
                     case 'lockboxes':
-                        return `Bunny Lockboxes`
-                        break;
+                        label = `Bunny Lockboxes`
+                        break
                 }
+
+                return label
             },
             clickedItemComponent() {
                 if (this.clickedItem === false) {
                     return ''
                 }
+                let component = ''
                 switch (this.clickedItem.key) {
                     case 'monsters':
-                        return 'MonsterItemInformation'
+                        component = 'MonsterItemInformation'
                         break
                     case 'fates':
-                        return 'FateItemInformation'
+                        component = 'FateItemInformation'
                         break
                     default:
-                        return 'DefaultItemInformation'
+                        component = 'DefaultItemInformation'
                         break
                 }
+
+                return component
             },
             positions() {
                 const pos = []

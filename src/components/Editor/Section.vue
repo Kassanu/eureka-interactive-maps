@@ -67,7 +67,7 @@
                 let items = []
 
                 if (this.searchValue !== '') {
-                    item = this.section.items.filter((item) => {
+                    items = this.section.items.filter((item) => {
                         return item.id.toLowerCase().includes(this.searchValue.toLowerCase()) || item.name.toLowerCase().includes(this.searchValue.toLowerCase())
                     })
                 } else {
