@@ -200,7 +200,6 @@
                 this.jsonDataShow = newShowData
             },
             updateAllItemShowData(sectionKey, showKey, value) {
-                console.log('here')
                 let newShowData = Object.assign({}, this.jsonDataShow)
                 this.jsonData[sectionKey].items.forEach(item => {
                     let newShowKeyData = {}
@@ -211,7 +210,6 @@
                     }
                     newShowData[item.id] = newShowKeyData
                 })
-                console.log(newShowData)
                 this.jsonDataShow = newShowData
             },
             deleteItem(sectionKey, itemId) {
