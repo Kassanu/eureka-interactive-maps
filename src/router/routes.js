@@ -1,4 +1,5 @@
 import Home from '../components/Home'
+import Contribute from '../components/Contribute'
 import PyrosView from '../components/maps/pyros/View'
 import PyrosEditor from '../components/maps/pyros/Edit'
 import AnemosView from '../components/maps/anemos/View'
@@ -16,44 +17,58 @@ export default {
             component: Home
         },
         {
+            path: '/contribute',
+            name: 'Contribute',
+            component: Contribute,
+            meta: { title: 'Contribute' }
+        },
+        {
             path: '/pyros',
             name: 'Pyros',
-            component: PyrosView
+            component: PyrosView,
+            meta: { title: 'Pyros' }
         },
         {
             path: '/pyros/editor',
             name: 'Pyros-Editor',
-            component: PyrosEditor
+            component: PyrosEditor,
+            meta: { title: 'Pyros - Edit' }
         },
         {
             path: '/anemos',
             name: 'Anemos',
-            component: AnemosView
+            component: AnemosView,
+            meta: { title: 'Anemos' }
         },
         {
             path: '/anemos/editor',
             name: 'Anemos-Editor',
-            component: AnemosEditor
+            component: AnemosEditor,
+            meta: { title: 'Anemos - Edit' }
         },
         {
             path: '/pagos',
             name: 'Pagos',
-            component: PagosView
+            component: PagosView,
+            meta: { title: 'Pagos' }
         },
         {
             path: '/pagos/editor',
             name: 'Pagos-Editor',
-            component: PagosEditor
+            component: PagosEditor,
+            meta: { title: 'Pagos - Edit' }
         },
         {
             path: '/hydatos',
             name: 'Hydatos',
-            component: HydatosView
+            component: HydatosView,
+            meta: { title: 'Hydatos' }
         },
         {
             path: '/hydatos/editor',
             name: 'Hydatos-Editor',
-            component: HydatosEditor
+            component: HydatosEditor,
+            meta: { title: 'Hydatos - Edit' }
         }
     ]
 }
