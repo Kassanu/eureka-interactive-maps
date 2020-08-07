@@ -1,4 +1,8 @@
-# eureka-interactive-maps
+# FFXIV Interactive Eureka Maps
+
+[Site](https://www.ffxiv-interactive-eureka-maps.com)
+
+An interactive map for the zones of Eureka (Anemos, Pagos, Pyros, Hydatos) for the game Final Fantasy XIV.
 
 ## Project setup
 ```
@@ -14,16 +18,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
