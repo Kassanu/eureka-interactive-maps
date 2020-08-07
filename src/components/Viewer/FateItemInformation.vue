@@ -9,7 +9,7 @@
         <div>
             <span class="font-bold">Coordinates:</span> ({{ item.position.x }}, {{ item.position.y }})
         </div>
-        <div>
+        <div v-if="item.boss">
             <span class="font-bold">Boss:</span> {{ item.boss.name }}
         </div>
         <div v-if="item.weather">
