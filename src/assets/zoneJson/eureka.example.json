@@ -11,7 +11,10 @@
                 "y": 0
             },
             "element": "",
-            "drops": []
+            "drops": [],
+            "boss": {
+                "name": ""
+            }
         },
         "items": []
     },
