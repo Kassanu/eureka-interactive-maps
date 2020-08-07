@@ -98,17 +98,17 @@
                                     // i'll turn this into a more fancy thing later
                                     switch (key) {
                                         case 'monsters':
-                                            if (item.element == "" && this.icons.hasOwnProperty('noelement')) {
+                                            if (!this.icons.hasOwnProperty(item.element)) {
                                                 itemObj.icons.push({ image: this.icons.noelement })
-                                            } else if (this.icons.hasOwnProperty(item.element)) {
+                                            } else {
                                                 itemObj.icons.push({ image: this.icons[item.element] })
                                             }
                                             break;
                                         case 'fates':
                                             itemObj.icons.push({ image: this.icons.fate })
-                                            if (item.element == "" && this.icons.hasOwnProperty('noelement')) {
+                                            if (!this.icons.hasOwnProperty(item.element)) {
                                                 itemObj.icons.push({ image: this.icons.noelement })
-                                            } else if (this.icons.hasOwnProperty(item.element)) {
+                                            } else {
                                                 itemObj.icons.push({ image: this.icons[item.element] })
                                             }
                                             break;
