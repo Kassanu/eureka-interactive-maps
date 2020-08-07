@@ -16,6 +16,7 @@
                 :section="section"
                 :jsonDataShow="jsonDataShow"
                 :searchValue="searchValue"
+                :fates="fates"
                 @addToSection="addItemToSection"
                 @setItemPosition="setItemPosition"
                 @updateItem="updateItem"
@@ -60,6 +61,15 @@
         data() {
             return {
                 searchValue: ''
+            }
+        },
+        computed: {
+            fates() {
+                if (!this.jsonData.hasOwnProperty('fates')) {
+                    return []
+                }
+
+                return this.jsonData.fates.items
             }
         },
         methods: {

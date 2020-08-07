@@ -161,11 +161,13 @@
                     </div>
                     <div v-show="item.fate.forFate" class="w-full md:w-1/2 px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                            Fate ID
+                            Fate
                         </label>
-                        <input :value="item.fate.fateId" @change="updateForFateId"
-                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
-                            type="text">
+                        <select :value="item.fate.fateId" @change="updateForFateId"
+                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full">
+                            <option value=''></option>
+                            <option v-for="fate in fates" :key="fate.id" :value="fate.id">{{ fate.name }}</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -193,6 +195,10 @@
             },
             jsonDataShow: {
                 type: Object,
+                required: true
+            },
+            fates: {
+                type: Array,
                 required: true
             }
         },

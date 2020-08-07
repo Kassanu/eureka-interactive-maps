@@ -19,7 +19,7 @@
         </div>
         <div v-show="expanded && filteredItems.length" class="sectionBody p-4 bg-gray-100">
             <component :is="itemComponent" v-for="item in filteredItems" :key="item.id" :item="item"
-                :section-key="$vnode.key" :jsonDataShow="jsonDataShow" @updateItem="updateItem"
+                :section-key="$vnode.key" :jsonDataShow="jsonDataShow" :fates="fates" @updateItem="updateItem"
                 @setItemPosition="setItemPosition" @updateItemShowData="updateItemShowData" @deleteItem="deleteItem" @updateAllItemShowData="updateAllItemShowData" />
         </div>
     </div>
@@ -54,6 +54,10 @@
             },
             searchValue: {
                 type: String,
+                required: true
+            },
+            fates: {
+                type: Array,
                 required: true
             }
         },
