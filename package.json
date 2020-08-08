@@ -12,13 +12,13 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/vue-fontawesome": "^0.1.10",
     "core-js": "^2.6.5",
-    "eureka-canvas": "^0.5.3",
+    "eureka-canvas": "^0.6.1",
     "sass": "^1.26.10",
-    "sass-loader": "^9.0.2",
-    "tailwindcss": "^1.6.0",
+    "sass-loader": "^9.0.3",
+    "tailwindcss": "^1.6.2",
     "uuid": "^8.3.0",
     "vue": "^2.6.10",
-    "vue-router": "^3.3.4"
+    "vue-router": "^3.4.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.0",
