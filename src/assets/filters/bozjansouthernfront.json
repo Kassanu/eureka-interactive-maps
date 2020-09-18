@@ -1,0 +1,14 @@
+{
+    "level": {
+        "from": 1,
+        "to": 70
+    },
+    "element": "",
+    "sections": {
+        "misc": {
+            "name": "Misc",
+            "enabled": true,
+            "filters": {}
+        }
+    }
+}

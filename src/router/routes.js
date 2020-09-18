@@ -8,6 +8,8 @@ import PagosView from '../components/maps/pagos/View'
 import PagosEditor from '../components/maps/pagos/Edit'
 import HydatosView from '../components/maps/hydatos/View'
 import HydatosEditor from '../components/maps/hydatos/Edit'
+import BozjanSouthernFrontView from '../components/maps/bozjansouthernfront/View'
+import BozjanSouthernFrontEditor from '../components/maps/bozjansouthernfront/Edit'
 
 export default {
     routes: [
@@ -69,6 +71,18 @@ export default {
             name: 'Hydatos-Editor',
             component: HydatosEditor,
             meta: { title: 'Hydatos - Edit' }
+        },
+        {
+            path: '/bozjansouthernfront',
+            name: 'Bozjansouthernfront',
+            component: BozjanSouthernFrontView,
+            meta: { title: 'Bozjan Southern Front' }
+        },
+        {
+            path: '/bozjansouthernfront/editor',
+            name: 'BozjanSouthernFront-Editor',
+            component: BozjanSouthernFrontEditor,
+            meta: { title: 'Bozjan Southern Front - Edit' }
         }
     ]
 }

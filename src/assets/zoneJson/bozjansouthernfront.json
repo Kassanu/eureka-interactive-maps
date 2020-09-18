@@ -1,0 +1,16 @@
+{
+    "misc": {
+        "name": "Misc",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    }
+}
