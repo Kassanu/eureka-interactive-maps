@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/eureka/',
+  publicPath: '/',
   css: {
     extract: true
   }

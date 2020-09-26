@@ -41,8 +41,8 @@
         <div class="relative">
             <div id="filterExpander">
                 <div @click="expanded = !expanded" class="cursor-pointer w-full h-full flex justify-center items-center">
-                    <font-awesome-icon v-show="expanded"  icon="caret-left" /></span>
-                    <font-awesome-icon v-show="!expanded" icon="caret-right" /></span>
+                    <font-awesome-icon v-show="expanded"  icon="caret-left" />
+                    <font-awesome-icon v-show="!expanded" icon="caret-right" />
                 </div>
             </div>
         </div>
