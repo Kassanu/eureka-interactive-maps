@@ -1,6 +1,6 @@
 <template>
     <div id="filters" class="flex">
-        <div v-show="expanded" @click.stop="" id="filtersCard" class="relative rounded px-8 pt-6 pb-8 mb-4 text-gray-200">
+        <div v-show="expanded" @click.stop="" id="filtersCard" class="relative overflow-auto rounded px-8 pt-6 pb-8 mb-4 text-gray-200">
             <div @click="$emit('resetFilters')" class="absolute top-0 right-0 cursor-pointer">Reset</div>
             <form>
                 <div class="mb-2">
