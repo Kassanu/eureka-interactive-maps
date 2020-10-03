@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="flex flex-col">
+  <Page id="home">
     <div class="flex-grow flex">
       <div class="flex flex-col justify-center flex-grow">
         <h1 class="text-6xl text-white text-center mb-5">FFXIV Interactive Eureka Maps</h1>
@@ -20,20 +20,16 @@
         </div>
       </div>
     </div>
-    <footer id="footer" class="flex flex-col text-sm">
-      <div class="flex justify-center">
-        <router-link class="hover:text-white" to="/">Home</router-link>&nbsp;-&nbsp;<router-link
-          class="hover:text-white" to="/contribute">Contribute</router-link>
-      </div>
-      <div class="flex justify-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. FINAL
-        FANTASY XIV © 2010 - 2020
-        SQUARE ENIX CO., LTD. All Rights Reserved.</div>
-    </footer>
-  </div>
+  </Page>
 </template>
 
 <script>
+  import Page from './Page'
+
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+      Page
+    }
   }
 </script>
