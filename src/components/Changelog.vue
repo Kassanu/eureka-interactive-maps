@@ -28,6 +28,12 @@
             title: 'Launch',
             description: 'Site Launched!',
             showDayAndMonth: true
+          },
+          {
+            from: new Date(2020, 9, 2),
+            title: 'v0.2.0',
+            description: '<ul class="list-disc list-inside"><li>Fixes Bozjan Southern Front hover effect on homepage.</li><li>Fixes filter container causing page scroll on small screens.</li></ul>',
+            showDayAndMonth: true
           }
         ]
       }
