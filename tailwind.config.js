@@ -5,6 +5,9 @@ module.exports = {
             '-1': '-1px',
             auto: 'auto',
             '1/2': '50%',
+        },
+        screens: {
+            'sm': {'max': '639px'}
         }
     },
     variants: {},
