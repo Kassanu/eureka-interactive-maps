@@ -38,11 +38,10 @@
                 <filter-section v-for="(section, index) in filters.sections" :key="index" :section="section" @updateSection="updateSection(index, ...arguments)"></filter-section>
             </form>
         </div>
-        <div class="relative">
-            <div id="filterExpander">
+        <div id="filterExpander" class="relative">
+            <div>
                 <div @click="expanded = !expanded" class="cursor-pointer w-full h-full flex justify-center items-center">
-                    <font-awesome-icon v-show="expanded"  icon="caret-left" />
-                    <font-awesome-icon v-show="!expanded" icon="caret-right" />
+                    <font-awesome-icon :icon="expandFiltersIcon" />
                 </div>
             </div>
         </div>
@@ -64,7 +63,22 @@
         },
         data() {
             return {
-                expanded: true
+                expanded: true,
+                windowWidth: window.innerWidth
+            }
+        },
+        mounted() {
+            window.onresize = () => {
+                this.windowWidth = window.innerWidth
+            }
+        },
+        computed: {
+            expandFiltersIcon() {
+                if (this.windowWidth < 640) {
+                    return this.expanded ? 'caret-up' : 'caret-down'
+                } else {
+                    return this.expanded ? 'caret-left' : 'caret-right'
+                }
             }
         },
         methods: {

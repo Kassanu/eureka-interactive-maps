@@ -9,12 +9,21 @@
         left: 0;
         width: 20%;
         min-height: 500px;
-        max-height: 90vh
+        max-height: 90vh;
+        @media (max-width: 640px) {
+            width: 100%;
+            min-height: 80vh;
+            max-height: 80vh;
+            flex-direction: column;
+        }
     }
 
     #filtersCard {
         background-color: rgb(37, 37, 38, 0.8);
         color: #cccccc;
+        @media (max-width: 640px) {
+            flex-grow: 1;
+        }
         input, select {
             background-color: #474747;
             border-color: #474747;
@@ -39,7 +48,7 @@
         background-color: #1e1e1e;
     }
 
-    #filterExpander {
+    #filterExpander>div {
         position: absolute;
         top: 5%;
         left: 0;
@@ -47,5 +56,9 @@
         height: 75px;
         background-color: rgb(51, 51, 51, 0.8);
         color: #cccccc;
+        @media (max-width: 640px) {
+            position: relative;
+            width: 100%
+        }
     }
 }
