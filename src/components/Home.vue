@@ -16,7 +16,7 @@
           <router-link to="/hydatos"
             class="bg-pink-500 hover:bg-pink-700 text-white text-lg text-center font-bold py-4 px-6 mb-2">Hydatos
           </router-link>
-          <router-link to="/Bozjansouthernfront" class="bg-purple-500 text-white text-lg text-center font-bold py-4 px-6 mb-2">Bozjan Southern Front</router-link>
+          <router-link to="/Bozjansouthernfront" class="bg-purple-500 hover:bg-purple-700 text-white text-lg text-center font-bold py-4 px-6 mb-2">Bozjan Southern Front</router-link>
         </div>
       </div>
     </div>
