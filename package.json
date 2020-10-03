@@ -16,6 +16,7 @@
     "sass": "^1.26.10",
     "sass-loader": "^9.0.3",
     "tailwindcss": "^1.8.10",
+    "timeline-vuejs": "^1.1.7",
     "uuid": "^8.3.0",
     "vue": "^2.6.12",
     "vue-router": "^3.4.3"
