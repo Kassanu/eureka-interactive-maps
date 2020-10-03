@@ -8,12 +8,8 @@
         top: 0;
         left: 0;
         width: 20%;
-        min-height: 500px;
-        max-height: 90vh;
         @media (max-width: 640px) {
             width: 100%;
-            min-height: 80vh;
-            max-height: 80vh;
             flex-direction: column;
         }
     }
@@ -21,7 +17,9 @@
     #filtersCard {
         background-color: rgb(37, 37, 38, 0.8);
         color: #cccccc;
+        max-height: 90vh;
         @media (max-width: 640px) {
+            max-height: 75vh;
             flex-grow: 1;
         }
         input, select {
@@ -38,6 +36,10 @@
     .itemInformation {
         width: 20vw;
         color: black;
+        @media (max-width: 640px) {
+            width: 90%;
+            height: 90%;
+        }
     }
 
     .itemInformationIcons > div {
