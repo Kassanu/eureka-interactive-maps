@@ -34,6 +34,12 @@
             title: 'v0.2.0',
             description: '<ul class="list-disc list-inside"><li>Fixes Bozjan Southern Front hover effect on homepage.</li><li>Fixes filter container causing page scroll on small screens.</li></ul>',
             showDayAndMonth: true
+          },
+          {
+            from: new Date(2020, 9, 3),
+            title: 'v0.3.0',
+            description: 'Adds mobile support to the site!',
+            showDayAndMonth: true
           }
         ]
       }
