@@ -1,7 +1,7 @@
 <template>
   <Page id="contribute">
     <div class="flex-grow flex justify-center">
-      <div class="flex flex-col w-1/6 justify-center">
+      <div class="flex flex-col sm:w-1/2 w-1/6 justify-center">
         <div class="mb-2">
           <h1 class="text-2xl text-white">I want to help code!</h1>
           This application is fully open source! If you would like to contribute please make a pull request at one of
