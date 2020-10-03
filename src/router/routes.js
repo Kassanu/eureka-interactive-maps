@@ -1,5 +1,6 @@
 import Home from '../components/Home'
 import Contribute from '../components/Contribute'
+import Changelog from '../components/Changelog'
 import PyrosView from '../components/maps/pyros/View'
 import PyrosEditor from '../components/maps/pyros/Edit'
 import AnemosView from '../components/maps/anemos/View'
@@ -23,6 +24,12 @@ export default {
             name: 'Contribute',
             component: Contribute,
             meta: { title: 'Contribute' }
+        },
+        {
+            path: '/changelog',
+            name: 'Changelog',
+            component: Changelog,
+            meta: { title: 'Changelog' }
         },
         {
             path: '/pyros',
