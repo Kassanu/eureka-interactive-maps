@@ -1,5 +1,5 @@
 <template>
-  <div id="contribute" class="flex flex-col">
+  <Page id="contribute">
     <div class="flex-grow flex justify-center">
       <div class="flex flex-col w-1/6 justify-center">
         <div class="mb-2">
@@ -26,19 +26,16 @@
         </div>
       </div>
     </div>
-    <footer id="footer" class="flex flex-col text-sm">
-      <div class="flex justify-center">
-        <router-link class="hover:text-white" to="/">Home</router-link>&nbsp;-&nbsp;<router-link
-          class="hover:text-white" to="/contribute">Contribute</router-link>
-      </div>
-      <div class="flex justify-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd. FINAL FANTASY XIV © 2010 - 2020
-        SQUARE ENIX CO., LTD. All Rights Reserved.</div>
-    </footer>
-  </div>
+  </Page>
 </template>
 
 <script>
+  import Page from './Page'
+
   export default {
-    name: 'Contribute'
+    name: 'Contribute',
+    components: {
+      Page
+    }
   }
 </script>
