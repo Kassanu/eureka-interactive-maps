@@ -26,13 +26,18 @@
                 dimensions: {
                     width: 0,
                     height: 0
-                }
+                },
+                windowWidth: window.innerWidth
             }
         },
         mounted () {
             this.dimensions = {
                 width: this.$refs.itemInformationContainer.clientWidth,
                 height: this.$refs.itemInformationContainer.clientHeight
+            }
+
+            window.onresize = () => {
+                this.windowWidth = window.innerWidth
             }
         },
         computed: {
@@ -51,7 +56,12 @@
                 return this.position.x
             },
             styles() {
-                return `top:${this.top}px;left:${this.left}px;`
+                if (this.windowWidth < 640) {
+                    return `top:5%;left:5%;`
+                }
+                else {
+                    return `top:${this.top}px;left:${this.left}px;`
+                }
             }
         },
         methods: {
