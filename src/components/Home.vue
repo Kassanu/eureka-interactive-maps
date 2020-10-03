@@ -3,7 +3,7 @@
     <div class="flex-grow flex">
       <div class="flex flex-col justify-center flex-grow">
         <h1 class="text-6xl text-white text-center mb-5">FFXIV Interactive Eureka Maps</h1>
-        <div class="w-1/6 flex flex-col self-center justify-center">
+        <div class="sm:w-1/2 w-1/6 flex flex-col self-center justify-center">
           <router-link to="/anemos"
             class="bg-teal-500 hover:bg-teal-700 text-white text-lg text-center font-bold py-4 px-6 mb-2">Anemos
           </router-link>
