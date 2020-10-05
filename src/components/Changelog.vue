@@ -40,6 +40,12 @@
             title: 'v0.3.0',
             description: 'Adds mobile support to the site!',
             showDayAndMonth: true
+          },
+          {
+            from: new Date(2020, 9, 4),
+            title: 'v0.4.0',
+            description: 'Updates the map editor to save pretty printed JSON instead of the compressed string.',
+            showDayAndMonth: true
           }
         ]
       }
