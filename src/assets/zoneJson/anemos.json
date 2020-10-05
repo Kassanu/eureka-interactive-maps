@@ -1,1 +1,3821 @@
-{"fates":{"name":"FATEs","order":10,"baseItem":{"id":"","name":"","level":0,"position":{"x":0,"y":0},"element":"","drops":[],"weather":"","boss":{"name":""}},"items":[{"id":"87be7b92-7fc7-4d1c-a7db-e5bad586ab87","name":"Unsafety Dance","level":1,"position":{"x":14.1,"y":21.8},"element":"wind","drops":[],"weather":"","boss":{"name":"Sabotender Corrido"}},{"id":"3bcc5ab7-694f-4c49-bc4d-6a41dcd3c9a8","name":"The Shadow over Anemos","level":2,"position":{"x":27.8,"y":28.2},"element":"water","drops":[],"weather":"","boss":{"name":"The Lord of Anemos"}},{"id":"a6d6fa7c-3153-447d-97f0-121c34cece29","name":"Teles House","level":3,"position":{"x":26,"y":26.8},"element":"wind","drops":[],"weather":"","boss":{"name":"Teles"}},{"id":"45476998-181d-4abe-bcad-5ff7053f96f2","name":"The Swarm Never Sets","level":4,"position":{"x":17.2,"y":23.9},"element":"wind","drops":[],"weather":"","boss":{"name":"The Emperor of Anemos"}},{"id":"ca960bea-91c9-431f-a94d-180a80b27be4","name":"One Missed Callisto","level":5,"position":{"x":27.8,"y":23.3},"element":"earth","drops":[],"weather":"","boss":{"name":"Callisto"}},{"id":"e6b3ef2d-b09b-49b0-9b6a-49604e91eeb2","name":"By Numbers","level":6,"position":{"x":23.2,"y":22.7},"element":"lightning","drops":[],"weather":"","boss":{"name":"Number"}},{"id":"cf9d830b-f8f1-4ba0-b203-1df070223844","name":"Disinherit the Wind","level":7,"position":{"x":19.1,"y":19.6},"element":"wind","drops":[],"weather":"","boss":{"name":"Jahannam"}},{"id":"30c0a8ec-081c-4e60-a45f-735e1542c0ab","name":"Prove Your Amemettle","level":8,"position":{"x":14.7,"y":15.9},"element":"fire","drops":[],"weather":"","boss":{"name":"Amemet"}},{"id":"b26d7dbf-7d6f-4c11-9386-8c7845fbbba6","name":"Caym What May","level":9,"position":{"x":12.6,"y":12.4},"element":"ice","drops":[],"weather":"","boss":{"name":"Caym"}},{"id":"bb1a1de7-690f-4703-943d-2b3386dfac31","name":"The Killing of a Sacred Bombadier","level":10,"position":{"x":28.5,"y":20.5},"element":"earth","drops":[],"weather":"","boss":{"name":"Bombadeel"}},{"id":"effcc0e3-d09f-4d46-a3b2-47f0305e143e","name":"Short Serket 2","level":11,"position":{"x":24,"y":20},"element":"earth","drops":[],"weather":"","boss":{"name":"Serket"}},{"id":"384fca33-8953-440e-b72e-e4184d82aec6","name":"Don't Judge Me, Morbol","level":12,"position":{"x":22.2,"y":14.9},"element":"ice","drops":[],"weather":"","boss":{"name":"Judgmental Julika"}},{"id":"9f995194-a1c0-4d97-ae94-7f31a43fa616","name":"When You Ride Alone","level":13,"position":{"x":20,"y":13.4},"element":"lightning","drops":[],"weather":"","boss":{"name":"The White Rider"}},{"id":"d046d757-56b1-438d-9269-70f32c69a32d","name":"Sing, Muse","level":14,"position":{"x":26.2,"y":15},"element":"ice","drops":[],"weather":"","boss":{"name":"Polyphemus"}},{"id":"a151515c-b44e-4009-9609-c33891bb2907","name":"Simurghasbord","level":15,"position":{"x":28.8,"y":13.3},"element":"wind","drops":[],"weather":"","boss":{"name":"Simurgh's Strider"}},{"id":"dd0a1536-e8f0-49e3-bc2a-85e4b3433cc3","name":"To the Mat","level":16,"position":{"x":35.2,"y":19.7},"element":"fire","drops":[],"weather":"","boss":{"name":"King Hazmat"}},{"id":"6d0466b5-2d8d-4f83-b1b5-5b4871801b23","name":"Wine and Honey","level":17,"position":{"x":34.6,"y":21.9},"element":"fire","drops":[],"weather":"","boss":{"name":"Fafnir"}},{"id":"07b48f39-cefb-41dc-bcfe-bcf2b9cd582c","name":"I Amarok","level":18,"position":{"x":8.2,"y":17.9},"element":"ice","drops":[],"weather":"","boss":{"name":"Amarok"}},{"id":"a7f56787-4c1c-42b4-a67c-eb04849c92d1","name":"Drama Lamshtu","level":19,"position":{"x":8.2,"y":25.3},"element":"wind","drops":[],"weather":"","boss":{"name":"Lamashtu"}},{"id":"b15bbfee-e288-4768-a734-cdf3b4ce0813","name":"Wail in the Willows","level":20,"position":{"x":7.3,"y":21.7},"element":"wind","drops":[],"weather":"gales","boss":{"name":"Pazuzu"}}]},"monsters":{"name":"Monsters","order":9,"baseItem":{"id":"","name":"","level":0,"position":{"x":0,"y":0},"element":null,"adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":true,"fateId":""}},"items":[{"id":"69767375-35ee-4b23-8a32-9e2351cfe129","name":"Val Revenant","level":1,"position":{"x":15.8,"y":29.9},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"27922a7a-74cc-4a4d-a8b2-cdd5bce61405","name":"Ignis Fatuus","level":1,"position":{"x":16.1,"y":30.6},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"7aa1f552-9572-4dfb-afc3-1c7418a8e8ea","name":"Anemossling","level":1,"position":{"x":15.2,"y":29.4},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"436641d2-b5de-42d4-b256-091309650113","name":"Squib","level":1,"position":{"x":20.8,"y":31.4},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"26aa0522-c061-498c-a757-6f88846e4273","name":"Wooly Woodchuck","level":2,"position":{"x":20.5,"y":30.5},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"fb27c9b5-70e9-4b8d-b610-8679c869de49","name":"Eurekan Screamer","level":2,"position":{"x":13.5,"y":27.4},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"34c61311-3944-4f85-9d3e-a901c776974a","name":"Sea Pugil","level":2,"position":{"x":22.6,"y":31.9},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"fab008a2-2c35-44ab-b1a9-60b2a2c69c6d","name":"Heartbroken Ochu","level":3,"position":{"x":13.3,"y":28.7},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"8a47b4e5-acb2-4930-ac1c-ed2a546d0c51","name":"Bezoar","level":3,"position":{"x":12.6,"y":29.5},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"ed9daeed-c7c4-4f20-8d4e-b0d373d69d59","name":"Lentic","level":3,"position":{"x":13,"y":27.8},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"2e4a56c3-917b-4ef9-8674-93e2e300d095","name":"Seaboard Angler","level":3,"position":{"x":20.7,"y":32.9},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"89298df4-4e05-4419-ac15-351bf2ba6602","name":"Valbol","level":4,"position":{"x":13,"y":26.7},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"c2e09918-eb9f-40e2-ade8-6d161f5f1303","name":"Skeleton Noble","level":4,"position":{"x":15.1,"y":28},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":false,"fateId":""}},{"id":"299dda0c-bd09-485c-9c03-5be8d76419d3","name":"Vesper Bat","level":4,"position":{"x":22.9,"y":29.6},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"2ff22aa5-40a2-464c-977f-e28bee390650","name":"Seaboard Ogrebon","level":4,"position":{"x":20.5,"y":31.8},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"88e8e7e0-b165-4420-a129-abe3e5b47ba1","name":"Val Imp","level":5,"position":{"x":12.9,"y":24.2},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"b7bbec26-9750-4782-972c-ed5ef8206bee","name":"Xurble","level":5,"position":{"x":15.9,"y":25},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"30688cc0-0f23-483a-bcdb-fa5566a06a92","name":"Scape Leech","level":5,"position":{"x":26.8,"y":29.3},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"de4378e6-d688-4820-b4f6-166c74f7db60","name":"Red Bonnet","level":6,"position":{"x":12.9,"y":23.4},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"151540b9-84ca-45f5-b6b8-0f8be38aeac2","name":"Mana Bomb","level":6,"position":{"x":12.7,"y":22.7},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"f29b41b6-ff68-46f4-9cd6-53f8e2b4655c","name":"Flowering Sabotender","level":6,"position":{"x":14.4,"y":20.4},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"87be7b92-7fc7-4d1c-a7db-e5bad586ab87"}},{"id":"b159ab02-1c2c-4f8e-9d31-284d61906813","name":"Glade Wivre","level":6,"position":{"x":26.9,"y":28.5},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"97f09136-4fd5-41a7-95bb-b8a04c7cc79b","name":"Migratory Chapuli","level":7,"position":{"x":28.3,"y":26.5},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"42b4e28a-addf-41cc-82ba-c49cc6081958","name":"Irregular Plasmoid","level":7,"position":{"x":28.2,"y":27},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"84bab830-79bc-46e5-a972-f3e52596ea3f","name":"Sea Bishop","level":7,"position":{"x":28.1,"y":27.6},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"3bcc5ab7-694f-4c49-bc4d-6a41dcd3c9a8"}},{"id":"34416847-3873-4a56-86fe-2ef35e028d91","name":"Anemos Flan","level":8,"position":{"x":26.7,"y":24.8},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"12ed661e-fd2a-4fec-b2ba-33722d1de7c7","name":"Hybrid Hog","level":8,"position":{"x":15.3,"y":18.8},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"f75b29cc-e3e2-40b2-ade7-b89aa32df387","name":"Anemos Harpy","level":8,"position":{"x":24.4,"y":26.7},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"a6d6fa7c-3153-447d-97f0-121c34cece29"}},{"id":"f56aef2e-32f4-4023-92c7-a2415725221d","name":"Duskfall Bhoot","level":8,"position":{"x":24.4,"y":27.2},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":false,"fateId":""}},{"id":"55dfd375-76f7-457b-98e5-496dbdc43b05","name":"Crystal Wolf","level":9,"position":{"x":19.8,"y":28.7},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"5cf73271-36c5-455e-932d-ad143db5b562","name":"Black Wolf","level":9,"position":{"x":19.6,"y":28.1},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"bae42ff4-ca76-48c7-a241-644dc6e7b417","name":"Mana Grenade","level":9,"position":{"x":23.3,"y":29},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"25e361fb-e7db-4a42-86fa-a360cbc31eb9","name":"Val Biast","level":9,"position":{"x":22.6,"y":24.5},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"93411664-7532-4269-8f9d-b0c4a1d87769","name":"Darner","level":9,"position":{"x":16.3,"y":22.4},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"45476998-181d-4abe-bcad-5ff7053f96f2"}},{"id":"788f51e1-bc0f-4ee5-ada7-c639670d3194","name":"Death Jacket","level":10,"position":{"x":22.7,"y":25},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"2cd5168f-ffde-461d-9021-1663cd02ede2","name":"Wild Baboulas","level":10,"position":{"x":22.5,"y":23.9},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"338fa044-3ced-4543-ba73-a44184a313f9","name":"Val Bear","level":10,"position":{"x":25.9,"y":22.1},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"ca960bea-91c9-431f-a94d-180a80b27be4"}},{"id":"bdf7f156-d472-449a-88d2-391af61c1fac","name":"Duskfall Skeleton","level":10,"position":{"x":23.9,"y":25.5},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"f670d493-9e95-488b-95e3-9b820796b38b","name":"Anemos Chaser","level":11,"position":{"x":18.5,"y":27.3},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"adcad8cb-3986-4ab7-8728-7196f8e354b6","name":"Leopard","level":11,"position":{"x":19.7,"y":26.7},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"bf013d82-f24f-444b-aade-1d04ae2ad836","name":"Pneumaflayer","level":11,"position":{"x":22,"y":23.3},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"e6b3ef2d-b09b-49b0-9b6a-49604e91eeb2"}},{"id":"713e3767-a1cf-45a7-9022-7ebaa0e61bf1","name":"Val Leshy","level":12,"position":{"x":19,"y":22.6},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"048de163-4b94-4f0a-acdb-6afab01b01e9","name":"Bigfoot","level":12,"position":{"x":19.7,"y":21.9},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"e41e9870-60a0-4d69-b206-ef832f012f50","name":"Abraxas","level":13,"position":{"x":17.5,"y":18.2},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"7f41845b-69d8-49c7-97a7-2d809772b488","name":"Ferromantoise","level":13,"position":{"x":23.1,"y":20.8},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"ceab1d0d-850c-4604-bd53-8f197020ef70","name":"Death Mask","level":13,"position":{"x":29.4,"y":23.8},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":false,"fateId":""}},{"id":"d5502473-b2fa-4c24-8c6f-74113f2debe0","name":"Phobosuchus","level":13,"position":{"x":29.5,"y":23.1},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"97b3f7cf-a3d3-4e6e-a1f3-2f0d3c310522","name":"Stalker Ziz","level":14,"position":{"x":14.9,"y":17.7},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"b106461d-3720-44f6-a95d-74686321d462","name":"Duskfall Mummy","level":14,"position":{"x":17.8,"y":17},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":false,"fateId":""}},{"id":"d26f4f97-a361-4d18-8888-5a744a529b77","name":"Spangencrab","level":14,"position":{"x":29.4,"y":21.4},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"3fb45177-3b3b-4884-877c-8b84e01c94ea","name":"Old Goobbue","level":14,"position":{"x":29.2,"y":20.9},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"89bb9f72-29c6-4bc5-8885-1c84b78d1915","name":"Gardenkeeper","level":15,"position":{"x":13.4,"y":15.2},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"1c91ef82-94b4-4716-9a13-9d45c4b0a217","name":"Quickwater Snake","level":15,"position":{"x":12.6,"y":14.8},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"af80b7cd-605e-4a4b-8875-8cc7c3985751","name":"Travelling Gourmand","level":15,"position":{"x":27.2,"y":19.6},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":true,"fateId":"bb1a1de7-690f-4703-943d-2b3386dfac31"}},{"id":"05121de3-92d1-49ab-a7b6-6026a10085b1","name":"Defroster","level":15,"position":{"x":27.7,"y":20.2},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"e0c2cde3-fe84-4c8e-8c51-a2a7c68b8e79","name":"Glacier Golem","level":16,"position":{"x":18.1,"y":14.7},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"92a1410d-96c6-4be3-8b6c-06be544cc2ab","name":"Vespid","level":16,"position":{"x":22.5,"y":18.5},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"f6accaa6-f6c5-4017-b72f-b76bd92d3dc0","name":"Khor Claw","level":16,"position":{"x":23.6,"y":19.6},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"effcc0e3-d09f-4d46-a3b2-47f0305e143e"}},{"id":"fca43896-c6aa-4aa7-b397-9dcccb8220dd","name":"Henbane","level":17,"position":{"x":20.7,"y":13.9},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"384fca33-8953-440e-b72e-e4184d82aec6"}},{"id":"af990f20-7fe7-4803-891e-758f54467b92","name":"Lynx","level":17,"position":{"x":22.3,"y":17.7},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"33a3900c-e1dd-4a9f-aab4-44e989076ac8","name":"Anemos Sanuwa","level":17,"position":{"x":21.9,"y":15.4},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"404c3720-b799-4d01-816e-af4855df1212","name":"Val Biloko","level":18,"position":{"x":20.5,"y":13.4},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"c11194b7-aebb-4356-9c87-e8ea591b456a","name":"Val Skatene","level":18,"position":{"x":19,"y":14.1},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"964b0dbe-0f98-425a-8ac6-5c0b4701df1c","name":"Anemos Gremlin","level":18,"position":{"x":21.6,"y":15.9},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"3f69041b-a9f9-4a47-ba5d-d672a5402a9e","name":"Duskfall Dullahan","level":18,"position":{"x":19.3,"y":13.4},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":true,"fateId":"9f995194-a1c0-4d97-ae94-7f31a43fa616"}},{"id":"14a23384-b11e-4b7b-810e-629770d2d506","name":"Shadow Wing","level":19,"position":{"x":24.9,"y":14.1},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"3f4e4421-cccb-41e1-b4bc-34556704e7cc","name":"Monoeye","level":19,"position":{"x":26.4,"y":15.2},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"d046d757-56b1-438d-9269-70f32c69a32d"}},{"id":"9637381e-2ab9-4949-bc1c-1c21c65c65b5","name":"Plantoid","level":19,"position":{"x":26.4,"y":14.6},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"7709f863-f35d-48df-ad29-7dbb7f11ae99","name":"Coffinkeep","level":19,"position":{"x":28.1,"y":16.7},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":false,"fateId":""}},{"id":"6f948d15-3cd9-433f-9ddb-c879c178b6a5","name":"Dhalmel of Nightmares","level":20,"position":{"x":27.5,"y":12.9},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"ea88a0c5-d1c7-43ab-acf3-0b2650bab09b","name":"Eurekan Dahak","level":20,"position":{"x":28.9,"y":14.7},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"87ab59fb-9ca2-415b-8f7c-8b1477f0c585","name":"Old World Zu","level":20,"position":{"x":27.7,"y":12.1},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"a151515c-b44e-4009-9609-c33891bb2907"}},{"id":"06d17f97-e8de-46d6-b17e-d73801fbe2fb","name":"Rockfin","level":21,"position":{"x":32.9,"y":22.7},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"e65fac36-9868-43f0-9514-7951050e04eb","name":"Anemos Anala","level":21,"position":{"x":32.5,"y":20},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"dd0a1536-e8f0-49e3-bc2a-85e4b3433cc3"}},{"id":"aef856a7-43d5-4552-b151-090d04fa2680","name":"Magia Fan","level":21,"position":{"x":31.8,"y":17.5},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"1ebd521e-a685-40a0-a90c-5b3c51fe8d11","name":"Val Antlion","level":22,"position":{"x":35.5,"y":16.7},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"0f2db1ee-a08f-4b77-8c24-7541fd69f972","name":"Anemos Pegasus","level":22,"position":{"x":34.9,"y":15.8},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"b878c03b-7756-4e72-8109-650d5d83f56d","name":"Anemos Apa","level":22,"position":{"x":32.6,"y":19.4},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"913a3a23-0faa-4b62-91e1-86125134b68d","name":"Fossil Dragon","level":22,"position":{"x":33.8,"y":21.1},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":true,"fateId":"6d0466b5-2d8d-4f83-b1b5-5b4871801b23"}},{"id":"9af5de8b-d934-4389-9f24-c0607772a65f","name":"Mighty Craklaw","level":23,"position":{"x":9.5,"y":27.2},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"30b1d629-6b0a-47f5-9104-cf01fd439c8f","name":"Voidscale","level":23,"position":{"x":8.2,"y":18.7},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":true,"fateId":"07b48f39-cefb-41dc-bcfe-bcf2b9cd582c"}},{"id":"ce3bde7c-982e-4a32-8672-ebc8fdb1a308","name":"Guud Suud","level":23,"position":{"x":8.3,"y":25.1},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"75b1f3b0-8c16-4d52-9aea-cd6ca9393965","name":"Four-eyes","level":23,"position":{"x":7.6,"y":25.6},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":false,"fateId":""}},{"id":"03d5b114-df21-4480-a273-c20cd3e521f3","name":"Bitoso Of The Isle","level":24,"position":{"x":7.8,"y":19.4},"element":"lightning","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"808c4230-f65e-423e-a396-8a4540b4622b","name":"Arioch Of The Isle","level":24,"position":{"x":7.8,"y":26.4},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"15e67f3c-f74e-4093-bf9e-47d2606c50c0","name":"Val Specter","level":24,"position":{"x":8.8,"y":19.9},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"0c01baf8-8db9-4668-8851-6a55bfdbaca8","name":"Zuniceratops","level":24,"position":{"x":9.8,"y":19.4},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"afaeb911-3b08-4dac-890f-80aa32d1c922","name":"Primelephas","level":25,"position":{"x":9.7,"y":20.8},"element":"earth","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"13831af9-c8d7-4fb2-963f-dfaeb85a2b7d","name":"Tangie","level":25,"position":{"x":7.6,"y":24.6},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"a77b17ef-15d7-42cd-9305-d3d0021d2b2f","name":"Shadow Wraith","level":25,"position":{"x":8.7,"y":20.5},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":"","ashkin":true,"fate":{"forFate":true,"fateId":"b15bbfee-e288-4768-a734-cdf3b4ce0813"}},{"id":"60704dd7-8fc2-472f-9c03-3dd4349a6b53","name":"Blizzard Sprite","level":2,"position":{"x":22,"y":32},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"c68339a2-5dec-4744-b34f-b78b679d7533","name":"Blizzard Sprite","level":2,"position":{"x":15.4,"y":29.2},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"c6e32145-a35a-4dce-b961-df4a6ca24f3e","name":"Blizzard Sprite","level":10,"position":{"x":19.5,"y":28.9},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"cc8e80c2-5e9d-4f16-8e8a-fc00c8be6a82","name":"Blizzard Sprite","level":6,"position":{"x":13.4,"y":24},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"2f6e1b6b-e4bc-4941-a492-52fc25226270","name":"Blizzard Sprite","level":19,"position":{"x":19,"y":24.8},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"0f9cccb6-705d-4632-9d29-5591fa391052","name":"Blizzard Sprite","level":10,"position":{"x":24,"y":24.4},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"85f0ab03-18c6-4623-98b1-6d0841cd6e4c","name":"Blizzard Sprite","level":6,"position":{"x":25.9,"y":28.1},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"018af00e-608e-4ebc-8acd-2471041f05d8","name":"Blizzard Sprite","level":10,"position":{"x":25,"y":21.7},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"ef17e3de-5cce-4244-ba06-9de7f14a8011","name":"Blizzard Sprite","level":22,"position":{"x":34.6,"y":21.5},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"e0e1fbda-d117-424d-8d5d-af2f130b020c","name":"Blizzard Sprite","level":22,"position":{"x":34.3,"y":15.1},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"320837ce-dcff-402b-8f63-6c5d31148576","name":"Blizzard Sprite","level":20,"position":{"x":29.3,"y":12.2},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"adf1769d-dd51-4349-ae29-534455f40f61","name":"Typhoon Sprite","level":5,"position":{"x":25.5,"y":30.8},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"388c896b-1c29-4f4d-9a6a-ab8a17c60deb","name":"Typhoon Sprite","level":12,"position":{"x":19.1,"y":27.1},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"dbf27f82-c6f7-4c1b-8ebe-10ac9c5830de","name":"Typhoon Sprite","level":9,"position":{"x":17.1,"y":22.8},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"07a0c06e-74b9-41b5-939d-4c2a22a08539","name":"Typhoon Sprite","level":9,"position":{"x":17,"y":19.1},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":true,"fateId":"cf9d830b-f8f1-4ba0-b203-1df070223844"}},{"id":"bb424f13-0379-43c1-aa4a-9c0ea4fb880b","name":"Typhoon Sprite","level":12,"position":{"x":20.4,"y":19.6},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"bf8b5001-c768-4531-97cc-31f8a18c80b9","name":"Typhoon Sprite","level":15,"position":{"x":29.5,"y":20.2},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"3ac4de1c-48ec-449d-8dfd-5eeeb96eedff","name":"Typhoon Sprite","level":21,"position":{"x":32.9,"y":21.7},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"e5a1021d-bb97-45fc-8cfd-354796f6355e","name":"Typhoon Sprite","level":13,"position":{"x":30.8,"y":24.2},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"558ae180-02e8-4b33-a5fa-cb44978d3c99","name":"Typhoon Sprite","level":23,"position":{"x":11.5,"y":27.5},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"5bfe2814-4820-4865-8285-c1f2eed07bb0","name":"Typhoon Sprite","level":25,"position":{"x":8.6,"y":23.5},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"ff5246e0-8945-41dd-9e17-5b5e787c0484","name":"Typhoon Sprite","level":23,"position":{"x":9.2,"y":18.8},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"48b3ae38-a5e9-4959-9cda-47782ebde499","name":"Typhoon Sprite","level":15,"position":{"x":14.9,"y":12.6},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"2f8ef068-ff10-44de-b60d-7bc7b745f63f","name":"Typhoon Sprite","level":19,"position":{"x":25.6,"y":14.7},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"358df2bd-7c6c-4dc8-9b51-2f0f30c0d7c6","name":"Typhoon Sprite","level":19,"position":{"x":29.9,"y":17.1},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"07780391-5469-4c5d-9c2f-1f47f6aa3d7a","name":"Typhoon Sprite","level":21,"position":{"x":32.5,"y":16.4},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"c3ff0513-93da-4291-81ce-502468a8613a","name":"Rain Sprite","level":9,"position":{"x":23.3,"y":29},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"842680e5-bbdb-40cc-bb96-910d6b1ff7e0","name":"Rain Sprite","level":7,"position":{"x":29.5,"y":26.6},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"92e2e788-dc6d-4d17-a121-9a9359d5c9d4","name":"Rain Sprite","level":9,"position":{"x":24.2,"y":25.5},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"b236cc33-ad07-40d6-bbf7-1e92a16a5a66","name":"Rain Sprite","level":9,"position":{"x":27,"y":24.3},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"d8854ff9-09ec-49d1-9a4c-b8e5461ecb26","name":"Rain Sprite","level":16,"position":{"x":20.8,"y":19.3},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"254a8046-7441-4eaf-a0bb-d6f670699c4f","name":"Rain Sprite","level":17,"position":{"x":22.4,"y":17.7},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"4bcbae9a-d1aa-4321-948e-b37e89c2542b","name":"Rain Sprite","level":18,"position":{"x":22,"y":13},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"5575b9a7-db61-43c1-bb4e-03b16c804706","name":"Rain Sprite","level":16,"position":{"x":17.8,"y":15.1},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"7533601f-d1bc-4d3b-a434-297b15b3fe1c","name":"Rain Sprite","level":11,"position":{"x":21.9,"y":27.3},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"3c3bffc4-f0c8-47a1-9379-4500e72fe0f4","name":"Rain Sprite","level":24,"position":{"x":10.2,"y":25.2},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"0c4f54cd-28b3-460c-92e4-6b1c4bf411e2","name":"Rain Sprite","level":24,"position":{"x":10.7,"y":21},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"a6014452-d32b-4512-8781-7002d3db0b4b","name":"Rain Sprite","level":13,"position":{"x":14.7,"y":16.6},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"f9dfb743-5ef5-470a-ad15-f92a2c01712f","name":"Rain Sprite","level":7,"position":{"x":13.1,"y":21.4},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"b00c73ac-4837-495f-afb5-ad0c9d766ad0","name":"Rain Sprite","level":14,"position":{"x":12.2,"y":14.7},"element":"water","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":false,"fateId":""}},{"id":"52c8792f-b0f3-4a78-87b6-bda5a89faf38","name":"Val Spectre","level":24,"position":{"x":6.8,"y":25.2},"element":"wind","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":true,"fate":{"forFate":true,"fateId":"a7f56787-4c1c-42b4-a67c-eb04849c92d1"}},{"id":"db82f36c-75a9-479f-8898-62d1711d042f","name":"Stalker Ziz","level":14,"position":{"x":12.9,"y":13.2},"element":"ice","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":true,"fateId":"b26d7dbf-7d6f-4c11-9386-8c7845fbbba6"}},{"id":"134987e9-7cfd-4b80-9db6-fbac046f8215","name":"Abraxas","level":13,"position":{"x":14.6,"y":16.3},"element":"fire","adaptation":{"canAdapt":false,"conditions":[]},"mutation":{"canMutate":false,"conditions":[],"element":null},"aggro":null,"ashkin":false,"fate":{"forFate":true,"fateId":"30c0a8ec-081c-4e60-a45f-735e1542c0ab"}}]},"elementals":{"name":"Eureka Elementals","order":1,"baseItem":{"id":"","name":"","position":{"x":0,"y":0}},"items":[]},"aethernet":{"name":"Aethernet","order":2,"baseItem":{"id":"","name":"","level":0,"position":{"x":0,"y":0}},"items":[{"id":"5f10c6e4-c1b4-4240-8e80-f32dd814e5e4","name":"Port Surgate","level":1,"position":{"x":18.7,"y":32.4}},{"id":"7082525e-6fd7-4798-8ef0-b93a2f182fb8","name":"Windtorn Cabin","level":9,"position":{"x":30.2,"y":20.5}},{"id":"516e73d1-7797-4f22-8f13-4d034dce1c17","name":"Abandoned Laboratory","level":9,"position":{"x":14,"y":12.3}}]},"quests":{"name":"Quests","order":2,"baseItem":{"id":"","name":"","level":0,"position":{"x":0,"y":0}},"items":[{"id":"6fec47f6-b379-4541-ab23-fe3d49de8117","name":"3","level":3,"position":{"x":13.5,"y":20.2}},{"id":"e82d8f09-aca2-4fee-9bc0-b76d586dd96d","name":"5","level":5,"position":{"x":24.4,"y":23.1}},{"id":"39099860-486d-45f8-ab41-0ffd2931ab6a","name":"13","level":13,"position":{"x":20.9,"y":13}},{"id":"7794d59b-8060-4fca-8abf-04c308ac6cca","name":"17a","level":17,"position":{"x":32.8,"y":18.3}},{"id":"2e755f4c-a2c6-494f-819a-95adf30fd54c","name":"17b","level":17,"position":{"x":25.5,"y":16.1}}]},"lockboxes":{"name":"Bunny Lockboxes","order":0,"baseItem":{"id":"","name":"","position":{"x":0,"y":0}},"items":[]},"misc":{"name":"Misc","order":0,"baseItem":{"id":"","name":"","level":0,"position":{"x":0,"y":0}},"items":[]}}
+{
+    "fates": {
+        "name": "FATEs",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "element": "",
+            "drops": [],
+            "weather": "",
+            "boss": {
+                "name": ""
+            }
+        },
+        "items": [
+            {
+                "id": "87be7b92-7fc7-4d1c-a7db-e5bad586ab87",
+                "name": "Unsafety Dance",
+                "level": 1,
+                "position": {
+                    "x": 14.1,
+                    "y": 21.8
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Sabotender Corrido"
+                }
+            },
+            {
+                "id": "3bcc5ab7-694f-4c49-bc4d-6a41dcd3c9a8",
+                "name": "The Shadow over Anemos",
+                "level": 2,
+                "position": {
+                    "x": 27.8,
+                    "y": 28.2
+                },
+                "element": "water",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "The Lord of Anemos"
+                }
+            },
+            {
+                "id": "a6d6fa7c-3153-447d-97f0-121c34cece29",
+                "name": "Teles House",
+                "level": 3,
+                "position": {
+                    "x": 26,
+                    "y": 26.8
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Teles"
+                }
+            },
+            {
+                "id": "45476998-181d-4abe-bcad-5ff7053f96f2",
+                "name": "The Swarm Never Sets",
+                "level": 4,
+                "position": {
+                    "x": 17.2,
+                    "y": 23.9
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "The Emperor of Anemos"
+                }
+            },
+            {
+                "id": "ca960bea-91c9-431f-a94d-180a80b27be4",
+                "name": "One Missed Callisto",
+                "level": 5,
+                "position": {
+                    "x": 27.8,
+                    "y": 23.3
+                },
+                "element": "earth",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Callisto"
+                }
+            },
+            {
+                "id": "e6b3ef2d-b09b-49b0-9b6a-49604e91eeb2",
+                "name": "By Numbers",
+                "level": 6,
+                "position": {
+                    "x": 23.2,
+                    "y": 22.7
+                },
+                "element": "lightning",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Number"
+                }
+            },
+            {
+                "id": "cf9d830b-f8f1-4ba0-b203-1df070223844",
+                "name": "Disinherit the Wind",
+                "level": 7,
+                "position": {
+                    "x": 19.1,
+                    "y": 19.6
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Jahannam"
+                }
+            },
+            {
+                "id": "30c0a8ec-081c-4e60-a45f-735e1542c0ab",
+                "name": "Prove Your Amemettle",
+                "level": 8,
+                "position": {
+                    "x": 14.7,
+                    "y": 15.9
+                },
+                "element": "fire",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Amemet"
+                }
+            },
+            {
+                "id": "b26d7dbf-7d6f-4c11-9386-8c7845fbbba6",
+                "name": "Caym What May",
+                "level": 9,
+                "position": {
+                    "x": 12.6,
+                    "y": 12.4
+                },
+                "element": "ice",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Caym"
+                }
+            },
+            {
+                "id": "bb1a1de7-690f-4703-943d-2b3386dfac31",
+                "name": "The Killing of a Sacred Bombadier",
+                "level": 10,
+                "position": {
+                    "x": 28.5,
+                    "y": 20.5
+                },
+                "element": "earth",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Bombadeel"
+                }
+            },
+            {
+                "id": "effcc0e3-d09f-4d46-a3b2-47f0305e143e",
+                "name": "Short Serket 2",
+                "level": 11,
+                "position": {
+                    "x": 24,
+                    "y": 20
+                },
+                "element": "earth",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Serket"
+                }
+            },
+            {
+                "id": "384fca33-8953-440e-b72e-e4184d82aec6",
+                "name": "Don't Judge Me, Morbol",
+                "level": 12,
+                "position": {
+                    "x": 22.2,
+                    "y": 14.9
+                },
+                "element": "ice",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Judgmental Julika"
+                }
+            },
+            {
+                "id": "9f995194-a1c0-4d97-ae94-7f31a43fa616",
+                "name": "When You Ride Alone",
+                "level": 13,
+                "position": {
+                    "x": 20,
+                    "y": 13.4
+                },
+                "element": "lightning",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "The White Rider"
+                }
+            },
+            {
+                "id": "d046d757-56b1-438d-9269-70f32c69a32d",
+                "name": "Sing, Muse",
+                "level": 14,
+                "position": {
+                    "x": 26.2,
+                    "y": 15
+                },
+                "element": "ice",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Polyphemus"
+                }
+            },
+            {
+                "id": "a151515c-b44e-4009-9609-c33891bb2907",
+                "name": "Simurghasbord",
+                "level": 15,
+                "position": {
+                    "x": 28.8,
+                    "y": 13.3
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Simurgh's Strider"
+                }
+            },
+            {
+                "id": "dd0a1536-e8f0-49e3-bc2a-85e4b3433cc3",
+                "name": "To the Mat",
+                "level": 16,
+                "position": {
+                    "x": 35.2,
+                    "y": 19.7
+                },
+                "element": "fire",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "King Hazmat"
+                }
+            },
+            {
+                "id": "6d0466b5-2d8d-4f83-b1b5-5b4871801b23",
+                "name": "Wine and Honey",
+                "level": 17,
+                "position": {
+                    "x": 34.6,
+                    "y": 21.9
+                },
+                "element": "fire",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Fafnir"
+                }
+            },
+            {
+                "id": "07b48f39-cefb-41dc-bcfe-bcf2b9cd582c",
+                "name": "I Amarok",
+                "level": 18,
+                "position": {
+                    "x": 8.2,
+                    "y": 17.9
+                },
+                "element": "ice",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Amarok"
+                }
+            },
+            {
+                "id": "a7f56787-4c1c-42b4-a67c-eb04849c92d1",
+                "name": "Drama Lamshtu",
+                "level": 19,
+                "position": {
+                    "x": 8.2,
+                    "y": 25.3
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "",
+                "boss": {
+                    "name": "Lamashtu"
+                }
+            },
+            {
+                "id": "b15bbfee-e288-4768-a734-cdf3b4ce0813",
+                "name": "Wail in the Willows",
+                "level": 20,
+                "position": {
+                    "x": 7.3,
+                    "y": 21.7
+                },
+                "element": "wind",
+                "drops": [],
+                "weather": "gales",
+                "boss": {
+                    "name": "Pazuzu"
+                }
+            }
+        ]
+    },
+    "monsters": {
+        "name": "Monsters",
+        "order": 9,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "element": null,
+            "adaptation": {
+                "canAdapt": false,
+                "conditions": []
+            },
+            "mutation": {
+                "canMutate": false,
+                "conditions": [],
+                "element": null
+            },
+            "aggro": null,
+            "ashkin": false,
+            "fate": {
+                "forFate": true,
+                "fateId": ""
+            }
+        },
+        "items": [
+            {
+                "id": "69767375-35ee-4b23-8a32-9e2351cfe129",
+                "name": "Val Revenant",
+                "level": 1,
+                "position": {
+                    "x": 15.8,
+                    "y": 29.9
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "27922a7a-74cc-4a4d-a8b2-cdd5bce61405",
+                "name": "Ignis Fatuus",
+                "level": 1,
+                "position": {
+                    "x": 16.1,
+                    "y": 30.6
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "7aa1f552-9572-4dfb-afc3-1c7418a8e8ea",
+                "name": "Anemossling",
+                "level": 1,
+                "position": {
+                    "x": 15.2,
+                    "y": 29.4
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "436641d2-b5de-42d4-b256-091309650113",
+                "name": "Squib",
+                "level": 1,
+                "position": {
+                    "x": 20.8,
+                    "y": 31.4
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "26aa0522-c061-498c-a757-6f88846e4273",
+                "name": "Wooly Woodchuck",
+                "level": 2,
+                "position": {
+                    "x": 20.5,
+                    "y": 30.5
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "fb27c9b5-70e9-4b8d-b610-8679c869de49",
+                "name": "Eurekan Screamer",
+                "level": 2,
+                "position": {
+                    "x": 13.5,
+                    "y": 27.4
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "34c61311-3944-4f85-9d3e-a901c776974a",
+                "name": "Sea Pugil",
+                "level": 2,
+                "position": {
+                    "x": 22.6,
+                    "y": 31.9
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "fab008a2-2c35-44ab-b1a9-60b2a2c69c6d",
+                "name": "Heartbroken Ochu",
+                "level": 3,
+                "position": {
+                    "x": 13.3,
+                    "y": 28.7
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "8a47b4e5-acb2-4930-ac1c-ed2a546d0c51",
+                "name": "Bezoar",
+                "level": 3,
+                "position": {
+                    "x": 12.6,
+                    "y": 29.5
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "ed9daeed-c7c4-4f20-8d4e-b0d373d69d59",
+                "name": "Lentic",
+                "level": 3,
+                "position": {
+                    "x": 13,
+                    "y": 27.8
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "2e4a56c3-917b-4ef9-8674-93e2e300d095",
+                "name": "Seaboard Angler",
+                "level": 3,
+                "position": {
+                    "x": 20.7,
+                    "y": 32.9
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "89298df4-4e05-4419-ac15-351bf2ba6602",
+                "name": "Valbol",
+                "level": 4,
+                "position": {
+                    "x": 13,
+                    "y": 26.7
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "c2e09918-eb9f-40e2-ade8-6d161f5f1303",
+                "name": "Skeleton Noble",
+                "level": 4,
+                "position": {
+                    "x": 15.1,
+                    "y": 28
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "299dda0c-bd09-485c-9c03-5be8d76419d3",
+                "name": "Vesper Bat",
+                "level": 4,
+                "position": {
+                    "x": 22.9,
+                    "y": 29.6
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "2ff22aa5-40a2-464c-977f-e28bee390650",
+                "name": "Seaboard Ogrebon",
+                "level": 4,
+                "position": {
+                    "x": 20.5,
+                    "y": 31.8
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "88e8e7e0-b165-4420-a129-abe3e5b47ba1",
+                "name": "Val Imp",
+                "level": 5,
+                "position": {
+                    "x": 12.9,
+                    "y": 24.2
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "b7bbec26-9750-4782-972c-ed5ef8206bee",
+                "name": "Xurble",
+                "level": 5,
+                "position": {
+                    "x": 15.9,
+                    "y": 25
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "30688cc0-0f23-483a-bcdb-fa5566a06a92",
+                "name": "Scape Leech",
+                "level": 5,
+                "position": {
+                    "x": 26.8,
+                    "y": 29.3
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "de4378e6-d688-4820-b4f6-166c74f7db60",
+                "name": "Red Bonnet",
+                "level": 6,
+                "position": {
+                    "x": 12.9,
+                    "y": 23.4
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "151540b9-84ca-45f5-b6b8-0f8be38aeac2",
+                "name": "Mana Bomb",
+                "level": 6,
+                "position": {
+                    "x": 12.7,
+                    "y": 22.7
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "f29b41b6-ff68-46f4-9cd6-53f8e2b4655c",
+                "name": "Flowering Sabotender",
+                "level": 6,
+                "position": {
+                    "x": 14.4,
+                    "y": 20.4
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "87be7b92-7fc7-4d1c-a7db-e5bad586ab87"
+                }
+            },
+            {
+                "id": "b159ab02-1c2c-4f8e-9d31-284d61906813",
+                "name": "Glade Wivre",
+                "level": 6,
+                "position": {
+                    "x": 26.9,
+                    "y": 28.5
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "97f09136-4fd5-41a7-95bb-b8a04c7cc79b",
+                "name": "Migratory Chapuli",
+                "level": 7,
+                "position": {
+                    "x": 28.3,
+                    "y": 26.5
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "42b4e28a-addf-41cc-82ba-c49cc6081958",
+                "name": "Irregular Plasmoid",
+                "level": 7,
+                "position": {
+                    "x": 28.2,
+                    "y": 27
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "84bab830-79bc-46e5-a972-f3e52596ea3f",
+                "name": "Sea Bishop",
+                "level": 7,
+                "position": {
+                    "x": 28.1,
+                    "y": 27.6
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "3bcc5ab7-694f-4c49-bc4d-6a41dcd3c9a8"
+                }
+            },
+            {
+                "id": "34416847-3873-4a56-86fe-2ef35e028d91",
+                "name": "Anemos Flan",
+                "level": 8,
+                "position": {
+                    "x": 26.7,
+                    "y": 24.8
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "12ed661e-fd2a-4fec-b2ba-33722d1de7c7",
+                "name": "Hybrid Hog",
+                "level": 8,
+                "position": {
+                    "x": 15.3,
+                    "y": 18.8
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "f75b29cc-e3e2-40b2-ade7-b89aa32df387",
+                "name": "Anemos Harpy",
+                "level": 8,
+                "position": {
+                    "x": 24.4,
+                    "y": 26.7
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "a6d6fa7c-3153-447d-97f0-121c34cece29"
+                }
+            },
+            {
+                "id": "f56aef2e-32f4-4023-92c7-a2415725221d",
+                "name": "Duskfall Bhoot",
+                "level": 8,
+                "position": {
+                    "x": 24.4,
+                    "y": 27.2
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "55dfd375-76f7-457b-98e5-496dbdc43b05",
+                "name": "Crystal Wolf",
+                "level": 9,
+                "position": {
+                    "x": 19.8,
+                    "y": 28.7
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "5cf73271-36c5-455e-932d-ad143db5b562",
+                "name": "Black Wolf",
+                "level": 9,
+                "position": {
+                    "x": 19.6,
+                    "y": 28.1
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "bae42ff4-ca76-48c7-a241-644dc6e7b417",
+                "name": "Mana Grenade",
+                "level": 9,
+                "position": {
+                    "x": 23.3,
+                    "y": 29
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "25e361fb-e7db-4a42-86fa-a360cbc31eb9",
+                "name": "Val Biast",
+                "level": 9,
+                "position": {
+                    "x": 22.6,
+                    "y": 24.5
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "93411664-7532-4269-8f9d-b0c4a1d87769",
+                "name": "Darner",
+                "level": 9,
+                "position": {
+                    "x": 16.3,
+                    "y": 22.4
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "45476998-181d-4abe-bcad-5ff7053f96f2"
+                }
+            },
+            {
+                "id": "788f51e1-bc0f-4ee5-ada7-c639670d3194",
+                "name": "Death Jacket",
+                "level": 10,
+                "position": {
+                    "x": 22.7,
+                    "y": 25
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "2cd5168f-ffde-461d-9021-1663cd02ede2",
+                "name": "Wild Baboulas",
+                "level": 10,
+                "position": {
+                    "x": 22.5,
+                    "y": 23.9
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "338fa044-3ced-4543-ba73-a44184a313f9",
+                "name": "Val Bear",
+                "level": 10,
+                "position": {
+                    "x": 25.9,
+                    "y": 22.1
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "ca960bea-91c9-431f-a94d-180a80b27be4"
+                }
+            },
+            {
+                "id": "bdf7f156-d472-449a-88d2-391af61c1fac",
+                "name": "Duskfall Skeleton",
+                "level": 10,
+                "position": {
+                    "x": 23.9,
+                    "y": 25.5
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "f670d493-9e95-488b-95e3-9b820796b38b",
+                "name": "Anemos Chaser",
+                "level": 11,
+                "position": {
+                    "x": 18.5,
+                    "y": 27.3
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "adcad8cb-3986-4ab7-8728-7196f8e354b6",
+                "name": "Leopard",
+                "level": 11,
+                "position": {
+                    "x": 19.7,
+                    "y": 26.7
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "bf013d82-f24f-444b-aade-1d04ae2ad836",
+                "name": "Pneumaflayer",
+                "level": 11,
+                "position": {
+                    "x": 22,
+                    "y": 23.3
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "e6b3ef2d-b09b-49b0-9b6a-49604e91eeb2"
+                }
+            },
+            {
+                "id": "713e3767-a1cf-45a7-9022-7ebaa0e61bf1",
+                "name": "Val Leshy",
+                "level": 12,
+                "position": {
+                    "x": 19,
+                    "y": 22.6
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "048de163-4b94-4f0a-acdb-6afab01b01e9",
+                "name": "Bigfoot",
+                "level": 12,
+                "position": {
+                    "x": 19.7,
+                    "y": 21.9
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "e41e9870-60a0-4d69-b206-ef832f012f50",
+                "name": "Abraxas",
+                "level": 13,
+                "position": {
+                    "x": 17.5,
+                    "y": 18.2
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "7f41845b-69d8-49c7-97a7-2d809772b488",
+                "name": "Ferromantoise",
+                "level": 13,
+                "position": {
+                    "x": 23.1,
+                    "y": 20.8
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "ceab1d0d-850c-4604-bd53-8f197020ef70",
+                "name": "Death Mask",
+                "level": 13,
+                "position": {
+                    "x": 29.4,
+                    "y": 23.8
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "d5502473-b2fa-4c24-8c6f-74113f2debe0",
+                "name": "Phobosuchus",
+                "level": 13,
+                "position": {
+                    "x": 29.5,
+                    "y": 23.1
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "97b3f7cf-a3d3-4e6e-a1f3-2f0d3c310522",
+                "name": "Stalker Ziz",
+                "level": 14,
+                "position": {
+                    "x": 14.9,
+                    "y": 17.7
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "b106461d-3720-44f6-a95d-74686321d462",
+                "name": "Duskfall Mummy",
+                "level": 14,
+                "position": {
+                    "x": 17.8,
+                    "y": 17
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "d26f4f97-a361-4d18-8888-5a744a529b77",
+                "name": "Spangencrab",
+                "level": 14,
+                "position": {
+                    "x": 29.4,
+                    "y": 21.4
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "3fb45177-3b3b-4884-877c-8b84e01c94ea",
+                "name": "Old Goobbue",
+                "level": 14,
+                "position": {
+                    "x": 29.2,
+                    "y": 20.9
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "89bb9f72-29c6-4bc5-8885-1c84b78d1915",
+                "name": "Gardenkeeper",
+                "level": 15,
+                "position": {
+                    "x": 13.4,
+                    "y": 15.2
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "1c91ef82-94b4-4716-9a13-9d45c4b0a217",
+                "name": "Quickwater Snake",
+                "level": 15,
+                "position": {
+                    "x": 12.6,
+                    "y": 14.8
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "af80b7cd-605e-4a4b-8875-8cc7c3985751",
+                "name": "Travelling Gourmand",
+                "level": 15,
+                "position": {
+                    "x": 27.2,
+                    "y": 19.6
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "bb1a1de7-690f-4703-943d-2b3386dfac31"
+                }
+            },
+            {
+                "id": "05121de3-92d1-49ab-a7b6-6026a10085b1",
+                "name": "Defroster",
+                "level": 15,
+                "position": {
+                    "x": 27.7,
+                    "y": 20.2
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "e0c2cde3-fe84-4c8e-8c51-a2a7c68b8e79",
+                "name": "Glacier Golem",
+                "level": 16,
+                "position": {
+                    "x": 18.1,
+                    "y": 14.7
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "92a1410d-96c6-4be3-8b6c-06be544cc2ab",
+                "name": "Vespid",
+                "level": 16,
+                "position": {
+                    "x": 22.5,
+                    "y": 18.5
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "f6accaa6-f6c5-4017-b72f-b76bd92d3dc0",
+                "name": "Khor Claw",
+                "level": 16,
+                "position": {
+                    "x": 23.6,
+                    "y": 19.6
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "effcc0e3-d09f-4d46-a3b2-47f0305e143e"
+                }
+            },
+            {
+                "id": "fca43896-c6aa-4aa7-b397-9dcccb8220dd",
+                "name": "Henbane",
+                "level": 17,
+                "position": {
+                    "x": 20.7,
+                    "y": 13.9
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "384fca33-8953-440e-b72e-e4184d82aec6"
+                }
+            },
+            {
+                "id": "af990f20-7fe7-4803-891e-758f54467b92",
+                "name": "Lynx",
+                "level": 17,
+                "position": {
+                    "x": 22.3,
+                    "y": 17.7
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "33a3900c-e1dd-4a9f-aab4-44e989076ac8",
+                "name": "Anemos Sanuwa",
+                "level": 17,
+                "position": {
+                    "x": 21.9,
+                    "y": 15.4
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "404c3720-b799-4d01-816e-af4855df1212",
+                "name": "Val Biloko",
+                "level": 18,
+                "position": {
+                    "x": 20.5,
+                    "y": 13.4
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "c11194b7-aebb-4356-9c87-e8ea591b456a",
+                "name": "Val Skatene",
+                "level": 18,
+                "position": {
+                    "x": 19,
+                    "y": 14.1
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "964b0dbe-0f98-425a-8ac6-5c0b4701df1c",
+                "name": "Anemos Gremlin",
+                "level": 18,
+                "position": {
+                    "x": 21.6,
+                    "y": 15.9
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "3f69041b-a9f9-4a47-ba5d-d672a5402a9e",
+                "name": "Duskfall Dullahan",
+                "level": 18,
+                "position": {
+                    "x": 19.3,
+                    "y": 13.4
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "9f995194-a1c0-4d97-ae94-7f31a43fa616"
+                }
+            },
+            {
+                "id": "14a23384-b11e-4b7b-810e-629770d2d506",
+                "name": "Shadow Wing",
+                "level": 19,
+                "position": {
+                    "x": 24.9,
+                    "y": 14.1
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "3f4e4421-cccb-41e1-b4bc-34556704e7cc",
+                "name": "Monoeye",
+                "level": 19,
+                "position": {
+                    "x": 26.4,
+                    "y": 15.2
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "d046d757-56b1-438d-9269-70f32c69a32d"
+                }
+            },
+            {
+                "id": "9637381e-2ab9-4949-bc1c-1c21c65c65b5",
+                "name": "Plantoid",
+                "level": 19,
+                "position": {
+                    "x": 26.4,
+                    "y": 14.6
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "7709f863-f35d-48df-ad29-7dbb7f11ae99",
+                "name": "Coffinkeep",
+                "level": 19,
+                "position": {
+                    "x": 28.1,
+                    "y": 16.7
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "6f948d15-3cd9-433f-9ddb-c879c178b6a5",
+                "name": "Dhalmel of Nightmares",
+                "level": 20,
+                "position": {
+                    "x": 27.5,
+                    "y": 12.9
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "ea88a0c5-d1c7-43ab-acf3-0b2650bab09b",
+                "name": "Eurekan Dahak",
+                "level": 20,
+                "position": {
+                    "x": 28.9,
+                    "y": 14.7
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "87ab59fb-9ca2-415b-8f7c-8b1477f0c585",
+                "name": "Old World Zu",
+                "level": 20,
+                "position": {
+                    "x": 27.7,
+                    "y": 12.1
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "a151515c-b44e-4009-9609-c33891bb2907"
+                }
+            },
+            {
+                "id": "06d17f97-e8de-46d6-b17e-d73801fbe2fb",
+                "name": "Rockfin",
+                "level": 21,
+                "position": {
+                    "x": 32.9,
+                    "y": 22.7
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "e65fac36-9868-43f0-9514-7951050e04eb",
+                "name": "Anemos Anala",
+                "level": 21,
+                "position": {
+                    "x": 32.5,
+                    "y": 20
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "dd0a1536-e8f0-49e3-bc2a-85e4b3433cc3"
+                }
+            },
+            {
+                "id": "aef856a7-43d5-4552-b151-090d04fa2680",
+                "name": "Magia Fan",
+                "level": 21,
+                "position": {
+                    "x": 31.8,
+                    "y": 17.5
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "1ebd521e-a685-40a0-a90c-5b3c51fe8d11",
+                "name": "Val Antlion",
+                "level": 22,
+                "position": {
+                    "x": 35.5,
+                    "y": 16.7
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "0f2db1ee-a08f-4b77-8c24-7541fd69f972",
+                "name": "Anemos Pegasus",
+                "level": 22,
+                "position": {
+                    "x": 34.9,
+                    "y": 15.8
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "b878c03b-7756-4e72-8109-650d5d83f56d",
+                "name": "Anemos Apa",
+                "level": 22,
+                "position": {
+                    "x": 32.6,
+                    "y": 19.4
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "913a3a23-0faa-4b62-91e1-86125134b68d",
+                "name": "Fossil Dragon",
+                "level": 22,
+                "position": {
+                    "x": 33.8,
+                    "y": 21.1
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "6d0466b5-2d8d-4f83-b1b5-5b4871801b23"
+                }
+            },
+            {
+                "id": "9af5de8b-d934-4389-9f24-c0607772a65f",
+                "name": "Mighty Craklaw",
+                "level": 23,
+                "position": {
+                    "x": 9.5,
+                    "y": 27.2
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "30b1d629-6b0a-47f5-9104-cf01fd439c8f",
+                "name": "Voidscale",
+                "level": 23,
+                "position": {
+                    "x": 8.2,
+                    "y": 18.7
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "07b48f39-cefb-41dc-bcfe-bcf2b9cd582c"
+                }
+            },
+            {
+                "id": "ce3bde7c-982e-4a32-8672-ebc8fdb1a308",
+                "name": "Guud Suud",
+                "level": 23,
+                "position": {
+                    "x": 8.3,
+                    "y": 25.1
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "75b1f3b0-8c16-4d52-9aea-cd6ca9393965",
+                "name": "Four-eyes",
+                "level": 23,
+                "position": {
+                    "x": 7.6,
+                    "y": 25.6
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "03d5b114-df21-4480-a273-c20cd3e521f3",
+                "name": "Bitoso Of The Isle",
+                "level": 24,
+                "position": {
+                    "x": 7.8,
+                    "y": 19.4
+                },
+                "element": "lightning",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "808c4230-f65e-423e-a396-8a4540b4622b",
+                "name": "Arioch Of The Isle",
+                "level": 24,
+                "position": {
+                    "x": 7.8,
+                    "y": 26.4
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "15e67f3c-f74e-4093-bf9e-47d2606c50c0",
+                "name": "Val Specter",
+                "level": 24,
+                "position": {
+                    "x": 8.8,
+                    "y": 19.9
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "0c01baf8-8db9-4668-8851-6a55bfdbaca8",
+                "name": "Zuniceratops",
+                "level": 24,
+                "position": {
+                    "x": 9.8,
+                    "y": 19.4
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "afaeb911-3b08-4dac-890f-80aa32d1c922",
+                "name": "Primelephas",
+                "level": 25,
+                "position": {
+                    "x": 9.7,
+                    "y": 20.8
+                },
+                "element": "earth",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "13831af9-c8d7-4fb2-963f-dfaeb85a2b7d",
+                "name": "Tangie",
+                "level": 25,
+                "position": {
+                    "x": 7.6,
+                    "y": 24.6
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "a77b17ef-15d7-42cd-9305-d3d0021d2b2f",
+                "name": "Shadow Wraith",
+                "level": 25,
+                "position": {
+                    "x": 8.7,
+                    "y": 20.5
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": "",
+                "ashkin": true,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "b15bbfee-e288-4768-a734-cdf3b4ce0813"
+                }
+            },
+            {
+                "id": "60704dd7-8fc2-472f-9c03-3dd4349a6b53",
+                "name": "Blizzard Sprite",
+                "level": 2,
+                "position": {
+                    "x": 22,
+                    "y": 32
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "c68339a2-5dec-4744-b34f-b78b679d7533",
+                "name": "Blizzard Sprite",
+                "level": 2,
+                "position": {
+                    "x": 15.4,
+                    "y": 29.2
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "c6e32145-a35a-4dce-b961-df4a6ca24f3e",
+                "name": "Blizzard Sprite",
+                "level": 10,
+                "position": {
+                    "x": 19.5,
+                    "y": 28.9
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "cc8e80c2-5e9d-4f16-8e8a-fc00c8be6a82",
+                "name": "Blizzard Sprite",
+                "level": 6,
+                "position": {
+                    "x": 13.4,
+                    "y": 24
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "2f6e1b6b-e4bc-4941-a492-52fc25226270",
+                "name": "Blizzard Sprite",
+                "level": 19,
+                "position": {
+                    "x": 19,
+                    "y": 24.8
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "0f9cccb6-705d-4632-9d29-5591fa391052",
+                "name": "Blizzard Sprite",
+                "level": 10,
+                "position": {
+                    "x": 24,
+                    "y": 24.4
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "85f0ab03-18c6-4623-98b1-6d0841cd6e4c",
+                "name": "Blizzard Sprite",
+                "level": 6,
+                "position": {
+                    "x": 25.9,
+                    "y": 28.1
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "018af00e-608e-4ebc-8acd-2471041f05d8",
+                "name": "Blizzard Sprite",
+                "level": 10,
+                "position": {
+                    "x": 25,
+                    "y": 21.7
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "ef17e3de-5cce-4244-ba06-9de7f14a8011",
+                "name": "Blizzard Sprite",
+                "level": 22,
+                "position": {
+                    "x": 34.6,
+                    "y": 21.5
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "e0e1fbda-d117-424d-8d5d-af2f130b020c",
+                "name": "Blizzard Sprite",
+                "level": 22,
+                "position": {
+                    "x": 34.3,
+                    "y": 15.1
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "320837ce-dcff-402b-8f63-6c5d31148576",
+                "name": "Blizzard Sprite",
+                "level": 20,
+                "position": {
+                    "x": 29.3,
+                    "y": 12.2
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "adf1769d-dd51-4349-ae29-534455f40f61",
+                "name": "Typhoon Sprite",
+                "level": 5,
+                "position": {
+                    "x": 25.5,
+                    "y": 30.8
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "388c896b-1c29-4f4d-9a6a-ab8a17c60deb",
+                "name": "Typhoon Sprite",
+                "level": 12,
+                "position": {
+                    "x": 19.1,
+                    "y": 27.1
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "dbf27f82-c6f7-4c1b-8ebe-10ac9c5830de",
+                "name": "Typhoon Sprite",
+                "level": 9,
+                "position": {
+                    "x": 17.1,
+                    "y": 22.8
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "07a0c06e-74b9-41b5-939d-4c2a22a08539",
+                "name": "Typhoon Sprite",
+                "level": 9,
+                "position": {
+                    "x": 17,
+                    "y": 19.1
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "cf9d830b-f8f1-4ba0-b203-1df070223844"
+                }
+            },
+            {
+                "id": "bb424f13-0379-43c1-aa4a-9c0ea4fb880b",
+                "name": "Typhoon Sprite",
+                "level": 12,
+                "position": {
+                    "x": 20.4,
+                    "y": 19.6
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "bf8b5001-c768-4531-97cc-31f8a18c80b9",
+                "name": "Typhoon Sprite",
+                "level": 15,
+                "position": {
+                    "x": 29.5,
+                    "y": 20.2
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "3ac4de1c-48ec-449d-8dfd-5eeeb96eedff",
+                "name": "Typhoon Sprite",
+                "level": 21,
+                "position": {
+                    "x": 32.9,
+                    "y": 21.7
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "e5a1021d-bb97-45fc-8cfd-354796f6355e",
+                "name": "Typhoon Sprite",
+                "level": 13,
+                "position": {
+                    "x": 30.8,
+                    "y": 24.2
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "558ae180-02e8-4b33-a5fa-cb44978d3c99",
+                "name": "Typhoon Sprite",
+                "level": 23,
+                "position": {
+                    "x": 11.5,
+                    "y": 27.5
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "5bfe2814-4820-4865-8285-c1f2eed07bb0",
+                "name": "Typhoon Sprite",
+                "level": 25,
+                "position": {
+                    "x": 8.6,
+                    "y": 23.5
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "ff5246e0-8945-41dd-9e17-5b5e787c0484",
+                "name": "Typhoon Sprite",
+                "level": 23,
+                "position": {
+                    "x": 9.2,
+                    "y": 18.8
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "48b3ae38-a5e9-4959-9cda-47782ebde499",
+                "name": "Typhoon Sprite",
+                "level": 15,
+                "position": {
+                    "x": 14.9,
+                    "y": 12.6
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "2f8ef068-ff10-44de-b60d-7bc7b745f63f",
+                "name": "Typhoon Sprite",
+                "level": 19,
+                "position": {
+                    "x": 25.6,
+                    "y": 14.7
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "358df2bd-7c6c-4dc8-9b51-2f0f30c0d7c6",
+                "name": "Typhoon Sprite",
+                "level": 19,
+                "position": {
+                    "x": 29.9,
+                    "y": 17.1
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "07780391-5469-4c5d-9c2f-1f47f6aa3d7a",
+                "name": "Typhoon Sprite",
+                "level": 21,
+                "position": {
+                    "x": 32.5,
+                    "y": 16.4
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "c3ff0513-93da-4291-81ce-502468a8613a",
+                "name": "Rain Sprite",
+                "level": 9,
+                "position": {
+                    "x": 23.3,
+                    "y": 29
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "842680e5-bbdb-40cc-bb96-910d6b1ff7e0",
+                "name": "Rain Sprite",
+                "level": 7,
+                "position": {
+                    "x": 29.5,
+                    "y": 26.6
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "92e2e788-dc6d-4d17-a121-9a9359d5c9d4",
+                "name": "Rain Sprite",
+                "level": 9,
+                "position": {
+                    "x": 24.2,
+                    "y": 25.5
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "b236cc33-ad07-40d6-bbf7-1e92a16a5a66",
+                "name": "Rain Sprite",
+                "level": 9,
+                "position": {
+                    "x": 27,
+                    "y": 24.3
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "d8854ff9-09ec-49d1-9a4c-b8e5461ecb26",
+                "name": "Rain Sprite",
+                "level": 16,
+                "position": {
+                    "x": 20.8,
+                    "y": 19.3
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "254a8046-7441-4eaf-a0bb-d6f670699c4f",
+                "name": "Rain Sprite",
+                "level": 17,
+                "position": {
+                    "x": 22.4,
+                    "y": 17.7
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "4bcbae9a-d1aa-4321-948e-b37e89c2542b",
+                "name": "Rain Sprite",
+                "level": 18,
+                "position": {
+                    "x": 22,
+                    "y": 13
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "5575b9a7-db61-43c1-bb4e-03b16c804706",
+                "name": "Rain Sprite",
+                "level": 16,
+                "position": {
+                    "x": 17.8,
+                    "y": 15.1
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "7533601f-d1bc-4d3b-a434-297b15b3fe1c",
+                "name": "Rain Sprite",
+                "level": 11,
+                "position": {
+                    "x": 21.9,
+                    "y": 27.3
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "3c3bffc4-f0c8-47a1-9379-4500e72fe0f4",
+                "name": "Rain Sprite",
+                "level": 24,
+                "position": {
+                    "x": 10.2,
+                    "y": 25.2
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "0c4f54cd-28b3-460c-92e4-6b1c4bf411e2",
+                "name": "Rain Sprite",
+                "level": 24,
+                "position": {
+                    "x": 10.7,
+                    "y": 21
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "a6014452-d32b-4512-8781-7002d3db0b4b",
+                "name": "Rain Sprite",
+                "level": 13,
+                "position": {
+                    "x": 14.7,
+                    "y": 16.6
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "f9dfb743-5ef5-470a-ad15-f92a2c01712f",
+                "name": "Rain Sprite",
+                "level": 7,
+                "position": {
+                    "x": 13.1,
+                    "y": 21.4
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "b00c73ac-4837-495f-afb5-ad0c9d766ad0",
+                "name": "Rain Sprite",
+                "level": 14,
+                "position": {
+                    "x": 12.2,
+                    "y": 14.7
+                },
+                "element": "water",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                }
+            },
+            {
+                "id": "52c8792f-b0f3-4a78-87b6-bda5a89faf38",
+                "name": "Val Spectre",
+                "level": 24,
+                "position": {
+                    "x": 6.8,
+                    "y": 25.2
+                },
+                "element": "wind",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": true,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "a7f56787-4c1c-42b4-a67c-eb04849c92d1"
+                }
+            },
+            {
+                "id": "db82f36c-75a9-479f-8898-62d1711d042f",
+                "name": "Stalker Ziz",
+                "level": 14,
+                "position": {
+                    "x": 12.9,
+                    "y": 13.2
+                },
+                "element": "ice",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "b26d7dbf-7d6f-4c11-9386-8c7845fbbba6"
+                }
+            },
+            {
+                "id": "134987e9-7cfd-4b80-9db6-fbac046f8215",
+                "name": "Abraxas",
+                "level": 13,
+                "position": {
+                    "x": 14.6,
+                    "y": 16.3
+                },
+                "element": "fire",
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "ashkin": false,
+                "fate": {
+                    "forFate": true,
+                    "fateId": "30c0a8ec-081c-4e60-a45f-735e1542c0ab"
+                }
+            }
+        ]
+    },
+    "elementals": {
+        "name": "Eureka Elementals",
+        "order": 1,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "aethernet": {
+        "name": "Aethernet",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": [
+            {
+                "id": "5f10c6e4-c1b4-4240-8e80-f32dd814e5e4",
+                "name": "Port Surgate",
+                "level": 1,
+                "position": {
+                    "x": 18.7,
+                    "y": 32.4
+                }
+            },
+            {
+                "id": "7082525e-6fd7-4798-8ef0-b93a2f182fb8",
+                "name": "Windtorn Cabin",
+                "level": 9,
+                "position": {
+                    "x": 30.2,
+                    "y": 20.5
+                }
+            },
+            {
+                "id": "516e73d1-7797-4f22-8f13-4d034dce1c17",
+                "name": "Abandoned Laboratory",
+                "level": 9,
+                "position": {
+                    "x": 14,
+                    "y": 12.3
+                }
+            }
+        ]
+    },
+    "quests": {
+        "name": "Quests",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": [
+            {
+                "id": "6fec47f6-b379-4541-ab23-fe3d49de8117",
+                "name": "3",
+                "level": 3,
+                "position": {
+                    "x": 13.5,
+                    "y": 20.2
+                }
+            },
+            {
+                "id": "e82d8f09-aca2-4fee-9bc0-b76d586dd96d",
+                "name": "5",
+                "level": 5,
+                "position": {
+                    "x": 24.4,
+                    "y": 23.1
+                }
+            },
+            {
+                "id": "39099860-486d-45f8-ab41-0ffd2931ab6a",
+                "name": "13",
+                "level": 13,
+                "position": {
+                    "x": 20.9,
+                    "y": 13
+                }
+            },
+            {
+                "id": "7794d59b-8060-4fca-8abf-04c308ac6cca",
+                "name": "17a",
+                "level": 17,
+                "position": {
+                    "x": 32.8,
+                    "y": 18.3
+                }
+            },
+            {
+                "id": "2e755f4c-a2c6-494f-819a-95adf30fd54c",
+                "name": "17b",
+                "level": 17,
+                "position": {
+                    "x": 25.5,
+                    "y": 16.1
+                }
+            }
+        ]
+    },
+    "lockboxes": {
+        "name": "Bunny Lockboxes",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "misc": {
+        "name": "Misc",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    }
+}
