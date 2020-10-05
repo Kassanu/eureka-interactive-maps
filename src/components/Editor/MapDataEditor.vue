@@ -96,7 +96,7 @@
             },
             saveJson() {
                 let a = document.createElement("a");
-                let file = new Blob([JSON.stringify(this.jsonData)], {type: 'application/json'});
+                let file = new Blob([JSON.stringify(this.jsonData, null, 4)], {type: 'application/json'});
                 a.href = URL.createObjectURL(file);
                 a.download = `${this.mapName}.json`;
                 a.click();
