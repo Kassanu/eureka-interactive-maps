@@ -124,6 +124,9 @@
                                         case 'lockboxes':
                                             itemObj.icons.push({ image: this.icons.lock })
                                             break;
+                                        default:
+                                            itemObj.icons.push({ image: this.icons.noelement })
+                                            break;
                                     }
 
                                     pos.push(itemObj)

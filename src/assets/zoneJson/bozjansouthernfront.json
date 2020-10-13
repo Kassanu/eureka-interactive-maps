@@ -1,7 +1,591 @@
 {
-    "misc": {
-        "name": "Misc",
-        "order": 0,
+    "engagements": {
+        "name": "Critical Engagements",
+        "order": 11,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "participants": 0,
+            "drops": [],
+            "boss": {
+                "name": ""
+            }
+        },
+        "items": [
+            {
+                "id": "6f856f96-d516-4932-a36d-7fe06070949a",
+                "name": "The Baying of the Hound(s)",
+                "level": 1,
+                "position": {
+                    "x": 22,
+                    "y": 28.6
+                },
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "2d094f75-dbf5-493f-a96b-01d956be2ab1",
+                "name": "Vigil for the Lost",
+                "level": 1,
+                "position": {
+                    "x": 28,
+                    "y": 29.5
+                },
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "28c7ca10-9645-4ea1-b162-9d8399f2f6a0",
+                "name": "Aces High",
+                "level": 1,
+                "position": {
+                    "x": 31.5,
+                    "y": 26.7
+                },
+                "participants": 1,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "dbb14450-772c-46f9-b712-b9018fcb42a2",
+                "name": "The Shadow of Death's Hand",
+                "level": 1,
+                "position": {
+                    "x": 35.4,
+                    "y": 25.8
+                },
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "04dff65f-3716-43d1-91e6-b6545ad9202f",
+                "name": "Kill if with Fire",
+                "level": 1,
+                "position": {
+                    "x": 17.1,
+                    "y": 27
+                },
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            }
+        ]
+    },
+    "skirmishes": {
+        "name": "Skirmishes",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "drops": [],
+            "boss": {
+                "name": ""
+            }
+        },
+        "items": [
+            {
+                "id": "a7e77b5d-14a5-4686-8b47-180c4695b2b5",
+                "name": "None of Them Knew They Were Robots",
+                "level": 1,
+                "position": {
+                    "x": 24.4,
+                    "y": 27.6
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "f0f5531d-999f-43f7-9171-21e9b1ba93ed",
+                "name": "Seeq and Destroy",
+                "level": 1,
+                "position": {
+                    "x": 28.6,
+                    "y": 26.2
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "69d572b8-1682-4141-8623-3bbb48737efd",
+                "name": "Can Carnivorous Plants Bloom Even on a Battlefield?",
+                "level": 1,
+                "position": {
+                    "x": 33.6,
+                    "y": 29.3
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "2ab18753-a433-4649-9f9a-1cc73eac4334",
+                "name": "Brought to Heal",
+                "level": 1,
+                "position": {
+                    "x": 28.3,
+                    "y": 26.4
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "b63e850f-10aa-43e1-98c6-2942bf28a2a5",
+                "name": "Unrest for the Wicked",
+                "level": 1,
+                "position": {
+                    "x": 24.5,
+                    "y": 27.5
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "701da551-51b4-4447-9be1-1990af101774",
+                "name": "More Machine Now than Man",
+                "level": 1,
+                "position": {
+                    "x": 27.8,
+                    "y": 29.3
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "debeb8cc-64d7-4475-b1d3-b6bf9300f0fb",
+                "name": "Conflicting with the First Law",
+                "level": 1,
+                "position": {
+                    "x": 33.6,
+                    "y": 29.4
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "fd2fe868-83f6-4c3e-9743-896e2a9a4341",
+                "name": "The Beasts Must Die",
+                "level": 1,
+                "position": {
+                    "x": 20.2,
+                    "y": 26.9
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "074e37ef-e316-4e13-9d54-e2560248ef9b",
+                "name": "All Pets Are Off",
+                "level": 1,
+                "position": {
+                    "x": 17.3,
+                    "y": 26.7
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "14f52f3b-d12d-4f74-a7d4-61d1210374e4",
+                "name": "Sneak & Spell",
+                "level": 1,
+                "position": {
+                    "x": 20.1,
+                    "y": 26.9
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "f3bbdfa4-432b-4542-9ba6-7e660ec06183",
+                "name": "Scavengers of Human Sorrow",
+                "level": 5,
+                "position": {
+                    "x": 25.3,
+                    "y": 22.8
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "6c693117-ce3e-4a5f-89be-6aef2ec2ee0d",
+                "name": "Help Wanted",
+                "level": 5,
+                "position": {
+                    "x": 18.1,
+                    "y": 20.9
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "a6bda95c-ef76-432b-8a64-496c0250904a",
+                "name": "Pyromancer Supreme",
+                "level": 4,
+                "position": {
+                    "x": 18.1,
+                    "y": 20.9
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "8c15c907-a432-4447-a8f4-1eb6274b2960",
+                "name": "Heavy Boots of Lead",
+                "level": 5,
+                "position": {
+                    "x": 30.6,
+                    "y": 23.3
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "3ffb302e-77e1-44f3-97f8-0ba3b03743d5",
+                "name": "The Monster Mash",
+                "level": 5,
+                "position": {
+                    "x": 30.6,
+                    "y": 23.3
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "21c0d479-f797-4702-81cc-b96b64ff8f05",
+                "name": "The Element of Supplies",
+                "level": 5,
+                "position": {
+                    "x": 17.6,
+                    "y": 23.4
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            }
+        ]
+    },
+    "enemies": {
+        "name": "Enemies",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "ashkin": false,
+            "drops": []
+        },
+        "items": [
+            {
+                "id": "15592f7b-3970-46d5-a6ac-3beaa5e79a29",
+                "name": "Bozjan Nepenthes",
+                "level": 1,
+                "position": {
+                    "x": 16.2,
+                    "y": 28
+                },
+                "drops": []
+            },
+            {
+                "id": "cdbb6219-7dc9-4c13-8532-f6e4a96b9955",
+                "name": "Bozjan Orobon",
+                "level": 1,
+                "position": {
+                    "x": 17.9,
+                    "y": 28.5
+                },
+                "drops": []
+            },
+            {
+                "id": "9d37b614-2642-44b2-896e-64185a4826b3",
+                "name": "4th Legion Roader",
+                "level": 3,
+                "position": {
+                    "x": 19,
+                    "y": 26.5
+                },
+                "drops": []
+            },
+            {
+                "id": "a7360056-1917-4f5c-b8e9-477534079166",
+                "name": "4th Legion Nimrod",
+                "level": 2,
+                "position": {
+                    "x": 19,
+                    "y": 26.5
+                },
+                "drops": []
+            },
+            {
+                "id": "e9e95852-5548-4d54-b9db-a5f2ca5267b0",
+                "name": "4th Legion Slasher",
+                "level": 1,
+                "position": {
+                    "x": 19,
+                    "y": 26.5
+                },
+                "drops": []
+            },
+            {
+                "id": "2be6d523-3d13-40c5-9da5-0152c2014364",
+                "name": "4th Legion Death Claw",
+                "level": 3,
+                "position": {
+                    "x": 19,
+                    "y": 26.5
+                },
+                "drops": []
+            },
+            {
+                "id": "0abac2a8-9675-427f-9ffa-46ce340190c4",
+                "name": "Bozjan Mudpuppy",
+                "level": 2,
+                "position": {
+                    "x": 21.6,
+                    "y": 29.6
+                },
+                "drops": []
+            },
+            {
+                "id": "f23de491-7879-4466-8605-08ccb4696cf5",
+                "name": "Tideborn Angel",
+                "level": 0,
+                "position": {
+                    "x": 20.4,
+                    "y": 29.6
+                },
+                "drops": []
+            },
+            {
+                "id": "035f507a-c704-4b07-af7d-5cab60aea52c",
+                "name": "Bozjan Korrigan",
+                "level": 2,
+                "position": {
+                    "x": 21.5,
+                    "y": 27
+                },
+                "drops": []
+            },
+            {
+                "id": "9610a645-9365-43c2-a287-f65d49874586",
+                "name": "Bozjan Matamata",
+                "level": 3,
+                "position": {
+                    "x": 31.3,
+                    "y": 26.8
+                },
+                "drops": []
+            },
+            {
+                "id": "0aa3610f-f5b9-4055-bcf5-d8548e9a03d7",
+                "name": "Ink Claw",
+                "level": 0,
+                "position": {
+                    "x": 35,
+                    "y": 27.3
+                },
+                "drops": []
+            },
+            {
+                "id": "f6415c10-ebf5-488b-a9be-5a68774d8786",
+                "name": "Fern Flower",
+                "level": 0,
+                "position": {
+                    "x": 26,
+                    "y": 25
+                },
+                "drops": []
+            },
+            {
+                "id": "28d1fd33-f290-4ad6-8bf0-ba23f8280d6f",
+                "name": "Bozjan Doblyn",
+                "level": 1,
+                "position": {
+                    "x": 28.5,
+                    "y": 21.5
+                },
+                "drops": []
+            },
+            {
+                "id": "52588d34-a851-4459-ac3d-747c7f558258",
+                "name": "4th Legion Vanguard",
+                "level": 1,
+                "position": {
+                    "x": 25.4,
+                    "y": 22.5
+                },
+                "drops": []
+            },
+            {
+                "id": "6d2ca070-a5aa-450a-a9dd-87dfc7f87864",
+                "name": "4th Legion Avenger",
+                "level": 2,
+                "position": {
+                    "x": 25.4,
+                    "y": 22.5
+                },
+                "drops": []
+            },
+            {
+                "id": "cc250b7d-6c3c-49dd-89a3-d5bbb21bb83a",
+                "name": "4th Legion Gunship",
+                "level": 3,
+                "position": {
+                    "x": 25.4,
+                    "y": 22.5
+                },
+                "drops": []
+            },
+            {
+                "id": "d673669f-192d-4f53-84b2-880eff8b3f02",
+                "name": "Bozjan Bandersnatch",
+                "level": 4,
+                "position": {
+                    "x": 23.7,
+                    "y": 23.5
+                },
+                "drops": []
+            },
+            {
+                "id": "e08016ba-a099-4c31-b60f-636448388679",
+                "name": "Bozjan Antlion",
+                "level": 3,
+                "position": {
+                    "x": 22.5,
+                    "y": 21.5
+                },
+                "drops": []
+            },
+            {
+                "id": "7ef598df-0240-4653-b77c-f2e01171651b",
+                "name": "Bozjan Worm",
+                "level": 3,
+                "position": {
+                    "x": 25.6,
+                    "y": 21.3
+                },
+                "drops": []
+            },
+            {
+                "id": "71c93d96-d709-41ad-a821-b501247c69f8",
+                "name": "Lightning Sprites",
+                "level": 3,
+                "position": {
+                    "x": 27,
+                    "y": 22.8
+                },
+                "drops": []
+            },
+            {
+                "id": "ca5f5ca2-a19a-4749-8d44-c24b9b24e8b1",
+                "name": "Ivy",
+                "level": 0,
+                "position": {
+                    "x": 28.3,
+                    "y": 19.9
+                },
+                "drops": []
+            },
+            {
+                "id": "5996911a-e60b-48b2-91e4-0939f87d39a8",
+                "name": "Bozjan Tormentor",
+                "level": 2,
+                "position": {
+                    "x": 28.2,
+                    "y": 17.8
+                },
+                "drops": []
+            },
+            {
+                "id": "99b2ab38-927a-4cbd-9076-9b2261e4bbde",
+                "name": "Psoglav",
+                "level": 0,
+                "position": {
+                    "x": 32.8,
+                    "y": 18.1
+                },
+                "drops": []
+            },
+            {
+                "id": "9a8c7130-bd9a-4b55-99b6-9ffd0c3c1b58",
+                "name": "Red Chocobo",
+                "level": 2,
+                "position": {
+                    "x": 28.8,
+                    "y": 17.4
+                },
+                "drops": []
+            },
+            {
+                "id": "2189feb6-9714-4914-960e-ec5e165a967c",
+                "name": "Bozjan Sabotender",
+                "level": 1,
+                "position": {
+                    "x": 29.5,
+                    "y": 18.4
+                },
+                "drops": []
+            }
+        ]
+    },
+    "aethernet": {
+        "name": "Aethernet",
+        "order": 2,
         "baseItem": {
             "id": "",
             "name": "",
@@ -11,6 +595,25 @@
                 "y": 0
             }
         },
-        "items": []
+        "items": [
+            {
+                "id": "0726da05-a47f-4e95-aa96-a8706958a797",
+                "name": "Utya's Aegis",
+                "level": 1,
+                "position": {
+                    "x": 14.9,
+                    "y": 29.9
+                }
+            },
+            {
+                "id": "b41d7523-5c19-4489-9fb6-f7b20a430bed",
+                "name": "Olana's Stand",
+                "level": 5,
+                "position": {
+                    "x": 28.6,
+                    "y": 23.6
+                }
+            }
+        ]
     }
 }

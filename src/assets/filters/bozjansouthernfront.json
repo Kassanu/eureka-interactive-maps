@@ -5,8 +5,23 @@
     },
     "element": "",
     "sections": {
-        "misc": {
-            "name": "Misc",
+        "engagements": {
+            "name": "Critical Engagements",
+            "enabled": true,
+            "filters": {}
+        },
+        "skirmishes": {
+            "name": "Skirmishes",
+            "enabled": true,
+            "filters": {}
+        },
+        "enemies": {
+            "name": "Enemies",
+            "enabled": true,
+            "filters": {}
+        },
+        "aethernet": {
+            "name": "Aethernet",
             "enabled": true,
             "filters": {}
         }

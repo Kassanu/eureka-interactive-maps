@@ -18,7 +18,7 @@
                 {{clickedItemLabel}}
             </template>
             <template v-slot:content>
-                <component :is="clickedItemComponent" :item="clickedItemSourceItem" :fates="jsonData.fates.items" :monsters="jsonData.monsters.items"></component>
+                <component :is="clickedItemComponent" :item="clickedItemSourceItem" v-bind="itemComponentProps"></component>
             </template>
         </item-information>
     </div>
@@ -139,6 +139,9 @@
                             icons += `<img title="Adapts" src="${this.icons.adaptation.path}" />`
                         }
                         break
+                    default:
+                        icons = `<img title="FATE" src="${this.icons.noelement.path}" />`
+                        break
                 }
 
                 return icons
@@ -149,17 +152,14 @@
                 }
                 let label = ''
                 switch (this.clickedItem.key) {
-                    case 'fates':
-                    case 'monsters':
-                    case 'quests':
-                    case 'aethernet':
-                        label = this.clickedItemSourceItem.name
-                        break
                     case 'elementals':
                         label = `Eurekan Elementals`
                         break
                     case 'lockboxes':
                         label = `Bunny Lockboxes`
+                        break
+                    default:
+                        label = this.clickedItemSourceItem.name
                         break
                 }
 
@@ -183,6 +183,26 @@
                 }
 
                 return component
+            },
+            itemComponentProps() {
+                if (this.clickedItem === false) {
+                    return {}
+                }
+                let props = {}
+                switch (this.clickedItem.key) {
+                    case 'monsters':
+                        props = {
+                            fates: this.jsonData.fates.items
+                        }
+                        break
+                    case 'fates':
+                        props = {
+                            monsters: this.jsonData.monsters.items
+                        }
+                        break
+                }
+
+                return props
             },
             positions() {
                 const pos = []
@@ -228,6 +248,9 @@
                                             break;
                                         case 'lockboxes':
                                             itemObj.icons.push({ image: this.icons.lock.image })
+                                            break;
+                                        default:
+                                            itemObj.icons.push({ image: this.icons.noelement.image })
                                             break;
                                     }
 

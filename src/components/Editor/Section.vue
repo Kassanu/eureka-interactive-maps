@@ -26,6 +26,7 @@
 </template>
 
 <script>
+    import Generic from './SectionItems/Generic'
     import Monster from './SectionItems/Monster'
     import Quest from './SectionItems/Quest'
     import Aetheryte from './SectionItems/Aetheryte'
@@ -36,6 +37,7 @@
     export default {
         name: 'Section',
         components: {
+            Generic,
             Monster,
             Quest,
             Aetheryte,
@@ -106,6 +108,9 @@
                         break;
                     case 'lockboxes':
                         componentName = 'Lockbox'
+                        break;
+                    default:
+                        componentName = 'Generic'
                         break;
                 }
                 return componentName
