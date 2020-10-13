@@ -5,7 +5,7 @@
         </label>
         <div v-for="(position, index) in cPositions" :key="index" class="flex flex-wrap -mx-3">
             <div class="w-full inline-flex md:w-1/3 px-3 mb-6 md:mb-0">
-                <input :value="formatedPosition(position)" @change="updatePosition($evt, index)"
+                <input :value="formatedPosition(position)" @change="updatePosition($event, index)"
                     class="px-2 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
                     :class="borderClass(index)" type="text"
                     placeholder="(X, Y)">
@@ -59,7 +59,7 @@
                 const matches = evt.target.value.match(coordRegex)
                 if (matches) {
                     this.positionError[index] = false
-                    let newPositions = Object.assign({}, this.cPositions)
+                    let newPositions = this.cPositions
                     newPositions[index] = {
                         x: matches[1].includes('.') ? parseFloat(matches[1]) : parseInt(matches[1]),
                         y: matches[2].includes('.') ? parseFloat(matches[2]) : parseInt(matches[2]),
