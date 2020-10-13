@@ -46,20 +46,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                            Position
-                        </label>
-                        <div class="inline-flex">
-                            <input :value="formatedPosition" @change="updatePosition"
-                                class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
-                                :class="{'border-gray-400': !positionError, 'border-red-400': positionError}"
-                                type="text" placeholder="(X, Y)">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 rounded-r">
-                                <font-awesome-icon @click="setItemPosition" icon="plus" class="cursor-pointer" />
-                            </button>
-                        </div>
-                    </div>
+                    <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="false" class="w-full md:w-1/3 px-3 mb-6 md:mb-0"></Positions>
                 </div>
 
                 <div class="flex flex-wrap -mx-3 mb-2">
@@ -83,8 +70,7 @@
                             Ashkin
                         </label>
                         <input :checked="item.ashkin" @input="updateAshkin"
-                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
-                            :class="{'border-gray-400': !positionError, 'border-red-400': positionError}"
+                            class="px-2 py-1 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
                             type="checkbox">
                     </div>
                 </div>
@@ -95,8 +81,7 @@
                             Mutation
                         </label>
                         <input :checked="item.mutation.canMutate" @input="updateMutation"
-                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
-                            :class="{'border-gray-400': !positionError, 'border-red-400': positionError}"
+                            class="px-2 py-1 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
                             type="checkbox">
                     </div>
                     <div v-if="item.mutation.canMutate" class="w-full md:w-1/3 px-3 mb-6 md:mb-0 bg-blue-100">
@@ -132,8 +117,7 @@
                             Adaptation
                         </label>
                         <input :checked="item.adaptation.canAdapt" @input="updateAdaptation"
-                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
-                            :class="{'border-gray-400': !positionError, 'border-red-400': positionError}"
+                            class="px-2 py-1 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
                             type="checkbox">
                     </div>
                     <div v-if="item.adaptation.canAdapt" class="w-full md:w-1/3 px-3 mb-6 md:mb-0 bg-green-100">
@@ -155,8 +139,7 @@
                             Fate
                         </label>
                         <input :checked="item.fate.forFate" @input="updateFate"
-                            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
-                            :class="{'border-gray-400': !positionError, 'border-red-400': positionError}"
+                            class="px-2 py-1 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
                             type="checkbox">
                     </div>
                     <div v-show="item.fate.forFate" class="w-full md:w-1/2 px-3">
@@ -179,10 +162,15 @@
     import SectionItem from './SectionItem'
     import MutationAdaptionConditions from './MutationAdaptionConditions'
     import SectionItemMixin from './sectionitem.mixin'
+    import Positions from './Positions'
 
     export default {
         name: 'Monster',
-        components: { SectionItem, MutationAdaptionConditions },
+        components: {
+            SectionItem,
+            MutationAdaptionConditions,
+            Positions
+        },
         mixins: [SectionItemMixin],
         props: {
             item: {
@@ -200,14 +188,6 @@
             fates: {
                 type: Array,
                 required: true
-            }
-        },
-        methods: {
-            setItemPosition() {
-                this.$emit('setItemPosition', {
-                    section: this.sectionKey,
-                    id: this.item.id
-                })
             }
         }
     }

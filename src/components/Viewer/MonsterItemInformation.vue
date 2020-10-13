@@ -7,7 +7,7 @@
             <span class="font-bold">Element:</span> {{ element }}
         </div>
         <div>
-            <span class="font-bold">Coordinates:</span> ({{ item.position.x }}, {{ item.position.y }})
+            <Coordinates :positions="item.position"></Coordinates>
         </div>
         <div v-if="item.fate.forFate">
             <span class="font-bold">Spawns Fate:</span> {{ fate }}
@@ -25,9 +25,13 @@
 </template>
 
 <script>
+    import Coordinates from './ItemInformation/Coordinates'
 
     export default {
         name: 'monster-item-information',
+        components: {
+            Coordinates
+        },
         props: {
             item: {
                 type: Object,

@@ -7,7 +7,7 @@
             <span class="font-bold">Element:</span> {{ element }}
         </div>
         <div>
-            <span class="font-bold">Coordinates:</span> ({{ item.position.x }}, {{ item.position.y }})
+            <Coordinates :positions="item.position"></Coordinates>
         </div>
         <div v-if="item.boss">
             <span class="font-bold">Boss:</span> {{ item.boss.name }}
@@ -22,9 +22,13 @@
 </template>
 
 <script>
+    import Coordinates from './ItemInformation/Coordinates'
 
     export default {
         name: 'fate-item-information',
+        components: {
+            Coordinates
+        },
         props: {
             item: {
                 type: Object,
