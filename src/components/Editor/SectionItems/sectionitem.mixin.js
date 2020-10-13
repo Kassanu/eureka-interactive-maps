@@ -1,13 +1,5 @@
 export default {
-    data() {
-        return {
-            positionError: false
-        }
-    },
     computed: {
-        formatedPosition() {
-            return `(${this.item.position.x}, ${this.item.position.y})`
-        },
         expanded() {
             if (this.jsonDataShow.hasOwnProperty(this.item.id) && this.jsonDataShow[this.item.id].hasOwnProperty('expanded')) {
                 return this.jsonDataShow[this.item.id].expanded
@@ -39,20 +31,29 @@ export default {
 
             this.$emit('updateItem', this.sectionKey, newItem)
         },
-        updatePosition: function (evt) {
-            const coordRegex = /^\(?(\d+\.{0,1}\d{0,1}),\s{0,1}(\d+\.{0,1}\d{0,1})\)?/
-            const matches = evt.target.value.match(coordRegex)
-            if (matches) {
-                this.positionError = false
-                let newItem = Object.assign({}, this.item)
-                newItem.position = {
-                    x: matches[1].includes('.') ? parseFloat(matches[1]) : parseInt(matches[1]),
-                    y: matches[2].includes('.') ? parseFloat(matches[2]) : parseInt(matches[2]),
-                }
-                this.$emit('updateItem', this.sectionKey, newItem)
-            } else {
-                this.positionError = true
+        updatePosition: function (position) {
+            let newItem = Object.assign({}, this.item)
+            newItem.position = position
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        addPosition: function () {
+            let newItem = Object.assign({}, this.item)
+            if (!Array.isArray(newItem.position)) {
+                newItem.position = [newItem.position]
             }
+            newItem.position.push({
+                x: 0,
+                y: 0
+            })
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        setItemPosition(index) {
+            this.$emit('setItemPosition', {
+                section: this.sectionKey,
+                id: this.item.id,
+                index: index
+            })
         },
         updateAggro: function (evt) {
             let newItem = Object.assign({}, this.item)

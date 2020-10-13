@@ -212,11 +212,18 @@
                         if (this.cFilters.sections[key].enabled) {
                             for (const item of section.items) {
                                 if (!this.shouldFilterItem(key, item)) {
+                                    let multiple = false
+                                    let coordinates = item.position
+                                    if (Array.isArray(item.position)) {
+                                        multiple = item.position.length > 1
+                                        coordinates = item.position[0]
+                                    }
+
                                     let itemObj = {
                                         id: item.id,
                                         key: key,
                                         label: item.name,
-                                        coordinates: item.position,
+                                        coordinates: coordinates,
                                         icons: []
                                     }
 
@@ -255,6 +262,13 @@
                                     }
 
                                     pos.push(itemObj)
+                                    if (multiple) {
+                                        item.position.slice(1).forEach(position => {
+                                            let multiItem = Object.assign({}, itemObj)
+                                            multiItem.coordinates = position
+                                            pos.push(multiItem)
+                                        });
+                                    }
                                 }
                             }
                         }

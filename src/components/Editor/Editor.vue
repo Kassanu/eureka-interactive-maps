@@ -28,6 +28,7 @@
 </template>
 
 <script>
+    import Vue from 'vue'
     import { v4 as uuidv4 } from 'uuid'
     import EurekaCanvas from 'eureka-canvas'
     import MapDataEditor from './MapDataEditor'
@@ -89,9 +90,16 @@
                         if (!(this.jsonDataShow.hasOwnProperty(key) && this.jsonDataShow[key].hasOwnProperty('showOnMap') && this.jsonDataShow[key].showOnMap === false)) {
                             for (const item of section.items) {
                                 if (!(this.jsonDataShow.hasOwnProperty(item.id) && this.jsonDataShow[item.id].hasOwnProperty('showOnMap') && this.jsonDataShow[item.id].showOnMap === false)) {
+                                    let multiple = false
+                                    let coordinates = item.position
+                                    if (Array.isArray(item.position)) {
+                                        multiple = item.position.length > 1
+                                        coordinates = item.position[0]
+                                    }
+
                                     let itemObj = {
                                         label: item.name,
-                                        coordinates: item.position,
+                                        coordinates: coordinates,
                                         icons: []
                                     }
 
@@ -130,6 +138,14 @@
                                     }
 
                                     pos.push(itemObj)
+
+                                    if (multiple) {
+                                        item.position.slice(1).forEach(position => {
+                                            let multiItem = Object.assign({}, itemObj)
+                                            multiItem.coordinates = position
+                                            pos.push(multiItem)
+                                        });
+                                    }
                                 }
                             }
                         }
@@ -167,7 +183,11 @@
                     const index = this.jsonData[this.setPositionToItem.section].items.findIndex((item) => {
                         return item.id == this.setPositionToItem.id
                     })
-                    this.jsonData[this.setPositionToItem.section].items[index].position = this.clickCoordinates
+                    if (Array.isArray(this.jsonData[this.setPositionToItem.section].items[index].position)) {
+                        Vue.set(this.jsonData[this.setPositionToItem.section].items[index].position, this.setPositionToItem.index, this.clickCoordinates)
+                    } else {
+                        this.jsonData[this.setPositionToItem.section].items[index].position = [this.clickCoordinates]
+                    }
                     this.setPositionToItem = null
                 }
             },
