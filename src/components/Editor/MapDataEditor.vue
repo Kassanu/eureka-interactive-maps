@@ -8,7 +8,7 @@
                 Save
             </button>
         </div>
-        <div class="flex-grow overflow-y-scroll relative">
+        <div id="mapDataList" class="flex-grow overflow-y-scroll relative">
             <component
                 :is="'Section'"
                 v-for="(section, index) in jsonData"

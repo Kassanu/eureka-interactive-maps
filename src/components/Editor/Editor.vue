@@ -23,6 +23,7 @@
             :positions="positions"
             :maximumZoom="maximumZoom"
             @click="canvasClick"
+            @clickedElement="clickedElement"
         />
     </div>
 </template>
@@ -98,6 +99,8 @@
                                     }
 
                                     let itemObj = {
+                                        id: item.id,
+                                        key: key,
                                         label: item.name,
                                         coordinates: coordinates,
                                         icons: []
@@ -259,6 +262,19 @@
                 if (index !== -1) {
                     this.jsonData[sectionKey].items.splice(index, 1);
                 }
+            },
+            clickedElement(item) {
+                if (this.jsonDataShow.hasOwnProperty(item.key) && !this.jsonDataShow[item.key].expanded) {
+                    // the category is closed open it back up
+                    this.jsonDataShow[item.key].expanded = true
+                }
+
+                Vue.nextTick(() => {
+                    let itemContainer = document.getElementById(item.id)
+                    if (itemContainer) {
+                        document.getElementById('mapDataList').scrollTop = itemContainer.offsetTop
+                    }
+                })
             },
             async loadIcons() {
                 this.icons.noelement = await this.loadImage(require('@/assets/images/icons/elements/noelement.png'))
