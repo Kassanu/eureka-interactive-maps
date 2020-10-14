@@ -3,7 +3,7 @@
         <div v-show="expanded" @click.stop="" id="filtersCard" class="relative overflow-auto rounded px-8 pt-6 pb-8 mb-4 text-gray-200">
             <div @click="$emit('resetFilters')" class="absolute top-0 right-0 cursor-pointer">Reset</div>
             <form>
-                <div class="mb-2">
+                <div class="mb-2" v-if="hasLevelRange">
                     <label class="block text-sm font-bold mb-2" for="username">
                         Level Range
                     </label>
@@ -16,7 +16,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-2">
+
+                <div class="mb-2" v-if="hasElement">
                     <label class="block text-sm font-bold mb-2" for="username">
                         Element
                     </label>
@@ -79,6 +80,12 @@
                 } else {
                     return this.expanded ? 'caret-left' : 'caret-right'
                 }
+            },
+            hasLevelRange () {
+                return this.filters.hasOwnProperty("level")
+            },
+            hasElement () {
+                return this.filters.hasOwnProperty("element")
             }
         },
         methods: {
