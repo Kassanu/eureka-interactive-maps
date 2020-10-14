@@ -133,6 +133,21 @@ export default {
             let newItem = Object.assign({}, this.item)
             newItem.icon = icon
             this.$emit('updateItem', this.sectionKey, newItem)
-        }
+        },
+        updateDrops: function (drops) {
+            let newItem = Object.assign({}, this.item)
+            newItem.drops = drops
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        addDrop: function () {
+            let newItem = Object.assign({}, this.item)
+
+            newItem.drops.push({
+                name: "",
+                amount: 0
+            })
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
     }
 }

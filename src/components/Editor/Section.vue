@@ -35,6 +35,7 @@
     import Lockbox from './SectionItems/Lockbox'
     import CriticalEngagements from './SectionItems/CriticalEngagements'
     import Skirmishes from './SectionItems/Skirmishes'
+    import Enemies from './SectionItems/Enemies'
 
     export default {
         name: 'Section',
@@ -47,7 +48,8 @@
             Elemental,
             Lockbox,
             CriticalEngagements,
-            Skirmishes
+            Skirmishes,
+            Enemies
         },
         props: {
             section: {
@@ -118,6 +120,9 @@
                         break;
                     case 'skirmishes':
                         componentName = 'Skirmishes'
+                        break;
+                    case 'enemies':
+                        componentName = 'Enemies'
                         break;
                     default:
                         componentName = 'Generic'
