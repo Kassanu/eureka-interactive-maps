@@ -123,6 +123,16 @@ export default {
             newItem.boss[key] = event.target.value
 
             this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        updateParticipants: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.participants = parseInt(evt.target.value)
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        updateIcon: function (icon) {
+            let newItem = Object.assign({}, this.item)
+            newItem.icon = icon
+            this.$emit('updateItem', this.sectionKey, newItem)
         }
     }
 }

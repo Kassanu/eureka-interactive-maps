@@ -10,6 +10,7 @@
                 "x": 0,
                 "y": 0
             },
+            "icon": "",
             "participants": 0,
             "drops": [],
             "boss": {
@@ -21,10 +22,13 @@
                 "id": "6f856f96-d516-4932-a36d-7fe06070949a",
                 "name": "The Baying of the Hound(s)",
                 "level": 1,
-                "position": {
-                    "x": 22,
-                    "y": 28.6
-                },
+                "position": [
+                    {
+                        "x": 22,
+                        "y": 28.6
+                    }
+                ],
+                "icon": "boss",
                 "participants": 48,
                 "drops": [],
                 "boss": {
@@ -39,6 +43,7 @@
                     "x": 28,
                     "y": 29.5
                 },
+                "icon": "boss",
                 "participants": 48,
                 "drops": [],
                 "boss": {
@@ -53,6 +58,7 @@
                     "x": 31.5,
                     "y": 26.7
                 },
+                "icon": "boss",
                 "participants": 1,
                 "drops": [],
                 "boss": {
@@ -67,6 +73,7 @@
                     "x": 35.4,
                     "y": 25.8
                 },
+                "icon": "boss",
                 "participants": 48,
                 "drops": [],
                 "boss": {
@@ -81,7 +88,127 @@
                     "x": 17.1,
                     "y": 27
                 },
+                "icon": "boss",
                 "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "35a3df50-4854-4d2b-bd1a-c050096ea6c4",
+                "name": "The Final Furlong",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 31.8,
+                        "y": 17.5
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "8dc3290d-686f-411e-b8de-95eb0b3f8c1b",
+                "name": "The Fires of War",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 20.5,
+                        "y": 24.2
+                    }
+                ],
+                "icon": "boss",
+                "participants": 24,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "ac7323df-5a1c-40ec-aba0-48ad25a27976",
+                "name": "Patriot Games",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 14.1,
+                        "y": 21.2
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "1816511b-3ae7-400d-ac09-95f4feb97955",
+                "name": "The Hunt for Red Choctober",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 26.9,
+                        "y": 18.5
+                    }
+                ],
+                "icon": "boss",
+                "participants": 0,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "b5a003a3-2bd8-4fb0-9255-9ebedb0f2a31",
+                "name": "Rise of the Robots",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 20.7,
+                        "y": 18
+                    }
+                ],
+                "icon": "boss",
+                "participants": 0,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "a9cfa0a6-9f6b-4dac-bf82-6e4bc30e556b",
+                "name": "Metal Chaos Fox",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 1424,
+                        "y": 18.8
+                    }
+                ],
+                "icon": "boss",
+                "participants": 0,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "350eace7-998d-424b-814a-0ade659616c3",
+                "name": "And the Flames Went Higher",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 18.6,
+                        "y": 15.9
+                    }
+                ],
+                "icon": "boss",
+                "participants": 0,
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -100,6 +227,7 @@
                 "x": 0,
                 "y": 0
             },
+            "icon": "",
             "drops": [],
             "boss": {
                 "name": ""
@@ -114,6 +242,7 @@
                     "x": 24.4,
                     "y": 27.6
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -127,6 +256,7 @@
                     "x": 28.6,
                     "y": 26.2
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -140,6 +270,7 @@
                     "x": 33.6,
                     "y": 29.3
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -153,6 +284,7 @@
                     "x": 28.3,
                     "y": 26.4
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -166,6 +298,7 @@
                     "x": 24.5,
                     "y": 27.5
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -179,6 +312,7 @@
                     "x": 27.8,
                     "y": 29.3
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -192,6 +326,7 @@
                     "x": 33.6,
                     "y": 29.4
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -205,6 +340,7 @@
                     "x": 20.2,
                     "y": 26.9
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -218,6 +354,7 @@
                     "x": 17.3,
                     "y": 26.7
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -231,6 +368,7 @@
                     "x": 20.1,
                     "y": 26.9
                 },
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -244,6 +382,7 @@
                     "x": 25.3,
                     "y": 22.8
                 },
+                "icon": "gather",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -283,6 +422,7 @@
                     "x": 30.6,
                     "y": 23.3
                 },
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -309,6 +449,246 @@
                     "x": 17.6,
                     "y": 23.4
                 },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "cfaafc3d-975b-488b-9f34-f0043940c9ca",
+                "name": "No Camping Allowed",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 17.6,
+                        "y": 23.4
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "0f03feb4-71fd-4718-b4d7-5883e9208d6a",
+                "name": "Unicorn Flakes",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 31.5,
+                        "y": 17.2
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "25338bf2-c4ce-4a5f-8593-4a80f9f39eaf",
+                "name": "Parts and Recreation",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 25.3,
+                        "y": 22.8
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "0ffd6063-0564-479e-9bc8-efbac36a91c4",
+                "name": "Demonstrably Demonic",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 11.2,
+                        "y": 20.4
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "9bcfff0f-fee3-49ac-8bf4-da5eddac3282",
+                "name": "The War Against the Machines",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 11.2,
+                        "y": 20.4
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "fbb8a392-d682-4be2-9156-41d127c4ae3f",
+                "name": "Murder Death Kill",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 14,
+                        "y": 15.6
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "dc60dbe9-3eee-48f9-a0fc-9a8ec21f750b",
+                "name": "My Family and Other Animals",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 11.3,
+                        "y": 15.1
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "9da142fa-f48b-471b-a9cc-70332340099c",
+                "name": "Wate the Rainbow",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 24.4,
+                        "y": 17.3
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "6bc0c8c7-03e6-465c-bbe2-a8c8f59d355d",
+                "name": "Let Slip the Dogs of War",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 14,
+                        "y": 15.6
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "e94f8624-5302-47d9-b40a-3593f99aff66",
+                "name": "Red (Chocobo) Alert",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 26.9,
+                        "y": 18.5
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "ee6c16cd-a25d-488a-8fab-a852387f0544",
+                "name": "The Wild Bunch",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 22,
+                        "y": 14.5
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "a6cf5c96-9663-434d-a861-d5ab31c4c6e8",
+                "name": "Desperately Seeking Something",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 24.4,
+                        "y": 17.3
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "f7b1a764-915e-4a60-8737-a8711355ced4",
+                "name": "Supplies Party",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 20.8,
+                        "y": 14.6
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "a8d79769-58d9-47da-be03-71d968875128",
+                "name": "I'm a Mechanical Man",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 20.7,
+                        "y": 18
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "f45e0dd1-3942-4f9a-9b11-4460baf37571",
+                "name": "For Absent Friends",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 14.2,
+                        "y": 18.2
+                    }
+                ],
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            {
+                "id": "83f30088-e0e1-409f-a69a-df20cbfac568",
+                "name": "Of Steel and Flame",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 14.2,
+                        "y": 18.2
+                    }
+                ],
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -405,10 +785,13 @@
                 "id": "f23de491-7879-4466-8605-08ccb4696cf5",
                 "name": "Tideborn Angel",
                 "level": 0,
-                "position": {
-                    "x": 20.4,
-                    "y": 29.6
-                },
+                "position": [
+                    {
+                        "x": 20.4,
+                        "y": 290
+                    }
+                ],
+                "ashkin": false,
                 "drops": []
             },
             {
@@ -465,30 +848,87 @@
                 "id": "52588d34-a851-4459-ac3d-747c7f558258",
                 "name": "4th Legion Vanguard",
                 "level": 1,
-                "position": {
-                    "x": 25.4,
-                    "y": 22.5
-                },
+                "position": [
+                    {
+                        "x": 25.4,
+                        "y": 22.5
+                    },
+                    {
+                        "x": 27,
+                        "y": 19.5
+                    },
+                    {
+                        "x": 31,
+                        "y": 16.6
+                    },
+                    {
+                        "x": 30.6,
+                        "y": 22.2
+                    },
+                    {
+                        "x": 17.1,
+                        "y": 21.1
+                    }
+                ],
+                "ashkin": false,
                 "drops": []
             },
             {
                 "id": "6d2ca070-a5aa-450a-a9dd-87dfc7f87864",
                 "name": "4th Legion Avenger",
                 "level": 2,
-                "position": {
-                    "x": 25.4,
-                    "y": 22.5
-                },
+                "position": [
+                    {
+                        "x": 25.4,
+                        "y": 22.5
+                    },
+                    {
+                        "x": 27,
+                        "y": 19.5
+                    },
+                    {
+                        "x": 31,
+                        "y": 16.6
+                    },
+                    {
+                        "x": 30.6,
+                        "y": 22.2
+                    },
+                    {
+                        "x": 17.1,
+                        "y": 21.1
+                    }
+                ],
+                "ashkin": false,
                 "drops": []
             },
             {
                 "id": "cc250b7d-6c3c-49dd-89a3-d5bbb21bb83a",
                 "name": "4th Legion Gunship",
                 "level": 3,
-                "position": {
-                    "x": 25.4,
-                    "y": 22.5
-                },
+                "position": [
+                    {
+                        "x": 25.4,
+                        "y": 22.5
+                    },
+                    {
+                        "x": 27,
+                        "y": 19.5
+                    },
+                    {
+                        "x": 31,
+                        "y": 16.6
+                    },
+                    {
+                        "x": 30.6,
+                        "y": 22.2
+                    },
+                    {
+                        "x": 17.1,
+                        "y": 21.1
+                    }
+                ],
+                "ashkin": false,
                 "drops": []
             },
             {
@@ -580,6 +1020,245 @@
                     "y": 18.4
                 },
                 "drops": []
+            },
+            {
+                "id": "27f926f9-5f6b-4c08-a601-138333901147",
+                "name": "Skom",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 15.4,
+                        "y": 22.7
+                    }
+                ],
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "d20e2e31-bda8-40e1-9f25-f2e7848f8f5e",
+                "name": "Bozjan Taipan",
+                "level": 4,
+                "position": {
+                    "x": 15.9,
+                    "y": 24.3
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "7bb527e0-2a09-4373-9558-a69dea869178",
+                "name": "Bozjan Biast",
+                "level": 4,
+                "position": {
+                    "x": 20.2,
+                    "y": 22.9
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "034c7d02-fba5-4353-81ab-69dc27cc1b54",
+                "name": "Clingy Clare",
+                "level": 0,
+                "position": {
+                    "x": 17.6,
+                    "y": 17.9
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "0e216aa5-501a-4867-a766-9d01c5ae9a4e",
+                "name": "Bozjan Rider",
+                "level": 5,
+                "position": {
+                    "x": 22.4,
+                    "y": 15.7
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "57cb9c07-99da-4e57-964e-0ff9f554b5fe",
+                "name": "4th Legion Hexadrone",
+                "level": 1,
+                "position": [
+                    {
+                        "x": 21,
+                        "y": 17.7
+                    }
+                ],
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "c96df57c-a3e7-4bc4-b836-84e837736805",
+                "name": "4th Legion Scorpion",
+                "level": 2,
+                "position": [
+                    {
+                        "x": 21,
+                        "y": 17.7
+                    }
+                ],
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "9e2919a3-13e4-4c36-a821-7a2c04123d2e",
+                "name": "4th Legion Armored Weapon",
+                "level": 3,
+                "position": [
+                    {
+                        "x": 21,
+                        "y": 17.7
+                    }
+                ],
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "37eb5e3f-e81b-452a-97a5-5c667e395de2",
+                "name": "Bozjan Monitor",
+                "level": 3,
+                "position": {
+                    "x": 21,
+                    "y": 15.9
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "aefa412a-0229-4d20-b7e7-1c77d84f3ba2",
+                "name": "Bozjan Gravekeeper",
+                "level": 3,
+                "position": {
+                    "x": 19.9,
+                    "y": 17
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "1175b7ac-da01-46db-a0d0-44b9a2fb9dff",
+                "name": "Bozjan Gobbue",
+                "level": 4,
+                "position": {
+                    "x": 18.9,
+                    "y": 14.3
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "0013f7f8-18e5-4328-afd0-0456a75526e0",
+                "name": "Bozjan Wadjet",
+                "level": 4,
+                "position": {
+                    "x": 16.7,
+                    "y": 15
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "12c0ea84-8f14-4381-ae43-29abefbaf5ff",
+                "name": "Bozjan Ochu",
+                "level": 3,
+                "position": {
+                    "x": 12.4,
+                    "y": 16.8
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "5a81eb78-88e6-48df-b87e-5370772280b9",
+                "name": "Bozjan Snake",
+                "level": 4,
+                "position": {
+                    "x": 12.7,
+                    "y": 14.5
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "7b346690-bb97-4f47-9b6a-d5808501193a",
+                "name": "Bozjan Phobosuchus",
+                "level": 2,
+                "position": {
+                    "x": 11.9,
+                    "y": 18.2
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "0104b13b-e3ed-4922-9a06-4b57f17b939f",
+                "name": "Bozjan Ranunculus",
+                "level": 2,
+                "position": {
+                    "x": 9.6,
+                    "y": 17.3
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "5ae4c405-638e-412f-b6e4-300d9425be08",
+                "name": "Bozjan Elbst",
+                "level": 1,
+                "position": {
+                    "x": 9.7,
+                    "y": 19.2
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "df3ac519-9ec2-4c71-b79a-0a325b5c47d4",
+                "name": "Bozjan Screamer",
+                "level": 1,
+                "position": {
+                    "x": 11,
+                    "y": 21.7
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "76e7d1cd-b3ba-483f-95a7-f1ee359c8f3d",
+                "name": "Bozjan Anzu",
+                "level": 5,
+                "position": {
+                    "x": 21.9,
+                    "y": 13.3
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "1a4e2948-1372-4c40-8732-275a7e8dccfe",
+                "name": "Wind Sprite",
+                "level": 5,
+                "position": {
+                    "x": 22.6,
+                    "y": 18.2
+                },
+                "ashkin": false,
+                "drops": []
+            },
+            {
+                "id": "ebfe5ce6-16c9-4784-91fb-341dbc5f2a00",
+                "name": "Lightning Sprite",
+                "level": 2,
+                "position": {
+                    "x": 12.4,
+                    "y": 16.3
+                },
+                "ashkin": false,
+                "drops": []
             }
         ]
     },
@@ -613,6 +1292,28 @@
                     "x": 28.6,
                     "y": 23.6
                 }
+            },
+            {
+                "id": "9edde380-b80f-48e8-b787-b81cce610cae",
+                "name": "Lunya's Stand",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 13.8,
+                        "y": 23.6
+                    }
+                ]
+            },
+            {
+                "id": "779d083b-4078-4e86-ba6e-159b6a2234ba",
+                "name": "Camp Steva",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 22.3,
+                        "y": 16.8
+                    }
+                ]
             }
         ]
     }

@@ -139,8 +139,27 @@
                             icons += `<img title="Adapts" src="${this.icons.adaptation.path}" />`
                         }
                         break
+                    case 'enemies': {
+                        let rank = this.clickedItemSourceItem.level
+                        icons = `<img title="Rank ${rank == 0 ? `Star` : rank}" src="${this.icons[`rank_${rank}`].path}" />`
+                        break;
+                    }
+                    case 'skirmishes':
+                        if (this.clickedItemSourceItem.hasOwnProperty('icon') && this.icons[`skirmishes_${this.clickedItemSourceItem.icon}`]) {
+                            icons += `<img title="Skirmish" src="${this.icons[`skirmishes_${this.clickedItemSourceItem.icon}`].path}" />`
+                        } else {
+                            icons = `<img title="Skirmish" src="${this.icons.fate.path}" />`
+                        }
+                        break;
+                    case 'engagements':
+                        if (this.clickedItemSourceItem.hasOwnProperty('icon') && this.icons[`engagements_${this.clickedItemSourceItem.icon}`]) {
+                            icons += `<img title="Critical Engagement" src="${this.icons[`engagements_${this.clickedItemSourceItem.icon}`].path}" />`
+                        } else {
+                            icons = `<img title="Critical Engagement" src="${this.icons.fate.path}" />`
+                        }
+                        break;
                     default:
-                        icons = `<img title="FATE" src="${this.icons.noelement.path}" />`
+                        icons = `<img title="Unknown" src="${this.icons.noelement.path}" />`
                         break
                 }
 
@@ -255,6 +274,23 @@
                                             break;
                                         case 'lockboxes':
                                             itemObj.icons.push({ image: this.icons.lock.image })
+                                            break;
+                                        case 'enemies':
+                                            itemObj.icons.push({ image: this.icons[`rank_${item.level}`] ? this.icons[`rank_${item.level}`].image : this.icons.noelement.image })
+                                            break;
+                                        case 'skirmishes':
+                                            if (item.hasOwnProperty('icon') && this.icons[`skirmishes_${item.icon}`]) {
+                                                itemObj.icons.push({ image: this.icons[`skirmishes_${item.icon}`].image })
+                                            } else {
+                                                itemObj.icons.push({ image: this.icons.fate.image })
+                                            }
+                                            break;
+                                        case 'engagements':
+                                            if (item.hasOwnProperty('icon') && this.icons[`engagements_${item.icon}`]) {
+                                                itemObj.icons.push({ image: this.icons[`engagements_${item.icon}`].image })
+                                            } else {
+                                                itemObj.icons.push({ image: this.icons.fate.image })
+                                            }
                                             break;
                                         default:
                                             itemObj.icons.push({ image: this.icons.noelement.image })
@@ -428,6 +464,50 @@
                     },
                     ashkin: {
                         path: require('@/assets/images/icons/ashkin.png'),
+                        image: null
+                    },
+                    rank_0: {
+                        path: require('@/assets/images/icons/ranks/0.png'),
+                        image: null
+                    },
+                    rank_1: {
+                        path: require('@/assets/images/icons/ranks/1.png'),
+                        image: null
+                    },
+                    rank_2: {
+                        path: require('@/assets/images/icons/ranks/2.png'),
+                        image: null
+                    },
+                    rank_3: {
+                        path: require('@/assets/images/icons/ranks/3.png'),
+                        image: null
+                    },
+                    rank_4: {
+                        path: require('@/assets/images/icons/ranks/4.png'),
+                        image: null
+                    },
+                    rank_5: {
+                        path: require('@/assets/images/icons/ranks/5.png'),
+                        image: null
+                    },
+                    engagements_boss: {
+                        path: require('@/assets/images/icons/engagements/boss.png'),
+                        image: null
+                    },
+                    skirmishes_boss: {
+                        path: require('@/assets/images/icons/skirmishes/boss.png'),
+                        image: null
+                    },
+                    skirmishes_defend: {
+                        path: require('@/assets/images/icons/skirmishes/defend.png'),
+                        image: null
+                    },
+                    skirmishes_gather: {
+                        path: require('@/assets/images/icons/skirmishes/gather.png'),
+                        image: null
+                    },
+                    skirmishes_slay: {
+                        path: require('@/assets/images/icons/skirmishes/slay.png'),
                         image: null
                     }
                 }
