@@ -22,11 +22,13 @@
 
 <script>
     import Monsters from './SectionItems/Monsters'
+    import Enemies from './SectionItems/Enemies'
 
     export default {
         name: 'filter-section',
         components: {
-            Monsters
+            Monsters,
+            Enemies
         },
         props: {
             section: {
@@ -43,7 +45,11 @@
                 return Object.keys(this.section.filters).length !== 0
             },
             filterComponent() {
-                return 'Monsters' // this is the only one with filters, expand this if more are added
+                // TODO: make this into a proper switch possibly with a default component next time a filter is added
+                if (this.$vnode.key === 'enemies') {
+                    return 'Enemies'
+                }
+                return 'Monsters'
             },
             viewInputId() {
                 return `showhidecheckbox-${this.$vnode.key}`

@@ -339,11 +339,11 @@
             },
             shouldFilterItem(key, item) {
                 const checks = []
-                if (item.hasOwnProperty('level') && !(item.level >= this.cFilters.level.from && item.level <= this.cFilters.level.to)) {
+                if (this.cFilters.hasOwnProperty('level') && item.hasOwnProperty('level') && !(item.level >= this.cFilters.level.from && item.level <= this.cFilters.level.to)) {
                     checks.push(true)
                 }
 
-                if (item.hasOwnProperty('element') && this.cFilters.element !== '' && item.element !== this.cFilters.element) {
+                if (this.cFilters.hasOwnProperty('element') && item.hasOwnProperty('element') && this.cFilters.element !== '' && item.element !== this.cFilters.element) {
                     checks.push(true)
                 }
 
@@ -403,6 +403,13 @@
                     }
 
                     if (sectionFilters.mutateElement !== '' && item.mutation.element !== sectionFilters.mutateElement) {
+                        checks.push(true)
+                    }
+                }
+
+                if (key === 'enemies') {
+                    let sectionFilters = this.cFilters.sections.enemies.filters
+                    if (sectionFilters.hasOwnProperty('rank') && item.hasOwnProperty('level') && !sectionFilters.rank[item.level]) {
                         checks.push(true)
                     }
                 }

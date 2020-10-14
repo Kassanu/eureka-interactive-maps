@@ -1,9 +1,4 @@
 {
-    "level": {
-        "from": 1,
-        "to": 70
-    },
-    "element": "",
     "sections": {
         "engagements": {
             "name": "Critical Engagements",
@@ -18,7 +13,16 @@
         "enemies": {
             "name": "Enemies",
             "enabled": true,
-            "filters": {}
+            "filters": {
+                "rank": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ]
+            }
         },
         "aethernet": {
             "name": "Aethernet",

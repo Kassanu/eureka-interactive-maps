@@ -7,9 +7,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 20%;
+        max-width: 40%;
         @media (max-width: 640px) {
             width: 100%;
+            max-width: 100%;
             flex-direction: column;
         }
     }
