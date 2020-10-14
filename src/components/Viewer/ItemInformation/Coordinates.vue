@@ -13,7 +13,7 @@
 <script>
 
     export default {
-        name: 'default-item-information',
+        name: 'coordinates',
         props:{
             positions: {
                 type: [Array, Object],

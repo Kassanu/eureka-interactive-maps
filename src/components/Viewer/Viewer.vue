@@ -31,6 +31,7 @@
     import DefaultItemInformation from './DefaultItemInformation'
     import MonsterItemInformation from './MonsterItemInformation'
     import FateItemInformation from './FateItemInformation'
+    import EnemyItemInformation from './ItemInformation/EnemyItemInformation'
 
     export default {
         name: 'viewer',
@@ -40,6 +41,7 @@
             DefaultItemInformation,
             MonsterItemInformation,
             FateItemInformation,
+            EnemyItemInformation,
             EurekaCanvas
         },
         props:{
@@ -195,6 +197,9 @@
                         break
                     case 'fates':
                         component = 'FateItemInformation'
+                        break
+                    case 'enemies':
+                        component = 'EnemyItemInformation'
                         break
                     default:
                         component = 'DefaultItemInformation'
