@@ -132,6 +132,23 @@
                                         case 'lockboxes':
                                             itemObj.icons.push({ image: this.icons.lock })
                                             break;
+                                        case 'enemies':
+                                            itemObj.icons.push({ image: this.icons.rank[item.level] ? this.icons.rank[item.level] : this.icons.noelement })
+                                            break;
+                                        case 'skirmishes':
+                                            if (item.hasOwnProperty('icon') && this.icons.skirmishes[item.icon]) {
+                                                itemObj.icons.push({ image: this.icons.skirmishes[item.icon] })
+                                            } else {
+                                                itemObj.icons.push({ image: this.icons.fate })
+                                            }
+                                            break;
+                                        case 'engagements':
+                                            if (item.hasOwnProperty('icon') && this.icons.engagements[item.icon]) {
+                                                itemObj.icons.push({ image: this.icons.engagements[item.icon] })
+                                            } else {
+                                                itemObj.icons.push({ image: this.icons.fate })
+                                            }
+                                            break;
                                         default:
                                             itemObj.icons.push({ image: this.icons.noelement })
                                             break;
@@ -258,6 +275,20 @@
                 this.icons.fate = await this.loadImage(require('@/assets/images/icons/fate.png'))
                 this.icons.blessing = await this.loadImage(require('@/assets/images/icons/blessing.png'))
                 this.icons.lock = await this.loadImage(require('@/assets/images/icons/lock.png'))
+                this.icons.rank = []
+                this.icons.rank[0] = await this.loadImage(require('@/assets/images/icons/ranks/0.png'))
+                this.icons.rank[1] = await this.loadImage(require('@/assets/images/icons/ranks/1.png'))
+                this.icons.rank[2] = await this.loadImage(require('@/assets/images/icons/ranks/2.png'))
+                this.icons.rank[3] = await this.loadImage(require('@/assets/images/icons/ranks/3.png'))
+                this.icons.rank[4] = await this.loadImage(require('@/assets/images/icons/ranks/4.png'))
+                this.icons.rank[5] = await this.loadImage(require('@/assets/images/icons/ranks/5.png'))
+                this.icons.engagements = {}
+                this.icons.engagements.boss = await this.loadImage(require('@/assets/images/icons/engagements/boss.png'))
+                this.icons.skirmishes = {}
+                this.icons.skirmishes.boss = await this.loadImage(require('@/assets/images/icons/skirmishes/boss.png'))
+                this.icons.skirmishes.defend = await this.loadImage(require('@/assets/images/icons/skirmishes/defend.png'))
+                this.icons.skirmishes.gather = await this.loadImage(require('@/assets/images/icons/skirmishes/gather.png'))
+                this.icons.skirmishes.slay = await this.loadImage(require('@/assets/images/icons/skirmishes/slay.png'))
             },
             loadImage: url => new Promise(resolve => {
                 let img = new Image()

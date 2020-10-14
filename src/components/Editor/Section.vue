@@ -33,6 +33,8 @@
     import Fate from './SectionItems/Fate'
     import Elemental from './SectionItems/Elemental'
     import Lockbox from './SectionItems/Lockbox'
+    import CriticalEngagements from './SectionItems/CriticalEngagements'
+    import Skirmishes from './SectionItems/Skirmishes'
 
     export default {
         name: 'Section',
@@ -43,7 +45,9 @@
             Aetheryte,
             Fate,
             Elemental,
-            Lockbox
+            Lockbox,
+            CriticalEngagements,
+            Skirmishes
         },
         props: {
             section: {
@@ -108,6 +112,12 @@
                         break;
                     case 'lockboxes':
                         componentName = 'Lockbox'
+                        break;
+                    case 'engagements':
+                        componentName = 'CriticalEngagements'
+                        break;
+                    case 'skirmishes':
+                        componentName = 'Skirmishes'
                         break;
                     default:
                         componentName = 'Generic'
