@@ -719,7 +719,17 @@
                     "x": 16.2,
                     "y": 28
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Skill",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "cdbb6219-7dc9-4c13-8532-f6e4a96b9955",
@@ -729,7 +739,17 @@
                     "x": 17.9,
                     "y": 28.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Skill",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "9d37b614-2642-44b2-896e-64185a4826b3",
@@ -739,7 +759,17 @@
                     "x": 19,
                     "y": 26.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "a7360056-1917-4f5c-b8e9-477534079166",
@@ -749,7 +779,17 @@
                     "x": 19,
                     "y": 26.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "e9e95852-5548-4d54-b9db-a5f2ca5267b0",
@@ -759,7 +799,17 @@
                     "x": 19,
                     "y": 26.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "2be6d523-3d13-40c5-9da5-0152c2014364",
@@ -769,7 +819,17 @@
                     "x": 19,
                     "y": 26.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "0abac2a8-9675-427f-9ffa-46ce340190c4",
@@ -779,7 +839,17 @@
                     "x": 21.6,
                     "y": 29.6
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Skill",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "f23de491-7879-4466-8605-08ccb4696cf5",
@@ -802,7 +872,17 @@
                     "x": 21.5,
                     "y": 27
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Skill",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "9610a645-9365-43c2-a287-f65d49874586",
@@ -812,7 +892,17 @@
                     "x": 31.3,
                     "y": 26.8
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Skill",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "0aa3610f-f5b9-4055-bcf5-d8548e9a03d7",
@@ -822,7 +912,17 @@
                     "x": 35,
                     "y": 27.3
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Caution",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "f6415c10-ebf5-488b-a9be-5a68774d8786",
@@ -832,7 +932,17 @@
                     "x": 26,
                     "y": 25
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Caution",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "28d1fd33-f290-4ad6-8bf0-ba23f8280d6f",
@@ -842,7 +952,17 @@
                     "x": 28.5,
                     "y": 21.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "52588d34-a851-4459-ac3d-747c7f558258",
@@ -871,7 +991,16 @@
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "6d2ca070-a5aa-450a-a9dd-87dfc7f87864",
@@ -900,7 +1029,16 @@
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "cc250b7d-6c3c-49dd-89a3-d5bbb21bb83a",
@@ -929,7 +1067,16 @@
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "d673669f-192d-4f53-84b2-880eff8b3f02",
@@ -939,7 +1086,17 @@
                     "x": 23.7,
                     "y": 23.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "e08016ba-a099-4c31-b60f-636448388679",
@@ -949,7 +1106,17 @@
                     "x": 22.5,
                     "y": 21.5
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "7ef598df-0240-4653-b77c-f2e01171651b",
@@ -959,7 +1126,17 @@
                     "x": 25.6,
                     "y": 21.3
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "71c93d96-d709-41ad-a821-b501247c69f8",
@@ -969,17 +1146,37 @@
                     "x": 27,
                     "y": 22.8
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Care",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "ca5f5ca2-a19a-4749-8d44-c24b9b24e8b1",
-                "name": "Ivy",
+                "name": "Viy",
                 "level": 0,
                 "position": {
                     "x": 28.3,
                     "y": 19.9
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Ingenuity",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "5996911a-e60b-48b2-91e4-0939f87d39a8",
@@ -989,7 +1186,17 @@
                     "x": 28.2,
                     "y": 17.8
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "99b2ab38-927a-4cbd-9076-9b2261e4bbde",
@@ -999,7 +1206,17 @@
                     "x": 32.8,
                     "y": 18.1
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Ingenuity",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "9a8c7130-bd9a-4b55-99b6-9ffd0c3c1b58",
@@ -1009,7 +1226,17 @@
                     "x": 28.8,
                     "y": 17.4
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "2189feb6-9714-4914-960e-ec5e165a967c",
@@ -1019,7 +1246,17 @@
                     "x": 29.5,
                     "y": 18.4
                 },
-                "drops": []
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "27f926f9-5f6b-4c08-a601-138333901147",
@@ -1032,7 +1269,16 @@
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Ingenuity",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "d20e2e31-bda8-40e1-9f25-f2e7848f8f5e",
@@ -1043,7 +1289,16 @@
                     "y": 24.3
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "7bb527e0-2a09-4373-9558-a69dea869178",
@@ -1054,7 +1309,16 @@
                     "y": 22.9
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Awakening",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "034c7d02-fba5-4353-81ab-69dc27cc1b54",
@@ -1065,7 +1329,16 @@
                     "y": 17.9
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Violence",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "0e216aa5-501a-4867-a766-9d01c5ae9a4e",
@@ -1076,7 +1349,16 @@
                     "y": 15.7
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Violence",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "57cb9c07-99da-4e57-964e-0ff9f554b5fe",
@@ -1086,10 +1368,23 @@
                     {
                         "x": 21,
                         "y": 17.7
+                    },
+                    {
+                        "x": 12.3,
+                        "y": 15.5
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "c96df57c-a3e7-4bc4-b836-84e837736805",
@@ -1099,10 +1394,23 @@
                     {
                         "x": 21,
                         "y": 17.7
+                    },
+                    {
+                        "x": 12.3,
+                        "y": 15.5
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "9e2919a3-13e4-4c36-a821-7a2c04123d2e",
@@ -1112,10 +1420,23 @@
                     {
                         "x": 21,
                         "y": 17.7
+                    },
+                    {
+                        "x": 12.3,
+                        "y": 15.5
                     }
                 ],
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "37eb5e3f-e81b-452a-97a5-5c667e395de2",
@@ -1126,7 +1447,16 @@
                     "y": 15.9
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "aefa412a-0229-4d20-b7e7-1c77d84f3ba2",
@@ -1137,7 +1467,16 @@
                     "y": 17
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Violence",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "1175b7ac-da01-46db-a0d0-44b9a2fb9dff",
@@ -1148,7 +1487,16 @@
                     "y": 14.3
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "0013f7f8-18e5-4328-afd0-0456a75526e0",
@@ -1159,7 +1507,16 @@
                     "y": 15
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "12c0ea84-8f14-4381-ae43-29abefbaf5ff",
@@ -1170,7 +1527,16 @@
                     "y": 16.8
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "5a81eb78-88e6-48df-b87e-5370772280b9",
@@ -1181,7 +1547,16 @@
                     "y": 14.5
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "7b346690-bb97-4f47-9b6a-d5808501193a",
@@ -1192,7 +1567,16 @@
                     "y": 18.2
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "0104b13b-e3ed-4922-9a06-4b57f17b939f",
@@ -1203,7 +1587,16 @@
                     "y": 17.3
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "5ae4c405-638e-412f-b6e4-300d9425be08",
@@ -1214,7 +1607,16 @@
                     "y": 19.2
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "df3ac519-9ec2-4c71-b79a-0a325b5c47d4",
@@ -1225,7 +1627,16 @@
                     "y": 21.7
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "76e7d1cd-b3ba-483f-95a7-f1ee359c8f3d",
@@ -1236,7 +1647,16 @@
                     "y": 13.3
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Compassion",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "1a4e2948-1372-4c40-8732-275a7e8dccfe",
@@ -1247,7 +1667,16 @@
                     "y": 18.2
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Support",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             },
             {
                 "id": "ebfe5ce6-16c9-4784-91fb-341dbc5f2a00",
@@ -1258,7 +1687,258 @@
                     "y": 16.3
                 },
                 "ashkin": false,
-                "drops": []
+                "drops": [
+                    {
+                        "name": "Support",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "008357c3-2dee-4a37-97d0-06ebb3097089",
+                "name": "Tideborn Angel",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 19,
+                        "y": 30.5
+                    }
+                ],
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Caution",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "5fef34c8-59e5-496f-92a4-3eda6082dfa3",
+                "name": "Patty",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 8.4,
+                        "y": 18.1
+                    }
+                ],
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Violence",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "e50f4590-4810-4d64-96c5-09ccd1d92066",
+                "name": "Bird of Barathrum",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 23.6,
+                        "y": 12.6
+                    }
+                ],
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Violence",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "d0b31f66-49d2-4758-9c32-bfa7e29bdcf3",
+                "name": "Earth Sprite",
+                "level": 2,
+                "position": {
+                    "x": 25.4,
+                    "y": 25.3
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Preparation",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "d1e863d1-e79c-4559-a72f-e3917fd7d94a",
+                "name": "Water Sprite",
+                "level": 4,
+                "position": {
+                    "x": 31.7,
+                    "y": 25.1
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Preparation",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "ab7b26f8-12dc-4c07-be0a-6079f316bdc9",
+                "name": "Wind Sprite",
+                "level": 3,
+                "position": {
+                    "x": 29.4,
+                    "y": 27.2
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Preparation",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "ba881e36-5d53-48d1-802e-633661651f08",
+                "name": "Lightning Sprite",
+                "level": 5,
+                "position": {
+                    "x": 35.4,
+                    "y": 29.3
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Preparation",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "803c2e52-9000-4464-b72f-02ec27b4247b",
+                "name": "Water Sprite",
+                "level": 2,
+                "position": {
+                    "x": 30.2,
+                    "y": 20.5
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Care",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "238b1566-bca7-4d40-9b0e-bf37bfcdab1d",
+                "name": "Wind Sprite",
+                "level": 4,
+                "position": {
+                    "x": 21.2,
+                    "y": 21
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Care",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "cc0921cc-b9dc-4081-a10a-c3ba8cf35fd8",
+                "name": "Earth Sprite",
+                "level": 5,
+                "position": {
+                    "x": 16,
+                    "y": 21.1
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Care",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "bd513812-ec28-4af8-944c-20241450f390",
+                "name": "Water Sprite",
+                "level": 3,
+                "position": {
+                    "x": 17,
+                    "y": 19.1
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Support",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "6f6c0c7e-9517-45a2-865e-644b10b4efbf",
+                "name": "Earth Sprite",
+                "level": 4,
+                "position": {
+                    "x": 20.6,
+                    "y": 18.8
+                },
+                "ashkin": false,
+                "drops": [
+                    {
+                        "name": "Support",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
+                    }
+                ]
             }
         ]
     },
