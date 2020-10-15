@@ -157,7 +157,7 @@
                     }
                 ],
                 "icon": "boss",
-                "participants": 0,
+                "participants": 48,
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -174,7 +174,7 @@
                     }
                 ],
                 "icon": "boss",
-                "participants": 0,
+                "participants": 48,
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -186,12 +186,12 @@
                 "level": 8,
                 "position": [
                     {
-                        "x": 1424,
+                        "x": 14.4,
                         "y": 18.8
                     }
                 ],
                 "icon": "boss",
-                "participants": 0,
+                "participants": 48,
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -208,7 +208,7 @@
                     }
                 ],
                 "icon": "boss",
-                "participants": 0,
+                "participants": 48,
                 "drops": [],
                 "boss": {
                     "name": ""

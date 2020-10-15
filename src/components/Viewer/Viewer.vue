@@ -414,6 +414,14 @@
                     }
                 }
 
+                if (key === 'engagements') {
+                    let sectionFilters = this.cFilters.sections.engagements.filters
+                    let participants = sectionFilters.participants.find(p => p.amount == item.participants)
+                    if (participants && !participants.enabled) {
+                        checks.push(true)
+                    }
+                }
+
                 return [...new Set(checks)].filter(el => el).length === 1
             },
             async loadIcons() {
