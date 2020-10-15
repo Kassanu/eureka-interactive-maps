@@ -995,11 +995,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1141,11 +1141,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1164,11 +1164,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1187,11 +1187,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1205,14 +1205,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Care",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1225,14 +1227,17 @@
                     "y": 19.9
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Ingenuity",
-                        "amount": 0
+                        "amount": 20
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1251,11 +1256,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1268,14 +1273,17 @@
                     "y": 18.1
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Ingenuity",
-                        "amount": 0
+                        "amount": 20
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1294,11 +1302,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1317,11 +1325,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1336,14 +1344,17 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Ingenuity",
-                        "amount": 0
+                        "amount": 20
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1362,11 +1373,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1385,11 +1396,11 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1980,14 +1991,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Care",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -2001,14 +2014,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Care",
-                        "amount": 0
+                        "amount": 2
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -2022,14 +2037,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Care",
-                        "amount": 0
+                        "amount": 3
                     },
                     {
                         "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -2117,6 +2134,52 @@
                     },
                     {
                         "name": "Tortured Memory of the Dying",
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "id": "a4e0f2fb-eb55-40ce-bb1f-64cc6268781b",
+                "name": "Bozjan Wight",
+                "level": 3,
+                "position": {
+                    "x": 23.9,
+                    "y": 20.4
+                },
+                "ashkin": true,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [
+                    {
+                        "name": "Care",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "id": "b20b4138-84be-4036-94dd-a4163ebfa519",
+                "name": "Bozjan Dullahan",
+                "level": 5,
+                "position": {
+                    "x": 32.3,
+                    "y": 15.6
+                },
+                "ashkin": true,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [
+                    {
+                        "name": "Care",
+                        "amount": 5
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
