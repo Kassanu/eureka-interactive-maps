@@ -347,6 +347,12 @@
                     checks.push(true)
                 }
 
+                if (this.cFilters.hasOwnProperty('drops') && item.hasOwnProperty('drops') && this.cFilters.drops.value != '') {
+                    if (!item.drops.find(drop => drop.name == this.cFilters.drops.value)) {
+                        checks.push(true)
+                    }
+                }
+
                 if (key === 'monsters') {
                     let sectionFilters = this.cFilters.sections.monsters.filters
                     if (sectionFilters.ashkin && !item.ashkin) {

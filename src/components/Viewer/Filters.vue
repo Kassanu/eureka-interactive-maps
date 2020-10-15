@@ -36,6 +36,21 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mb-2" v-if="hasDrops">
+                    <label class="block text-sm font-bold mb-2" for="username">
+                        Drops
+                    </label>
+                    <div class="inline-block relative w-full">
+                        <select :value="filters.drops.value" @change="updateDrops" class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline">
+                            <option value="">Any</option>
+                            <option v-for="option in filters.drops.options" :key="option.id" :value="option.name">{{ option.name }}</option>
+                        </select>
+                        <div class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                    </div>
+                </div>
                 <filter-section v-for="(section, index) in filters.sections" :key="index" :section="section" @updateSection="updateSection(index, ...arguments)"></filter-section>
             </form>
         </div>
@@ -86,6 +101,9 @@
             },
             hasElement () {
                 return this.filters.hasOwnProperty("element")
+            },
+            hasDrops () {
+                return this.filters.hasOwnProperty("drops")
             }
         },
         methods: {
@@ -97,7 +115,9 @@
             },
             updateSection(key, section) {
                 this.$emit('updateFilters', Object.assign(this.filters, {sections: Object.assign(this.filters.sections, {[key]: section})}))
-
+            },
+            updateDrops(event) {
+                this.$emit('updateFilters', Object.assign(this.filters, {drops: Object.assign(this.filters.drops, {value: event.target.value})}))
             }
         }
     }
