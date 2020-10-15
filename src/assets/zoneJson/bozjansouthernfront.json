@@ -872,11 +872,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 20
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -895,11 +897,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 20
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -918,11 +922,13 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 50
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -941,11 +947,13 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 25
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -964,11 +972,13 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 25
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -987,11 +997,13 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 50
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -1010,11 +1022,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 25
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -1046,11 +1060,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 25
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -1069,11 +1085,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
-                        "amount": 3
+                        "amount": 3,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -1092,11 +1110,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Caution",
-                        "amount": 20
+                        "amount": 20,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -1115,11 +1135,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Caution",
-                        "amount": 20
+                        "amount": 20,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -1996,11 +2018,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Caution",
-                        "amount": 20
+                        "amount": 20,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -2069,11 +2093,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -2092,11 +2118,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
-                        "amount": 2
+                        "amount": 2,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -2115,11 +2143,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -2138,11 +2168,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
-                        "amount": 5
+                        "amount": 5,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -2276,11 +2308,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
-                        "amount": 2
+                        "amount": 2,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
@@ -2299,11 +2333,13 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
-                        "amount": 5
+                        "amount": 5,
+                        "percent": 100
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 1
+                        "amount": 1,
+                        "percent": 1
                     }
                 ]
             },
