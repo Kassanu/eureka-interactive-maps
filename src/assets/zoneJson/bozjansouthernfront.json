@@ -256,6 +256,38 @@
                     "name": ""
                 },
                 "spawns": []
+            },
+            {
+                "id": "ae3b7dd2-84ef-4d88-8895-b7b51284529d",
+                "name": "Where Strode the Behemoth",
+                "level": 8,
+                "position": {
+                    "x": 23.6,
+                    "y": 14.9
+                },
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "35ef6853-666d-4e89-9798-9baa20a0185c",
+                "name": "Trampled under Hoof",
+                "level": 8,
+                "position": {
+                    "x": 9.9,
+                    "y": 18.3
+                },
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
             }
         ]
     },
