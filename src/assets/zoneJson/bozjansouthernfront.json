@@ -730,10 +730,6 @@
                     {
                         "name": "Skill",
                         "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -752,10 +748,6 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -776,10 +768,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -798,10 +786,6 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -822,10 +806,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -845,10 +825,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -867,10 +843,6 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -904,10 +876,6 @@
                     {
                         "name": "Skill",
                         "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -927,10 +895,6 @@
                     {
                         "name": "Skill",
                         "amount": 3
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -950,10 +914,6 @@
                     {
                         "name": "Caution",
                         "amount": 20
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -973,10 +933,6 @@
                     {
                         "name": "Caution",
                         "amount": 20
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -995,10 +951,6 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1037,10 +989,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
                     }
                 ]
             },
@@ -1077,10 +1025,6 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 0
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 0
                     }
                 ]
@@ -1119,10 +1063,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 0
                     }
                 ]
             },
@@ -1141,10 +1081,6 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1165,10 +1101,6 @@
                     {
                         "name": "Awakening",
                         "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1187,10 +1119,6 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1211,10 +1139,6 @@
                     {
                         "name": "Care",
                         "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1234,10 +1158,6 @@
                     {
                         "name": "Ingenuity",
                         "amount": 20
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1256,10 +1176,6 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1280,10 +1196,6 @@
                     {
                         "name": "Ingenuity",
                         "amount": 20
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1303,10 +1215,6 @@
                     {
                         "name": "Awakening",
                         "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1325,10 +1233,6 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1351,10 +1255,6 @@
                     {
                         "name": "Ingenuity",
                         "amount": 20
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1373,10 +1273,6 @@
                 "drops": [
                     {
                         "name": "Awakening",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1397,10 +1293,6 @@
                     {
                         "name": "Awakening",
                         "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1420,10 +1312,6 @@
                     {
                         "name": "Violence",
                         "amount": 20
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1443,10 +1331,6 @@
                     {
                         "name": "Violence",
                         "amount": 5
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1471,10 +1355,6 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 0
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 0
                     }
                 ]
@@ -1501,10 +1381,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 0
                     }
                 ]
             },
@@ -1530,10 +1406,6 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 0
                     }
                 ]
             },
@@ -1552,10 +1424,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1576,10 +1444,6 @@
                     {
                         "name": "Violence",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1598,10 +1462,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1622,10 +1482,6 @@
                     {
                         "name": "Compassion",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1644,10 +1500,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1668,10 +1520,6 @@
                     {
                         "name": "Compassion",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1690,10 +1538,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1714,10 +1558,6 @@
                     {
                         "name": "Compassion",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1736,10 +1576,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1760,10 +1596,6 @@
                     {
                         "name": "Compassion",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1782,10 +1614,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1806,10 +1634,6 @@
                     {
                         "name": "Support",
                         "amount": 2
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1828,10 +1652,6 @@
                 "drops": [
                     {
                         "name": "Support",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1854,10 +1674,6 @@
                     {
                         "name": "Caution",
                         "amount": 20
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1879,10 +1695,6 @@
                     {
                         "name": "Violence",
                         "amount": 20
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1904,10 +1716,6 @@
                     {
                         "name": "Violence",
                         "amount": 20
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1926,10 +1734,6 @@
                 "drops": [
                     {
                         "name": "Preparation",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1950,10 +1754,6 @@
                     {
                         "name": "Preparation",
                         "amount": 2
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -1972,10 +1772,6 @@
                 "drops": [
                     {
                         "name": "Preparation",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1996,10 +1792,6 @@
                     {
                         "name": "Preparation",
                         "amount": 5
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2018,10 +1810,6 @@
                 "drops": [
                     {
                         "name": "Care",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -2042,10 +1830,6 @@
                     {
                         "name": "Care",
                         "amount": 2
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2065,10 +1849,6 @@
                     {
                         "name": "Care",
                         "amount": 3
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2087,10 +1867,6 @@
                 "drops": [
                     {
                         "name": "Support",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -2111,10 +1887,6 @@
                     {
                         "name": "Support",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2134,10 +1906,6 @@
                     {
                         "name": "Preparation",
                         "amount": 2
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2157,10 +1925,6 @@
                     {
                         "name": "Preparation",
                         "amount": 5
-                    },
-                    {
-                        "name": "Tortured Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2180,10 +1944,6 @@
                     {
                         "name": "Care",
                         "amount": 2
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2203,10 +1963,6 @@
                     {
                         "name": "Care",
                         "amount": 5
-                    },
-                    {
-                        "name": "Sorrowful Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2226,10 +1982,6 @@
                     {
                         "name": "Compassion",
                         "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
-                        "amount": 1
                     }
                 ]
             },
@@ -2248,10 +2000,6 @@
                 "drops": [
                     {
                         "name": "Compassion",
-                        "amount": 1
-                    },
-                    {
-                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
