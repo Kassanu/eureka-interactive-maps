@@ -82,6 +82,10 @@
                     {
                         value: 'boss',
                         name: 'Boss'
+                    },
+                    {
+                        value: 'duel',
+                        name: 'Duel'
                     }
                 ]
             }

@@ -553,6 +553,10 @@
                         path: require('@/assets/images/icons/engagements/boss.png'),
                         image: null
                     },
+                    engagements_duel: {
+                        path: require('@/assets/images/icons/engagements/duel.png'),
+                        image: null
+                    },
                     skirmishes_boss: {
                         path: require('@/assets/images/icons/skirmishes/boss.png'),
                         image: null
