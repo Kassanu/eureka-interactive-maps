@@ -15,7 +15,8 @@
             "drops": [],
             "boss": {
                 "name": ""
-            }
+            },
+            "spawns": []
         },
         "items": [
             {
@@ -33,7 +34,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "2d094f75-dbf5-493f-a96b-01d956be2ab1",
@@ -48,7 +50,13 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "701da551-51b4-4447-9be1-1990af101774"
+                    }
+                ]
             },
             {
                 "id": "28c7ca10-9645-4ea1-b162-9d8399f2f6a0",
@@ -63,7 +71,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "dbb14450-772c-46f9-b712-b9018fcb42a2",
@@ -78,7 +87,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "04dff65f-3716-43d1-91e6-b6545ad9202f",
@@ -93,7 +103,13 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "074e37ef-e316-4e13-9d54-e2560248ef9b"
+                    }
+                ]
             },
             {
                 "id": "35a3df50-4854-4d2b-bd1a-c050096ea6c4",
@@ -110,7 +126,13 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "0f03feb4-71fd-4718-b4d7-5883e9208d6a"
+                    }
+                ]
             },
             {
                 "id": "8dc3290d-686f-411e-b8de-95eb0b3f8c1b",
@@ -127,7 +149,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "ac7323df-5a1c-40ec-aba0-48ad25a27976",
@@ -144,7 +167,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "1816511b-3ae7-400d-ac09-95f4feb97955",
@@ -161,7 +185,13 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "e94f8624-5302-47d9-b40a-3593f99aff66"
+                    }
+                ]
             },
             {
                 "id": "b5a003a3-2bd8-4fb0-9255-9ebedb0f2a31",
@@ -178,7 +208,13 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "a8d79769-58d9-47da-be03-71d968875128"
+                    }
+                ]
             },
             {
                 "id": "a9cfa0a6-9f6b-4dac-bf82-6e4bc30e556b",
@@ -195,7 +231,13 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "83f30088-e0e1-409f-a69a-df20cbfac568"
+                    }
+                ]
             },
             {
                 "id": "350eace7-998d-424b-814a-0ade659616c3",
@@ -212,7 +254,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             }
         ]
     },
@@ -231,7 +274,8 @@
             "drops": [],
             "boss": {
                 "name": ""
-            }
+            },
+            "spawns": []
         },
         "items": [
             {
@@ -246,7 +290,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "f0f5531d-999f-43f7-9171-21e9b1ba93ed",
@@ -260,7 +305,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "69d572b8-1682-4141-8623-3bbb48737efd",
@@ -274,7 +320,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "2ab18753-a433-4649-9f9a-1cc73eac4334",
@@ -288,7 +335,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "b63e850f-10aa-43e1-98c6-2942bf28a2a5",
@@ -302,7 +350,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "701da551-51b4-4447-9be1-1990af101774",
@@ -316,7 +365,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "debeb8cc-64d7-4475-b1d3-b6bf9300f0fb",
@@ -330,7 +380,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "fd2fe868-83f6-4c3e-9743-896e2a9a4341",
@@ -344,7 +395,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "074e37ef-e316-4e13-9d54-e2560248ef9b",
@@ -358,7 +410,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "14f52f3b-d12d-4f74-a7d4-61d1210374e4",
@@ -372,7 +425,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "f3bbdfa4-432b-4542-9ba6-7e660ec06183",
@@ -386,7 +440,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "6c693117-ce3e-4a5f-89be-6aef2ec2ee0d",
@@ -396,10 +451,12 @@
                     "x": 18.1,
                     "y": 20.9
                 },
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "a6bda95c-ef76-432b-8a64-496c0250904a",
@@ -409,10 +466,17 @@
                     "x": 18.1,
                     "y": 20.9
                 },
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "6c693117-ce3e-4a5f-89be-6aef2ec2ee0d"
+                    }
+                ]
             },
             {
                 "id": "8c15c907-a432-4447-a8f4-1eb6274b2960",
@@ -426,7 +490,8 @@
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "3ffb302e-77e1-44f3-97f8-0ba3b03743d5",
@@ -436,10 +501,12 @@
                     "x": 30.6,
                     "y": 23.3
                 },
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "21c0d479-f797-4702-81cc-b96b64ff8f05",
@@ -449,10 +516,12 @@
                     "x": 17.6,
                     "y": 23.4
                 },
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "cfaafc3d-975b-488b-9f34-f0043940c9ca",
@@ -464,10 +533,12 @@
                         "y": 23.4
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "0f03feb4-71fd-4718-b4d7-5883e9208d6a",
@@ -479,10 +550,12 @@
                         "y": 17.2
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "25338bf2-c4ce-4a5f-8593-4a80f9f39eaf",
@@ -494,10 +567,12 @@
                         "y": 22.8
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "0ffd6063-0564-479e-9bc8-efbac36a91c4",
@@ -509,10 +584,12 @@
                         "y": 20.4
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "9bcfff0f-fee3-49ac-8bf4-da5eddac3282",
@@ -524,10 +601,12 @@
                         "y": 20.4
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "fbb8a392-d682-4be2-9156-41d127c4ae3f",
@@ -539,10 +618,17 @@
                         "y": 15.6
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "6bc0c8c7-03e6-465c-bbe2-a8c8f59d355d"
+                    }
+                ]
             },
             {
                 "id": "dc60dbe9-3eee-48f9-a0fc-9a8ec21f750b",
@@ -554,10 +640,12 @@
                         "y": 15.1
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "9da142fa-f48b-471b-a9cc-70332340099c",
@@ -569,10 +657,12 @@
                         "y": 17.3
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "6bc0c8c7-03e6-465c-bbe2-a8c8f59d355d",
@@ -584,10 +674,12 @@
                         "y": 15.6
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "e94f8624-5302-47d9-b40a-3593f99aff66",
@@ -599,10 +691,17 @@
                         "y": 18.5
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": [
+                    {
+                        "type": "enemy",
+                        "value": "9a8c7130-bd9a-4b55-99b6-9ffd0c3c1b58"
+                    }
+                ]
             },
             {
                 "id": "ee6c16cd-a25d-488a-8fab-a852387f0544",
@@ -614,10 +713,12 @@
                         "y": 14.5
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "a6cf5c96-9663-434d-a861-d5ab31c4c6e8",
@@ -629,10 +730,12 @@
                         "y": 17.3
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "f7b1a764-915e-4a60-8737-a8711355ced4",
@@ -644,10 +747,12 @@
                         "y": 14.6
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "a8d79769-58d9-47da-be03-71d968875128",
@@ -659,10 +764,12 @@
                         "y": 18
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "f45e0dd1-3942-4f9a-9b11-4460baf37571",
@@ -674,10 +781,12 @@
                         "y": 18.2
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             },
             {
                 "id": "83f30088-e0e1-409f-a69a-df20cbfac568",
@@ -689,10 +798,12 @@
                         "y": 18.2
                     }
                 ],
+                "icon": "",
                 "drops": [],
                 "boss": {
                     "name": ""
-                }
+                },
+                "spawns": []
             }
         ]
     },
