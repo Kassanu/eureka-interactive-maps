@@ -730,6 +730,10 @@
                     {
                         "name": "Fragment of Skill",
                         "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -748,6 +752,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -768,6 +776,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -786,6 +798,10 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -806,6 +822,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -825,6 +845,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -843,6 +867,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Skill",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -876,6 +904,10 @@
                     {
                         "name": "Fragment of Skill",
                         "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -895,6 +927,10 @@
                     {
                         "name": "Fragment of Skill",
                         "amount": 3
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -914,6 +950,10 @@
                     {
                         "name": "Fragment of Caution",
                         "amount": 20
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -933,6 +973,10 @@
                     {
                         "name": "Fragment of Caution",
                         "amount": 20
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -951,6 +995,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Awakening",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -989,6 +1037,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
                     }
                 ]
             },
@@ -1025,6 +1077,10 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 0
                     }
                 ]
@@ -1063,6 +1119,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 0
                     }
                 ]
             },
@@ -1081,6 +1141,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Awakening",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1101,6 +1165,10 @@
                     {
                         "name": "Fragment of Awakening",
                         "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1119,6 +1187,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Awakening",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1139,6 +1211,10 @@
                     {
                         "name": "Fragment of Care",
                         "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1158,6 +1234,10 @@
                     {
                         "name": "Fragment of Ingenuity",
                         "amount": 20
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1176,6 +1256,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Awakening",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1196,6 +1280,10 @@
                     {
                         "name": "Fragment of Ingenuity",
                         "amount": 20
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1215,6 +1303,10 @@
                     {
                         "name": "Fragment of Awakening",
                         "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1233,6 +1325,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Awakening",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1255,6 +1351,10 @@
                     {
                         "name": "Fragment of Ingenuity",
                         "amount": 20
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1273,6 +1373,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Awakening",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1293,6 +1397,10 @@
                     {
                         "name": "Fragment of Awakening",
                         "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1312,6 +1420,10 @@
                     {
                         "name": "Fragment of Violence",
                         "amount": 20
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1331,6 +1443,10 @@
                     {
                         "name": "Fragment of Violence",
                         "amount": 5
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1355,6 +1471,10 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
+                        "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 0
                     }
                 ]
@@ -1381,6 +1501,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
                     }
                 ]
             },
@@ -1406,6 +1530,10 @@
                     {
                         "name": "Bozjan Cluster",
                         "amount": 0
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 0
                     }
                 ]
             },
@@ -1424,6 +1552,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1444,6 +1576,10 @@
                     {
                         "name": "Fragment of Violence",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1462,6 +1598,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1482,6 +1622,10 @@
                     {
                         "name": "Fragment of Compassion",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1500,6 +1644,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1520,6 +1668,10 @@
                     {
                         "name": "Fragment of Compassion",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1538,6 +1690,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1558,6 +1714,10 @@
                     {
                         "name": "Fragment of Compassion",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1576,6 +1736,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1596,6 +1760,10 @@
                     {
                         "name": "Fragment of Compassion",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1614,6 +1782,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1634,6 +1806,10 @@
                     {
                         "name": "Fragment of Support",
                         "amount": 2
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1652,6 +1828,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Support",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1674,6 +1854,10 @@
                     {
                         "name": "Fragment of Caution",
                         "amount": 20
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1695,6 +1879,10 @@
                     {
                         "name": "Fragment of Violence",
                         "amount": 20
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1716,6 +1904,10 @@
                     {
                         "name": "Fragment of Violence",
                         "amount": 20
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1734,6 +1926,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1754,6 +1950,10 @@
                     {
                         "name": "Fragment of Preparation",
                         "amount": 2
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1772,6 +1972,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Preparation",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1792,6 +1996,10 @@
                     {
                         "name": "Fragment of Preparation",
                         "amount": 5
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1810,6 +2018,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Care",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1830,6 +2042,10 @@
                     {
                         "name": "Fragment of Care",
                         "amount": 2
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1849,6 +2065,10 @@
                     {
                         "name": "Fragment of Care",
                         "amount": 3
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1867,6 +2087,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Support",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
@@ -1887,6 +2111,10 @@
                     {
                         "name": "Fragment of Support",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1906,6 +2134,10 @@
                     {
                         "name": "Fragment of Preparation",
                         "amount": 2
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1925,6 +2157,10 @@
                     {
                         "name": "Fragment of Preparation",
                         "amount": 5
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1944,6 +2180,10 @@
                     {
                         "name": "Fragment of Care",
                         "amount": 2
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1963,6 +2203,10 @@
                     {
                         "name": "Fragment of Care",
                         "amount": 5
+                    },
+                    {
+                        "name": "Sorrowful Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -1982,6 +2226,10 @@
                     {
                         "name": "Fragment of Compassion",
                         "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             },
@@ -2000,6 +2248,10 @@
                 "drops": [
                     {
                         "name": "Fragment of Compassion",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Harrowing Memory of the Dying",
                         "amount": 1
                     }
                 ]
