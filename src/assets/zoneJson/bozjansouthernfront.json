@@ -66,7 +66,7 @@
                     "x": 31.5,
                     "y": 26.7
                 },
-                "icon": "boss",
+                "icon": "duel",
                 "participants": 1,
                 "drops": [],
                 "boss": {
@@ -249,7 +249,7 @@
                         "y": 15.9
                     }
                 ],
-                "icon": "boss",
+                "icon": "duel",
                 "participants": 48,
                 "drops": [],
                 "boss": {
@@ -376,7 +376,7 @@
                     "x": 33.6,
                     "y": 29.4
                 },
-                "icon": "slay",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -391,7 +391,7 @@
                     "x": 20.2,
                     "y": 26.9
                 },
-                "icon": "slay",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -436,7 +436,7 @@
                     "x": 25.3,
                     "y": 22.8
                 },
-                "icon": "gather",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -451,7 +451,7 @@
                     "x": 18.1,
                     "y": 20.9
                 },
-                "icon": "",
+                "icon": "defend",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -466,7 +466,7 @@
                     "x": 18.1,
                     "y": 20.9
                 },
-                "icon": "",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -501,7 +501,7 @@
                     "x": 30.6,
                     "y": 23.3
                 },
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -516,7 +516,7 @@
                     "x": 17.6,
                     "y": 23.4
                 },
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -533,7 +533,7 @@
                         "y": 23.4
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -550,7 +550,7 @@
                         "y": 17.2
                     }
                 ],
-                "icon": "",
+                "icon": "defend",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -567,7 +567,7 @@
                         "y": 22.8
                     }
                 ],
-                "icon": "",
+                "icon": "gather",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -584,7 +584,7 @@
                         "y": 20.4
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -601,7 +601,7 @@
                         "y": 20.4
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -618,7 +618,7 @@
                         "y": 15.6
                     }
                 ],
-                "icon": "",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -640,7 +640,7 @@
                         "y": 15.1
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -657,7 +657,7 @@
                         "y": 17.3
                     }
                 ],
-                "icon": "",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -674,7 +674,7 @@
                         "y": 15.6
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -691,7 +691,7 @@
                         "y": 18.5
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -713,7 +713,7 @@
                         "y": 14.5
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -730,7 +730,7 @@
                         "y": 17.3
                     }
                 ],
-                "icon": "",
+                "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -747,7 +747,7 @@
                         "y": 14.6
                     }
                 ],
-                "icon": "",
+                "icon": "gather",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -764,7 +764,7 @@
                         "y": 18
                     }
                 ],
-                "icon": "",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -781,7 +781,7 @@
                         "y": 18.2
                     }
                 ],
-                "icon": "",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -798,7 +798,7 @@
                         "y": 18.2
                     }
                 ],
-                "icon": "",
+                "icon": "boss",
                 "drops": [],
                 "boss": {
                     "name": ""

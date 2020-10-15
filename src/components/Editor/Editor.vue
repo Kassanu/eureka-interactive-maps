@@ -300,6 +300,7 @@
                 this.icons.rank[5] = await this.loadImage(require('@/assets/images/icons/ranks/5.png'))
                 this.icons.engagements = {}
                 this.icons.engagements.boss = await this.loadImage(require('@/assets/images/icons/engagements/boss.png'))
+                this.icons.engagements.duel = await this.loadImage(require('@/assets/images/icons/engagements/duel.png'))
                 this.icons.skirmishes = {}
                 this.icons.skirmishes.boss = await this.loadImage(require('@/assets/images/icons/skirmishes/boss.png'))
                 this.icons.skirmishes.defend = await this.loadImage(require('@/assets/images/icons/skirmishes/defend.png'))
