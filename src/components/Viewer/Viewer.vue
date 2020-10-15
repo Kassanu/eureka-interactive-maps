@@ -412,6 +412,22 @@
                     if (sectionFilters.hasOwnProperty('rank') && item.hasOwnProperty('level') && !sectionFilters.rank[item.level]) {
                         checks.push(true)
                     }
+
+                    if (item.hasOwnProperty('elemental') && item.elemental && !sectionFilters.elemental) {
+                        checks.push(true)
+                    }
+
+                    if (item.hasOwnProperty('ashkin') && item.ashkin && !sectionFilters.ashkin) {
+                        checks.push(true)
+                    }
+
+                    if (item.hasOwnProperty('fauna') && item.fauna && !sectionFilters.fauna) {
+                        checks.push(true)
+                    }
+
+                    if (item.hasOwnProperty('machine') && item.machine && !sectionFilters.machine) {
+                        checks.push(true)
+                    }
                 }
 
                 if (key === 'engagements') {

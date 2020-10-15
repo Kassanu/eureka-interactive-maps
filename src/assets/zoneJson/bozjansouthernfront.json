@@ -708,6 +708,9 @@
                 "y": 0
             },
             "ashkin": false,
+            "elemental": false,
+            "fauna": false,
+            "machine": false,
             "drops": []
         },
         "items": [
@@ -720,6 +723,9 @@
                     "y": 28
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Skill",
@@ -740,6 +746,9 @@
                     "y": 28.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Skill",
@@ -760,6 +769,9 @@
                     "y": 26.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -780,6 +792,9 @@
                     "y": 26.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -800,6 +815,9 @@
                     "y": 26.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -820,6 +838,9 @@
                     "y": 26.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -840,6 +861,9 @@
                     "y": 29.6
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Skill",
@@ -873,6 +897,9 @@
                     "y": 27
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Skill",
@@ -893,6 +920,9 @@
                     "y": 26.8
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Skill",
@@ -953,6 +983,9 @@
                     "y": 21.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -991,6 +1024,9 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -1029,6 +1065,9 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -1067,6 +1106,9 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -1087,6 +1129,9 @@
                     "y": 23.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1107,6 +1152,9 @@
                     "y": 21.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1127,6 +1175,9 @@
                     "y": 21.3
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1147,6 +1198,7 @@
                     "y": 22.8
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Care",
@@ -1187,6 +1239,9 @@
                     "y": 17.8
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1227,6 +1282,9 @@
                     "y": 17.4
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1247,6 +1305,9 @@
                     "y": 18.4
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1289,6 +1350,9 @@
                     "y": 24.3
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1309,6 +1373,9 @@
                     "y": 22.9
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Awakening",
@@ -1348,7 +1415,8 @@
                     "x": 22.4,
                     "y": 15.7
                 },
-                "ashkin": false,
+                "ashkin": true,
+                "elemental": false,
                 "drops": [
                     {
                         "name": "Violence",
@@ -1375,6 +1443,9 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -1401,6 +1472,9 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -1427,6 +1501,9 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": true,
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
@@ -1447,6 +1524,9 @@
                     "y": 15.9
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1466,7 +1546,7 @@
                     "x": 19.9,
                     "y": 17
                 },
-                "ashkin": false,
+                "ashkin": true,
                 "drops": [
                     {
                         "name": "Violence",
@@ -1487,6 +1567,9 @@
                     "y": 14.3
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1507,6 +1590,9 @@
                     "y": 15
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1527,6 +1613,9 @@
                     "y": 16.8
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1547,6 +1636,9 @@
                     "y": 14.5
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1567,6 +1659,9 @@
                     "y": 18.2
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1587,6 +1682,9 @@
                     "y": 17.3
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1607,6 +1705,9 @@
                     "y": 19.2
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1627,6 +1728,9 @@
                     "y": 21.7
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1647,6 +1751,9 @@
                     "y": 13.3
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": true,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Compassion",
@@ -1667,6 +1774,7 @@
                     "y": 18.2
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Support",
@@ -1687,6 +1795,7 @@
                     "y": 16.3
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Support",
@@ -1769,6 +1878,7 @@
                     "y": 25.3
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Preparation",
@@ -1789,6 +1899,7 @@
                     "y": 25.1
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Preparation",
@@ -1809,6 +1920,7 @@
                     "y": 27.2
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Preparation",
@@ -1829,6 +1941,7 @@
                     "y": 29.3
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Preparation",
@@ -1849,6 +1962,7 @@
                     "y": 20.5
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Care",
@@ -1869,6 +1983,7 @@
                     "y": 21
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Care",
@@ -1889,6 +2004,7 @@
                     "y": 21.1
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Care",
@@ -1909,6 +2025,7 @@
                     "y": 19.1
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Support",
@@ -1929,6 +2046,7 @@
                     "y": 18.8
                 },
                 "ashkin": false,
+                "elemental": true,
                 "drops": [
                     {
                         "name": "Support",
