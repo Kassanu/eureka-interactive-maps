@@ -855,6 +855,7 @@
             "fauna": false,
             "machine": false,
             "drops": [],
+            "spawns": [],
             "aggro": "",
             "attack": "",
             "weakness": ""
@@ -884,6 +885,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "",
                 "attack": "physical",
                 "weakness": ""
@@ -912,6 +914,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "",
                 "attack": "physical",
                 "weakness": ""
@@ -940,6 +943,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -968,6 +972,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -996,6 +1001,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1024,6 +1030,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1090,6 +1097,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "",
                 "attack": "physical",
                 "weakness": ""
@@ -1118,6 +1126,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "",
                 "attack": "physical",
                 "weakness": ""
@@ -1146,6 +1155,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1174,6 +1184,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1202,6 +1213,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1248,6 +1260,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1294,6 +1307,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1340,6 +1354,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1368,6 +1383,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1396,6 +1412,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1424,6 +1441,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1452,6 +1470,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -1480,6 +1499,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1508,6 +1528,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1536,6 +1557,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1564,6 +1586,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1592,6 +1615,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1622,6 +1646,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1650,6 +1675,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1678,6 +1704,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1706,6 +1733,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1734,6 +1762,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1768,6 +1797,7 @@
                         "percent": 10
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1802,6 +1832,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1836,6 +1867,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": "magical"
@@ -1864,6 +1896,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1892,6 +1925,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1920,6 +1954,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1948,6 +1983,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -1976,6 +2012,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sound",
                 "attack": "",
                 "weakness": ""
@@ -2004,6 +2041,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -2032,6 +2070,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -2060,6 +2099,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sound",
                 "attack": "",
                 "weakness": ""
@@ -2088,6 +2128,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -2116,6 +2157,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -2144,6 +2186,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "physical",
                 "weakness": ""
@@ -2172,6 +2215,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2200,6 +2244,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2230,6 +2275,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2260,6 +2306,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2290,6 +2337,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2318,6 +2366,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2346,6 +2395,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2374,6 +2424,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2402,6 +2453,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2430,6 +2482,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2458,6 +2511,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2486,6 +2540,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2514,6 +2569,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2542,6 +2598,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "magic",
                 "attack": "magical",
                 "weakness": ""
@@ -2570,6 +2627,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2598,6 +2656,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2626,6 +2685,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2654,6 +2714,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2682,6 +2743,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sound",
                 "attack": "physical",
                 "weakness": ""
@@ -2710,6 +2772,7 @@
                         "percent": 1
                     }
                 ],
+                "spawns": [],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
