@@ -99,6 +99,7 @@
                         </div>
                     </div>
                     <Drops :drops="item.drops" @updateDrops="updateDrops" @addDrop="addDrop" class="w-full md:w-1/2 px-3"></Drops>
+                    <Spawns :spawns="item.spawns" @updateSpawns="updateSpawns" @addSpawn="addSpawn" class="w-full md:w-1/2 px-3"></Spawns>
                 </div>
             </div>
         </form>
@@ -109,6 +110,7 @@
     import SectionItem from './SectionItem'
     import Positions from './Positions'
     import Drops from './Drops'
+    import Spawns from './Spawns'
     import SectionItemMixin from './sectionitem.mixin'
 
     export default {
@@ -116,7 +118,8 @@
         components: {
             SectionItem,
             Positions,
-            Drops
+            Drops,
+            Spawns
         },
         mixins: [SectionItemMixin],
         props: {
