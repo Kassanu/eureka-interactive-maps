@@ -183,5 +183,17 @@ export default {
 
             this.$emit('updateItem', this.sectionKey, newItem)
         },
+        updateAttack: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.attack = evt.target.value
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        updateWeakness: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.weakness = evt.target.value
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
     }
 }

@@ -62,6 +62,42 @@
                             type="checkbox">
                     </div>
                     <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="true" class="w-full md:w-1/2 px-3"></Positions>
+                    <div class="flex w-full md:w-1/2 px-3 mb-3">
+                        <div class="w-1/3 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Aggro
+                            </label>
+                            <select :value="item.aggro" @change="updateAggro"
+                                class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline mr-2">
+                                <option value=''>None</option>
+                                <option value='sight'>Sight</option>
+                                <option value='sound'>Sound</option>
+                                <option value='magic'>Magic</option>
+                            </select>
+                        </div>
+                        <div class="w-1/3 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Attack
+                            </label>
+                            <select :value="item.attack" @change="updateAttack"
+                                class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline mr-2">
+                                <option value=''>Both</option>
+                                <option value='physical'>Physical</option>
+                                <option value='magical'>Magical</option>
+                            </select>
+                        </div>
+                        <div class="w-1/3 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Weakness
+                            </label>
+                            <select :value="item.weakness" @change="updateWeakness"
+                                class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline mr-2">
+                                <option value=''>None</option>
+                                <option value='physical'>Physical</option>
+                                <option value='magical'>Magical</option>
+                            </select>
+                        </div>
+                    </div>
                     <Drops :drops="item.drops" @updateDrops="updateDrops" @addDrop="addDrop" class="w-full md:w-1/2 px-3"></Drops>
                 </div>
             </div>
