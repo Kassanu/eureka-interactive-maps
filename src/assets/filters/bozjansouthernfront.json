@@ -36,7 +36,11 @@
                     true,
                     true,
                     true
-                ]
+                ],
+                "ashkin": true,
+                "elemental": true,
+                "fauna": true,
+                "machine": true
             }
         },
         "aethernet": {

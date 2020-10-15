@@ -85,6 +85,24 @@ export default {
 
             this.$emit('updateItem', this.sectionKey, newItem)
         },
+        updateElemental: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.elemental = evt.target.checked
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        updateFauna: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.fauna = evt.target.checked
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        updateMachine: function (evt) {
+            let newItem = Object.assign({}, this.item)
+            newItem.machine = evt.target.checked
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
         updateForFateId: function (evt) {
             let newItem = Object.assign({}, this.item)
             newItem.fate.fateId = evt.target.value
