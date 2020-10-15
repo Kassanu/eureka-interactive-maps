@@ -1,4 +1,89 @@
 {
+    "drops": {
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "name": "Bozjan Cluster"
+            },
+            {
+                "id": 2,
+                "name": "Tortured Memory of the Dying"
+            },
+            {
+                "id": 3,
+                "name": "Sorrowful Memory of the Dying"
+            },
+            {
+                "id": 4,
+                "name": "Harrowing Memory of the Dying"
+            },
+            {
+                "id": 5,
+                "name": "Fragment of Caution"
+            },
+            {
+                "id": 6,
+                "name": "Fragment of Preparation"
+            },
+            {
+                "id": 7,
+                "name": "Fragment of Skill"
+            },
+            {
+                "id": 8,
+                "name": "Fragment of Ingenuity"
+            },
+            {
+                "id": 9,
+                "name": "Fragment of Care"
+            },
+            {
+                "id": 10,
+                "name": "Fragment of Awakening"
+            },
+            {
+                "id": 11,
+                "name": "Fragment of Support"
+            },
+            {
+                "id": 12,
+                "name": "Fragment of Violence"
+            },
+            {
+                "id": 13,
+                "name": "Fragment of Resolve"
+            },
+            {
+                "id": 14,
+                "name": "Fragment of Compassion"
+            },
+            {
+                "id": 15,
+                "name": "Fragment of Superstition"
+            },
+            {
+                "id": 16,
+                "name": "Fragment of Master"
+            },
+            {
+                "id": 17,
+                "name": "Fragment of Sagacity"
+            },
+            {
+                "id": 18,
+                "name": "Fragment of Becoming"
+            },
+            {
+                "id": 19,
+                "name": "Fragment of Transcendence"
+            },
+            {
+                "id": 20,
+                "name": "Fragment of Caprice"
+            }
+        ]
+    },
     "sections": {
         "engagements": {
             "name": "Critical Engagements",
