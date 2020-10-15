@@ -11,6 +11,9 @@
                 <input :value="drop.amount" @change="updateAmount($event, index)"
                     class="px-2 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline"
                     type="number">
+                <input :value="drop.percent" @change="updatePercent($event, index)"
+                    class="px-2 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline"
+                    type="number">
                     <button @click="deleteDrop(index)" class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded">
                         <font-awesome-icon icon="times" class="cursor-pointer" />
                     </button>
@@ -36,11 +39,11 @@
             updateAmount: function (evt, index) {
                 this.updateDrops(index, 'amount', parseInt(evt.target.value))
             },
+            updatePercent: function (evt, index) {
+                this.updateDrops(index, 'percent', parseInt(evt.target.value))
+            },
             updateDrops: function (index, key, value) {
                 let newDrops = [...this.drops]
-                console.log(JSON.stringify(newDrops))
-                console.log(key)
-                console.log(value)
                 newDrops[index][key] = value
                 this.$emit('updateDrops', newDrops)
             },
