@@ -1,6 +1,6 @@
 <template>
     <div class="flex">
-        <div class="font-bold mr-2">Coordinates:</div> 
+        <div class="font-bold mr-2 flex-shrink-0">Coordinates:</div> 
         <div>
             <div v-for="(position, index) in cPositions" :key="index">
                 ({{ position.x }}, {{ position.y }})

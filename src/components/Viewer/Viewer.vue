@@ -32,6 +32,8 @@
     import MonsterItemInformation from './MonsterItemInformation'
     import FateItemInformation from './FateItemInformation'
     import EnemyItemInformation from './ItemInformation/EnemyItemInformation'
+    import SkirmishesItemInformation from './ItemInformation/SkirmishesItemInformation'
+    import CriticalEngagementsItemInformation from './ItemInformation/CriticalEngagementsItemInformation'
 
     export default {
         name: 'viewer',
@@ -42,6 +44,8 @@
             MonsterItemInformation,
             FateItemInformation,
             EnemyItemInformation,
+            SkirmishesItemInformation,
+            CriticalEngagementsItemInformation,
             EurekaCanvas
         },
         props:{
@@ -201,6 +205,12 @@
                     case 'enemies':
                         component = 'EnemyItemInformation'
                         break
+                    case 'skirmishes':
+                        component = 'SkirmishesItemInformation'
+                        break
+                    case 'engagements':
+                        component = 'CriticalEngagementsItemInformation'
+                        break
                     default:
                         component = 'DefaultItemInformation'
                         break
@@ -222,6 +232,13 @@
                     case 'fates':
                         props = {
                             monsters: this.jsonData.monsters.items
+                        }
+                        break
+                    case 'skirmishes':
+                    case 'engagements':
+                        props = {
+                            enemies: this.jsonData.enemies.items,
+                            skirmishes: this.jsonData.skirmishes.items
                         }
                         break
                 }

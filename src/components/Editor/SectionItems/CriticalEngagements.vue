@@ -39,6 +39,7 @@
                             type="number">
                     </div>
                     <Icon :icons="icons" :icon="item.icon" @updateIcon="updateIcon" class="w-full md:w-1/2 px-3"></Icon>
+                    <Spawns :spawns="item.spawns" @updateSpawns="updateSpawns" @addSpawn="addSpawn" class="w-full md:w-1/2 px-3"></Spawns>
                 </div>
             </div>
         </form>
@@ -49,6 +50,7 @@
     import SectionItem from './SectionItem'
     import Positions from './Positions'
     import Icon from './Icon'
+    import Spawns from './Spawns'
     import SectionItemMixin from './sectionitem.mixin'
 
     export default {
@@ -56,7 +58,8 @@
         components: {
             SectionItem,
             Positions,
-            Icon
+            Icon,
+            Spawns
         },
         mixins: [SectionItemMixin],
         props: {

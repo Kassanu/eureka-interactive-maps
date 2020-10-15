@@ -167,5 +167,20 @@ export default {
 
             this.$emit('updateItem', this.sectionKey, newItem)
         },
+        updateSpawns: function (spawns) {
+            let newItem = Object.assign({}, this.item)
+            newItem.spawns = spawns
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
+        addSpawn: function () {
+            let newItem = Object.assign({}, this.item)
+
+            newItem.spawns.push({
+                type: "enemy",
+                value: ""
+            })
+
+            this.$emit('updateItem', this.sectionKey, newItem)
+        },
     }
 }
