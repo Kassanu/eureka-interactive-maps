@@ -162,7 +162,8 @@ export default {
 
             newItem.drops.push({
                 name: "",
-                amount: 0
+                amount: 0,
+                percent: 0
             })
 
             this.$emit('updateItem', this.sectionKey, newItem)
