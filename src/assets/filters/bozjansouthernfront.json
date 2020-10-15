@@ -3,7 +3,22 @@
         "engagements": {
             "name": "Critical Engagements",
             "enabled": true,
-            "filters": {}
+            "filters": {
+                "participants": [
+                    {
+                        "amount": 1,
+                        "enabled": true
+                    },
+                    {
+                        "amount": 24,
+                        "enabled": true
+                    },
+                    {
+                        "amount": 48,
+                        "enabled": true
+                    }
+                ]
+            }
         },
         "skirmishes": {
             "name": "Skirmishes",

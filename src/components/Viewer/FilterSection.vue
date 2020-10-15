@@ -23,12 +23,14 @@
 <script>
     import Monsters from './SectionItems/Monsters'
     import Enemies from './SectionItems/Enemies'
+    import CriticalEngagements from './SectionItems/CriticalEngagements'
 
     export default {
         name: 'filter-section',
         components: {
             Monsters,
-            Enemies
+            Enemies,
+            CriticalEngagements
         },
         props: {
             section: {
@@ -45,11 +47,22 @@
                 return Object.keys(this.section.filters).length !== 0
             },
             filterComponent() {
-                // TODO: make this into a proper switch possibly with a default component next time a filter is added
-                if (this.$vnode.key === 'enemies') {
-                    return 'Enemies'
+                let component = null
+                switch (this.$vnode.key) {
+                    case 'monsters':
+                        component = 'Monsters'
+                        break
+                    case 'enemies':
+                        component = 'Enemies'
+                        break
+                    case 'engagements':
+                        component = 'CriticalEngagements'
+                        break
+                    default:
+                        component = null
                 }
-                return 'Monsters'
+
+                return component
             },
             viewInputId() {
                 return `showhidecheckbox-${this.$vnode.key}`
