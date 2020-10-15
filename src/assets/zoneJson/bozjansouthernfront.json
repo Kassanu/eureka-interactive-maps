@@ -1155,7 +1155,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1184,7 +1189,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1499,7 +1509,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1557,7 +1572,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1646,7 +1666,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -1733,7 +1758,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2275,7 +2305,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2306,7 +2341,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
@@ -2337,7 +2377,12 @@
                         "percent": 1
                     }
                 ],
-                "spawns": [],
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "1800"
+                    }
+                ],
                 "aggro": "sight",
                 "attack": "",
                 "weakness": ""
