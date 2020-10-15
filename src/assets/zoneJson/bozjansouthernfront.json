@@ -729,11 +729,11 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -752,11 +752,11 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -775,11 +775,11 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -798,11 +798,11 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -821,11 +821,11 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -844,11 +844,11 @@
                 "drops": [
                     {
                         "name": "Bozjan Cluster",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -867,11 +867,11 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -903,11 +903,11 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -926,11 +926,11 @@
                 "drops": [
                     {
                         "name": "Skill",
-                        "amount": 0
+                        "amount": 3
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -943,14 +943,17 @@
                     "y": 27.3
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Caution",
-                        "amount": 0
+                        "amount": 20
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -963,14 +966,17 @@
                     "y": 25
                 },
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Caution",
-                        "amount": 0
+                        "amount": 20
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1818,14 +1824,17 @@
                     }
                 ],
                 "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Caution",
-                        "amount": 0
+                        "amount": 20
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1879,14 +1888,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Preparation",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1900,14 +1911,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Preparation",
-                        "amount": 0
+                        "amount": 2
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1921,14 +1934,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Preparation",
-                        "amount": 0
+                        "amount": 1
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -1942,14 +1957,16 @@
                 },
                 "ashkin": false,
                 "elemental": true,
+                "fauna": false,
+                "machine": false,
                 "drops": [
                     {
                         "name": "Preparation",
-                        "amount": 0
+                        "amount": 5
                     },
                     {
                         "name": "Tortured Memory of the Dying",
-                        "amount": 0
+                        "amount": 1
                     }
                 ]
             },
@@ -2055,6 +2072,52 @@
                     {
                         "name": "Harrowing Memory of the Dying",
                         "amount": 0
+                    }
+                ]
+            },
+            {
+                "id": "30f43acd-1d00-4264-a789-f2a9703416c1",
+                "name": "Bozjan Geshunpest",
+                "level": 3,
+                "position": {
+                    "x": 24,
+                    "y": 29
+                },
+                "ashkin": true,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [
+                    {
+                        "name": "Preparation",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "id": "129c5ae8-08ed-4051-a399-4caf4a5b06ec",
+                "name": "Bozjan Wraith",
+                "level": 5,
+                "position": {
+                    "x": 35.4,
+                    "y": 25.5
+                },
+                "ashkin": true,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [
+                    {
+                        "name": "Preparation",
+                        "amount": 5
+                    },
+                    {
+                        "name": "Tortured Memory of the Dying",
+                        "amount": 1
                     }
                 ]
             }
