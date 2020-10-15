@@ -10,7 +10,7 @@
             <Drops :drops="item.drops"></Drops>
         </div>
         <div>
-            <Spawns :spawns="item.spawns"></Spawns>
+            <Spawns :spawns="item.spawns" :enemies="enemies" :skirmishes="skirmishes"></Spawns>
         </div>
     </div>
 </template>
@@ -30,6 +30,14 @@
         props: {
             item: {
                 type: Object,
+                required: true
+            },
+            enemies: {
+                type: Array,
+                required: true
+            },
+            skirmishes: {
+                type: Array,
                 required: true
             }
         }

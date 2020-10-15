@@ -236,6 +236,7 @@
                         break
                     case 'skirmishes':
                     case 'engagements':
+                    case 'enemies':
                         props = {
                             enemies: this.jsonData.enemies.items,
                             skirmishes: this.jsonData.skirmishes.items
