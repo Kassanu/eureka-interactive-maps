@@ -854,7 +854,10 @@
             "elemental": false,
             "fauna": false,
             "machine": false,
-            "drops": []
+            "drops": [],
+            "aggro": "",
+            "attack": "",
+            "weakness": ""
         },
         "items": [
             {
@@ -880,7 +883,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "",
+                "attack": "physical",
+                "weakness": ""
             },
             {
                 "id": "cdbb6219-7dc9-4c13-8532-f6e4a96b9955",
@@ -905,7 +911,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "",
+                "attack": "physical",
+                "weakness": ""
             },
             {
                 "id": "9d37b614-2642-44b2-896e-64185a4826b3",
@@ -930,7 +939,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "physical",
+                "weakness": "magical"
             },
             {
                 "id": "a7360056-1917-4f5c-b8e9-477534079166",
@@ -955,7 +967,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "physical",
+                "weakness": "magical"
             },
             {
                 "id": "e9e95852-5548-4d54-b9db-a5f2ca5267b0",
@@ -980,7 +995,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "physical",
+                "weakness": "magical"
             },
             {
                 "id": "2be6d523-3d13-40c5-9da5-0152c2014364",
@@ -1005,7 +1023,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "physical",
+                "weakness": "magical"
             },
             {
                 "id": "0abac2a8-9675-427f-9ffa-46ce340190c4",
@@ -1068,7 +1089,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "",
+                "attack": "physical",
+                "weakness": ""
             },
             {
                 "id": "9610a645-9365-43c2-a287-f65d49874586",
@@ -1093,7 +1117,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "",
+                "attack": "physical",
+                "weakness": ""
             },
             {
                 "id": "0aa3610f-f5b9-4055-bcf5-d8548e9a03d7",
@@ -1118,7 +1145,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "",
+                "weakness": ""
             },
             {
                 "id": "f6415c10-ebf5-488b-a9be-5a68774d8786",
@@ -1143,7 +1173,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "",
+                "weakness": ""
             },
             {
                 "id": "28d1fd33-f290-4ad6-8bf0-ba23f8280d6f",
@@ -2094,7 +2127,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "",
+                "weakness": ""
             },
             {
                 "id": "5fef34c8-59e5-496f-92a4-3eda6082dfa3",
@@ -2173,7 +2209,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "magic",
+                "attack": "magical",
+                "weakness": ""
             },
             {
                 "id": "d1e863d1-e79c-4559-a72f-e3917fd7d94a",
@@ -2198,7 +2237,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "magic",
+                "attack": "magical",
+                "weakness": ""
             },
             {
                 "id": "ab7b26f8-12dc-4c07-be0a-6079f316bdc9",
@@ -2223,7 +2265,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "magic",
+                "attack": "magical",
+                "weakness": ""
             },
             {
                 "id": "ba881e36-5d53-48d1-802e-633661651f08",
@@ -2248,7 +2293,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "magic",
+                "attack": "magical",
+                "weakness": ""
             },
             {
                 "id": "803c2e52-9000-4464-b72f-02ec27b4247b",
@@ -2398,7 +2446,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "",
+                "weakness": ""
             },
             {
                 "id": "129c5ae8-08ed-4051-a399-4caf4a5b06ec",
@@ -2423,7 +2474,10 @@
                         "amount": 1,
                         "percent": 1
                     }
-                ]
+                ],
+                "aggro": "sight",
+                "attack": "",
+                "weakness": ""
             },
             {
                 "id": "a4e0f2fb-eb55-40ce-bb1f-64cc6268781b",
