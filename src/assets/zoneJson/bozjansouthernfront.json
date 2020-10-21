@@ -26,7 +26,7 @@
                 "position": [
                     {
                         "x": 22,
-                        "y": 28.6
+                        "y": 29
                     }
                 ],
                 "icon": "boss",
@@ -41,10 +41,12 @@
                 "id": "2d094f75-dbf5-493f-a96b-01d956be2ab1",
                 "name": "Vigil for the Lost",
                 "level": 1,
-                "position": {
-                    "x": 28,
-                    "y": 29.5
-                },
+                "position": [
+                    {
+                        "x": 27.9,
+                        "y": 28.9
+                    }
+                ],
                 "icon": "boss",
                 "participants": 48,
                 "drops": [],
@@ -62,10 +64,12 @@
                 "id": "28c7ca10-9645-4ea1-b162-9d8399f2f6a0",
                 "name": "Aces High",
                 "level": 1,
-                "position": {
-                    "x": 31.5,
-                    "y": 26.7
-                },
+                "position": [
+                    {
+                        "x": 31.6,
+                        "y": 26.8
+                    }
+                ],
                 "icon": "duel",
                 "participants": 1,
                 "drops": [],
@@ -78,10 +82,12 @@
                 "id": "dbb14450-772c-46f9-b712-b9018fcb42a2",
                 "name": "The Shadow of Death's Hand",
                 "level": 1,
-                "position": {
-                    "x": 35.4,
-                    "y": 25.8
-                },
+                "position": [
+                    {
+                        "x": 35.4,
+                        "y": 25.8
+                    }
+                ],
                 "icon": "boss",
                 "participants": 48,
                 "drops": [],
@@ -94,10 +100,12 @@
                 "id": "04dff65f-3716-43d1-91e6-b6545ad9202f",
                 "name": "Kill if with Fire",
                 "level": 1,
-                "position": {
-                    "x": 17.1,
-                    "y": 27
-                },
+                "position": [
+                    {
+                        "x": 17,
+                        "y": 26.8
+                    }
+                ],
                 "icon": "boss",
                 "participants": 48,
                 "drops": [],
@@ -117,8 +125,8 @@
                 "level": 5,
                 "position": [
                     {
-                        "x": 31.8,
-                        "y": 17.5
+                        "x": 31.5,
+                        "y": 17.2
                     }
                 ],
                 "icon": "boss",
@@ -131,6 +139,29 @@
                     {
                         "type": "skirmish",
                         "value": "0f03feb4-71fd-4718-b4d7-5883e9208d6a"
+                    }
+                ]
+            },
+            {
+                "id": "1816511b-3ae7-400d-ac09-95f4feb97955",
+                "name": "The Hunt for Red Choctober",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 26.9,
+                        "y": 18.5
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "e94f8624-5302-47d9-b40a-3593f99aff66"
                     }
                 ]
             },
@@ -171,27 +202,22 @@
                 "spawns": []
             },
             {
-                "id": "1816511b-3ae7-400d-ac09-95f4feb97955",
-                "name": "The Hunt for Red Choctober",
-                "level": 5,
+                "id": "9e9b9e82-d01f-4a16-9f8d-ced60a1acd3a",
+                "name": "Beast of Man",
+                "level": 8,
                 "position": [
                     {
-                        "x": 26.9,
-                        "y": 18.5
+                        "x": 23.2,
+                        "y": 20.6
                     }
                 ],
-                "icon": "boss",
-                "participants": 48,
+                "icon": "duel",
+                "participants": 1,
                 "drops": [],
                 "boss": {
                     "name": ""
                 },
-                "spawns": [
-                    {
-                        "type": "skirmish",
-                        "value": "e94f8624-5302-47d9-b40a-3593f99aff66"
-                    }
-                ]
+                "spawns": []
             },
             {
                 "id": "b5a003a3-2bd8-4fb0-9255-9ebedb0f2a31",
@@ -218,12 +244,12 @@
             },
             {
                 "id": "a9cfa0a6-9f6b-4dac-bf82-6e4bc30e556b",
-                "name": "Metal Chaos Fox",
+                "name": "Metal Fox Chaos",
                 "level": 8,
                 "position": [
                     {
-                        "x": 14.4,
-                        "y": 18.8
+                        "x": 14.2,
+                        "y": 18.2
                     }
                 ],
                 "icon": "boss",
@@ -245,12 +271,12 @@
                 "level": 8,
                 "position": [
                     {
-                        "x": 18.6,
+                        "x": 18.7,
                         "y": 15.9
                     }
                 ],
                 "icon": "duel",
-                "participants": 48,
+                "participants": 1,
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -282,12 +308,35 @@
                     "y": 18.3
                 },
                 "icon": "boss",
-                "participants": 48,
+                "participants": 24,
                 "drops": [],
                 "boss": {
                     "name": ""
                 },
                 "spawns": []
+            },
+            {
+                "id": "9de3693c-b878-4a6d-b97d-38299bfb4054",
+                "name": "The Battle of Castrum Lacus Litore",
+                "level": 10,
+                "position": [
+                    {
+                        "x": 19.6,
+                        "y": 13.4
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": [
+                    {
+                        "type": "time",
+                        "value": "3600"
+                    }
+                ]
             }
         ]
     },
@@ -311,13 +360,83 @@
         },
         "items": [
             {
+                "id": "14f52f3b-d12d-4f74-a7d4-61d1210374e4",
+                "name": "Sneak & Spell",
+                "level": 1,
+                "position": [
+                    {
+                        "x": 20.2,
+                        "y": 26.9
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "fd2fe868-83f6-4c3e-9743-896e2a9a4341",
+                "name": "The Beasts Must Die",
+                "level": 1,
+                "position": [
+                    {
+                        "x": 20.2,
+                        "y": 26.9
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
                 "id": "a7e77b5d-14a5-4686-8b47-180c4695b2b5",
                 "name": "None of Them Knew They Were Robots",
                 "level": 1,
-                "position": {
-                    "x": 24.4,
-                    "y": 27.6
+                "position": [
+                    {
+                        "x": 24.4,
+                        "y": 27.7
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
                 },
+                "spawns": []
+            },
+            {
+                "id": "b63e850f-10aa-43e1-98c6-2942bf28a2a5",
+                "name": "Unrest for the Wicked",
+                "level": 1,
+                "position": [
+                    {
+                        "x": 24.4,
+                        "y": 27.7
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "2ab18753-a433-4649-9f9a-1cc73eac4334",
+                "name": "Brought to Heal",
+                "level": 1,
+                "position": [
+                    {
+                        "x": 28.6,
+                        "y": 26
+                    }
+                ],
                 "icon": "slay",
                 "drops": [],
                 "boss": {
@@ -329,10 +448,12 @@
                 "id": "f0f5531d-999f-43f7-9171-21e9b1ba93ed",
                 "name": "Seeq and Destroy",
                 "level": 1,
-                "position": {
-                    "x": 28.6,
-                    "y": 26.2
-                },
+                "position": [
+                    {
+                        "x": 28.6,
+                        "y": 26
+                    }
+                ],
                 "icon": "slay",
                 "drops": [],
                 "boss": {
@@ -356,73 +477,15 @@
                 "spawns": []
             },
             {
-                "id": "2ab18753-a433-4649-9f9a-1cc73eac4334",
-                "name": "Brought to Heal",
-                "level": 1,
-                "position": {
-                    "x": 28.3,
-                    "y": 26.4
-                },
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "b63e850f-10aa-43e1-98c6-2942bf28a2a5",
-                "name": "Unrest for the Wicked",
-                "level": 1,
-                "position": {
-                    "x": 24.5,
-                    "y": 27.5
-                },
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "701da551-51b4-4447-9be1-1990af101774",
-                "name": "More Machine Now than Man",
-                "level": 1,
-                "position": {
-                    "x": 27.8,
-                    "y": 29.3
-                },
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
                 "id": "debeb8cc-64d7-4475-b1d3-b6bf9300f0fb",
                 "name": "Conflicting with the First Law",
                 "level": 1,
-                "position": {
-                    "x": 33.6,
-                    "y": 29.4
-                },
-                "icon": "boss",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "fd2fe868-83f6-4c3e-9743-896e2a9a4341",
-                "name": "The Beasts Must Die",
-                "level": 1,
-                "position": {
-                    "x": 20.2,
-                    "y": 26.9
-                },
+                "position": [
+                    {
+                        "x": 33.6,
+                        "y": 29.3
+                    }
+                ],
                 "icon": "boss",
                 "drops": [],
                 "boss": {
@@ -434,31 +497,69 @@
                 "id": "074e37ef-e316-4e13-9d54-e2560248ef9b",
                 "name": "All Pets Are Off",
                 "level": 1,
-                "position": {
-                    "x": 17.3,
-                    "y": 26.7
-                },
+                "position": [
+                    {
+                        "x": 17,
+                        "y": 26.8
+                    }
+                ],
                 "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
                 },
-                "spawns": []
+                "spawns": [
+                    {
+                        "type": "enemy",
+                        "value": "2be6d523-3d13-40c5-9da5-0152c2014364"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "e9e95852-5548-4d54-b9db-a5f2ca5267b0"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "a7360056-1917-4f5c-b8e9-477534079166"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "9d37b614-2642-44b2-896e-64185a4826b3"
+                    }
+                ]
             },
             {
-                "id": "14f52f3b-d12d-4f74-a7d4-61d1210374e4",
-                "name": "Sneak & Spell",
+                "id": "701da551-51b4-4447-9be1-1990af101774",
+                "name": "More Machine Now than Man",
                 "level": 1,
-                "position": {
-                    "x": 20.1,
-                    "y": 26.9
-                },
+                "position": [
+                    {
+                        "x": 27.9,
+                        "y": 28.9
+                    }
+                ],
                 "icon": "slay",
                 "drops": [],
                 "boss": {
                     "name": ""
                 },
-                "spawns": []
+                "spawns": [
+                    {
+                        "type": "enemy",
+                        "value": "2be6d523-3d13-40c5-9da5-0152c2014364"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "e9e95852-5548-4d54-b9db-a5f2ca5267b0"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "a7360056-1917-4f5c-b8e9-477534079166"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "9d37b614-2642-44b2-896e-64185a4826b3"
+                    }
+                ]
             },
             {
                 "id": "f3bbdfa4-432b-4542-9ba6-7e660ec06183",
@@ -468,6 +569,89 @@
                     "x": 25.3,
                     "y": 22.8
                 },
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "25338bf2-c4ce-4a5f-8593-4a80f9f39eaf",
+                "name": "Parts and Recreation",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 25.3,
+                        "y": 22.8
+                    }
+                ],
+                "icon": "gather",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "3ffb302e-77e1-44f3-97f8-0ba3b03743d5",
+                "name": "The Monster Mash",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 30.8,
+                        "y": 22.2
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "8c15c907-a432-4447-a8f4-1eb6274b2960",
+                "name": "Heavy Boots of Lead",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 30.8,
+                        "y": 22.2
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "21c0d479-f797-4702-81cc-b96b64ff8f05",
+                "name": "The Element of Supplies",
+                "level": 5,
+                "position": {
+                    "x": 17.6,
+                    "y": 23.4
+                },
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "cfaafc3d-975b-488b-9f34-f0043940c9ca",
+                "name": "No Camping Allowed",
+                "level": 5,
+                "position": [
+                    {
+                        "x": 17.6,
+                        "y": 23.4
+                    }
+                ],
                 "icon": "slay",
                 "drops": [],
                 "boss": {
@@ -511,58 +695,13 @@
                 ]
             },
             {
-                "id": "8c15c907-a432-4447-a8f4-1eb6274b2960",
-                "name": "Heavy Boots of Lead",
-                "level": 5,
-                "position": {
-                    "x": 30.6,
-                    "y": 23.3
-                },
-                "icon": "boss",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "3ffb302e-77e1-44f3-97f8-0ba3b03743d5",
-                "name": "The Monster Mash",
-                "level": 5,
-                "position": {
-                    "x": 30.6,
-                    "y": 23.3
-                },
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "21c0d479-f797-4702-81cc-b96b64ff8f05",
-                "name": "The Element of Supplies",
-                "level": 5,
-                "position": {
-                    "x": 17.6,
-                    "y": 23.4
-                },
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "cfaafc3d-975b-488b-9f34-f0043940c9ca",
-                "name": "No Camping Allowed",
+                "id": "e94f8624-5302-47d9-b40a-3593f99aff66",
+                "name": "Red (Chocobo) Alert",
                 "level": 5,
                 "position": [
                     {
-                        "x": 17.6,
-                        "y": 23.4
+                        "x": 26.9,
+                        "y": 18.5
                     }
                 ],
                 "icon": "slay",
@@ -570,7 +709,20 @@
                 "boss": {
                     "name": ""
                 },
-                "spawns": []
+                "spawns": [
+                    {
+                        "type": "enemy",
+                        "value": "cc250b7d-6c3c-49dd-89a3-d5bbb21bb83a"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "6d2ca070-a5aa-450a-a9dd-87dfc7f87864"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "52588d34-a851-4459-ac3d-747c7f558258"
+                    }
+                ]
             },
             {
                 "id": "0f03feb4-71fd-4718-b4d7-5883e9208d6a",
@@ -587,24 +739,20 @@
                 "boss": {
                     "name": ""
                 },
-                "spawns": []
-            },
-            {
-                "id": "25338bf2-c4ce-4a5f-8593-4a80f9f39eaf",
-                "name": "Parts and Recreation",
-                "level": 5,
-                "position": [
+                "spawns": [
                     {
-                        "x": 25.3,
-                        "y": 22.8
+                        "type": "enemy",
+                        "value": "cc250b7d-6c3c-49dd-89a3-d5bbb21bb83a"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "6d2ca070-a5aa-450a-a9dd-87dfc7f87864"
+                    },
+                    {
+                        "type": "enemy",
+                        "value": "52588d34-a851-4459-ac3d-747c7f558258"
                     }
-                ],
-                "icon": "gather",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
+                ]
             },
             {
                 "id": "0ffd6063-0564-479e-9bc8-efbac36a91c4",
@@ -663,13 +811,64 @@
                 ]
             },
             {
-                "id": "dc60dbe9-3eee-48f9-a0fc-9a8ec21f750b",
-                "name": "My Family and Other Animals",
+                "id": "6bc0c8c7-03e6-465c-bbe2-a8c8f59d355d",
+                "name": "Let Slip the Dogs of War",
                 "level": 8,
                 "position": [
                     {
-                        "x": 11.3,
-                        "y": 15.1
+                        "x": 14,
+                        "y": 15.6
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "ee6c16cd-a25d-488a-8fab-a852387f0544",
+                "name": "The Wild Bunch",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 20.8,
+                        "y": 14.6
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "f7b1a764-915e-4a60-8737-a8711355ced4",
+                "name": "Supplies Party",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 20.8,
+                        "y": 14.6
+                    }
+                ],
+                "icon": "gather",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "a6cf5c96-9663-434d-a861-d5ab31c4c6e8",
+                "name": "Desperately Seeking Something",
+                "level": 8,
+                "position": [
+                    {
+                        "x": 24.4,
+                        "y": 17.3
                     }
                 ],
                 "icon": "slay",
@@ -697,89 +896,16 @@
                 "spawns": []
             },
             {
-                "id": "6bc0c8c7-03e6-465c-bbe2-a8c8f59d355d",
-                "name": "Let Slip the Dogs of War",
+                "id": "dc60dbe9-3eee-48f9-a0fc-9a8ec21f750b",
+                "name": "My Family and Other Animals",
                 "level": 8,
                 "position": [
                     {
-                        "x": 14,
-                        "y": 15.6
+                        "x": 11.3,
+                        "y": 15.1
                     }
                 ],
                 "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "e94f8624-5302-47d9-b40a-3593f99aff66",
-                "name": "Red (Chocobo) Alert",
-                "level": 5,
-                "position": [
-                    {
-                        "x": 26.9,
-                        "y": 18.5
-                    }
-                ],
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": [
-                    {
-                        "type": "enemy",
-                        "value": "9a8c7130-bd9a-4b55-99b6-9ffd0c3c1b58"
-                    }
-                ]
-            },
-            {
-                "id": "ee6c16cd-a25d-488a-8fab-a852387f0544",
-                "name": "The Wild Bunch",
-                "level": 8,
-                "position": [
-                    {
-                        "x": 22,
-                        "y": 14.5
-                    }
-                ],
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "a6cf5c96-9663-434d-a861-d5ab31c4c6e8",
-                "name": "Desperately Seeking Something",
-                "level": 8,
-                "position": [
-                    {
-                        "x": 24.4,
-                        "y": 17.3
-                    }
-                ],
-                "icon": "slay",
-                "drops": [],
-                "boss": {
-                    "name": ""
-                },
-                "spawns": []
-            },
-            {
-                "id": "f7b1a764-915e-4a60-8737-a8711355ced4",
-                "name": "Supplies Party",
-                "level": 8,
-                "position": [
-                    {
-                        "x": 20.8,
-                        "y": 14.6
-                    }
-                ],
-                "icon": "gather",
                 "drops": [],
                 "boss": {
                     "name": ""
@@ -923,10 +1049,20 @@
                 "id": "9d37b614-2642-44b2-896e-64185a4826b3",
                 "name": "4th Legion Roader",
                 "level": 3,
-                "position": {
-                    "x": 19,
-                    "y": 26.5
-                },
+                "position": [
+                    {
+                        "x": 19,
+                        "y": 26.5
+                    },
+                    {
+                        "x": 29.3,
+                        "y": 25.3
+                    },
+                    {
+                        "x": 27.7,
+                        "y": 29.6
+                    }
+                ],
                 "ashkin": false,
                 "elemental": false,
                 "fauna": false,
@@ -952,10 +1088,20 @@
                 "id": "a7360056-1917-4f5c-b8e9-477534079166",
                 "name": "4th Legion Nimrod",
                 "level": 2,
-                "position": {
-                    "x": 19,
-                    "y": 26.5
-                },
+                "position": [
+                    {
+                        "x": 19,
+                        "y": 26.5
+                    },
+                    {
+                        "x": 29.3,
+                        "y": 25.3
+                    },
+                    {
+                        "x": 27.7,
+                        "y": 29.6
+                    }
+                ],
                 "ashkin": false,
                 "elemental": false,
                 "fauna": false,
@@ -981,10 +1127,20 @@
                 "id": "e9e95852-5548-4d54-b9db-a5f2ca5267b0",
                 "name": "4th Legion Slasher",
                 "level": 1,
-                "position": {
-                    "x": 19,
-                    "y": 26.5
-                },
+                "position": [
+                    {
+                        "x": 19,
+                        "y": 26.5
+                    },
+                    {
+                        "x": 29.3,
+                        "y": 25.3
+                    },
+                    {
+                        "x": 27.7,
+                        "y": 29.6
+                    }
+                ],
                 "ashkin": false,
                 "elemental": false,
                 "fauna": false,
@@ -1010,10 +1166,20 @@
                 "id": "2be6d523-3d13-40c5-9da5-0152c2014364",
                 "name": "4th Legion Death Claw",
                 "level": 3,
-                "position": {
-                    "x": 19,
-                    "y": 26.5
-                },
+                "position": [
+                    {
+                        "x": 19,
+                        "y": 26.5
+                    },
+                    {
+                        "x": 29.3,
+                        "y": 25.3
+                    },
+                    {
+                        "x": 27.7,
+                        "y": 29.6
+                    }
+                ],
                 "ashkin": false,
                 "elemental": false,
                 "fauna": false,
