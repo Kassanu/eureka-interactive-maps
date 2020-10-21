@@ -285,6 +285,7 @@
                                             } else if (this.icons.hasOwnProperty(item.element)) {
                                                 itemObj.icons.push({ image: this.icons[item.element].image })
                                             }
+                                            itemObj.drawStyle = 'circle'
                                             break;
                                         case 'quests':
                                             itemObj.icons.push({ image: this.icons.quest.image })
@@ -307,6 +308,7 @@
                                             } else {
                                                 itemObj.icons.push({ image: this.icons.fate.image })
                                             }
+                                            itemObj.drawStyle = 'circle'
                                             break;
                                         case 'engagements':
                                             if (item.hasOwnProperty('icon') && this.icons[`engagements_${item.icon}`]) {
@@ -314,6 +316,7 @@
                                             } else {
                                                 itemObj.icons.push({ image: this.icons.fate.image })
                                             }
+                                            itemObj.drawStyle = 'circle'
                                             break;
                                         default:
                                             itemObj.icons.push({ image: this.icons.noelement.image })
