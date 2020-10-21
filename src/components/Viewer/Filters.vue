@@ -51,10 +51,10 @@
                         </div>
                     </div>
                 </div>
-                <filter-section v-for="(section, index) in filters.sections" :key="index" :section="section" @updateSection="updateSection(index, ...arguments)"></filter-section>
+                <filter-section v-for="(section, index) in filters.sections" :key="index" :section="section" :jsonData="jsonData" @updateSection="updateSection(index, ...arguments)"></filter-section>
             </form>
         </div>
-        <div id="filterExpander" class="relative">
+        <div class="filterExpander relative">
             <div>
                 <div @click="expanded = !expanded" class="cursor-pointer w-full h-full flex justify-center items-center">
                     <font-awesome-icon :icon="expandFiltersIcon" />
@@ -74,7 +74,12 @@
         },
         props: {
             filters: {
-                type: Object
+                type: Object,
+                required: true
+            },
+            jsonData: {
+                type: Object,
+                required: true
             }
         },
         data() {

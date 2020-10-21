@@ -15,7 +15,7 @@
                     <font-awesome-icon icon="caret-down" class="cursor-pointer" /></span>
             </div>
         </div>
-        <component v-if="showExpanded && expanded" :is="filterComponent" :filters="section.filters"
+        <component v-if="showExpanded && expanded" :is="filterComponent" :filters="section.filters" :jsonData="jsonData"
             @updateFilters="updateFilters"></component>
     </div>
 </template>
@@ -24,17 +24,24 @@
     import Monsters from './SectionItems/Monsters'
     import Enemies from './SectionItems/Enemies'
     import CriticalEngagements from './SectionItems/CriticalEngagements'
+    import Skirmishes from './SectionItems/Skirmishes'
 
     export default {
         name: 'filter-section',
         components: {
             Monsters,
             Enemies,
-            CriticalEngagements
+            CriticalEngagements,
+            Skirmishes
         },
         props: {
             section: {
-                type: Object
+                type: Object,
+                required: true
+            },
+            jsonData: {
+                type: Object,
+                required: true
             }
         },
         data() {
@@ -57,6 +64,9 @@
                         break
                     case 'engagements':
                         component = 'CriticalEngagements'
+                        break
+                    case 'skirmishes':
+                        component = 'Skirmishes'
                         break
                     default:
                         component = null
