@@ -102,13 +102,16 @@
                         "amount": 48,
                         "enabled": true
                     }
-                ]
+                ],
+                "hiddenEngagements": []
             }
         },
         "skirmishes": {
             "name": "Skirmishes",
             "enabled": true,
-            "filters": {}
+            "filters": {
+                "hiddenSkirmishes": []
+            }
         },
         "enemies": {
             "name": "Enemies",

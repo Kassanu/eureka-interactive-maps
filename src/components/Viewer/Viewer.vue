@@ -1,6 +1,6 @@
 <template>
     <div id="viewer" class="relative">
-        <filters :filters="cFilters" @updateFilters="updateFilters" @resetFilters="resetFilters"></filters>
+        <filters :filters="cFilters" :jsonData="jsonData" @updateFilters="updateFilters" @resetFilters="resetFilters"></filters>
         <EurekaCanvas
             v-if="!loading"
             :canvasImage="image"
@@ -461,6 +461,18 @@
                     let sectionFilters = this.cFilters.sections.engagements.filters
                     let participants = sectionFilters.participants.find(p => p.amount == item.participants)
                     if (participants && !participants.enabled) {
+                        checks.push(true)
+                    }
+
+                    if (sectionFilters.hiddenEngagements.includes(item.id)) {
+                        checks.push(true)
+                    }
+                }
+
+                if (key === 'skirmishes') {
+                    let sectionFilters = this.cFilters.sections.skirmishes.filters
+
+                    if (sectionFilters.hiddenSkirmishes.includes(item.id)) {
                         checks.push(true)
                     }
                 }
