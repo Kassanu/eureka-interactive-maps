@@ -46,6 +46,12 @@
             title: 'v0.4.0',
             description: 'Updates the map editor to save pretty printed JSON instead of the compressed string.',
             showDayAndMonth: true
+          },
+          {
+            from: new Date(2020, 9, 21),
+            title: 'v0.5.0',
+            description: '<ul class="list-disc list-inside"><li>Adds a lot of information added to the Bozjan Southern Front map</li><li>Updates to Eureka Canvas v0.8.0</li></ul>',
+            showDayAndMonth: true
           }
         ]
       }
