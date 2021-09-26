@@ -114,6 +114,7 @@
                                             } else {
                                                 itemObj.icons.push({ image: this.icons[item.element] })
                                             }
+                                            itemObj.label = `${item.name} (${item.level})`
                                             break;
                                         case 'fates':
                                             itemObj.icons.push({ image: this.icons.fate })
