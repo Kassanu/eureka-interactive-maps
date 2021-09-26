@@ -52,6 +52,12 @@
             title: 'v0.5.0',
             description: '<ul class="list-disc list-inside"><li>Adds a lot of information added to the Bozjan Southern Front map</li><li>Updates to Eureka Canvas v0.8.0</li></ul>',
             showDayAndMonth: true
+          },
+          {
+            from: new Date(2021, 9, 25),
+            title: 'v0.5.1',
+            description: '<ul class="list-disc list-inside"><li>Adds monster level information to map labels.</li></ul>',
+            showDayAndMonth: true
           }
         ]
       }
