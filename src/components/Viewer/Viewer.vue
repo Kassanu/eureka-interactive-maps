@@ -277,6 +277,7 @@
                                             } else if (this.icons.hasOwnProperty(item.element)) {
                                                 itemObj.icons.push({ image: this.icons[item.element].image })
                                             }
+                                            itemObj.label = `${item.name} (${item.level})`
                                             break;
                                         case 'fates':
                                             itemObj.icons.push({ image: this.icons.fate.image })
