@@ -3644,7 +3644,7 @@
                     "element": null
                 },
                 "aggro": null,
-                "ashkin": false,
+                "ashkin": true,
                 "fate": {
                     "forFate": true,
                     "fateId": "824af88e-0e72-47a6-b0d1-af4fac1a9f1f"
