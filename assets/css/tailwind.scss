@@ -1,0 +1,7 @@
+@use './partials/main';
+@use './partials/editor';
+@use './partials/viewer';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
