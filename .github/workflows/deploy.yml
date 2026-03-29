@@ -1,0 +1,75 @@
+name: Tag and deploy on version bump
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check for version bump
+        id: version
+        run: |
+          CURRENT=$(jq -r '.version' package.json)
+          PREVIOUS=$(git show HEAD~1:package.json | jq -r '.version')
+          echo "current=$CURRENT"
+          echo "previous=$PREVIOUS"
+          if [ "$CURRENT" != "$PREVIOUS" ]; then
+            echo "bumped=true" >> $GITHUB_OUTPUT
+            echo "version=$CURRENT" >> $GITHUB_OUTPUT
+          else
+            echo "bumped=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create and push tag
+        if: steps.version.outputs.bumped == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag v${{ steps.version.outputs.version }}
+          git push origin v${{ steps.version.outputs.version }}
+
+      - uses: actions/setup-node@v4
+        if: steps.version.outputs.bumped == 'true'
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        if: steps.version.outputs.bumped == 'true'
+        run: npm ci
+
+      - name: Generate static site
+        if: steps.version.outputs.bumped == 'true'
+        run: npm run generate
+
+      - name: Configure AWS credentials
+        if: steps.version.outputs.bumped == 'true'
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Sync assets to S3 (cached)
+        if: steps.version.outputs.bumped == 'true'
+        run: |
+          aws s3 sync .output/public s3://${{ vars.S3_BUCKET }}/ --exclude "*.html"
+
+      - name: Sync HTML files to S3 (no-cache)
+        if: steps.version.outputs.bumped == 'true'
+        run: |
+          aws s3 sync .output/public s3://${{ vars.S3_BUCKET }}/ \
+            --exclude "*" --include "*.html" \
+            --metadata-directive REPLACE \
+            --cache-control max-age=0,no-cache,no-store,must-revalidate \
+            --content-type text/html

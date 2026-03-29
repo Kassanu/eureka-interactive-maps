@@ -1,75 +1,39 @@
-# Nuxt Minimal Starter
+# FFXIV Interactive Eureka Maps
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Interactive maps for FFXIV's Field Operations zones: Eureka (Anemos, Pagos, Pyros, Hydatos) and Bozjan Southern Front.
 
-## Setup
+Built with Nuxt 3, Vue 3, and TypeScript.
 
-Make sure to install dependencies:
+## Development
+
+Install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Start the development server at `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Building
 
-Build the application for production:
+Generate the static site for deployment:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npm run generate
 ```
 
-Locally preview production build:
+Output goes to `.output/public/`.
+
+To preview the generated site locally:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute map data or code changes.

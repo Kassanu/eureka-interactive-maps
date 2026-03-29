@@ -1,21 +1,43 @@
 # Contributing to FFXIV Interactive Eureka Maps
-## Feature Requests / Bug Reports
 
-Please use the issues page on this repository for all bug reports and feature requests.
+## Bug Reports and Feature Requests
 
-## Pull Requests
+Please use the [Issues](../../issues) page for all bug reports and feature requests. Include as much detail as possible — screenshots are helpful for visual bugs.
 
-When making a pull request please include a detailed description of your change. Reference the issue number if applicable.
+## Code Contributions
 
-## Data Contribution
+1. Fork the repository and create a branch from `master`.
+2. Make your changes. See [README.md](README.md) for how to run the project locally.
+3. Open a pull request with a clear description of what was changed and why. Reference the relevant issue if one exists.
 
-You can also contribute to the project by keeping the information for each zone accurate and up to date. There is an editor mode for each zone that anyone can access.
-You can make changes and hit the "Save" button to save the data to a JSON file. Just create a pull request with your new json file with a detailed description of what was changed.
+## Map Data Contributions
 
-[Anemos Editor](https://www.ffxiv-interactive-eureka-maps.com/#/anemos/editor)
+The easiest way to contribute is by keeping map data accurate and up to date. Each zone has a built-in editor you can use directly in the browser — no coding required.
 
-[Pagos Editor](https://www.ffxiv-interactive-eureka-maps.com/#/pagos/editor)
+### How to contribute map data
 
-[Pyros Editor](https://www.ffxiv-interactive-eureka-maps.com/#/pyros/editor)
+1. Open the editor for the zone you want to update:
+   - [Anemos Editor](https://www.ffxiv-interactive-eureka-maps.com/map/anemos/edit)
+   - [Pagos Editor](https://www.ffxiv-interactive-eureka-maps.com/map/pagos/edit)
+   - [Pyros Editor](https://www.ffxiv-interactive-eureka-maps.com/map/pyros/edit)
+   - [Hydatos Editor](https://www.ffxiv-interactive-eureka-maps.com/map/hydatos/edit)
+   - [Bozjan Southern Front Editor](https://www.ffxiv-interactive-eureka-maps.com/map/bozjansouthernfront/edit)
 
-[Hydatos Editor](https://www.ffxiv-interactive-eureka-maps.com/#/hydatos/editor)
+2. Make your changes using the editor. You can add, edit, or reposition items on the map.
+
+3. When you're done, click **Save** to download the updated JSON file.
+
+4. Fork this repository and replace the corresponding JSON file in `assets/data/` with your updated file.
+
+5. Open a pull request with a description of what was changed (e.g. "Updated spawn position for X", "Added missing NM fate Y").
+
+The JSON files live in:
+
+```
+assets/data/
+  anemos.json
+  pagos.json
+  pyros.json
+  hydatos.json
+  bozjansouthernfront.json
+```
