@@ -48,7 +48,10 @@
 
     .itemInformation {
         width: 20vw;
-        color: black;
+        color: #cccccc;
+        background-color: rgb(30, 30, 31, 0.95);
+        border: 1px solid rgba(120, 180, 210, 0.25);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
         @media (max-width: 640px) {
             width: 90%;
             height: 90%;
