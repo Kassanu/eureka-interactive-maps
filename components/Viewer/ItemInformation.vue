@@ -1,11 +1,11 @@
 <template>
   <div
     ref="container"
-    class="itemInformation bg-white rounded overflow-hidden shadow-md absolute p-2"
+    class="itemInformation rounded overflow-hidden shadow-md absolute p-2"
     :style="styles"
     @click.stop
   >
-    <div class="flex items-center border-b border-gray-200">
+    <div class="flex items-center border-b border-gray-600">
       <div class="itemInformationIcons mr-2"><slot name="icon" /></div>
       <div class="mr-auto font-bold"><slot name="header" /></div>
       <font-awesome-icon icon="times" class="cursor-pointer" @click="$emit('closeItemInformation')" />
