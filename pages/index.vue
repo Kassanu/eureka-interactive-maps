@@ -16,7 +16,7 @@
         <ZoneGroup
           title="Save the Queen: Blades of Gunnhildr"
           :zones="[
-            { name: 'Bozjan Southern Front', link: '/map/Bozjansouthernfront', bgClass: 'bg-purple-500 hover:bg-purple-700' },
+            { name: 'Bozjan Southern Front', link: '/map/bozjansouthernfront', bgClass: 'bg-purple-500 hover:bg-purple-700' },
             { name: 'Zadnor', link: '/map/zadnor', bgClass: 'bg-indigo-500 hover:bg-indigo-700' }
           ]"
         />

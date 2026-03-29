@@ -102,9 +102,9 @@
         <FilterSection
           v-for="(section, index) in filters.sections"
           :key="index"
-          :section="section"
+          :section="{ ...section, key: index }"
           :jsonData="jsonData"
-          @updateSection="updateSection(index, ...arguments)"
+          @updateSection="updateSection(index, $event)"
         />
       </form>
     </div>
