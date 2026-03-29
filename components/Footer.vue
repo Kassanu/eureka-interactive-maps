@@ -4,6 +4,8 @@
       <NuxtLink class="hover:text-white" to="/">Home</NuxtLink>
       <span>-</span>
       <NuxtLink class="hover:text-white" to="/contribute">Contribute</NuxtLink>
+      <span>-</span>
+      <NuxtLink class="hover:text-white" to="/changelog">Changelog</NuxtLink>
     </div>
     <div class="flex justify-center">
       FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.

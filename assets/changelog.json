@@ -1,0 +1,12 @@
+[
+  {
+    "version": "v2.0.0",
+    "date": "2026-03-28",
+    "description": "Rebuilt from the ground up with Vue 3, TypeScript, and Nuxt for server-side rendering and proper URLs."
+  },
+  {
+    "version": "v1.0.0",
+    "date": "2020-10-01",
+    "description": "Initial launch. Interactive maps for all four Eureka zones (Anemos, Pagos, Pyros, Hydatos) and the Bozjan Southern Front. Filterable monsters, FATEs, enemies, skirmishes, critical engagements, and more."
+  }
+]
