@@ -14,6 +14,12 @@
 import { ref, watchEffect } from 'vue'
 import Viewer from '~/components/Viewer/Viewer.vue'
 
+useHead({
+  title: 'Bozjan Southern Front - FFXIV Interactive Eureka Maps',
+  meta: [{ name: 'description', content: 'Interactive map of the Bozjan Southern Front — filter critical engagements, skirmishes, enemies, drops, and more.' }],
+  link: [{ rel: 'canonical', href: 'https://www.ffxiv-interactive-eureka-maps.com/map/bozjansouthernfront' }]
+})
+
 const gridSizeInPixels = 50
 const coordinatesOffset = 1
 const maximumZoom = 150

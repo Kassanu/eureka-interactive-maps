@@ -12,10 +12,13 @@
 
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
-import { useRoute } from 'vue-router'
 import Viewer from '~/components/Viewer/Viewer.vue'
 
-const route = useRoute()
+useHead({
+  title: 'Anemos - FFXIV Interactive Eureka Maps',
+  meta: [{ name: 'description', content: 'Interactive map of Eureka Anemos — filter FATEs, notorious monsters, enemies, elemental weaknesses, drops, and weather.' }],
+  link: [{ rel: 'canonical', href: 'https://www.ffxiv-interactive-eureka-maps.com/map/anemos' }]
+})
 
 const gridSizeInPixels = 50
 const coordinatesOffset = 1

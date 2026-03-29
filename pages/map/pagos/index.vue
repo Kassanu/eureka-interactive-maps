@@ -14,6 +14,12 @@
 import { ref, watchEffect } from 'vue'
 import Viewer from '~/components/Viewer/Viewer.vue'
 
+useHead({
+  title: 'Pagos - FFXIV Interactive Eureka Maps',
+  meta: [{ name: 'description', content: 'Interactive map of Eureka Pagos — filter FATEs, notorious monsters, enemies, elemental weaknesses, drops, and weather.' }],
+  link: [{ rel: 'canonical', href: 'https://www.ffxiv-interactive-eureka-maps.com/map/pagos' }]
+})
+
 const gridSizeInPixels = 50
 const coordinatesOffset = 1
 const maximumZoom = 150
