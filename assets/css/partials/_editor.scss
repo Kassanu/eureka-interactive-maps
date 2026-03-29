@@ -3,8 +3,8 @@
     width: 100%;
     display: flex;
     overflow: hidden;
-    background-color: white;
-    color: black;
+    background-color: #1e1e1e;
+    color: #cccccc;
 
     &>#editorContainer {
         flex: 0 0 30%;
@@ -22,5 +22,79 @@
 
     &>.addNewItemBanner {
         transform: translate(-50%, 0);
+    }
+
+    // --- Dark theme overrides ---
+
+    // Inputs & selects
+    input[type="text"],
+    input[type="number"],
+    input[type="checkbox"],
+    select {
+        background-color: #3a3a3a;
+        color: #cccccc;
+        border-color: #555;
+        &:focus {
+            border-color: rgba(120, 180, 210, 0.6);
+            outline: none;
+        }
+    }
+
+    // Labels
+    label {
+        color: #999999;
+    }
+
+    // Tailwind bg-white overrides (SectionItem cards, inputs)
+    .bg-white {
+        background-color: #252526;
+    }
+
+    // Section list background
+    .bg-gray-100 {
+        background-color: #1a1a1b;
+    }
+
+    // Section header (sticky top bar per section)
+    .sectionHeader {
+        background-color: #2a2a2b;
+        border-color: #3a3a3c !important;
+        color: #cccccc;
+    }
+
+    // SectionItem card header divider
+    .border-gray-100 {
+        border-color: #3a3a3c !important;
+    }
+
+    // Mutation subsection (was bg-blue-100)
+    .bg-blue-100 {
+        background-color: #1a2a38;
+    }
+
+    // Adaptation subsection (was bg-green-100)
+    .bg-green-100 {
+        background-color: #1a2a1e;
+    }
+
+    // Dark label text override
+    .text-gray-700 {
+        color: #999999;
+    }
+
+    // Save button — brighten the blue for dark bg
+    .text-blue-700 {
+        color: #60a5fa;
+    }
+    .border-blue-500 {
+        border-color: #60a5fa;
+    }
+    .hover\:bg-blue-500:hover {
+        background-color: #3b82f6;
+    }
+
+    // Search bar placeholder
+    .placeholder-gray-400::placeholder {
+        color: #666;
     }
 }
