@@ -6,7 +6,7 @@
       id="filtersCard"
       class="relative overflow-auto rounded px-8 pt-6 pb-8 mb-4 text-gray-200"
     >
-      <div @click="$emit('resetFilters')" class="absolute top-0 right-0 cursor-pointer">
+      <div @click="$emit('resetFilters')" class="absolute top-2 right-2 cursor-pointer text-xs px-2 py-1 rounded border border-gray-500 hover:border-gray-300 hover:text-white transition-colors">
         Reset
       </div>
       <form>
@@ -113,8 +113,9 @@
       <div>
         <div
           @click="expanded = !expanded"
-          class="cursor-pointer w-full h-full flex justify-center items-center"
+          class="cursor-pointer w-full h-full flex justify-center items-center gap-2"
         >
+          <span class="filters-toggle-label">Filters</span>
           <font-awesome-icon :icon="expandFiltersIcon" />
         </div>
       </div>
@@ -133,7 +134,7 @@ const props = defineProps<{
 
 const emit = defineEmits(['updateFilters', 'resetFilters'])
 
-const expanded = ref(true)
+const expanded = ref(window.innerWidth >= 640)
 const windowWidth = ref(window.innerWidth)
 
 const onResize = () => {
