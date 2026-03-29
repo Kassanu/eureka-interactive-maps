@@ -1,17 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    vite: {
-      optimizeDeps: {
-        include: ['eureka-canvas']
-      },
+  vite: {
+    optimizeDeps: {
+      include: ['eureka-canvas']
     },
-    app: {
+  },
+  app: {
     head: {
       title: 'FFXIV Interactive Eureka Maps',
+      htmlAttrs: { lang: 'en' },
       meta: [
         {
           name: 'description',
-          content: 'Explore detailed, high-quality maps of FFXIV’s Field Operations Eureka, Bozja, and Occult Crescent. Filter data to see drops, enemies, events, and more!'
+          content: "Explore detailed, high-quality maps of FFXIV's Field Operations Eureka, Bozja, and Occult Crescent. Filter data to see drops, enemies, events, and more!"
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' }

@@ -4,3 +4,11 @@
     <p class="text-white text-lg">Coming Soon</p>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: 'Zadnor - FFXIV Interactive Eureka Maps',
+  meta: [{ name: 'description', content: 'Interactive map of Zadnor coming soon — enemies, drops, and more.' }],
+  link: [{ rel: 'canonical', href: 'https://www.ffxiv-interactive-eureka-maps.com/map/zadnor' }]
+})
+</script>
