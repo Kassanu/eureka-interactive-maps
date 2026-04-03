@@ -1,0 +1,1248 @@
+{
+    "engagements": {
+        "name": "Critical Engagements",
+        "order": 11,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "icon": "",
+            "participants": 0,
+            "drops": [],
+            "boss": {
+                "name": ""
+            },
+            "spawns": []
+        },
+        "items": [
+            {
+                "id": "a96e32e9-5418-466e-9a55-d8882a897b6d",
+                "name": "On Serpents' Wings",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 31.5,
+                        "y": 37.5
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "acc4ff11-5d6e-4dd1-9ec5-9aaee54fece4"
+                    }
+                ]
+            },
+            {
+                "id": "ee5a2da1-51dd-4710-9cd0-995a860afe95",
+                "name": "A Familiar Face",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 28,
+                        "y": 29.7
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "d05ea007-3922-4102-a004-37aad13398d6"
+                    }
+                ]
+            },
+            {
+                "id": "140d2b2a-d64e-43ed-b562-210d58013357",
+                "name": "From Beyond the Grave",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 20.3,
+                        "y": 37.5
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "b5fe13c2-1614-4936-8dcf-abd0e3e3c358",
+                "name": "With Diremite and Main",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 17.1,
+                        "y": 32.1
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "92e556eb-5396-45e8-ba7f-122b60a27b3a",
+                "name": "The Broken Blade",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 26.5,
+                        "y": 35.7
+                    }
+                ],
+                "icon": "duel",
+                "participants": 1,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "6d114f73-dbf1-4915-a20f-af51a60cf6b9",
+                "name": "Here Comes the Cavalry",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 6.5,
+                        "y": 37.3
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "2d5a0354-79ea-4970-ab23-b9a553da316b"
+                    }
+                ]
+            },
+            {
+                "id": "c027cd86-a9e9-487f-8aa8-f51b4a0bc82d",
+                "name": "Never Cry Wolf",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 4.9,
+                        "y": 25.7
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": [
+                    {
+                        "type": "skirmish",
+                        "value": "bf8325c1-f86f-4fb8-8d07-416c9685d6b5"
+                    }
+                ]
+            },
+            {
+                "id": "32f1636a-718e-497a-8ea6-3bfb72af6e26",
+                "name": "There Would Be Blood",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 13.7,
+                        "y": 26.1
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "0b8d31d4-a2b3-456b-a509-84d7e0cc9836",
+                "name": "Time to Burn",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 10.5,
+                        "y": 21.5
+                    }
+                ],
+                "icon": "boss",
+                "participants": 0,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "4a761e0a-4951-4fda-9a94-6dc1f0d0d950",
+                "name": "Head of the Snake",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 5.3,
+                        "y": 31.9
+                    }
+                ],
+                "icon": "duel",
+                "participants": 1,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "bd661714-3a54-4049-9fb0-836f757b25a2",
+                "name": "Feeling the Burn",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 16.7,
+                        "y": 17.4
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "f56b0ecd-b787-4181-95b4-a8a0f872d573",
+                "name": "Lean, Mean, Magitek Machines",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 15.3,
+                        "y": 13.1
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "5f0d8b7e-1290-4db3-8d36-30050be9088a",
+                "name": "Looks to Die For",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 17.5,
+                        "y": 9.9
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "f8952455-dbaa-495f-a737-c0d283d9703f",
+                "name": "Worn to a Shadow",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 11.9,
+                        "y": 7.7
+                    }
+                ],
+                "icon": "boss",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "30bb61c3-6eff-42d1-9605-014a8247a987",
+                "name": "Taking the Lyon's Share",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 22.5,
+                        "y": 13.3
+                    }
+                ],
+                "icon": "duel",
+                "participants": 48,
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            }
+        ]
+    },
+    "skirmishes": {
+        "name": "Skirmishes",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "icon": "",
+            "drops": [],
+            "boss": {
+                "name": ""
+            },
+            "spawns": []
+        },
+        "items": [
+            {
+                "id": "2d2db340-750a-4c36-89cb-73cc029fb255",
+                "name": "A Wrench in the Reconnaissance Effort",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 29.4,
+                        "y": 35.5
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "acc4ff11-5d6e-4dd1-9ec5-9aaee54fece4",
+                "name": "An Immoral Dilemma",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 22.8,
+                        "y": 34.3
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "d05ea007-3922-4102-a004-37aad13398d6",
+                "name": "Another Pilot Episode",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 28.1,
+                        "y": 29.3
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "dcc01fa9-993b-4fce-9a82-c8a2b9f0e88a",
+                "name": "Breaking the Ice",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 24.9,
+                        "y": 31.2
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "87c2e0d5-0847-4f10-ba80-a037ed41ebd7",
+                "name": "Deadly Divination",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 24.9,
+                        "y": 31.5
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "f558a2b7-798d-42be-b2c8-5c3572fa49a7",
+                "name": "Meet the Puppetmaster",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 24.1,
+                        "y": 37.5
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "8769a471-1965-44a0-84c1-be76b3ff0fb6",
+                "name": "Of Beasts and Braggadocio",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 24.1,
+                        "y": 37.2
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "bde6942f-ede8-4519-86ff-8df433ae5d54",
+                "name": "Parts and Parcel",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 22.8,
+                        "y": 34
+                    }
+                ],
+                "icon": "gather",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "17051636-44e8-45c5-9226-201245cbf0cf",
+                "name": "A Just Pursuit",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 11.7,
+                        "y": 27.7
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "bf8325c1-f86f-4fb8-8d07-416c9685d6b5",
+                "name": "An End to Atrocities",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 4.9,
+                        "y": 25.3
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "e24896ea-a32a-4a98-9037-ffde7e45eff3",
+                "name": "Challenge Accepted",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 7.2,
+                        "y": 28.9
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "284eec3a-b4c9-486c-9271-6b2be67b5bd5",
+                "name": "Demented Mentor",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 7.2,
+                        "y": 29.2
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "f46bac5b-3305-42fb-ae5c-2d6c0806cb9e",
+                "name": "Sever the Strings",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 11.7,
+                        "y": 27.2
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "acf941ae-f508-43e0-84a5-08c5dfb93bb2",
+                "name": "Supersoldier Rising",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 8.1,
+                        "y": 24
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "2d5a0354-79ea-4970-ab23-b9a553da316b",
+                "name": "Tanking Up",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 8.1,
+                        "y": 23.5
+                    }
+                ],
+                "icon": "gather",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "db2165a0-7f21-46e9-a288-eed3f09b3dbc",
+                "name": "Th'uban the Terrible",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 8.6,
+                        "y": 34.5
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "86cdb3d2-4ec5-48dc-8b15-8bab870d1be5",
+                "name": "A Relic Unleashed",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 25.5,
+                        "y": 14.3
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "d72aa703-c79d-450c-acf5-7ba8c95da61f",
+                "name": "Attack of the Machines",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 12.1,
+                        "y": 13.6
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "0c3471e5-5e0f-40ea-8bc0-012414e1581c",
+                "name": "Attack of the Supersoldiers",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 16.7,
+                        "y": 16.9
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "57f5038b-0287-42c6-9e26-ede25d4e05d1",
+                "name": "Hypertuned Havoc",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 16.7,
+                        "y": 16.4
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "c739d1d4-7c37-481b-9a3a-61cc40e03016",
+                "name": "Mean-spirited",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 25.5,
+                        "y": 14.6
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "54dd7289-2b9d-438e-a5b7-486f880c7853",
+                "name": "Seeq and You Will Find",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 20.4,
+                        "y": 16.6
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "54d84f9d-5d04-4f58-b8c7-4b291a95776f",
+                "name": "Still Only Counts as One",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 14.6,
+                        "y": 10.4
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "5d1595ea-a0d3-48b3-9253-618ad68e389e",
+                "name": "The Beasts Are Back",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 25.5,
+                        "y": 13.9
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "2d37dad0-81fe-427e-ad20-ed5cc5d797d9",
+                "name": "The Student Becalms the Master",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 14.6,
+                        "y": 10.7
+                    }
+                ],
+                "icon": "boss",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            },
+            {
+                "id": "f26fbade-3265-469d-ac99-6ea49c6b6eda",
+                "name": "When Mages Rage",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 20.4,
+                        "y": 16.2
+                    }
+                ],
+                "icon": "slay",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                },
+                "spawns": []
+            }
+        ]
+    },
+    "enemies": {
+        "name": "Enemies",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "ashkin": false,
+            "elemental": false,
+            "fauna": false,
+            "machine": false,
+            "drops": [],
+            "spawns": [],
+            "aggro": "",
+            "attack": "",
+            "weakness": ""
+        },
+        "items": [
+            {
+                "id": "32b445af-2dd7-4b59-8705-6d75ec1ff1de",
+                "name": "Lightning Sprite",
+                "level": 2,
+                "position": {
+                    "x": 30.5,
+                    "y": 29.7
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "d50b3b7f-043a-4256-ba1b-1085cd811be8",
+                "name": "Water Sprite",
+                "level": 3,
+                "position": {
+                    "x": 31.5,
+                    "y": 38.1
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "019df375-7bc8-4450-9bea-1cbf975b1250",
+                "name": "Ice Sprite",
+                "level": 4,
+                "position": {
+                    "x": 21,
+                    "y": 32
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "9adf192c-2042-4523-b933-c43488aa1a6c",
+                "name": "Wind Sprite",
+                "level": 5,
+                "position": {
+                    "x": 15.5,
+                    "y": 35.8
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "86913728-0e27-42b0-b3e8-c98e42f722ce",
+                "name": "Wind Sprite",
+                "level": 2,
+                "position": {
+                    "x": 7,
+                    "y": 37.3
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "e9083a7a-6701-4fcf-9af4-1e464952bd2c",
+                "name": "Lightning Sprite",
+                "level": 5,
+                "position": {
+                    "x": 8,
+                    "y": 28
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "95fd59d0-659c-4d70-a1a8-a75c7018e776",
+                "name": "Ice Sprite",
+                "level": 3,
+                "position": {
+                    "x": 13.2,
+                    "y": 24.7
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "c88a9788-faa8-45e9-bb2e-75124d3e5f3d",
+                "name": "Water Sprite",
+                "level": 5,
+                "position": {
+                    "x": 4.4,
+                    "y": 21.5
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "65408068-2e45-4cc9-9386-5b6ddf1d5942",
+                "name": "Water Sprite",
+                "level": 5,
+                "position": {
+                    "x": 5.7,
+                    "y": 11.8
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "5d6409ed-f72b-4acf-bcf2-4dec766372ed",
+                "name": "Lightning Sprite",
+                "level": 3,
+                "position": {
+                    "x": 11.7,
+                    "y": 8.2
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "0b894d47-e38b-418b-acbe-bb657972f4ff",
+                "name": "Ice Sprite",
+                "level": 5,
+                "position": {
+                    "x": 22.8,
+                    "y": 16.9
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "5593170e-90e3-47b5-a2c2-eb8a460ab813",
+                "name": "Wind Sprite",
+                "level": 3,
+                "position": {
+                    "x": 17.9,
+                    "y": 11.6
+                },
+                "ashkin": false,
+                "elemental": true,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "79060e21-0953-4947-9fc7-5508731cea39",
+                "name": "Vinegaroon Executioner",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 32.1,
+                        "y": 30.8
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "691772e3-23fb-4b93-a821-24b3d1b014a1",
+                "name": "Anancus",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 24.3,
+                        "y": 28.8
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "8a42ec05-e4fd-443f-b2a3-966f8819dfd9",
+                "name": "Stratogryph",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 16.8,
+                        "y": 39
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "0f0d1d8b-8997-4085-8c08-24707b010e33",
+                "name": "Earth Eater",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 12.7,
+                        "y": 32.4
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "4b713209-ac95-44b4-adec-dd4b84db1d52",
+                "name": "Aglaophotis",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 8.8,
+                        "y": 30.6
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "b0f596ae-4f4f-492e-8c4e-7f8245cd5475",
+                "name": "Lord Ochu",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 4,
+                        "y": 20.8
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "489e1ce7-d53d-4f0c-a839-2bb6c3cd3852",
+                "name": "Glyptodon",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 12,
+                        "y": 15.5
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "f155435c-3733-4924-a4e9-384ac4855b2f",
+                "name": "Molten Scorpion",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 19.3,
+                        "y": 18.9
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            },
+            {
+                "id": "410d5569-0b4b-4867-80ee-e2bb16c3ee58",
+                "name": "Vapula",
+                "level": 0,
+                "position": [
+                    {
+                        "x": 20.6,
+                        "y": 10.9
+                    }
+                ],
+                "ashkin": false,
+                "elemental": false,
+                "fauna": false,
+                "machine": false,
+                "drops": [],
+                "spawns": [],
+                "aggro": "",
+                "attack": "",
+                "weakness": ""
+            }
+        ]
+    },
+    "aethernet": {
+        "name": "Aethernet",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": [
+            {
+                "id": "46a40b9b-0d39-429d-86fe-492caf7b91a8",
+                "name": "Camp Vrdelnis",
+                "level": 1,
+                "position": {
+                    "x": 35.1,
+                    "y": 34.9
+                }
+            },
+            {
+                "id": "11c4b1f8-6cdc-4e44-af10-2a53a053c18a",
+                "name": "Zuprtik Point",
+                "level": 1,
+                "position": {
+                    "x": 14.5,
+                    "y": 36.9
+                }
+            },
+            {
+                "id": "e648182e-d29a-47fe-bc68-bd8979d066ae",
+                "name": "Ljeban Point ",
+                "level": 1,
+                "position": {
+                    "x": 7.4,
+                    "y": 15.6
+                }
+            },
+            {
+                "id": "d077eac2-b0a5-45fd-95f5-20d2bc8ae1a9",
+                "name": "Hrmovir Point",
+                "level": 1,
+                "position": {
+                    "x": 23.7,
+                    "y": 18.6
+                }
+            }
+        ]
+    }
+}
