@@ -1,0 +1,88 @@
+{
+    "drops": {
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "name": "Bozjan Cluster"
+            },
+            {
+                "id": 2,
+                "name": "Compact Axle"
+            },
+            {
+                "id": 3,
+                "name": "Compact Spring"
+            },
+            {
+                "id": 4,
+                "name": "A Day in the Life: Battles for the Realm"
+            },
+            {
+                "id": 5,
+                "name": "A Day in the Life: Beyond the Rift"
+            },
+            {
+                "id": 6,
+                "name": "Bleak Memory of the Dying"
+            },
+            {
+                "id": 7,
+                "name": "Lurid Memory of the Dying"
+            }
+        ]
+    },
+    "sections": {
+        "engagements": {
+            "name": "Critical Engagements",
+            "enabled": true,
+            "filters": {
+                "participants": [
+                    {
+                        "amount": 1,
+                        "enabled": true
+                    },
+                    {
+                        "amount": 24,
+                        "enabled": true
+                    },
+                    {
+                        "amount": 48,
+                        "enabled": true
+                    }
+                ],
+                "hiddenEngagements": []
+            }
+        },
+        "skirmishes": {
+            "name": "Skirmishes",
+            "enabled": true,
+            "filters": {
+                "hiddenSkirmishes": []
+            }
+        },
+        "enemies": {
+            "name": "Enemies",
+            "enabled": true,
+            "filters": {
+                "rank": [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "ashkin": true,
+                "elemental": true,
+                "fauna": true,
+                "machine": true
+            }
+        },
+        "aethernet": {
+            "name": "Aethernet",
+            "enabled": true,
+            "filters": {}
+        }
+    }
+}
