@@ -1,0 +1,138 @@
+{
+    "fates": {
+        "name": "FATEs",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "drops": [],
+            "boss": {
+                "name": ""
+            }
+        },
+        "items": []
+    },
+    "critical_encounters": {
+        "name": "Critical Encounters",
+        "order": 10,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "drops": [],
+            "boss": {
+                "name": ""
+            }
+        },
+        "items": []
+    },
+    "occult_crescent_monsters": {
+        "name": "Monsters",
+        "order": 9,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "aggro": null,
+            "fate": {
+                "forFate": true,
+                "fateId": ""
+            }
+        },
+        "items": []
+    },
+    "aethernet": {
+        "name": "Aethernet",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "quests": {
+        "name": "Quests",
+        "order": 2,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "treasure_coffers": {
+        "name": "Treasure Coffers",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "bunny_coffers": {
+        "name": "Happy Bunny Coffers",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "pots": {
+        "name": "Pots",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    },
+    "misc": {
+        "name": "Misc",
+        "order": 0,
+        "baseItem": {
+            "id": "",
+            "name": "",
+            "level": 0,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        },
+        "items": []
+    }
+}

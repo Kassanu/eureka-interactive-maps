@@ -8,8 +8,7 @@
     />
 
     <EurekaCanvas
-      v-if="!loading"
-      :canvasImage="image"
+      :canvasImage="imageSource"
       :gridSizeInPixels="gridSizeInPixels"
       :coordinatesOffset="coordinatesOffset"
       :positions="positions"
@@ -39,7 +38,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import EurekaCanvas from 'eureka-canvas'
+import { EurekaCanvas } from 'eureka-canvas'
 import Filters from '~/components/Viewer/Filters.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
 import DefaultItemInformation from '~/components/Viewer/DefaultItemInformation.vue'
@@ -59,12 +58,39 @@ const props = defineProps<{
 }>()
 
 const cFilters = ref(JSON.parse(JSON.stringify(props.pFilters)))
-const image = ref<HTMLImageElement | null>(null)
 const clickedItem = ref<any>(false)
 const clickPosition = ref({ x: 0, y: 0 })
-const icons = ref<Record<string, any>>({})
-const loading = ref(true)
 const viewerEl = ref<HTMLElement | null>(null)
+
+const iconPaths: Record<string, string> = {
+  noelement:           '/images/icons/elements/noelement.png',
+  fire:                '/images/icons/elements/fire2.png',
+  wind:                '/images/icons/elements/wind2.png',
+  water:               '/images/icons/elements/water2.png',
+  earth:               '/images/icons/elements/earth2.png',
+  ice:                 '/images/icons/elements/ice2.png',
+  lightning:           '/images/icons/elements/lightning2.png',
+  quest:               '/images/icons/quest.png',
+  adaptation:          '/images/icons/adaptation.png',
+  mutation:            '/images/icons/mutation.png',
+  aetheryte:           '/images/icons/aetheryte.png',
+  fate:                '/images/icons/fate.png',
+  blessing:            '/images/icons/blessing.png',
+  lock:                '/images/icons/lock.png',
+  ashkin:              '/images/icons/ashkin.png',
+  rank_0:              '/images/icons/ranks/0.png',
+  rank_1:              '/images/icons/ranks/1.png',
+  rank_2:              '/images/icons/ranks/2.png',
+  rank_3:              '/images/icons/ranks/3.png',
+  rank_4:              '/images/icons/ranks/4.png',
+  rank_5:              '/images/icons/ranks/5.png',
+  engagements_boss:    '/images/icons/engagements/boss.png',
+  engagements_duel:    '/images/icons/engagements/duel.png',
+  skirmishes_boss:     '/images/icons/skirmishes/boss.png',
+  skirmishes_defend:   '/images/icons/skirmishes/defend.png',
+  skirmishes_gather:   '/images/icons/skirmishes/gather.png',
+  skirmishes_slay:     '/images/icons/skirmishes/slay.png',
+}
 
 const gridSizeInPixels = props.gridSizeInPixels ?? 100
 const coordinatesOffset = props.coordinatesOffset ?? 0
@@ -79,97 +105,75 @@ const sortedKeys = computed(() => {
 
 const positions = computed(() => {
   const pos: any[] = []
-  if (!loading.value) {
-    sortedKeys.value.forEach(key => {
-      const section = props.jsonData[key]
-      if (cFilters.value.sections[key].enabled) {
-        for (const item of section.items) {
-          if (!shouldFilterItem(key, item)) {
-            let multiple = false
-            let coordinates = item.position
-            if (Array.isArray(item.position)) {
-              multiple = item.position.length > 1
-              coordinates = item.position[0]
-            }
+  sortedKeys.value.forEach(key => {
+    const section = props.jsonData[key]
+    if (cFilters.value.sections[key].enabled) {
+      for (const item of section.items) {
+        if (!shouldFilterItem(key, item)) {
+          let multiple = false
+          let coordinates = item.position
+          if (Array.isArray(item.position)) {
+            multiple = item.position.length > 1
+            coordinates = item.position[0]
+          }
 
-            let itemObj: any = {
-              id: item.id,
-              key: key,
-              label: item.name,
-              coordinates: coordinates,
-              icons: []
-            }
+          let itemObj: any = {
+            id: item.id,
+            key: key,
+            label: item.name,
+            coordinates: coordinates,
+            icons: []
+          }
 
-            switch (key) {
-              case 'monsters':
-                if (item.element == '' && icons.value.hasOwnProperty('noelement')) {
-                  itemObj.icons.push({ image: icons.value.noelement.image })
-                } else if (icons.value.hasOwnProperty(item.element)) {
-                  itemObj.icons.push({ image: icons.value[item.element].image })
-                }
-                itemObj.label = `${item.name} (${item.level})`
-                break
-              case 'fates':
-                itemObj.icons.push({ image: icons.value.fate.image })
-                if (item.element == '' && icons.value.hasOwnProperty('noelement')) {
-                  itemObj.icons.push({ image: icons.value.noelement.image })
-                } else if (icons.value.hasOwnProperty(item.element)) {
-                  itemObj.icons.push({ image: icons.value[item.element].image })
-                }
-                itemObj.drawStyle = 'circle'
-                break
-              case 'quests':
-                itemObj.icons.push({ image: icons.value.quest.image })
-                break
-              case 'aethernet':
-                itemObj.icons.push({ image: icons.value.aetheryte.image })
-                break
-              case 'elementals':
-                itemObj.icons.push({ image: icons.value.blessing.image })
-                break
-              case 'lockboxes':
-                itemObj.icons.push({ image: icons.value.lock.image })
-                break
-              case 'enemies':
-                itemObj.icons.push({
-                  image: icons.value[`rank_${item.level}`]
-                    ? icons.value[`rank_${item.level}`].image
-                    : icons.value.noelement.image
-                })
-                break
-              case 'skirmishes':
-                if (item.hasOwnProperty('icon') && icons.value[`skirmishes_${item.icon}`]) {
-                  itemObj.icons.push({ image: icons.value[`skirmishes_${item.icon}`].image })
-                } else {
-                  itemObj.icons.push({ image: icons.value.fate.image })
-                }
-                itemObj.drawStyle = 'circle'
-                break
-              case 'engagements':
-                if (item.hasOwnProperty('icon') && icons.value[`engagements_${item.icon}`]) {
-                  itemObj.icons.push({ image: icons.value[`engagements_${item.icon}`].image })
-                } else {
-                  itemObj.icons.push({ image: icons.value.fate.image })
-                }
-                itemObj.drawStyle = 'circle'
-                break
-              default:
-                itemObj.icons.push({ image: icons.value.noelement.image })
-                break
-            }
+          switch (key) {
+            case 'monsters':
+              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
+              itemObj.label = `${item.name} (${item.level})`
+              break
+            case 'fates':
+              itemObj.icons.push(iconPaths.fate)
+              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
+              itemObj.drawStyle = 'circle'
+              break
+            case 'quests':
+              itemObj.icons.push(iconPaths.quest)
+              break
+            case 'aethernet':
+              itemObj.icons.push(iconPaths.aetheryte)
+              break
+            case 'elementals':
+              itemObj.icons.push(iconPaths.blessing)
+              break
+            case 'lockboxes':
+              itemObj.icons.push(iconPaths.lock)
+              break
+            case 'enemies':
+              itemObj.icons.push(iconPaths[`rank_${item.level}`] || iconPaths.noelement)
+              break
+            case 'skirmishes':
+              itemObj.icons.push(iconPaths[`skirmishes_${item.icon}`] || iconPaths.fate)
+              itemObj.drawStyle = 'circle'
+              break
+            case 'engagements':
+              itemObj.icons.push(iconPaths[`engagements_${item.icon}`] || iconPaths.fate)
+              itemObj.drawStyle = 'circle'
+              break
+            default:
+              itemObj.icons.push(iconPaths.noelement)
+              break
+          }
 
-            pos.push(itemObj)
+          pos.push(itemObj)
 
-            if (multiple) {
-              item.position.slice(1).forEach((position: any) => {
-                pos.push({ ...itemObj, coordinates: position })
-              })
-            }
+          if (multiple) {
+            item.position.slice(1).forEach((position: any) => {
+              pos.push({ ...itemObj, coordinates: position })
+            })
           }
         }
       }
-    })
-  }
+    }
+  })
   return pos
 })
 
@@ -189,49 +193,40 @@ const clickedItemIcon = computed(() => {
 
   switch (clickedItem.value.key) {
     case 'fates':
-      html = `<img title="FATE" src="${icons.value.fate?.path}" />`
+      html = `<img title="FATE" src="${iconPaths.fate}" />`
       break
     case 'elementals':
-      html = `<img title="Eurekan Elemental" src="${icons.value.blessing?.path}" />`
+      html = `<img title="Eurekan Elemental" src="${iconPaths.blessing}" />`
       break
     case 'lockboxes':
-      html = `<img title="Bunny Lockbox" src="${icons.value.lock?.path}" />`
+      html = `<img title="Bunny Lockbox" src="${iconPaths.lock}" />`
       break
     case 'aethernet':
-      html = `<img title="Aetheryte" src="${icons.value.aetheryte?.path}" />`
+      html = `<img title="Aetheryte" src="${iconPaths.aetheryte}" />`
       break
     case 'quests':
-      html = `<img title="Quest" src="${icons.value.quest?.path}" />`
+      html = `<img title="Quest" src="${iconPaths.quest}" />`
       break
     case 'monsters': {
-      const elemIcon = src.element === '' ? icons.value.noelement : icons.value[src.element]
-      html += `<img src="${elemIcon?.path}" />`
-      if (src.ashkin) html += `<img title="Ashkin" src="${icons.value.ashkin?.path}" />`
-      if (src.mutation?.canMutate) html += `<img title="Mutates" src="${icons.value.mutation?.path}" />`
-      if (src.adaptation?.canAdapt) html += `<img title="Adapts" src="${icons.value.adaptation?.path}" />`
+      html += `<img src="${iconPaths[src.element] || iconPaths.noelement}" />`
+      if (src.ashkin) html += `<img title="Ashkin" src="${iconPaths.ashkin}" />`
+      if (src.mutation?.canMutate) html += `<img title="Mutates" src="${iconPaths.mutation}" />`
+      if (src.adaptation?.canAdapt) html += `<img title="Adapts" src="${iconPaths.adaptation}" />`
       break
     }
     case 'enemies': {
       const rank = src.level
-      html = `<img title="Rank ${rank == 0 ? 'Star' : rank}" src="${icons.value[`rank_${rank}`]?.path}" />`
+      html = `<img title="Rank ${rank == 0 ? 'Star' : rank}" src="${iconPaths[`rank_${rank}`] || iconPaths.noelement}" />`
       break
     }
     case 'skirmishes':
-      if (src.icon && icons.value[`skirmishes_${src.icon}`]) {
-        html = `<img title="Skirmish" src="${icons.value[`skirmishes_${src.icon}`].path}" />`
-      } else {
-        html = `<img title="Skirmish" src="${icons.value.fate?.path}" />`
-      }
+      html = `<img title="Skirmish" src="${iconPaths[`skirmishes_${src.icon}`] || iconPaths.fate}" />`
       break
     case 'engagements':
-      if (src.icon && icons.value[`engagements_${src.icon}`]) {
-        html = `<img title="Critical Engagement" src="${icons.value[`engagements_${src.icon}`].path}" />`
-      } else {
-        html = `<img title="Critical Engagement" src="${icons.value.fate?.path}" />`
-      }
+      html = `<img title="Critical Engagement" src="${iconPaths[`engagements_${src.icon}`] || iconPaths.fate}" />`
       break
     default:
-      html = `<img src="${icons.value.noelement?.path}" />`
+      html = `<img src="${iconPaths.noelement}" />`
       break
   }
 
@@ -293,58 +288,8 @@ const closeItemInformation = () => { clickedItem.value = false }
 const clickedCanvas = () => { clickedItem.value = false }
 const clickedElement = (item: any) => { clickedItem.value = item }
 
-// --- Data loading ---
-
-const loadImage = (url: string): Promise<HTMLImageElement> =>
-  new Promise(resolve => {
-    const img = new Image()
-    img.onload = () => resolve(img)
-    img.src = url
-  })
-
-const loadIcons = async () => {
-  const iconDefs: Record<string, string> = {
-    noelement:           '/images/icons/elements/noelement.png',
-    fire:                '/images/icons/elements/fire2.png',
-    wind:                '/images/icons/elements/wind2.png',
-    water:               '/images/icons/elements/water2.png',
-    earth:               '/images/icons/elements/earth2.png',
-    ice:                 '/images/icons/elements/ice2.png',
-    lightning:           '/images/icons/elements/lightning2.png',
-    quest:               '/images/icons/quest.png',
-    adaptation:          '/images/icons/adaptation.png',
-    mutation:            '/images/icons/mutation.png',
-    aetheryte:           '/images/icons/aetheryte.png',
-    fate:                '/images/icons/fate.png',
-    blessing:            '/images/icons/blessing.png',
-    lock:                '/images/icons/lock.png',
-    ashkin:              '/images/icons/ashkin.png',
-    rank_0:              '/images/icons/ranks/0.png',
-    rank_1:              '/images/icons/ranks/1.png',
-    rank_2:              '/images/icons/ranks/2.png',
-    rank_3:              '/images/icons/ranks/3.png',
-    rank_4:              '/images/icons/ranks/4.png',
-    rank_5:              '/images/icons/ranks/5.png',
-    engagements_boss:    '/images/icons/engagements/boss.png',
-    engagements_duel:    '/images/icons/engagements/duel.png',
-    skirmishes_boss:     '/images/icons/skirmishes/boss.png',
-    skirmishes_defend:   '/images/icons/skirmishes/defend.png',
-    skirmishes_gather:   '/images/icons/skirmishes/gather.png',
-    skirmishes_slay:     '/images/icons/skirmishes/slay.png',
-  }
-
-  const result: Record<string, any> = {}
-  for (const [key, path] of Object.entries(iconDefs)) {
-    result[key] = { path, image: await loadImage(path) }
-  }
-  icons.value = result
-}
-
-onMounted(async () => {
+onMounted(() => {
   cFilters.value = JSON.parse(JSON.stringify(props.pFilters))
-  image.value = await loadImage(props.imageSource)
-  await loadIcons()
-  loading.value = false
 })
 
 function shouldFilterItem(key: string, item: any): boolean {

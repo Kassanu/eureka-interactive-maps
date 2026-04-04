@@ -16,8 +16,7 @@
       @deleteItem="deleteItem"
     />
     <EurekaCanvas
-      v-if="!loading"
-      :canvasImage="image!"
+      :canvasImage="imageSource"
       :gridSizeInPixels="gridSizeInPixels"
       :coordinatesOffset="coordinatesOffset"
       :positions="positions"
@@ -29,8 +28,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, nextTick } from 'vue'
-import EurekaCanvas from 'eureka-canvas'
+import { ref, computed, nextTick } from 'vue'
+import { EurekaCanvas } from 'eureka-canvas'
 import MapDataEditor from './MapDataEditor.vue'
 
 const props = defineProps<{
@@ -46,12 +45,39 @@ const gridSizeInPixels = props.gridSizeInPixels ?? 100
 const coordinatesOffset = props.coordinatesOffset ?? 0
 const maximumZoom = props.maximumZoom ?? 100
 
-const image = ref<HTMLImageElement | null>(null)
 const clickCoordinates = ref({ x: 0, y: 0 })
-const icons = ref<Record<string, any>>({})
 const jsonDataShow = ref<Record<string, any>>({})
-const loading = ref(true)
 const addToSectionKey = ref<string | null>(null)
+
+const iconPaths: Record<string, string> = {
+  noelement:           '/images/icons/elements/noelement.png',
+  fire:                '/images/icons/elements/fire2.png',
+  wind:                '/images/icons/elements/wind2.png',
+  water:               '/images/icons/elements/water2.png',
+  earth:               '/images/icons/elements/earth2.png',
+  ice:                 '/images/icons/elements/ice2.png',
+  lightning:           '/images/icons/elements/lightning2.png',
+  quest:               '/images/icons/quest.png',
+  adaptation:          '/images/icons/adaptation.png',
+  mutation:            '/images/icons/mutation.png',
+  aetheryte:           '/images/icons/aetheryte.png',
+  fate:                '/images/icons/fate.png',
+  blessing:            '/images/icons/blessing.png',
+  lock:                '/images/icons/lock.png',
+  ashkin:              '/images/icons/ashkin.png',
+  rank_0:              '/images/icons/ranks/0.png',
+  rank_1:              '/images/icons/ranks/1.png',
+  rank_2:              '/images/icons/ranks/2.png',
+  rank_3:              '/images/icons/ranks/3.png',
+  rank_4:              '/images/icons/ranks/4.png',
+  rank_5:              '/images/icons/ranks/5.png',
+  engagements_boss:    '/images/icons/engagements/boss.png',
+  engagements_duel:    '/images/icons/engagements/duel.png',
+  skirmishes_boss:     '/images/icons/skirmishes/boss.png',
+  skirmishes_defend:   '/images/icons/skirmishes/defend.png',
+  skirmishes_gather:   '/images/icons/skirmishes/gather.png',
+  skirmishes_slay:     '/images/icons/skirmishes/slay.png',
+}
 const setPositionToItem = ref<any>(null)
 
 const sortedKeys = computed(() => {
@@ -60,96 +86,76 @@ const sortedKeys = computed(() => {
 
 const positions = computed(() => {
   const pos: any[] = []
-  if (!loading.value) {
-    sortedKeys.value.forEach(key => {
-      const section = props.jsonData[key]
-      if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, key) &&
-            Object.prototype.hasOwnProperty.call(jsonDataShow.value[key], 'showOnMap') &&
-            jsonDataShow.value[key].showOnMap === false)) {
-        for (const item of section.items) {
-          if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, item.id) &&
-                Object.prototype.hasOwnProperty.call(jsonDataShow.value[item.id], 'showOnMap') &&
-                jsonDataShow.value[item.id].showOnMap === false)) {
-            let multiple = false
-            let coordinates = item.position
-            if (Array.isArray(item.position)) {
-              multiple = item.position.length > 1
-              coordinates = item.position[0]
-            }
+  sortedKeys.value.forEach(key => {
+    const section = props.jsonData[key]
+    if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, key) &&
+          Object.prototype.hasOwnProperty.call(jsonDataShow.value[key], 'showOnMap') &&
+          jsonDataShow.value[key].showOnMap === false)) {
+      for (const item of section.items) {
+        if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, item.id) &&
+              Object.prototype.hasOwnProperty.call(jsonDataShow.value[item.id], 'showOnMap') &&
+              jsonDataShow.value[item.id].showOnMap === false)) {
+          let multiple = false
+          let coordinates = item.position
+          if (Array.isArray(item.position)) {
+            multiple = item.position.length > 1
+            coordinates = item.position[0]
+          }
 
-            const itemObj: any = {
-              id: item.id,
-              key: key,
-              label: item.name,
-              coordinates: coordinates,
-              icons: []
-            }
+          const itemObj: any = {
+            id: item.id,
+            key: key,
+            label: item.name,
+            coordinates: coordinates,
+            icons: []
+          }
 
-            switch (key) {
-              case 'monsters':
-                if (!Object.prototype.hasOwnProperty.call(icons.value, item.element)) {
-                  itemObj.icons.push({ image: icons.value.noelement })
-                } else {
-                  itemObj.icons.push({ image: icons.value[item.element] })
-                }
-                itemObj.label = `${item.name} (${item.level})`
-                break
-              case 'fates':
-                itemObj.icons.push({ image: icons.value.fate })
-                if (!Object.prototype.hasOwnProperty.call(icons.value, item.element)) {
-                  itemObj.icons.push({ image: icons.value.noelement })
-                } else {
-                  itemObj.icons.push({ image: icons.value[item.element] })
-                }
-                break
-              case 'quests':
-                itemObj.icons.push({ image: icons.value.quest })
-                break
-              case 'aethernet':
-                itemObj.icons.push({ image: icons.value.aetheryte })
-                break
-              case 'elementals':
-                itemObj.icons.push({ image: icons.value.blessing })
-                break
-              case 'lockboxes':
-                itemObj.icons.push({ image: icons.value.lock })
-                break
-              case 'enemies':
-                itemObj.icons.push({ image: icons.value.rank[item.level] ? icons.value.rank[item.level] : icons.value.noelement })
-                break
-              case 'skirmishes':
-                if (Object.prototype.hasOwnProperty.call(item, 'icon') && icons.value.skirmishes[item.icon]) {
-                  itemObj.icons.push({ image: icons.value.skirmishes[item.icon] })
-                } else {
-                  itemObj.icons.push({ image: icons.value.fate })
-                }
-                break
-              case 'engagements':
-                if (Object.prototype.hasOwnProperty.call(item, 'icon') && icons.value.engagements[item.icon]) {
-                  itemObj.icons.push({ image: icons.value.engagements[item.icon] })
-                } else {
-                  itemObj.icons.push({ image: icons.value.fate })
-                }
-                break
-              default:
-                itemObj.icons.push({ image: icons.value.noelement })
-                break
-            }
+          switch (key) {
+            case 'monsters':
+              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
+              itemObj.label = `${item.name} (${item.level})`
+              break
+            case 'fates':
+              itemObj.icons.push(iconPaths.fate)
+              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
+              break
+            case 'quests':
+              itemObj.icons.push(iconPaths.quest)
+              break
+            case 'aethernet':
+              itemObj.icons.push(iconPaths.aetheryte)
+              break
+            case 'elementals':
+              itemObj.icons.push(iconPaths.blessing)
+              break
+            case 'lockboxes':
+              itemObj.icons.push(iconPaths.lock)
+              break
+            case 'enemies':
+              itemObj.icons.push(iconPaths[`rank_${item.level}`] || iconPaths.noelement)
+              break
+            case 'skirmishes':
+              itemObj.icons.push(iconPaths[`skirmishes_${item.icon}`] || iconPaths.fate)
+              break
+            case 'engagements':
+              itemObj.icons.push(iconPaths[`engagements_${item.icon}`] || iconPaths.fate)
+              break
+            default:
+              itemObj.icons.push(iconPaths.noelement)
+              break
+          }
 
-            pos.push(itemObj)
+          pos.push(itemObj)
 
-            if (multiple) {
-              item.position.slice(1).forEach((position: any) => {
-                const multiItem = Object.assign({}, itemObj)
-                multiItem.coordinates = position
-                pos.push(multiItem)
-              })
-            }
+          if (multiple) {
+            item.position.slice(1).forEach((position: any) => {
+              pos.push({ ...itemObj, coordinates: position })
+            })
           }
         }
       }
-    })
-  }
+    }
+  })
   return pos
 })
 
@@ -264,50 +270,4 @@ const clickedElement = (item: any) => {
   })
 }
 
-const loadImage = (url: string): Promise<HTMLImageElement> =>
-  new Promise(resolve => {
-    const img = new Image()
-    img.onload = () => resolve(img)
-    img.src = url
-  })
-
-const loadIcons = async () => {
-  const iconsData: Record<string, any> = {}
-  iconsData.noelement = await loadImage('/images/icons/elements/noelement.png')
-  iconsData.fire = await loadImage('/images/icons/elements/fire2.png')
-  iconsData.wind = await loadImage('/images/icons/elements/wind2.png')
-  iconsData.water = await loadImage('/images/icons/elements/water2.png')
-  iconsData.lightning = await loadImage('/images/icons/elements/lightning2.png')
-  iconsData.ice = await loadImage('/images/icons/elements/ice2.png')
-  iconsData.earth = await loadImage('/images/icons/elements/earth2.png')
-  iconsData.quest = await loadImage('/images/icons/quest.png')
-  iconsData.adaptation = await loadImage('/images/icons/adaptation.png')
-  iconsData.mutation = await loadImage('/images/icons/mutation.png')
-  iconsData.aetheryte = await loadImage('/images/icons/aetheryte.png')
-  iconsData.fate = await loadImage('/images/icons/fate.png')
-  iconsData.blessing = await loadImage('/images/icons/blessing.png')
-  iconsData.lock = await loadImage('/images/icons/lock.png')
-  iconsData.rank = []
-  iconsData.rank[0] = await loadImage('/images/icons/ranks/0.png')
-  iconsData.rank[1] = await loadImage('/images/icons/ranks/1.png')
-  iconsData.rank[2] = await loadImage('/images/icons/ranks/2.png')
-  iconsData.rank[3] = await loadImage('/images/icons/ranks/3.png')
-  iconsData.rank[4] = await loadImage('/images/icons/ranks/4.png')
-  iconsData.rank[5] = await loadImage('/images/icons/ranks/5.png')
-  iconsData.engagements = {}
-  iconsData.engagements.boss = await loadImage('/images/icons/engagements/boss.png')
-  iconsData.engagements.duel = await loadImage('/images/icons/engagements/duel.png')
-  iconsData.skirmishes = {}
-  iconsData.skirmishes.boss = await loadImage('/images/icons/skirmishes/boss.png')
-  iconsData.skirmishes.defend = await loadImage('/images/icons/skirmishes/defend.png')
-  iconsData.skirmishes.gather = await loadImage('/images/icons/skirmishes/gather.png')
-  iconsData.skirmishes.slay = await loadImage('/images/icons/skirmishes/slay.png')
-  icons.value = iconsData
-}
-
-onMounted(async () => {
-  image.value = await loadImage(props.imageSource)
-  await loadIcons()
-  loading.value = false
-})
 </script>
