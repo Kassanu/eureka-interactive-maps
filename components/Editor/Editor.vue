@@ -4,7 +4,8 @@
       Click on the map to add a new item for {{ addNewItemSelectedName }}. Click this message to cancel.
     </div>
     <MapDataEditor
-      :jsonData="jsonData"
+      :jsonData="sections"
+      :fullJsonData="jsonData"
       :jsonDataShow="jsonDataShow"
       :clickCoordinates="clickCoordinates"
       :mapName="mapName"
@@ -40,6 +41,8 @@ const props = defineProps<{
   coordinatesOffset?: number
   maximumZoom?: number
 }>()
+
+const sections = computed(() => props.jsonData.sections ?? props.jsonData)
 
 const gridSizeInPixels = props.gridSizeInPixels ?? 100
 const coordinatesOffset = props.coordinatesOffset ?? 0
@@ -81,13 +84,13 @@ const iconPaths: Record<string, string> = {
 const setPositionToItem = ref<any>(null)
 
 const sortedKeys = computed(() => {
-  return Object.keys(props.jsonData).sort((a, b) => props.jsonData[a].order - props.jsonData[b].order)
+  return Object.keys(sections.value).sort((a, b) => sections.value[a].order - sections.value[b].order)
 })
 
 const positions = computed(() => {
   const pos: any[] = []
   sortedKeys.value.forEach(key => {
-    const section = props.jsonData[key]
+    const section = sections.value[key]
     if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, key) &&
           Object.prototype.hasOwnProperty.call(jsonDataShow.value[key], 'showOnMap') &&
           jsonDataShow.value[key].showOnMap === false)) {
@@ -161,9 +164,9 @@ const positions = computed(() => {
 
 const addNewItemSelectedName = computed(() => {
   if (addToSectionKey.value !== null) {
-    return props.jsonData[addToSectionKey.value].name
+    return sections.value[addToSectionKey.value].name
   } else if (setPositionToItem.value !== null) {
-    return `${props.jsonData[setPositionToItem.value.section].name} - ${setPositionToItem.value['id']}`
+    return `${sections.value[setPositionToItem.value.section].name} - ${setPositionToItem.value['id']}`
   }
   return ''
 })
@@ -175,21 +178,21 @@ const showAddNewItemBanner = computed(() => {
 const canvasClick = (evt: any) => {
   clickCoordinates.value = evt.coordinates
   if (addToSectionKey.value !== null) {
-    const newItem = Object.assign({}, props.jsonData[addToSectionKey.value].baseItem)
+    const newItem = Object.assign({}, sections.value[addToSectionKey.value].baseItem)
     newItem.position = clickCoordinates.value
     newItem.id = crypto.randomUUID()
-    props.jsonData[addToSectionKey.value].items.push(newItem)
+    sections.value[addToSectionKey.value].items.push(newItem)
     addToSectionKey.value = null
   }
 
   if (setPositionToItem.value !== null) {
-    const index = props.jsonData[setPositionToItem.value.section].items.findIndex((item: any) => {
+    const index = sections.value[setPositionToItem.value.section].items.findIndex((item: any) => {
       return item.id == setPositionToItem.value.id
     })
-    if (Array.isArray(props.jsonData[setPositionToItem.value.section].items[index].position)) {
-      props.jsonData[setPositionToItem.value.section].items[index].position[setPositionToItem.value.index] = clickCoordinates.value
+    if (Array.isArray(sections.value[setPositionToItem.value.section].items[index].position)) {
+      sections.value[setPositionToItem.value.section].items[index].position[setPositionToItem.value.index] = clickCoordinates.value
     } else {
-      props.jsonData[setPositionToItem.value.section].items[index].position = [clickCoordinates.value]
+      sections.value[setPositionToItem.value.section].items[index].position = [clickCoordinates.value]
     }
     setPositionToItem.value = null
   }
@@ -211,11 +214,11 @@ const cancelAddNewItem = () => {
 }
 
 const updateItem = (sectionKey: string, newItem: any) => {
-  const index = props.jsonData[sectionKey].items.findIndex((item: any) => {
+  const index = sections.value[sectionKey].items.findIndex((item: any) => {
     return item.id === newItem.id
   })
   if (index !== -1) {
-    props.jsonData[sectionKey].items.splice(index, 1, newItem)
+    sections.value[sectionKey].items.splice(index, 1, newItem)
   }
 }
 
@@ -233,7 +236,7 @@ const updateShowData = (sectionKey: string, showKey: string, value: any) => {
 
 const updateAllItemShowData = (sectionKey: string, showKey: string, value: any) => {
   const newShowData = Object.assign({}, jsonDataShow.value)
-  props.jsonData[sectionKey].items.forEach((item: any) => {
+  sections.value[sectionKey].items.forEach((item: any) => {
     let newShowKeyData: Record<string, any> = {}
     if (Object.prototype.hasOwnProperty.call(newShowData, item.id)) {
       newShowKeyData = Object.assign(newShowData[item.id], { [showKey]: value })
@@ -246,11 +249,11 @@ const updateAllItemShowData = (sectionKey: string, showKey: string, value: any) 
 }
 
 const deleteItem = (sectionKey: string, itemId: string) => {
-  const index = props.jsonData[sectionKey].items.findIndex((item: any) => {
+  const index = sections.value[sectionKey].items.findIndex((item: any) => {
     return item.id === itemId
   })
   if (index !== -1) {
-    props.jsonData[sectionKey].items.splice(index, 1)
+    sections.value[sectionKey].items.splice(index, 1)
   }
 }
 

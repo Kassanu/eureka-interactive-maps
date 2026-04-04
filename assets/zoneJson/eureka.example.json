@@ -1,119 +1,194 @@
 {
-    "fates": {
-        "name": "FATEs",
-        "order": 10,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
+    "sections": {
+        "fates": {
+            "name": "FATEs",
+            "type": "event",
+            "order": 10,
+            "icon": {
+                "drawStyle": "circle",
+                "primary": {
+                    "strategy": "static",
+                    "value": "fate"
+                }
             },
-            "element": "",
-            "drops": [],
-            "boss": {
-                "name": ""
-            }
-        },
-        "items": []
-    },
-    "monsters": {
-        "name": "Monsters",
-        "order": 9,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "element": "",
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
             },
-            "element": null,
-            "adaptation": {
-                "canAdapt": false,
-                "conditions": []
+            "items": []
+        },
+        "monsters": {
+            "name": "Monsters",
+            "type": "mob",
+            "order": 9,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "element",
+                    "field": "element"
+                },
+                "badges": [
+                    {
+                        "field": "family",
+                        "match": "ashkin",
+                        "icon": "ashkin"
+                    },
+                    {
+                        "field": "adaptation.canAdapt",
+                        "match": true,
+                        "icon": "adaptation"
+                    },
+                    {
+                        "field": "mutation.canMutate",
+                        "match": true,
+                        "icon": "mutation"
+                    }
+                ]
             },
-            "mutation": {
-                "canMutate": false,
-                "conditions": [],
-                "element": null
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "element": null,
+                "adaptation": {
+                    "canAdapt": false,
+                    "conditions": []
+                },
+                "mutation": {
+                    "canMutate": false,
+                    "conditions": [],
+                    "element": null
+                },
+                "aggro": null,
+                "fate": {
+                    "forFate": false,
+                    "fateId": ""
+                },
+                "family": []
             },
-            "aggro": null,
-            "ashkin": false,
-            "fate": {
-                "forFate": false,
-                "fateId": ""
-            }
+            "items": []
         },
-        "items": []
-    },
-    "elementals": {
-        "name": "Eureka Elementals",
-        "order": 1,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "elementals": {
+            "name": "Eureka Elementals",
+            "type": "poi",
+            "order": 1,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "blessing"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "aethernet": {
-        "name": "Aethernet",
-        "order": 2,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "aethernet": {
+            "name": "Aethernet",
+            "type": "poi",
+            "order": 2,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "aetheryte"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "quests": {
-        "name": "Quests",
-        "order": 2,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "quests": {
+            "name": "Quests",
+            "type": "poi",
+            "order": 2,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "quest"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "lockboxes": {
-        "name": "Bunny Lockboxes",
-        "order": 0,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "lockboxes": {
+            "name": "Bunny Lockboxes",
+            "type": "loot",
+            "order": 0,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "lock"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "misc": {
-        "name": "Misc",
-        "order": 0,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
-            }
-        },
-        "items": []
+        "misc": {
+            "name": "Misc",
+            "type": "poi",
+            "order": 0,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "noelement"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
+        }
     }
 }

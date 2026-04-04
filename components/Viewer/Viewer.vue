@@ -2,7 +2,7 @@
   <div id="viewer" class="relative" ref="viewerEl">
     <Filters
       :filters="cFilters"
-      :jsonData="jsonData"
+      :jsonData="sections"
       @updateFilters="cFilters = $event"
       @resetFilters="cFilters = JSON.parse(JSON.stringify(pFilters))"
     />
@@ -92,21 +92,23 @@ const iconPaths: Record<string, string> = {
   skirmishes_slay:     '/images/icons/skirmishes/slay.png',
 }
 
+const sections = computed(() => props.jsonData.sections ?? props.jsonData)
+
 const gridSizeInPixels = props.gridSizeInPixels ?? 100
 const coordinatesOffset = props.coordinatesOffset ?? 0
 const maximumZoom = props.maximumZoom ?? 100
 
 const sortedKeys = computed(() => {
-  if (!props.jsonData) {
+  if (!sections.value) {
     return []
   }
-  return Object.keys(props.jsonData).sort((a, b) => props.jsonData[a].order - props.jsonData[b].order)
+  return Object.keys(sections.value).sort((a, b) => sections.value[a].order - sections.value[b].order)
 })
 
 const positions = computed(() => {
   const pos: any[] = []
   sortedKeys.value.forEach(key => {
-    const section = props.jsonData[key]
+    const section = sections.value[key]
     if (cFilters.value.sections[key].enabled) {
       for (const item of section.items) {
         if (!shouldFilterItem(key, item)) {
@@ -181,7 +183,7 @@ const positions = computed(() => {
 
 const clickedItemSourceItem = computed(() => {
   if (!clickedItem.value) return null
-  return props.jsonData[clickedItem.value.key].items.find(
+  return sections.value[clickedItem.value.key].items.find(
     (item: any) => item.id == clickedItem.value.id
   ) ?? null
 })
@@ -209,7 +211,7 @@ const clickedItemIcon = computed(() => {
       break
     case 'monsters': {
       html += `<img src="${iconPaths[src.element] || iconPaths.noelement}" />`
-      if (src.ashkin) html += `<img title="Ashkin" src="${iconPaths.ashkin}" />`
+      if (src.family?.includes('ashkin')) html += `<img title="Ashkin" src="${iconPaths.ashkin}" />`
       if (src.mutation?.canMutate) html += `<img title="Mutates" src="${iconPaths.mutation}" />`
       if (src.adaptation?.canAdapt) html += `<img title="Adapts" src="${iconPaths.adaptation}" />`
       break
@@ -257,14 +259,14 @@ const clickedItemComponent = computed(() => {
 const itemComponentProps = computed(() => {
   if (!clickedItem.value) return {}
   switch (clickedItem.value.key) {
-    case 'monsters': return { fates: props.jsonData.fates?.items ?? [] }
-    case 'fates': return { monsters: props.jsonData.monsters?.items ?? [] }
+    case 'monsters': return { fates: sections.value.fates?.items ?? [] }
+    case 'fates': return { monsters: sections.value.monsters?.items ?? [] }
     case 'enemies':
     case 'skirmishes':
     case 'engagements':
       return {
-        enemies: props.jsonData.enemies?.items ?? [],
-        skirmishes: props.jsonData.skirmishes?.items ?? []
+        enemies: sections.value.enemies?.items ?? [],
+        skirmishes: sections.value.skirmishes?.items ?? []
       }
     default: return {}
   }
@@ -325,7 +327,7 @@ function shouldFilterItem(key: string, item: any): boolean {
   if (key === 'monsters') {
     const sectionFilters = cFilters.value.sections.monsters.filters
 
-    if (sectionFilters.ashkin && !item.ashkin) checks.push(true)
+    if (sectionFilters.ashkin && !(item.family && item.family.includes('ashkin'))) checks.push(true)
     if (sectionFilters.sprite && !item.name.includes('Sprite')) checks.push(true)
     if (sectionFilters.fate && !item.fate.forFate) checks.push(true)
     if (sectionFilters.aggro !== '' && item.aggro !== sectionFilters.aggro) checks.push(true)
@@ -358,10 +360,10 @@ function shouldFilterItem(key: string, item: any): boolean {
   if (key === 'enemies') {
     const sectionFilters = cFilters.value.sections.enemies.filters
     if (sectionFilters.hasOwnProperty('rank') && item.hasOwnProperty('level') && !sectionFilters.rank[item.level]) checks.push(true)
-    if (item.hasOwnProperty('elemental') && item.elemental && !sectionFilters.elemental) checks.push(true)
-    if (item.hasOwnProperty('ashkin') && item.ashkin && !sectionFilters.ashkin) checks.push(true)
-    if (item.hasOwnProperty('fauna') && item.fauna && !sectionFilters.fauna) checks.push(true)
-    if (item.hasOwnProperty('machine') && item.machine && !sectionFilters.machine) checks.push(true)
+    if (item.family?.includes('elemental') && !sectionFilters.elemental) checks.push(true)
+    if (item.family?.includes('ashkin') && !sectionFilters.ashkin) checks.push(true)
+    if (item.family?.includes('fauna') && !sectionFilters.fauna) checks.push(true)
+    if (item.family?.includes('machine') && !sectionFilters.machine) checks.push(true)
   }
 
   if (key === 'engagements') {
