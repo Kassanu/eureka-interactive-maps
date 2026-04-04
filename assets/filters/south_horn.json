@@ -1,0 +1,82 @@
+{
+    "level": {
+        "from": 1,
+        "to": 30
+    },
+    "drops": {
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "name": "Orpiment Demiatma"
+            },
+            {
+                "id": 2,
+                "name": "Realgar Demiatma"
+            },
+            {
+                "id": 3,
+                "name": "Azurite Demiatma"
+            },
+            {
+                "id": 4,
+                "name": "Caput Mortuum Demiatma"
+            },
+            {
+                "id": 5,
+                "name": "Malachite Demiatma"
+            }
+        ]
+    },
+    "sections": {
+        "fates": {
+            "name": "FATEs",
+            "enabled": true,
+            "filters": {}
+        },
+        "critical_encounters": {
+            "name": "Critical Encounters",
+            "enabled": true,
+            "filters": {}
+        },
+        "occult_crescent_monsters": {
+            "name": "Monsters",
+            "enabled": true,
+            "filters": {
+                "aggro": "",
+                "maweather": "",
+                "matime": ""
+            }
+        },
+        "aethernet": {
+            "name": "Aethernet",
+            "enabled": true,
+            "filters": {}
+        },
+        "quests": {
+            "name": "Quests",
+            "enabled": true,
+            "filters": {}
+        },
+        "treasure_coffers": {
+            "name": "Treasure Coffer",
+            "enabled": true,
+            "filters": {}
+        },
+        "bunny_coffers": {
+            "name": "Happy Bunny Coffers",
+            "enabled": true,
+            "filters": {}
+        },
+        "pots": {
+            "name": "Pots",
+            "enabled": true,
+            "filters": {}
+        },
+        "misc": {
+            "name": "Misc",
+            "enabled": true,
+            "filters": {}
+        }
+    }
+}
