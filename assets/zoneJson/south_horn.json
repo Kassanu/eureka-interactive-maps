@@ -1,138 +1,212 @@
 {
-    "fates": {
-        "name": "FATEs",
-        "order": 10,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
+    "sections": {
+        "fates": {
+            "name": "FATEs",
+            "type": "event",
+            "order": 10,
+            "icon": {
+                "drawStyle": "circle",
+                "primary": {
+                    "strategy": "static",
+                    "value": "fate"
+                }
             },
-            "drops": [],
-            "boss": {
-                "name": ""
-            }
-        },
-        "items": []
-    },
-    "critical_encounters": {
-        "name": "Critical Encounters",
-        "order": 10,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
             },
-            "drops": [],
-            "boss": {
-                "name": ""
-            }
+            "items": []
         },
-        "items": []
-    },
-    "occult_crescent_monsters": {
-        "name": "Monsters",
-        "order": 9,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
+        "critical_encounters": {
+            "name": "Critical Encounters",
+            "type": "event",
+            "order": 10,
+            "icon": {
+                "drawStyle": "circle",
+                "primary": {
+                    "strategy": "static",
+                    "value": "fate"
+                }
             },
-            "aggro": null,
-            "fate": {
-                "forFate": true,
-                "fateId": ""
-            }
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "drops": [],
+                "boss": {
+                    "name": ""
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "aethernet": {
-        "name": "Aethernet",
-        "order": 2,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "occult_crescent_monsters": {
+            "name": "Monsters",
+            "type": "mob",
+            "order": 9,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "noelement"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "aggro": null,
+                "fate": {
+                    "forFate": true,
+                    "fateId": ""
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "quests": {
-        "name": "Quests",
-        "order": 2,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "aethernet": {
+            "name": "Aethernet",
+            "type": "poi",
+            "order": 2,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "aetheryte"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "treasure_coffers": {
-        "name": "Treasure Coffers",
-        "order": 0,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "quests": {
+            "name": "Quests",
+            "type": "poi",
+            "order": 2,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "quest"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "bunny_coffers": {
-        "name": "Happy Bunny Coffers",
-        "order": 0,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "treasure_coffers": {
+            "name": "Treasure Coffers",
+            "type": "loot",
+            "order": 0,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "lock"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "pots": {
-        "name": "Pots",
-        "order": 0,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "bunny_coffers": {
+            "name": "Happy Bunny Coffers",
+            "type": "loot",
+            "order": 0,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "lock"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
-    },
-    "misc": {
-        "name": "Misc",
-        "order": 0,
-        "baseItem": {
-            "id": "",
-            "name": "",
-            "level": 0,
-            "position": {
-                "x": 0,
-                "y": 0
-            }
+        "pots": {
+            "name": "Pots",
+            "type": "loot",
+            "order": 0,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "lock"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
         },
-        "items": []
+        "misc": {
+            "name": "Misc",
+            "type": "poi",
+            "order": 0,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "static",
+                    "value": "noelement"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "level": 0,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            "items": []
+        }
     }
 }

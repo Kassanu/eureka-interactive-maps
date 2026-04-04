@@ -35,6 +35,7 @@ import Section from './Section.vue'
 
 const props = defineProps<{
   jsonData: Record<string, any>
+  fullJsonData?: Record<string, any>
   jsonDataShow: Record<string, any>
   clickCoordinates: { x: number; y: number }
   mapName: string
@@ -88,7 +89,7 @@ const deleteItem = (sectionKey: string, itemId: string) => {
 
 const saveJson = () => {
   const a = document.createElement('a')
-  const file = new Blob([JSON.stringify(props.jsonData, null, 4)], { type: 'application/json' })
+  const file = new Blob([JSON.stringify(props.fullJsonData ?? props.jsonData, null, 4)], { type: 'application/json' })
   a.href = URL.createObjectURL(file)
   a.download = `${props.mapName}.json`
   a.click()
