@@ -1,4 +1,18 @@
 {
+    "config": {
+        "features": {
+            "elementalAffinity": true
+        },
+        "lookups": {
+            "weathers": ["fairskies", "heatwave", "snow", "blizzard", "showers", "thunderstorm", "fog", "umbralwind", "gales", "gloom"],
+            "aggroTypes": ["sight", "truesight", "magic", "sound", "blood"],
+            "mobFamilies": ["ashkin", "sprite"],
+            "elements": ["fire", "earth", "lightning", "water", "wind", "ice"],
+            "times": ["day", "night"]
+        },
+        "levelLabel": "Level",
+        "levelRange": { "from": 1, "to": 70 }
+    },
     "level": {
         "from": 1,
         "to": 70

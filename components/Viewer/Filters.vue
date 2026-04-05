@@ -43,12 +43,11 @@
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             >
               <option value="">Any</option>
-              <option value="fire">Fire</option>
-              <option value="earth">Earth</option>
-              <option value="lightning">Lightning</option>
-              <option value="water">Water</option>
-              <option value="wind">Wind</option>
-              <option value="ice">Ice</option>
+              <option
+                v-for="el in zoneConfig.lookups?.elements ?? []"
+                :key="el"
+                :value="el"
+              >{{ el.charAt(0).toUpperCase() + el.slice(1) }}</option>
             </select>
             <div
               class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0"
@@ -124,8 +123,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, inject, onMounted, onUnmounted } from 'vue'
 import FilterSection from './FilterSection.vue'
+
+const zoneConfig = inject<any>('zoneConfig', {})
 
 const props = defineProps<{
   filters: any

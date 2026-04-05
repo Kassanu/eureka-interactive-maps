@@ -1,4 +1,18 @@
 {
+    "config": {
+        "features": {
+            "elementalAffinity": false
+        },
+        "lookups": {
+            "weathers": [],
+            "aggroTypes": ["sight", "sound", "magic"],
+            "mobFamilies": [],
+            "elements": [],
+            "times": ["day", "night"]
+        },
+        "levelLabel": "Level",
+        "levelRange": { "from": 1, "to": 30 }
+    },
     "level": {
         "from": 1,
         "to": 30
