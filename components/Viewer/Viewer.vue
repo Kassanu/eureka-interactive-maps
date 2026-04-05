@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, provide, onMounted, onUnmounted } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
 import Filters from '~/components/Viewer/Filters.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
@@ -54,6 +54,9 @@ const props = defineProps<{
 }>()
 
 const cFilters = ref(JSON.parse(JSON.stringify(props.pFilters)))
+const zoneConfig = computed(() => props.pFilters.config ?? {})
+provide('zoneConfig', zoneConfig)
+
 const clickedItem = ref<any>(false)
 const clickPosition = ref({ x: 0, y: 0 })
 const viewerEl = ref<HTMLElement | null>(null)

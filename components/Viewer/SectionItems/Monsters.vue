@@ -48,11 +48,9 @@
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             >
               <option value="">Any</option>
-              <option value="sight">Sight</option>
-              <option value="truesight">Truesight</option>
-              <option value="magic">Magic</option>
-              <option value="sound">Sound</option>
-              <option value="blood">Blood</option>
+              <option v-for="a in lookups.aggroTypes ?? []" :key="a" :value="a">
+                {{ a.charAt(0).toUpperCase() + a.slice(1) }}
+              </option>
             </select>
             <div
               class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0"
@@ -112,16 +110,9 @@
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             >
               <option value="">Any</option>
-              <option value="fairskies">Fair Skies</option>
-              <option value="heatwave">Heat Wave</option>
-              <option value="snow">Snow</option>
-              <option value="blizzard">Blizzard</option>
-              <option value="showers">Showers</option>
-              <option value="thunderstorm">Thunderstorm</option>
-              <option value="fog">Fog</option>
-              <option value="umbralwind">Umbral Wind</option>
-              <option value="gales">Gales</option>
-              <option value="gloom">Gloom</option>
+              <option v-for="w in lookups.weathers ?? []" :key="w" :value="w">
+                {{ w.charAt(0).toUpperCase() + w.slice(1) }}
+              </option>
             </select>
             <div class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0">
               <svg
@@ -147,8 +138,9 @@
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             >
               <option value="">Any</option>
-              <option value="day">Day</option>
-              <option value="night">Night</option>
+              <option v-for="t in lookups.times ?? []" :key="t" :value="t">
+                {{ t.charAt(0).toUpperCase() + t.slice(1) }}
+              </option>
             </select>
             <div class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0">
               <svg
@@ -178,12 +170,9 @@
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
             >
               <option value="">Any</option>
-              <option value="fire">Fire</option>
-              <option value="earth">Earth</option>
-              <option value="lightning">Lightning</option>
-              <option value="water">Water</option>
-              <option value="wind">Wind</option>
-              <option value="ice">Ice</option>
+              <option v-for="el in lookups.elements ?? []" :key="el" :value="el">
+                {{ el.charAt(0).toUpperCase() + el.slice(1) }}
+              </option>
             </select>
             <div class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0">
               <svg
@@ -204,11 +193,16 @@
 </template>
 
 <script setup lang="ts">
+import { inject, computed } from 'vue'
+
 const props = defineProps<{
   filters: any
 }>()
 
 const emit = defineEmits(['updateFilters'])
+
+const zoneConfig = inject<any>('zoneConfig', {})
+const lookups = computed(() => zoneConfig.value?.lookups ?? zoneConfig.lookups ?? {})
 
 const checkboxKeys = ['ashkin', 'sprite', 'fate', 'mutates', 'adapts']
 

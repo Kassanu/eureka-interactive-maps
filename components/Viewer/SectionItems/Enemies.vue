@@ -99,7 +99,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
+import { inject, computed } from 'vue'
 
 const props = defineProps<{
   filters: any
@@ -107,7 +107,8 @@ const props = defineProps<{
 
 const emit = defineEmits(['updateFilters'])
 
-const checkboxKeys = ['ashkin', 'elemental', 'fauna', 'machine']
+const zoneConfig = inject<any>('zoneConfig', {})
+const checkboxKeys = computed(() => zoneConfig.value?.lookups?.mobFamilies ?? zoneConfig.lookups?.mobFamilies ?? ['ashkin', 'elemental', 'fauna', 'machine'])
 
 const updateRank = (evt: Event, index: number) => {
   const target = evt.target as HTMLInputElement
