@@ -39,16 +39,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import Generic from './SectionItems/Generic.vue'
-import Monster from './SectionItems/Monster.vue'
-import Quest from './SectionItems/Quest.vue'
-import Aetheryte from './SectionItems/Aetheryte.vue'
-import Fate from './SectionItems/Fate.vue'
-import Elemental from './SectionItems/Elemental.vue'
-import Lockbox from './SectionItems/Lockbox.vue'
-import CriticalEngagements from './SectionItems/CriticalEngagements.vue'
-import Skirmishes from './SectionItems/Skirmishes.vue'
-import Enemies from './SectionItems/Enemies.vue'
+import { getEditorComponent } from '~/composables/useSectionRegistry'
 
 const props = defineProps<{
   section: any
@@ -89,20 +80,7 @@ const filteredItems = computed(() => {
   return items
 })
 
-const itemComponent = computed(() => {
-  switch (props.sectionKey) {
-    case 'monsters': return Monster
-    case 'quests': return Quest
-    case 'aethernet': return Aetheryte
-    case 'fates': return Fate
-    case 'elementals': return Elemental
-    case 'lockboxes': return Lockbox
-    case 'engagements': return CriticalEngagements
-    case 'skirmishes': return Skirmishes
-    case 'enemies': return Enemies
-    default: return Generic
-  }
-})
+const itemComponent = computed(() => getEditorComponent(props.sectionKey))
 
 const showOnMap = computed(() => {
   if (Object.prototype.hasOwnProperty.call(props.jsonDataShow, props.sectionKey) &&
