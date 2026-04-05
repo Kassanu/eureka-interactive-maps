@@ -32,6 +32,7 @@
 import { ref, computed, nextTick } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
 import MapDataEditor from './MapDataEditor.vue'
+import { resolveIcons } from '~/composables/useIconResolver'
 
 const props = defineProps<{
   imageSource: string
@@ -52,35 +53,6 @@ const clickCoordinates = ref({ x: 0, y: 0 })
 const jsonDataShow = ref<Record<string, any>>({})
 const addToSectionKey = ref<string | null>(null)
 
-const iconPaths: Record<string, string> = {
-  noelement:           '/images/icons/elements/noelement.png',
-  fire:                '/images/icons/elements/fire2.png',
-  wind:                '/images/icons/elements/wind2.png',
-  water:               '/images/icons/elements/water2.png',
-  earth:               '/images/icons/elements/earth2.png',
-  ice:                 '/images/icons/elements/ice2.png',
-  lightning:           '/images/icons/elements/lightning2.png',
-  quest:               '/images/icons/quest.png',
-  adaptation:          '/images/icons/adaptation.png',
-  mutation:            '/images/icons/mutation.png',
-  aetheryte:           '/images/icons/aetheryte.png',
-  fate:                '/images/icons/fate.png',
-  blessing:            '/images/icons/blessing.png',
-  lock:                '/images/icons/lock.png',
-  ashkin:              '/images/icons/ashkin.png',
-  rank_0:              '/images/icons/ranks/0.png',
-  rank_1:              '/images/icons/ranks/1.png',
-  rank_2:              '/images/icons/ranks/2.png',
-  rank_3:              '/images/icons/ranks/3.png',
-  rank_4:              '/images/icons/ranks/4.png',
-  rank_5:              '/images/icons/ranks/5.png',
-  engagements_boss:    '/images/icons/engagements/boss.png',
-  engagements_duel:    '/images/icons/engagements/duel.png',
-  skirmishes_boss:     '/images/icons/skirmishes/boss.png',
-  skirmishes_defend:   '/images/icons/skirmishes/defend.png',
-  skirmishes_gather:   '/images/icons/skirmishes/gather.png',
-  skirmishes_slay:     '/images/icons/skirmishes/slay.png',
-}
 const setPositionToItem = ref<any>(null)
 
 const sortedKeys = computed(() => {
@@ -105,47 +77,19 @@ const positions = computed(() => {
             coordinates = item.position[0]
           }
 
+          const resolved = resolveIcons(section.icon, item)
+
           const itemObj: any = {
             id: item.id,
             key: key,
             label: item.name,
             coordinates: coordinates,
-            icons: []
+            icons: resolved.icons,
+            drawStyle: resolved.drawStyle,
           }
 
-          switch (key) {
-            case 'monsters':
-              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
-              itemObj.label = `${item.name} (${item.level})`
-              break
-            case 'fates':
-              itemObj.icons.push(iconPaths.fate)
-              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
-              break
-            case 'quests':
-              itemObj.icons.push(iconPaths.quest)
-              break
-            case 'aethernet':
-              itemObj.icons.push(iconPaths.aetheryte)
-              break
-            case 'elementals':
-              itemObj.icons.push(iconPaths.blessing)
-              break
-            case 'lockboxes':
-              itemObj.icons.push(iconPaths.lock)
-              break
-            case 'enemies':
-              itemObj.icons.push(iconPaths[`rank_${item.level}`] || iconPaths.noelement)
-              break
-            case 'skirmishes':
-              itemObj.icons.push(iconPaths[`skirmishes_${item.icon}`] || iconPaths.fate)
-              break
-            case 'engagements':
-              itemObj.icons.push(iconPaths[`engagements_${item.icon}`] || iconPaths.fate)
-              break
-            default:
-              itemObj.icons.push(iconPaths.noelement)
-              break
+          if (item.level !== undefined) {
+            itemObj.label = `${item.name} (${item.level})`
           }
 
           pos.push(itemObj)

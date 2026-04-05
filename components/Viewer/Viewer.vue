@@ -41,12 +41,8 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
 import Filters from '~/components/Viewer/Filters.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
-import DefaultItemInformation from '~/components/Viewer/DefaultItemInformation.vue'
-import MonsterItemInformation from '~/components/Viewer/MonsterItemInformation.vue'
-import FateItemInformation from '~/components/Viewer/FateItemInformation.vue'
-import EnemyItemInformation from '~/components/Viewer/ItemInformation/EnemyItemInformation.vue'
-import SkirmishesItemInformation from '~/components/Viewer/ItemInformation/SkirmishesItemInformation.vue'
-import CriticalEngagementsItemInformation from '~/components/Viewer/ItemInformation/CriticalEngagementsItemInformation.vue'
+import { getViewerComponent } from '~/composables/useSectionRegistry'
+import { resolveIcons, resolveIconHtml } from '~/composables/useIconResolver'
 
 const props = defineProps<{
   imageSource: string
@@ -61,36 +57,6 @@ const cFilters = ref(JSON.parse(JSON.stringify(props.pFilters)))
 const clickedItem = ref<any>(false)
 const clickPosition = ref({ x: 0, y: 0 })
 const viewerEl = ref<HTMLElement | null>(null)
-
-const iconPaths: Record<string, string> = {
-  noelement:           '/images/icons/elements/noelement.png',
-  fire:                '/images/icons/elements/fire2.png',
-  wind:                '/images/icons/elements/wind2.png',
-  water:               '/images/icons/elements/water2.png',
-  earth:               '/images/icons/elements/earth2.png',
-  ice:                 '/images/icons/elements/ice2.png',
-  lightning:           '/images/icons/elements/lightning2.png',
-  quest:               '/images/icons/quest.png',
-  adaptation:          '/images/icons/adaptation.png',
-  mutation:            '/images/icons/mutation.png',
-  aetheryte:           '/images/icons/aetheryte.png',
-  fate:                '/images/icons/fate.png',
-  blessing:            '/images/icons/blessing.png',
-  lock:                '/images/icons/lock.png',
-  ashkin:              '/images/icons/ashkin.png',
-  rank_0:              '/images/icons/ranks/0.png',
-  rank_1:              '/images/icons/ranks/1.png',
-  rank_2:              '/images/icons/ranks/2.png',
-  rank_3:              '/images/icons/ranks/3.png',
-  rank_4:              '/images/icons/ranks/4.png',
-  rank_5:              '/images/icons/ranks/5.png',
-  engagements_boss:    '/images/icons/engagements/boss.png',
-  engagements_duel:    '/images/icons/engagements/duel.png',
-  skirmishes_boss:     '/images/icons/skirmishes/boss.png',
-  skirmishes_defend:   '/images/icons/skirmishes/defend.png',
-  skirmishes_gather:   '/images/icons/skirmishes/gather.png',
-  skirmishes_slay:     '/images/icons/skirmishes/slay.png',
-}
 
 const sections = computed(() => props.jsonData.sections ?? props.jsonData)
 
@@ -119,50 +85,19 @@ const positions = computed(() => {
             coordinates = item.position[0]
           }
 
+          const resolved = resolveIcons(section.icon, item)
+
           let itemObj: any = {
             id: item.id,
             key: key,
             label: item.name,
             coordinates: coordinates,
-            icons: []
+            icons: resolved.icons,
+            drawStyle: resolved.drawStyle,
           }
 
-          switch (key) {
-            case 'monsters':
-              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
-              itemObj.label = `${item.name} (${item.level})`
-              break
-            case 'fates':
-              itemObj.icons.push(iconPaths.fate)
-              itemObj.icons.push(iconPaths[item.element] || iconPaths.noelement)
-              itemObj.drawStyle = 'circle'
-              break
-            case 'quests':
-              itemObj.icons.push(iconPaths.quest)
-              break
-            case 'aethernet':
-              itemObj.icons.push(iconPaths.aetheryte)
-              break
-            case 'elementals':
-              itemObj.icons.push(iconPaths.blessing)
-              break
-            case 'lockboxes':
-              itemObj.icons.push(iconPaths.lock)
-              break
-            case 'enemies':
-              itemObj.icons.push(iconPaths[`rank_${item.level}`] || iconPaths.noelement)
-              break
-            case 'skirmishes':
-              itemObj.icons.push(iconPaths[`skirmishes_${item.icon}`] || iconPaths.fate)
-              itemObj.drawStyle = 'circle'
-              break
-            case 'engagements':
-              itemObj.icons.push(iconPaths[`engagements_${item.icon}`] || iconPaths.fate)
-              itemObj.drawStyle = 'circle'
-              break
-            default:
-              itemObj.icons.push(iconPaths.noelement)
-              break
+          if (item.level !== undefined) {
+            itemObj.label = `${item.name} (${item.level})`
           }
 
           pos.push(itemObj)
@@ -190,70 +125,18 @@ const clickedItemSourceItem = computed(() => {
 
 const clickedItemIcon = computed(() => {
   if (!clickedItem.value || !clickedItemSourceItem.value) return ''
-  const src = clickedItemSourceItem.value
-  let html = ''
-
-  switch (clickedItem.value.key) {
-    case 'fates':
-      html = `<img title="FATE" src="${iconPaths.fate}" />`
-      break
-    case 'elementals':
-      html = `<img title="Eurekan Elemental" src="${iconPaths.blessing}" />`
-      break
-    case 'lockboxes':
-      html = `<img title="Bunny Lockbox" src="${iconPaths.lock}" />`
-      break
-    case 'aethernet':
-      html = `<img title="Aetheryte" src="${iconPaths.aetheryte}" />`
-      break
-    case 'quests':
-      html = `<img title="Quest" src="${iconPaths.quest}" />`
-      break
-    case 'monsters': {
-      html += `<img src="${iconPaths[src.element] || iconPaths.noelement}" />`
-      if (src.family?.includes('ashkin')) html += `<img title="Ashkin" src="${iconPaths.ashkin}" />`
-      if (src.mutation?.canMutate) html += `<img title="Mutates" src="${iconPaths.mutation}" />`
-      if (src.adaptation?.canAdapt) html += `<img title="Adapts" src="${iconPaths.adaptation}" />`
-      break
-    }
-    case 'enemies': {
-      const rank = src.level
-      html = `<img title="Rank ${rank == 0 ? 'Star' : rank}" src="${iconPaths[`rank_${rank}`] || iconPaths.noelement}" />`
-      break
-    }
-    case 'skirmishes':
-      html = `<img title="Skirmish" src="${iconPaths[`skirmishes_${src.icon}`] || iconPaths.fate}" />`
-      break
-    case 'engagements':
-      html = `<img title="Critical Engagement" src="${iconPaths[`engagements_${src.icon}`] || iconPaths.fate}" />`
-      break
-    default:
-      html = `<img src="${iconPaths.noelement}" />`
-      break
-  }
-
-  return html
+  const section = sections.value[clickedItem.value.key]
+  return resolveIconHtml(section.icon, clickedItemSourceItem.value)
 })
 
 const clickedItemLabel = computed(() => {
   if (!clickedItem.value || !clickedItemSourceItem.value) return ''
-  switch (clickedItem.value.key) {
-    case 'elementals': return 'Eurekan Elementals'
-    case 'lockboxes': return 'Bunny Lockboxes'
-    default: return clickedItemSourceItem.value.name
-  }
+  return clickedItemSourceItem.value.name || sections.value[clickedItem.value.key]?.name || ''
 })
 
 const clickedItemComponent = computed(() => {
   if (!clickedItem.value) return null
-  switch (clickedItem.value.key) {
-    case 'monsters': return MonsterItemInformation
-    case 'fates': return FateItemInformation
-    case 'enemies': return EnemyItemInformation
-    case 'skirmishes': return SkirmishesItemInformation
-    case 'engagements': return CriticalEngagementsItemInformation
-    default: return DefaultItemInformation
-  }
+  return getViewerComponent(clickedItem.value.key)
 })
 
 const itemComponentProps = computed(() => {

@@ -36,10 +36,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import Monsters from './SectionItems/Monsters.vue'
-import Enemies from './SectionItems/Enemies.vue'
-import CriticalEngagements from './SectionItems/CriticalEngagements.vue'
-import Skirmishes from './SectionItems/Skirmishes.vue'
+import { getFilterComponent } from '~/composables/useSectionRegistry'
 
 const props = defineProps<{
   section: any
@@ -52,20 +49,7 @@ const expanded = ref(true)
 
 const showExpanded = computed(() => Object.keys(props.section.filters).length !== 0)
 
-const filterComponent = computed(() => {
-  switch (props.section.key) {
-    case 'monsters':
-      return Monsters
-    case 'enemies':
-      return Enemies
-    case 'engagements':
-      return CriticalEngagements
-    case 'skirmishes':
-      return Skirmishes
-    default:
-      return null
-  }
-})
+const filterComponent = computed(() => getFilterComponent(props.section.key))
 
 const viewInputId = computed(() => `showhidecheckbox-${props.section.key}`)
 
