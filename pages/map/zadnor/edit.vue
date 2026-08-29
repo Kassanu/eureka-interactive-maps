@@ -4,6 +4,7 @@
     :imageSource="imageSource"
     :jsonData="jsonData"
     :mapName="mapName"
+    :config="config"
     :gridSizeInPixels="gridSizeInPixels"
     :coordinatesOffset="coordinatesOffset"
     :maximumZoom="maximumZoom"
@@ -22,11 +23,13 @@ const maximumZoom = 150
 
 const imageSource = ref<string | null>(null)
 const jsonData = ref<any>(null)
+const config = ref<any>(null)
 
 watchEffect(async () => {
   try {
     imageSource.value = (await import(`~/assets/images/maps/zadnor.jpg`)).default
     jsonData.value = (await import(`~/assets/zoneJson/zadnor.json`)).default
+    config.value = (await import(`~/assets/filters/zadnor.json`)).default.config
   } catch (e) {
     console.error('Error loading data for zadnor edit.', e)
   }

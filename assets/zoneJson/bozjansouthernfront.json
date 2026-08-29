@@ -1649,7 +1649,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2381,7 +2382,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2409,7 +2411,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2536,7 +2539,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2564,7 +2568,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2592,7 +2597,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2620,7 +2626,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2648,7 +2655,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2676,7 +2684,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2704,7 +2713,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2732,7 +2742,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {
@@ -2760,7 +2771,8 @@
                     "attack": "magical",
                     "weakness": "",
                     "family": [
-                        "elemental"
+                        "elemental",
+                        "sprite"
                     ]
                 },
                 {

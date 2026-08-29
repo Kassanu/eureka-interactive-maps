@@ -28,7 +28,7 @@
       </div>
       <div v-show="expanded">
         <div class="flex flex-wrap -mx-3 mb-2">
-          <div class="w-full w-full px-3 mb-6 md:mb-0">
+          <div v-if="'level' in item" class="w-full w-full px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Level
             </label>
@@ -36,7 +36,7 @@
               class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
               type="number">
           </div>
-          <div class="w-full w-full px-3 mb-6 md:mb-0">
+          <div v-if="'element' in item" class="w-full w-full px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Element
             </label>
@@ -53,10 +53,10 @@
               </select>
             </div>
           </div>
-          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="false" class="w-full w-full px-3 mb-6 md:mb-0"></Positions>
+          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="Array.isArray(item.position)" class="w-full w-full px-3 mb-6 md:mb-0" />
         </div>
 
-        <div class="flex flex-wrap -mx-3 mb-2">
+        <div v-if="'aggro' in item" class="flex flex-wrap -mx-3 mb-2">
           <div class="w-full w-full px-3 mb-2 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Aggro
@@ -64,25 +64,54 @@
             <div class="relative">
               <select :value="item.aggro" @change="updateAggro"
                 class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full">
-                <option value=''></option>
+                <option value=''>None</option>
                 <option value='sight'>Sight</option>
                 <option value='sound'>Sound</option>
                 <option value='magic'>Magic</option>
               </select>
             </div>
           </div>
+        </div>
 
-          <div class="w-full w-full px-3 mb-2 md:mb-0">
+        <div v-if="familyKeys.length" class="flex flex-wrap -mx-3 mb-2">
+          <div v-for="family in familyKeys" :key="family" class="w-full w-full px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-              Ashkin
+              {{ capitalize(family) }}
             </label>
-            <input :checked="item.ashkin" @input="updateAshkin"
-              class="px-2 py-1 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
+            <input :checked="item.family?.includes(family)" @change="updateFamily($event, family)"
+              class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
               type="checkbox">
           </div>
         </div>
 
-        <div class="flex flex-wrap -mx-3">
+        <!-- Attack / Weakness (enemies) -->
+        <div v-if="'attack' in item || 'weakness' in item" class="flex w-full w-full px-3 mb-3 -mx-3">
+          <div v-if="'attack' in item" class="w-1/3 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+              Attack
+            </label>
+            <select :value="item.attack" @change="updateAttack"
+              class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline mr-2">
+              <option value=''>Both</option>
+              <option value='physical'>Physical</option>
+              <option value='magical'>Magical</option>
+            </select>
+          </div>
+          <div v-if="'weakness' in item" class="w-1/3 px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+              Weakness
+            </label>
+            <select :value="item.weakness" @change="updateWeakness"
+              class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline mr-2">
+              <option value=''>None</option>
+              <option value='physical'>Physical</option>
+              <option value='magical'>Magical</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Mutation -->
+        <div v-if="'mutation' in item" class="flex flex-wrap -mx-3">
           <div class="w-full w-full px-3 mb-6 md:mb-0 bg-blue-100">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Mutation
@@ -114,11 +143,12 @@
           </div>
         </div>
 
-        <MutationAdaptionConditions v-if="item.mutation.canMutate" :conditions="item.mutation.conditions"
+        <MutationAdaptionConditions v-if="'mutation' in item && item.mutation.canMutate" :conditions="item.mutation.conditions"
           :type="'mutation'" :bgClass="'bg-blue-100'" @changeConditions="changeConditions"
           @deleteCondition="deleteCondition" />
 
-        <div class="flex flex-wrap -mx-3 mt-2">
+        <!-- Adaptation -->
+        <div v-if="'adaptation' in item" class="flex flex-wrap -mx-3 mt-2">
           <div class="w-full w-full px-3 mb-6 md:mb-0 bg-green-100">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Adaptation
@@ -136,11 +166,12 @@
           <div v-if="item.adaptation.canAdapt" class="w-full w-full px-3 mb-6 md:mb-0 bg-green-100"></div>
         </div>
 
-        <MutationAdaptionConditions v-if="item.adaptation.canAdapt" :conditions="item.adaptation.conditions"
+        <MutationAdaptionConditions v-if="'adaptation' in item && item.adaptation.canAdapt" :conditions="item.adaptation.conditions"
           :type="'adaptation'" :bgClass="'bg-green-100'" @changeConditions="changeConditions"
           @deleteCondition="deleteCondition" />
 
-        <div class="flex flex-wrap -mx-3 mt-2 mb-2">
+        <!-- Fate -->
+        <div v-if="'fate' in item" class="flex flex-wrap -mx-3 mt-2 mb-2">
           <div class="w-full w-full px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
               Fate
@@ -160,6 +191,9 @@
             </select>
           </div>
         </div>
+
+        <Drops v-if="'drops' in item" :drops="item.drops" @updateDrops="updateDrops" @addDrop="addDrop" class="w-full w-full px-3" />
+        <Spawns v-if="'spawns' in item" :spawns="item.spawns" @updateSpawns="updateSpawns" @addSpawn="addSpawn" class="w-full w-full px-3" />
       </div>
     </form>
   </SectionItem>
@@ -170,7 +204,10 @@ import { computed } from 'vue'
 import SectionItem from './SectionItem.vue'
 import MutationAdaptionConditions from './MutationAdaptionConditions.vue'
 import Positions from './Positions.vue'
+import Drops from './Drops.vue'
+import Spawns from './Spawns.vue'
 import { useSectionItemFields } from '~/composables/useSectionItemFields'
+import { useZoneLookups } from '~/composables/useZoneConfig'
 
 const props = defineProps<{
   item: any
@@ -186,6 +223,14 @@ const emit = defineEmits<{
   (e: 'updateAllItemShowData', sectionKey: string, showKey: string, value: any): void
   (e: 'deleteItem', sectionKey: string, itemId: string): void
 }>()
+
+const lookups = useZoneLookups()
+
+const familyKeys = computed(() =>
+  'family' in props.item ? (lookups.value.mobFamilies ?? []) : []
+)
+
+const capitalize = (str: string) => str ? str.charAt(0).toUpperCase() + str.slice(1) : ''
 
 const expanded = computed(() => {
   if (Object.prototype.hasOwnProperty.call(props.jsonDataShow, props.item.id) &&
@@ -203,14 +248,20 @@ const {
   addPosition,
   setItemPosition,
   updateAggro,
+  updateFamily,
   updateAdaptation,
   updateMutation,
   updateFate,
-  updateAshkin,
   updateForFateId,
   updateMutationElement,
   addCondition,
   deleteCondition,
   changeConditions,
+  updateAttack,
+  updateWeakness,
+  updateDrops,
+  addDrop,
+  updateSpawns,
+  addSpawn,
 } = useSectionItemFields(props, emit)
 </script>

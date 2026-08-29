@@ -28,7 +28,15 @@
       </div>
       <div v-show="expanded">
         <div class="flex flex-wrap -mx-3 mb-2">
-          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="false" class="w-full w-full px-3"></Positions>
+          <div v-if="'level' in item" class="w-full w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+              Level
+            </label>
+            <input :value="item.level" @change="updateLevel"
+              class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
+              type="number">
+          </div>
+          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="Array.isArray(item.position)" class="w-full w-full px-3" />
         </div>
       </div>
     </form>
@@ -65,6 +73,7 @@ const expanded = computed(() => {
 
 const {
   updateName,
+  updateLevel,
   updatePosition,
   addPosition,
   setItemPosition,

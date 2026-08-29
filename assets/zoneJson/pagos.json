@@ -1072,7 +1072,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "20a4650b-a07d-4132-b703-7698c1e1e339",
@@ -1262,7 +1264,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "443a8af9-b9f8-47b8-b304-f76d6a3bca59",
@@ -1471,7 +1475,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "00b1033c-c5d1-423b-ad17-454ff90b4ec1",
@@ -1767,7 +1773,9 @@
                         "forFate": true,
                         "fateId": "6881044d-7f9e-450f-b187-3946c7c31734"
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "8f1ff88d-2847-4948-bdcd-817474d5f001",
@@ -2204,7 +2212,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "3b8e6737-b47f-4a47-af6d-ccae6f7abc04",
@@ -2354,7 +2364,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "ff98a423-8279-44e3-bb22-da019b1435e0",
@@ -3261,7 +3273,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "30f7a582-9998-4e00-b3cf-0eb99c848e61",
@@ -3286,7 +3300,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "ee8418a0-3332-4e62-adb8-f50fc89b407d",
@@ -3311,7 +3327,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "e11ca6df-551c-4385-92b1-12f6669382d1",
@@ -3336,7 +3354,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "008efe8d-9589-4167-8712-f13d45927312",
@@ -3361,7 +3381,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "7b7d68a1-1e9b-4507-9a15-604c5208ceea",
@@ -3386,7 +3408,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "76f04ca3-8177-4c18-9c78-e2e6eb3de73c",
@@ -3411,7 +3435,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "59121ec1-c110-40ba-a920-4b990ba958fd",
@@ -3436,7 +3462,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "79c31c12-4dc5-4eca-9ab7-51356751b320",
@@ -3461,7 +3489,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "1c8ddff4-5df7-4607-b8c4-0868155489e5",
@@ -3486,7 +3516,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "2bd3f6aa-625a-4bee-a4ab-233e7eb007ac",
@@ -3511,7 +3543,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "beb392d8-c887-43c6-99ea-cdccb2cabe50",
@@ -3536,7 +3570,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "fea524db-c513-4a80-866a-af3ab299f460",
@@ -3561,7 +3597,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "1301b766-07c8-439d-a105-bce2c37996eb",
@@ -3586,7 +3624,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 },
                 {
                     "id": "39534a25-5628-429a-921d-c89e2e7871d8",
@@ -3611,7 +3651,9 @@
                         "forFate": false,
                         "fateId": ""
                     },
-                    "family": []
+                    "family": [
+                        "sprite"
+                    ]
                 }
             ]
         },

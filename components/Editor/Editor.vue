@@ -29,21 +29,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, nextTick } from 'vue'
+import { ref, computed, nextTick, provide } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
 import MapDataEditor from './MapDataEditor.vue'
 import { resolveIcons } from '~/composables/useIconResolver'
+import { zoneConfigKey, type ZoneConfig } from '~/composables/useZoneConfig'
 
 const props = defineProps<{
   imageSource: string
   jsonData: any
   mapName: string
+  config?: ZoneConfig
   gridSizeInPixels?: number
   coordinatesOffset?: number
   maximumZoom?: number
 }>()
 
 const sections = computed(() => props.jsonData.sections ?? props.jsonData)
+
+const zoneConfig = computed<ZoneConfig>(() => props.config ?? {})
+provide(zoneConfigKey, zoneConfig)
 
 const gridSizeInPixels = props.gridSizeInPixels ?? 100
 const coordinatesOffset = props.coordinatesOffset ?? 0

@@ -80,7 +80,7 @@ const filteredItems = computed(() => {
   return items
 })
 
-const itemComponent = computed(() => getEditorComponent(props.sectionKey))
+const itemComponent = computed(() => getEditorComponent(props.section.type))
 
 const showOnMap = computed(() => {
   if (Object.prototype.hasOwnProperty.call(props.jsonDataShow, props.sectionKey) &&

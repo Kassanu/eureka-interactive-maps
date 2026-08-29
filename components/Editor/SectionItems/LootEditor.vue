@@ -28,7 +28,8 @@
       </div>
       <div v-show="expanded">
         <div class="flex flex-wrap -mx-3 mb-2">
-          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="false" class="w-full w-full px-3"></Positions>
+          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="false" class="w-full w-full px-3" />
+          <Drops v-if="'drops' in item" :drops="item.drops" @updateDrops="updateDrops" @addDrop="addDrop" class="w-full w-full px-3" />
         </div>
       </div>
     </form>
@@ -39,6 +40,7 @@
 import { computed } from 'vue'
 import SectionItem from './SectionItem.vue'
 import Positions from './Positions.vue'
+import Drops from './Drops.vue'
 import { useSectionItemFields } from '~/composables/useSectionItemFields'
 
 const props = defineProps<{
@@ -68,5 +70,7 @@ const {
   updatePosition,
   addPosition,
   setItemPosition,
+  updateDrops,
+  addDrop,
 } = useSectionItemFields(props, emit)
 </script>
