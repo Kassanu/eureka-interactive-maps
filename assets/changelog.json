@@ -1,5 +1,10 @@
 [
   {
+    "version": "v2.1.0",
+    "date": "2026-08-29",
+    "description": "Updated eureka-canvas to v3.0. Refactored zone data to simplify making new zones."
+  },
+  {
     "version": "v2.0.0",
     "date": "2026-03-28",
     "description": "Rebuilt from the ground up with Vue 3, TypeScript, and Nuxt for server-side rendering and proper URLs."
