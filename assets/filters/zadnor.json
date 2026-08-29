@@ -9,7 +9,7 @@
             "mobFamilies": ["ashkin", "elemental", "fauna", "machine"],
             "elements": [],
             "times": [],
-            "ranks": [0, 1, 2, 3, 4, 5]
+            "ranks": [1, 2, 3, 4, 5, 0]
         },
         "levelLabel": "Rank",
         "levelRange": { "from": 0, "to": 5 }

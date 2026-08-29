@@ -49,7 +49,9 @@ const expanded = ref(true)
 
 const showExpanded = computed(() => Object.keys(props.section.filters).length !== 0)
 
-const filterComponent = computed(() => getFilterComponent(props.section.key))
+const filterComponent = computed(() =>
+  getFilterComponent(props.jsonData[props.section.key]?.type)
+)
 
 const viewInputId = computed(() => `showhidecheckbox-${props.section.key}`)
 

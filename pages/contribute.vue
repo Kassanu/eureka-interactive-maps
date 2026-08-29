@@ -17,7 +17,8 @@
           <NuxtLink class="hover:text-white" to="map/pagos/edit">Pagos Editor</NuxtLink><br>
           <NuxtLink class="hover:text-white" to="map/pyros/edit">Pyros Editor</NuxtLink><br>
           <NuxtLink class="hover:text-white" to="map/hydatos/edit">Hydatos Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/bozjansouthernfront/edit">Bozjan Southern Front Editor</NuxtLink>
+          <NuxtLink class="hover:text-white" to="map/bozjansouthernfront/edit">Bozjan Southern Front Editor</NuxtLink><br>
+          <NuxtLink class="hover:text-white" to="map/zadnor/edit">Zadnor Editor</NuxtLink>
         </div>
       </div>
     </div>

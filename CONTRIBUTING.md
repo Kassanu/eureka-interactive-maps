@@ -22,22 +22,27 @@ The easiest way to contribute is by keeping map data accurate and up to date. Ea
    - [Pyros Editor](https://www.ffxiv-interactive-eureka-maps.com/map/pyros/edit)
    - [Hydatos Editor](https://www.ffxiv-interactive-eureka-maps.com/map/hydatos/edit)
    - [Bozjan Southern Front Editor](https://www.ffxiv-interactive-eureka-maps.com/map/bozjansouthernfront/edit)
+   - [Zadnor Editor](https://www.ffxiv-interactive-eureka-maps.com/map/zadnor/edit)
 
 2. Make your changes using the editor. You can add, edit, or reposition items on the map.
 
 3. When you're done, click **Save** to download the updated JSON file.
 
-4. Fork this repository and replace the corresponding JSON file in `assets/data/` with your updated file.
+4. Fork this repository and replace the corresponding JSON file in `assets/zoneJson/` with your updated file. The downloaded file keeps its zone's name, so it drops straight in.
 
 5. Open a pull request with a description of what was changed (e.g. "Updated spawn position for X", "Added missing NM fate Y").
 
 The JSON files live in:
 
 ```
-assets/data/
+assets/zoneJson/
   anemos.json
   pagos.json
   pyros.json
   hydatos.json
   bozjansouthernfront.json
+  zadnor.json
+  south_horn.json
 ```
+
+`eureka.example.json` sits alongside them as a template for adding a new zone. It is not a zone anyone edits.

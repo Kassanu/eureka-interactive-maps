@@ -43,6 +43,7 @@ import Filters from '~/components/Viewer/Filters.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
 import { getViewerComponent } from '~/composables/useSectionRegistry'
 import { resolveIcons, resolveIconHtml } from '~/composables/useIconResolver'
+import { zoneConfigKey, type ZoneConfig } from '~/composables/useZoneConfig'
 
 const props = defineProps<{
   imageSource: string
@@ -54,8 +55,8 @@ const props = defineProps<{
 }>()
 
 const cFilters = ref(JSON.parse(JSON.stringify(props.pFilters)))
-const zoneConfig = computed(() => props.pFilters.config ?? {})
-provide('zoneConfig', zoneConfig)
+const zoneConfig = computed<ZoneConfig>(() => props.pFilters.config ?? {})
+provide(zoneConfigKey, zoneConfig)
 
 const clickedItem = ref<any>(false)
 const clickPosition = ref({ x: 0, y: 0 })
@@ -139,22 +140,16 @@ const clickedItemLabel = computed(() => {
 
 const clickedItemComponent = computed(() => {
   if (!clickedItem.value) return null
-  return getViewerComponent(clickedItem.value.key)
+  return getViewerComponent(sections.value[clickedItem.value.key]?.type)
 })
 
 const itemComponentProps = computed(() => {
   if (!clickedItem.value) return {}
-  switch (clickedItem.value.key) {
-    case 'monsters': return { fates: sections.value.fates?.items ?? [] }
-    case 'fates': return { monsters: sections.value.monsters?.items ?? [] }
-    case 'enemies':
-    case 'skirmishes':
-    case 'engagements':
-      return {
-        enemies: sections.value.enemies?.items ?? [],
-        skirmishes: sections.value.skirmishes?.items ?? []
-      }
-    default: return {}
+  return {
+    fates: sections.value.fates?.items ?? [],
+    monsters: sections.value.monsters?.items ?? [],
+    enemies: sections.value.enemies?.items ?? [],
+    skirmishes: sections.value.skirmishes?.items ?? [],
   }
 })
 
@@ -182,6 +177,7 @@ onMounted(() => {
 
 function shouldFilterItem(key: string, item: any): boolean {
   const checks: boolean[] = []
+  const sectionType = sections.value[key]?.type
 
   if (
     cFilters.value.hasOwnProperty('level') &&
@@ -210,58 +206,63 @@ function shouldFilterItem(key: string, item: any): boolean {
     }
   }
 
-  if (key === 'monsters') {
-    const sectionFilters = cFilters.value.sections.monsters.filters
+  if (sectionType === 'mob') {
+    const sf = cFilters.value.sections[key].filters
+    const mobFamilies = zoneConfig.value.lookups?.mobFamilies ?? []
 
-    if (sectionFilters.ashkin && !(item.family && item.family.includes('ashkin'))) checks.push(true)
-    if (sectionFilters.sprite && !item.name.includes('Sprite')) checks.push(true)
-    if (sectionFilters.fate && !item.fate.forFate) checks.push(true)
-    if (sectionFilters.aggro !== '' && item.aggro !== sectionFilters.aggro) checks.push(true)
-    if (sectionFilters.mutates && !item.mutation.canMutate) checks.push(true)
-    if (sectionFilters.adapts && !item.adaptation.canAdapt) checks.push(true)
-
-    if (sectionFilters.maweather !== '' && sectionFilters.matime !== '') {
-      const adaptFound = item.adaptation.conditions.some(
-        (c: any) => c.weather === sectionFilters.maweather && c.time === sectionFilters.matime
-      )
-      const mutateFound = item.mutation.conditions.some(
-        (c: any) => c.weather === sectionFilters.maweather && c.time === sectionFilters.matime
-      )
-      checks.push(!(adaptFound || mutateFound))
-    } else if (sectionFilters.maweather !== '') {
-      const adaptFound = item.adaptation.conditions.some((c: any) => c.weather === sectionFilters.maweather)
-      const mutateFound = item.mutation.conditions.some((c: any) => c.weather === sectionFilters.maweather)
-      checks.push(!(adaptFound || mutateFound))
-    } else if (sectionFilters.matime !== '') {
-      const adaptFound = item.adaptation.conditions.some((c: any) => c.time === sectionFilters.matime)
-      const mutateFound = item.mutation.conditions.some((c: any) => c.time === sectionFilters.matime)
-      checks.push(!(adaptFound || mutateFound))
+    // Family toggles: an unchecked family hides every item carrying it.
+    for (const family of mobFamilies) {
+      if (family in sf && !sf[family] && item.family?.includes(family)) checks.push(true)
     }
 
-    if (sectionFilters.mutateElement !== '' && item.mutation.element !== sectionFilters.mutateElement) {
+    // sf.rank is indexed by the item's rank, which is stored in level.
+    if ('rank' in sf && 'level' in item && !sf.rank[item.level]) checks.push(true)
+
+    // Checked narrows to matching items; unchecked imposes no constraint.
+    if ('fate' in sf && sf.fate && !item.fate?.forFate) checks.push(true)
+    if ('mutates' in sf && sf.mutates && !item.mutation?.canMutate) checks.push(true)
+    if ('adapts' in sf && sf.adapts && !item.adaptation?.canAdapt) checks.push(true)
+
+    // Aggro select
+    if ('aggro' in sf && sf.aggro !== '' && item.aggro !== sf.aggro) checks.push(true)
+
+    // Weather/time conditions
+    const maweather = 'maweather' in sf ? sf.maweather : ''
+    const matime = 'matime' in sf ? sf.matime : ''
+    if (maweather !== '' || matime !== '') {
+      const adaptConditions = item.adaptation?.conditions ?? []
+      const mutateConditions = item.mutation?.conditions ?? []
+
+      if (maweather !== '' && matime !== '') {
+        const adaptFound = adaptConditions.some((c: any) => c.weather === maweather && c.time === matime)
+        const mutateFound = mutateConditions.some((c: any) => c.weather === maweather && c.time === matime)
+        checks.push(!(adaptFound || mutateFound))
+      } else if (maweather !== '') {
+        const adaptFound = adaptConditions.some((c: any) => c.weather === maweather)
+        const mutateFound = mutateConditions.some((c: any) => c.weather === maweather)
+        checks.push(!(adaptFound || mutateFound))
+      } else if (matime !== '') {
+        const adaptFound = adaptConditions.some((c: any) => c.time === matime)
+        const mutateFound = mutateConditions.some((c: any) => c.time === matime)
+        checks.push(!(adaptFound || mutateFound))
+      }
+    }
+
+    // Mutation element
+    if ('mutateElement' in sf && sf.mutateElement !== '' && item.mutation?.element !== sf.mutateElement) {
       checks.push(true)
     }
   }
 
-  if (key === 'enemies') {
-    const sectionFilters = cFilters.value.sections.enemies.filters
-    if (sectionFilters.hasOwnProperty('rank') && item.hasOwnProperty('level') && !sectionFilters.rank[item.level]) checks.push(true)
-    if (item.family?.includes('elemental') && !sectionFilters.elemental) checks.push(true)
-    if (item.family?.includes('ashkin') && !sectionFilters.ashkin) checks.push(true)
-    if (item.family?.includes('fauna') && !sectionFilters.fauna) checks.push(true)
-    if (item.family?.includes('machine') && !sectionFilters.machine) checks.push(true)
-  }
+  if (sectionType === 'event') {
+    const sf = cFilters.value.sections[key].filters
 
-  if (key === 'engagements') {
-    const sectionFilters = cFilters.value.sections.engagements.filters
-    const participants = sectionFilters.participants.find((p: any) => p.amount == item.participants)
-    if (participants && !participants.enabled) checks.push(true)
-    if (sectionFilters.hiddenEngagements.includes(item.id)) checks.push(true)
-  }
-
-  if (key === 'skirmishes') {
-    const sectionFilters = cFilters.value.sections.skirmishes.filters
-    if (sectionFilters.hiddenSkirmishes.includes(item.id)) checks.push(true)
+    if ('participants' in sf) {
+      const participants = sf.participants.find((p: any) => p.amount == item.participants)
+      if (participants && !participants.enabled) checks.push(true)
+    }
+    if ('hiddenEngagements' in sf && sf.hiddenEngagements.includes(item.id)) checks.push(true)
+    if ('hiddenSkirmishes' in sf && sf.hiddenSkirmishes.includes(item.id)) checks.push(true)
   }
 
   return [...new Set(checks)].filter(el => el).length === 1

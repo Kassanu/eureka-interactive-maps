@@ -1,4 +1,10 @@
-export function useSectionItemFields(props: { item: any; sectionKey: string }, emit: (event: string, ...args: any[]) => void) {
+// The two events every section item component forwards to its section.
+export interface SectionItemEmit {
+  (e: 'updateItem', sectionKey: string, item: any): void
+  (e: 'setItemPosition', data: any): void
+}
+
+export function useSectionItemFields(props: { item: any; sectionKey: string }, emit: SectionItemEmit) {
   const updateName = (evt: Event) => {
     const newItem = { ...props.item }
     newItem.name = (evt.target as HTMLInputElement).value
@@ -70,27 +76,19 @@ export function useSectionItemFields(props: { item: any; sectionKey: string }, e
     emit('updateItem', props.sectionKey, newItem)
   }
 
-  const updateAshkin = (evt: Event) => {
+  // family holds the families an item belongs to, in the order they were added.
+  const updateFamily = (evt: Event, family: string) => {
     const newItem = { ...props.item }
-    newItem.ashkin = (evt.target as HTMLInputElement).checked
-    emit('updateItem', props.sectionKey, newItem)
-  }
+    const families = [...(newItem.family ?? [])]
+    const index = families.indexOf(family)
 
-  const updateElemental = (evt: Event) => {
-    const newItem = { ...props.item }
-    newItem.elemental = (evt.target as HTMLInputElement).checked
-    emit('updateItem', props.sectionKey, newItem)
-  }
+    if ((evt.target as HTMLInputElement).checked) {
+      if (index === -1) families.push(family)
+    } else if (index !== -1) {
+      families.splice(index, 1)
+    }
 
-  const updateFauna = (evt: Event) => {
-    const newItem = { ...props.item }
-    newItem.fauna = (evt.target as HTMLInputElement).checked
-    emit('updateItem', props.sectionKey, newItem)
-  }
-
-  const updateMachine = (evt: Event) => {
-    const newItem = { ...props.item }
-    newItem.machine = (evt.target as HTMLInputElement).checked
+    newItem.family = families
     emit('updateItem', props.sectionKey, newItem)
   }
 
@@ -192,10 +190,7 @@ export function useSectionItemFields(props: { item: any; sectionKey: string }, e
     updateAdaptation,
     updateMutation,
     updateFate,
-    updateAshkin,
-    updateElemental,
-    updateFauna,
-    updateMachine,
+    updateFamily,
     updateForFateId,
     updateMutationElement,
     addCondition,

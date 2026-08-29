@@ -28,8 +28,8 @@
             "name": "Monsters",
             "enabled": true,
             "filters": {
-                "ashkin": false,
-                "sprite": false,
+                "ashkin": true,
+                "sprite": true,
                 "fate": false,
                 "aggro": "",
                 "mutates": false,

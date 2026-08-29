@@ -44,7 +44,7 @@
             >
               <option value="">Any</option>
               <option
-                v-for="el in zoneConfig.lookups?.elements ?? []"
+                v-for="el in lookups.elements ?? []"
                 :key="el"
                 :value="el"
               >{{ el.charAt(0).toUpperCase() + el.slice(1) }}</option>
@@ -123,10 +123,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, inject, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import FilterSection from './FilterSection.vue'
+import { useZoneLookups } from '~/composables/useZoneConfig'
 
-const zoneConfig = inject<any>('zoneConfig', {})
+const lookups = useZoneLookups()
 
 const props = defineProps<{
   filters: any
@@ -192,7 +193,7 @@ const updateDrops = (event: Event) => {
   })
 }
 
-const updateSection = (key: number, section: any) => {
+const updateSection = (key: string | number, section: any) => {
   emit('updateFilters', {
     ...props.filters,
     sections: {
