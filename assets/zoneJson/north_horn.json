@@ -29,12 +29,12 @@
         "critical_encounters": {
             "name": "Critical Encounters",
             "type": "event",
-            "order": 10,
+            "order": 11,
             "icon": {
                 "drawStyle": "circle",
                 "primary": {
                     "strategy": "static",
-                    "value": "fate"
+                    "value": "engagements_boss"
                 }
             },
             "baseItem": {
@@ -144,29 +144,8 @@
             },
             "items": []
         },
-        "bunny_coffers": {
-            "name": "Happy Bunny Coffers",
-            "type": "loot",
-            "order": 0,
-            "icon": {
-                "drawStyle": "default",
-                "primary": {
-                    "strategy": "static",
-                    "value": "lock"
-                }
-            },
-            "baseItem": {
-                "id": "",
-                "name": "",
-                "position": {
-                    "x": 0,
-                    "y": 0
-                }
-            },
-            "items": []
-        },
         "pots": {
-            "name": "Pots",
+            "name": "Persistent Pots",
             "type": "loot",
             "order": 0,
             "icon": {
@@ -179,28 +158,6 @@
             "baseItem": {
                 "id": "",
                 "name": "",
-                "position": {
-                    "x": 0,
-                    "y": 0
-                }
-            },
-            "items": []
-        },
-        "misc": {
-            "name": "Misc",
-            "type": "poi",
-            "order": 0,
-            "icon": {
-                "drawStyle": "default",
-                "primary": {
-                    "strategy": "static",
-                    "value": "noelement"
-                }
-            },
-            "baseItem": {
-                "id": "",
-                "name": "",
-                "level": 0,
                 "position": {
                     "x": 0,
                     "y": 0

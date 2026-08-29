@@ -18,7 +18,9 @@
           <NuxtLink class="hover:text-white" to="map/pyros/edit">Pyros Editor</NuxtLink><br>
           <NuxtLink class="hover:text-white" to="map/hydatos/edit">Hydatos Editor</NuxtLink><br>
           <NuxtLink class="hover:text-white" to="map/bozjansouthernfront/edit">Bozjan Southern Front Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/zadnor/edit">Zadnor Editor</NuxtLink>
+          <NuxtLink class="hover:text-white" to="map/zadnor/edit">Zadnor Editor</NuxtLink><br>
+          <NuxtLink class="hover:text-white" to="map/south_horn/edit">South Horn Editor</NuxtLink><br>
+          <NuxtLink class="hover:text-white" to="map/north_horn/edit">North Horn Editor</NuxtLink>
         </div>
       </div>
     </div>

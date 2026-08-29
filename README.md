@@ -1,6 +1,6 @@
 # FFXIV Interactive Eureka Maps
 
-Interactive maps for FFXIV's Field Operations zones: Eureka (Anemos, Pagos, Pyros, Hydatos) and Bozjan Southern Front.
+Interactive maps for FFXIV's Field Operations zones: Eureka (Anemos, Pagos, Pyros, Hydatos), Save the Queen (Bozjan Southern Front, Zadnor), and the Occult Crescent (South Horn, North Horn).
 
 Built with Nuxt 3, Vue 3, and TypeScript.
 

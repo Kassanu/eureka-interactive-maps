@@ -1,44 +1,28 @@
 {
     "config": {
-        "features": {
-            "elementalAffinity": false
-        },
         "lookups": {
-            "weathers": [],
-            "aggroTypes": ["sight", "sound", "magic"],
-            "mobFamilies": [],
-            "elements": [],
-            "times": ["day", "night"]
+            "aggroTypes": ["sight", "sound", "magic"]
         },
-        "levelLabel": "Level",
-        "levelRange": { "from": 1, "to": 30 }
+        "levelLabel": "Level"
     },
     "level": {
-        "from": 1,
-        "to": 30
+        "from": 20,
+        "to": 50
     },
     "drops": {
         "value": "",
         "options": [
             {
                 "id": 1,
-                "name": "Orpiment Demiatma"
+                "name": "Phantom Dispeller α"
             },
             {
                 "id": 2,
-                "name": "Realgar Demiatma"
+                "name": "Phantom Dispeller β"
             },
             {
                 "id": 3,
-                "name": "Azurite Demiatma"
-            },
-            {
-                "id": 4,
-                "name": "Caput Mortuum Demiatma"
-            },
-            {
-                "id": 5,
-                "name": "Malachite Demiatma"
+                "name": "Phantom Dispeller γ"
             }
         ]
     },
@@ -57,9 +41,7 @@
             "name": "Enemies",
             "enabled": true,
             "filters": {
-                "aggro": "",
-                "maweather": "",
-                "matime": ""
+                "aggro": ""
             }
         },
         "aethernet": {
@@ -77,18 +59,8 @@
             "enabled": true,
             "filters": {}
         },
-        "bunny_coffers": {
-            "name": "Happy Bunny Coffers",
-            "enabled": true,
-            "filters": {}
-        },
         "pots": {
-            "name": "Pots",
-            "enabled": true,
-            "filters": {}
-        },
-        "misc": {
-            "name": "Misc",
+            "name": "Persistent Pots",
             "enabled": true,
             "filters": {}
         }

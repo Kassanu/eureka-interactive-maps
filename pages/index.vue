@@ -24,7 +24,8 @@
         <ZoneGroup
           title="Occult Crescent"
           :zones="[
-            { name: 'South Horn', link: '/map/south_horn', bgClass: 'bg-yellow-500 hover:bg-yellow-700' }
+            { name: 'South Horn', link: '/map/south_horn', bgClass: 'bg-yellow-500 hover:bg-yellow-700' },
+            { name: 'North Horn', link: '/map/north_horn', bgClass: 'bg-orange-500 hover:bg-orange-700' }
           ]"
         />
       </div>

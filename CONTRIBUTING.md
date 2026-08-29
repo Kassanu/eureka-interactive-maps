@@ -23,6 +23,8 @@ The easiest way to contribute is by keeping map data accurate and up to date. Ea
    - [Hydatos Editor](https://www.ffxiv-interactive-eureka-maps.com/map/hydatos/edit)
    - [Bozjan Southern Front Editor](https://www.ffxiv-interactive-eureka-maps.com/map/bozjansouthernfront/edit)
    - [Zadnor Editor](https://www.ffxiv-interactive-eureka-maps.com/map/zadnor/edit)
+   - [South Horn Editor](https://www.ffxiv-interactive-eureka-maps.com/map/south_horn/edit)
+   - [North Horn Editor](https://www.ffxiv-interactive-eureka-maps.com/map/north_horn/edit)
 
 2. Make your changes using the editor. You can add, edit, or reposition items on the map.
 
@@ -43,6 +45,7 @@ assets/zoneJson/
   bozjansouthernfront.json
   zadnor.json
   south_horn.json
+  north_horn.json
 ```
 
 `eureka.example.json` sits alongside them as a template for adding a new zone. It is not a zone anyone edits.

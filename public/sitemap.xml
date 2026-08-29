@@ -36,7 +36,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.ffxiv-interactive-eureka-maps.com/map/occultcrescent</loc>
+    <loc>https://www.ffxiv-interactive-eureka-maps.com/map/south_horn</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.ffxiv-interactive-eureka-maps.com/map/north_horn</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
