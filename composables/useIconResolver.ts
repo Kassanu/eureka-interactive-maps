@@ -19,6 +19,7 @@ const iconPaths: Record<string, string> = {
   lock:                `${ICON_BASE}/lock.png`,
   ashkin:              `${ICON_BASE}/ashkin.png`,
   carrot:              `${ICON_BASE}/carrot.png`,
+  pin:                 `${ICON_BASE}/pin.png`,
   // ranks
   rank_0:              `${ICON_BASE}/ranks/0.png`,
   rank_1:              `${ICON_BASE}/ranks/1.png`,
