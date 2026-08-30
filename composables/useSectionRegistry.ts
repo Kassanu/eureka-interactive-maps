@@ -5,16 +5,19 @@ import MobItemInformation from '~/components/Viewer/ItemInformation/MobItemInfor
 import EventItemInformation from '~/components/Viewer/ItemInformation/EventItemInformation.vue'
 import LootItemInformation from '~/components/Viewer/ItemInformation/LootItemInformation.vue'
 import PoiItemInformation from '~/components/Viewer/ItemInformation/PoiItemInformation.vue'
+import SpellItemInformation from '~/components/Viewer/ItemInformation/SpellItemInformation.vue'
 
 import Generic from '~/components/Editor/SectionItems/Generic.vue'
 import MobEditor from '~/components/Editor/SectionItems/MobEditor.vue'
 import EventEditor from '~/components/Editor/SectionItems/EventEditor.vue'
 import LootEditor from '~/components/Editor/SectionItems/LootEditor.vue'
 import PoiEditor from '~/components/Editor/SectionItems/PoiEditor.vue'
+import SpellEditor from '~/components/Editor/SectionItems/SpellEditor.vue'
 
 import MobFilters from '~/components/Viewer/SectionItems/MobFilters.vue'
 import EventFilters from '~/components/Viewer/SectionItems/EventFilters.vue'
 import LootFilters from '~/components/Viewer/SectionItems/LootFilters.vue'
+import SpellFilters from '~/components/Viewer/SectionItems/SpellFilters.vue'
 
 // Spawn pool value for loot that comes from a bonus roll rather than a fate.
 export const BONUS_POOL = 'bonus'
@@ -28,6 +31,7 @@ const viewerByType: Record<string, Component> = {
   event: EventItemInformation,
   loot: LootItemInformation,
   poi: PoiItemInformation,
+  spell: SpellItemInformation,
 }
 
 export function getViewerComponent(sectionType?: string): Component {
@@ -39,6 +43,7 @@ const editorByType: Record<string, Component> = {
   event: EventEditor,
   loot: LootEditor,
   poi: PoiEditor,
+  spell: SpellEditor,
 }
 
 export function getEditorComponent(sectionType?: string): Component {
@@ -49,6 +54,7 @@ const filterByType: Record<string, Component> = {
   mob: MobFilters,
   event: EventFilters,
   loot: LootFilters,
+  spell: SpellFilters,
 }
 
 export function getFilterComponent(sectionType?: string): Component | null {

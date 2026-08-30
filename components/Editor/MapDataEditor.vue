@@ -16,7 +16,7 @@
         :section="section"
         :jsonDataShow="jsonDataShow"
         :searchValue="searchValue"
-        :fates="fates"
+        :jsonData="jsonData"
         @addToSection="addItemToSection"
         @setItemPosition="setItemPosition"
         @updateItem="updateItem"
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import Section from './Section.vue'
 
 const props = defineProps<{
@@ -51,13 +51,6 @@ const emit = defineEmits<{
 }>()
 
 const searchValue = ref('')
-
-const fates = computed(() => {
-  if (!Object.prototype.hasOwnProperty.call(props.jsonData, 'fates')) {
-    return []
-  }
-  return props.jsonData.fates.items
-})
 
 const addItemToSection = (evt: { key: string }) => {
   emit('addItemToSection', evt.key)

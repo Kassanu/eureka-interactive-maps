@@ -213,8 +213,10 @@ const props = defineProps<{
   item: any
   sectionKey: string
   jsonDataShow: Record<string, any>
-  fates: any[]
+  jsonData?: Record<string, any>
 }>()
+
+const fates = computed(() => props.jsonData?.fates?.items ?? [])
 
 const emit = defineEmits<{
   (e: 'updateItem', sectionKey: string, item: any): void

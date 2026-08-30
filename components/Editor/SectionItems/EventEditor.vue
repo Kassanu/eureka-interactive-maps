@@ -125,7 +125,6 @@ const props = defineProps<{
   item: any
   sectionKey: string
   jsonDataShow: Record<string, any>
-  fates: any[]
 }>()
 
 const emit = defineEmits<{

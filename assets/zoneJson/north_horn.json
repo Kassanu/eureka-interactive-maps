@@ -4100,6 +4100,161 @@
                     }
                 }
             ]
+        },
+        "spells": {
+            "name": "Blue Mage Spells",
+            "type": "spell",
+            "order": 12,
+            "icon": {
+                "drawStyle": "default",
+                "primary": {
+                    "strategy": "prefixed",
+                    "prefix": "spell",
+                    "field": "slug"
+                }
+            },
+            "baseItem": {
+                "id": "",
+                "name": "",
+                "slug": "",
+                "spellLevel": 1,
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "source": {
+                    "section": "",
+                    "id": "",
+                    "name": ""
+                },
+                "requires": {
+                    "spellLevel": 1,
+                    "spell": ""
+                },
+                "replaces": ""
+            },
+            "items": [
+                {
+                    "id": "b15e2e1f-7818-5f56-bf0b-00db185963b3",
+                    "name": "Occult Missile",
+                    "slug": "occult_missile",
+                    "spellLevel": 1,
+                    "position": {
+                        "x": 38.2,
+                        "y": 9.8
+                    },
+                    "source": {
+                        "section": "critical_encounters",
+                        "id": "aa5be9dd-9ae0-568a-931b-e3df28722f14",
+                        "name": "Appalling Behavior"
+                    },
+                    "requires": {
+                        "spellLevel": 1,
+                        "spell": ""
+                    },
+                    "replaces": ""
+                },
+                {
+                    "id": "3924953b-c460-568c-b8f3-69d94e97f0d0",
+                    "name": "Occult Aqua Breath",
+                    "slug": "occult_aqua_breath",
+                    "spellLevel": 1,
+                    "position": {
+                        "x": 31,
+                        "y": 8
+                    },
+                    "source": {
+                        "section": "enemies",
+                        "id": "9fcbce7c-80b9-5b26-8f53-eed9c10690dc",
+                        "name": "Crescent Stoneshell"
+                    },
+                    "requires": {
+                        "spellLevel": 1,
+                        "spell": ""
+                    },
+                    "replaces": ""
+                },
+                {
+                    "id": "89ce8bf0-66e3-5291-985d-643522f45237",
+                    "name": "Occult Aero II",
+                    "slug": "occult_aero_ii",
+                    "spellLevel": 2,
+                    "position": {
+                        "x": 16,
+                        "y": 37
+                    },
+                    "source": {
+                        "section": "enemies",
+                        "id": "f2d4fbb2-174b-5e9b-85dc-f5049c06018e",
+                        "name": "Crescent Anila"
+                    },
+                    "requires": {
+                        "spellLevel": 2,
+                        "spell": ""
+                    },
+                    "replaces": "Occult Aero"
+                },
+                {
+                    "id": "2c76a67e-896c-5e5e-9786-6dc80945d6ca",
+                    "name": "Occult Mighty Guard",
+                    "slug": "occult_mighty_guard",
+                    "spellLevel": 2,
+                    "position": {
+                        "x": 38,
+                        "y": 31
+                    },
+                    "source": {
+                        "section": "enemies",
+                        "id": "7059a380-a1bb-5f16-a912-5dcdc05a500a",
+                        "name": "Crescent Bibliotaph"
+                    },
+                    "requires": {
+                        "spellLevel": 2,
+                        "spell": ""
+                    },
+                    "replaces": ""
+                },
+                {
+                    "id": "3e061d0e-f0a5-56b3-8526-f4418aae1b0d",
+                    "name": "Occult Aero III",
+                    "slug": "occult_aero_iii",
+                    "spellLevel": 3,
+                    "position": {
+                        "x": 12,
+                        "y": 8
+                    },
+                    "source": {
+                        "section": "critical_encounters",
+                        "id": "d8173d82-c7e3-5cc7-921d-e0a80f49558f",
+                        "name": "Quarried Away"
+                    },
+                    "requires": {
+                        "spellLevel": 3,
+                        "spell": "Occult Aero II"
+                    },
+                    "replaces": "Occult Aero II"
+                },
+                {
+                    "id": "b539afe4-f6ba-52e5-b378-d24e65541687",
+                    "name": "Occult White Wind",
+                    "slug": "occult_white_wind",
+                    "spellLevel": 3,
+                    "position": {
+                        "x": 5,
+                        "y": 36
+                    },
+                    "source": {
+                        "section": "enemies",
+                        "id": "d46d3a53-6318-59ff-9943-580f205de4d7",
+                        "name": "Crescent Flame"
+                    },
+                    "requires": {
+                        "spellLevel": 3,
+                        "spell": ""
+                    },
+                    "replaces": ""
+                }
+            ]
         }
     }
 }

@@ -150,6 +150,7 @@ const itemComponentProps = computed(() => {
     monsters: sections.value.monsters?.items ?? [],
     enemies: sections.value.enemies?.items ?? [],
     skirmishes: sections.value.skirmishes?.items ?? [],
+    criticalEncounters: sections.value.critical_encounters?.items ?? [],
   }
 })
 
@@ -269,6 +270,15 @@ function shouldFilterItem(key: string, item: any): boolean {
     }
 
     if ('grade' in sf && sf.grade !== '' && item.grade !== sf.grade) checks.push(true)
+  }
+
+  if (sectionType === 'spell') {
+    const sf = cFilters.value.sections[key].filters
+
+    if ('spellLevel' in sf && sf.spellLevel !== '' && String(item.spellLevel) !== sf.spellLevel) {
+      checks.push(true)
+    }
+    if ('prerequisite' in sf && sf.prerequisite && !item.requires?.spell) checks.push(true)
   }
 
   if (sectionType === 'event') {
