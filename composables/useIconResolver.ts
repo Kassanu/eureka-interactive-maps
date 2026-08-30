@@ -27,6 +27,10 @@ const iconPaths: Record<string, string> = {
   rank_3:              `${ICON_BASE}/ranks/3.png`,
   rank_4:              `${ICON_BASE}/ranks/4.png`,
   rank_5:              `${ICON_BASE}/ranks/5.png`,
+  // coffers
+  coffer_bronze:       `${ICON_BASE}/coffers/bronze.png`,
+  coffer_silver:       `${ICON_BASE}/coffers/silver.png`,
+  coffer_gold:         `${ICON_BASE}/coffers/gold.png`,
   // engagements
   engagements_boss:    `${ICON_BASE}/engagements/boss.png`,
   engagements_duel:    `${ICON_BASE}/engagements/duel.png`,
