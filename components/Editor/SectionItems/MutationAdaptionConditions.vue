@@ -4,8 +4,8 @@
       <div class="w-full w-full px-3 mb-6 md:mb-0" :class="bgClass">
         <select
           :value="condition.weather"
-          @change="changeCondition($event, 'weather', index)"
           class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
+          @change="changeCondition($event, 'weather', index)"
         >
           <option value='fairskies'>Fair Skies</option>
           <option value='heatwave'>Heat Wave</option>
@@ -22,15 +22,15 @@
       <div class="w-full w-full px-3 mb-6 md:mb-0" :class="bgClass">
         <select
           :value="condition.time"
-          @change="changeCondition($event, 'time', index)"
           class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
+          @change="changeCondition($event, 'time', index)"
         >
           <option value='day'>Day</option>
           <option value='night'>Night</option>
         </select>
       </div>
       <div class="w-full w-full px-3 mb-6 md:mb-0" :class="bgClass">
-        <button @click="$emit('deleteCondition', type, index)" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" @click="$emit('deleteCondition', type, index)">
           <font-awesome-icon icon="times" class="cursor-pointer" />
         </button>
       </div>

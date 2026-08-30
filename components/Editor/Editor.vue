@@ -1,29 +1,29 @@
 <template>
   <div id="editor" class="relative">
-    <div v-show="showAddNewItemBanner" @click="cancelAddNewItem" class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+    <div v-show="showAddNewItemBanner" class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" @click="cancelAddNewItem">
       Click on the map to add a new item for {{ addNewItemSelectedName }}. Click this message to cancel.
     </div>
     <MapDataEditor
-      :jsonData="sections"
-      :fullJsonData="jsonData"
-      :jsonDataShow="jsonDataShow"
-      :clickCoordinates="clickCoordinates"
-      :mapName="mapName"
-      @addItemToSection="addItemToSection"
-      @setItemPosition="setItemPosition"
-      @updateItem="updateItem"
-      @updateShowData="updateShowData"
-      @updateAllItemShowData="updateAllItemShowData"
-      @deleteItem="deleteItem"
+      :json-data="sections"
+      :full-json-data="jsonData"
+      :json-data-show="jsonDataShow"
+      :click-coordinates="clickCoordinates"
+      :map-name="mapName"
+      @add-item-to-section="addItemToSection"
+      @set-item-position="setItemPosition"
+      @update-item="updateItem"
+      @update-show-data="updateShowData"
+      @update-all-item-show-data="updateAllItemShowData"
+      @delete-item="deleteItem"
     />
     <EurekaCanvas
-      :canvasImage="imageSource"
-      :gridSizeInPixels="gridSizeInPixels"
-      :coordinatesOffset="coordinatesOffset"
+      :canvas-image="imageSource"
+      :grid-size-in-pixels="gridSizeInPixels"
+      :coordinates-offset="coordinatesOffset"
       :positions="positions"
-      :maximumZoom="maximumZoom"
+      :maximum-zoom="maximumZoom"
       @click="canvasClick"
-      @clickedElement="clickedElement"
+      @clicked-element="clickedElement"
     />
   </div>
 </template>

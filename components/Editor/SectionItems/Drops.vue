@@ -7,23 +7,23 @@
       <div class="w-full inline-flex w-full px-3 mb-6 md:mb-0">
         <input
           :value="drop.name"
-          @change="updateName($event, index)"
           class="px-2 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
           type="text"
+          @change="updateName($event, index)"
         >
         <input
           :value="drop.amount"
-          @change="updateAmount($event, index)"
           class="px-2 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline"
           type="number"
+          @change="updateAmount($event, index)"
         >
         <input
           :value="drop.percent"
-          @change="updatePercent($event, index)"
           class="px-2 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline"
           type="number"
+          @change="updatePercent($event, index)"
         >
-        <button @click="deleteDrop(index)" class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded">
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded" @click="deleteDrop(index)">
           <font-awesome-icon icon="times" class="cursor-pointer" />
         </button>
       </div>

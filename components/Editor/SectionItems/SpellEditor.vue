@@ -1,11 +1,11 @@
 <template>
   <SectionItem
     :item="item"
-    :sectionKey="sectionKey"
-    :jsonDataShow="jsonDataShow"
-    @updateItemShowData="(id, key, val) => emit('updateItemShowData', id, key, val)"
-    @updateAllItemShowData="(skey, key, val) => emit('updateAllItemShowData', skey, key, val)"
-    @deleteItem="(skey, id) => emit('deleteItem', skey, id)"
+    :section-key="sectionKey"
+    :json-data-show="jsonDataShow"
+    @update-item-show-data="(id, key, val) => emit('updateItemShowData', id, key, val)"
+    @update-all-item-show-data="(skey, key, val) => emit('updateAllItemShowData', skey, key, val)"
+    @delete-item="(skey, id) => emit('deleteItem', skey, id)"
   >
     <form @submit.prevent>
       <div class="flex flex-wrap -mx-3 mb-2">
@@ -15,25 +15,25 @@
         </div>
         <div class="w-full w-full px-3">
           <label :class="labelClass">Name</label>
-          <input :value="item.name" @change="updateName" :class="fieldClass" type="text">
+          <input :value="item.name" :class="fieldClass" type="text" @change="updateName">
         </div>
       </div>
       <div v-show="expanded">
         <div class="flex flex-wrap -mx-3 mb-2">
           <div class="w-full md:w-1/2 px-3">
             <label :class="labelClass">Icon Slug</label>
-            <input :value="item.slug" @change="updateField('slug', $event)" :class="fieldClass" type="text">
+            <input :value="item.slug" :class="fieldClass" type="text" @change="updateField('slug', $event)">
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label :class="labelClass">Spell Level</label>
-            <input :value="item.spellLevel" @change="updateNumber('spellLevel', $event)" :class="fieldClass" type="number">
+            <input :value="item.spellLevel" :class="fieldClass" type="number" @change="updateNumber('spellLevel', $event)">
           </div>
         </div>
 
         <div class="flex flex-wrap -mx-3 mb-2">
           <div class="w-full md:w-1/2 px-3">
             <label :class="labelClass">Taught By</label>
-            <select :value="sourceValue" @change="updateSource" :class="fieldClass">
+            <select :value="sourceValue" :class="fieldClass" @change="updateSource">
               <option value="">None</option>
               <optgroup v-for="group in sourceGroups" :key="group.key" :label="group.label">
                 <option v-for="entry in group.items" :key="entry.id" :value="`${group.key}:${entry.id}`">
@@ -44,29 +44,29 @@
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label :class="labelClass">Replaces</label>
-            <input :value="item.replaces" @change="updateField('replaces', $event)" :class="fieldClass" type="text">
+            <input :value="item.replaces" :class="fieldClass" type="text" @change="updateField('replaces', $event)">
           </div>
         </div>
 
         <div class="flex flex-wrap -mx-3 mb-2">
           <div class="w-full md:w-1/2 px-3">
             <label :class="labelClass">Requires Level</label>
-            <input :value="item.requires.spellLevel" @change="updateRequires('spellLevel', $event, true)" :class="fieldClass" type="number">
+            <input :value="item.requires.spellLevel" :class="fieldClass" type="number" @change="updateRequires('spellLevel', $event, true)">
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label :class="labelClass">Requires Spell</label>
-            <input :value="item.requires.spell" @change="updateRequires('spell', $event, false)" :class="fieldClass" type="text">
+            <input :value="item.requires.spell" :class="fieldClass" type="text" @change="updateRequires('spell', $event, false)">
           </div>
         </div>
 
         <div class="flex flex-wrap -mx-3 mb-2">
           <Positions
             :positions="item.position"
-            @updatePosition="updatePosition"
-            @addPosition="addPosition"
-            @setItemPosition="setItemPosition"
             :multiple="Array.isArray(item.position)"
             class="w-full w-full px-3"
+            @update-position="updatePosition"
+            @add-position="addPosition"
+            @set-item-position="setItemPosition"
           />
         </div>
       </div>

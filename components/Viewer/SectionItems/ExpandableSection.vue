@@ -3,7 +3,7 @@
     <div class="border-b border-gray-200 mb-1 flex justify-start">
       <div>
         <label class="font-bold mr-1">
-          <slot name="header"></slot>
+          <slot name="header"/>
         </label>
       </div>
       <div class="ml-auto">
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div v-show="expanded">
-      <slot name="content"></slot>
+      <slot name="content"/>
     </div>
   </div>
 </template>

@@ -1,20 +1,20 @@
 <template>
   <Editor
     v-if="imageSource && jsonData"
-    :imageSource="imageSource"
-    :jsonData="jsonData"
-    :mapName="mapName"
+    :image-source="imageSource"
+    :json-data="jsonData"
+    :map-name="mapName"
     :config="config"
-    :gridSizeInPixels="gridSizeInPixels"
-    :coordinatesOffset="coordinatesOffset"
-    :maximumZoom="maximumZoom"
+    :grid-size-in-pixels="gridSizeInPixels"
+    :coordinates-offset="coordinatesOffset"
+    :maximum-zoom="maximumZoom"
   />
 </template>
 
 <script setup lang="ts">
-definePageMeta({ layout: 'editor' })
 import { ref, watchEffect } from 'vue'
 import Editor from '~/components/Editor/Editor.vue'
+definePageMeta({ layout: 'editor' })
 
 const mapName = 'pyros'
 const gridSizeInPixels = 50

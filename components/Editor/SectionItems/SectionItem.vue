@@ -2,7 +2,7 @@
   <div class="relative rounded overflow-hidden shadow-md bg-white mb-4 px-4 pb-4">
     <div class="mb-2 py-1 flex justify-between content-center border border-gray-100">
       <div class="mr-1">
-        <input :checked="showOnMap" @click="updateShowOnMap($event)" type="checkbox" title="Show/Hide this section from the map" />
+        <input :checked="showOnMap" type="checkbox" title="Show/Hide this section from the map" @click="updateShowOnMap($event)" >
       </div>
       <div class="mr-auto">
         <span @click="deleteItem"><font-awesome-icon icon="times" class="cursor-pointer" /></span>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="w-full">
-      <slot></slot>
+      <slot/>
     </div>
   </div>
 </template>

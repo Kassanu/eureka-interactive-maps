@@ -1,11 +1,11 @@
 <template>
   <SectionItem
     :item="item"
-    :sectionKey="sectionKey"
-    :jsonDataShow="jsonDataShow"
-    @updateItemShowData="(id, key, val) => emit('updateItemShowData', id, key, val)"
-    @updateAllItemShowData="(skey, key, val) => emit('updateAllItemShowData', skey, key, val)"
-    @deleteItem="(skey, id) => emit('deleteItem', skey, id)"
+    :section-key="sectionKey"
+    :json-data-show="jsonDataShow"
+    @update-item-show-data="(id, key, val) => emit('updateItemShowData', id, key, val)"
+    @update-all-item-show-data="(skey, key, val) => emit('updateAllItemShowData', skey, key, val)"
+    @delete-item="(skey, id) => emit('deleteItem', skey, id)"
   >
     <form @submit.prevent>
       <div class="flex flex-wrap -mx-3 mb-2">
@@ -13,7 +13,8 @@
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
             ID
           </label>
-          <input :value="item.id"
+          <input
+:value="item.id"
             class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
             type="text" readonly>
         </div>
@@ -21,15 +22,16 @@
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
             Name
           </label>
-          <input :value="item.name" @change="updateName"
-            class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
-            type="text">
+          <input
+:value="item.name" class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
+            type="text"
+            @change="updateName">
         </div>
       </div>
       <div v-show="expanded">
         <div class="flex flex-wrap -mx-3 mb-2">
-          <Positions :positions="item.position" @updatePosition="updatePosition" @addPosition="addPosition" @setItemPosition="setItemPosition" :multiple="false" class="w-full w-full px-3" />
-          <Drops v-if="'drops' in item" :drops="item.drops" @updateDrops="updateDrops" @addDrop="addDrop" class="w-full w-full px-3" />
+          <Positions :positions="item.position" :multiple="false" class="w-full w-full px-3" @update-position="updatePosition" @add-position="addPosition" @set-item-position="setItemPosition" />
+          <Drops v-if="'drops' in item" :drops="item.drops" class="w-full w-full px-3" @update-drops="updateDrops" @add-drop="addDrop" />
         </div>
       </div>
     </form>

@@ -4,21 +4,21 @@
       <div class="flex flex-wrap -mx-3">
         <FilterSelect
           v-if="'spellLevel' in filters"
-          :modelValue="filters.spellLevel"
-          @update:modelValue="updateSelect('spellLevel', $event)"
+          :model-value="filters.spellLevel"
           label="Spell Level"
           title="Phantom Blue Mage level required to learn the spell"
           :options="levelOptions"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('spellLevel', $event)"
         />
         <div v-if="'prerequisite' in filters" class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <input
-            :checked="filters.prerequisite"
-            @change="updateCheckbox('prerequisite', $event)"
             id="prerequisiteCheckbox"
+            :checked="filters.prerequisite"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateCheckbox('prerequisite', $event)"
+          >
           <label for="prerequisiteCheckbox" class="text-sm font-bold">Needs another spell</label>
         </div>
       </div>

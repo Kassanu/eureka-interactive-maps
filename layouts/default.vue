@@ -1,6 +1,6 @@
 <template>
   <div class="base-page flex flex-col">
-    <slot></slot>
+    <slot/>
     <PageFooter />
   </div>
 </template>

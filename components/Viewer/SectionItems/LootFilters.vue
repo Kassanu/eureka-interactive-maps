@@ -3,12 +3,12 @@
     <div v-if="'pool' in filters" class="mb-2">
       <div class="flex flex-wrap -mx-3">
         <FilterSelect
-          :modelValue="filters.pool"
-          @update:modelValue="updateSelect('pool', $event)"
+          :model-value="filters.pool"
           label="Spawns From"
           title="The FATE whose spawn pool this belongs to"
           :options="poolOptions"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('pool', $event)"
         />
       </div>
     </div>
@@ -16,11 +16,11 @@
     <div v-if="'grade' in filters" class="mb-2">
       <div class="flex flex-wrap -mx-3">
         <FilterSelect
-          :modelValue="filters.grade"
-          @update:modelValue="updateSelect('grade', $event)"
+          :model-value="filters.grade"
           label="Grade"
           :options="gradeOptions"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('grade', $event)"
         />
       </div>
     </div>

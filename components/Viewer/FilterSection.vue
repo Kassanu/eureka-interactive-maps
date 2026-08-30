@@ -3,13 +3,13 @@
     <div class="border-b border-gray-200 flex justify-start">
       <div>
         <input
-          :checked="section.enabled"
-          @change="updateEnabled"
           :id="viewInputId"
+          :checked="section.enabled"
           type="checkbox"
           title="Show/Hide this section from the map"
           class="mr-2"
-        />
+          @change="updateEnabled"
+        >
       </div>
       <div>
         <label class="font-bold mr-1" :for="viewInputId">{{ section.name }}</label>
@@ -25,12 +25,12 @@
     </div>
 
     <component
-      v-if="showExpanded && expanded"
       :is="filterComponent"
+      v-if="showExpanded && expanded"
       :filters="section.filters"
-      :jsonData="jsonData"
-      :sectionKey="section.key"
-      @updateFilters="updateFilters"
+      :json-data="jsonData"
+      :section-key="section.key"
+      @update-filters="updateFilters"
     />
   </div>
 </template>

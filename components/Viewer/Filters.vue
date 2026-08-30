@@ -2,45 +2,45 @@
   <div id="filters" class="flex">
     <div
       v-show="expanded"
-      @click.stop
       id="filtersCard"
       class="relative overflow-auto rounded px-8 pt-6 pb-8 mb-4 text-gray-200"
+      @click.stop
     >
-      <div @click="$emit('resetFilters')" class="absolute top-2 right-2 cursor-pointer text-xs px-2 py-1 rounded border border-gray-500 hover:border-gray-300 hover:text-white transition-colors">
+      <div class="absolute top-2 right-2 cursor-pointer text-xs px-2 py-1 rounded border border-gray-500 hover:border-gray-300 hover:text-white transition-colors" @click="$emit('resetFilters')">
         Reset
       </div>
       <form>
-        <div class="mb-2" v-if="hasLevelRange">
+        <div v-if="hasLevelRange" class="mb-2">
           <label class="block text-sm font-bold mb-2">Level Range</label>
           <div class="flex flex-wrap -mx-3">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input
                 :value="filters.level.from"
-                @change="updateLevelRange($event, 'from')"
                 class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
                 placeholder="From"
-              />
+                @change="updateLevelRange($event, 'from')"
+              >
             </div>
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input
                 :value="filters.level.to"
-                @change="updateLevelRange($event, 'to')"
                 class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
                 placeholder="To"
-              />
+                @change="updateLevelRange($event, 'to')"
+              >
             </div>
           </div>
         </div>
 
-        <div class="mb-2" v-if="hasElement">
+        <div v-if="hasElement" class="mb-2">
           <label class="block text-sm font-bold mb-2">Element</label>
           <div class="inline-block relative w-full">
             <select
               :value="filters.element"
-              @change="updateFilters($event, 'element')"
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              @change="updateFilters($event, 'element')"
             >
               <option value="">Any</option>
               <option
@@ -65,13 +65,13 @@
           </div>
         </div>
 
-        <div class="mb-2" v-if="hasDrops">
+        <div v-if="hasDrops" class="mb-2">
           <label class="block text-sm font-bold mb-2">Drops</label>
           <div class="inline-block relative w-full">
             <select
               :value="filters.drops.value"
-              @change="updateDrops"
               class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+              @change="updateDrops"
             >
               <option value="">Any</option>
               <option
@@ -102,8 +102,8 @@
           v-for="(section, index) in filters.sections"
           :key="index"
           :section="{ ...section, key: index }"
-          :jsonData="jsonData"
-          @updateSection="updateSection(index, $event)"
+          :json-data="jsonData"
+          @update-section="updateSection(index, $event)"
         />
       </form>
     </div>
@@ -111,8 +111,8 @@
     <div class="filterExpander relative">
       <div>
         <div
-          @click="expanded = !expanded"
           class="cursor-pointer w-full h-full flex justify-center items-center gap-2"
+          @click="expanded = !expanded"
         >
           <span class="filters-toggle-label">Filters</span>
           <font-awesome-icon :icon="expandFiltersIcon" />

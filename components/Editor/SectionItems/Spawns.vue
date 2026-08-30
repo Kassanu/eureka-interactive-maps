@@ -7,8 +7,8 @@
       <div class="w-full inline-flex w-full px-3 mb-6 md:mb-0">
         <select
           :value="spawn.type"
-          @change="updateType($event, index)"
           class="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline mr-2"
+          @change="updateType($event, index)"
         >
           <option value='enemy'>Enemy</option>
           <option value='skirmish'>Skirmish</option>
@@ -16,13 +16,13 @@
         </select>
         <input
           :value="spawn.value"
-          @change="updateValue($event, index)"
           class="px-2 placeholder-gray-400 text-gray-700 border-gray-400 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
           type="text"
           :placeholder="valuePlaceholder(index)"
           :title="valueTitle(index)"
+          @change="updateValue($event, index)"
         >
-        <button @click="deleteSpawn(index)" class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded">
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded" @click="deleteSpawn(index)">
           <font-awesome-icon icon="times" class="cursor-pointer" />
         </button>
       </div>
