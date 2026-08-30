@@ -864,7 +864,7 @@
                 "drawStyle": "default",
                 "primary": {
                     "strategy": "static",
-                    "value": "noelement"
+                    "value": "enemy"
                 }
             },
             "baseItem": {
