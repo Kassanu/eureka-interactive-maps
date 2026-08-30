@@ -1,9 +1,9 @@
 {
     "config": {
         "lookups": {
-            "aggroTypes": ["sight", "sound", "magic"]
+            "aggroTypes": ["sight", "sound", "proximity", "spell", "blood"]
         },
-        "levelLabel": "Level"
+        "levelLabel": "Knowledge Level"
     },
     "level": {
         "from": 20,
@@ -57,12 +57,21 @@
         "treasure_coffers": {
             "name": "Treasure Coffers",
             "enabled": true,
+            "filters": {
+                "grade": ""
+            }
+        },
+        "bunny_coffers": {
+            "name": "Happy Bunny Coffers",
+            "enabled": true,
             "filters": {}
         },
         "pots": {
             "name": "Persistent Pots",
             "enabled": true,
-            "filters": {}
+            "filters": {
+                "pool": ""
+            }
         }
     }
 }

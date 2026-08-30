@@ -14,10 +14,14 @@ import PoiEditor from '~/components/Editor/SectionItems/PoiEditor.vue'
 
 import MobFilters from '~/components/Viewer/SectionItems/MobFilters.vue'
 import EventFilters from '~/components/Viewer/SectionItems/EventFilters.vue'
+import LootFilters from '~/components/Viewer/SectionItems/LootFilters.vue'
+
+// Spawn pool value for loot that comes from a bonus roll rather than a fate.
+export const BONUS_POOL = 'bonus'
 
 // Sections dispatch on their type, so a new zone reuses these components and
 // only supplies data. A type with no entry falls back to the generic component;
-// loot and poi have no filter controls, so a null filter component is expected.
+// poi has no filter controls, so a null filter component is expected.
 
 const viewerByType: Record<string, Component> = {
   mob: MobItemInformation,
@@ -44,6 +48,7 @@ export function getEditorComponent(sectionType?: string): Component {
 const filterByType: Record<string, Component> = {
   mob: MobFilters,
   event: EventFilters,
+  loot: LootFilters,
 }
 
 export function getFilterComponent(sectionType?: string): Component | null {

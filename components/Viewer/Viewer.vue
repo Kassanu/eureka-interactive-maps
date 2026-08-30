@@ -41,7 +41,7 @@ import { ref, computed, provide, onMounted, onUnmounted } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
 import Filters from '~/components/Viewer/Filters.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
-import { getViewerComponent } from '~/composables/useSectionRegistry'
+import { getViewerComponent, BONUS_POOL } from '~/composables/useSectionRegistry'
 import { resolveIcons, resolveIconHtml } from '~/composables/useIconResolver'
 import { zoneConfigKey, type ZoneConfig } from '~/composables/useZoneConfig'
 
@@ -223,8 +223,11 @@ function shouldFilterItem(key: string, item: any): boolean {
     if ('mutates' in sf && sf.mutates && !item.mutation?.canMutate) checks.push(true)
     if ('adapts' in sf && sf.adapts && !item.adaptation?.canAdapt) checks.push(true)
 
-    // Aggro select
-    if ('aggro' in sf && sf.aggro !== '' && item.aggro !== sf.aggro) checks.push(true)
+    // Aggro select; an item may list several triggers separated by commas.
+    if ('aggro' in sf && sf.aggro !== '') {
+      const triggers = String(item.aggro ?? '').split(',').map((t: string) => t.trim())
+      if (!triggers.includes(sf.aggro)) checks.push(true)
+    }
 
     // Weather/time conditions
     const maweather = 'maweather' in sf ? sf.maweather : ''
@@ -252,6 +255,20 @@ function shouldFilterItem(key: string, item: any): boolean {
     if ('mutateElement' in sf && sf.mutateElement !== '' && item.mutation?.element !== sf.mutateElement) {
       checks.push(true)
     }
+  }
+
+  if (sectionType === 'loot') {
+    const sf = cFilters.value.sections[key].filters
+
+    // Spawn pool holds either a fate id or the bonus-roll marker.
+    if ('pool' in sf && sf.pool !== '') {
+      const matched = sf.pool === BONUS_POOL
+        ? item.fate?.bonus === true
+        : item.fate?.fateId === sf.pool
+      if (!matched) checks.push(true)
+    }
+
+    if ('grade' in sf && sf.grade !== '' && item.grade !== sf.grade) checks.push(true)
   }
 
   if (sectionType === 'event') {

@@ -1,17 +1,9 @@
 {
     "config": {
-        "features": {
-            "elementalAffinity": false
-        },
         "lookups": {
-            "weathers": [],
-            "aggroTypes": ["sight", "sound", "magic"],
-            "mobFamilies": [],
-            "elements": [],
-            "times": ["day", "night"]
+            "aggroTypes": ["sight", "sound", "proximity", "spell", "blood"]
         },
-        "levelLabel": "Level",
-        "levelRange": { "from": 1, "to": 30 }
+        "levelLabel": "Knowledge Level"
     },
     "level": {
         "from": 1,
@@ -39,6 +31,10 @@
             {
                 "id": 5,
                 "name": "Malachite Demiatma"
+            },
+            {
+                "id": 6,
+                "name": "Verdigris Demiatma"
             }
         ]
     },
@@ -57,9 +53,7 @@
             "name": "Enemies",
             "enabled": true,
             "filters": {
-                "aggro": "",
-                "maweather": "",
-                "matime": ""
+                "aggro": ""
             }
         },
         "aethernet": {
@@ -75,7 +69,9 @@
         "treasure_coffers": {
             "name": "Treasure Coffers",
             "enabled": true,
-            "filters": {}
+            "filters": {
+                "grade": ""
+            }
         },
         "bunny_coffers": {
             "name": "Happy Bunny Coffers",
@@ -83,9 +79,11 @@
             "filters": {}
         },
         "pots": {
-            "name": "Pots",
+            "name": "Persistent Pots",
             "enabled": true,
-            "filters": {}
+            "filters": {
+                "pool": ""
+            }
         },
         "misc": {
             "name": "Misc",

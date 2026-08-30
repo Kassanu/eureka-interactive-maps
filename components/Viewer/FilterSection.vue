@@ -29,6 +29,7 @@
       :is="filterComponent"
       :filters="section.filters"
       :jsonData="jsonData"
+      :sectionKey="section.key"
       @updateFilters="updateFilters"
     />
   </div>

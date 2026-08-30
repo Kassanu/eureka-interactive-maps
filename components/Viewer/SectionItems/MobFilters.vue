@@ -124,6 +124,7 @@ import { useZoneLookups } from '~/composables/useZoneConfig'
 
 const props = defineProps<{
   filters: any
+  sectionKey?: string
 }>()
 
 const emit = defineEmits(['updateFilters'])
