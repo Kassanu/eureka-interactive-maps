@@ -13,14 +13,11 @@
           <h1 class="text-2xl text-white">I want to update map data!</h1>
           If you don't know how to code but would still like to help, each map has an admin panel which allows you to edit all of the data. Visit one of the links below to enter the editors and make all of your changes and hit the "Save" button. A .json file will be downloaded to your computer – you can send that file to me through email, Discord, or by making a pull request.
           <br><br>
-          <NuxtLink class="hover:text-white" to="map/anemos/edit">Anemos Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/pagos/edit">Pagos Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/pyros/edit">Pyros Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/hydatos/edit">Hydatos Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/bozjansouthernfront/edit">Bozjan Southern Front Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/zadnor/edit">Zadnor Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/south_horn/edit">South Horn Editor</NuxtLink><br>
-          <NuxtLink class="hover:text-white" to="map/north_horn/edit">North Horn Editor</NuxtLink>
+          <template v-for="zone in zones" :key="zone.slug">
+            <NuxtLink class="hover:text-white" :to="`/map/${zone.slug}/edit`">
+              {{ zone.name }} Editor
+            </NuxtLink><br>
+          </template>
         </div>
       </div>
     </div>
@@ -28,5 +25,7 @@
 </template>
 
 <script setup lang="ts">
-// No additional logic needed!
+import { zoneFor, zoneSlugs } from '~/zones'
+
+const zones = zoneSlugs.map(zoneFor)
 </script>

@@ -8,11 +8,10 @@
         position: absolute;
         top: 0;
         left: 0;
-        max-width: 40%;
+        max-width: 100%;
         align-items: flex-start;
         @media (max-width: 640px) {
             width: 100%;
-            max-width: 100%;
             flex-direction: column;
             align-items: stretch;
         }
@@ -22,6 +21,12 @@
         background-color: rgb(30, 30, 31, 0.88);
         color: #cccccc;
         max-height: 90vh;
+        // Sized to the controls rather than to the viewport: the options are short words, so a
+        // panel that grew with the window would be mostly empty.
+        width: 22rem;
+        @media (max-width: 640px) {
+            width: auto;
+        }
         border-left: 2px solid rgba(120, 180, 210, 0.4);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.05);
         @media (max-width: 640px) {
@@ -44,6 +49,67 @@
             background-color: rgb(42, 42, 43, 0.85);
             border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 4px;
+        }
+    }
+
+    // Columns of one width, so checkboxes line up down the panel however uneven the labels are.
+    // How many fit is left to the browser, against a minimum the control sets from its own
+    // longest label: six short elements make two columns where a drop name makes one.
+    .filter-options {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--filter-column)), 1fr));
+        column-gap: 1rem;
+    }
+
+    // A long option, such as a drop name, wraps inside its column rather than widening the panel.
+    .filter-option {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 0.35rem;
+        padding: 0.25rem 0;
+        max-width: 100%;
+        input {
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+    }
+
+    // Touch has no cursor to aim with, so the rows and the small controls grow where it is the
+    // only way in.
+    @media (max-width: 640px) {
+        .filter-option {
+            padding: 0.5rem 0;
+            input {
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+        }
+        .only {
+            padding: 0.35rem 0.5rem;
+        }
+    }
+
+    // A pointer reveals Only on the row it is over. A touch screen has no hover to reveal it, so
+    // there it stays visible.
+    .only {
+        opacity: 0;
+        transition: opacity 0.12s, color 0.12s;
+        &:focus-visible {
+            opacity: 1;
+        }
+    }
+    .filter-row:hover .only {
+        opacity: 0.75;
+    }
+    .only:hover {
+        opacity: 1;
+        color: #ffffff;
+    }
+    @media (hover: none) {
+        .only {
+            opacity: 0.6;
         }
     }
 
@@ -95,7 +161,7 @@
         @media (max-width: 640px) {
             margin-top: 0;
             width: 100%;
-            height: 42px;
+            height: 48px;
             border-radius: 0;
             border: none;
             border-bottom: 1px solid rgba(120, 180, 210, 0.25);

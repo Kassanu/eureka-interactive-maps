@@ -1,225 +1,78 @@
 <template>
   <div id="editor" class="relative">
-    <div v-show="showAddNewItemBanner" class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" @click="cancelAddNewItem">
-      Click on the map to add a new item for {{ addNewItemSelectedName }}. Click this message to cancel.
-    </div>
-    <MapDataEditor
-      :json-data="sections"
-      :full-json-data="jsonData"
-      :json-data-show="jsonDataShow"
-      :click-coordinates="clickCoordinates"
-      :map-name="mapName"
-      @add-item-to-section="addItemToSection"
-      @set-item-position="setItemPosition"
-      @update-item="updateItem"
-      @update-show-data="updateShowData"
-      @update-all-item-show-data="updateAllItemShowData"
-      @delete-item="deleteItem"
-    />
+    <button
+      v-if="editor.pending.value"
+      type="button"
+      class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
+      @click="editor.cancel"
+    >
+      {{ bannerText }} Click this message to cancel.
+    </button>
+
+    <EditorPanel v-if="editor.zone.value" :zone="editor.zone.value" />
+
     <EurekaCanvas
-      :canvas-image="imageSource"
-      :grid-size-in-pixels="gridSizeInPixels"
-      :coordinates-offset="coordinatesOffset"
-      :positions="positions"
-      :maximum-zoom="maximumZoom"
-      @click="canvasClick"
-      @clicked-element="clickedElement"
+      v-if="editor.image.value"
+      :canvas-image="editor.image.value"
+      :grid-size-in-pixels="grid.sizeInPixels"
+      :coordinates-offset="grid.coordinatesOffset"
+      :maximum-zoom="grid.maximumZoom"
+      :positions="markers"
+      positions-id-key="id"
+      @click="onCanvasClick"
+      @clicked-element="reveal"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, nextTick, provide } from 'vue'
+import { computed, nextTick, provide } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
-import MapDataEditor from './MapDataEditor.vue'
-import { resolveIcons } from '~/composables/useIconResolver'
-import { zoneConfigKey, type ZoneConfig } from '~/composables/useZoneConfig'
+import EditorPanel from '~/components/Editor/EditorPanel.vue'
+import { editorKey, useZoneEditor } from '~/composables/useZoneEditor'
+import { zoneFor, zoneMarkers, type Marker, type ZoneSlug } from '~/zones'
 
-const props = defineProps<{
-  imageSource: string
-  jsonData: any
-  mapName: string
-  config?: ZoneConfig
-  gridSizeInPixels?: number
-  coordinatesOffset?: number
-  maximumZoom?: number
-}>()
+const props = defineProps<{ slug: ZoneSlug }>()
 
-const sections = computed(() => props.jsonData.sections ?? props.jsonData)
+const editor = useZoneEditor(props.slug)
+const grid = zoneFor(props.slug).map.grid
+provide(editorKey, editor)
 
-const zoneConfig = computed<ZoneConfig>(() => props.config ?? {})
-provide(zoneConfigKey, zoneConfig)
-
-const gridSizeInPixels = props.gridSizeInPixels ?? 100
-const coordinatesOffset = props.coordinatesOffset ?? 0
-const maximumZoom = props.maximumZoom ?? 100
-
-const clickCoordinates = ref({ x: 0, y: 0 })
-const jsonDataShow = ref<Record<string, any>>({})
-const addToSectionKey = ref<string | null>(null)
-
-const setPositionToItem = ref<any>(null)
-
-const sortedKeys = computed(() => {
-  return Object.keys(sections.value).sort((a, b) => sections.value[a].order - sections.value[b].order)
+const bannerText = computed(() => {
+  const waiting = editor.pending.value
+  if (!waiting) return ''
+  return waiting.kind === 'add'
+    ? `Click the map to place a new item in ${waiting.label}.`
+    : `Click the map to move ${waiting.label}.`
 })
 
-const positions = computed(() => {
-  const pos: any[] = []
-  sortedKeys.value.forEach(key => {
-    const section = sections.value[key]
-    if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, key) &&
-          Object.prototype.hasOwnProperty.call(jsonDataShow.value[key], 'showOnMap') &&
-          jsonDataShow.value[key].showOnMap === false)) {
-      for (const item of section.items) {
-        if (!(Object.prototype.hasOwnProperty.call(jsonDataShow.value, item.id) &&
-              Object.prototype.hasOwnProperty.call(jsonDataShow.value[item.id], 'showOnMap') &&
-              jsonDataShow.value[item.id].showOnMap === false)) {
-          let multiple = false
-          let coordinates = item.position
-          if (Array.isArray(item.position)) {
-            multiple = item.position.length > 1
-            coordinates = item.position[0]
-          }
-
-          const resolved = resolveIcons(section.icon, item)
-
-          const itemObj: any = {
-            id: item.id,
-            key: key,
-            label: item.name,
-            coordinates: coordinates,
-            icons: resolved.icons,
-            drawStyle: resolved.drawStyle,
-          }
-
-          if (item.level !== undefined) {
-            itemObj.label = `${item.name} (${item.level})`
-          }
-
-          pos.push(itemObj)
-
-          if (multiple) {
-            item.position.slice(1).forEach((position: any) => {
-              pos.push({ ...itemObj, coordinates: position })
-            })
-          }
-        }
-      }
-    }
-  })
-  return pos
+// The editor hides sections and items directly rather than through a filter, so it hands the
+// marker builder a state naming what is still shown.
+const markers = computed<Marker[]>(() => {
+  const zone = editor.zone.value
+  if (!zone) return []
+  const shown = zone.sections
+    .filter(section => editor.isVisible(section.key))
+    .map(section => section.key)
+  return zoneMarkers(zone, { sections: shown, values: {} })
+    .filter(marker => editor.isVisible(marker.itemId))
 })
 
-const addNewItemSelectedName = computed(() => {
-  if (addToSectionKey.value !== null) {
-    return sections.value[addToSectionKey.value].name
-  } else if (setPositionToItem.value !== null) {
-    return `${sections.value[setPositionToItem.value.section].name} - ${setPositionToItem.value['id']}`
-  }
-  return ''
-})
-
-const showAddNewItemBanner = computed(() => {
-  return addToSectionKey.value !== null || setPositionToItem.value !== null
-})
-
-const canvasClick = (evt: any) => {
-  clickCoordinates.value = evt.coordinates
-  if (addToSectionKey.value !== null) {
-    const newItem = Object.assign({}, sections.value[addToSectionKey.value].baseItem)
-    newItem.position = clickCoordinates.value
-    newItem.id = crypto.randomUUID()
-    sections.value[addToSectionKey.value].items.push(newItem)
-    addToSectionKey.value = null
-  }
-
-  if (setPositionToItem.value !== null) {
-    const index = sections.value[setPositionToItem.value.section].items.findIndex((item: any) => {
-      return item.id == setPositionToItem.value.id
-    })
-    if (Array.isArray(sections.value[setPositionToItem.value.section].items[index].position)) {
-      sections.value[setPositionToItem.value.section].items[index].position[setPositionToItem.value.index] = clickCoordinates.value
-    } else {
-      sections.value[setPositionToItem.value.section].items[index].position = [clickCoordinates.value]
-    }
-    setPositionToItem.value = null
-  }
+const onCanvasClick = (event: { coordinates: { x: number; y: number } }) => {
+  editor.clickMap(event.coordinates)
 }
 
-const addItemToSection = (sectionKey: string) => {
-  addToSectionKey.value = sectionKey
-  setPositionToItem.value = null
-}
-
-const setItemPosition = (data: any) => {
-  setPositionToItem.value = data
-  addToSectionKey.value = null
-}
-
-const cancelAddNewItem = () => {
-  addToSectionKey.value = null
-  setPositionToItem.value = null
-}
-
-const updateItem = (sectionKey: string, newItem: any) => {
-  const index = sections.value[sectionKey].items.findIndex((item: any) => {
-    return item.id === newItem.id
-  })
-  if (index !== -1) {
-    sections.value[sectionKey].items.splice(index, 1, newItem)
-  }
-}
-
-const updateShowData = (sectionKey: string, showKey: string, value: any) => {
-  const newShowData = Object.assign({}, jsonDataShow.value)
-  let newShowKeyData: Record<string, any> = {}
-  if (Object.prototype.hasOwnProperty.call(newShowData, sectionKey)) {
-    newShowKeyData = Object.assign(newShowData[sectionKey], { [showKey]: value })
-  } else {
-    newShowKeyData = { [showKey]: value }
-  }
-  newShowData[sectionKey] = newShowKeyData
-  jsonDataShow.value = newShowData
-}
-
-const updateAllItemShowData = (sectionKey: string, showKey: string, value: any) => {
-  const newShowData = Object.assign({}, jsonDataShow.value)
-  sections.value[sectionKey].items.forEach((item: any) => {
-    let newShowKeyData: Record<string, any> = {}
-    if (Object.prototype.hasOwnProperty.call(newShowData, item.id)) {
-      newShowKeyData = Object.assign(newShowData[item.id], { [showKey]: value })
-    } else {
-      newShowKeyData = { [showKey]: value }
-    }
-    newShowData[item.id] = newShowKeyData
-  })
-  jsonDataShow.value = newShowData
-}
-
-const deleteItem = (sectionKey: string, itemId: string) => {
-  const index = sections.value[sectionKey].items.findIndex((item: any) => {
-    return item.id === itemId
-  })
-  if (index !== -1) {
-    sections.value[sectionKey].items.splice(index, 1)
-  }
-}
-
-const clickedElement = (item: any) => {
-  if (Object.prototype.hasOwnProperty.call(jsonDataShow.value, item.key) && !jsonDataShow.value[item.key].expanded) {
-    jsonDataShow.value[item.key].expanded = true
-  }
+// Clicking a marker opens its section and brings the item into view, which is how a marker is
+// found in a list of several hundred.
+const reveal = (marker: Marker) => {
+  const section = editor.zone.value?.sectionOf.get(marker.itemId)
+  if (section && !editor.isExpanded(section.key)) editor.toggleExpanded(section.key)
+  if (!editor.isExpanded(marker.itemId)) editor.toggleExpanded(marker.itemId)
 
   nextTick(() => {
-    const itemContainer = document.getElementById(item.id)
-    if (itemContainer) {
-      const mapDataList = document.getElementById('mapDataList')
-      if (mapDataList) {
-        mapDataList.scrollTop = itemContainer.offsetTop
-      }
-    }
+    const card = document.getElementById(marker.itemId)
+    const list = document.getElementById('mapDataList')
+    if (card && list) list.scrollTop = card.offsetTop
   })
 }
-
 </script>

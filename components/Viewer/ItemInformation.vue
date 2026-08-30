@@ -17,7 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import { NARROW, useWindowWidth } from '~/composables/useWindowWidth'
 
 const props = defineProps<{
   position: { x: number; y: number }
@@ -27,9 +28,7 @@ defineEmits<{ (e: 'closeItemInformation'): void }>()
 
 const container = ref<HTMLElement | null>(null)
 const dimensions = ref({ width: 0, height: 0 })
-const windowWidth = ref(window.innerWidth)
-
-const onResize = () => { windowWidth.value = window.innerWidth }
+const windowWidth = useWindowWidth()
 
 onMounted(() => {
   if (container.value) {
@@ -38,14 +37,10 @@ onMounted(() => {
       height: container.value.clientHeight
     }
   }
-  window.addEventListener('resize', onResize)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('resize', onResize)
 })
 
 const top = computed(() => {
+  void windowWidth.value
   if ((props.position.y + dimensions.value.height) > document.body.clientHeight) {
     return props.position.y - dimensions.value.height
   }
@@ -53,6 +48,7 @@ const top = computed(() => {
 })
 
 const left = computed(() => {
+  void windowWidth.value
   if ((props.position.x + dimensions.value.width) > document.body.clientWidth) {
     return props.position.x - dimensions.value.width
   }
@@ -60,7 +56,7 @@ const left = computed(() => {
 })
 
 const styles = computed(() => {
-  if (windowWidth.value < 640) {
+  if (windowWidth.value < NARROW) {
     return 'top:5%;left:5%;'
   }
   return `top:${top.value}px;left:${left.value}px;`

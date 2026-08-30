@@ -58,15 +58,10 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: us-east-1
-          # The repo is public, so its run logs are world-readable, and the action does not
-          # mask the account id by default. The ARN is not a credential, but neither it nor
-          # the account id needs to be published to read a build log.
           mask-aws-account-id: true
 
-      # The two syncs partition the bucket by file class, so --delete belongs on both:
-      # one --delete only prunes the class its own filters select. The AWS CLI applies
-      # --exclude/--include to deletion candidates as well as uploads, so the asset step
-      # leaves HTML alone and the HTML step prunes it.
+      # --exclude/--include apply to deletions too, so each sync only prunes its own file class
+      # and both need --delete.
       - name: Sync assets to S3 (cached)
         if: steps.version.outputs.bumped == 'true'
         run: |
