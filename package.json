@@ -1,12 +1,14 @@
 {
   "name": "eureka-interactive-maps",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "typecheck": "nuxt typecheck",
+    "validate": "node scripts/validate-zone-data.mjs",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
@@ -23,6 +25,8 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.4.1",
     "eslint": "^9.28.0",
-    "sass": "^1.89.1"
+    "sass": "^1.89.1",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.11"
   }
 }

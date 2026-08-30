@@ -1328,8 +1328,8 @@
                     "name": "Pyros Snake",
                     "level": 43,
                     "position": {
-                        "x": "19.1",
-                        "y": "33.7"
+                        "x": 19.1,
+                        "y": 33.7
                     },
                     "element": "water",
                     "adaptation": {
@@ -1558,8 +1558,8 @@
                     "name": "Karlabos of Pyros",
                     "level": 45,
                     "position": {
-                        "x": "24.3",
-                        "y": "16.9"
+                        "x": 24.3,
+                        "y": 16.9
                     },
                     "element": "earth",
                     "adaptation": {
@@ -1583,8 +1583,8 @@
                     "name": "Pyros Bombfish",
                     "level": 46,
                     "position": {
-                        "x": "9.4",
-                        "y": "16.0"
+                        "x": 9.4,
+                        "y": 16
                     },
                     "element": "water",
                     "adaptation": {
@@ -1617,8 +1617,8 @@
                     "name": "Pyros Pudding",
                     "level": 46,
                     "position": {
-                        "x": "11.6",
-                        "y": "16"
+                        "x": 11.6,
+                        "y": 16
                     },
                     "element": "fire",
                     "adaptation": {
@@ -1647,8 +1647,8 @@
                     "name": "Islandhander",
                     "level": 46,
                     "position": {
-                        "x": "10",
-                        "y": "14"
+                        "x": 10,
+                        "y": 14
                     },
                     "element": "wind",
                     "adaptation": {
@@ -1760,8 +1760,8 @@
                     "name": "Bird Eater",
                     "level": 47,
                     "position": {
-                        "x": "12.5",
-                        "y": "9.7"
+                        "x": 12.5,
+                        "y": 9.7
                     },
                     "element": "wind",
                     "adaptation": {
@@ -1785,8 +1785,8 @@
                     "name": "Pyros Parthenope",
                     "level": 47,
                     "position": {
-                        "x": "14.3",
-                        "y": "11.8"
+                        "x": 14.3,
+                        "y": 11.8
                     },
                     "element": "lightning",
                     "adaptation": {
@@ -1812,8 +1812,8 @@
                     "name": "Pyros Crab",
                     "level": 48,
                     "position": {
-                        "x": "15.1",
-                        "y": "6.4"
+                        "x": 15.1,
+                        "y": 6.4
                     },
                     "element": "fire",
                     "adaptation": {
@@ -1837,8 +1837,8 @@
                     "name": "Pure White Flame",
                     "level": 48,
                     "position": {
-                        "x": "12.5",
-                        "y": "9.1"
+                        "x": 12.5,
+                        "y": 9.1
                     },
                     "element": "water",
                     "adaptation": {
@@ -1871,8 +1871,8 @@
                     "name": "Dingo",
                     "level": 48,
                     "position": {
-                        "x": "15.1",
-                        "y": "10.0"
+                        "x": 15.1,
+                        "y": 10
                     },
                     "element": "earth",
                     "adaptation": {
@@ -2059,8 +2059,8 @@
                     "name": "Delphyne",
                     "level": 50,
                     "position": {
-                        "x": "21.4",
-                        "y": "7.2"
+                        "x": 21.4,
+                        "y": 7.2
                     },
                     "element": "water",
                     "adaptation": {
@@ -2091,8 +2091,8 @@
                     "name": "Pyros Piranu",
                     "level": 50,
                     "position": {
-                        "x": "24.0",
-                        "y": "7.4"
+                        "x": 24,
+                        "y": 7.4
                     },
                     "element": "fire",
                     "adaptation": {
@@ -2141,8 +2141,8 @@
                     "name": "Pyros Hawk",
                     "level": 50,
                     "position": {
-                        "x": "25.2",
-                        "y": "12.3"
+                        "x": 25.2,
+                        "y": 12.3
                     },
                     "element": "wind",
                     "adaptation": {
@@ -2332,8 +2332,8 @@
                     "name": "Val Minotaur",
                     "level": 52,
                     "position": {
-                        "x": "31.5",
-                        "y": "11.7"
+                        "x": 31.5,
+                        "y": 11.7
                     },
                     "element": "fire",
                     "adaptation": {
@@ -2400,8 +2400,8 @@
                     "name": "Stegoceras",
                     "level": 53,
                     "position": {
-                        "x": "35.5",
-                        "y": "14.1"
+                        "x": 35.5,
+                        "y": 14.1
                     },
                     "element": "water",
                     "adaptation": {
@@ -2434,8 +2434,8 @@
                     "name": "Val Skatene",
                     "level": 53,
                     "position": {
-                        "x": "30.9",
-                        "y": "14.7"
+                        "x": 30.9,
+                        "y": 14.7
                     },
                     "element": "wind",
                     "adaptation": {
@@ -2582,8 +2582,8 @@
                     "name": "Zebu",
                     "level": 54,
                     "position": {
-                        "x": "33.9",
-                        "y": "14.5"
+                        "x": 33.9,
+                        "y": 14.5
                     },
                     "element": "earth",
                     "adaptation": {
@@ -2616,8 +2616,8 @@
                     "name": "Ancient Voidragon",
                     "level": 54,
                     "position": {
-                        "x": "38.0",
-                        "y": "14.6"
+                        "x": 38,
+                        "y": 14.6
                     },
                     "element": "fire",
                     "adaptation": {
@@ -2728,8 +2728,8 @@
                     "name": "Val Gigantopithecus",
                     "level": 55,
                     "position": {
-                        "x": "36.7",
-                        "y": "17.5"
+                        "x": 36.7,
+                        "y": 17.5
                     },
                     "element": "lightning",
                     "adaptation": {

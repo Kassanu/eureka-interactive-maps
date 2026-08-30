@@ -4,8 +4,8 @@
     <div class="inline-block relative w-full">
       <select
         :value="modelValue"
-        @change="$emit('update:modelValue', ($event.target as HTMLSelectElement).value)"
         class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+        @change="$emit('update:modelValue', ($event.target as HTMLSelectElement).value)"
       >
         <option value="">Any</option>
         <option v-for="option in normalizedOptions" :key="option.value" :value="option.value">

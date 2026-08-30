@@ -5,12 +5,12 @@
       <div class="flex flex-wrap -mx-3">
         <div v-for="rank in rankKeys" :key="rank" class="w-1/2 px-3 mb-2">
           <input
-            :checked="filters.rank[rank]"
-            @change="updateRank($event, rank)"
             :id="`rank${rank}Checkbox`"
+            :checked="filters.rank[rank]"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateRank($event, rank)"
+          >
           <label :for="`rank${rank}Checkbox`" class="text-sm font-bold">{{ rankLabel(rank) }}</label>
         </div>
       </div>
@@ -21,12 +21,12 @@
       <div class="flex flex-wrap -mx-3">
         <div v-for="key in familyKeys" :key="key" class="w-1/2 px-3 mb-2">
           <input
-            :checked="filters[key]"
-            @change="updateCheckbox($event, key)"
             :id="`${key}Checkbox`"
+            :checked="filters[key]"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateCheckbox($event, key)"
+          >
           <label :for="`${key}Checkbox`" class="text-sm font-bold">{{ capitalize(key) }}</label>
         </div>
       </div>
@@ -36,21 +36,21 @@
       <div class="flex flex-wrap -mx-3">
         <div v-if="'fate' in filters" class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <input
-            :checked="filters.fate"
-            @change="updateCheckbox($event, 'fate')"
             id="fateCheckbox"
+            :checked="filters.fate"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateCheckbox($event, 'fate')"
+          >
           <label for="fateCheckbox" class="text-sm font-bold">FATE</label>
         </div>
         <FilterSelect
           v-if="'aggro' in filters"
-          :modelValue="filters.aggro"
-          @update:modelValue="updateSelect('aggro', $event)"
+          :model-value="filters.aggro"
           label="Aggro"
           :options="lookups.aggroTypes ?? []"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('aggro', $event)"
         />
       </div>
     </div>
@@ -59,22 +59,22 @@
       <div class="flex flex-wrap -mx-3">
         <div v-if="'mutates' in filters" class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <input
-            :checked="filters.mutates"
-            @change="updateCheckbox($event, 'mutates')"
             id="mutationCheckbox"
+            :checked="filters.mutates"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateCheckbox($event, 'mutates')"
+          >
           <label for="mutationCheckbox" class="text-sm font-bold">Mutates</label>
         </div>
         <div v-if="'adapts' in filters" class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <input
-            :checked="filters.adapts"
-            @change="updateCheckbox($event, 'adapts')"
             id="adaptationCheckbox"
+            :checked="filters.adapts"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateCheckbox($event, 'adapts')"
+          >
           <label for="adaptationCheckbox" class="text-sm font-bold">Adapts</label>
         </div>
       </div>
@@ -84,21 +84,21 @@
       <div class="flex flex-wrap -mx-3">
         <FilterSelect
           v-if="'maweather' in filters"
-          :modelValue="filters.maweather"
-          @update:modelValue="updateSelect('maweather', $event)"
+          :model-value="filters.maweather"
           label="Weather"
           title="Mutation/Adaptation Weather"
           :options="lookups.weathers ?? []"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('maweather', $event)"
         />
         <FilterSelect
           v-if="'matime' in filters"
-          :modelValue="filters.matime"
-          @update:modelValue="updateSelect('matime', $event)"
+          :model-value="filters.matime"
           label="Time"
           title="Mutation/Adaptation Time"
           :options="lookups.times ?? []"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('matime', $event)"
         />
       </div>
     </div>
@@ -106,11 +106,11 @@
     <div v-if="'mutateElement' in filters" class="mb-2">
       <div class="flex flex-wrap -mx-3">
         <FilterSelect
-          :modelValue="filters.mutateElement"
-          @update:modelValue="updateSelect('mutateElement', $event)"
+          :model-value="filters.mutateElement"
           label="Mutation Element"
           :options="lookups.elements ?? []"
           class="w-full md:w-1/2 px-3 mb-6 md:mb-0"
+          @update:model-value="updateSelect('mutateElement', $event)"
         />
       </div>
     </div>

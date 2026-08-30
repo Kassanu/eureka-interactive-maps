@@ -7,16 +7,16 @@
       <div class="w-full inline-flex w-full px-3 mb-6 md:mb-0">
         <input
           :value="formatedPosition(position)"
-          @change="updatePosition($event, index)"
           class="px-2 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-l text-sm border outline-none focus:outline-none focus:shadow-outline w-full"
           :class="borderClass(index)"
           type="text"
           placeholder="(X, Y)"
+          @change="updatePosition($event, index)"
         >
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-2 rounded-r">
-          <font-awesome-icon @click="$emit('setItemPosition', index)" icon="plus" class="cursor-pointer" title="Update position" />
+          <font-awesome-icon icon="plus" class="cursor-pointer" title="Update position" @click="$emit('setItemPosition', index)" />
         </button>
-        <button v-show="index > 0" @click="deletePosition(index)" class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded">
+        <button v-show="index > 0" class="bg-red-500 hover:bg-red-700 text-white font-bold px-2 ml-2 rounded" @click="deletePosition(index)">
           <font-awesome-icon icon="times" class="cursor-pointer" />
         </button>
       </div>

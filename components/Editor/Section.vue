@@ -2,8 +2,9 @@
   <div class="w-full rounded">
     <div class="sectionHeader bg-white p-4 border-b border-gray-200 flex justify-between content-center sticky top-0 z-50">
       <div>
-        <input :checked="showOnMap" @input="updateShowOnMap" type="checkbox"
-          title="Show/Hide this section from the map" />
+        <input
+:checked="showOnMap" type="checkbox" title="Show/Hide this section from the map"
+          @input="updateShowOnMap" >
       </div>
       <div>
         <span class="font-bold mr-1">{{ section.name }} ({{ filteredItems.length }})</span>
@@ -21,17 +22,17 @@
       <component
         :is="itemComponent"
         v-for="item in filteredItems"
-        :key="item.id"
         :id="item.id"
+        :key="item.id"
         :item="item"
-        :sectionKey="sectionKey"
-        :jsonDataShow="jsonDataShow"
-        :jsonData="jsonData"
-        @updateItem="updateItem"
-        @setItemPosition="setItemPosition"
-        @updateItemShowData="updateItemShowData"
-        @deleteItem="deleteItem"
-        @updateAllItemShowData="updateAllItemShowData"
+        :section-key="sectionKey"
+        :json-data-show="jsonDataShow"
+        :json-data="jsonData"
+        @update-item="updateItem"
+        @set-item-position="setItemPosition"
+        @update-item-show-data="updateItemShowData"
+        @delete-item="deleteItem"
+        @update-all-item-show-data="updateAllItemShowData"
       />
     </div>
   </div>

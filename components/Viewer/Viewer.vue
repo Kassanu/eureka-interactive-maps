@@ -1,27 +1,27 @@
 <template>
-  <div id="viewer" class="relative" ref="viewerEl">
+  <div id="viewer" ref="viewerEl" class="relative">
     <Filters
       :filters="cFilters"
-      :jsonData="sections"
-      @updateFilters="cFilters = $event"
-      @resetFilters="cFilters = JSON.parse(JSON.stringify(pFilters))"
+      :json-data="sections"
+      @update-filters="cFilters = $event"
+      @reset-filters="cFilters = JSON.parse(JSON.stringify(pFilters))"
     />
 
     <EurekaCanvas
-      :canvasImage="imageSource"
-      :gridSizeInPixels="gridSizeInPixels"
-      :coordinatesOffset="coordinatesOffset"
+      :canvas-image="imageSource"
+      :grid-size-in-pixels="gridSizeInPixels"
+      :coordinates-offset="coordinatesOffset"
       :positions="positions"
-      :maximumZoom="maximumZoom"
-      :positionsIdKey="'id'"
+      :maximum-zoom="maximumZoom"
+      :positions-id-key="'id'"
       @click="clickedCanvas"
-      @clickedElement="clickedElement"
+      @clicked-element="clickedElement"
     />
 
     <ItemInformation
       v-if="clickedItem"
       :position="clickPosition"
-      @closeItemInformation="closeItemInformation"
+      @close-item-information="closeItemInformation"
     >
       <template #icon>
         <div v-html="clickedItemIcon" />
@@ -91,7 +91,7 @@ const positions = computed(() => {
 
           const resolved = resolveIcons(section.icon, item)
 
-          let itemObj: any = {
+          const itemObj: any = {
             id: item.id,
             key: key,
             label: item.name,

@@ -1,12 +1,12 @@
 <template>
   <Viewer
     v-if="imageSource && jsonData && filters"
-    :imageSource="imageSource"
-    :jsonData="jsonData"
-    :pFilters="filters"
-    :gridSizeInPixels="gridSizeInPixels"
-    :coordinatesOffset="coordinatesOffset"
-    :maximumZoom="maximumZoom"
+    :image-source="imageSource"
+    :json-data="jsonData"
+    :p-filters="filters"
+    :grid-size-in-pixels="gridSizeInPixels"
+    :coordinates-offset="coordinatesOffset"
+    :maximum-zoom="maximumZoom"
   />
 </template>
 

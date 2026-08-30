@@ -10,12 +10,12 @@
           class="px-3 mb-6 md:mb-0 sm:mr-0 mr-2"
         >
           <input
-            :checked="participants.enabled"
-            @change="updateParticipants($event, index)"
             :id="participants.amount"
+            :checked="participants.enabled"
             class="mr-2 leading-tight"
             type="checkbox"
-          />
+            @change="updateParticipants($event, index)"
+          >
           <label :for="participants.amount" class="text-sm font-bold">
             {{ participants.amount }}
           </label>
@@ -25,7 +25,7 @@
 
     <!-- Hidden engagements (duels + engagements) -->
     <template v-if="'hiddenEngagements' in filters">
-      <ExpandableSection :startExpanded="false">
+      <ExpandableSection :start-expanded="false">
         <template #header>Duels</template>
         <template #content>
           <div class="flex flex-wrap">
@@ -35,12 +35,12 @@
               class="px-3 mb-6 md:mb-0 sm:mr-0 mr-2"
             >
               <input
-                :checked="!filters.hiddenEngagements.includes(duel.id)"
-                @change="updateHiddenEngagements($event, duel.id)"
                 :id="duel.id"
+                :checked="!filters.hiddenEngagements.includes(duel.id)"
                 class="mr-2 leading-tight"
                 type="checkbox"
-              />
+                @change="updateHiddenEngagements($event, duel.id)"
+              >
               <label :for="duel.id" class="text-sm font-bold">
                 {{ duel.name }}
               </label>
@@ -49,7 +49,7 @@
         </template>
       </ExpandableSection>
 
-      <ExpandableSection :startExpanded="false">
+      <ExpandableSection :start-expanded="false">
         <template #header>Engagements</template>
         <template #content>
           <div class="flex flex-wrap">
@@ -59,12 +59,12 @@
               class="px-3 mb-6 md:mb-0 sm:mr-0 mr-2"
             >
               <input
-                :checked="!filters.hiddenEngagements.includes(engagement.id)"
-                @change="updateHiddenEngagements($event, engagement.id)"
                 :id="engagement.id"
+                :checked="!filters.hiddenEngagements.includes(engagement.id)"
                 class="mr-2 leading-tight"
                 type="checkbox"
-              />
+                @change="updateHiddenEngagements($event, engagement.id)"
+              >
               <label :for="engagement.id" class="text-sm font-bold">
                 {{ engagement.name }}
               </label>
@@ -76,7 +76,7 @@
 
     <!-- Hidden skirmishes -->
     <template v-if="'hiddenSkirmishes' in filters">
-      <ExpandableSection :startExpanded="false">
+      <ExpandableSection :start-expanded="false">
         <template #header>Skirmishes</template>
         <template #content>
           <div class="flex flex-wrap">
@@ -86,12 +86,12 @@
               class="px-3 mb-6 md:mb-0 sm:mr-0 mr-2"
             >
               <input
-                :checked="!filters.hiddenSkirmishes.includes(skirmish.id)"
-                @change="updateHiddenSkirmishes($event, skirmish.id)"
                 :id="skirmish.id"
+                :checked="!filters.hiddenSkirmishes.includes(skirmish.id)"
                 class="mr-2 leading-tight"
                 type="checkbox"
-              />
+                @change="updateHiddenSkirmishes($event, skirmish.id)"
+              >
               <label :for="skirmish.id" class="text-sm font-bold">
                 {{ skirmish.name }}
               </label>
