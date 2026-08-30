@@ -1,7 +1,13 @@
 {
     "config": {
         "lookups": {
-            "aggroTypes": ["sight", "sound", "proximity", "spell", "blood"]
+            "aggroTypes": [
+                "sight",
+                "sound",
+                "proximity",
+                "spell",
+                "blood"
+            ]
         },
         "levelLabel": "Knowledge Level"
     },
@@ -71,6 +77,13 @@
             "enabled": true,
             "filters": {
                 "pool": ""
+            }
+        },
+        "spells": {
+            "name": "Blue Mage Spells",
+            "enabled": true,
+            "filters": {
+                "spellLevel": ""
             }
         }
     }

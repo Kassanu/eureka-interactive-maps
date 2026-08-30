@@ -28,6 +28,14 @@ const iconPaths: Record<string, string> = {
   rank_3:              `${ICON_BASE}/ranks/3.png`,
   rank_4:              `${ICON_BASE}/ranks/4.png`,
   rank_5:              `${ICON_BASE}/ranks/5.png`,
+  // phantom blue mage spells
+  spell_occult_aero:         `${ICON_BASE}/spells/occult_aero.png`,
+  spell_occult_aero_ii:      `${ICON_BASE}/spells/occult_aero_ii.png`,
+  spell_occult_aero_iii:     `${ICON_BASE}/spells/occult_aero_iii.png`,
+  spell_occult_aqua_breath:  `${ICON_BASE}/spells/occult_aqua_breath.png`,
+  spell_occult_mighty_guard: `${ICON_BASE}/spells/occult_mighty_guard.png`,
+  spell_occult_missile:      `${ICON_BASE}/spells/occult_missile.png`,
+  spell_occult_white_wind:   `${ICON_BASE}/spells/occult_white_wind.png`,
   // coffers
   coffer_bronze:       `${ICON_BASE}/coffers/bronze.png`,
   coffer_silver:       `${ICON_BASE}/coffers/silver.png`,

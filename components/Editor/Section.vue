@@ -26,7 +26,7 @@
         :item="item"
         :sectionKey="sectionKey"
         :jsonDataShow="jsonDataShow"
-        :fates="fates"
+        :jsonData="jsonData"
         @updateItem="updateItem"
         @setItemPosition="setItemPosition"
         @updateItemShowData="updateItemShowData"
@@ -46,7 +46,7 @@ const props = defineProps<{
   sectionKey: string
   jsonDataShow: Record<string, any>
   searchValue: string
-  fates: any[]
+  jsonData?: Record<string, any>
 }>()
 
 const emit = defineEmits<{
