@@ -1,5 +1,15 @@
+import { SITE_NAME } from './site'
+import { zoneSlugs } from './zones'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // The map routes are dynamic, so the crawler cannot find them by shape. Naming them from the
+  // registry is what keeps a zone added there from shipping unprerendered.
+  nitro: {
+    prerender: {
+      routes: zoneSlugs.flatMap(slug => [`/map/${slug}`, `/map/${slug}/edit`]),
+    },
+  },
   vite: {
     optimizeDeps: {
       include: ['eureka-canvas']
@@ -7,7 +17,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'FFXIV Interactive Eureka Maps',
+      title: SITE_NAME,
       htmlAttrs: { lang: 'en' },
       meta: [
         {
