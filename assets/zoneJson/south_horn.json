@@ -2291,27 +2291,123 @@
                 }
             ]
         },
-        "quests": {
-            "name": "Quests",
+        "survey_points": {
+            "name": "Survey Points",
             "type": "poi",
             "order": 2,
             "icon": {
                 "drawStyle": "default",
                 "primary": {
                     "strategy": "static",
-                    "value": "quest"
+                    "value": "pin"
                 }
             },
             "baseItem": {
                 "id": "",
                 "name": "",
-                "level": 0,
                 "position": {
                     "x": 0,
                     "y": 0
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "79d62f50-0e5e-5497-bd58-2e890cbbcd0c",
+                    "name": "#5: The Expedition Base Camp",
+                    "position": {
+                        "x": 38.6,
+                        "y": 7.6
+                    }
+                },
+                {
+                    "id": "e9a8dfae-62ce-5b8c-9fcf-fbb6ae75152a",
+                    "name": "#7: The Lost Citadel",
+                    "position": {
+                        "x": 31.4,
+                        "y": 17.0
+                    }
+                },
+                {
+                    "id": "11d1fdbf-b068-5471-8e87-b7bcec008157",
+                    "name": "#9: The Vanishing Slope",
+                    "position": {
+                        "x": 20.2,
+                        "y": 12.2
+                    }
+                },
+                {
+                    "id": "06159eea-3f36-5b63-aca4-ea2287951100",
+                    "name": "#12: Heathcliff",
+                    "position": {
+                        "x": 23.2,
+                        "y": 21.5
+                    }
+                },
+                {
+                    "id": "96feb1a2-d3fa-595f-b404-54fa3d9a0ec9",
+                    "name": "#13: The Fell Warren",
+                    "position": {
+                        "x": 10.2,
+                        "y": 22.5
+                    }
+                },
+                {
+                    "id": "aada7f5a-c900-5032-8e7a-d8cf7585015b",
+                    "name": "#15: The Shadowed City",
+                    "position": {
+                        "x": 24.2,
+                        "y": 32.8
+                    }
+                },
+                {
+                    "id": "0959a3ca-db85-52b6-a93f-8529c74b38a3",
+                    "name": "#18: Eldergrowth",
+                    "position": {
+                        "x": 18.5,
+                        "y": 33.8
+                    }
+                },
+                {
+                    "id": "7b8b7541-f13d-58f5-8258-410a36a93162",
+                    "name": "#19: The Abandoned Ascent",
+                    "position": {
+                        "x": 15.6,
+                        "y": 29.5
+                    }
+                },
+                {
+                    "id": "dc65e57f-7307-5d27-aab4-60e2a87e3d92",
+                    "name": "#21: The Silent Streets",
+                    "position": {
+                        "x": 36.6,
+                        "y": 33.7
+                    }
+                },
+                {
+                    "id": "13efa2f1-fe50-51a1-a95a-48a8974ee80b",
+                    "name": "#22: The Ancient Stoneworks",
+                    "position": {
+                        "x": 36.0,
+                        "y": 22.6
+                    }
+                },
+                {
+                    "id": "13c949b5-9c2b-5992-bc34-0a538398501b",
+                    "name": "#23: The Wanderer's Haven",
+                    "position": {
+                        "x": 3.8,
+                        "y": 5.8
+                    }
+                },
+                {
+                    "id": "7527fcf1-8cbb-5ea4-b8ad-28662449638b",
+                    "name": "#24: The Brazier",
+                    "position": {
+                        "x": 8.7,
+                        "y": 35.9
+                    }
+                }
+            ]
         },
         "treasure_coffers": {
             "name": "Treasure Coffers",
@@ -4236,28 +4332,6 @@
                     "direction": "E"
                 }
             ]
-        },
-        "misc": {
-            "name": "Misc",
-            "type": "poi",
-            "order": 0,
-            "icon": {
-                "drawStyle": "default",
-                "primary": {
-                    "strategy": "static",
-                    "value": "noelement"
-                }
-            },
-            "baseItem": {
-                "id": "",
-                "name": "",
-                "level": 0,
-                "position": {
-                    "x": 0,
-                    "y": 0
-                }
-            },
-            "items": []
         }
     }
 }

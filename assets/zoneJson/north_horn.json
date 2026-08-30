@@ -2123,27 +2123,139 @@
                 }
             ]
         },
-        "quests": {
-            "name": "Quests",
+        "survey_points": {
+            "name": "Survey Points",
             "type": "poi",
             "order": 2,
             "icon": {
                 "drawStyle": "default",
                 "primary": {
                     "strategy": "static",
-                    "value": "quest"
+                    "value": "pin"
                 }
             },
             "baseItem": {
                 "id": "",
                 "name": "",
-                "level": 0,
                 "position": {
                     "x": 0,
                     "y": 0
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "5dc3d25d-5ea5-5919-834a-0bcfacc3cc98",
+                    "name": "#31: North Horn Base Camp",
+                    "position": {
+                        "x": 39.1,
+                        "y": 38.0
+                    }
+                },
+                {
+                    "id": "9406ced2-e6dd-52cf-8a23-936526bdaea7",
+                    "name": "#32: The Crown of Karnak",
+                    "position": {
+                        "x": 36.4,
+                        "y": 32.2
+                    }
+                },
+                {
+                    "id": "53e0b563-27a9-5e79-8e13-32a564fb2764",
+                    "name": "#36: Shadowdeep",
+                    "position": {
+                        "x": 27.6,
+                        "y": 26.3
+                    }
+                },
+                {
+                    "id": "47aecd20-8a8d-52e9-915b-a02c0fe847ba",
+                    "name": "#37: Labyrinth of the Damned",
+                    "position": {
+                        "x": 39.7,
+                        "y": 22.6
+                    }
+                },
+                {
+                    "id": "7f426b8a-faf8-5274-b2ad-ba19f34b27f3",
+                    "name": "#39: Panoptical Pillar",
+                    "position": {
+                        "x": 27.0,
+                        "y": 14.0
+                    }
+                },
+                {
+                    "id": "7744f394-6b8c-5420-84f0-687d59db2b5e",
+                    "name": "#40: Sinking Sanctuary",
+                    "position": {
+                        "x": 40.0,
+                        "y": 3.9
+                    }
+                },
+                {
+                    "id": "5da1399a-abe1-557e-84d5-bc54cc36ef12",
+                    "name": "#43: The Marrowood",
+                    "position": {
+                        "x": 17.5,
+                        "y": 5.2
+                    }
+                },
+                {
+                    "id": "0ab0970d-6e42-5f76-9c17-6659bc622bfe",
+                    "name": "#45: Suspended Masonry",
+                    "position": {
+                        "x": 11.1,
+                        "y": 38.8
+                    }
+                },
+                {
+                    "id": "d27caa5c-b950-5dac-bd17-ea7e728ada6e",
+                    "name": "#46: The Windward Watch",
+                    "position": {
+                        "x": 4.8,
+                        "y": 36.4
+                    }
+                },
+                {
+                    "id": "04b6fc32-7bfa-57c9-9a38-f65cb5692794",
+                    "name": "#47: Shrine of Spheres",
+                    "position": {
+                        "x": 3.3,
+                        "y": 24.4
+                    }
+                },
+                {
+                    "id": "8af8d227-dff9-565a-8156-e29dd24286ff",
+                    "name": "#49: Moldering Streets",
+                    "position": {
+                        "x": 7.4,
+                        "y": 14.0
+                    }
+                },
+                {
+                    "id": "4db01ecd-270e-53bf-ba4c-6bc1623ac09d",
+                    "name": "#51: The Moldering Lake",
+                    "position": {
+                        "x": 4.1,
+                        "y": 3.2
+                    }
+                },
+                {
+                    "id": "635db11d-4034-592a-9755-774f4bc7043a",
+                    "name": "#52: Unhallowed Hamlet",
+                    "position": {
+                        "x": 21.3,
+                        "y": 19.7
+                    }
+                },
+                {
+                    "id": "4ffa690f-7392-5834-8281-4a8f152a40c3",
+                    "name": "#54: Dark Territory",
+                    "position": {
+                        "x": 22.7,
+                        "y": 23.9
+                    }
+                }
+            ]
         },
         "treasure_coffers": {
             "name": "Treasure Coffers",

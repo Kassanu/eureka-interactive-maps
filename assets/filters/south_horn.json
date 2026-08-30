@@ -61,8 +61,8 @@
             "enabled": true,
             "filters": {}
         },
-        "quests": {
-            "name": "Quests",
+        "survey_points": {
+            "name": "Survey Points",
             "enabled": true,
             "filters": {}
         },
@@ -84,11 +84,6 @@
             "filters": {
                 "pool": ""
             }
-        },
-        "misc": {
-            "name": "Misc",
-            "enabled": true,
-            "filters": {}
         }
     }
 }
