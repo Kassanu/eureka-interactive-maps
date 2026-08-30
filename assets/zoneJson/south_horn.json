@@ -14,17 +14,301 @@
             "baseItem": {
                 "id": "",
                 "name": "",
-                "level": 0,
                 "position": {
                     "x": 0,
                     "y": 0
                 },
                 "drops": [],
                 "boss": {
-                    "name": ""
+                    "name": "",
+                    "weakness": []
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "fe4d3b9b-12b0-5011-bb0a-2433603d4b7b",
+                    "name": "A Delicate Balance",
+                    "position": {
+                        "x": 14.1,
+                        "y": 34.5
+                    },
+                    "drops": [
+                        {
+                            "name": "Verdigris Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Dehumidifier",
+                        "weakness": [
+                            "ice"
+                        ]
+                    }
+                },
+                {
+                    "id": "e59f07d5-95be-566d-bc64-fdc991474e94",
+                    "name": "A Prying Eye",
+                    "position": {
+                        "x": 20.1,
+                        "y": 32.7
+                    },
+                    "drops": [
+                        {
+                            "name": "Azurite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Observer",
+                        "weakness": [
+                            "wind"
+                        ]
+                    }
+                },
+                {
+                    "id": "05ac7702-6e58-5bdd-8dfe-a54269589d3e",
+                    "name": "An Unending Duty",
+                    "position": {
+                        "x": 17,
+                        "y": 22.3
+                    },
+                    "drops": [
+                        {
+                            "name": "Malachite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Sisyphus",
+                        "weakness": [
+                            "fire"
+                        ]
+                    }
+                },
+                {
+                    "id": "112d4dbb-9bc6-56fb-8f14-4a8ef517ffe0",
+                    "name": "Brain Drain",
+                    "position": {
+                        "x": 20.6,
+                        "y": 15.1
+                    },
+                    "drops": [
+                        {
+                            "name": "Realgar Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Advanced Aevis",
+                        "weakness": [
+                            "ice"
+                        ]
+                    }
+                },
+                {
+                    "id": "b7108010-a1f3-5839-990f-f7433aba7dc1",
+                    "name": "Fatal Allure",
+                    "position": {
+                        "x": 22.9,
+                        "y": 27
+                    },
+                    "drops": [
+                        {
+                            "name": "Orpiment Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Execrator",
+                        "weakness": [
+                            "wind"
+                        ]
+                    }
+                },
+                {
+                    "id": "180be147-cca5-54fa-86a4-709a6f332391",
+                    "name": "King of the Crescent",
+                    "position": {
+                        "x": 17,
+                        "y": 26.5
+                    },
+                    "drops": [
+                        {
+                            "name": "Orpiment Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Ropross",
+                        "weakness": [
+                            "fire"
+                        ]
+                    }
+                },
+                {
+                    "id": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                    "name": "Persistent Pots",
+                    "position": {
+                        "x": 25.6,
+                        "y": 17.1
+                    },
+                    "drops": [
+                        {
+                            "name": "Orpiment Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on Persistent Pots",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Crescent Garula",
+                        "weakness": [
+                            "fire"
+                        ]
+                    }
+                },
+                {
+                    "id": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                    "name": "Pleading Pots",
+                    "position": {
+                        "x": 11.9,
+                        "y": 32
+                    },
+                    "drops": [
+                        {
+                            "name": "Verdigris Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on Persistent Pots",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Havoc",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    }
+                },
+                {
+                    "id": "fe1ffe25-796a-507d-9437-1b71e2152600",
+                    "name": "Rough Waters",
+                    "position": {
+                        "x": 24.6,
+                        "y": 34.8
+                    },
+                    "drops": [
+                        {
+                            "name": "Azurite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Nammu",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    }
+                },
+                {
+                    "id": "015205e0-353c-5e00-9b4b-fb023b509f04",
+                    "name": "Serving Darkness",
+                    "position": {
+                        "x": 29.6,
+                        "y": 21
+                    },
+                    "drops": [
+                        {
+                            "name": "Caput Mortuum Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Lifereaper",
+                        "weakness": [
+                            "fire"
+                        ]
+                    }
+                },
+                {
+                    "id": "80f4af26-6cfa-5fea-814b-764fc42a816f",
+                    "name": "Sworn to Soil",
+                    "position": {
+                        "x": 9.5,
+                        "y": 27.9
+                    },
+                    "drops": [
+                        {
+                            "name": "Verdigris Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Mad Mudarch",
+                        "weakness": [
+                            "ice"
+                        ]
+                    }
+                },
+                {
+                    "id": "a2bbf46e-36af-5365-b05c-215416652230",
+                    "name": "The Golden Guardian",
+                    "position": {
+                        "x": 28.8,
+                        "y": 31.2
+                    },
+                    "drops": [
+                        {
+                            "name": "Azurite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Gilded Headstone",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    }
+                },
+                {
+                    "id": "9cc6982c-a091-50c9-886b-1625cecaa573",
+                    "name": "The Winged Terror",
+                    "position": {
+                        "x": 10.4,
+                        "y": 9.7
+                    },
+                    "drops": [
+                        {
+                            "name": "Realgar Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Giant Bird",
+                        "weakness": [
+                            "wind"
+                        ]
+                    }
+                }
+            ]
         },
         "critical_encounters": {
             "name": "Critical Encounters",
@@ -40,17 +324,537 @@
             "baseItem": {
                 "id": "",
                 "name": "",
-                "level": 0,
                 "position": {
                     "x": 0,
                     "y": 0
                 },
                 "drops": [],
                 "boss": {
-                    "name": ""
+                    "name": "",
+                    "weakness": []
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "d77478f1-e89e-527b-92dc-7d6e6e3838f2",
+                    "name": "Calamity Bound",
+                    "position": {
+                        "x": 14.5,
+                        "y": 37.5
+                    },
+                    "drops": [
+                        {
+                            "name": "Verdigris Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on the Cloister Demon",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Magic",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Voidsent Contract",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Cloister Demon",
+                        "weakness": [
+                            "ice"
+                        ]
+                    },
+                    "spawnedByMob": "Crescent Inkstain"
+                },
+                {
+                    "id": "55a80d97-9d8f-54f6-b329-aafc4f90bce9",
+                    "name": "Company of Stone",
+                    "position": {
+                        "x": 35,
+                        "y": 16.1
+                    },
+                    "drops": [
+                        {
+                            "name": "Caput Mortuum Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Megaloknight",
+                        "weakness": []
+                    }
+                },
+                {
+                    "id": "674ba46b-ba75-5ab4-816c-b29fea1359de",
+                    "name": "Crawling Death",
+                    "position": {
+                        "x": 35.1,
+                        "y": 32.2
+                    },
+                    "drops": [
+                        {
+                            "name": "Azurite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Death Claw",
+                        "weakness": [
+                            "ice"
+                        ]
+                    }
+                },
+                {
+                    "id": "8ba3d820-d2b3-5fdf-a0ac-243b55d6110c",
+                    "name": "Cursed Concern",
+                    "position": {
+                        "x": 22.9,
+                        "y": 10.5
+                    },
+                    "drops": [
+                        {
+                            "name": "Realgar Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on the Trade Tortoise",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Trade Tortoise",
+                        "weakness": [
+                            "ice"
+                        ]
+                    }
+                },
+                {
+                    "id": "920b96a6-d1f8-53f2-9e35-7280fa00532a",
+                    "name": "Eternal Watch",
+                    "position": {
+                        "x": 38.8,
+                        "y": 24.9
+                    },
+                    "drops": [
+                        {
+                            "name": "Caput Mortuum Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Repaired Lion",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    }
+                },
+                {
+                    "id": "34029bbd-00e0-520b-9cd1-dabf74f0de67",
+                    "name": "Flame of Dusk",
+                    "position": {
+                        "x": 10.1,
+                        "y": 18.2
+                    },
+                    "drops": [
+                        {
+                            "name": "Malachite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Hinkypunk",
+                        "weakness": [
+                            "wind"
+                        ]
+                    }
+                },
+                {
+                    "id": "3b114065-b514-5bfe-b78e-9fbc1ba74b18",
+                    "name": "From Times Bygone",
+                    "position": {
+                        "x": 5.5,
+                        "y": 26.4
+                    },
+                    "drops": [
+                        {
+                            "name": "Malachite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on the Mythic Idol",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Mythic Idol",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    },
+                    "spawnedByMob": "Crescent Byblos"
+                },
+                {
+                    "id": "110c70cd-8615-5ae2-93a3-f4d2baf2e065",
+                    "name": "Noise Complaint",
+                    "position": {
+                        "x": 30.5,
+                        "y": 14.1
+                    },
+                    "drops": [
+                        {
+                            "name": "Orpiment Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Neo Garula",
+                        "weakness": [
+                            "fire"
+                        ]
+                    },
+                    "spawnedByMob": "Crescent Garula"
+                },
+                {
+                    "id": "0d1f8437-7f45-5ddd-be68-bcc7b29e36d2",
+                    "name": "On the Hunt",
+                    "position": {
+                        "x": 34,
+                        "y": 20
+                    },
+                    "drops": [
+                        {
+                            "name": "Caput Mortuum Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Oracle's Soul Shard",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Necklace of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Lion Rampant",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    },
+                    "spawnedByMob": "Crescent Fan"
+                },
+                {
+                    "id": "c917e6dc-a5d4-551a-9122-fcede72fc0ac",
+                    "name": "Scourge of the Mind",
+                    "position": {
+                        "x": 27.4,
+                        "y": 35.9
+                    },
+                    "drops": [
+                        {
+                            "name": "Azurite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Mysterious Mindflayer",
+                        "weakness": [
+                            "fire"
+                        ]
+                    },
+                    "spawnedByMob": "Crescent Monk"
+                },
+                {
+                    "id": "5ccf1134-049e-5022-a928-32debefbf192",
+                    "name": "Shark Attack",
+                    "position": {
+                        "x": 19.1,
+                        "y": 4.5
+                    },
+                    "drops": [
+                        {
+                            "name": "Realgar Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on the Nymian Petalodus",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Nymian Petalodus",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    },
+                    "spawnedByMob": "Crescent Petalodite"
+                },
+                {
+                    "id": "9ceab593-3195-5ea4-8e19-026f651129fb",
+                    "name": "The Black Regiment",
+                    "position": {
+                        "x": 30.5,
+                        "y": 28.6
+                    },
+                    "drops": [
+                        {
+                            "name": "Orpiment Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Ranger's Soul Shard",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on Black Chocobos",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Black Star",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    }
+                },
+                {
+                    "id": "fb506d49-f74d-55fb-8e05-00b7de1d8bdf",
+                    "name": "The Unbridled",
+                    "position": {
+                        "x": 33.9,
+                        "y": 37.5
+                    },
+                    "drops": [
+                        {
+                            "name": "Azurite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Berserker's Soul Shard",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Notes on the Crescent Berserker",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Earrings of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Crescent Berserker",
+                        "weakness": [
+                            "fire"
+                        ]
+                    }
+                },
+                {
+                    "id": "c4ec8aef-903b-56b3-b125-db2a50ef05ae",
+                    "name": "Trial by Claw",
+                    "position": {
+                        "x": 13,
+                        "y": 22.8
+                    },
+                    "drops": [
+                        {
+                            "name": "Malachite Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Crystal Dragon",
+                        "weakness": [
+                            "wind"
+                        ]
+                    }
+                },
+                {
+                    "id": "3f39ff68-72f3-5836-bd67-477bffaad241",
+                    "name": "With Extreme Prejudice",
+                    "position": {
+                        "x": 14.5,
+                        "y": 9.2
+                    },
+                    "drops": [
+                        {
+                            "name": "Realgar Demiatma",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Blood",
+                            "amount": 1,
+                            "percent": null
+                        },
+                        {
+                            "name": "Occult Bracelet of Magic",
+                            "amount": 1,
+                            "percent": null
+                        }
+                    ],
+                    "boss": {
+                        "name": "Command Urn",
+                        "weakness": [
+                            "lightning"
+                        ]
+                    }
+                }
+            ]
         },
         "enemies": {
             "name": "Enemies",
@@ -67,17 +871,1363 @@
                 "id": "",
                 "name": "",
                 "level": 0,
+                "levelRange": null,
                 "position": {
                     "x": 0,
                     "y": 0
                 },
-                "aggro": null,
+                "spawnCondition": "",
+                "aggro": "",
+                "weakness": [],
                 "fate": {
                     "forFate": false,
                     "fateId": ""
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "2952d79e-ba06-5e0a-bc67-53c408337911",
+                    "name": "Animated Doll",
+                    "level": 5,
+                    "levelRange": null,
+                    "position": {
+                        "x": 36,
+                        "y": 21
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "11da9836-3814-55dd-9253-15d79c58a69d",
+                    "name": "Arcapetrified Netzach",
+                    "level": 26,
+                    "levelRange": null,
+                    "position": {
+                        "x": 7,
+                        "y": 29
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "19611a02-ec0a-58db-bc54-b7eabf20285b",
+                    "name": "Crescent Aetherscab",
+                    "level": 12,
+                    "levelRange": null,
+                    "position": {
+                        "x": 13,
+                        "y": 22
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "a11c22d1-afd7-5162-a441-d9d891bc1bdd",
+                    "name": "Crescent Apa",
+                    "level": 23,
+                    "levelRange": null,
+                    "position": {
+                        "x": 5,
+                        "y": 8
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "cf9f3242-c855-5bff-9814-be05048d201e",
+                    "name": "Crescent Armor",
+                    "level": 11,
+                    "levelRange": {
+                        "from": 1,
+                        "to": 11
+                    },
+                    "position": {
+                        "x": 36,
+                        "y": 7
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "8dc135d7-3fe3-598c-92ec-702f3a425677",
+                    "name": "Crescent Bachelor",
+                    "level": 17,
+                    "levelRange": null,
+                    "position": {
+                        "x": 34,
+                        "y": 34
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "69211a2c-95d8-52f0-9693-d9634eefb479",
+                    "name": "Crescent Bandersnatch",
+                    "level": 1,
+                    "levelRange": null,
+                    "position": {
+                        "x": 36,
+                        "y": 7
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "2933a52b-5ea8-5b91-a740-dbbff4b617ba",
+                    "name": "Crescent Blackguard",
+                    "level": 16,
+                    "levelRange": null,
+                    "position": {
+                        "x": 32,
+                        "y": 32
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "0169a9dd-b83a-5bfd-9788-b312e9b844b9",
+                    "name": "Crescent Blood Demon",
+                    "level": 15,
+                    "levelRange": null,
+                    "position": {
+                        "x": 28,
+                        "y": 35
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "8eadf330-af39-5292-96fd-926025212ae6",
+                    "name": "Crescent Bomb",
+                    "level": 28,
+                    "levelRange": {
+                        "from": 5,
+                        "to": 28
+                    },
+                    "position": {
+                        "x": 30.8,
+                        "y": 6.7
+                    },
+                    "spawnCondition": "Clear Skies",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "a6227484-07fc-5760-ad88-7359a7a43a94",
+                    "name": "Crescent Brachiosaur",
+                    "level": 10,
+                    "levelRange": null,
+                    "position": {
+                        "x": 15,
+                        "y": 27
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "c54a7724-c424-51ed-952b-f77e07e37d38",
+                    "name": "Crescent Byblos",
+                    "level": 13,
+                    "levelRange": null,
+                    "position": {
+                        "x": 7,
+                        "y": 25
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "63adfa4e-4658-59cf-aff0-2939bc3f43a0",
+                    "name": "Crescent Caoineag",
+                    "level": 23,
+                    "levelRange": {
+                        "from": 6,
+                        "to": 23
+                    },
+                    "position": {
+                        "x": 19,
+                        "y": 10
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "sight",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "619d98e8-d701-5895-b2c6-ad7ff4e8b187",
+                    "name": "Crescent Catoblepas",
+                    "level": 9,
+                    "levelRange": null,
+                    "position": {
+                        "x": 23,
+                        "y": 20
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "c2933e27-decf-5b6a-834c-978a40bcf9ba",
+                    "name": "Crescent Cetus",
+                    "level": 7,
+                    "levelRange": null,
+                    "position": {
+                        "x": 22,
+                        "y": 7
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "6f06cb12-d097-5d63-89c5-dffa25d9ff8b",
+                    "name": "Crescent Chaochu",
+                    "level": 2,
+                    "levelRange": null,
+                    "position": {
+                        "x": 32,
+                        "y": 12
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "da1ad18d-21e9-5606-bb77-8d02a36565eb",
+                    "name": "Crescent Chimera",
+                    "level": 26,
+                    "levelRange": null,
+                    "position": {
+                        "x": 11,
+                        "y": 34
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "2d064abb-0967-5e1e-acc1-ce54fe65a015",
+                    "name": "Crescent Claw",
+                    "level": 19,
+                    "levelRange": null,
+                    "position": {
+                        "x": 13,
+                        "y": 31
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "752f831a-599e-5948-abdb-276f656613dd",
+                    "name": "Crescent Collagen",
+                    "level": 19,
+                    "levelRange": null,
+                    "position": {
+                        "x": 8,
+                        "y": 28
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "3b770888-5002-5dac-9f7c-dc12792a3562",
+                    "name": "Crescent Demon Pawn",
+                    "level": 17,
+                    "levelRange": null,
+                    "position": {
+                        "x": 30,
+                        "y": 36
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "62ebe5f7-9536-5bc3-9d59-7238c18901cb",
+                    "name": "Crescent Dhruva",
+                    "level": 28,
+                    "levelRange": {
+                        "from": 5,
+                        "to": 28
+                    },
+                    "position": {
+                        "x": 38.6,
+                        "y": 12.6
+                    },
+                    "spawnCondition": "Clouds",
+                    "aggro": "spell",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "e39fee2f-632e-5b7b-9fd6-da696a213851",
+                    "name": "Crescent Diplocaulus",
+                    "level": 18,
+                    "levelRange": null,
+                    "position": {
+                        "x": 18,
+                        "y": 34
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "1bd7f103-96e5-572e-9973-5cd5ab17d9d7",
+                    "name": "Crescent Dirty Eye",
+                    "level": 21,
+                    "levelRange": null,
+                    "position": {
+                        "x": 32,
+                        "y": 26
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "2366a46b-04e5-5c88-8650-d86f01f2a269",
+                    "name": "Crescent Dullahan",
+                    "level": 28,
+                    "levelRange": {
+                        "from": 26,
+                        "to": 28
+                    },
+                    "position": {
+                        "x": 12,
+                        "y": 35
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "sound, blood",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "bf5df803-0506-5c32-bc46-bf6855210da6",
+                    "name": "Crescent Echos",
+                    "level": 14,
+                    "levelRange": null,
+                    "position": {
+                        "x": 22,
+                        "y": 33
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "d1ce3e56-1795-5c09-93c0-b33f72a82354",
+                    "name": "Crescent Fan",
+                    "level": 5,
+                    "levelRange": null,
+                    "position": {
+                        "x": 36,
+                        "y": 20
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "c8b36911-ad32-5d9d-a403-cdfe763cf2af",
+                    "name": "Crescent Flame",
+                    "level": 22,
+                    "levelRange": null,
+                    "position": {
+                        "x": 8,
+                        "y": 9
+                    },
+                    "spawnCondition": "",
+                    "aggro": "spell",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "93035e9d-bf41-5d5c-84fb-7a98ee869356",
+                    "name": "Crescent Flying Lizard",
+                    "level": 1,
+                    "levelRange": null,
+                    "position": {
+                        "x": 37,
+                        "y": 10
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "5639c027-d994-5741-a754-5d91c289f07f",
+                    "name": "Crescent Foobar",
+                    "level": 25,
+                    "levelRange": null,
+                    "position": {
+                        "x": 7,
+                        "y": 17
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "4902cc74-3cab-50c9-aca1-e5a074b087b5",
+                    "name": "Crescent Foper",
+                    "level": 11,
+                    "levelRange": null,
+                    "position": {
+                        "x": 16,
+                        "y": 28.5
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "59d1a0d7-7109-585b-a4f4-5a7bf32cb5d4",
+                    "name": "Crescent Gaelicat",
+                    "level": 2,
+                    "levelRange": null,
+                    "position": {
+                        "x": 37,
+                        "y": 12
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "29e89935-c90c-5627-8c07-4b8914e75556",
+                    "name": "Crescent Garula",
+                    "level": 1,
+                    "levelRange": null,
+                    "position": {
+                        "x": 33,
+                        "y": 7
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "35632587-540d-5b96-ab27-5802f29c5ebc",
+                    "name": "Crescent Geshunpest",
+                    "level": 24,
+                    "levelRange": {
+                        "from": 12,
+                        "to": 24
+                    },
+                    "position": {
+                        "x": 13,
+                        "y": 21
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "sight",
+                    "weakness": [],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "d596877e-e42c-58d8-b264-35c8b4e3dacc",
+                    "name": "Crescent Ghost",
+                    "level": 20,
+                    "levelRange": {
+                        "from": 4,
+                        "to": 20
+                    },
+                    "position": {
+                        "x": 30,
+                        "y": 24
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "proximity",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "33d21433-325e-5e3a-9396-a42dc7a42ba3",
+                    "name": "Crescent Golem",
+                    "level": 8,
+                    "levelRange": null,
+                    "position": {
+                        "x": 12,
+                        "y": 8
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "6bd63c71-ea0c-5b13-b6b0-3ca1c959591f",
+                    "name": "Crescent Goobbue",
+                    "level": 6,
+                    "levelRange": null,
+                    "position": {
+                        "x": 20,
+                        "y": 10
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "2527291b-8d25-52fd-a371-c6a006d226a9",
+                    "name": "Crescent Gourmand",
+                    "level": 20,
+                    "levelRange": {
+                        "from": 18,
+                        "to": 20
+                    },
+                    "position": {
+                        "x": 17,
+                        "y": 33
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "90d33b4a-1dd7-59cd-843f-d59f648c6987",
+                    "name": "Crescent Haagenti",
+                    "level": 24,
+                    "levelRange": null,
+                    "position": {
+                        "x": 4,
+                        "y": 19
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sound",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "63506ee2-d353-5ed3-bc88-47f0539c0e38",
+                    "name": "Crescent Harpuia",
+                    "level": 11,
+                    "levelRange": null,
+                    "position": {
+                        "x": 11,
+                        "y": 17
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "8cbfecc2-fa47-566a-b014-849d5fbc2abc",
+                    "name": "Crescent Headstone",
+                    "level": 16,
+                    "levelRange": null,
+                    "position": {
+                        "x": 31,
+                        "y": 30
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "cedeee9a-dfa6-5cde-bf40-339339c91dca",
+                    "name": "Crescent Inkstain",
+                    "level": 20,
+                    "levelRange": null,
+                    "position": {
+                        "x": 13,
+                        "y": 35
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "b4e8948a-8ed8-5bcc-84f5-ef1ec7349ae8",
+                    "name": "Crescent Karlabos",
+                    "level": 6,
+                    "levelRange": null,
+                    "position": {
+                        "x": 23,
+                        "y": 10
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "a45339d3-f12d-543e-aa03-8886e3775842",
+                    "name": "Crescent Leshy",
+                    "level": 3,
+                    "levelRange": null,
+                    "position": {
+                        "x": 28,
+                        "y": 12
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "76e63c18-bf3b-5ec1-ad2a-db52416c3052",
+                    "name": "Crescent Lion Statant",
+                    "level": 20,
+                    "levelRange": null,
+                    "position": {
+                        "x": 37,
+                        "y": 23
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "3ca52e3c-441d-5a9f-a11c-0c91496975e6",
+                    "name": "Crescent Marolith",
+                    "level": 4,
+                    "levelRange": null,
+                    "position": {
+                        "x": 32,
+                        "y": 18
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "a76b86f3-6f49-58a7-93d6-f843297e7274",
+                    "name": "Crescent Meraevis",
+                    "level": 9,
+                    "levelRange": null,
+                    "position": {
+                        "x": 25,
+                        "y": 22
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "754390a0-5f4b-553c-a756-17a6742877af",
+                    "name": "Crescent Mimic",
+                    "level": 28,
+                    "levelRange": {
+                        "from": 5,
+                        "to": 28
+                    },
+                    "position": {
+                        "x": 27.6,
+                        "y": 12
+                    },
+                    "spawnCondition": "Atmospheric Phantasms",
+                    "aggro": "proximity",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "135c005a-69bc-5c35-8a31-d41b75e6f55f",
+                    "name": "Crescent Monk",
+                    "level": 15,
+                    "levelRange": null,
+                    "position": {
+                        "x": 27,
+                        "y": 34
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "96ee34d9-e0fc-5317-8f9c-f0f025a2d787",
+                    "name": "Crescent Mousse",
+                    "level": 28,
+                    "levelRange": {
+                        "from": 5,
+                        "to": 28
+                    },
+                    "position": {
+                        "x": 33.4,
+                        "y": 12.5
+                    },
+                    "spawnCondition": "Rain",
+                    "aggro": "sight",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "720c9a29-add4-58de-8b1c-eeca9b54fd6d",
+                    "name": "Crescent Panther",
+                    "level": 14,
+                    "levelRange": null,
+                    "position": {
+                        "x": 29,
+                        "y": 29
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "5ca3d5bf-81fd-511d-92f2-afd8c03c71bc",
+                    "name": "Crescent Petalodite",
+                    "level": 7,
+                    "levelRange": null,
+                    "position": {
+                        "x": 17,
+                        "y": 9
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "c69b00c6-5998-50c3-b086-683a43191916",
+                    "name": "Crescent Rosebear",
+                    "level": 11,
+                    "levelRange": null,
+                    "position": {
+                        "x": 16,
+                        "y": 19
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "cb8444e5-1360-51c8-950c-6d4760f29ad6",
+                    "name": "Crescent Satana",
+                    "level": 27,
+                    "levelRange": null,
+                    "position": {
+                        "x": 11,
+                        "y": 36
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "wind"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "99315734-e614-570d-a3f7-fd9376ec6b79",
+                    "name": "Crescent Snapweed",
+                    "level": 3,
+                    "levelRange": null,
+                    "position": {
+                        "x": 32,
+                        "y": 15
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "411aa027-a8a9-5053-bf4e-dd07f57b4525",
+                    "name": "Crescent Taurus",
+                    "level": 12,
+                    "levelRange": null,
+                    "position": {
+                        "x": 13,
+                        "y": 24
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "ae062836-f2f7-5ad1-bb16-486a1a14c9e2",
+                    "name": "Crescent Tormentor",
+                    "level": 4,
+                    "levelRange": null,
+                    "position": {
+                        "x": 37,
+                        "y": 16
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "6de570e5-c589-5ee6-9926-57c8fc8d2936",
+                    "name": "Crescent Triceratops",
+                    "level": 10,
+                    "levelRange": null,
+                    "position": {
+                        "x": 27,
+                        "y": 26
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "8620e008-f264-5b77-8db1-c271514c3068",
+                    "name": "Crescent Troubadour",
+                    "level": 21,
+                    "levelRange": {
+                        "from": 14,
+                        "to": 21
+                    },
+                    "position": {
+                        "x": 30,
+                        "y": 30
+                    },
+                    "spawnCondition": "Night",
+                    "aggro": "sound",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "f3e7938b-d6fa-510b-aa0b-6af112c921af",
+                    "name": "Crescent Uragnite",
+                    "level": 8,
+                    "levelRange": null,
+                    "position": {
+                        "x": 15,
+                        "y": 10
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "2b610896-7cbc-5137-bd50-f370f81eb54c",
+                    "name": "Crescent Void Viper",
+                    "level": 18,
+                    "levelRange": null,
+                    "position": {
+                        "x": 14,
+                        "y": 33
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "f8ecbf58-21cd-5e81-a0f0-1b8381486bbb",
+                    "name": "Crescent Zaghnal",
+                    "level": 22,
+                    "levelRange": null,
+                    "position": {
+                        "x": 8,
+                        "y": 9
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "fire"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "8d7ad645-3396-5632-b139-35820a8c6aeb",
+                    "name": "Crescent Zangbeto",
+                    "level": 25,
+                    "levelRange": null,
+                    "position": {
+                        "x": 6,
+                        "y": 16
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "9d84d828-b546-5841-80ab-ff0ca7f11b22",
+                    "name": "Crescent Zaratan",
+                    "level": 23,
+                    "levelRange": null,
+                    "position": {
+                        "x": 7,
+                        "y": 11
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sound",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "f421f35c-0729-5ac0-98c3-19fc82a53d5b",
+                    "name": "Crescent Zirnitra",
+                    "level": 28,
+                    "levelRange": null,
+                    "position": {
+                        "x": 9,
+                        "y": 37
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "709ea093-2ae3-56e1-b1ac-8b4a1d2d1cdb",
+                    "name": "Lesser Cry of Havoc",
+                    "level": 24,
+                    "levelRange": null,
+                    "position": {
+                        "x": 7,
+                        "y": 21
+                    },
+                    "spawnCondition": "",
+                    "aggro": "sight",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "72733075-70cc-5977-8ddf-0902efd5b1b4",
+                    "name": "Menacing Dahak",
+                    "level": 13,
+                    "levelRange": null,
+                    "position": {
+                        "x": 10,
+                        "y": 23
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "be08dd25-4387-5dd9-95ff-8b65151ca127",
+                    "name": "Occult Golem",
+                    "level": 27,
+                    "levelRange": null,
+                    "position": {
+                        "x": 11,
+                        "y": 36
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "dc2354ec-92f1-531e-86c2-e8c670a96303",
+                    "name": "Occult Isleblazer",
+                    "level": 28,
+                    "levelRange": null,
+                    "position": {
+                        "x": 9,
+                        "y": 35
+                    },
+                    "spawnCondition": "",
+                    "aggro": "spell",
+                    "weakness": [
+                        "ice"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                },
+                {
+                    "id": "4ad3dcea-52a6-5577-bf91-3be29160b621",
+                    "name": "Occult Sculpture",
+                    "level": 21,
+                    "levelRange": null,
+                    "position": {
+                        "x": 36,
+                        "y": 25
+                    },
+                    "spawnCondition": "",
+                    "aggro": "",
+                    "weakness": [
+                        "lightning"
+                    ],
+                    "fate": {
+                        "forFate": false,
+                        "fateId": ""
+                    }
+                }
+            ]
         },
         "aethernet": {
             "name": "Aethernet",
@@ -93,13 +2243,53 @@
             "baseItem": {
                 "id": "",
                 "name": "",
-                "level": 0,
                 "position": {
                     "x": 0,
                     "y": 0
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "896bd816-9d77-5d13-9159-d1306ecdcfea",
+                    "name": "Expedition Base Camp",
+                    "position": {
+                        "x": 38,
+                        "y": 7.5
+                    }
+                },
+                {
+                    "id": "fd2cd68d-abc7-5a4f-a334-50fef40af688",
+                    "name": "The Wanderer's Haven",
+                    "position": {
+                        "x": 17.9,
+                        "y": 9
+                    }
+                },
+                {
+                    "id": "ae577c59-3ea8-5f59-bba2-b5f534b41710",
+                    "name": "Crystallized Caverns",
+                    "position": {
+                        "x": 14.1,
+                        "y": 18.8
+                    }
+                },
+                {
+                    "id": "28e2bb54-df97-5971-83d3-880ce4a7a49c",
+                    "name": "Stonemarsh",
+                    "position": {
+                        "x": 13.7,
+                        "y": 27.1
+                    }
+                },
+                {
+                    "id": "2cd53224-ab7f-5f59-aaae-deb9efe258e2",
+                    "name": "Eldergrowth",
+                    "position": {
+                        "x": 27.5,
+                        "y": 27.5
+                    }
+                }
+            ]
         },
         "quests": {
             "name": "Quests",
@@ -137,12 +2327,626 @@
             "baseItem": {
                 "id": "",
                 "name": "",
+                "grade": "",
                 "position": {
                     "x": 0,
                     "y": 0
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "41d96c8c-0c62-55ee-8b7b-ddf36ce0511a",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 33.8,
+                        "y": 7.4
+                    }
+                },
+                {
+                    "id": "6edbf5f1-9971-50f9-91d0-74f56a6f9cfe",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 34.6,
+                        "y": 11.6
+                    }
+                },
+                {
+                    "id": "65954cb7-f724-57e3-ac5b-283dec99130a",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 39.1,
+                        "y": 13.8
+                    }
+                },
+                {
+                    "id": "75be3af8-eec1-5b13-b22a-5a5b336cba18",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 37.3,
+                        "y": 16.2
+                    }
+                },
+                {
+                    "id": "9c2901b1-49e3-557a-bc55-19dd091b91a8",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 30.6,
+                        "y": 9
+                    }
+                },
+                {
+                    "id": "b7829928-88c2-5d5f-a824-6b6bb3de82cf",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 29,
+                        "y": 11.9
+                    }
+                },
+                {
+                    "id": "b3806514-9d9f-506a-9b69-3045ef8e675c",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 29.1,
+                        "y": 6.3
+                    }
+                },
+                {
+                    "id": "3392e625-fb7e-5002-adf2-e09cebc98771",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 24.2,
+                        "y": 9.6
+                    }
+                },
+                {
+                    "id": "10d09f30-8327-5c22-bd38-9f61026f48a3",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 19.1,
+                        "y": 6.9
+                    }
+                },
+                {
+                    "id": "d9275bf1-ec24-5379-b407-bf319ac03f47",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 18.6,
+                        "y": 13.2
+                    }
+                },
+                {
+                    "id": "e97ce1ca-d3c7-5a85-b8f3-15cbc033688c",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 14.6,
+                        "y": 13.8
+                    }
+                },
+                {
+                    "id": "e2e52d47-247b-52f8-86b5-5e9ddfd0ba4f",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 12.6,
+                        "y": 6
+                    }
+                },
+                {
+                    "id": "5308dcb3-e6d1-5463-89a5-5044657e3a8c",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 9.9,
+                        "y": 4.2
+                    }
+                },
+                {
+                    "id": "0b27e5d1-0ad0-52ab-8b37-6351f267c955",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 6.5,
+                        "y": 6.9
+                    }
+                },
+                {
+                    "id": "1190fed7-5a5a-504e-b710-6241b4fadc00",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 4,
+                        "y": 7.8
+                    }
+                },
+                {
+                    "id": "7d8cc28d-7270-5c88-b80e-4a7d1d4224cd",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 28.6,
+                        "y": 15.7
+                    }
+                },
+                {
+                    "id": "a512f0ca-28d0-54aa-bd02-e7e4bbabfbce",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 22.6,
+                        "y": 15.7
+                    }
+                },
+                {
+                    "id": "0df12eb4-9686-5211-aa7b-676eee1b546c",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 21.2,
+                        "y": 24.6
+                    }
+                },
+                {
+                    "id": "5c615b34-cdf3-539f-9374-4c0520f17ae7",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 18.6,
+                        "y": 18.6
+                    }
+                },
+                {
+                    "id": "5fd788d9-63c4-5c6c-a96f-1f3add6a36b6",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 11.7,
+                        "y": 17.4
+                    }
+                },
+                {
+                    "id": "07e80352-d7ed-571f-b98c-c3a80a4e5a7d",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 11.7,
+                        "y": 10.9
+                    }
+                },
+                {
+                    "id": "e09c2e48-98c0-5366-a750-0ceb470fa374",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 8.3,
+                        "y": 10.2
+                    }
+                },
+                {
+                    "id": "a6b2b5f2-85ff-58f9-9804-67c3e246986f",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 7.5,
+                        "y": 13.8
+                    }
+                },
+                {
+                    "id": "562d2111-58a2-5785-837b-e0a56126447d",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 6.3,
+                        "y": 17
+                    }
+                },
+                {
+                    "id": "a71fb775-e00f-55bd-ae11-80e906e0d2eb",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 4.4,
+                        "y": 19.6
+                    }
+                },
+                {
+                    "id": "e3539699-f530-5761-b2a1-d865f79857de",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 16.3,
+                        "y": 24.2
+                    }
+                },
+                {
+                    "id": "771c2c07-988e-5b4a-82e0-cd2acc9c04f7",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 12.4,
+                        "y": 22.1
+                    }
+                },
+                {
+                    "id": "3b2fe41b-60d1-5004-a2f1-d4b105ea4255",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 7.2,
+                        "y": 25.4
+                    }
+                },
+                {
+                    "id": "850a7593-6707-5d4e-b907-1cd7b447e6d3",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 6.2,
+                        "y": 23.3
+                    }
+                },
+                {
+                    "id": "b5d43e6c-77c0-57b4-b0a3-dab924507ad4",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 30.8,
+                        "y": 19.8
+                    }
+                },
+                {
+                    "id": "0a72af0d-a3f4-545c-bb3e-7b153936a446",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 26.4,
+                        "y": 21.1
+                    }
+                },
+                {
+                    "id": "1d65f323-4f7b-5eb6-bbfe-680e87604679",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 36,
+                        "y": 20.3
+                    }
+                },
+                {
+                    "id": "9ca5f3ac-3441-5c36-94a6-7c915f96547a",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 37.8,
+                        "y": 23.8
+                    }
+                },
+                {
+                    "id": "03a5018f-f9f1-50de-9de1-c0c2431e9317",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 33.5,
+                        "y": 23.7
+                    }
+                },
+                {
+                    "id": "578cef10-a151-5646-8030-132e746168ed",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 27.3,
+                        "y": 26
+                    }
+                },
+                {
+                    "id": "b6a1fba0-49e1-5663-bf35-e30ea1340fc3",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 8.5,
+                        "y": 29.6
+                    }
+                },
+                {
+                    "id": "1098ce2a-6494-5a20-a15d-205bce6929b7",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 6.9,
+                        "y": 32.7
+                    }
+                },
+                {
+                    "id": "b03a90be-4206-548a-a324-1e02f9d8ca43",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 5.8,
+                        "y": 35.5
+                    }
+                },
+                {
+                    "id": "7d568b9a-3e28-5eb8-83ed-e8a6fcf711e9",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 7.4,
+                        "y": 37.4
+                    }
+                },
+                {
+                    "id": "e19a6679-4cc4-51a8-b73d-0a424d91e305",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 8.3,
+                        "y": 34.3
+                    }
+                },
+                {
+                    "id": "753c58d0-d383-5eaa-991e-6d2e1a68330a",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 10.5,
+                        "y": 34
+                    }
+                },
+                {
+                    "id": "78510220-030a-5f40-a424-36916f028ee8",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 14.1,
+                        "y": 32.4
+                    }
+                },
+                {
+                    "id": "a429f7c5-a57b-59a5-8534-0fe7c8b14a81",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 17.9,
+                        "y": 33.4
+                    }
+                },
+                {
+                    "id": "291e460e-1126-5108-93b9-7f0fb88feda3",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 16.7,
+                        "y": 37.9
+                    }
+                },
+                {
+                    "id": "81aa2ab5-bab8-5c2d-9eaa-4ae441b0f7cb",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 22.2,
+                        "y": 34.3
+                    }
+                },
+                {
+                    "id": "7e45bcf6-bdc4-579d-bd46-71b90c5ed4b7",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 24.6,
+                        "y": 37
+                    }
+                },
+                {
+                    "id": "d43e92bb-7848-5e05-9cba-e16646b1c860",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 26.7,
+                        "y": 31.6
+                    }
+                },
+                {
+                    "id": "3dfc02b2-d74e-56fc-a39e-fdacaf0c2616",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 27.4,
+                        "y": 34.3
+                    }
+                },
+                {
+                    "id": "7523040c-981d-5654-bfa7-a5a8affec006",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 9.5,
+                        "y": 37.5
+                    }
+                },
+                {
+                    "id": "35f52e18-bb61-578a-afe3-d8f8eb3d9aac",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 30.3,
+                        "y": 35.3
+                    }
+                },
+                {
+                    "id": "61021a1c-8f0e-5895-ba2b-d8a48a9a54ea",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 31.5,
+                        "y": 32.4
+                    }
+                },
+                {
+                    "id": "fe58d490-2288-52ae-b33d-f7d6dcb9b464",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 33.7,
+                        "y": 33.9
+                    }
+                },
+                {
+                    "id": "ed1a677c-f86c-5e37-ba22-bd616bc52910",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 38.7,
+                        "y": 33.2
+                    }
+                },
+                {
+                    "id": "c2f874d1-86bf-50b8-8cbb-174627ea5209",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 38.2,
+                        "y": 35.4
+                    }
+                },
+                {
+                    "id": "c2bf39f7-5266-519d-8b9b-b58205926897",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 38.3,
+                        "y": 30.1
+                    }
+                },
+                {
+                    "id": "5b449fd0-9ebe-5780-8712-5c8946fabd57",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 13.4,
+                        "y": 25.2
+                    }
+                },
+                {
+                    "id": "b152b057-f5ee-5144-9b2c-e1664a635d75",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 13.2,
+                        "y": 27.3
+                    }
+                },
+                {
+                    "id": "6a5918cc-6e95-5140-9cc8-e6555086f917",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 34.6,
+                        "y": 28.9
+                    }
+                },
+                {
+                    "id": "94f0d92d-c70c-5887-8005-7bf7091aad2c",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 21.6,
+                        "y": 30.2
+                    }
+                },
+                {
+                    "id": "bc3c2587-fcec-51cc-9ea8-cb43225ce074",
+                    "name": "",
+                    "grade": "bronze",
+                    "position": {
+                        "x": 7.1,
+                        "y": 19.8
+                    }
+                },
+                {
+                    "id": "6f600b51-7a0d-5387-bede-ac21d9fb6dfd",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 4.8,
+                        "y": 4.8
+                    }
+                },
+                {
+                    "id": "27939d18-e382-5f64-bb75-f153c8ec54f3",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 5.6,
+                        "y": 15.1
+                    }
+                },
+                {
+                    "id": "fb867965-b9f0-5416-88ff-301e406c81d7",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 8,
+                        "y": 17.5
+                    }
+                },
+                {
+                    "id": "56659b29-b89d-510d-99b9-b78ef0aa7930",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 15.8,
+                        "y": 28.8
+                    }
+                },
+                {
+                    "id": "7ee8d6f7-c49a-57d1-bf87-d42d2b34ecb8",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 8.3,
+                        "y": 35.6
+                    }
+                },
+                {
+                    "id": "12d8edca-0da3-5b6f-af4b-f104853c75a0",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 32,
+                        "y": 26.2
+                    }
+                },
+                {
+                    "id": "5590d5fd-aceb-50c1-8d95-cc904b1e7956",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 35.5,
+                        "y": 33.5
+                    }
+                },
+                {
+                    "id": "901bf082-b4cb-5194-a72b-a5df377c3828",
+                    "name": "",
+                    "grade": "silver",
+                    "position": {
+                        "x": 36.7,
+                        "y": 18.8
+                    }
+                }
+            ]
         },
         "bunny_coffers": {
             "name": "Happy Bunny Coffers",
@@ -152,7 +2956,7 @@
                 "drawStyle": "default",
                 "primary": {
                     "strategy": "static",
-                    "value": "lock"
+                    "value": "carrot"
                 }
             },
             "baseItem": {
@@ -163,10 +2967,211 @@
                     "y": 0
                 }
             },
-            "items": []
+            "items": [
+                {
+                    "id": "5b03ad09-e549-59c1-8eba-7984437613be",
+                    "name": "",
+                    "position": {
+                        "x": 19.4,
+                        "y": 5.4
+                    }
+                },
+                {
+                    "id": "68610c6c-b3ae-51a8-a027-60008867bf37",
+                    "name": "",
+                    "position": {
+                        "x": 11.7,
+                        "y": 6.6
+                    }
+                },
+                {
+                    "id": "9094094d-c252-5014-aec6-59b9d8530fd7",
+                    "name": "",
+                    "position": {
+                        "x": 13.8,
+                        "y": 11.2
+                    }
+                },
+                {
+                    "id": "04760958-c334-5c34-bac5-9216eacee340",
+                    "name": "",
+                    "position": {
+                        "x": 6,
+                        "y": 7.6
+                    }
+                },
+                {
+                    "id": "3e6233cb-5086-57ce-8feb-87de945f4fb3",
+                    "name": "",
+                    "position": {
+                        "x": 7,
+                        "y": 12.4
+                    }
+                },
+                {
+                    "id": "d4353e33-5446-5031-9a0e-1477b3201274",
+                    "name": "",
+                    "position": {
+                        "x": 10.8,
+                        "y": 14.3
+                    }
+                },
+                {
+                    "id": "5a10dcb8-5b11-5788-9ac8-c47214a67f93",
+                    "name": "",
+                    "position": {
+                        "x": 4.4,
+                        "y": 20.5
+                    }
+                },
+                {
+                    "id": "6b5feded-436c-5c48-9c5c-00714baaa712",
+                    "name": "",
+                    "position": {
+                        "x": 6.6,
+                        "y": 23.3
+                    }
+                },
+                {
+                    "id": "291040ac-c6ce-55a5-876a-a87da6463dad",
+                    "name": "",
+                    "position": {
+                        "x": 12.9,
+                        "y": 25.2
+                    }
+                },
+                {
+                    "id": "3b66d90b-a937-5fd0-a194-18796426453f",
+                    "name": "",
+                    "position": {
+                        "x": 18.4,
+                        "y": 23.6
+                    }
+                },
+                {
+                    "id": "7091282b-762e-560b-b7fc-8dca3e969c3b",
+                    "name": "",
+                    "position": {
+                        "x": 6.9,
+                        "y": 28
+                    }
+                },
+                {
+                    "id": "d37648c7-0376-50af-a0d3-556d9baf6c21",
+                    "name": "",
+                    "position": {
+                        "x": 9.9,
+                        "y": 34.9
+                    }
+                },
+                {
+                    "id": "acf38ea2-646a-503c-8cbe-82653147d659",
+                    "name": "",
+                    "position": {
+                        "x": 7.5,
+                        "y": 35.9
+                    }
+                },
+                {
+                    "id": "8ee24bf9-71cb-5551-97dc-61c14897b92e",
+                    "name": "",
+                    "position": {
+                        "x": 5.5,
+                        "y": 38.8
+                    }
+                },
+                {
+                    "id": "14306c5c-1273-50c0-93f3-bf5857d6d491",
+                    "name": "",
+                    "position": {
+                        "x": 16,
+                        "y": 38.3
+                    }
+                },
+                {
+                    "id": "cd3c6e2c-fc62-5c2a-ae34-676ec96217b3",
+                    "name": "",
+                    "position": {
+                        "x": 26.3,
+                        "y": 37.5
+                    }
+                },
+                {
+                    "id": "4b358d98-e882-5a91-af75-7402640bf6f1",
+                    "name": "",
+                    "position": {
+                        "x": 27.3,
+                        "y": 32.8
+                    }
+                },
+                {
+                    "id": "969650f4-4407-592f-b49d-f96e4d2826d7",
+                    "name": "",
+                    "position": {
+                        "x": 30.8,
+                        "y": 32.8
+                    }
+                },
+                {
+                    "id": "ffc97e81-1d21-583c-ac28-3ad762d8814a",
+                    "name": "",
+                    "position": {
+                        "x": 36.7,
+                        "y": 32.2
+                    }
+                },
+                {
+                    "id": "efd440d4-6935-52ad-a010-637c6feb1d74",
+                    "name": "",
+                    "position": {
+                        "x": 38.3,
+                        "y": 37.4
+                    }
+                },
+                {
+                    "id": "a17c6302-ee52-52c3-9442-50fcd538bb2d",
+                    "name": "",
+                    "position": {
+                        "x": 38.6,
+                        "y": 17.2
+                    }
+                },
+                {
+                    "id": "6d0b49cc-c0f2-59fd-8704-a464cc8029eb",
+                    "name": "",
+                    "position": {
+                        "x": 38,
+                        "y": 18.6
+                    }
+                },
+                {
+                    "id": "988618da-8a57-5616-a565-7f603bbe6bb8",
+                    "name": "",
+                    "position": {
+                        "x": 31,
+                        "y": 24.4
+                    }
+                },
+                {
+                    "id": "f3ae4cca-940a-575f-ab3f-55b1db6f6955",
+                    "name": "",
+                    "position": {
+                        "x": 35.2,
+                        "y": 24
+                    }
+                },
+                {
+                    "id": "48abfee7-eccf-55a2-b6ba-80744ea5ebf0",
+                    "name": "",
+                    "position": {
+                        "x": 36,
+                        "y": 27
+                    }
+                }
+            ]
         },
         "pots": {
-            "name": "Pots",
+            "name": "Persistent Pots",
             "type": "loot",
             "order": 0,
             "icon": {
@@ -182,9 +3187,1055 @@
                 "position": {
                     "x": 0,
                     "y": 0
-                }
+                },
+                "fate": {
+                    "fateId": "",
+                    "bonus": false
+                },
+                "direction": ""
             },
-            "items": []
+            "items": [
+                {
+                    "id": "27ef1ca8-becb-5fe5-8203-425bd622131a",
+                    "name": "",
+                    "position": {
+                        "x": 15.2,
+                        "y": 20.7
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "W"
+                },
+                {
+                    "id": "2009c964-29c7-548e-a7ed-ecc06238343b",
+                    "name": "",
+                    "position": {
+                        "x": 6.6,
+                        "y": 38
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "3d2d42f3-80cb-50bd-bdec-e3fc8e7bbbe7",
+                    "name": "",
+                    "position": {
+                        "x": 8.5,
+                        "y": 19.9
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "3b232e4f-73a9-52dd-b178-9cc1a1ac83b5",
+                    "name": "",
+                    "position": {
+                        "x": 9.4,
+                        "y": 38.6
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "S"
+                },
+                {
+                    "id": "4c9bb08d-4046-58a5-894d-81f7c5e1a434",
+                    "name": "",
+                    "position": {
+                        "x": 35.5,
+                        "y": 28.6
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "id": "69ce7323-14e0-598b-962f-a1e4bfe8d721",
+                    "name": "",
+                    "position": {
+                        "x": 32.8,
+                        "y": 5.3
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "fff91bf9-bf5a-538e-9d0f-5102aba8eca6",
+                    "name": "",
+                    "position": {
+                        "x": 37.6,
+                        "y": 14.4
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "ad758da3-6f70-5b5d-90f8-1fa964d876e7",
+                    "name": "",
+                    "position": {
+                        "x": 35.1,
+                        "y": 17.9
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "ac1d055b-e948-5ba8-8472-5c62020d29b9",
+                    "name": "",
+                    "position": {
+                        "x": 38.9,
+                        "y": 19.8
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "017fd0d3-19d1-5217-82d3-9f62c591af6b",
+                    "name": "",
+                    "position": {
+                        "x": 39,
+                        "y": 21.2
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "dd64c89f-d3a3-5211-bc73-c10c94e70996",
+                    "name": "",
+                    "position": {
+                        "x": 32.9,
+                        "y": 26.9
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "id": "32026f72-9194-5280-a03c-1dc01d81991d",
+                    "name": "",
+                    "position": {
+                        "x": 34.7,
+                        "y": 24.7
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "id": "faf57c2a-f144-5312-b526-5ba208b27b47",
+                    "name": "",
+                    "position": {
+                        "x": 33.6,
+                        "y": 25.1
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "id": "fe726885-c67c-5484-abdf-0c7981508a1f",
+                    "name": "",
+                    "position": {
+                        "x": 37.1,
+                        "y": 32.7
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "83b88e25-d5c1-53ba-b2eb-9e502c1d1673",
+                    "name": "",
+                    "position": {
+                        "x": 29.7,
+                        "y": 33.1
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "b4e047da-b6e6-5c77-876f-ae04f714585a",
+                    "name": "",
+                    "position": {
+                        "x": 30.2,
+                        "y": 38.9
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "991e589d-369e-5d8e-bf16-461866fc01cc",
+                    "name": "",
+                    "position": {
+                        "x": 29.4,
+                        "y": 19
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "6d3f8bd5-62c5-5b1b-9c24-913f62541d67",
+                    "name": "",
+                    "position": {
+                        "x": 27.3,
+                        "y": 22.6
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "22f0dddc-9de5-5fdf-a252-1711c37f98af",
+                    "name": "",
+                    "position": {
+                        "x": 26.8,
+                        "y": 28
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "S"
+                },
+                {
+                    "id": "87a08769-6645-5618-a1d9-678740c74c25",
+                    "name": "",
+                    "position": {
+                        "x": 25.4,
+                        "y": 33.8
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "53cefced-6d4a-599a-9acc-90a5df04af64",
+                    "name": "",
+                    "position": {
+                        "x": 18.1,
+                        "y": 30.2
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "e02fc2ef-9a83-5d18-8136-687c11851fc5",
+                    "name": "",
+                    "position": {
+                        "x": 8.2,
+                        "y": 17.2
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "W"
+                },
+                {
+                    "id": "b5115dc2-3d8f-5033-b01e-b375422b6b14",
+                    "name": "",
+                    "position": {
+                        "x": 6.8,
+                        "y": 35.1
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "464b84ef-7197-5262-a162-d7087a436eae",
+                    "name": "",
+                    "position": {
+                        "x": 5,
+                        "y": 33.2
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "W"
+                },
+                {
+                    "id": "0bbec3e8-b8e6-5285-938f-b3e416f078ae",
+                    "name": "",
+                    "position": {
+                        "x": 17.7,
+                        "y": 7.1
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "83127d0d-3b9a-5a85-859d-99903d3169b7",
+                    "name": "",
+                    "position": {
+                        "x": 17.6,
+                        "y": 15.7
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "befd31b8-6d1d-5c39-81d3-efed13ad294d",
+                    "name": "",
+                    "position": {
+                        "x": 10.8,
+                        "y": 8.6
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "352d9f08-15e6-5ea1-86b1-190bb520cc1f",
+                    "name": "",
+                    "position": {
+                        "x": 7.9,
+                        "y": 6.3
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "a7d09e5a-bf5a-5a12-a443-f2afd49fa48f",
+                    "name": "",
+                    "position": {
+                        "x": 7.5,
+                        "y": 8.8
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "02b15e93-5847-57f4-8318-09549b671532",
+                    "name": "",
+                    "position": {
+                        "x": 5.3,
+                        "y": 8.5
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "b805b8ea-accc-50aa-93b4-698beb298f18",
+                    "name": "",
+                    "position": {
+                        "x": 14.8,
+                        "y": 4.2
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "acb6ffa8-900d-5057-a561-254dd5afd472",
+                    "name": "",
+                    "position": {
+                        "x": 20.2,
+                        "y": 37.9
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "SE"
+                },
+                {
+                    "id": "2fb72cc5-27b5-514f-a631-be733b5e29ac",
+                    "name": "",
+                    "position": {
+                        "x": 21.9,
+                        "y": 13.1
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "ca49ab05-090f-5a99-ab5e-945d371d4f89",
+                    "name": "",
+                    "position": {
+                        "x": 20.7,
+                        "y": 18
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "b6f63e61-d504-56da-a98c-e20b5753cc08",
+                    "name": "",
+                    "position": {
+                        "x": 12.1,
+                        "y": 19.7
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "W"
+                },
+                {
+                    "id": "520789be-aaaf-5863-87fc-f2c8bc796fa0",
+                    "name": "",
+                    "position": {
+                        "x": 7.3,
+                        "y": 18.7
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "9658a843-4233-5c66-8476-b0b3895d5366",
+                    "name": "",
+                    "position": {
+                        "x": 15,
+                        "y": 23.1
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "1b3cf813-5658-5dc6-b3cc-0e87027ba4fb",
+                    "name": "",
+                    "position": {
+                        "x": 5.5,
+                        "y": 21.4
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "efad509f-ea90-527c-862e-0d90388849da",
+                    "name": "",
+                    "position": {
+                        "x": 5.2,
+                        "y": 16.9
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "b0f0aa7e-6029-5f22-93f2-1e21a502705e",
+                    "name": "",
+                    "position": {
+                        "x": 28.1,
+                        "y": 8.3
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "0d12b633-326e-5ca6-8f57-558ca77799dc",
+                    "name": "",
+                    "position": {
+                        "x": 3.8,
+                        "y": 35.7
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "3d9075cb-8a0f-578d-b378-0f3904311de4",
+                    "name": "",
+                    "position": {
+                        "x": 4.1,
+                        "y": 20.3
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "0afbf65b-b9dd-5c9d-8030-0109434ff33d",
+                    "name": "",
+                    "position": {
+                        "x": 4.6,
+                        "y": 19
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "151d9121-c733-53c6-87f1-ce0e829a92aa",
+                    "name": "",
+                    "position": {
+                        "x": 4.7,
+                        "y": 16.5
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "f9c2ff83-7122-5bfe-8772-2449f5ed27aa",
+                    "name": "",
+                    "position": {
+                        "x": 4.8,
+                        "y": 36.9
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "fd53df62-644d-5fca-9235-4cc3f25870f6",
+                    "name": "",
+                    "position": {
+                        "x": 4.9,
+                        "y": 22.8
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "1d9ec071-9610-5d2e-93fe-30b04f04d452",
+                    "name": "",
+                    "position": {
+                        "x": 5,
+                        "y": 35.1
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "7e1b9d1e-4b23-52fa-9846-0e1ba2995a61",
+                    "name": "",
+                    "position": {
+                        "x": 5.4,
+                        "y": 9.4
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "5d81e7d0-4d63-57d5-8ea8-a3f632874a88",
+                    "name": "",
+                    "position": {
+                        "x": 5.6,
+                        "y": 16.9
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "1c2b52ef-aaba-5265-90d7-e5e89c6f76dd",
+                    "name": "",
+                    "position": {
+                        "x": 5.6,
+                        "y": 6
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "bcbecc99-9e97-567e-80c0-3901cd952291",
+                    "name": "",
+                    "position": {
+                        "x": 5.8,
+                        "y": 37.3
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "f181defe-04c8-5d59-b56d-99e5626e6a46",
+                    "name": "",
+                    "position": {
+                        "x": 6,
+                        "y": 11.8
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "a6d11754-cff3-5a54-aa77-045543a62062",
+                    "name": "",
+                    "position": {
+                        "x": 6.3,
+                        "y": 17.8
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "784e21c4-060b-5c02-b030-645a689fe882",
+                    "name": "",
+                    "position": {
+                        "x": 6.9,
+                        "y": 38.1
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "0bcdf552-3729-5ed7-a0d6-19332de8fc06",
+                    "name": "",
+                    "position": {
+                        "x": 6.9,
+                        "y": 14.1
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "0a53a1a2-a52a-5804-bfcb-fb01d79a6b4e",
+                    "name": "",
+                    "position": {
+                        "x": 7.2,
+                        "y": 35.7
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "01285215-c03b-5a1d-b425-f86fb395a770",
+                    "name": "",
+                    "position": {
+                        "x": 7.3,
+                        "y": 34.9
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "0b8c738d-f966-55ce-acc6-9e9957eba9c6",
+                    "name": "",
+                    "position": {
+                        "x": 7.9,
+                        "y": 36.3
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "19101983-918c-57e9-85e9-d496f55ce257",
+                    "name": "",
+                    "position": {
+                        "x": 8,
+                        "y": 21.5
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "4a618712-8eea-57bb-bcfa-172d5cdf6140",
+                    "name": "",
+                    "position": {
+                        "x": 8.3,
+                        "y": 11.3
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "8faf805a-b368-503d-be91-072b8dd63f88",
+                    "name": "",
+                    "position": {
+                        "x": 9,
+                        "y": 37.7
+                    },
+                    "fate": {
+                        "fateId": "",
+                        "bonus": true
+                    },
+                    "direction": ""
+                },
+                {
+                    "id": "0a349ca6-9067-509d-b437-9e284e501880",
+                    "name": "",
+                    "position": {
+                        "x": 10.4,
+                        "y": 15.3
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "bd16fc2f-c059-57ed-9386-4729de58de90",
+                    "name": "",
+                    "position": {
+                        "x": 12.3,
+                        "y": 21.6
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "W"
+                },
+                {
+                    "id": "930c6e91-41f9-5080-8975-38aebed221d1",
+                    "name": "",
+                    "position": {
+                        "x": 13.8,
+                        "y": 12.3
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "9e69b48a-28c8-5e18-ba05-c148d54c734b",
+                    "name": "",
+                    "position": {
+                        "x": 13.8,
+                        "y": 17.1
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "N"
+                },
+                {
+                    "id": "9b95add8-8b28-50a2-ad90-4fde7b3ba074",
+                    "name": "",
+                    "position": {
+                        "x": 13.9,
+                        "y": 13.9
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "W"
+                },
+                {
+                    "id": "6a543509-e9fd-5d1b-bee8-c926acda19d8",
+                    "name": "",
+                    "position": {
+                        "x": 15,
+                        "y": 25.6
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "66a16f38-db23-5163-bf32-032d364bdbc7",
+                    "name": "",
+                    "position": {
+                        "x": 17.2,
+                        "y": 11.3
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NW"
+                },
+                {
+                    "id": "aea0b5f0-11fc-58c9-97e8-fb752270540e",
+                    "name": "",
+                    "position": {
+                        "x": 20.4,
+                        "y": 29.6
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "SW"
+                },
+                {
+                    "id": "08fd959c-f572-5f8c-a394-08749259c84e",
+                    "name": "",
+                    "position": {
+                        "x": 21.9,
+                        "y": 35
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "87affe14-c67a-5beb-83ad-6202127a6f47",
+                    "name": "",
+                    "position": {
+                        "x": 22.8,
+                        "y": 36.4
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "bd7f4528-14cd-5f6e-9c9c-e07627b5435c",
+                    "name": "",
+                    "position": {
+                        "x": 22.9,
+                        "y": 16.7
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "9b77ea5a-ce36-5ae8-b885-14891fa28cd7",
+                    "name": "",
+                    "position": {
+                        "x": 23,
+                        "y": 13.6
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "736bc4f2-6dc6-56ad-a84d-b92a414373a4",
+                    "name": "",
+                    "position": {
+                        "x": 23.1,
+                        "y": 29.3
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "S"
+                },
+                {
+                    "id": "647cbb27-c6cb-5531-835f-15754790495d",
+                    "name": "",
+                    "position": {
+                        "x": 23.6,
+                        "y": 24.4
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "04ba2b73-6ea5-5c46-920d-6120f626446a",
+                    "name": "",
+                    "position": {
+                        "x": 26,
+                        "y": 31.9
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "S"
+                },
+                {
+                    "id": "ab8602cf-557d-5a32-9227-0b8ab9af64d2",
+                    "name": "",
+                    "position": {
+                        "x": 28.3,
+                        "y": 25.4
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "S"
+                },
+                {
+                    "id": "bb48b140-10e8-50e3-b519-e66f763acdce",
+                    "name": "",
+                    "position": {
+                        "x": 29.4,
+                        "y": 38.4
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                },
+                {
+                    "id": "f126bac3-8e11-5786-8f0b-a42901689a11",
+                    "name": "",
+                    "position": {
+                        "x": 33.3,
+                        "y": 10.6
+                    },
+                    "fate": {
+                        "fateId": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
+                        "bonus": false
+                    },
+                    "direction": "NE"
+                },
+                {
+                    "id": "4f23d35e-63c8-5474-996a-5c118194528e",
+                    "name": "",
+                    "position": {
+                        "x": 38,
+                        "y": 36.9
+                    },
+                    "fate": {
+                        "fateId": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
+                        "bonus": false
+                    },
+                    "direction": "E"
+                }
+            ]
         },
         "misc": {
             "name": "Misc",

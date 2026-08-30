@@ -110,6 +110,7 @@ import ExpandableSection from './ExpandableSection.vue'
 const props = defineProps<{
   filters: any
   jsonData: any
+  sectionKey?: string
 }>()
 
 const emit = defineEmits(['updateFilters'])

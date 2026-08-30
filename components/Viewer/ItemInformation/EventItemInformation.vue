@@ -13,6 +13,12 @@
     <div v-if="'boss' in item && item.boss?.name">
       <span class="font-bold">Boss:</span> {{ item.boss.name }}
     </div>
+    <div v-if="bossWeakness">
+      <span class="font-bold">Boss Weakness:</span> {{ bossWeakness }}
+    </div>
+    <div v-if="'spawnedByMob' in item && item.spawnedByMob">
+      <span class="font-bold">Spawned By:</span> {{ item.spawnedByMob }}
+    </div>
     <div v-if="'weather' in item && item.weather">
       <span class="font-bold">Weather:</span> {{ weatherLabels[item.weather] ?? item.weather }}
     </div>
@@ -51,6 +57,12 @@ const weatherLabels: Record<string, string> = {
 }
 
 const capitalize = (str: string) => str ? str.charAt(0).toUpperCase() + str.slice(1) : ''
+
+const bossWeakness = computed(() => {
+  const weakness = props.item.boss?.weakness
+  if (!Array.isArray(weakness)) return ''
+  return weakness.map(capitalize).join(', ')
+})
 
 const spawnedBy = computed(() => {
   if (!props.monsters) return ''

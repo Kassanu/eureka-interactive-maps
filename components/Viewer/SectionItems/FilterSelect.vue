@@ -8,8 +8,8 @@
         class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
       >
         <option value="">Any</option>
-        <option v-for="option in options" :key="option" :value="option">
-          {{ capitalize(option) }}
+        <option v-for="option in normalizedOptions" :key="option.value" :value="option.value">
+          {{ option.label }}
         </option>
       </select>
       <div class="pointer-events-none absolute flex items-center px-2 inset-y-0 right-0">
@@ -22,10 +22,12 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue'
+
+const props = defineProps<{
   modelValue: string
   label: string
-  options: string[]
+  options: (string | { value: string; label: string })[]
   title?: string
 }>()
 
@@ -34,4 +36,12 @@ defineEmits<{
 }>()
 
 const capitalize = (str: string) => str ? str.charAt(0).toUpperCase() + str.slice(1) : ''
+
+// A bare string is both the stored value and its own label; the object form
+// carries a display label for values that are not readable on their own.
+const normalizedOptions = computed(() =>
+  props.options.map(option =>
+    typeof option === 'string' ? { value: option, label: capitalize(option) } : option
+  )
+)
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="'level' in item">
-      <span class="font-bold">{{ levelLabel }}:</span> {{ item.level }}
+      <span class="font-bold">{{ levelLabel }}:</span> {{ levelText }}
     </div>
     <div v-if="'element' in item && item.element">
       <span class="font-bold">Element:</span> {{ capitalize(item.element) }}
@@ -10,11 +10,14 @@
     <div v-if="'aggro' in item">
       <span class="font-bold">Aggro:</span> {{ capitalize(item.aggro) || 'None' }}
     </div>
+    <div v-if="'spawnCondition' in item && item.spawnCondition">
+      <span class="font-bold">Spawns:</span> {{ item.spawnCondition }}
+    </div>
     <div v-if="'attack' in item">
       <span class="font-bold">Attack:</span> {{ formatCombat(item.attack, 'Both') }}
     </div>
     <div v-if="'weakness' in item">
-      <span class="font-bold">Weakness:</span> {{ formatCombat(item.weakness, 'None') }}
+      <span class="font-bold">Weakness:</span> {{ weaknessText }}
     </div>
     <div v-if="'fate' in item && item.fate.forFate">
       <span class="font-bold">Spawns Fate:</span> {{ fateName }}
@@ -38,6 +41,7 @@ import { computed } from 'vue'
 import Coordinates from './Coordinates.vue'
 import Drops from './Drops.vue'
 import Spawns from './Spawns.vue'
+import { useZoneConfig } from '~/composables/useZoneConfig'
 
 const props = defineProps<{
   item: any
@@ -61,9 +65,18 @@ const weatherLabels: Record<string, string> = {
 
 const capitalize = (str: string) => str ? str.charAt(0).toUpperCase() + str.slice(1) : ''
 
+const zoneConfig = useZoneConfig()
+
 const levelLabel = computed(() => {
+  if (zoneConfig.value.levelLabel) return zoneConfig.value.levelLabel
   if ('attack' in props.item || 'weakness' in props.item) return 'Rank'
   return 'Level'
+})
+
+// A conditional spawn covers a band of levels rather than a single one.
+const levelText = computed(() => {
+  const range = props.item.levelRange
+  return range ? `${range.from}-${range.to}` : props.item.level
 })
 
 const formatCombat = (value: string, fallback: string) => {
@@ -73,6 +86,16 @@ const formatCombat = (value: string, fallback: string) => {
     default: return fallback
   }
 }
+
+// Zones state weakness either as a physical/magical string or as a list of
+// elements; an empty list reads as no known weakness.
+const weaknessText = computed(() => {
+  const weakness = props.item.weakness
+  if (Array.isArray(weakness)) {
+    return weakness.map(capitalize).join(', ') || 'None'
+  }
+  return formatCombat(weakness, 'None')
+})
 
 function buildConditionString(conditions: { weather: string; time: string }[]): string {
   const grouped: Record<string, string[]> = {}
