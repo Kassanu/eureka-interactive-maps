@@ -2416,14 +2416,15 @@
             "icon": {
                 "drawStyle": "default",
                 "primary": {
-                    "strategy": "static",
-                    "value": "lock"
+                    "strategy": "prefixed",
+                    "prefix": "coffer",
+                    "field": "grade"
                 }
             },
             "baseItem": {
                 "id": "",
                 "name": "",
-                "grade": "",
+                "grade": "bronze",
                 "position": {
                     "x": 0,
                     "y": 0
@@ -3274,7 +3275,7 @@
                 "drawStyle": "default",
                 "primary": {
                     "strategy": "static",
-                    "value": "lock"
+                    "value": "coffer_gold"
                 }
             },
             "baseItem": {
