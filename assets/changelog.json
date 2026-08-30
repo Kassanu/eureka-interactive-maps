@@ -1,5 +1,10 @@
 [
   {
+    "version": "v2.2.0",
+    "date": "2026-08-30",
+    "description": "Added map data for Occult Crescent zones, South Horn and North Horn."
+  },
+  {
     "version": "v2.1.0",
     "date": "2026-08-29",
     "description": "Updated eureka-canvas to v3.0. Refactored zone data to simplify making new zones."
