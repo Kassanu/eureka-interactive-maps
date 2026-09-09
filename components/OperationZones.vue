@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col flex-1 mb-4 sm:mb-0">
     <h2 class="text-white text-xl font-bold mb-2 text-center whitespace-nowrap">{{ title }}</h2>
-    <NuxtLink
+    <NuxtLinkLocale
       v-for="zone in zones"
       :key="zone.slug"
       :to="`/map/${zone.slug}`"
@@ -9,7 +9,7 @@
       :class="zone.accent"
     >
       {{ zone.name }}
-    </NuxtLink>
+    </NuxtLinkLocale>
   </div>
 </template>
 
