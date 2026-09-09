@@ -1,11 +1,11 @@
 <template>
   <footer id="footer" class="flex flex-col text-sm">
     <div class="flex justify-center space-x-1">
-      <NuxtLink class="hover:text-white" to="/">Home</NuxtLink>
+      <NuxtLinkLocale class="hover:text-white" to="/">{{ t('nav.home') }}</NuxtLinkLocale>
       <span>-</span>
-      <NuxtLink class="hover:text-white" to="/contribute">Contribute</NuxtLink>
+      <NuxtLinkLocale class="hover:text-white" to="/contribute">{{ t('nav.contribute') }}</NuxtLinkLocale>
       <span>-</span>
-      <NuxtLink class="hover:text-white" to="/changelog">Changelog</NuxtLink>
+      <NuxtLinkLocale class="hover:text-white" to="/changelog">{{ t('nav.changelog') }}</NuxtLinkLocale>
     </div>
     <div class="flex justify-center">
       FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
@@ -15,5 +15,6 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const currentYear: number = new Date().getFullYear()
 </script>

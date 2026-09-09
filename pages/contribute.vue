@@ -14,9 +14,9 @@
           If you don't know how to code but would still like to help, each map has an admin panel which allows you to edit all of the data. Visit one of the links below to enter the editors and make all of your changes and hit the "Save" button. A .json file will be downloaded to your computer – you can send that file to me through email, Discord, or by making a pull request.
           <br><br>
           <template v-for="zone in zones" :key="zone.slug">
-            <NuxtLink class="hover:text-white" :to="`/map/${zone.slug}/edit`">
+            <NuxtLinkLocale class="hover:text-white" :to="`/map/${zone.slug}/edit`">
               {{ zone.name }} Editor
-            </NuxtLink><br>
+            </NuxtLinkLocale><br>
           </template>
         </div>
       </div>
