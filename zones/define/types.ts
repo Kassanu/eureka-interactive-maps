@@ -66,14 +66,13 @@ export interface ZoneMap {
   grid: Grid
 }
 
+// The display name and the meta description are locale messages under `zones.<slug>`, not fields here.
 export interface ZoneDefinition {
   // The path segment under /map.
   slug: string
-  name: string
   operation: OperationKey
   // Tailwind classes for the zone's button on the front page.
   accent: string
-  description: string
   file: Load<{ default: RawZoneFile }>
   map: ZoneMap
   level?: Bounds

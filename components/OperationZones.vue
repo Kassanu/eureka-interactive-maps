@@ -8,7 +8,7 @@
       class="text-white text-center font-bold py-3 px-4 mb-2"
       :class="zone.accent"
     >
-      {{ zone.name }}
+      {{ t(`zones.${zone.slug}.name`) }}
     </NuxtLinkLocale>
   </div>
 </template>
@@ -17,4 +17,6 @@
 import type { ZoneDefinition } from '~/zones'
 
 defineProps<{ title: string; zones: ZoneDefinition[] }>()
+
+const { t } = useI18n()
 </script>

@@ -15,7 +15,7 @@
           <br><br>
           <template v-for="zone in zones" :key="zone.slug">
             <NuxtLinkLocale class="hover:text-white" :to="`/map/${zone.slug}/edit`">
-              {{ zone.name }} Editor
+              {{ t(`zones.${zone.slug}.name`) }} Editor
             </NuxtLinkLocale><br>
           </template>
         </div>
@@ -27,5 +27,9 @@
 <script setup lang="ts">
 import { zoneFor, zoneSlugs } from '~/zones'
 
+// The path is listed in ENGLISH_ONLY_PATHS too, and the two have to agree.
+defineI18nRoute({ locales: ['en'] })
+
+const { t } = useI18n()
 const zones = zoneSlugs.map(zoneFor)
 </script>

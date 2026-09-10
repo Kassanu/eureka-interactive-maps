@@ -21,4 +21,7 @@
 
 <script setup lang="ts">
 import entries from '~/assets/changelog.json'
+
+// The path is listed in ENGLISH_ONLY_PATHS too, and the two have to agree.
+defineI18nRoute({ locales: ['en'] })
 </script>
