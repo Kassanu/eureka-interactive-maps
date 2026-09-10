@@ -1,14 +1,12 @@
 import { DEFAULT_LOCALE, LOCALES } from './i18n/locales'
-import { localizedRoutes } from './i18n/routes'
-import { SITE_NAME } from './site'
+import { siteRoutes } from './i18n/routes'
+import { SITE_NAME, SITE_ORIGIN } from './site'
 import { zoneSlugs } from './zones'
 
 // The map routes are dynamic, so the crawler cannot find them by shape. Naming them from the
 // registry is what keeps a zone added there from shipping unprerendered.
-const routes = [
+const localizedPaths = [
   '/',
-  '/contribute',
-  '/changelog',
   ...zoneSlugs.flatMap(slug => [`/map/${slug}`, `/map/${slug}/edit`]),
 ]
 
@@ -16,7 +14,7 @@ const routes = [
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      routes: localizedRoutes(routes),
+      routes: siteRoutes(localizedPaths),
     },
   },
   vite: {
@@ -24,15 +22,12 @@ export default defineNuxtConfig({
       include: ['eureka-canvas']
     },
   },
+  // `lang`, the canonical, the alternates and the description come from app.vue instead: nothing
+  // here can read the active locale.
   app: {
     head: {
       title: SITE_NAME,
-      htmlAttrs: { lang: 'en' },
       meta: [
-        {
-          name: 'description',
-          content: "Explore detailed, high-quality maps of FFXIV's Field Operations Eureka, Bozja, and Occult Crescent. Filter data to see drops, enemies, events, and more!"
-        },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' }
       ],
@@ -47,6 +42,8 @@ export default defineNuxtConfig({
   // for. Googlebot crawls from the US in English, so an unconditional redirect can hide every
   // localized page from the index.
   i18n: {
+    // Without this useLocaleHead emits no canonical and no alternates at all.
+    baseUrl: SITE_ORIGIN,
     locales: LOCALES.map(locale => ({ ...locale, file: `${locale.code}.json` })),
     defaultLocale: DEFAULT_LOCALE,
     strategy: 'prefix_except_default',

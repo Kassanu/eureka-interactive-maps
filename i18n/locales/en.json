@@ -3,5 +3,46 @@
     "home": "Home",
     "contribute": "Contribute",
     "changelog": "Changelog"
+  },
+  "meta": {
+    "site": {
+      "description": "Explore detailed, high-quality maps of FFXIV's Field Operations Eureka, Bozja, and Occult Crescent. Filter data to see drops, enemies, events, and more!"
+    },
+    "zoneTitle": "{zone} - {site}",
+    "editorTitle": "Editing {zone}"
+  },
+  "zones": {
+    "anemos": {
+      "name": "Anemos",
+      "description": "Interactive map of Eureka Anemos - filter FATEs, notorious monsters, enemies, elemental weaknesses, drops, and weather."
+    },
+    "pagos": {
+      "name": "Pagos",
+      "description": "Interactive map of Eureka Pagos - filter FATEs, notorious monsters, enemies, elemental weaknesses, drops, and weather."
+    },
+    "pyros": {
+      "name": "Pyros",
+      "description": "Interactive map of Eureka Pyros - filter FATEs, notorious monsters, enemies, elemental weaknesses, drops, and weather."
+    },
+    "hydatos": {
+      "name": "Hydatos",
+      "description": "Interactive map of Eureka Hydatos - filter FATEs, notorious monsters, enemies, elemental weaknesses, drops, and weather."
+    },
+    "bozjansouthernfront": {
+      "name": "Bozjan Southern Front",
+      "description": "Interactive map of the Bozjan Southern Front - filter critical engagements, skirmishes, enemies, drops, and more."
+    },
+    "zadnor": {
+      "name": "Zadnor",
+      "description": "Interactive map of Zadnor - filter critical engagements, skirmishes, enemies, drops, and more."
+    },
+    "south_horn": {
+      "name": "South Horn",
+      "description": "Interactive map of the Occult Crescent: South Horn - filter FATEs, critical encounters, enemies, coffers, and drops."
+    },
+    "north_horn": {
+      "name": "North Horn",
+      "description": "Interactive map of the Occult Crescent: North Horn - filter FATEs, critical encounters, enemies, coffers, spells, and drops."
+    }
   }
 }
