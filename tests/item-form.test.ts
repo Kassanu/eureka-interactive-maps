@@ -3,7 +3,7 @@ import type { z } from 'zod'
 import { createItem, zoneSlugs, zones } from '../zones'
 import type { ZoneItem, ZoneSlug } from '../zones'
 import { dropItems } from '../model/lookups/drops'
-import { weathers } from '../model/lookups'
+import { weatherTypes } from '../model/lookups'
 
 // The item form builds objects the schemas have to accept: a mutation the moment its checkbox is
 // ticked, a drop the moment one is added. Nothing here mounts a component; what is checked is
@@ -143,7 +143,7 @@ describe('adding a row to a list', () => {
       const conditions: { weather: string; time: string }[] = []
       for (let i = 0; i < 3; i++) {
         const taken = new Set(conditions.map(condition => condition.weather))
-        const weather = weathers.keys.find(candidate => !taken.has(candidate))!
+        const weather = weatherTypes.keys.find(candidate => !taken.has(candidate))!
         conditions.push({ weather, time: 'any' })
       }
       const mutating = { ...item, mutation: { conditions } }

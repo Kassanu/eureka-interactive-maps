@@ -3,6 +3,7 @@ import {
   activeCount,
   everyFilter,
   initialState,
+  keySetFilter,
   onlyKey,
   onlySection,
   resetFilter,
@@ -11,6 +12,7 @@ import {
   toggleKey,
   visibleItems,
 } from '../zones'
+import type { FilterGroup, FilterState, ScopedFilter } from '../zones'
 import { hydratedZones } from './helpers/zoneFiles'
 
 // What a control does when a reader touches it. These are the operations the filter panel calls,
@@ -63,7 +65,7 @@ describe('only', () => {
           // something can still match. Everywhere else one option means one option.
           const conjoined = filter.definition.combine === 'every' && option.group !== undefined
           const elsewhere = options.filter(
-            other => other.group !== undefined && other.group !== option.group
+            other => other.group !== undefined && other.group.key !== option.group?.key
           )
           expect(enabled, where).toEqual(
             conjoined ? [option.key, ...elsewhere.map(o => o.key)] : [option.key]
@@ -110,6 +112,38 @@ describe('only', () => {
       }
       expect(activeCount(zone, state)).toBe(1)
     }
+  })
+})
+
+// A group is what its key says, not which object carries it. A definition that builds its groups
+// per option rather than sharing one would isolate as though every option stood alone.
+describe('isolating an option of a conjoined filter', () => {
+  const weather = (): FilterGroup => ({ key: 'weather', label: () => 'Weather' })
+  const time = (): FilterGroup => ({ key: 'time', label: () => 'Time' })
+
+  const definition = keySetFilter<never>({
+    key: 'conditions',
+    label: () => 'Conditions',
+    control: 'toggles',
+    combine: 'every',
+    options: () => [
+      { key: 'w:fog', label: () => 'Fog', group: weather() },
+      { key: 'w:snow', label: () => 'Snow', group: weather() },
+      { key: 't:day', label: () => 'Day', group: time() },
+    ],
+    matches: () => true,
+  })
+
+  const filter: ScopedFilter<never> = {
+    stateKey: 'conditions',
+    definition,
+    scope: { items: [], resolve: () => [] },
+  }
+
+  it('keeps the other groups whole, however each option carries its own', () => {
+    const state: FilterState = { sections: [], values: { conditions: definition.initial(filter.scope) } }
+    onlyKey(filter, state, 'w:fog')
+    expect(state.values.conditions).toEqual(['w:fog', 't:day'])
   })
 })
 

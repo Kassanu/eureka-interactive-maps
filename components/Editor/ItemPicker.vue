@@ -32,7 +32,7 @@ const groups = computed(() =>
     .filter(section => props.types.includes(section.definition.type))
     .map(section => ({
       key: section.key,
-      label: section.definition.name,
+      label: section.definition.name(t),
       items: section.items.filter(item => item.id !== props.exclude),
     }))
     .filter(group => group.items.length)

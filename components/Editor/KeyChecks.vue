@@ -2,7 +2,7 @@
   <div class="editor-checks">
     <label v-for="option in options" :key="option.key">
       <input :checked="keys.includes(option.key)" type="checkbox" @change="toggle(option.key)">
-      <span>{{ option.label }}</span>
+      <span>{{ option.label(t) }}</span>
     </label>
   </div>
 </template>
@@ -16,6 +16,8 @@ const props = defineProps<{
   keys: string[]
   options: readonly LookupOption<string>[]
 }>()
+
+const { t } = useI18n()
 
 function toggle(key: string) {
   const index = props.keys.indexOf(key)

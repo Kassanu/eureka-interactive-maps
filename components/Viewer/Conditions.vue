@@ -1,12 +1,12 @@
 <template>
   <div v-for="(condition, index) in conditions" :key="index">
-    <span class="font-bold">{{ weathers.label(condition.weather) }}:</span>
-    {{ times.label(condition.time) }}
+    <span class="font-bold">{{ weatherTypes.label(condition.weather, t) }}:</span>
+    {{ times.label(condition.time, t) }}
   </div>
 </template>
 
 <script setup lang="ts">
-import { times, weathers } from '~/model/lookups'
+import { times, weatherTypes } from '~/model/lookups'
 import type { Condition } from '~/model/items/conditions'
 
 // The weather and hour an enemy changes under. A weather appears at most once in a block, because
@@ -14,4 +14,6 @@ import type { Condition } from '~/model/items/conditions'
 defineProps<{
   conditions: readonly Condition[]
 }>()
+
+const { t } = useI18n()
 </script>

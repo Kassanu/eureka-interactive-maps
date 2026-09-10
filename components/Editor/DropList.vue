@@ -9,7 +9,7 @@
     <div v-for="(drop, index) in drops" :key="index" class="editor-row">
       <select v-model="drop.item" class="editor-input">
         <option v-for="option in dropItems.options()" :key="option.key" :value="option.key">
-          {{ option.label }}
+          {{ option.label(t) }}
         </option>
       </select>
       <input v-model.number="drop.amount" type="number" min="1" class="editor-input w-16" :title="t('editor.dropAmount')">

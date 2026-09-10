@@ -1,10 +1,14 @@
 import { z } from 'zod'
-import { defineLookup } from './define'
+import { defineNames } from './define'
 
 // Every item any zone names as a drop. Keys are squashed lowercase with no separator and Greek
 // letters spelled out, so Phantom Dispeller alpha keys as phantomdispelleralpha.
+//
+// These are game item names rather than app strings, so they are held here instead of in the
+// locale files: they translate through the shared glossary keyed by FFXIV Item id, alongside the
+// mob and FATE names.
 
-export const dropItems = defineLookup({
+export const dropItems = defineNames({
   adayinthelifebattlesfortherealm: 'A Day in the Life: Battles for the Realm',
   adayinthelifebeyondtherift: 'A Day in the Life: Beyond the Rift',
   abductorshorn: 'Abductor\'s Horn',

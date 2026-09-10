@@ -1,5 +1,6 @@
 import type { z } from 'zod'
 import type { IconKey } from '../../model/icons'
+import type { Text } from '../../i18n/translate'
 import type { Bounds, FilterDefinition, StoredFilterDefinition } from './filters'
 import type { OperationKey } from '../operations'
 import type { RawZoneFile } from './schema'
@@ -10,7 +11,7 @@ export type DrawStyle = 'default' | 'circle'
 export type SectionType = 'enemy' | 'event' | 'loot' | 'poi' | 'spell'
 
 export interface SectionDefinition<S extends z.ZodType> {
-  name: string
+  name: Text
   type: SectionType
   // Draw order, low to high, so a higher number sits on top.
   order: number
@@ -29,7 +30,7 @@ export type Blank<Item> = Omit<Item, 'id' | 'positions'>
 // one back gives `never`, so a consumer casts at the point it applies a function to an item it
 // parsed with that same section's schema.
 export interface StoredSectionDefinition {
-  name: string
+  name: Text
   type: SectionType
   order: number
   schema: z.ZodType

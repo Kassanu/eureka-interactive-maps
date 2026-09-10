@@ -1,7 +1,7 @@
 <template>
   <div class="mb-3">
     <div class="flex items-center gap-2 mb-1">
-      <span class="text-sm font-bold" :title="definition.title">{{ definition.label }}</span>
+      <span class="text-sm font-bold" :title="definition.title?.(t)">{{ definition.label(t) }}</span>
       <span v-if="!untouched" class="text-xs text-gray-400">{{ summary }}</span>
       <button
         v-if="!untouched"
@@ -51,8 +51,8 @@
     </div>
 
     <template v-else-if="open">
-      <div v-for="group in groups" :key="group.name">
-        <div v-if="group.name" class="text-xs text-gray-400 mt-1">{{ group.name }}</div>
+      <div v-for="group in groups" :key="group.key">
+        <div v-if="group.label" class="text-xs text-gray-400 mt-1">{{ group.label }}</div>
         <div class="filter-options" :style="{ '--filter-column': columnWidth }">
           <label
             v-for="option in group.options"
@@ -64,7 +64,7 @@
               type="checkbox"
               @change="toggleKey(state, filter.stateKey, option.key)"
             >
-            <span>{{ option.label }}</span>
+            <span>{{ option.label(t) }}</span>
             <button
               type="button"
               class="only text-xs text-gray-500"
@@ -127,25 +127,26 @@ if (options.value.length > LONG) open.value = false
 // from the longest label the control offers plus room for the checkbox and Only. Capped so one
 // very long option does not force every column that wide.
 const columnWidth = computed(() => {
-  const longest = options.value.reduce((most, option) => Math.max(most, option.label.length), 0)
+  const longest = options.value.reduce((most, option) => Math.max(most, option.label(t).length), 0)
   return `${Math.min(Math.max(longest + 8, 10), 28)}ch`
 })
 
 // Options keep the order the definition gives them, grouped in the order their groups first
 // appear, with anything ungrouped drawn first.
 const groups = computed(() => {
-  const byName = new Map<string, typeof options.value>()
+  const byKey = new Map<string, { label: string; options: typeof options.value }>()
   for (const option of options.value) {
-    const name = option.group ?? ''
-    byName.set(name, [...(byName.get(name) ?? []), option])
+    const key = option.group?.key ?? ''
+    const group = byKey.get(key) ?? { label: option.group?.label(t) ?? '', options: [] }
+    byKey.set(key, { ...group, options: [...group.options, option] })
   }
-  return [...byName].map(([name, grouped]) => ({ name, options: grouped }))
+  return [...byKey].map(([key, group]) => ({ key, ...group }))
 })
 
 const choices = computed(() => [
   { label: t('filters.any'), keys: options.value.map(option => option.key) },
-  { label: options.value.find(o => o.key === YES_KEY)?.label ?? t('filters.yes'), keys: [YES_KEY] },
-  { label: options.value.find(o => o.key === NO_KEY)?.label ?? t('filters.no'), keys: [NO_KEY] },
+  { label: options.value.find(o => o.key === YES_KEY)?.label(t) ?? t('filters.yes'), keys: [YES_KEY] },
+  { label: options.value.find(o => o.key === NO_KEY)?.label(t) ?? t('filters.no'), keys: [NO_KEY] },
 ])
 
 function sameKeys(keys: readonly string[]): boolean {

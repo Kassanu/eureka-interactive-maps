@@ -8,13 +8,13 @@
 
     <div v-for="(condition, index) in conditions" :key="index" class="editor-row">
       <select v-model="condition.weather" class="editor-input">
-        <option v-for="option in weathers.options()" :key="option.key" :value="option.key">
-          {{ option.label }}
+        <option v-for="option in weatherTypes.options()" :key="option.key" :value="option.key">
+          {{ option.label(t) }}
         </option>
       </select>
       <select v-model="condition.time" class="editor-input w-24">
         <option v-for="option in times.options()" :key="option.key" :value="option.key">
-          {{ option.label }}
+          {{ option.label(t) }}
         </option>
       </select>
       <button type="button" class="editor-button editor-remove" @click="conditions.splice(index, 1)">
@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 import FormField from '~/components/Editor/FormField.vue'
-import { times, weathers } from '~/model/lookups'
+import { times, weatherTypes } from '~/model/lookups'
 import type { Condition } from '~/model/items/conditions'
 
 // The weather and hour an enemy changes under. A new row starts on the first weather not already
@@ -40,7 +40,7 @@ const { t } = useI18n()
 
 function add() {
   const taken = new Set(props.conditions.map(condition => condition.weather))
-  const weather = weathers.keys.find(key => !taken.has(key))
+  const weather = weatherTypes.keys.find(key => !taken.has(key))
   if (weather) props.conditions.push({ weather, time: 'any' })
 }
 </script>

@@ -7,7 +7,13 @@ import { EventBaseSchema } from '../../model/items/event'
 import { PoiBaseSchema } from '../../model/items/poi'
 import { SpawnsSchema } from '../../model/items/spawns'
 import { defineSection, type Blank } from '../define/types'
-import { dropsFilter, keysFilter, optionsFilter, type FilterDefinition } from '../define/filters'
+import {
+  dropsFilter,
+  keysFilter,
+  optionsFilter,
+  type FilterDefinition,
+  type FilterGroup,
+} from '../define/filters'
 
 // Bozjan Southern Front and Zadnor, which grade an enemy by rank rather than by level.
 
@@ -17,8 +23,6 @@ export const bozjaLookups = {
   mobFamilies: mobFamilies.subset(['ashkin', 'elemental', 'fauna', 'machine', 'sprite']),
   attacks,
 }
-
-export const bozjaRankLabel = 'Rank'
 
 export const BozjaEnemySchema = EnemySchema.extend({
   rank: bozjaLookups.ranks.key,
@@ -60,10 +64,14 @@ export type BozjaItem =
   | BozjaSkirmish
   | z.infer<typeof BozjaPoiSchema>
 
+// A duel admits one player.
+const DUELS_GROUP: FilterGroup = { key: 'duels', label: t => t('filters.duels') }
+const ENGAGEMENTS_GROUP: FilterGroup = { key: 'engagements', label: t => t('filters.engagements') }
+
 // The four sections, identical across both zones.
 export const bozjaSections = {
   engagements: defineSection({
-    name: 'Critical Engagements',
+    name: t => t('sections.engagements'),
     type: 'event',
     order: 11,
     schema: BozjaEngagementSchema,
@@ -79,25 +87,24 @@ export const bozjaSections = {
     filters: [
       optionsFilter({
         key: 'participants',
-        label: 'Participants',
-        title: 'How many players the engagement admits',
+        label: t => t('fields.participants'),
+        title: t => t('filters.participantsTitle'),
         options: scope => {
           const caps = [...new Set(scope.items.map(item => item.participants))]
           return caps
             .sort((a, b) => a - b)
-            .map(cap => ({ key: String(cap), label: String(cap) }))
+            .map(cap => ({ key: String(cap), label: () => String(cap) }))
         },
         get: (item: BozjaEngagement) => String(item.participants),
       }),
       optionsFilter({
         key: 'which',
-        label: 'Engagements',
-        // A duel admits one player.
+        label: t => t('filters.engagements'),
         options: scope =>
           scope.items.map(item => ({
             key: item.id,
-            label: item.name,
-            group: item.participants === 1 ? 'Duels' : 'Engagements',
+            label: () => item.name,
+            group: item.participants === 1 ? DUELS_GROUP : ENGAGEMENTS_GROUP,
           })),
         get: (item: BozjaEngagement) => item.id,
       }),
@@ -105,7 +112,7 @@ export const bozjaSections = {
   }),
 
   skirmishes: defineSection({
-    name: 'Skirmishes',
+    name: t => t('sections.skirmishes'),
     type: 'event',
     order: 10,
     schema: BozjaSkirmishSchema,
@@ -120,15 +127,15 @@ export const bozjaSections = {
     filters: [
       optionsFilter({
         key: 'which',
-        label: 'Skirmishes',
-        options: scope => scope.items.map(item => ({ key: item.id, label: item.name })),
+        label: t => t('filters.skirmishes'),
+        options: scope => scope.items.map(item => ({ key: item.id, label: () => item.name })),
         get: (item: BozjaSkirmish) => item.id,
       }),
     ],
   }),
 
   enemies: defineSection({
-    name: 'Enemies',
+    name: t => t('sections.enemies'),
     type: 'enemy',
     order: 2,
     schema: BozjaEnemySchema,
@@ -147,29 +154,29 @@ export const bozjaSections = {
     filters: [
       keysFilter({
         key: 'ranks',
-        label: bozjaRankLabel,
+        label: t => t('fields.rank'),
         lookup: bozjaLookups.ranks,
         get: (item: BozjaEnemy) => item.rank,
       }),
       keysFilter({
         key: 'families',
-        label: 'Family',
+        label: t => t('fields.family'),
         lookup: bozjaLookups.mobFamilies,
         get: (item: BozjaEnemy) => item.family,
-        noneLabel: 'Other',
+        noneLabel: t => t('values.other'),
       }),
       keysFilter({
         key: 'aggro',
-        label: 'Aggro',
+        label: t => t('fields.aggro'),
         lookup: bozjaLookups.aggroTypes,
         get: (item: BozjaEnemy) => item.aggro,
-        noneLabel: 'None',
+        noneLabel: t => t('values.none'),
       }),
     ],
   }),
 
   aethernet: defineSection({
-    name: 'Aethernet',
+    name: t => t('sections.aethernet'),
     type: 'poi',
     order: 2,
     schema: BozjaPoiSchema,

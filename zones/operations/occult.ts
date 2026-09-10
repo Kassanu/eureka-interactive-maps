@@ -8,6 +8,7 @@ import {
   keysFilter,
   optionsFilter,
   type FilterDefinition,
+  type FilterOption,
 } from '../define/filters'
 import { OptionalItemRefSchema } from '../../model/items/base'
 import { BossSchema, EnemySchema, SpawnsFateSchema } from '../../model/items/enemy'
@@ -96,15 +97,15 @@ export const BONUS_POOL = '__bonus'
 function poolFilter<Item extends { source: LootSource }>() {
   return optionsFilter({
     key: 'source',
-    label: 'Spawns From',
-    title: 'The FATE whose spawn pool this belongs to',
+    label: t => t('fields.spawnsFrom'),
+    title: t => t('filters.spawnsFromTitle'),
     options: scope => {
       const fates = scope.resolve(
         scope.items.flatMap(item => (item.source.type === 'fate' ? [item.source.fateId] : []))
       )
-      const options = fates.map(fate => ({ key: fate.id, label: fate.name }))
+      const options: FilterOption[] = fates.map(fate => ({ key: fate.id, label: () => fate.name }))
       if (scope.items.some(item => item.source.type === 'bonus')) {
-        options.push({ key: BONUS_POOL, label: 'Bonus Roll' })
+        options.push({ key: BONUS_POOL, label: t => t('values.bonusRoll') })
       }
       return options
     },
@@ -115,7 +116,7 @@ function poolFilter<Item extends { source: LootSource }>() {
 // The sections both zones share. North Horn adds spells; South Horn replaces pots with its own.
 export const occultSections = {
   fates: defineSection({
-    name: 'FATEs',
+    name: t => t('sections.fates'),
     type: 'event',
     order: 10,
     schema: OccultEventSchema,
@@ -125,7 +126,7 @@ export const occultSections = {
   }),
 
   critical_encounters: defineSection({
-    name: 'Critical Encounters',
+    name: t => t('sections.criticalEncounters'),
     type: 'event',
     order: 11,
     schema: OccultEventSchema,
@@ -135,7 +136,7 @@ export const occultSections = {
   }),
 
   enemies: defineSection({
-    name: 'Enemies',
+    name: t => t('sections.enemies'),
     type: 'enemy',
     order: 9,
     schema: OccultEnemySchema,
@@ -152,16 +153,16 @@ export const occultSections = {
     filters: [
       keysFilter({
         key: 'aggro',
-        label: 'Aggro',
+        label: t => t('fields.aggro'),
         lookup: occultLookups.aggroTypes,
         get: (item: OccultEnemy) => item.aggro,
-        noneLabel: 'None',
+        noneLabel: t => t('values.none'),
       }),
     ],
   }),
 
   aethernet: defineSection({
-    name: 'Aethernet',
+    name: t => t('sections.aethernet'),
     type: 'poi',
     order: 2,
     schema: OccultPoiSchema,
@@ -171,7 +172,7 @@ export const occultSections = {
   }),
 
   survey_points: defineSection({
-    name: 'Survey Points',
+    name: t => t('sections.surveyPoints'),
     type: 'poi',
     order: 2,
     schema: OccultPoiSchema,
@@ -181,7 +182,7 @@ export const occultSections = {
   }),
 
   treasure_coffers: defineSection({
-    name: 'Treasure Coffers',
+    name: t => t('sections.treasureCoffers'),
     type: 'loot',
     order: 0,
     schema: OccultTreasureCofferSchema,
@@ -191,7 +192,7 @@ export const occultSections = {
     filters: [
       keysFilter({
         key: 'grade',
-        label: 'Grade',
+        label: t => t('fields.grade'),
         lookup: occultLookups.grades,
         get: (item: OccultTreasureCoffer) => item.grade,
       }),
@@ -199,7 +200,7 @@ export const occultSections = {
   }),
 
   bunny_coffers: defineSection({
-    name: 'Happy Bunny Coffers',
+    name: t => t('sections.bunnyCoffers'),
     type: 'loot',
     order: 0,
     schema: OccultBunnyCofferSchema,
@@ -212,7 +213,7 @@ export const occultSections = {
 export const northHornSections = {
   ...occultSections,
   pots: defineSection({
-    name: 'Persistent Pots',
+    name: t => t('sections.pots'),
     type: 'loot',
     order: 0,
     schema: OccultPotSchema,
@@ -222,7 +223,7 @@ export const northHornSections = {
     filters: [poolFilter<OccultPot>()],
   }),
   spells: defineSection({
-    name: 'Blue Mage Spells',
+    name: t => t('sections.spells'),
     type: 'spell',
     order: 12,
     schema: OccultSpellSchema,
@@ -239,19 +240,22 @@ export const northHornSections = {
     filters: [
       optionsFilter({
         key: 'spellLevel',
-        label: 'Spell Level',
-        title: 'Phantom Blue Mage level required to learn the spell',
+        label: t => t('fields.spellLevel'),
+        title: t => t('filters.spellLevelTitle'),
         options: scope => {
           const levels = [...new Set(scope.items.map(item => item.spellLevel))]
           return levels
             .sort((a, b) => a - b)
-            .map(level => ({ key: String(level), label: `Level ${level}` }))
+            .map(level => ({
+              key: String(level),
+              label: t => t('filters.spellLevelOption', { level }),
+            }))
         },
         get: (item: OccultSpell) => String(item.spellLevel),
       }),
       flagFilter({
         key: 'prerequisite',
-        label: 'Needs Another Spell',
+        label: t => t('filters.needsAnotherSpell'),
         get: (item: OccultSpell) => item.requires !== '',
       }),
     ],
@@ -261,7 +265,7 @@ export const northHornSections = {
 export const southHornSections = {
   ...occultSections,
   pots: defineSection({
-    name: 'Persistent Pots',
+    name: t => t('sections.pots'),
     type: 'loot',
     order: 0,
     schema: SouthHornPotSchema,
@@ -272,10 +276,10 @@ export const southHornSections = {
       poolFilter<SouthHornPot>(),
       keysFilter({
         key: 'direction',
-        label: 'Faces',
+        label: t => t('fields.direction'),
         lookup: directions,
         get: (item: SouthHornPot) => item.direction,
-        noneLabel: 'Unknown',
+        noneLabel: t => t('values.unknown'),
       }),
     ],
   }),
