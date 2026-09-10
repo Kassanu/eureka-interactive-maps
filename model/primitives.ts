@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { TRANSLATED_LOCALE_CODES, type TranslatedLocaleCode } from '../i18n/locales'
 import type { Translate } from '../i18n/translate'
 
 // Unique across every section of a zone file, so a reference carries no section key.
@@ -15,6 +16,24 @@ export const NameSchema = z.string().min(1).check(ctx => {
     })
   }
 })
+
+const TranslationSchema = z.strictObject({ name: NameSchema })
+
+// Keyed by locale `code`, not `language`: the two differ for Chinese. `name` holds the English,
+// so the default locale is never a key.
+export const TranslationsSchema = z
+  .strictObject(
+    Object.fromEntries(
+      TRANSLATED_LOCALE_CODES.map(code => [code, TranslationSchema.optional()])
+    ) as Record<TranslatedLocaleCode, z.ZodOptional<typeof TranslationSchema>>
+  )
+  .check(ctx => {
+    if (Object.keys(ctx.value).length === 0) {
+      ctx.issues.push({ code: 'custom', input: ctx.value, message: 'i18n block holds no translation' })
+    }
+  })
+
+export type Translations = z.infer<typeof TranslationsSchema>
 
 // In-game grid units: 2048x2048 maps at 50 pixels per unit with an offset of 1, so both axes
 // run from about 1 to 42.

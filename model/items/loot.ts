@@ -1,9 +1,9 @@
 import { z } from 'zod'
-import { ItemBaseSchema, ItemRefSchema } from './base'
+import { ItemRefSchema, OptionallyNamedBaseSchema } from './base'
 
 // A coffer, lockbox or pot. No loot item in any zone carries a name, so `name` stays the optional
 // field the base declares and a loot marker is identified by its position.
-export const LootBaseSchema = ItemBaseSchema
+export const LootBaseSchema = OptionallyNamedBaseSchema
 
 // Where a piece of loot comes from. A pot either appears during a named FATE or comes from a
 // bonus roll, and the two are exclusive: nothing carries a fate and a bonus together.

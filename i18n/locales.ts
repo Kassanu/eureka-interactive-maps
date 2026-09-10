@@ -16,6 +16,12 @@ export const LOCALES = [
 
 export type LocaleCode = (typeof LOCALES)[number]['code']
 
-export const DEFAULT_LOCALE: LocaleCode = 'en'
+export const DEFAULT_LOCALE = 'en' satisfies LocaleCode
 
 export const LOCALE_CODES = LOCALES.map(locale => locale.code) as LocaleCode[]
+
+export type TranslatedLocaleCode = Exclude<LocaleCode, typeof DEFAULT_LOCALE>
+
+export const TRANSLATED_LOCALE_CODES = LOCALE_CODES.filter(
+  (code): code is TranslatedLocaleCode => code !== DEFAULT_LOCALE
+)

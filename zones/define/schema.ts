@@ -4,7 +4,7 @@ import { z } from 'zod'
 // package.json. Any change to that shape bumps this, which separates a stale contributor file
 // from a current one.
 
-export const ZONE_SCHEMA_VERSION = 8
+export const ZONE_SCHEMA_VERSION = 9
 
 // The envelope, not the items: which sections a file holds and that each carries a list. What is
 // in those lists is the business of the section schema that owns them.

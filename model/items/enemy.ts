@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { aggroTypes } from '../lookups'
-import { NameSchema } from '../primitives'
+import { NameSchema, TranslationsSchema } from '../primitives'
 import { ItemBaseSchema, OptionalItemRefSchema } from './base'
 import { ConditionsSchema } from './conditions'
 
@@ -15,6 +15,7 @@ export const EnemyTraitsSchema = z.strictObject({
 
 export const BossSchema = z.strictObject({
   name: NameSchema,
+  i18n: TranslationsSchema.optional(),
 })
 
 // Eureka and the Occult zones grade one by level, Bozja and Zadnor by rank.
