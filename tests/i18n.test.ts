@@ -2,7 +2,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES } from '../i18n/locales'
+import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES, TRANSLATED_LOCALE_CODES } from '../i18n/locales'
 import { ENGLISH_ONLY_PATHS, localizedRoutes, siteRoutes } from '../i18n/routes'
 import * as lookups from '../model/lookups'
 import { zoneSlugs } from '../zones'
@@ -157,10 +157,9 @@ describe('the English file and the source', () => {
 
 describe('a translated locale file', () => {
   const english = flatten(messagesFor(DEFAULT_LOCALE))
-  const translated = LOCALE_CODES.filter(code => code !== DEFAULT_LOCALE)
 
   it('declares no key the default locale lacks', () => {
-    for (const code of translated) {
+    for (const code of TRANSLATED_LOCALE_CODES) {
       const orphans = [...flatten(messagesFor(code)).keys()].filter(key => !english.has(key))
       expect(orphans, code).toEqual([])
     }
@@ -168,7 +167,7 @@ describe('a translated locale file', () => {
 
   // A translation that drops {zone} renders a title with no zone in it, and nothing else notices.
   it('carries the same placeholders as its English source', () => {
-    for (const code of translated) {
+    for (const code of TRANSLATED_LOCALE_CODES) {
       for (const [key, message] of flatten(messagesFor(code))) {
         expect(placeholders(message), `${code}: ${key}`).toEqual(placeholders(english.get(key) ?? ''))
       }
