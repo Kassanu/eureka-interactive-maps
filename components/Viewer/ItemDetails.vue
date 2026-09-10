@@ -1,71 +1,90 @@
 <template>
   <div>
-    <Field v-if="'level' in item" :label="level">{{ formatLevel(item.level) }}</Field>
-    <Field v-if="'rank' in item" label="Rank">{{ item.rank === 'star' ? 'Star' : item.rank }}</Field>
-    <Field v-if="'spellLevel' in item" label="Spell Level">{{ item.spellLevel }}</Field>
-    <Field v-if="'element' in item" label="Element">{{ elements.label(item.element) }}</Field>
+    <Field v-if="'level' in item" :label="level">{{ formatLevel(item.level, t) }}</Field>
+    <Field v-if="'rank' in item" :label="t('fields.rank')">
+      {{ item.rank === 'star' ? t('values.star') : item.rank }}
+    </Field>
+    <Field v-if="'spellLevel' in item" :label="t('fields.spellLevel')">{{ item.spellLevel }}</Field>
+    <Field v-if="'element' in item" :label="t('fields.element')">
+      {{ elements.label(item.element) }}
+    </Field>
 
-    <Field label="Coordinates" stacked>
+    <Field :label="t('fields.coordinates')" stacked>
       <div v-for="(point, index) in item.positions" :key="index">({{ point.x }}, {{ point.y }})</div>
     </Field>
 
-    <Field v-if="'grade' in item" label="Grade">{{ grades.label(item.grade) }}</Field>
-    <Field v-if="'direction' in item && item.direction" label="Direction">
+    <Field v-if="'grade' in item" :label="t('fields.grade')">{{ grades.label(item.grade) }}</Field>
+    <Field v-if="'direction' in item && item.direction" :label="t('fields.direction')">
       {{ directions.label(item.direction) }}
     </Field>
-    <Field v-if="'aggro' in item" label="Aggro">{{ list(aggroTypes, item.aggro) }}</Field>
-    <Field v-if="'spawnCondition' in item && item.spawnCondition" label="Spawns">
+    <Field v-if="'aggro' in item" :label="t('fields.aggro')">
+      {{ list(aggroTypes, item.aggro) }}
+    </Field>
+    <Field v-if="'spawnCondition' in item && item.spawnCondition" :label="t('fields.spawnsUnder')">
       {{ spawnConditions.label(item.spawnCondition) }}
     </Field>
-    <Field v-if="'attack' in item" label="Attack">{{ attacks.label(item.attack) || 'Both' }}</Field>
-    <Field v-if="'weakness' in item" label="Weakness">{{ weakness }}</Field>
-    <Field v-if="'participants' in item" label="Participants">{{ item.participants }}</Field>
-    <Field v-if="'weather' in item && item.weather" label="Weather">
+    <Field v-if="'attack' in item" :label="t('fields.attack')">
+      {{ attacks.label(item.attack) || t('values.both') }}
+    </Field>
+    <Field v-if="'weakness' in item" :label="t('fields.weakness')">{{ weakness }}</Field>
+    <Field v-if="'participants' in item" :label="t('fields.participants')">
+      {{ item.participants }}
+    </Field>
+    <Field v-if="'weather' in item && item.weather" :label="t('fields.weather')">
       {{ weathers.label(item.weather) }}
     </Field>
 
     <template v-if="'boss' in item && item.boss">
-      <Field label="Boss">{{ item.boss.name }}</Field>
-      <Field v-if="'weakness' in item.boss && item.boss.weakness.length" label="Boss Weakness">
+      <Field :label="t('fields.boss')">{{ item.boss.name }}</Field>
+      <Field
+        v-if="'weakness' in item.boss && item.boss.weakness.length"
+        :label="t('fields.bossWeakness')"
+      >
         {{ list(elements, item.boss.weakness) }}
       </Field>
     </template>
 
-    <Field v-if="spawnsFate" label="Spawns FATE">{{ spawnsFate }}</Field>
-    <Field v-if="spawnedBy" label="Spawned By">{{ spawnedBy }}</Field>
-    <Field v-if="spawnPool" label="Spawns From">{{ spawnPool }}</Field>
+    <Field v-if="spawnsFate" :label="t('fields.spawnsFate')">{{ spawnsFate }}</Field>
+    <Field v-if="spawnedBy" :label="t('fields.spawnedBy')">{{ spawnedBy }}</Field>
+    <Field v-if="spawnPool" :label="t('fields.spawnsFrom')">{{ spawnPool }}</Field>
 
     <Field v-if="'learnedFrom' in item" :label="learnedFromLabel">
-      {{ describeRef(zone, item.learnedFrom) }}
+      {{ describeRef(zone, item.learnedFrom, t) }}
     </Field>
-    <Field v-if="'requires' in item && item.requires" label="Requires">
+    <Field v-if="'requires' in item && item.requires" :label="t('fields.requires')">
       {{ zone.byId.get(item.requires)?.name }}
     </Field>
-    <Field v-if="'replaces' in item && item.replaces" label="Replaces">
+    <Field v-if="'replaces' in item && item.replaces" :label="t('fields.replaces')">
       {{ zone.byId.get(item.replaces)?.name }}
     </Field>
 
     <template v-if="'mutation' in item && item.mutation">
-      <Field v-if="item.mutation.element" label="Mutated Element">
+      <Field v-if="item.mutation.element" :label="t('fields.mutatedElement')">
         {{ elements.label(item.mutation.element) }}
       </Field>
-      <Field label="Mutation Conditions" stacked>
+      <Field :label="t('fields.mutationConditions')" stacked>
         <Conditions :conditions="item.mutation.conditions" />
       </Field>
     </template>
-    <Field v-if="'adaptation' in item && item.adaptation" label="Adaptation Conditions" stacked>
+    <Field
+      v-if="'adaptation' in item && item.adaptation"
+      :label="t('fields.adaptationConditions')"
+      stacked
+    >
       <Conditions :conditions="item.adaptation.conditions" />
     </Field>
 
-    <Field v-if="'drops' in item && item.drops.length" label="Drops" stacked>
+    <Field v-if="'drops' in item && item.drops.length" :label="t('fields.drops')" stacked>
       <div v-for="(drop, index) in item.drops" :key="index">
         {{ dropItems.label(drop.item) }} ({{ drop.amount }})<span v-if="drop.percent != null">
           {{ drop.percent }}%</span>
       </div>
     </Field>
 
-    <Field v-if="'spawns' in item && item.spawns.length" label="Spawn Conditions" stacked>
-      <div v-for="(spawn, index) in item.spawns" :key="index">{{ describeSpawn(zone, spawn) }}</div>
+    <Field v-if="'spawns' in item && item.spawns.length" :label="t('fields.spawnConditions')" stacked>
+      <div v-for="(spawn, index) in item.spawns" :key="index">
+        {{ describeSpawn(zone, spawn, t) }}
+      </div>
     </Field>
   </div>
 </template>
@@ -96,9 +115,11 @@ const props = defineProps<{
   zone: LoadedZone
 }>()
 
+const { t } = useI18n()
+
 // An empty list is no aggro and no weakness rather than an unrecorded one, so it reads as None.
 function list<K extends string>(lookup: Lookup<K>, keys: readonly K[]): string {
-  return keys.map(key => lookup.label(key)).join(', ') || 'None'
+  return keys.map(key => lookup.label(key)).join(', ') || t('values.none')
 }
 
 const level = computed(() => operations[props.zone.definition.operation].levelLabel)
@@ -106,16 +127,16 @@ const level = computed(() => operations[props.zone.definition.operation].levelLa
 // Bozja grades an enemy by one attack type it is weak to; the Occult zones list elements.
 const weakness = computed(() => {
   const value = 'weakness' in props.item ? props.item.weakness : ''
-  return Array.isArray(value) ? list(elements, value) : attacks.label(value) || 'None'
+  return Array.isArray(value) ? list(elements, value) : attacks.label(value) || t('values.none')
 })
 
 const spawnsFate = computed(() =>
-  'spawnsFate' in props.item ? describeRef(props.zone, props.item.spawnsFate) : ''
+  'spawnsFate' in props.item ? describeRef(props.zone, props.item.spawnsFate, t) : ''
 )
 
 const spawnedBy = computed(() =>
   props.zone.spawnersOf(props.item.id)
-    .map(item => describeRef(props.zone, item.id))
+    .map(item => describeRef(props.zone, item.id, t))
     .filter(Boolean)
     .join(', ')
 )
@@ -124,8 +145,8 @@ const spawnedBy = computed(() =>
 const spawnPool = computed(() => {
   if (!('source' in props.item)) return ''
   return props.item.source.type === 'bonus'
-    ? 'Bonus Roll'
-    : describeRef(props.zone, props.item.source.fateId)
+    ? t('values.bonusRoll')
+    : describeRef(props.zone, props.item.source.fateId, t)
 })
 
 // A spell is taught by an enemy or by a critical encounter, and the section holding the teacher
@@ -134,6 +155,8 @@ const learnedFromLabel = computed(() => {
   const teacher = 'learnedFrom' in props.item
     ? props.zone.sectionOf.get(props.item.learnedFrom)
     : undefined
-  return teacher?.definition.type === 'event' ? 'Critical Encounter' : 'Learned From'
+  return teacher?.definition.type === 'event'
+    ? t('fields.criticalEncounter')
+    : t('fields.learnedFrom')
 })
 </script>

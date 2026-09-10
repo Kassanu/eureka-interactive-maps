@@ -1,16 +1,16 @@
 <template>
-  <FormField label="Spawn Conditions">
+  <FormField :label="t('fields.spawnConditions')">
     <template #actions>
-      <button type="button" class="editor-button" title="Add a spawn condition" @click="add">
+      <button type="button" class="editor-button" :title="t('editor.addSpawn')" @click="add">
         <font-awesome-icon icon="plus" />
       </button>
     </template>
 
     <div v-for="(spawn, index) in spawns" :key="index" class="editor-row">
       <select :value="spawn.type" class="editor-input w-28" @change="retype($event, index)">
-        <option value="enemy">Kill</option>
-        <option value="event">Complete</option>
-        <option value="time">After</option>
+        <option value="enemy">{{ t('editor.spawnKill') }}</option>
+        <option value="event">{{ t('editor.spawnComplete') }}</option>
+        <option value="time">{{ t('editor.spawnAfter') }}</option>
       </select>
 
       <input
@@ -19,7 +19,7 @@
         type="number"
         min="1"
         class="editor-input"
-        title="Seconds from the start"
+        :title="t('editor.spawnSeconds')"
       >
       <ItemPicker
         v-else
@@ -50,6 +50,8 @@ const props = defineProps<{
   spawns: Spawn[]
   zone: LoadedZone
 }>()
+
+const { t } = useI18n()
 
 function add() {
   props.spawns.push({ type: 'enemy', itemId: '' })

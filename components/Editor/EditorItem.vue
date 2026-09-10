@@ -4,10 +4,10 @@
       <input
         :checked="editor.isVisible(item.id)"
         type="checkbox"
-        title="Show or hide on the map. Hold Alt to set every item in this section."
+        :title="t('editor.toggleItem')"
         @click="setVisible"
       >
-      <button type="button" title="Delete this item" @click="remove">
+      <button type="button" :title="t('editor.deleteItem')" @click="remove">
         <font-awesome-icon icon="times" class="cursor-pointer" />
       </button>
       <span class="text-sm text-gray-600 truncate">{{ item.name || item.id }}</span>
@@ -32,6 +32,7 @@ const props = defineProps<{
   item: ZoneItem
 }>()
 
+const { t } = useI18n()
 const editor = useEditor()
 
 // Holding Alt sets every item in the section to what this one was just set to, which is how a
@@ -43,7 +44,7 @@ function setVisible(event: MouseEvent) {
 }
 
 function remove() {
-  if (confirm('You will be unable to recover this item after deleting. Are you sure?')) {
+  if (confirm(t('editor.confirmDelete'))) {
     editor.removeItem(props.section.key, props.item)
   }
 }

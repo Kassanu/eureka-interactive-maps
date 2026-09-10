@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import type { Translate } from '../i18n/translate'
 
 // Unique across every section of a zone file, so a reference carries no section key.
 export const ItemIdSchema = z.uuid()
@@ -51,6 +52,7 @@ export function levelOverlaps(level: Level, from: number, to: number): boolean {
   return level.from <= to && level.to >= from
 }
 
-export function formatLevel(level: Level): string {
-  return levelIsRange(level) ? `${level.from} to ${level.to}` : String(level.from)
+export function formatLevel(level: Level, t: Translate): string {
+  if (!levelIsRange(level)) return String(level.from)
+  return t('common.range', { from: level.from, to: level.to })
 }

@@ -4,12 +4,12 @@
       <input
         :checked="editor.isVisible(section.key)"
         type="checkbox"
-        title="Show or hide this section on the map"
+        :title="t('editor.toggleSection')"
         @change="editor.setVisible(section.key, ($event.target as HTMLInputElement).checked)"
       >
       <div>
         <span class="font-bold mr-1">{{ section.definition.name }} ({{ matching.length }})</span>
-        <button type="button" title="Add an item to this section" @click="editor.addTo(section)">
+        <button type="button" :title="t('editor.addItem')" @click="editor.addTo(section)">
           <font-awesome-icon icon="plus" class="cursor-pointer" />
         </button>
       </div>
@@ -38,6 +38,7 @@ import type { LoadedSection } from '~/zones'
 
 const props = defineProps<{ section: LoadedSection }>()
 
+const { t } = useI18n()
 const editor = useEditor()
 
 // What the search leaves, which is not the same as what the map shows.

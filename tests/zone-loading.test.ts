@@ -9,6 +9,7 @@ import {
   zones,
 } from '../zones'
 import type { ZoneSlug } from '../zones'
+import { english } from './helpers/messages'
 import { hydrateZone, loadZoneFile } from './helpers/zoneFiles'
 
 // The loader is what the viewer and the editor both run. These check what it hands them, using
@@ -108,16 +109,16 @@ describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as con
 
   it('names an item a reference points at', () => {
     for (const item of zone.byId.values()) {
-      const described = describeRef(zone, item.id)
+      const described = describeRef(zone, item.id, english)
       if (!item.name) {
         expect(described).toBe('')
         continue
       }
       const [first] = item.positions
-      expect(described).toBe(`${item.name} (${first!.x}, ${first!.y})`)
+      expect(described).toBe(english('item.at', { name: item.name, x: first!.x, y: first!.y }))
     }
-    expect(describeRef(zone, undefined)).toBe('')
-    expect(describeRef(zone, 'not-an-id')).toBe('')
+    expect(describeRef(zone, undefined, english)).toBe('')
+    expect(describeRef(zone, 'not-an-id', english)).toBe('')
   })
 
   it('draws everything it holds before a filter is touched', () => {

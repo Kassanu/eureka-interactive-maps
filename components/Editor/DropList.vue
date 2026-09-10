@@ -1,7 +1,7 @@
 <template>
-  <FormField label="Drops">
+  <FormField :label="t('fields.drops')">
     <template #actions>
-      <button type="button" class="editor-button" title="Add a drop" @click="add">
+      <button type="button" class="editor-button" :title="t('editor.addDrop')" @click="add">
         <font-awesome-icon icon="plus" />
       </button>
     </template>
@@ -12,7 +12,7 @@
           {{ option.label }}
         </option>
       </select>
-      <input v-model.number="drop.amount" type="number" min="1" class="editor-input w-16" title="How many drop">
+      <input v-model.number="drop.amount" type="number" min="1" class="editor-input w-16" :title="t('editor.dropAmount')">
       <input
         :value="drop.percent ?? ''"
         type="number"
@@ -20,7 +20,7 @@
         max="100"
         placeholder="%"
         class="editor-input w-16"
-        title="Drop rate, left empty where it is not known"
+        :title="t('editor.dropRate')"
         @change="rate($event, drop)"
       >
       <button type="button" class="editor-button editor-remove" @click="drops.splice(index, 1)">
@@ -37,6 +37,8 @@ import { dropItems, type Drop } from '~/model/lookups/drops'
 // What an item drops, naming the shared catalogue rather than repeating an item's text. An
 // unknown rate leaves `percent` off rather than storing a zero that reads as "never drops".
 const props = defineProps<{ drops: Drop[] }>()
+
+const { t } = useI18n()
 
 function add() {
   props.drops.push({ item: dropItems.keys[0]!, amount: 1 })

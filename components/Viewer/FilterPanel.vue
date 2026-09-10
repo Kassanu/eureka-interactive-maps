@@ -11,7 +11,7 @@
         class="absolute top-2 right-2 cursor-pointer text-xs px-2 py-1 rounded border border-gray-500 hover:border-gray-300 hover:text-white transition-colors"
         @click="$emit('reset')"
       >
-        Reset
+        {{ t('filters.reset') }}
       </button>
 
       <FilterControl
@@ -27,7 +27,7 @@
             <input
               :checked="state.sections.includes(section.key)"
               type="checkbox"
-              title="Show or hide this section"
+              :title="t('filters.toggleSection')"
               @change="toggleSection(state, section.key)"
             >
             <span>{{ section.definition.name }}</span>
@@ -36,16 +36,16 @@
           <button
             type="button"
             class="only text-xs text-gray-500"
-            title="Show this section and nothing else"
+            :title="t('filters.onlySection')"
             @click="onlySection(zone, state, section.key)"
           >
-            only
+            {{ t('filters.only') }}
           </button>
           <button
             v-if="section.scopedFilters.length"
             type="button"
             class="ml-auto px-1 text-gray-500 hover:text-white transition-colors"
-            :title="isExpanded(section.key) ? 'Hide these filters' : 'Show these filters'"
+            :title="isExpanded(section.key) ? t('filters.hideFilters') : t('filters.showFilters')"
             @click="toggleExpanded(section.key)"
           >
             <font-awesome-icon :icon="isExpanded(section.key) ? 'caret-up' : 'caret-down'" />
@@ -71,12 +71,12 @@
         class="cursor-pointer w-full h-full flex justify-center items-center gap-2"
         @click="panelExpanded = !panelExpanded"
       >
-        <span class="filters-toggle-label">Filters</span>
+        <span class="filters-toggle-label">{{ t('filters.heading') }}</span>
         <font-awesome-icon :icon="expandIcon" />
         <span
           v-if="active"
           class="text-xs rounded-full px-1 bg-gray-600 text-white"
-          :title="`${active} filters changed`"
+          :title="t('filters.changed', { count: active })"
         >{{ active }}</span>
       </div>
     </div>
@@ -96,6 +96,7 @@ const props = defineProps<{
 
 defineEmits<{ (e: 'reset'): void }>()
 
+const { t } = useI18n()
 const windowWidth = useWindowWidth()
 const panelExpanded = ref(true)
 

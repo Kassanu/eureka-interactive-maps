@@ -14,6 +14,7 @@ import {
   levelOverlaps,
 } from '../model/primitives'
 import { operations, zoneSlugs, zones } from '../zones'
+import { english } from './helpers/messages'
 
 const PUBLIC_DIR = join(process.cwd(), 'public')
 
@@ -137,8 +138,8 @@ describe('level', () => {
   })
 
   it('formats a single level and a range differently', () => {
-    expect(formatLevel({ from: 25, to: 25 })).toBe('25')
-    expect(formatLevel({ from: 1, to: 5 })).toBe('1 to 5')
+    expect(formatLevel({ from: 25, to: 25 }, english)).toBe('25')
+    expect(formatLevel({ from: 1, to: 5 }, english)).toBe('1 to 5')
   })
 })
 
