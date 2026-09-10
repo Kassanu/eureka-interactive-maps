@@ -6,7 +6,7 @@
         <OperationZones
           v-for="operation in operationKeys"
           :key="operation"
-          :title="operations[operation].name"
+          :title="operations[operation].name(t)"
           :zones="zonesOf(operation)"
         />
       </div>
@@ -18,6 +18,8 @@
 import OperationZones from '~/components/OperationZones.vue'
 import { SITE_NAME } from '~/site'
 import { operationKeys, operations, zoneSlugs, zoneFor, type OperationKey } from '~/zones'
+
+const { t } = useI18n()
 
 const zonesOf = (operation: OperationKey) =>
   zoneSlugs.map(zoneFor).filter(zone => zone.operation === operation)

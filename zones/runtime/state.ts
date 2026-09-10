@@ -63,7 +63,9 @@ function isolate(
   if (definition.combine !== 'every') return [key]
   const group = options.find(option => option.key === key)?.group
   if (group === undefined) return [key]
-  const others = options.filter(option => option.group !== undefined && option.group !== group)
+  const others = options.filter(
+    option => option.group !== undefined && option.group.key !== group.key
+  )
   return [key, ...others.map(option => option.key)]
 }
 

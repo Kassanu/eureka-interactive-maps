@@ -1,12 +1,12 @@
 import { z } from 'zod'
-import { times, weathers } from '../lookups'
+import { times, weatherTypes } from '../lookups'
 
 // A condition is one weather at one time, and `any` is one of the times rather than the absence
 // of one: an enemy that changes under a weather at both hours holds a single condition at `any`,
 // never a day row and a night row. Neither half may be empty, because a
 // weather with no time renders as a weather, a colon and nothing.
 export const ConditionSchema = z.strictObject({
-  weather: weathers.key,
+  weather: weatherTypes.key,
   time: times.key,
 })
 

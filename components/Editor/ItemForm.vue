@@ -20,7 +20,7 @@
       <FormField v-if="'rank' in item" :label="t('fields.rank')">
         <select v-model="item.rank" class="editor-input">
           <option v-for="option in ranks.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -32,7 +32,7 @@
       <FormField v-if="'element' in item" :label="t('fields.element')">
         <select v-model="item.element" class="editor-input">
           <option v-for="option in elements.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -40,7 +40,7 @@
       <FormField v-if="'grade' in item" :label="t('fields.grade')">
         <select v-model="item.grade" class="editor-input">
           <option v-for="option in grades.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -52,8 +52,8 @@
       <FormField v-if="'weather' in item" :label="t('fields.weather')">
         <select v-model="item.weather" class="editor-input">
           <option value="">{{ t('values.any') }}</option>
-          <option v-for="option in weathers.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+          <option v-for="option in weatherTypes.options()" :key="option.key" :value="option.key">
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -62,7 +62,7 @@
         <select v-model="item.spawnCondition" class="editor-input">
           <option value="">{{ t('values.always') }}</option>
           <option v-for="option in spawnConditions.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -71,7 +71,7 @@
         <select v-model="item.direction" class="editor-input">
           <option value="">{{ t('values.unknown') }}</option>
           <option v-for="option in directions.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -80,7 +80,7 @@
         <select v-model="item.attack" class="editor-input">
           <option value="">{{ t('values.both') }}</option>
           <option v-for="option in attacks.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -92,7 +92,7 @@
         <select v-model="item.weakness" class="editor-input">
           <option value="">{{ t('values.none') }}</option>
           <option v-for="option in attacks.options()" :key="option.key" :value="option.key">
-            {{ option.label }}
+            {{ option.label(t) }}
           </option>
         </select>
       </FormField>
@@ -183,7 +183,7 @@
           <select :value="item.mutation.element ?? ''" class="editor-input" @change="setMutationElement">
             <option value="">{{ t('values.unknown') }}</option>
             <option v-for="option in elements.options()" :key="option.key" :value="option.key">
-              {{ option.label }}
+              {{ option.label(t) }}
             </option>
           </select>
         </FormField>
@@ -233,7 +233,7 @@ import {
   mobFamilies,
   ranks,
   spawnConditions,
-  weathers,
+  weatherTypes,
 } from '~/model/lookups'
 import {
   BONUS_POOL,
@@ -267,7 +267,7 @@ const zone = computed(() => editor.zone.value as LoadedZone)
 
 const shape = computed(() => shapeOf(props.section.definition.schema))
 const iconOptional = computed(() => isOptionalField(shape.value, 'icon'))
-const level = computed(() => operations[zone.value.definition.operation].levelLabel)
+const level = computed(() => operations[zone.value.definition.operation].levelLabel(t))
 
 const hasBoss = computed(() => 'boss' in props.item && props.item.boss !== undefined)
 

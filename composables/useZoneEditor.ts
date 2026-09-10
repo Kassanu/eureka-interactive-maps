@@ -8,6 +8,7 @@ import {
   type InjectionKey,
   type Ref,
 } from 'vue'
+import type { Text } from '~/i18n/translate'
 import type { Position } from '~/model/primitives'
 import {
   ZONE_SCHEMA_VERSION,
@@ -30,8 +31,8 @@ import {
 
 // What the map is waiting for a click to tell it.
 export type Pending =
-  | { kind: 'add'; sectionKey: string; label: string }
-  | { kind: 'position'; item: ZoneItem; point: Position; label: string }
+  | { kind: 'add'; sectionKey: string; label: Text }
+  | { kind: 'position'; item: ZoneItem; point: Position; label: Text }
 
 export interface UseZoneEditor {
   zone: ComputedRef<LoadedZone | null>
@@ -133,7 +134,7 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
 
   // The point, not its index: a row deleted while the map waits shifts every index after it.
   function placePosition(item: ZoneItem, point: Position) {
-    pending.value = { kind: 'position', item, point, label: item.name ?? item.id }
+    pending.value = { kind: 'position', item, point, label: () => item.name ?? item.id }
   }
 
   function cancel() {

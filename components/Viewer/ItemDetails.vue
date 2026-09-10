@@ -2,36 +2,36 @@
   <div>
     <Field v-if="'level' in item" :label="level">{{ formatLevel(item.level, t) }}</Field>
     <Field v-if="'rank' in item" :label="t('fields.rank')">
-      {{ item.rank === 'star' ? t('values.star') : item.rank }}
+      {{ ranks.label(item.rank, t) }}
     </Field>
     <Field v-if="'spellLevel' in item" :label="t('fields.spellLevel')">{{ item.spellLevel }}</Field>
     <Field v-if="'element' in item" :label="t('fields.element')">
-      {{ elements.label(item.element) }}
+      {{ elements.label(item.element, t) }}
     </Field>
 
     <Field :label="t('fields.coordinates')" stacked>
       <div v-for="(point, index) in item.positions" :key="index">({{ point.x }}, {{ point.y }})</div>
     </Field>
 
-    <Field v-if="'grade' in item" :label="t('fields.grade')">{{ grades.label(item.grade) }}</Field>
+    <Field v-if="'grade' in item" :label="t('fields.grade')">{{ grades.label(item.grade, t) }}</Field>
     <Field v-if="'direction' in item && item.direction" :label="t('fields.direction')">
-      {{ directions.label(item.direction) }}
+      {{ directions.label(item.direction, t) }}
     </Field>
     <Field v-if="'aggro' in item" :label="t('fields.aggro')">
       {{ list(aggroTypes, item.aggro) }}
     </Field>
     <Field v-if="'spawnCondition' in item && item.spawnCondition" :label="t('fields.spawnsUnder')">
-      {{ spawnConditions.label(item.spawnCondition) }}
+      {{ spawnConditions.label(item.spawnCondition, t) }}
     </Field>
     <Field v-if="'attack' in item" :label="t('fields.attack')">
-      {{ attacks.label(item.attack) || t('values.both') }}
+      {{ attacks.label(item.attack, t) || t('values.both') }}
     </Field>
     <Field v-if="'weakness' in item" :label="t('fields.weakness')">{{ weakness }}</Field>
     <Field v-if="'participants' in item" :label="t('fields.participants')">
       {{ item.participants }}
     </Field>
     <Field v-if="'weather' in item && item.weather" :label="t('fields.weather')">
-      {{ weathers.label(item.weather) }}
+      {{ weatherTypes.label(item.weather, t) }}
     </Field>
 
     <template v-if="'boss' in item && item.boss">
@@ -60,7 +60,7 @@
 
     <template v-if="'mutation' in item && item.mutation">
       <Field v-if="item.mutation.element" :label="t('fields.mutatedElement')">
-        {{ elements.label(item.mutation.element) }}
+        {{ elements.label(item.mutation.element, t) }}
       </Field>
       <Field :label="t('fields.mutationConditions')" stacked>
         <Conditions :conditions="item.mutation.conditions" />
@@ -76,7 +76,7 @@
 
     <Field v-if="'drops' in item && item.drops.length" :label="t('fields.drops')" stacked>
       <div v-for="(drop, index) in item.drops" :key="index">
-        {{ dropItems.label(drop.item) }} ({{ drop.amount }})<span v-if="drop.percent != null">
+        {{ dropItems.label(drop.item, t) }} ({{ drop.amount }})<span v-if="drop.percent != null">
           {{ drop.percent }}%</span>
       </div>
     </Field>
@@ -100,8 +100,9 @@ import {
   directions,
   elements,
   grades,
+  ranks,
   spawnConditions,
-  weathers,
+  weatherTypes,
   type Lookup,
 } from '~/model/lookups'
 import { formatLevel } from '~/model/primitives'
@@ -119,15 +120,15 @@ const { t } = useI18n()
 
 // An empty list is no aggro and no weakness rather than an unrecorded one, so it reads as None.
 function list<K extends string>(lookup: Lookup<K>, keys: readonly K[]): string {
-  return keys.map(key => lookup.label(key)).join(', ') || t('values.none')
+  return keys.map(key => lookup.label(key, t)).join(', ') || t('values.none')
 }
 
-const level = computed(() => operations[props.zone.definition.operation].levelLabel)
+const level = computed(() => operations[props.zone.definition.operation].levelLabel(t))
 
 // Bozja grades an enemy by one attack type it is weak to; the Occult zones list elements.
 const weakness = computed(() => {
   const value = 'weakness' in props.item ? props.item.weakness : ''
-  return Array.isArray(value) ? list(elements, value) : attacks.label(value) || t('values.none')
+  return Array.isArray(value) ? list(elements, value) : attacks.label(value, t) || t('values.none')
 })
 
 const spawnsFate = computed(() =>

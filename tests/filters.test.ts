@@ -12,6 +12,7 @@ import {
   zones,
 } from '../zones'
 import type { LoadedSection, LoadedZone, ScopedFilter, ZoneSlug } from '../zones'
+import { english } from './helpers/messages'
 import { hydratedZones } from './helpers/zoneFiles'
 
 // Every filter that narrows any section of any zone, with the items it reads and what it offers.
@@ -74,11 +75,27 @@ describe('every declared filter', () => {
     expect(duplicated).toEqual([])
   })
 
+  // `english` throws on a key en.json does not hold, so this sweep over every filter of every
+  // zone is what proves the whole set of filter messages, options and groups included.
   it('gives every option text to draw', () => {
     const blank: string[] = []
     for (const { filter, where } of cases) {
       for (const option of filter.definition.options(filter.scope)) {
-        if (!option.label.trim()) blank.push(`${where}.${option.key}`)
+        if (!option.label(english).trim()) blank.push(`${where}.${option.key}`)
+        if (option.group && !option.group.label(english).trim()) {
+          blank.push(`${where}.${option.key} group`)
+        }
+      }
+    }
+    expect(blank).toEqual([])
+  })
+
+  it('gives every filter a heading, and a title where it declares one', () => {
+    const blank: string[] = []
+    for (const { filter, where } of cases) {
+      if (!filter.definition.label(english).trim()) blank.push(where)
+      if (filter.definition.title && !filter.definition.title(english).trim()) {
+        blank.push(`${where} title`)
       }
     }
     expect(blank).toEqual([])
@@ -269,11 +286,12 @@ describe('the zones as declared', () => {
         expect(level, zone.definition.slug).toBeUndefined()
         continue
       }
-      const word = operations[zones[zone.definition.slug as ZoneSlug].operation].levelLabel
-      expect(level?.definition.label, zone.definition.slug).toBe(word)
+      const word = operations[zones[zone.definition.slug as ZoneSlug].operation].levelLabel(english)
+      expect(level?.definition.label(english), zone.definition.slug).toBe(word)
     }
     expect(loaded.find(zone => zone.definition.slug === 'north_horn')?.scopedFilters
-      .find(filter => filter.definition.key === 'level')?.definition.label).toBe('Knowledge Level')
+      .find(filter => filter.definition.key === 'level')?.definition.label(english))
+      .toBe('Knowledge Level')
   })
 
   it('offers the None option only where an item leaves the field empty', () => {

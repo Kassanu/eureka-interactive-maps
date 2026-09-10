@@ -1,10 +1,14 @@
 import { dropItems, type Drop } from '../../model/lookups/drops'
 import type { Lookup } from '../../model/lookups'
+import type { Text } from '../../i18n/translate'
 import { levelOverlaps, type Level } from '../../model/primitives'
 
 // A filter holds the option keys that are enabled and keeps an item whose own keys for that field
 // are among them. Every option enabled is the default, and a filter at its default is never asked
 // about an item at all.
+//
+// Every label here is a `Text`, since options and defaults are read where no translator is in
+// reach.
 
 // The option items with an empty field answer to. Without one, those items ignore the filter.
 export const NONE_KEY = '__none'
@@ -12,12 +16,19 @@ export const NONE_KEY = '__none'
 export const YES_KEY = 'yes'
 export const NO_KEY = 'no'
 
+// A group is identified by its key, never by its label: grouping is compared by value, and a
+// label resolved per option would compare unequal to itself.
+export interface FilterGroup {
+  key: string
+  label: Text
+}
+
 export interface FilterOption {
   key: string
-  label: string
-  // Options sharing a group name draw together. Whether groups are alternatives or conditions
-  // holding at once is the filter's `combine`, not something a group says by itself.
-  group?: string
+  label: Text
+  // Options sharing a group draw together. Whether groups are alternatives or conditions holding
+  // at once is the filter's `combine`, not something a group says by itself.
+  group?: FilterGroup
 }
 
 export interface Bounds {
@@ -44,8 +55,8 @@ export interface FilterScope<Item> {
 
 export interface FilterDefinition<Item> {
   key: string
-  label: string
-  title?: string
+  label: Text
+  title?: Text
   control: FilterControl
   combine: FilterCombine
   // Narrowed to what the items carry, so a zone never draws an option nothing can match.
@@ -93,12 +104,12 @@ export function keySetFilter<Item>(
 
 export interface KeysFilterSpec<Item, K extends string> {
   key: string
-  label: string
-  title?: string
+  label: Text
+  title?: Text
   lookup: Lookup<K>
   // A scalar field holding "" and a list holding nothing both read as no keys.
   get: (item: Item) => K | '' | readonly K[] | undefined
-  noneLabel?: string
+  noneLabel?: Text
   // Whether the item carries this field at all. Absent, every item does. No key means "nothing"
   // for an item holding the field and "not applicable" for one without it.
   applicable?: (item: Item) => boolean
@@ -127,7 +138,7 @@ export function keysFilter<Item, K extends string>(
 
     const found: FilterOption[] = spec.lookup.keys
       .filter(key => present.has(key))
-      .map(key => ({ key: key, label: spec.lookup.label(key) }))
+      .map(key => ({ key: key, label: spec.lookup.labels[key] }))
 
     if (anyEmpty && spec.noneLabel !== undefined) {
       found.push({ key: NONE_KEY, label: spec.noneLabel })
@@ -156,11 +167,11 @@ export function keysFilter<Item, K extends string>(
 
 export interface FlagFilterSpec<Item> {
   key: string
-  label: string
-  title?: string
+  label: Text
+  title?: Text
   get: (item: Item) => boolean
-  yesLabel?: string
-  noLabel?: string
+  yesLabel?: Text
+  noLabel?: Text
 }
 
 // A yes or no field is a two key domain, not a checkbox: both enabled is the default.
@@ -168,8 +179,8 @@ export function flagFilter<Item>(spec: FlagFilterSpec<Item>): FilterDefinition<I
   const options = (scope: FilterScope<Item>): FilterOption[] => {
     const present = new Set<string>(scope.items.map(item => (spec.get(item) ? YES_KEY : NO_KEY)))
     const options: FilterOption[] = [
-      { key: YES_KEY, label: spec.yesLabel ?? 'Yes' },
-      { key: NO_KEY, label: spec.noLabel ?? 'No' },
+      { key: YES_KEY, label: spec.yesLabel ?? (t => t('filters.yes')) },
+      { key: NO_KEY, label: spec.noLabel ?? (t => t('filters.no')) },
     ]
     return options.filter(option => present.has(option.key))
   }
@@ -186,8 +197,8 @@ export function flagFilter<Item>(spec: FlagFilterSpec<Item>): FilterDefinition<I
 
 export interface OptionsFilterSpec<Item> {
   key: string
-  label: string
-  title?: string
+  label: Text
+  title?: Text
   // Built from the data rather than from a closed domain.
   options: (scope: FilterScope<Item>) => FilterOption[]
   get: (item: Item) => string
@@ -206,8 +217,8 @@ export function optionsFilter<Item>(spec: OptionsFilterSpec<Item>): FilterDefini
 
 export interface RangeFilterSpec<Item> {
   key: string
-  label: string
-  title?: string
+  label: Text
+  title?: Text
   bounds: Bounds
   get: (item: Item) => Level | undefined
 }
@@ -238,7 +249,7 @@ export function rangeFilter<Item>(spec: RangeFilterSpec<Item>): FilterDefinition
 }
 
 export function levelFilter(
-  label: string,
+  label: Text,
   bounds: Bounds
 ): FilterDefinition<{ level?: Level }> {
   return rangeFilter({
@@ -256,10 +267,10 @@ export function dropsFilter<Item>(): FilterDefinition<Item> {
       : undefined
   return keysFilter({
     key: 'drops',
-    label: 'Drops',
+    label: t => t('fields.drops'),
     lookup: dropItems,
     get: item => get(item)?.map(drop => drop.item),
-    noneLabel: 'Nothing',
+    noneLabel: t => t('values.nothing'),
     applicable: item => get(item) !== undefined,
   })
 }

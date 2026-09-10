@@ -29,11 +29,29 @@
     "count": "{enabled} of {total}",
     "any": "Any",
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "changesUnder": "Changes Under",
+    "changesUnderTitle": "The weather and time a monster mutates or adapts in",
+    "weatherGroup": "Weather",
+    "timeGroup": "Time",
+    "neverChanges": "Never changes",
+    "spawnsAFate": "Spawns a FATE",
+    "mutates": "Mutates",
+    "adapts": "Adapts",
+    "participantsTitle": "How many players the engagement admits",
+    "engagements": "Engagements",
+    "duels": "Duels",
+    "skirmishes": "Skirmishes",
+    "spawnsFromTitle": "The FATE whose spawn pool this belongs to",
+    "spellLevelTitle": "Phantom Blue Mage level required to learn the spell",
+    "spellLevelOption": "Level {level}",
+    "needsAnotherSpell": "Needs Another Spell"
   },
   "fields": {
     "id": "ID",
     "name": "Name",
+    "level": "Level",
+    "knowledgeLevel": "Knowledge Level",
     "rank": "Rank",
     "spellLevel": "Spell Level",
     "element": "Element",
@@ -69,12 +87,13 @@
   },
   "values": {
     "none": "None",
+    "nothing": "Nothing",
+    "other": "Other",
     "both": "Both",
     "any": "Any",
     "always": "Always",
     "unknown": "Unknown",
     "default": "Default",
-    "star": "Star",
     "bonusRoll": "Bonus Roll",
     "duringFate": "During a FATE"
   },
@@ -113,6 +132,103 @@
     "hasBoss": "This event is a boss fight",
     "mutates": "This enemy mutates",
     "adapts": "This enemy adapts"
+  },
+  "sections": {
+    "fates": "FATEs",
+    "monsters": "Monsters",
+    "enemies": "Enemies",
+    "elementals": "Elementals",
+    "aethernet": "Aethernet",
+    "quests": "Quests",
+    "lockboxes": "Bunny Lockboxes",
+    "engagements": "Critical Engagements",
+    "skirmishes": "Skirmishes",
+    "criticalEncounters": "Critical Encounters",
+    "surveyPoints": "Survey Points",
+    "treasureCoffers": "Treasure Coffers",
+    "bunnyCoffers": "Happy Bunny Coffers",
+    "pots": "Persistent Pots",
+    "spells": "Blue Mage Spells"
+  },
+  "operations": {
+    "eureka": "The Forbidden Land, Eureka",
+    "bozja": "Save the Queen: Blades of Gunnhildr",
+    "occult": "Occult Crescent"
+  },
+  "lookups": {
+    "elements": {
+      "fire": "Fire",
+      "earth": "Earth",
+      "lightning": "Lightning",
+      "water": "Water",
+      "wind": "Wind",
+      "ice": "Ice"
+    },
+    "weatherTypes": {
+      "fairskies": "Fair Skies",
+      "heatwave": "Heat Wave",
+      "snow": "Snow",
+      "blizzard": "Blizzard",
+      "showers": "Showers",
+      "thunderstorm": "Thunderstorm",
+      "fog": "Fog",
+      "umbralwind": "Umbral Wind",
+      "gales": "Gales",
+      "gloom": "Gloom"
+    },
+    "times": {
+      "day": "Day",
+      "night": "Night",
+      "any": "Any"
+    },
+    "aggroTypes": {
+      "sight": "Sight",
+      "truesight": "True Sight",
+      "sound": "Sound",
+      "proximity": "Proximity",
+      "magic": "Magic",
+      "blood": "Blood"
+    },
+    "mobFamilies": {
+      "ashkin": "Ashkin",
+      "sprite": "Sprite",
+      "elemental": "Elemental",
+      "fauna": "Fauna",
+      "machine": "Machine"
+    },
+    "grades": {
+      "bronze": "Bronze",
+      "silver": "Silver"
+    },
+    "directions": {
+      "n": "North",
+      "ne": "Northeast",
+      "e": "East",
+      "se": "Southeast",
+      "s": "South",
+      "sw": "Southwest",
+      "w": "West",
+      "nw": "Northwest"
+    },
+    "spawnConditions": {
+      "night": "Night",
+      "clearskies": "Clear Skies",
+      "clouds": "Clouds",
+      "atmosphericphantasms": "Atmospheric Phantasms",
+      "rain": "Rain"
+    },
+    "attacks": {
+      "physical": "Physical",
+      "magical": "Magical"
+    },
+    "ranks": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "star": "Star"
+    }
   },
   "zones": {
     "anemos": {

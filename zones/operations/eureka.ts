@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import type { IconKey } from '../../model/icons'
-import { aggroTypes, elements, mobFamilies, times, weathers } from '../../model/lookups'
+import { aggroTypes, elements, mobFamilies, times, weatherTypes } from '../../model/lookups'
 import { defineSection, type Blank } from '../define/types'
 import {
   NONE_KEY,
@@ -9,6 +9,7 @@ import {
   keySetFilter,
   keysFilter,
   type FilterDefinition,
+  type FilterGroup,
   type FilterOption,
   type FilterScope,
 } from '../define/filters'
@@ -28,7 +29,7 @@ import { LevelSchema } from '../../model/primitives'
 
 export const eurekaLookups = {
   elements,
-  weathers,
+  weatherTypes,
   times,
   aggroTypes: aggroTypes.subset(['sight', 'truesight', 'magic', 'sound', 'blood']),
   mobFamilies: mobFamilies.subset(['ashkin', 'sprite']),
@@ -60,7 +61,7 @@ export const EurekaEventSchema = EventBaseSchema.extend({
   boss: BossSchema.optional(),
   element: eurekaLookups.elements.key,
   // Absent means it spawns in any weather.
-  weather: eurekaLookups.weathers.keyOrNone,
+  weather: eurekaLookups.weatherTypes.keyOrNone,
 })
 
 export type EurekaEvent = z.infer<typeof EurekaEventSchema>
@@ -81,6 +82,9 @@ export type EurekaItem =
 const WEATHER_PREFIX = 'weather:'
 const TIME_PREFIX = 'time:'
 const conditionTimes = eurekaLookups.times.subset(['day', 'night'])
+
+const WEATHER_GROUP: FilterGroup = { key: 'weather', label: t => t('filters.weatherGroup') }
+const TIME_GROUP: FilterGroup = { key: 'time', label: t => t('filters.timeGroup') }
 
 function conditionsOf(item: EurekaEnemy) {
   return [...(item.mutation?.conditions ?? []), ...(item.adaptation?.conditions ?? [])]
@@ -105,29 +109,29 @@ function conditionOptions(scope: FilterScope<EurekaEnemy>): FilterOption[] {
   }
 
   const options: FilterOption[] = [
-    ...eurekaLookups.weathers.keys
+    ...eurekaLookups.weatherTypes.keys
       .filter(key => weathersSeen.has(key))
       .map(key => ({
         key: WEATHER_PREFIX + key,
-        label: eurekaLookups.weathers.label(key),
-        group: 'Weather',
+        label: eurekaLookups.weatherTypes.labels[key],
+        group: WEATHER_GROUP,
       })),
     ...conditionTimes.keys
       .filter(key => hoursSeen.has(key))
       .map(key => ({
         key: TIME_PREFIX + key,
-        label: conditionTimes.label(key),
-        group: 'Time',
+        label: conditionTimes.labels[key],
+        group: TIME_GROUP,
       })),
   ]
-  if (anyStill) options.push({ key: NONE_KEY, label: 'Never changes' })
+  if (anyStill) options.push({ key: NONE_KEY, label: t => t('filters.neverChanges') })
   return options
 }
 
 export const eurekaConditionFilter = keySetFilter<EurekaEnemy>({
   key: 'conditions',
-  label: 'Changes Under',
-  title: 'The weather and time a monster mutates or adapts in',
+  label: t => t('filters.changesUnder'),
+  title: t => t('filters.changesUnderTitle'),
   control: 'toggles',
   combine: 'every',
   options: conditionOptions,
@@ -151,7 +155,7 @@ function withOverride<T extends { icon?: IconKey }>(item: T, fallback: IconKey):
 
 export const eurekaSections = {
   fates: defineSection({
-    name: 'FATEs',
+    name: t => t('sections.fates'),
     type: 'event',
     order: 10,
     schema: EurekaEventSchema,
@@ -167,7 +171,7 @@ export const eurekaSections = {
   }),
 
   enemies: defineSection({
-    name: 'Monsters',
+    name: t => t('sections.monsters'),
     type: 'enemy',
     order: 9,
     schema: EurekaEnemySchema,
@@ -192,46 +196,46 @@ export const eurekaSections = {
     filters: [
       keysFilter({
         key: 'families',
-        label: 'Family',
+        label: t => t('fields.family'),
         lookup: eurekaLookups.mobFamilies,
         get: (item: EurekaEnemy) => item.family,
-        noneLabel: 'Other',
+        noneLabel: t => t('values.other'),
       }),
       keysFilter({
         key: 'aggro',
-        label: 'Aggro',
+        label: t => t('fields.aggro'),
         lookup: eurekaLookups.aggroTypes,
         get: (item: EurekaEnemy) => item.aggro,
-        noneLabel: 'None',
+        noneLabel: t => t('values.none'),
       }),
       flagFilter({
         key: 'spawnsFate',
-        label: 'Spawns a FATE',
+        label: t => t('filters.spawnsAFate'),
         get: (item: EurekaEnemy) => item.spawnsFate !== '',
       }),
       flagFilter({
         key: 'mutates',
-        label: 'Mutates',
+        label: t => t('filters.mutates'),
         get: (item: EurekaEnemy) => item.mutation !== undefined,
       }),
       flagFilter({
         key: 'adapts',
-        label: 'Adapts',
+        label: t => t('filters.adapts'),
         get: (item: EurekaEnemy) => item.adaptation !== undefined,
       }),
       eurekaConditionFilter,
       keysFilter({
         key: 'mutationElement',
-        label: 'Mutates Into',
+        label: t => t('fields.mutatesInto'),
         lookup: eurekaLookups.elements,
         get: (item: EurekaEnemy) => item.mutation?.element,
-        noneLabel: 'None',
+        noneLabel: t => t('values.none'),
       }),
     ],
   }),
 
   elementals: defineSection({
-    name: 'Elementals',
+    name: t => t('sections.elementals'),
     type: 'poi',
     order: 1,
     schema: EurekaPoiSchema,
@@ -241,7 +245,7 @@ export const eurekaSections = {
   }),
 
   aethernet: defineSection({
-    name: 'Aethernet',
+    name: t => t('sections.aethernet'),
     type: 'poi',
     order: 2,
     schema: EurekaLeveledPoiSchema,
@@ -251,7 +255,7 @@ export const eurekaSections = {
   }),
 
   quests: defineSection({
-    name: 'Quests',
+    name: t => t('sections.quests'),
     type: 'poi',
     order: 2,
     schema: EurekaLeveledPoiSchema,
@@ -261,7 +265,7 @@ export const eurekaSections = {
   }),
 
   lockboxes: defineSection({
-    name: 'Bunny Lockboxes',
+    name: t => t('sections.lockboxes'),
     type: 'loot',
     order: 0,
     schema: EurekaLootSchema,
@@ -276,7 +280,7 @@ export const eurekaSections = {
 export const eurekaFilters: FilterDefinition<EurekaItem>[] = [
   keysFilter({
     key: 'element',
-    label: 'Element',
+    label: t => t('fields.element'),
     lookup: eurekaLookups.elements,
     get: (item: EurekaItem) => ('element' in item ? item.element : undefined),
     applicable: (item: EurekaItem) => 'element' in item,

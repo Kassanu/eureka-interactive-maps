@@ -13,7 +13,8 @@ import {
   formatLevel,
   levelOverlaps,
 } from '../model/primitives'
-import { operations, zoneSlugs, zones } from '../zones'
+import { operationKeys, operations, zoneSlugs, zones } from '../zones'
+import type { Text, Translate } from '../i18n/translate'
 import { english } from './helpers/messages'
 
 const PUBLIC_DIR = join(process.cwd(), 'public')
@@ -23,7 +24,8 @@ const PUBLIC_DIR = join(process.cwd(), 'public')
 // strings; this names only what every domain has in common.
 interface LookupReader {
   readonly keys: readonly string[]
-  label(key: string | null | undefined): string
+  readonly labels: Readonly<Record<string, Text>>
+  label(key: string | null | undefined, t: Translate): string
 }
 
 function asLookupReader(value: unknown): LookupReader | null {
@@ -40,13 +42,13 @@ describe('lookups', () => {
   it('finds every domain', () => {
     expect(domains.map(([name]) => name).sort()).toEqual([
       'aggroTypes', 'attacks', 'directions', 'elements', 'grades',
-      'mobFamilies', 'ranks', 'spawnConditions', 'times', 'weathers',
+      'mobFamilies', 'ranks', 'spawnConditions', 'times', 'weatherTypes',
     ])
   })
 
   it.each(domains)('%s labels every key', (_name, lookup) => {
     for (const key of lookup.keys) {
-      expect(lookup.label(key), key).toBeTruthy()
+      expect(lookup.label(key, english), key).toBeTruthy()
     }
   })
 
@@ -57,14 +59,26 @@ describe('lookups', () => {
   })
 
   it.each(domains)('%s reads an empty key as nothing at all', (_name, lookup) => {
-    expect(lookup.label('')).toBe('')
-    expect(lookup.label(null)).toBe('')
-    expect(lookup.label(undefined)).toBe('')
+    expect(lookup.label('', english)).toBe('')
+    expect(lookup.label(null, english)).toBe('')
+    expect(lookup.label(undefined, english)).toBe('')
+  })
+
+  // The detail panel labels the row "Rank" and the editor's select is built from this same
+  // domain, so a label carrying the word again reads as "Rank: Rank 3".
+  it('labels a rank without repeating the name of the field', () => {
+    const field = english('fields.rank')
+    for (const key of lookups.ranks.keys) {
+      expect(lookups.ranks.label(key, english), key).not.toContain(field)
+    }
+    expect(lookups.ranks.label('3', english)).toBe('3')
+    expect(lookups.ranks.label('star', english)).toBe('Star')
   })
 
   it('narrows to a subset and rejects a key outside the domain', () => {
     const narrowed = lookups.elements.subset(['fire', 'ice'])
     expect(narrowed.keys).toEqual(['fire', 'ice'])
+    expect(narrowed.label('fire', english)).toBe(lookups.elements.label('fire', english))
     expect(narrowed.key.safeParse('fire').success).toBe(true)
     expect(narrowed.key.safeParse('water').success).toBe(false)
     expect(lookups.elements.key.safeParse('water').success).toBe(true)
@@ -101,12 +115,21 @@ describe('icons', () => {
 describe('drop catalogue', () => {
   it('labels every key', () => {
     for (const key of dropItems.keys) {
-      expect(dropItems.label(key), key).toBeTruthy()
+      expect(dropItems.label(key, english), key).toBeTruthy()
     }
   })
 
+  // These are game item names rather than app strings, so they resolve without the locale file
+  // and stay that way until the glossary keyed by FFXIV Item id exists.
+  it('names an item without reading the message file', () => {
+    const absent: Translate = () => {
+      throw new Error('a drop name was looked up as an app string')
+    }
+    expect(dropItems.label('occultmissile', absent)).toBe('Occult Missile')
+  })
+
   it('gives every item a distinct name', () => {
-    const names = dropItems.keys.map(key => dropItems.labels[key])
+    const names = dropItems.keys.map(key => dropItems.labels[key](english))
     expect(new Set(names).size).toBe(names.length)
   })
 })
@@ -167,7 +190,7 @@ describe('zone registry', () => {
       const sections = Object.entries(zones[slug].sections)
       expect(sections.length, slug).toBeGreaterThan(0)
       for (const [key, section] of sections) {
-        expect(section.name, `${slug}.${key}`).toBeTruthy()
+        expect(section.name(english), `${slug}.${key}`).toBeTruthy()
       }
     }
   })
@@ -180,13 +203,19 @@ describe('zone registry', () => {
     expect(zones.north_horn.level).toEqual({ from: 20, to: 50 })
   })
 
+  it('gives every operation a display name', () => {
+    for (const key of operationKeys) {
+      expect(operations[key].name(english), key).toBeTruthy()
+    }
+  })
+
   it('names the level after the operation, for zones with a range and without', () => {
     for (const slug of zoneSlugs) {
-      expect(operations[zones[slug].operation].levelLabel, slug).toBeTruthy()
+      expect(operations[zones[slug].operation].levelLabel(english), slug).toBeTruthy()
     }
-    expect(operations.eureka.levelLabel).toBe('Level')
-    expect(operations.bozja.levelLabel).toBe('Level')
-    expect(operations.occult.levelLabel).toBe('Knowledge Level')
+    expect(operations.eureka.levelLabel(english)).toBe('Level')
+    expect(operations.bozja.levelLabel(english)).toBe('Level')
+    expect(operations.occult.levelLabel(english)).toBe('Knowledge Level')
   })
 })
 

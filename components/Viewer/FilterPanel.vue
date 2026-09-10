@@ -30,7 +30,7 @@
               :title="t('filters.toggleSection')"
               @change="toggleSection(state, section.key)"
             >
-            <span>{{ section.definition.name }}</span>
+            <span>{{ section.definition.name(t) }}</span>
           </label>
           <span class="text-gray-500 text-xs">{{ section.items.length }}</span>
           <button

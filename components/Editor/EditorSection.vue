@@ -8,7 +8,7 @@
         @change="editor.setVisible(section.key, ($event.target as HTMLInputElement).checked)"
       >
       <div>
-        <span class="font-bold mr-1">{{ section.definition.name }} ({{ matching.length }})</span>
+        <span class="font-bold mr-1">{{ section.definition.name(t) }} ({{ matching.length }})</span>
         <button type="button" :title="t('editor.addItem')" @click="editor.addTo(section)">
           <font-awesome-icon icon="plus" class="cursor-pointer" />
         </button>

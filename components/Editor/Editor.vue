@@ -43,8 +43,8 @@ const bannerText = computed(() => {
   const waiting = editor.pending.value
   if (!waiting) return ''
   return waiting.kind === 'add'
-    ? t('editor.placeItem', { section: waiting.label })
-    : t('editor.moveItem', { item: waiting.label })
+    ? t('editor.placeItem', { section: waiting.label(t) })
+    : t('editor.moveItem', { item: waiting.label(t) })
 })
 
 // The editor hides sections and items directly rather than through a filter, so it hands the
