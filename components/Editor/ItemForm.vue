@@ -1,10 +1,10 @@
 <template>
   <form @submit.prevent>
-    <FormField label="ID">
+    <FormField :label="t('fields.id')">
       <input :value="item.id" class="editor-input" type="text" readonly>
     </FormField>
 
-    <FormField v-if="'name' in shape" label="Name">
+    <FormField v-if="'name' in shape" :label="t('fields.name')">
       <input :value="item.name ?? ''" class="editor-input" type="text" @change="rename">
     </FormField>
 
@@ -12,12 +12,12 @@
       <FormField v-if="'level' in item" :label="level">
         <div class="editor-row">
           <input v-model.number="item.level.from" type="number" min="1" class="editor-input">
-          <span class="text-xs">to</span>
+          <span class="text-xs">{{ t('common.to') }}</span>
           <input v-model.number="item.level.to" type="number" min="1" class="editor-input">
         </div>
       </FormField>
 
-      <FormField v-if="'rank' in item" label="Rank">
+      <FormField v-if="'rank' in item" :label="t('fields.rank')">
         <select v-model="item.rank" class="editor-input">
           <option v-for="option in ranks.options()" :key="option.key" :value="option.key">
             {{ option.label }}
@@ -25,11 +25,11 @@
         </select>
       </FormField>
 
-      <FormField v-if="'spellLevel' in item" label="Spell Level">
+      <FormField v-if="'spellLevel' in item" :label="t('fields.spellLevel')">
         <input v-model.number="item.spellLevel" type="number" min="1" class="editor-input">
       </FormField>
 
-      <FormField v-if="'element' in item" label="Element">
+      <FormField v-if="'element' in item" :label="t('fields.element')">
         <select v-model="item.element" class="editor-input">
           <option v-for="option in elements.options()" :key="option.key" :value="option.key">
             {{ option.label }}
@@ -37,7 +37,7 @@
         </select>
       </FormField>
 
-      <FormField v-if="'grade' in item" label="Grade">
+      <FormField v-if="'grade' in item" :label="t('fields.grade')">
         <select v-model="item.grade" class="editor-input">
           <option v-for="option in grades.options()" :key="option.key" :value="option.key">
             {{ option.label }}
@@ -45,58 +45,61 @@
         </select>
       </FormField>
 
-      <FormField v-if="'participants' in item" label="Participants">
+      <FormField v-if="'participants' in item" :label="t('fields.participants')">
         <input v-model.number="item.participants" type="number" min="1" class="editor-input">
       </FormField>
 
-      <FormField v-if="'weather' in item" label="Weather">
+      <FormField v-if="'weather' in item" :label="t('fields.weather')">
         <select v-model="item.weather" class="editor-input">
-          <option value="">Any</option>
+          <option value="">{{ t('values.any') }}</option>
           <option v-for="option in weathers.options()" :key="option.key" :value="option.key">
             {{ option.label }}
           </option>
         </select>
       </FormField>
 
-      <FormField v-if="'spawnCondition' in item" label="Spawns Under">
+      <FormField v-if="'spawnCondition' in item" :label="t('fields.spawnsUnder')">
         <select v-model="item.spawnCondition" class="editor-input">
-          <option value="">Always</option>
+          <option value="">{{ t('values.always') }}</option>
           <option v-for="option in spawnConditions.options()" :key="option.key" :value="option.key">
             {{ option.label }}
           </option>
         </select>
       </FormField>
 
-      <FormField v-if="'direction' in item" label="Faces">
+      <FormField v-if="'direction' in item" :label="t('fields.direction')">
         <select v-model="item.direction" class="editor-input">
-          <option value="">Unknown</option>
+          <option value="">{{ t('values.unknown') }}</option>
           <option v-for="option in directions.options()" :key="option.key" :value="option.key">
             {{ option.label }}
           </option>
         </select>
       </FormField>
 
-      <FormField v-if="'attack' in item" label="Attack">
+      <FormField v-if="'attack' in item" :label="t('fields.attack')">
         <select v-model="item.attack" class="editor-input">
-          <option value="">Both</option>
+          <option value="">{{ t('values.both') }}</option>
           <option v-for="option in attacks.options()" :key="option.key" :value="option.key">
             {{ option.label }}
           </option>
         </select>
       </FormField>
 
-      <FormField v-if="'weakness' in item && !Array.isArray(item.weakness)" label="Weakness">
+      <FormField
+        v-if="'weakness' in item && !Array.isArray(item.weakness)"
+        :label="t('fields.weakness')"
+      >
         <select v-model="item.weakness" class="editor-input">
-          <option value="">None</option>
+          <option value="">{{ t('values.none') }}</option>
           <option v-for="option in attacks.options()" :key="option.key" :value="option.key">
             {{ option.label }}
           </option>
         </select>
       </FormField>
 
-      <FormField v-if="'icon' in shape" label="Icon">
+      <FormField v-if="'icon' in shape" :label="t('fields.icon')">
         <select :value="item.icon ?? ''" class="editor-input" @change="setIcon">
-          <option v-if="iconOptional" value="">Default</option>
+          <option v-if="iconOptional" value="">{{ t('values.default') }}</option>
           <option v-for="key in iconKeys" :key="key" :value="key">{{ key }}</option>
         </select>
       </FormField>
@@ -104,98 +107,104 @@
 
     <PositionList :item="item" />
 
-    <FormField v-if="'aggro' in item" label="Aggro">
+    <FormField v-if="'aggro' in item" :label="t('fields.aggro')">
       <KeyChecks :keys="item.aggro" :options="aggroTypes.options()" />
     </FormField>
 
-    <FormField v-if="'family' in item" label="Family">
+    <FormField v-if="'family' in item" :label="t('fields.family')">
       <KeyChecks :keys="item.family" :options="mobFamilies.options()" />
     </FormField>
 
-    <FormField v-if="'weakness' in item && Array.isArray(item.weakness)" label="Weakness">
+    <FormField
+      v-if="'weakness' in item && Array.isArray(item.weakness)"
+      :label="t('fields.weakness')"
+    >
       <KeyChecks :keys="item.weakness" :options="elements.options()" />
     </FormField>
 
-    <FormField v-if="'spawnsFate' in item" label="Spawns FATE">
+    <FormField v-if="'spawnsFate' in item" :label="t('fields.spawnsFate')">
       <ItemPicker v-model="item.spawnsFate" :zone="zone" :types="EVENT" />
     </FormField>
 
-    <FormField v-if="'spawnedBy' in item" label="Spawned By">
+    <FormField v-if="'spawnedBy' in item" :label="t('fields.spawnedBy')">
       <ItemPicker v-model="item.spawnedBy" :zone="zone" :types="ENEMY" />
     </FormField>
 
-    <FormField v-if="'learnedFrom' in item" label="Learned From">
+    <FormField v-if="'learnedFrom' in item" :label="t('fields.learnedFrom')">
       <ItemPicker v-model="item.learnedFrom" :zone="zone" :types="ENEMY_OR_EVENT" />
     </FormField>
 
     <div v-if="'requires' in item" class="editor-columns">
-      <FormField label="Requires">
+      <FormField :label="t('fields.requires')">
         <ItemPicker v-model="item.requires" :zone="zone" :types="SPELL" :exclude="item.id" />
       </FormField>
-      <FormField label="Replaces">
+      <FormField :label="t('fields.replaces')">
         <ItemPicker v-model="item.replaces" :zone="zone" :types="SPELL" :exclude="item.id" />
       </FormField>
     </div>
 
-    <FormField v-if="'source' in item" label="Spawns From">
+    <FormField v-if="'source' in item" :label="t('fields.spawnsFrom')">
       <select :value="poolValue" class="editor-input" @change="setPool">
-        <option value="__bonus">Bonus Roll</option>
-        <optgroup label="During a FATE">
+        <option value="__bonus">{{ t('values.bonusRoll') }}</option>
+        <optgroup :label="t('values.duringFate')">
           <option v-for="fate in fates" :key="fate.id" :value="fate.id">
-            {{ describeRef(zone, fate.id) }}
+            {{ describeRef(zone, fate.id, t) }}
           </option>
         </optgroup>
       </select>
     </FormField>
 
     <template v-if="'boss' in shape">
-      <FormField label="Boss">
+      <FormField :label="t('fields.boss')">
         <label class="editor-checks">
           <input :checked="hasBoss" type="checkbox" @change="toggleBoss">
-          <span>This event has a single enemy to fight</span>
+          <span>{{ t('editor.hasBoss') }}</span>
         </label>
       </FormField>
       <template v-if="'boss' in item && item.boss">
-        <FormField label="Boss Name">
+        <FormField :label="t('fields.bossName')">
           <input v-model="item.boss.name" class="editor-input" type="text">
         </FormField>
-        <FormField v-if="'weakness' in item.boss" label="Boss Weakness">
+        <FormField v-if="'weakness' in item.boss" :label="t('fields.bossWeakness')">
           <KeyChecks :keys="item.boss.weakness" :options="elements.options()" />
         </FormField>
       </template>
     </template>
 
     <template v-if="'mutation' in shape">
-      <FormField label="Mutation">
+      <FormField :label="t('fields.mutation')">
         <label class="editor-checks">
           <input :checked="'mutation' in item && !!item.mutation" type="checkbox" @change="toggleMutation">
-          <span>This enemy mutates</span>
+          <span>{{ t('editor.mutates') }}</span>
         </label>
       </FormField>
       <template v-if="'mutation' in item && item.mutation">
-        <FormField label="Mutates Into">
+        <FormField :label="t('fields.mutatesInto')">
           <select :value="item.mutation.element ?? ''" class="editor-input" @change="setMutationElement">
-            <option value="">Unknown</option>
+            <option value="">{{ t('values.unknown') }}</option>
             <option v-for="option in elements.options()" :key="option.key" :value="option.key">
               {{ option.label }}
             </option>
           </select>
         </FormField>
-        <ConditionList :conditions="item.mutation.conditions" label="Mutation Conditions" />
+        <ConditionList
+          :conditions="item.mutation.conditions"
+          :label="t('fields.mutationConditions')"
+        />
       </template>
     </template>
 
     <template v-if="'adaptation' in shape">
-      <FormField label="Adaptation">
+      <FormField :label="t('fields.adaptation')">
         <label class="editor-checks">
           <input :checked="'adaptation' in item && !!item.adaptation" type="checkbox" @change="toggleAdaptation">
-          <span>This enemy adapts</span>
+          <span>{{ t('editor.adapts') }}</span>
         </label>
       </FormField>
       <ConditionList
         v-if="'adaptation' in item && item.adaptation"
         :conditions="item.adaptation.conditions"
-        label="Adaptation Conditions"
+        :label="t('fields.adaptationConditions')"
       />
     </template>
 
@@ -252,6 +261,7 @@ const ENEMY = ['enemy'] as const
 const ENEMY_OR_EVENT = ['enemy', 'event'] as const
 const SPELL = ['spell'] as const
 
+const { t } = useI18n()
 const editor = useEditor()
 const zone = computed(() => editor.zone.value as LoadedZone)
 
@@ -311,6 +321,8 @@ function toggleAdaptation(event: Event) {
   setOptional('adaptation', ticked(event) ? { conditions: [] } : undefined)
 }
 
+// `New boss` is written into the item's own `name` field, so it is data rather than UI text and
+// stays English in every locale.
 function toggleBoss(event: Event) {
   if (!ticked(event)) {
     setOptional('boss', undefined)

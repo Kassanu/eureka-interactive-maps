@@ -8,6 +8,7 @@
       <span>-</span>
       <NuxtLink class="hover:text-white" to="/changelog">{{ t('nav.changelog') }}</NuxtLink>
     </div>
+    <!-- Square Enix's trademark notice, reproduced verbatim and left out of the message files. -->
     <div class="flex justify-center">
       FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.
       FINAL FANTASY XIV © 2010 - {{ currentYear }} SQUARE ENIX CO., LTD. All Rights Reserved.

@@ -1,7 +1,7 @@
 <template>
   <FormField :label="label">
     <template #actions>
-      <button type="button" class="editor-button" title="Add a condition" @click="add">
+      <button type="button" class="editor-button" :title="t('editor.addCondition')" @click="add">
         <font-awesome-icon icon="plus" />
       </button>
     </template>
@@ -35,6 +35,8 @@ const props = defineProps<{
   conditions: Condition[]
   label: string
 }>()
+
+const { t } = useI18n()
 
 function add() {
   const taken = new Set(props.conditions.map(condition => condition.weather))

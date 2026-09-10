@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
+  describeRef,
+  describeSpawn,
   initialState,
   onlySection,
   toggleSection,
@@ -9,6 +11,7 @@ import {
 } from '../zones'
 import { iconKeys, iconPath } from '../model/icons'
 import { formatLevel } from '../model/primitives'
+import { english } from './helpers/messages'
 import { hydratedZones } from './helpers/zoneFiles'
 
 // What the viewer draws. `nuxt generate` only proves the shell rendered, because zone data loads
@@ -18,7 +21,7 @@ const loaded = hydratedZones()
 
 describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as const))('%s', (slug, zone) => {
   const state = initialState(zone)
-  const markers = zoneMarkers(zone, state)
+  const markers = zoneMarkers(zone, state, english)
 
   it('draws a marker per position of every item', () => {
     const points = zone.sections.reduce(
@@ -69,15 +72,17 @@ describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as con
         expect(marker.label).toBe('')
         continue
       }
-      const level = 'level' in item ? ` (${formatLevel(item.level)})` : ''
-      expect(marker.label, marker.itemId).toBe(`${item.name}${level}`)
+      const expected = 'level' in item
+        ? english('item.atLevel', { name: item.name, level: formatLevel(item.level, english) })
+        : item.name
+      expect(marker.label, marker.itemId).toBe(expected)
     }
   })
 
   it('draws nothing for a section the reader turned off', () => {
     for (const section of zone.drawable) {
       const without = { ...state, sections: state.sections.filter(key => key !== section.key) }
-      const drawn = zoneMarkers(zone, without)
+      const drawn = zoneMarkers(zone, without, english)
       const keys = drawn.map(marker => zone.sectionOf.get(marker.itemId)?.key)
       expect(keys.includes(section.key), section.key).toBe(false)
       expect(drawn.length).toBeLessThan(markers.length)
@@ -89,7 +94,7 @@ describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as con
     if (!first) return
     const soloed = { ...state, sections: [...state.sections] }
     onlySection(zone, soloed, first.key)
-    const drawn = zoneMarkers(zone, soloed).map(m => zone.sectionOf.get(m.itemId)?.key)
+    const drawn = zoneMarkers(zone, soloed, english).map(m => zone.sectionOf.get(m.itemId)?.key)
     expect(new Set(drawn)).toEqual(new Set([first.key]))
 
     onlySection(zone, soloed, first.key)
@@ -101,14 +106,61 @@ describe('turning a section off and on', () => {
   it('puts back exactly what it removed', () => {
     const zone = loaded[0]!
     const state = initialState(zone)
-    const before = zoneMarkers(zone, state).length
+    const before = zoneMarkers(zone, state, english).length
     const key = zone.drawable[0]!.key
 
     toggleSection(state, key)
-    expect(zoneMarkers(zone, state).length).toBeLessThan(before)
+    expect(zoneMarkers(zone, state, english).length).toBeLessThan(before)
 
     toggleSection(state, key)
-    expect(zoneMarkers(zone, state).length).toBe(before)
+    expect(zoneMarkers(zone, state, english).length).toBe(before)
+  })
+})
+
+// The tests below compare a function's output against the same message it renders from, which
+// pins the key and the arguments but not the wording. These pin the wording. What stops a function
+// going back to a template literal is the coverage scan in i18n.test.ts, which reports a message
+// nothing names any more.
+describe('the English forms the message file declares', () => {
+  it('reads as a name with a place, a level, or a thing to do first', () => {
+    expect(english('item.at', { name: 'Val Revenant', x: 14, y: 34 })).toBe('Val Revenant (14, 34)')
+    expect(english('item.atLevel', { name: 'Val Revenant', level: '23' })).toBe('Val Revenant (23)')
+    expect(english('item.spawnKill', { target: 'Val Revenant' })).toBe('Kill: Val Revenant')
+    expect(english('item.spawnComplete', { target: 'Castrum Lacus Litore' }))
+      .toBe('Complete: Castrum Lacus Litore')
+  })
+})
+
+describe('describing a spawn condition', () => {
+  const spawns = loaded.flatMap(zone =>
+    zone.sections.flatMap(section =>
+      section.items.flatMap(item =>
+        'spawns' in item ? item.spawns.map(spawn => ({ zone, spawn })) : []
+      )
+    )
+  )
+
+  it('finds spawn conditions to describe, so an empty list cannot pass the rest', () => {
+    expect(new Set(spawns.map(({ spawn }) => spawn.type))).toEqual(
+      new Set(['enemy', 'event', 'time'])
+    )
+  })
+
+  it('names what has to be killed or completed, through the message file', () => {
+    for (const { zone, spawn } of spawns) {
+      if (spawn.type === 'time') continue
+      const key = spawn.type === 'enemy' ? 'item.spawnKill' : 'item.spawnComplete'
+      const target = describeRef(zone, spawn.itemId, english)
+      expect(describeSpawn(zone, spawn, english)).toBe(english(key, { target }))
+    }
+  })
+
+  // A time is a clock reading rather than a sentence, so no locale changes it.
+  it('leaves a time as a clock reading', () => {
+    for (const { zone, spawn } of spawns) {
+      if (spawn.type !== 'time') continue
+      expect(describeSpawn(zone, spawn, english)).toMatch(/^\d{2}:\d{2}:\d{2}$/)
+    }
   })
 })
 
@@ -121,7 +173,7 @@ describe('an item with several positions', () => {
     if (!zone) return
 
     const state = initialState(zone)
-    const markers = zoneMarkers(zone, state)
+    const markers = zoneMarkers(zone, state, english)
     for (const section of zone.sections) {
       for (const item of visibleItems(section, state.values)) {
         const drawn = markers.filter(marker => marker.itemId === item.id)

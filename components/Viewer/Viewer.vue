@@ -53,6 +53,7 @@ import {
 
 const props = defineProps<{ slug: ZoneSlug }>()
 
+const { t } = useI18n()
 const { zone, image } = useZone(props.slug)
 const grid = zoneFor(props.slug).map.grid
 
@@ -64,7 +65,7 @@ function resetFilters() {
 }
 
 const markers = computed<Marker[]>(() =>
-  zone.value && state.value ? zoneMarkers(zone.value, state.value) : []
+  zone.value && state.value ? zoneMarkers(zone.value, state.value, t) : []
 )
 
 const clickedMarker = ref<Marker | null>(null)

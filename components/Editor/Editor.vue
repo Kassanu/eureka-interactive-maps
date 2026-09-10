@@ -6,7 +6,7 @@
       class="addNewItemBanner absolute top-0 left-1/2 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
       @click="editor.cancel"
     >
-      {{ bannerText }} Click this message to cancel.
+      {{ bannerText }} {{ t('editor.cancelHint') }}
     </button>
 
     <EditorPanel v-if="editor.zone.value" :zone="editor.zone.value" />
@@ -34,6 +34,7 @@ import { zoneFor, zoneMarkers, type Marker, type ZoneSlug } from '~/zones'
 
 const props = defineProps<{ slug: ZoneSlug }>()
 
+const { t } = useI18n()
 const editor = useZoneEditor(props.slug)
 const grid = zoneFor(props.slug).map.grid
 provide(editorKey, editor)
@@ -42,8 +43,8 @@ const bannerText = computed(() => {
   const waiting = editor.pending.value
   if (!waiting) return ''
   return waiting.kind === 'add'
-    ? `Click the map to place a new item in ${waiting.label}.`
-    : `Click the map to move ${waiting.label}.`
+    ? t('editor.placeItem', { section: waiting.label })
+    : t('editor.moveItem', { item: waiting.label })
 })
 
 // The editor hides sections and items directly rather than through a filter, so it hands the
@@ -54,7 +55,7 @@ const markers = computed<Marker[]>(() => {
   const shown = zone.sections
     .filter(section => editor.isVisible(section.key))
     .map(section => section.key)
-  return zoneMarkers(zone, { sections: shown, values: {} })
+  return zoneMarkers(zone, { sections: shown, values: {} }, t)
     .filter(marker => editor.isVisible(marker.itemId))
 })
 

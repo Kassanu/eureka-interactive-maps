@@ -1,4 +1,5 @@
-import { readdirSync, readFileSync } from 'node:fs'
+import { readdirSync, readFileSync, statSync } from 'node:fs'
+import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES } from '../i18n/locales'
@@ -25,6 +26,31 @@ function flatten(messages: Messages, prefix = ''): Map<string, string> {
 
 function placeholders(message: string): string[] {
   return [...message.matchAll(/\{(\w+)\}/g)].map(match => match[1]).sort()
+}
+
+// Everything the app itself renders from. `tests/` is left out on purpose: a key only a test names
+// is a key nothing displays.
+const SOURCE = ['app.vue', 'components', 'composables', 'i18n', 'layouts', 'model', 'pages', 'zones']
+
+function sourceFiles(path: string): string[] {
+  if (statSync(path).isFile()) return path.endsWith('.ts') || path.endsWith('.vue') ? [path] : []
+  return readdirSync(path).flatMap(entry => sourceFiles(join(path, entry)))
+}
+
+// A key is a literal sitting directly inside a `t()` call. Anything else, a key assembled from a
+// variable or chosen by a ternary before the call, is invisible to this scan and to anyone
+// grepping for a string, so the app builds each one at the call instead.
+const NAMED_KEY = /\bt\(\s*['"`]([\w.]+)['"`]/g
+
+function keysNamedInSource(): Set<string> {
+  const named = new Set<string>()
+  for (const root of SOURCE) {
+    for (const file of sourceFiles(join(process.cwd(), root))) {
+      const text = readFileSync(file, 'utf8')
+      for (const match of text.matchAll(NAMED_KEY)) named.add(match[1]!)
+    }
+  }
+  return named
 }
 
 describe('the declared locale set', () => {
@@ -70,6 +96,30 @@ describe('the zone messages', () => {
       expect(typeof zone?.description, slug).toBe('string')
       expect((zone?.description as string)?.length, slug).toBeGreaterThan(0)
     }
+  })
+})
+
+// The two halves of "adding a language means adding one locale file": a key the app names has to
+// be in the file, and a key in the file has to be named, or a translator is handed dead strings.
+describe('the English file and the source', () => {
+  const english = flatten(messagesFor(DEFAULT_LOCALE))
+  const named = keysNamedInSource()
+
+  it('finds the app naming keys at all, so an empty scan cannot pass this file', () => {
+    expect(named.size).toBeGreaterThan(50)
+  })
+
+  it('defines every key the app names', () => {
+    expect([...named].filter(key => !english.has(key)).sort()).toEqual([])
+  })
+
+  // `zones.<slug>.*` is built from the slug rather than written out, and the zone messages above
+  // already assert that set against the registry.
+  it('names every key it defines', () => {
+    const unused = [...english.keys()]
+      .filter(key => !key.startsWith('zones.') && !named.has(key))
+      .sort()
+    expect(unused).toEqual([])
   })
 })
 

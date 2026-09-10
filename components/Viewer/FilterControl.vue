@@ -9,7 +9,7 @@
         class="text-xs text-gray-500 hover:text-white transition-colors"
         @click="resetFilter(filter, state)"
       >
-        reset
+        {{ t('filters.resetOne') }}
       </button>
       <button
         v-if="collapsible"
@@ -28,7 +28,7 @@
         class="shadow appearance-none border rounded w-20 py-1 px-2 leading-tight focus:outline-none"
         @change="onBound('from', $event)"
       >
-      <span class="text-gray-400">to</span>
+      <span class="text-gray-400">{{ t('common.to') }}</span>
       <input
         :value="bounds.to"
         type="number"
@@ -68,10 +68,10 @@
             <button
               type="button"
               class="only text-xs text-gray-500"
-              title="Show this and nothing else"
+              :title="t('filters.onlyOption')"
               @click.prevent.stop="onlyKey(filter, state, option.key)"
             >
-              only
+              {{ t('filters.only') }}
             </button>
           </label>
         </div>
@@ -101,6 +101,8 @@ const props = defineProps<{
   filter: ScopedFilter<never>
   state: FilterState
 }>()
+
+const { t } = useI18n()
 
 // A list this long is worth folding away: the skirmish and drop lists run past thirty.
 const LONG = 8
@@ -141,9 +143,9 @@ const groups = computed(() => {
 })
 
 const choices = computed(() => [
-  { label: 'Any', keys: options.value.map(option => option.key) },
-  { label: options.value.find(o => o.key === YES_KEY)?.label ?? 'Yes', keys: [YES_KEY] },
-  { label: options.value.find(o => o.key === NO_KEY)?.label ?? 'No', keys: [NO_KEY] },
+  { label: t('filters.any'), keys: options.value.map(option => option.key) },
+  { label: options.value.find(o => o.key === YES_KEY)?.label ?? t('filters.yes'), keys: [YES_KEY] },
+  { label: options.value.find(o => o.key === NO_KEY)?.label ?? t('filters.no'), keys: [NO_KEY] },
 ])
 
 function sameKeys(keys: readonly string[]): boolean {
@@ -151,11 +153,13 @@ function sameKeys(keys: readonly string[]): boolean {
 }
 
 const summary = computed(() => {
-  if (definition.value.control === 'range') return `${bounds.value.from} to ${bounds.value.to}`
+  if (definition.value.control === 'range') {
+    return t('common.range', { from: bounds.value.from, to: bounds.value.to })
+  }
   if (definition.value.control === 'segmented') {
     return choices.value.find(choice => sameKeys(choice.keys))?.label ?? ''
   }
-  return `${enabled.value.length} of ${options.value.length}`
+  return t('filters.count', { enabled: enabled.value.length, total: options.value.length })
 })
 
 function onBound(end: 'from' | 'to', event: Event) {

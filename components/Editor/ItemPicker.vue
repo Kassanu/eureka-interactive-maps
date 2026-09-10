@@ -1,9 +1,9 @@
 <template>
   <select :value="modelValue" class="editor-input" @change="pick">
-    <option value="">None</option>
+    <option value="">{{ t('values.none') }}</option>
     <optgroup v-for="group in groups" :key="group.key" :label="group.label">
       <option v-for="candidate in group.items" :key="candidate.id" :value="candidate.id">
-        {{ describeRef(zone, candidate.id) || candidate.id }}
+        {{ describeRef(zone, candidate.id, t) || candidate.id }}
       </option>
     </optgroup>
   </select>
@@ -24,6 +24,8 @@ const props = defineProps<{
 }>()
 
 const emit = defineEmits<{ (e: 'update:modelValue', id: string): void }>()
+
+const { t } = useI18n()
 
 const groups = computed(() =>
   props.zone.sections

@@ -12,7 +12,8 @@ export function localizedRoutes(paths: readonly string[]): string[] {
 }
 
 // Each of these also carries `defineI18nRoute({ locales: ['en'] })`. Prerendering one under a
-// locale prefix fetches a route that does not exist.
+// locale prefix fetches a route that does not exist, and their page text stays literal English
+// rather than going into the message files, because no other locale renders them.
 export const ENGLISH_ONLY_PATHS = ['/contribute', '/changelog'] as const
 
 export function siteRoutes(localizedPaths: readonly string[]): string[] {

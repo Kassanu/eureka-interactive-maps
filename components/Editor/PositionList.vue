@@ -1,7 +1,7 @@
 <template>
-  <FormField label="Position">
+  <FormField :label="t('fields.coordinates')">
     <template #actions>
-      <button type="button" class="editor-button" title="Add another position" @click="add">
+      <button type="button" class="editor-button" :title="t('editor.addPosition')" @click="add">
         <font-awesome-icon icon="plus" />
       </button>
     </template>
@@ -17,7 +17,7 @@
       <button
         type="button"
         :class="['editor-button', { 'editor-awaiting': awaiting === point }]"
-        title="Set this position by clicking the map"
+        :title="t('editor.placePosition')"
         @click="editor.placePosition(item, point)"
       >
         <font-awesome-icon icon="plus" />
@@ -26,7 +26,7 @@
         v-if="item.positions.length > 1"
         type="button"
         class="editor-button editor-remove"
-        title="Remove this position"
+        :title="t('editor.removePosition')"
         @click="remove(point)"
       >
         <font-awesome-icon icon="times" />
@@ -46,6 +46,7 @@ import type { ZoneItem } from '~/zones'
 // one; typing a pair is the fallback for a coordinate read off a wiki.
 const props = defineProps<{ item: ZoneItem }>()
 
+const { t } = useI18n()
 const editor = useEditor()
 // Keyed by the point rather than by its row, so deleting a row does not mark a different one.
 const invalid = reactive(new Set<Position>())
