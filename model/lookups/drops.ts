@@ -27,7 +27,7 @@ export const dropItems = defineNames({
   fragmentofcaution: 'Fragment of Caution',
   fragmentofcompassion: 'Fragment of Compassion',
   fragmentofingenuity: 'Fragment of Ingenuity',
-  fragmentofmaster: 'Fragment of Master',
+  fragmentofmastery: 'Fragment of Mastery',
   fragmentofpreparation: 'Fragment of Preparation',
   fragmentofresolve: 'Fragment of Resolve',
   fragmentofsagacity: 'Fragment of Sagacity',
