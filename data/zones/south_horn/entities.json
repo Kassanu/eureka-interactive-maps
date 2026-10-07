@@ -1,0 +1,1008 @@
+{
+    "enemies": [
+        {
+            "id": "2b39133c-71fc-44aa-8ba6-44fb8d6444e7",
+            "gameId": 13893,
+            "name": {
+                "en": "Animated Doll"
+            }
+        },
+        {
+            "id": "61d0dab4-da9c-411d-a38b-b5ebc2c09f37",
+            "gameId": 13906,
+            "name": {
+                "en": "Arcapetrified Netzach"
+            }
+        },
+        {
+            "id": "9a487876-33eb-4a52-92d3-8ccab700b906",
+            "gameId": 13886,
+            "name": {
+                "en": "Crescent Aetherscab"
+            }
+        },
+        {
+            "id": "8a86bbfd-3db7-4fb5-8215-dbfc74b1ed14",
+            "gameId": 13937,
+            "name": {
+                "en": "Crescent Apa"
+            }
+        },
+        {
+            "id": "5aacbf69-daff-40f7-a1a6-d8301facb9dd",
+            "gameId": 13924,
+            "name": {
+                "en": "Crescent Armor"
+            }
+        },
+        {
+            "id": "e02a6ba1-0d74-4f3d-b3f9-d54b4973d864",
+            "gameId": 13904,
+            "name": {
+                "en": "Crescent Bachelor"
+            }
+        },
+        {
+            "id": "a7a59b84-8b26-450a-a467-7f8ad7c62c6d",
+            "gameId": 13877,
+            "name": {
+                "en": "Crescent Bandersnatch"
+            }
+        },
+        {
+            "id": "7fb011bc-0d45-4114-9a6c-8971bc870927",
+            "gameId": 13898,
+            "name": {
+                "en": "Crescent Blackguard"
+            }
+        },
+        {
+            "id": "fc6c1717-7c11-4079-8cab-2e73ed27285e",
+            "gameId": 13908,
+            "name": {
+                "en": "Crescent Blood Demon"
+            }
+        },
+        {
+            "id": "b27972d3-2c98-42ff-8b07-9c7e4fcf25f3",
+            "gameId": 13939,
+            "name": {
+                "en": "Crescent Bomb"
+            }
+        },
+        {
+            "id": "8057a911-96ab-4eed-9f5f-7b5c3b4b19a5",
+            "gameId": 13916,
+            "name": {
+                "en": "Crescent Brachiosaur"
+            }
+        },
+        {
+            "id": "51044766-a07b-4c13-a067-ddc779482949",
+            "gameId": 13895,
+            "name": {
+                "en": "Crescent Byblos"
+            }
+        },
+        {
+            "id": "3e78b562-d830-4a47-8227-4f65b6c72459",
+            "gameId": 13921,
+            "name": {
+                "en": "Crescent Caoineag"
+            }
+        },
+        {
+            "id": "d215da13-d144-4af7-9185-1da40270291b",
+            "gameId": 13900,
+            "name": {
+                "en": "Crescent Catoblepas"
+            }
+        },
+        {
+            "id": "9ced06d3-6d6f-487f-bf69-f34ced517664",
+            "gameId": 13902,
+            "name": {
+                "en": "Crescent Cetus"
+            }
+        },
+        {
+            "id": "e5585ad6-9ce5-4946-86d2-8119d114797f",
+            "gameId": 13931,
+            "name": {
+                "en": "Crescent Chaochu"
+            }
+        },
+        {
+            "id": "538ebb0d-7e38-4a10-998b-6c28cb6a18f7",
+            "gameId": 13910,
+            "name": {
+                "en": "Crescent Chimera"
+            }
+        },
+        {
+            "id": "aeeeae4a-fa7d-4820-9e06-1fa3c10b0984",
+            "gameId": 13903,
+            "name": {
+                "en": "Crescent Claw"
+            }
+        },
+        {
+            "id": "60062853-2f89-4c26-b4ca-224f1cb225b4",
+            "gameId": 13885,
+            "name": {
+                "en": "Crescent Collagen"
+            }
+        },
+        {
+            "id": "c29a0cd7-6b96-42e3-b21c-4ad7a9654e21",
+            "gameId": 13901,
+            "name": {
+                "en": "Crescent Demon Pawn"
+            }
+        },
+        {
+            "id": "fe73e318-de03-4d26-ad34-420c340c74bf",
+            "gameId": 13940,
+            "name": {
+                "en": "Crescent Dhruva"
+            }
+        },
+        {
+            "id": "ec948266-4e24-48ad-b2e5-6c8a0ffea895",
+            "gameId": 13918,
+            "name": {
+                "en": "Crescent Diplocaulus"
+            }
+        },
+        {
+            "id": "63d290e4-7141-4ad7-aa3e-47398999778f",
+            "gameId": 13892,
+            "name": {
+                "en": "Crescent Dirty Eye"
+            }
+        },
+        {
+            "id": "5720c6a2-59b0-4f53-9b23-b2886e497b93",
+            "gameId": 13927,
+            "name": {
+                "en": "Crescent Dullahan"
+            }
+        },
+        {
+            "id": "8d68f584-19b0-4eb0-b759-6094b2e3c79a",
+            "gameId": 13890,
+            "name": {
+                "en": "Crescent Echos"
+            }
+        },
+        {
+            "id": "1d50f7ed-7016-47c1-8f4f-e355afddf053",
+            "gameId": 13876,
+            "name": {
+                "en": "Crescent Fan"
+            }
+        },
+        {
+            "id": "f1d1a760-a6f2-4497-8542-3d480912e3c0",
+            "gameId": 13930,
+            "name": {
+                "en": "Crescent Flame"
+            }
+        },
+        {
+            "id": "801b37bd-dc45-479b-b442-5d6a1c11913b",
+            "gameId": 13882,
+            "name": {
+                "en": "Crescent Flying Lizard"
+            }
+        },
+        {
+            "id": "3078e6dd-6eae-4051-bbdf-f62a37445433",
+            "gameId": 13915,
+            "name": {
+                "en": "Crescent Foobar"
+            }
+        },
+        {
+            "id": "89b2f4d8-9b88-4fb2-8825-087e247299e0",
+            "gameId": 13871,
+            "name": {
+                "en": "Crescent Foper"
+            }
+        },
+        {
+            "id": "ce5d45e4-a5ff-49fd-8c5f-4645712c9e9c",
+            "gameId": 13872,
+            "name": {
+                "en": "Crescent Gaelicat"
+            }
+        },
+        {
+            "id": "846fa50c-3b68-4d83-a729-f495242dad5d",
+            "gameId": 13746,
+            "name": {
+                "en": "Crescent Garula"
+            }
+        },
+        {
+            "id": "a3414265-0ef4-4725-b286-72dc9dcde78b",
+            "gameId": 13923,
+            "name": {
+                "en": "Crescent Geshunpest"
+            }
+        },
+        {
+            "id": "d1cc4ba6-9caa-4f78-83f9-38e96c0d61ce",
+            "gameId": 13922,
+            "name": {
+                "en": "Crescent Ghost"
+            }
+        },
+        {
+            "id": "a84038b8-f21d-4b8a-b3ef-a89be3c551e0",
+            "gameId": 13928,
+            "name": {
+                "en": "Crescent Golem"
+            }
+        },
+        {
+            "id": "5c769c0c-5d69-4033-9c2c-2d74950b4c8b",
+            "gameId": 13743,
+            "name": {
+                "en": "Crescent Goobbue"
+            }
+        },
+        {
+            "id": "0c175764-4c9b-4df6-a778-28bdd64cb7cf",
+            "gameId": 13926,
+            "name": {
+                "en": "Crescent Gourmand"
+            }
+        },
+        {
+            "id": "581e680c-142e-4ea9-ac6a-5cb18d6ea59e",
+            "gameId": 13897,
+            "name": {
+                "en": "Crescent Haagenti"
+            }
+        },
+        {
+            "id": "f7d26abb-fc9e-45db-a51f-6d0fe5b98be8",
+            "gameId": 13935,
+            "name": {
+                "en": "Crescent Harpuia"
+            }
+        },
+        {
+            "id": "974a8ecb-a0b3-40f5-a8ff-ec5fb71b6bc4",
+            "gameId": 13745,
+            "name": {
+                "en": "Crescent Headstone"
+            }
+        },
+        {
+            "id": "a6d80cc9-7199-4962-a63b-ac01f1017405",
+            "gameId": 13875,
+            "name": {
+                "en": "Crescent Inkstain"
+            }
+        },
+        {
+            "id": "b1352a59-2ce5-4cea-a5e3-98dd64c4f262",
+            "gameId": 13883,
+            "name": {
+                "en": "Crescent Karlabos"
+            }
+        },
+        {
+            "id": "d66770ab-e5cc-423d-b411-d3198725cb46",
+            "gameId": 13932,
+            "name": {
+                "en": "Crescent Leshy"
+            }
+        },
+        {
+            "id": "e6a4e644-fd09-42a8-a144-b76dc72c524c",
+            "gameId": 13891,
+            "name": {
+                "en": "Crescent Lion Statant"
+            }
+        },
+        {
+            "id": "c069c64d-0c23-41f6-8585-8a343b2378dd",
+            "gameId": 13933,
+            "name": {
+                "en": "Crescent Marolith"
+            }
+        },
+        {
+            "id": "3ef01e43-acf4-40d7-aa58-f8ad68e51a74",
+            "gameId": 13905,
+            "name": {
+                "en": "Crescent Meraevis"
+            }
+        },
+        {
+            "id": "6b81be01-e6c8-4820-8a5b-7d0ed3ac5726",
+            "gameId": 13942,
+            "name": {
+                "en": "Crescent Mimic"
+            }
+        },
+        {
+            "id": "2e61942a-7752-44dc-8391-c4590c7cca8d",
+            "gameId": 13879,
+            "name": {
+                "en": "Crescent Monk"
+            }
+        },
+        {
+            "id": "f3d25819-bdbd-4b4f-b76b-91f7d15ef7e3",
+            "gameId": 13941,
+            "name": {
+                "en": "Crescent Mousse"
+            }
+        },
+        {
+            "id": "9690fb80-edf2-4a9a-a855-2f8b5ed53835",
+            "gameId": 13911,
+            "name": {
+                "en": "Crescent Panther"
+            }
+        },
+        {
+            "id": "693f9ecb-f3e8-4a06-b5c2-b69f4cf2239d",
+            "gameId": 13913,
+            "name": {
+                "en": "Crescent Petalodite"
+            }
+        },
+        {
+            "id": "2940570e-5e1a-48d5-a30c-60d388948bd1",
+            "gameId": 13887,
+            "name": {
+                "en": "Crescent Rosebear"
+            }
+        },
+        {
+            "id": "685f640c-04e1-44ea-9eea-a00734ccb043",
+            "gameId": 13899,
+            "name": {
+                "en": "Crescent Satana"
+            }
+        },
+        {
+            "id": "d2099b86-2706-4b6f-8d9c-13f11b513d3e",
+            "gameId": 13874,
+            "name": {
+                "en": "Crescent Snapweed"
+            }
+        },
+        {
+            "id": "e31b5d4d-e724-4c8a-8d7d-74e5095f8e85",
+            "gameId": 13744,
+            "name": {
+                "en": "Crescent Taurus"
+            }
+        },
+        {
+            "id": "69d0eef3-db0c-461a-bd53-3cf8003d3268",
+            "gameId": 13873,
+            "name": {
+                "en": "Crescent Tormentor"
+            }
+        },
+        {
+            "id": "ff75a7c9-2975-4b04-8a55-6a70d917d357",
+            "gameId": 13888,
+            "name": {
+                "en": "Crescent Triceratops"
+            }
+        },
+        {
+            "id": "75d65cec-802f-4ff1-a4e5-3543d8008851",
+            "gameId": 13925,
+            "name": {
+                "en": "Crescent Troubadour"
+            }
+        },
+        {
+            "id": "14e6e63e-918b-45d8-a83b-3208c1b32910",
+            "gameId": 13934,
+            "name": {
+                "en": "Crescent Uragnite"
+            }
+        },
+        {
+            "id": "21143764-9fe5-499e-a605-b87223b061b8",
+            "gameId": 13896,
+            "name": {
+                "en": "Crescent Void Viper"
+            }
+        },
+        {
+            "id": "cc88e1c4-a369-445d-827d-3a163a2f11d3",
+            "gameId": 13919,
+            "name": {
+                "en": "Crescent Zaghnal"
+            }
+        },
+        {
+            "id": "f91f5440-6148-4b2f-ae2a-0bab2331d450",
+            "gameId": 13938,
+            "name": {
+                "en": "Crescent Zangbeto"
+            }
+        },
+        {
+            "id": "9a192073-39dd-412c-a77a-d10dc02fcb05",
+            "gameId": 13936,
+            "name": {
+                "en": "Crescent Zaratan"
+            }
+        },
+        {
+            "id": "84f0e45c-bd68-4f17-b526-130e5de9e2e5",
+            "gameId": 13914,
+            "name": {
+                "en": "Crescent Zirnitra"
+            }
+        },
+        {
+            "id": "96e6503d-8046-4edf-be46-465e496a490c",
+            "gameId": 13912,
+            "name": {
+                "en": "Lesser Cry of Havoc"
+            }
+        },
+        {
+            "id": "e0349e4f-6415-4810-a08a-aa7c7da32882",
+            "gameId": 13909,
+            "name": {
+                "en": "Menacing Dahak"
+            }
+        },
+        {
+            "id": "fb815ba2-5587-4557-b895-e54965ee33e2",
+            "gameId": 13929,
+            "name": {
+                "en": "Occult Golem"
+            }
+        },
+        {
+            "id": "af7d2a7e-ddcc-4964-8a7a-fc8782f487c4",
+            "gameId": 13920,
+            "name": {
+                "en": "Occult Isleblazer"
+            }
+        },
+        {
+            "id": "7bac4ed2-a23c-41d9-aabf-4e24bd24d3a4",
+            "gameId": 13917,
+            "name": {
+                "en": "Occult Sculpture"
+            }
+        }
+    ],
+    "bosses": [
+        {
+            "id": "5fbbabac-8a0d-4d7b-8e07-b4df19d1db8e",
+            "gameId": 13704,
+            "name": {
+                "en": "Advanced Aevis"
+            }
+        },
+        {
+            "id": "81c9899d-c376-4f67-b677-877d8e42b9cd",
+            "gameId": 13636,
+            "name": {
+                "en": "Black Star"
+            }
+        },
+        {
+            "id": "5caf6380-81ef-4083-a4d5-fe22772d9789",
+            "gameId": 13666,
+            "name": {
+                "en": "Cloister Demon"
+            }
+        },
+        {
+            "id": "fe4ff59d-67ee-4c85-babc-7d0643ff1b42",
+            "gameId": 13814,
+            "name": {
+                "en": "Command Urn"
+            }
+        },
+        {
+            "id": "3f3d8956-431f-4d36-8ae5-3f8d334bcd66",
+            "gameId": 13759,
+            "name": {
+                "en": "Crescent Berserker"
+            }
+        },
+        {
+            "id": "6cb72b7b-f2aa-4484-b63d-6c15d36740e8",
+            "gameId": 13746,
+            "name": {
+                "en": "Crescent Garula"
+            }
+        },
+        {
+            "id": "6e2cc3cc-6d97-4a11-9fcc-09ace04d2c44",
+            "gameId": 13696,
+            "name": {
+                "en": "Crystal Dragon"
+            }
+        },
+        {
+            "id": "f9d158f7-c4e5-42b3-9b67-1558b16c5373",
+            "gameId": 13656,
+            "name": {
+                "en": "Death Claw"
+            }
+        },
+        {
+            "id": "d7f66173-4a97-42f6-9436-4a871669f98e",
+            "gameId": 13819,
+            "name": {
+                "en": "Dehumidifier"
+            }
+        },
+        {
+            "id": "9bc40b27-0b1e-4809-a93c-cc0567a74d9e",
+            "gameId": 13855,
+            "name": {
+                "en": "Execrator"
+            }
+        },
+        {
+            "id": "f5b46197-d0ef-4620-acd7-96e6b3b0896b",
+            "gameId": 13739,
+            "name": {
+                "en": "Giant Bird"
+            }
+        },
+        {
+            "id": "d5011c28-5c9e-4543-9628-ea621586ad41",
+            "gameId": 13702,
+            "name": {
+                "en": "Gilded Headstone"
+            }
+        },
+        {
+            "id": "e9059c04-a155-4345-881c-af4065904f93",
+            "gameId": 13748,
+            "name": {
+                "en": "Havoc"
+            }
+        },
+        {
+            "id": "0074820f-9346-41ba-b67c-48a5d3660d4a",
+            "gameId": 13659,
+            "name": {
+                "en": "Hinkypunk"
+            }
+        },
+        {
+            "id": "587759d9-19f1-4310-95aa-155311b5b0a1",
+            "gameId": 13741,
+            "name": {
+                "en": "Lifereaper"
+            }
+        },
+        {
+            "id": "e46d32a5-2c78-476c-ae68-f502b231589f",
+            "gameId": 13809,
+            "name": {
+                "en": "Lion Rampant"
+            }
+        },
+        {
+            "id": "edbf1438-1f76-474f-870f-e44de423cb38",
+            "gameId": 13816,
+            "name": {
+                "en": "Mad Mudarch"
+            }
+        },
+        {
+            "id": "d9c57702-a2ee-4b28-9cb6-6d26fb39f54a",
+            "gameId": 13729,
+            "name": {
+                "en": "Megaloknight"
+            }
+        },
+        {
+            "id": "43753f32-6263-4068-b78e-0df2dfacae57",
+            "gameId": 13646,
+            "name": {
+                "en": "Mysterious Mindflayer"
+            }
+        },
+        {
+            "id": "2b4705a6-b8d2-431a-be60-e6384a6a0bfe",
+            "gameId": 13726,
+            "name": {
+                "en": "Mythic Idol"
+            }
+        },
+        {
+            "id": "2392fd23-73a4-4b34-8c34-8d35ad14de84",
+            "gameId": 13701,
+            "name": {
+                "en": "Nammu"
+            }
+        },
+        {
+            "id": "e31c6980-ef2f-4cb5-af51-ac1cea3a9dba",
+            "gameId": 13638,
+            "name": {
+                "en": "Neo Garula"
+            }
+        },
+        {
+            "id": "dddd20ae-737e-487f-8934-28af850e7caa",
+            "gameId": 13717,
+            "name": {
+                "en": "Nymian Petalodus"
+            }
+        },
+        {
+            "id": "24fc9636-666e-4d54-80f7-8cae9bbe3db2",
+            "gameId": 13853,
+            "name": {
+                "en": "Observer"
+            }
+        },
+        {
+            "id": "1c1f81e2-15a2-494d-a23c-8e926a5471c3",
+            "gameId": 13649,
+            "name": {
+                "en": "Repaired Lion"
+            }
+        },
+        {
+            "id": "5f35c78e-25ea-4dee-ac05-eb32f3c728e1",
+            "gameId": 13740,
+            "name": {
+                "en": "Ropross"
+            }
+        },
+        {
+            "id": "b15417ae-7225-43c8-a126-e1a79f3471cf",
+            "gameId": 13703,
+            "name": {
+                "en": "Sisyphus"
+            }
+        },
+        {
+            "id": "499fafc2-dddc-428c-b534-989c0d0387ca",
+            "gameId": 13695,
+            "name": {
+                "en": "Trade Tortoise"
+            }
+        }
+    ],
+    "fates": [
+        {
+            "id": "ab8c72b4-2b70-4505-afe8-e54ca700cf4e",
+            "gameId": 1968,
+            "name": {
+                "en": "A Delicate Balance"
+            }
+        },
+        {
+            "id": "1755d60b-eba6-4c45-895a-346c573bb54e",
+            "gameId": 1970,
+            "name": {
+                "en": "A Prying Eye"
+            }
+        },
+        {
+            "id": "50cba394-7157-443f-90c5-d43b62880756",
+            "gameId": 1966,
+            "name": {
+                "en": "An Unending Duty"
+            }
+        },
+        {
+            "id": "833e32d4-d580-40d8-b758-24bcb9aa1b66",
+            "gameId": 1967,
+            "name": {
+                "en": "Brain Drain"
+            }
+        },
+        {
+            "id": "afc1491c-455a-44b2-b41d-fc36a3187bcc",
+            "gameId": 1971,
+            "name": {
+                "en": "Fatal Allure"
+            }
+        },
+        {
+            "id": "996dd36c-638d-4aef-94d1-35d3ff4c02d1",
+            "gameId": 1964,
+            "name": {
+                "en": "King of the Crescent"
+            }
+        },
+        {
+            "id": "4e8641a8-e63a-434c-98b6-af79f185485a",
+            "gameId": 1976,
+            "name": {
+                "en": "Persistent Pots"
+            }
+        },
+        {
+            "id": "bc0c2815-6fb5-42a2-8135-39b02e069600",
+            "gameId": 1977,
+            "name": {
+                "en": "Pleading Pots"
+            }
+        },
+        {
+            "id": "5d1bb19c-e425-4fb0-a0a5-ce3ad42d4d6f",
+            "gameId": 1962,
+            "name": {
+                "en": "Rough Waters"
+            }
+        },
+        {
+            "id": "1382098b-8eed-4307-afbd-c9e3d1f5d81d",
+            "gameId": 1972,
+            "name": {
+                "en": "Serving Darkness"
+            }
+        },
+        {
+            "id": "16d04659-e40f-421d-87cf-2f80a66a50dc",
+            "gameId": 1969,
+            "name": {
+                "en": "Sworn to Soil"
+            }
+        },
+        {
+            "id": "48425553-427a-4aa9-8c5a-7098223ea252",
+            "gameId": 1963,
+            "name": {
+                "en": "The Golden Guardian"
+            }
+        },
+        {
+            "id": "956e4f73-6c6f-4b6b-a190-e24b77e60af2",
+            "gameId": 1965,
+            "name": {
+                "en": "The Winged Terror"
+            }
+        }
+    ],
+    "critical_encounters": [
+        {
+            "id": "4c301e5e-2fb6-4600-bce7-13472406424f",
+            "gameId": 37,
+            "name": {
+                "en": "Calamity Bound"
+            }
+        },
+        {
+            "id": "b7cb0707-1327-45e8-904d-76539903ec5a",
+            "gameId": 40,
+            "name": {
+                "en": "Company of Stone"
+            }
+        },
+        {
+            "id": "ea208769-ef41-4b70-ae4c-eb608861257a",
+            "gameId": 36,
+            "name": {
+                "en": "Crawling Death"
+            }
+        },
+        {
+            "id": "22f2a0a3-711e-4239-911d-db4a55727fab",
+            "gameId": 45,
+            "name": {
+                "en": "Cursed Concern"
+            }
+        },
+        {
+            "id": "4fac835d-17f4-4236-a9ea-13a54cfe1e03",
+            "gameId": 46,
+            "name": {
+                "en": "Eternal Watch"
+            }
+        },
+        {
+            "id": "0f4e9feb-cb5d-44ee-9198-41a88b9f2c01",
+            "gameId": 47,
+            "name": {
+                "en": "Flame of Dusk"
+            }
+        },
+        {
+            "id": "ac5718b1-5ddc-4389-bef9-70075cd9a18a",
+            "gameId": 39,
+            "name": {
+                "en": "From Times Bygone"
+            }
+        },
+        {
+            "id": "9d00d6a0-0fde-4f2a-b920-f4cce3722018",
+            "gameId": 44,
+            "name": {
+                "en": "Noise Complaint"
+            }
+        },
+        {
+            "id": "d93f8e5f-94d2-404b-909c-abdbf7cf44ae",
+            "gameId": 42,
+            "name": {
+                "en": "On the Hunt"
+            }
+        },
+        {
+            "id": "3d4b8aea-fc1a-42de-baa7-3b3aef6780b6",
+            "gameId": 33,
+            "name": {
+                "en": "Scourge of the Mind"
+            }
+        },
+        {
+            "id": "078b67ea-12f4-4dad-a6ca-1561957d5b4e",
+            "gameId": 41,
+            "name": {
+                "en": "Shark Attack"
+            }
+        },
+        {
+            "id": "22bbb9db-1c63-4db6-943a-d91ed177e21c",
+            "gameId": 34,
+            "name": {
+                "en": "The Black Regiment"
+            }
+        },
+        {
+            "id": "3a4aa7b6-39c5-41b1-a14a-978409d04c04",
+            "gameId": 35,
+            "name": {
+                "en": "The Unbridled"
+            }
+        },
+        {
+            "id": "e6a67ec3-2117-4e9f-81da-362864617e59",
+            "gameId": 38,
+            "name": {
+                "en": "Trial by Claw"
+            }
+        },
+        {
+            "id": "2428f3d9-c869-4442-bb2e-741f82774117",
+            "gameId": 43,
+            "name": {
+                "en": "With Extreme Prejudice"
+            }
+        }
+    ],
+    "aethernet": [
+        {
+            "id": "f06ab71b-b08b-4a0c-9c0b-198880ab063b",
+            "gameId": 4929,
+            "name": {
+                "en": "Crystallized Caverns"
+            }
+        },
+        {
+            "id": "1eaea910-5587-4dce-948f-9d2cbb1dd0c5",
+            "gameId": 4930,
+            "name": {
+                "en": "Eldergrowth"
+            }
+        },
+        {
+            "id": "a7a21a60-d452-4af3-8f2f-800f0c86281d",
+            "gameId": 4927,
+            "name": {
+                "en": "Expedition Base Camp"
+            }
+        },
+        {
+            "id": "1c38a411-dc4e-4e21-b822-7d05f776dcdc",
+            "gameId": 4947,
+            "name": {
+                "en": "Stonemarsh"
+            }
+        },
+        {
+            "id": "def32bdf-43cb-409e-8b1f-5a5490fe57aa",
+            "gameId": 4928,
+            "name": {
+                "en": "The Wanderer's Haven"
+            }
+        }
+    ],
+    "survey_points": [
+        {
+            "id": "27e1a8de-d628-42d2-8b2d-3b1161ab8373",
+            "gameId": 4943,
+            "name": {
+                "en": "Abandoned Ascent"
+            }
+        },
+        {
+            "id": "208cdbb1-6d55-4c68-9a7b-9f5e2d72d2fc",
+            "gameId": 4940,
+            "name": {
+                "en": "Eldergrowth"
+            }
+        },
+        {
+            "id": "cc0fb1b8-0e70-4e4f-9cd2-cbcdde61cb94",
+            "gameId": 4927,
+            "name": {
+                "en": "Expedition Base Camp"
+            }
+        },
+        {
+            "id": "274f1dcb-30c6-48d1-a41d-5a5fecc2e0b2",
+            "gameId": 4938,
+            "name": {
+                "en": "Heathcliff"
+            }
+        },
+        {
+            "id": "3574137a-1499-4cd8-8703-4ce1d8b733ae",
+            "gameId": 4937,
+            "name": {
+                "en": "Lost Citadel"
+            }
+        },
+        {
+            "id": "fe94c622-7d3d-4dde-9c26-7da0b432c198",
+            "gameId": 4941,
+            "name": {
+                "en": "Shadowed City"
+            }
+        },
+        {
+            "id": "3ee3d4ee-b5eb-46cf-9373-fd672f3fe589",
+            "manual": true,
+            "name": {
+                "en": "The Ancient Stoneworks"
+            }
+        },
+        {
+            "id": "5ad2e2c6-a184-4231-86c5-25ef09bff4af",
+            "manual": true,
+            "name": {
+                "en": "The Brazier"
+            }
+        },
+        {
+            "id": "830486ff-4bb1-47fd-b7b7-106b5fa5e328",
+            "manual": true,
+            "name": {
+                "en": "The Fell Warren"
+            }
+        },
+        {
+            "id": "d1b78227-c84e-48bd-92d4-fd9673a055aa",
+            "manual": true,
+            "name": {
+                "en": "The Silent Streets"
+            }
+        },
+        {
+            "id": "6e87eea9-846b-4e87-9096-9650d10fb7cc",
+            "gameId": 4936,
+            "name": {
+                "en": "The Wanderer's Haven"
+            }
+        },
+        {
+            "id": "ddd1019f-5485-4f2d-b0bc-7217c835921f",
+            "gameId": 4935,
+            "name": {
+                "en": "Vanishing Slope"
+            }
+        }
+    ]
+}

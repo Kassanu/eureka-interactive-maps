@@ -1,0 +1,829 @@
+{
+    "enemies": [
+        {
+            "id": "f492ac2a-629d-46ff-b213-a4cbbfebfce2",
+            "gameId": 7844,
+            "name": {
+                "en": "Ancient Voidragon"
+            }
+        },
+        {
+            "id": "1393983a-3b51-4362-a01c-0bb063a3b9da",
+            "gameId": 7824,
+            "name": {
+                "en": "Bird Eater"
+            }
+        },
+        {
+            "id": "47cf1396-5d6e-4466-8681-d698e89cb9a5",
+            "gameId": 7805,
+            "name": {
+                "en": "Blazewing"
+            }
+        },
+        {
+            "id": "6eee6c7e-5e22-46ae-add1-cdc66358ce6f",
+            "gameId": 7795,
+            "name": {
+                "en": "Cardian"
+            }
+        },
+        {
+            "id": "85a9475c-1770-4008-a7f1-7a44d0fea23a",
+            "gameId": 7816,
+            "name": {
+                "en": "Clipper"
+            }
+        },
+        {
+            "id": "b49e3841-25db-4c4b-92fb-79bd6599515f",
+            "gameId": 7781,
+            "name": {
+                "en": "Dark Parthenope"
+            }
+        },
+        {
+            "id": "6e9bf86b-c9e7-4043-b044-842df859371f",
+            "gameId": 7779,
+            "name": {
+                "en": "Dark Troubadour"
+            }
+        },
+        {
+            "id": "8f11d591-ea09-42ed-aabb-291bc13973be",
+            "gameId": 7782,
+            "name": {
+                "en": "Delphyne"
+            }
+        },
+        {
+            "id": "6f9c992a-c8ab-4828-ad34-e8bd1cc61f11",
+            "gameId": 7827,
+            "name": {
+                "en": "Dingo"
+            }
+        },
+        {
+            "id": "9bc473b0-8fe3-492b-8e95-17b61f349fa5",
+            "gameId": 7773,
+            "name": {
+                "en": "Ember Sprite"
+            }
+        },
+        {
+            "id": "636d28d0-be34-4812-a37c-56a9628e3d3a",
+            "gameId": 7840,
+            "name": {
+                "en": "Fabricated Singha"
+            }
+        },
+        {
+            "id": "aff0f543-875f-4ded-b7a1-1550525e564c",
+            "gameId": 7792,
+            "name": {
+                "en": "Gibbon"
+            }
+        },
+        {
+            "id": "1b1fff58-4917-4c1b-9bb2-50cbf61fd584",
+            "gameId": 7813,
+            "name": {
+                "en": "Haokah Unbound"
+            }
+        },
+        {
+            "id": "8f478c1f-8e8a-4e25-bd30-1f516237454c",
+            "gameId": 7835,
+            "name": {
+                "en": "Henbane"
+            }
+        },
+        {
+            "id": "22781863-d83b-4b3c-a95f-d6db03c6b32b",
+            "gameId": 7807,
+            "name": {
+                "en": "Hippomartimus"
+            }
+        },
+        {
+            "id": "80b7c54f-5da8-440e-8eb3-4482bf61594f",
+            "gameId": 7832,
+            "name": {
+                "en": "Illuminati Escapee"
+            }
+        },
+        {
+            "id": "c1ad5d54-0f9f-46a6-b26b-d82f35d5c87a",
+            "gameId": 7821,
+            "name": {
+                "en": "Islandhander"
+            }
+        },
+        {
+            "id": "d07e53d8-2a44-4469-a302-f762de412913",
+            "gameId": 7767,
+            "name": {
+                "en": "Karlabos of Pyros"
+            }
+        },
+        {
+            "id": "06f35856-2d41-4bb5-9064-a660f4cab933",
+            "gameId": 7810,
+            "name": {
+                "en": "Machairodus"
+            }
+        },
+        {
+            "id": "45d63147-5bf9-4ead-afdc-f7f6b468329c",
+            "gameId": 7836,
+            "name": {
+                "en": "Matanga Castaway"
+            }
+        },
+        {
+            "id": "6e35058a-c419-419a-9603-a1ad3103db2a",
+            "gameId": 7803,
+            "name": {
+                "en": "Mechanoguardian"
+            }
+        },
+        {
+            "id": "8b1c1e56-e60d-4ad0-a2fc-25a87d08b9ee",
+            "gameId": 7802,
+            "name": {
+                "en": "Mega-gris"
+            }
+        },
+        {
+            "id": "e34c09e7-c173-467e-8a67-9cf1bde64812",
+            "gameId": 7791,
+            "name": {
+                "en": "Northern Griffin"
+            }
+        },
+        {
+            "id": "00082e74-84ee-41f3-8858-d145ca794a39",
+            "gameId": 7829,
+            "name": {
+                "en": "Northern Grizzly"
+            }
+        },
+        {
+            "id": "99cf735b-9e47-4c12-a2f5-edc858d8527c",
+            "gameId": 7818,
+            "name": {
+                "en": "Northern Ray"
+            }
+        },
+        {
+            "id": "c374ee2c-53b0-4081-830e-13c3bb422f04",
+            "gameId": 7830,
+            "name": {
+                "en": "Northern Swallow"
+            }
+        },
+        {
+            "id": "9c8693c9-2711-4895-b1be-6b97ef8e4b99",
+            "gameId": 7814,
+            "name": {
+                "en": "Overdue Tome"
+            }
+        },
+        {
+            "id": "241f53ca-b32c-418a-a175-118e0ea0d978",
+            "gameId": 7826,
+            "name": {
+                "en": "Pure White Flame"
+            }
+        },
+        {
+            "id": "79e47aba-6766-4965-a8a6-604be13baaf0",
+            "gameId": 7808,
+            "name": {
+                "en": "Pyros Apanda"
+            }
+        },
+        {
+            "id": "ce7b54f7-060f-4b8e-acda-fee341bf94ac",
+            "gameId": 7776,
+            "name": {
+                "en": "Pyros Bhoot"
+            }
+        },
+        {
+            "id": "7bf00d87-f7f0-48b2-97d9-a089e5e9b35d",
+            "gameId": 7819,
+            "name": {
+                "en": "Pyros Bombfish"
+            }
+        },
+        {
+            "id": "bb7d0d37-f8b6-4087-897c-9e45aa6e0f16",
+            "gameId": 7804,
+            "name": {
+                "en": "Pyros Chelone"
+            }
+        },
+        {
+            "id": "690fb48c-3c9e-4c46-bf93-c5ab860d0aba",
+            "gameId": 7790,
+            "name": {
+                "en": "Pyros Coeurl"
+            }
+        },
+        {
+            "id": "c5bdd3c0-3607-4c6e-acf6-06d322cf0604",
+            "gameId": 7825,
+            "name": {
+                "en": "Pyros Crab"
+            }
+        },
+        {
+            "id": "97d4c3a8-7c36-4140-b772-99de899c98b9",
+            "gameId": 7798,
+            "name": {
+                "en": "Pyros Gremlin"
+            }
+        },
+        {
+            "id": "b8fdfb99-e8be-45b0-abc4-fba0cb6506a9",
+            "gameId": 7823,
+            "name": {
+                "en": "Pyros Gulo Gulo"
+            }
+        },
+        {
+            "id": "fcb67e3c-20ca-49ed-bcc4-df6c42fae78f",
+            "gameId": 7833,
+            "name": {
+                "en": "Pyros Hawk"
+            }
+        },
+        {
+            "id": "139b4c6b-73aa-4846-ab1a-25a89568f1ab",
+            "gameId": 7845,
+            "name": {
+                "en": "Pyros Hecteyes"
+            }
+        },
+        {
+            "id": "df25ce7e-77eb-40d7-9032-3b3f74db9791",
+            "gameId": 7794,
+            "name": {
+                "en": "Pyros Kongamato"
+            }
+        },
+        {
+            "id": "16f98433-59d8-4ad0-8683-1cc573ff680d",
+            "gameId": 7822,
+            "name": {
+                "en": "Pyros Nanka"
+            }
+        },
+        {
+            "id": "659de89a-8f79-4043-bd7c-4f2d5fd735c8",
+            "gameId": 7780,
+            "name": {
+                "en": "Pyros Parthenope"
+            }
+        },
+        {
+            "id": "7bfcecb0-75a1-43c3-8b97-6d90cb6edde9",
+            "gameId": 7831,
+            "name": {
+                "en": "Pyros Piranu"
+            }
+        },
+        {
+            "id": "d6619944-dafc-4b02-9c4c-cacb97b9378a",
+            "gameId": 7820,
+            "name": {
+                "en": "Pyros Pudding"
+            }
+        },
+        {
+            "id": "f5345c7e-a5a1-46c6-83c9-908c0b18ce1c",
+            "gameId": 7796,
+            "name": {
+                "en": "Pyros Serpent"
+            }
+        },
+        {
+            "id": "898d6357-4c9d-416d-b118-b8f963533d44",
+            "gameId": 7848,
+            "name": {
+                "en": "Pyros Shuck"
+            }
+        },
+        {
+            "id": "74efed06-f527-4836-a808-8d2323550a7a",
+            "gameId": 7828,
+            "name": {
+                "en": "Pyros Slime"
+            }
+        },
+        {
+            "id": "f2684953-e5b9-4904-8468-5f69008dbafc",
+            "gameId": 7793,
+            "name": {
+                "en": "Pyros Slug"
+            }
+        },
+        {
+            "id": "b4bb9ea7-c9d1-4196-b56c-521c1ed5ea77",
+            "gameId": 7811,
+            "name": {
+                "en": "Pyros Snake"
+            }
+        },
+        {
+            "id": "ab9f917c-313d-4985-9f79-c9e9b77d0b45",
+            "gameId": 7837,
+            "name": {
+                "en": "Pyros Treant"
+            }
+        },
+        {
+            "id": "63901063-43fc-4dcd-8258-d0c785bda74f",
+            "gameId": 7775,
+            "name": {
+                "en": "Pyros Wolf"
+            }
+        },
+        {
+            "id": "ae3369c6-75d2-4907-a654-b804f8579db5",
+            "gameId": 7769,
+            "name": {
+                "en": "Pyros Wood Golem"
+            }
+        },
+        {
+            "id": "9e03a584-fefc-470e-afdc-4ceb37bcb496",
+            "gameId": 7777,
+            "name": {
+                "en": "Pyros Wraith"
+            }
+        },
+        {
+            "id": "1708f142-7f1b-4808-935b-fcf2dcd521a7",
+            "gameId": 7787,
+            "name": {
+                "en": "Pyros Zoblyn"
+            }
+        },
+        {
+            "id": "9502495b-ff98-4ea0-8924-2277ab4fe52f",
+            "gameId": 7801,
+            "name": {
+                "en": "Red Eye"
+            }
+        },
+        {
+            "id": "6956d9d9-02b5-49eb-ab7e-583a43e03d74",
+            "gameId": 7469,
+            "name": {
+                "en": "Snowstorm Sprite"
+            }
+        },
+        {
+            "id": "009f9b02-6962-47a5-a302-67a23f0af6f3",
+            "gameId": 7785,
+            "name": {
+                "en": "Soulless Agent"
+            }
+        },
+        {
+            "id": "77948892-73eb-43c5-8b0a-843135044956",
+            "gameId": 7784,
+            "name": {
+                "en": "Soulless Pathfinder"
+            }
+        },
+        {
+            "id": "a0265590-580d-4f47-a1e2-e28420263aef",
+            "gameId": 7786,
+            "name": {
+                "en": "Spriggan Pankratiast"
+            }
+        },
+        {
+            "id": "ca8d32ce-25b8-494b-a8c6-3bfcc3951ba6",
+            "gameId": 7842,
+            "name": {
+                "en": "Stegoceras"
+            }
+        },
+        {
+            "id": "2e42e8bc-1421-4b4f-902f-46c7a0552420",
+            "gameId": 7799,
+            "name": {
+                "en": "Stray Snipper"
+            }
+        },
+        {
+            "id": "d0ca1ab5-0c3f-44d0-af6a-298748f62770",
+            "gameId": 7797,
+            "name": {
+                "en": "The Defoliator"
+            }
+        },
+        {
+            "id": "34525dfb-177e-4129-b234-4a9eafba75ca",
+            "gameId": 7470,
+            "name": {
+                "en": "Thunderstorm Sprite"
+            }
+        },
+        {
+            "id": "0b74c9ee-7bb4-4ed6-9449-087dd5baac03",
+            "gameId": 6983,
+            "name": {
+                "en": "Typhoon Sprite"
+            }
+        },
+        {
+            "id": "efb799cb-8681-4111-a858-d6fb1c8d1814",
+            "gameId": 7846,
+            "name": {
+                "en": "Val Bloodglider"
+            }
+        },
+        {
+            "id": "a4593322-fbcb-4fa6-bbaa-86376d43c12d",
+            "gameId": 7847,
+            "name": {
+                "en": "Val Gigantopithecus"
+            }
+        },
+        {
+            "id": "bf84edc9-52a1-4f83-beec-e86d9941a663",
+            "gameId": 7838,
+            "name": {
+                "en": "Val Hornbill"
+            }
+        },
+        {
+            "id": "b855cc93-8df6-4af4-bab9-8ffdd22e8d1f",
+            "gameId": 7789,
+            "name": {
+                "en": "Val Icetrap"
+            }
+        },
+        {
+            "id": "4786dc29-fcb6-43ba-a299-b351c8447a98",
+            "gameId": 7809,
+            "name": {
+                "en": "Val Mammoth"
+            }
+        },
+        {
+            "id": "86244279-c847-4400-bbb4-1ed47a4c2ea0",
+            "gameId": 7839,
+            "name": {
+                "en": "Val Minotaur"
+            }
+        },
+        {
+            "id": "48647c7c-7a96-4110-8558-6907fcdb6b4d",
+            "gameId": 6841,
+            "name": {
+                "en": "Val Skatene"
+            }
+        },
+        {
+            "id": "8fff143a-6d0f-46a8-b4ac-5268981a87e5",
+            "gameId": 7778,
+            "name": {
+                "en": "Val Wraith"
+            }
+        },
+        {
+            "id": "e1dd1c57-3965-47af-9a20-97609308ba89",
+            "gameId": 7815,
+            "name": {
+                "en": "Val Yeti"
+            }
+        },
+        {
+            "id": "e24739e8-ace3-44fb-a660-11f2b685764f",
+            "gameId": 7812,
+            "name": {
+                "en": "Valking"
+            }
+        },
+        {
+            "id": "9ea9bb67-1473-4f33-a04a-465547a678fc",
+            "gameId": 7800,
+            "name": {
+                "en": "Voidskipper"
+            }
+        },
+        {
+            "id": "dde09f3f-9b63-46a4-ada1-735f0edd5115",
+            "gameId": 7788,
+            "name": {
+                "en": "Walking Sapling"
+            }
+        },
+        {
+            "id": "14f1aec9-c998-42f3-8f56-ec1f1d9fd8a5",
+            "gameId": 7806,
+            "name": {
+                "en": "Wasserspeier"
+            }
+        },
+        {
+            "id": "d9a151c7-da90-41a5-b117-c2f70385a7dd",
+            "gameId": 7843,
+            "name": {
+                "en": "Zebu"
+            }
+        }
+    ],
+    "bosses": [
+        {
+            "id": "99c2c567-5d0b-4048-8896-fdbadd41c7b5",
+            "gameId": 7754,
+            "name": {
+                "en": "Aetolus"
+            }
+        },
+        {
+            "id": "3f3752af-dc51-46c8-a66a-4ed5e7428455",
+            "gameId": 7742,
+            "name": {
+                "en": "Askalaphos"
+            }
+        },
+        {
+            "id": "ca90db74-e0dc-43c7-affc-17c6f40a198b",
+            "gameId": 7756,
+            "name": {
+                "en": "Dux"
+            }
+        },
+        {
+            "id": "23de29c2-6f65-4683-b206-8421463b0ab5",
+            "gameId": 7727,
+            "name": {
+                "en": "Eldthurs"
+            }
+        },
+        {
+            "id": "ad003462-e525-4afe-ad02-7b08d9905679",
+            "gameId": 7753,
+            "name": {
+                "en": "Flauros"
+            }
+        },
+        {
+            "id": "2271dd87-dbb4-4ff9-a3c5-74d802b4e080",
+            "gameId": 7729,
+            "name": {
+                "en": "Glaukopis"
+            }
+        },
+        {
+            "id": "4f79da05-618d-4c20-a471-6502908b8513",
+            "gameId": 7736,
+            "name": {
+                "en": "Graffiacane"
+            }
+        },
+        {
+            "id": "a2fe6185-e057-4a1c-9f15-a83842d7f3aa",
+            "gameId": 7746,
+            "name": {
+                "en": "Grand Duke Batym"
+            }
+        },
+        {
+            "id": "61042fa7-4fe9-4ec8-96ec-cdb3692f326d",
+            "gameId": 7760,
+            "name": {
+                "en": "Iris"
+            }
+        },
+        {
+            "id": "7e199d94-543b-45c7-9e06-26a9280f2a73",
+            "gameId": 5180,
+            "name": {
+                "en": "Lamebrix Strikebocks"
+            }
+        },
+        {
+            "id": "9cf84e4f-e4fa-4f26-93ca-5accf0cd3596",
+            "gameId": 7726,
+            "name": {
+                "en": "Lesath"
+            }
+        },
+        {
+            "id": "f817ac3f-0e7f-43d5-b02c-82802336579d",
+            "gameId": 7759,
+            "name": {
+                "en": "Leucosia"
+            }
+        },
+        {
+            "id": "1843a338-dec3-43ca-a72a-3a48228bc60d",
+            "gameId": 6434,
+            "name": {
+                "en": "Lumber Jack"
+            }
+        },
+        {
+            "id": "e6392227-4f2e-4c66-b1c3-912766e5b1ef",
+            "gameId": 7731,
+            "name": {
+                "en": "Penthesilea"
+            }
+        },
+        {
+            "id": "2841aa93-53c1-45e7-b58d-117284f2daf2",
+            "gameId": 7739,
+            "name": {
+                "en": "Skoll"
+            }
+        },
+        {
+            "id": "4eab6bf4-fc86-4b24-8e79-888ea369fdee",
+            "gameId": 7740,
+            "name": {
+                "en": "The Sophist"
+            }
+        },
+        {
+            "id": "32056295-f85a-48e0-b919-5060631a73c7",
+            "gameId": 7763,
+            "name": {
+                "en": "Ying-Yang"
+            }
+        }
+    ],
+    "fates": [
+        {
+            "id": "3c1b669c-f658-4f61-b4d2-7048c3a8814e",
+            "gameId": 1396,
+            "name": {
+                "en": "Burning Hunger"
+            }
+        },
+        {
+            "id": "e41a5636-09ee-4019-a1cf-da2bd051f722",
+            "gameId": 1391,
+            "name": {
+                "en": "Creepy Doll"
+            }
+        },
+        {
+            "id": "c024c2d3-bd7b-42fb-be00-890ace674714",
+            "gameId": 1397,
+            "name": {
+                "en": "Dry Iris"
+            }
+        },
+        {
+            "id": "9f011118-03a1-4f43-97d9-a60a93f1b25f",
+            "gameId": 1402,
+            "name": {
+                "en": "Haunter of the Dark"
+            }
+        },
+        {
+            "id": "3041726e-a9c7-4554-916b-9d2c1959e155",
+            "gameId": 1403,
+            "name": {
+                "en": "Heavens' Warg"
+            }
+        },
+        {
+            "id": "042396a8-03f2-4a5b-878d-fbf75e4f95d5",
+            "gameId": 1389,
+            "name": {
+                "en": "High Voltage"
+            }
+        },
+        {
+            "id": "610fbb02-97dc-434f-ba0a-dad1648380de",
+            "gameId": 1404,
+            "name": {
+                "en": "Lost Epic"
+            }
+        },
+        {
+            "id": "f50a1f5b-fd0c-47cc-a751-bd5ee8efc315",
+            "gameId": 1388,
+            "name": {
+                "en": "Medias Res"
+            }
+        },
+        {
+            "id": "4c732ce2-b5d4-431b-bb80-3fab7bffb844",
+            "gameId": 1401,
+            "name": {
+                "en": "Mister Bright-eyes"
+            }
+        },
+        {
+            "id": "ba92db0e-0388-4271-9f01-471bd70f733e",
+            "gameId": 1390,
+            "name": {
+                "en": "On the Nonexistent"
+            }
+        },
+        {
+            "id": "eb06d905-dbc6-41f7-8a51-bd794db8db99",
+            "gameId": 1399,
+            "name": {
+                "en": "Put Up Your Dux"
+            }
+        },
+        {
+            "id": "39463e07-66d2-4c5e-ae1f-3f3d7a8b1992",
+            "gameId": 1392,
+            "name": {
+                "en": "Quiet, Please"
+            }
+        },
+        {
+            "id": "6b948052-3300-4eca-babb-666b41ee7b63",
+            "gameId": 1394,
+            "name": {
+                "en": "Rondo Aetolus"
+            }
+        },
+        {
+            "id": "8129dfd1-d2cb-4859-b54f-e3140da960b9",
+            "gameId": 1395,
+            "name": {
+                "en": "Scorchpion King"
+            }
+        },
+        {
+            "id": "12048c95-e56b-4592-960c-92a6b930bd08",
+            "gameId": 1398,
+            "name": {
+                "en": "Thirty Whacks"
+            }
+        },
+        {
+            "id": "1692a570-ce48-4d61-9f1b-351d0c95ce73",
+            "gameId": 1408,
+            "name": {
+                "en": "Uncommon Nonsense"
+            }
+        },
+        {
+            "id": "6af7ffc7-aca2-441d-8435-5b92a73e82ab",
+            "gameId": 1393,
+            "name": {
+                "en": "Up and Batym"
+            }
+        },
+        {
+            "id": "702eb8fb-521b-4e73-a801-30a4f55b56bd",
+            "gameId": 1407,
+            "name": {
+                "en": "We're All Mad Here"
+            }
+        },
+        {
+            "id": "514681fe-df9b-44f1-8b50-3ba5dafd45a4",
+            "gameId": 1400,
+            "name": {
+                "en": "You Do Know Jack"
+            }
+        }
+    ],
+    "aethernet": [
+        {
+            "id": "ee3882f8-8b68-43a5-b5b3-a13f44e8762b",
+            "gameId": 2542,
+            "name": {
+                "en": "Carbonatite Quarry"
+            }
+        },
+        {
+            "id": "62079168-e02d-4742-a636-df230d5a0793",
+            "gameId": 2531,
+            "name": {
+                "en": "Northpoint"
+            }
+        },
+        {
+            "id": "0cb201f2-c2bf-4166-bdd8-69ef540df2a7",
+            "gameId": 2540,
+            "name": {
+                "en": "The Dragon Star Observatory"
+            }
+        },
+        {
+            "id": "9e3d1d1f-4e99-4a3d-be26-124cee0f226a",
+            "gameId": 2541,
+            "name": {
+                "en": "The Firing Chamber"
+            }
+        }
+    ]
+}

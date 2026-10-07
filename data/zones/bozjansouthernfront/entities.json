@@ -1,0 +1,759 @@
+{
+    "enemies": [
+        {
+            "id": "0248f78e-2727-44c0-b5ad-0906ac3d06e8",
+            "gameId": 9430,
+            "name": {
+                "en": "4th Legion Armored Weapon"
+            }
+        },
+        {
+            "id": "e826e538-9731-4999-90d5-6b268417ecd6",
+            "gameId": 9544,
+            "name": {
+                "en": "4th Legion Avenger"
+            }
+        },
+        {
+            "id": "f74e6992-4684-48d7-81cf-2b063372387f",
+            "gameId": 9522,
+            "name": {
+                "en": "4th Legion Death Claw"
+            }
+        },
+        {
+            "id": "e979269b-8cce-4d30-9163-4fbbcf8ecccf",
+            "gameId": 9547,
+            "name": {
+                "en": "4th Legion Gunship"
+            }
+        },
+        {
+            "id": "233a3754-950f-4bb9-b5ef-2b0f85d4e1d0",
+            "gameId": 9559,
+            "name": {
+                "en": "4th Legion Hexadrone"
+            }
+        },
+        {
+            "id": "3d5397f2-2655-4bb9-ab76-0867a0e75faf",
+            "gameId": 9519,
+            "name": {
+                "en": "4th Legion Nimrod"
+            }
+        },
+        {
+            "id": "1254d9d2-ab56-42b3-adda-6c941b7a1f7c",
+            "gameId": 9523,
+            "name": {
+                "en": "4th Legion Roader"
+            }
+        },
+        {
+            "id": "d80ca519-1de3-4da7-bd93-6993b39efba1",
+            "gameId": 9564,
+            "name": {
+                "en": "4th Legion Scorpion"
+            }
+        },
+        {
+            "id": "dcf1ebfe-d6c3-4198-8adc-f03f183cdbc9",
+            "gameId": 9517,
+            "name": {
+                "en": "4th Legion Slasher"
+            }
+        },
+        {
+            "id": "f10e37af-e270-4cb5-b9d7-b2e360470e19",
+            "gameId": 9539,
+            "name": {
+                "en": "4th Legion Vanguard"
+            }
+        },
+        {
+            "id": "91304f88-7b14-4039-92fc-ef50fba7ce88",
+            "gameId": 9578,
+            "name": {
+                "en": "Bird of Barathrum"
+            }
+        },
+        {
+            "id": "dc168fa5-aa43-41ec-b62a-bb18fd63bdb5",
+            "gameId": 9545,
+            "name": {
+                "en": "Bozjan Antlion"
+            }
+        },
+        {
+            "id": "f7e9ba84-62c5-468b-bbab-62a34921ab72",
+            "gameId": 9572,
+            "name": {
+                "en": "Bozjan Anzu"
+            }
+        },
+        {
+            "id": "ba77aec0-0236-40ff-8e4a-4ce7afd73fe7",
+            "gameId": 9550,
+            "name": {
+                "en": "Bozjan Bandersnatch"
+            }
+        },
+        {
+            "id": "21db9baf-4711-4e61-ba04-a015a7b0914e",
+            "gameId": 9551,
+            "name": {
+                "en": "Bozjan Biast"
+            }
+        },
+        {
+            "id": "81598c17-ec32-4410-b44f-1e812bb3a640",
+            "gameId": 9540,
+            "name": {
+                "en": "Bozjan Doblyn"
+            }
+        },
+        {
+            "id": "b3386a23-3319-4579-ab14-70ac5777cb85",
+            "gameId": 9573,
+            "name": {
+                "en": "Bozjan Doll"
+            }
+        },
+        {
+            "id": "00f30f35-5ffd-4efb-a33c-e298a9aa2894",
+            "gameId": 9555,
+            "name": {
+                "en": "Bozjan Dullahan"
+            }
+        },
+        {
+            "id": "33ee686a-ce4f-45ab-9b2f-ebaf3f0f05f0",
+            "gameId": 9679,
+            "name": {
+                "en": "Bozjan Elasmoth"
+            }
+        },
+        {
+            "id": "4e6f03b5-80fa-49b2-b707-5a57b7e86bb4",
+            "gameId": 9560,
+            "name": {
+                "en": "Bozjan Elbst"
+            }
+        },
+        {
+            "id": "c0b51a34-bd74-4ff7-947c-df2dc43ca5e1",
+            "gameId": 9534,
+            "name": {
+                "en": "Bozjan Geshunpest"
+            }
+        },
+        {
+            "id": "a45cddd0-e6d8-4aab-b70d-fe24c44f5a37",
+            "gameId": 9569,
+            "name": {
+                "en": "Bozjan Goobbue"
+            }
+        },
+        {
+            "id": "e87b8f27-c4f6-45b7-ae65-637cda1f08be",
+            "gameId": 9568,
+            "name": {
+                "en": "Bozjan Gravekeeper"
+            }
+        },
+        {
+            "id": "b3412f70-63b5-4491-aed5-1369cf864da5",
+            "gameId": 9515,
+            "name": {
+                "en": "Bozjan Korrigan"
+            }
+        },
+        {
+            "id": "6dfdc2df-2fb7-468d-885a-f6a5c194812a",
+            "gameId": 9521,
+            "name": {
+                "en": "Bozjan Matamata"
+            }
+        },
+        {
+            "id": "552d3df0-aea2-4c2b-8100-cd58a289898d",
+            "gameId": 9565,
+            "name": {
+                "en": "Bozjan Monitor"
+            }
+        },
+        {
+            "id": "e8402178-bb8b-4824-bd28-9341a296b2c5",
+            "gameId": 9518,
+            "name": {
+                "en": "Bozjan Mudpuppy"
+            }
+        },
+        {
+            "id": "94bf115e-0604-4ba2-985a-30b838742e6d",
+            "gameId": 9520,
+            "name": {
+                "en": "Bozjan Nepenthes"
+            }
+        },
+        {
+            "id": "9a7364c5-b2f1-4ec3-af82-8ff9d812c688",
+            "gameId": 9567,
+            "name": {
+                "en": "Bozjan Ochu"
+            }
+        },
+        {
+            "id": "3d1da58f-6011-4c58-a43b-c119889d4491",
+            "gameId": 9516,
+            "name": {
+                "en": "Bozjan Orobon"
+            }
+        },
+        {
+            "id": "d38ccc34-6aaf-4265-97b4-27c9493534a8",
+            "gameId": 9563,
+            "name": {
+                "en": "Bozjan Phobosuchus"
+            }
+        },
+        {
+            "id": "70ccfdee-5ad5-4757-8e4b-6ab5f44f3692",
+            "gameId": 9562,
+            "name": {
+                "en": "Bozjan Ranunculus"
+            }
+        },
+        {
+            "id": "7ed3b152-f43d-4d1d-8912-55adf4d592ee",
+            "gameId": 9575,
+            "name": {
+                "en": "Bozjan Rider"
+            }
+        },
+        {
+            "id": "69e72a79-46a1-4d69-a421-71499270413c",
+            "gameId": 9541,
+            "name": {
+                "en": "Bozjan Sabotender"
+            }
+        },
+        {
+            "id": "b2d815f5-4486-4541-bd05-581b2094514d",
+            "gameId": 9561,
+            "name": {
+                "en": "Bozjan Screamer"
+            }
+        },
+        {
+            "id": "78aade7b-b464-46d0-a352-dd7f81eada5a",
+            "gameId": 9571,
+            "name": {
+                "en": "Bozjan Snake"
+            }
+        },
+        {
+            "id": "e4cfcf76-b1b9-44fc-be09-e8bd612548ab",
+            "gameId": 9549,
+            "name": {
+                "en": "Bozjan Taipan"
+            }
+        },
+        {
+            "id": "5210c310-8769-4345-8b67-f35d5d94fa80",
+            "gameId": 9542,
+            "name": {
+                "en": "Bozjan Tormentor"
+            }
+        },
+        {
+            "id": "8f9770c7-4bd3-446d-8a0b-ea4b48e978f7",
+            "gameId": 9570,
+            "name": {
+                "en": "Bozjan Wadjet"
+            }
+        },
+        {
+            "id": "d015995a-aa14-4749-8f79-09f1222cf5df",
+            "gameId": 9548,
+            "name": {
+                "en": "Bozjan Wight"
+            }
+        },
+        {
+            "id": "35ebb30e-f927-4cea-bef8-c69c8f8b0e17",
+            "gameId": 9546,
+            "name": {
+                "en": "Bozjan Worm"
+            }
+        },
+        {
+            "id": "dac8479f-c56b-4e0c-b400-149d53766a87",
+            "gameId": 9535,
+            "name": {
+                "en": "Bozjan Wraith"
+            }
+        },
+        {
+            "id": "aaff951b-4055-4a70-81f2-607ced4fc0c3",
+            "gameId": 9577,
+            "name": {
+                "en": "Clingy Clare"
+            }
+        },
+        {
+            "id": "bf89b9d6-09d1-4381-a456-ecb3af8adfda",
+            "gameId": 113,
+            "name": {
+                "en": "Earth Sprite"
+            }
+        },
+        {
+            "id": "ae562958-0f76-4518-b87e-cb82cd4f48ee",
+            "gameId": 9531,
+            "name": {
+                "en": "Fern Flower"
+            }
+        },
+        {
+            "id": "cc3d0da6-36f9-4ddb-a861-452d39e3ae2b",
+            "gameId": 9530,
+            "name": {
+                "en": "Ink Claw"
+            }
+        },
+        {
+            "id": "cb0162d1-8ede-41b0-9b9d-443d50be7db6",
+            "gameId": 9536,
+            "name": {
+                "en": "Lightning Sprite"
+            }
+        },
+        {
+            "id": "f6bfe9aa-69bc-496a-8909-55a99715408e",
+            "gameId": 9576,
+            "name": {
+                "en": "Patty"
+            }
+        },
+        {
+            "id": "bcec917c-513c-4a03-acb3-c4cd5fb9fbf5",
+            "gameId": 9558,
+            "name": {
+                "en": "Psoglav"
+            }
+        },
+        {
+            "id": "7e496f33-c41e-4110-bd65-184f562d6873",
+            "gameId": 6943,
+            "name": {
+                "en": "Red Chocobo"
+            }
+        },
+        {
+            "id": "51d040ba-053e-43ed-8042-1663cad4648f",
+            "gameId": 9557,
+            "name": {
+                "en": "Smok"
+            }
+        },
+        {
+            "id": "7034d578-7138-49ad-a3ed-ca6c348ff7ed",
+            "gameId": 9532,
+            "name": {
+                "en": "Tideborn Angel"
+            }
+        },
+        {
+            "id": "5b4c35c8-62a3-49e2-88c9-2035b9d6006a",
+            "gameId": 9556,
+            "name": {
+                "en": "Viy"
+            }
+        },
+        {
+            "id": "052bbeeb-c550-4051-b669-82b3ae5afc1d",
+            "gameId": 56,
+            "name": {
+                "en": "Water Sprite"
+            }
+        },
+        {
+            "id": "6c537db4-da1b-46f6-8db8-eaaa21d02a9a",
+            "gameId": 115,
+            "name": {
+                "en": "Wind Sprite"
+            }
+        }
+    ],
+    "skirmishes": [
+        {
+            "id": "a4d3f9bb-64e2-44c4-985e-0e8435750d6c",
+            "gameId": 1604,
+            "name": {
+                "en": "All Pets Are Off"
+            }
+        },
+        {
+            "id": "61d81054-ecda-43b3-97cf-0aa28bf50689",
+            "gameId": 1606,
+            "name": {
+                "en": "Brought to Heal"
+            }
+        },
+        {
+            "id": "5e939b57-0d71-4873-a245-efd5c58771aa",
+            "gameId": 1602,
+            "name": {
+                "en": "Can Carnivorous Plants Bloom Even on a Battlefield?"
+            }
+        },
+        {
+            "id": "aed4ca8d-d738-4fd2-b1bd-a979ca5e77a9",
+            "gameId": 1605,
+            "name": {
+                "en": "Conflicting with the First Law"
+            }
+        },
+        {
+            "id": "a8b1b62b-8dfb-4a29-b94b-b6ffb88cc07f",
+            "gameId": 1624,
+            "name": {
+                "en": "Demonstrably Demonic"
+            }
+        },
+        {
+            "id": "eaca8809-5c77-42b9-897c-a1dc6637912c",
+            "gameId": 1622,
+            "name": {
+                "en": "Desperately Seeking Something"
+            }
+        },
+        {
+            "id": "dc9805d5-b5fe-46db-aa23-90911e68fe9c",
+            "gameId": 1625,
+            "name": {
+                "en": "For Absent Friends"
+            }
+        },
+        {
+            "id": "cdf0fc28-c953-47e1-b326-e6d53e07bb9e",
+            "gameId": 1612,
+            "name": {
+                "en": "Heavy Boots of Lead"
+            }
+        },
+        {
+            "id": "f4aaadbc-8ea2-45ce-98e3-80987440150d",
+            "gameId": 1615,
+            "name": {
+                "en": "Help Wanted"
+            }
+        },
+        {
+            "id": "15ca1cde-8f29-4fe0-8853-c78b31191110",
+            "gameId": 1620,
+            "name": {
+                "en": "I'm a Mechanical Man"
+            }
+        },
+        {
+            "id": "dedf73a5-4ac6-4c75-b1db-792291bd032f",
+            "gameId": 1627,
+            "name": {
+                "en": "Let Slip the Dogs of War"
+            }
+        },
+        {
+            "id": "462db7db-661d-45f2-92cc-368eac4115ce",
+            "gameId": 1601,
+            "name": {
+                "en": "More Machine Now than Man"
+            }
+        },
+        {
+            "id": "5367b9ac-80ec-48d1-a174-8de3b01edc2e",
+            "gameId": 1621,
+            "name": {
+                "en": "Murder Death Kill"
+            }
+        },
+        {
+            "id": "cddedb9c-e41e-4f70-aa7d-22b3002ed621",
+            "gameId": 1619,
+            "name": {
+                "en": "My Family and Other Animals"
+            }
+        },
+        {
+            "id": "3b2e4953-5e2f-4f05-a449-7d02553b57ff",
+            "gameId": 1613,
+            "name": {
+                "en": "No Camping Allowed"
+            }
+        },
+        {
+            "id": "67d9a241-069d-4589-9093-90442fdc1b29",
+            "gameId": 1598,
+            "name": {
+                "en": "None of Them Knew They Were Robots"
+            }
+        },
+        {
+            "id": "c73e190d-ee1d-4d75-beb1-9cb5c1b5aa36",
+            "gameId": 1626,
+            "name": {
+                "en": "Of Steel and Flame"
+            }
+        },
+        {
+            "id": "19e151b2-465b-47b1-afad-52bd0acfd964",
+            "gameId": 1610,
+            "name": {
+                "en": "Parts and Recreation"
+            }
+        },
+        {
+            "id": "1c92fcd5-aef0-4e74-aabc-3ed5914151a6",
+            "gameId": 1616,
+            "name": {
+                "en": "Pyromancer Supreme"
+            }
+        },
+        {
+            "id": "0018b70d-993e-4f85-ab74-f25c8b6f981d",
+            "gameId": 1608,
+            "name": {
+                "en": "Red (Chocobo) Alert"
+            }
+        },
+        {
+            "id": "1b099cfa-c4e9-44a2-a466-f2b227e8cee6",
+            "gameId": 1614,
+            "name": {
+                "en": "Scavengers of Man's Sorrow"
+            }
+        },
+        {
+            "id": "fa2f27d8-6ec4-46ff-a9d0-e8ccce9b69b9",
+            "gameId": 1603,
+            "name": {
+                "en": "Seeq and Destroy"
+            }
+        },
+        {
+            "id": "2f750d52-3cfa-4aaa-aaec-5faeb101b1cc",
+            "gameId": 1597,
+            "name": {
+                "en": "Sneak & Spell"
+            }
+        },
+        {
+            "id": "e8bbf99c-1e4f-49e3-90ab-23676c17961a",
+            "gameId": 1623,
+            "name": {
+                "en": "Supplies Party"
+            }
+        },
+        {
+            "id": "f4952a9b-c3a0-4d80-9a86-bf59c7bf7d9e",
+            "gameId": 1599,
+            "name": {
+                "en": "The Beasts Must Die"
+            }
+        },
+        {
+            "id": "616aab36-fe71-4b40-8523-aca9d4229059",
+            "gameId": 1611,
+            "name": {
+                "en": "The Element of Supplies"
+            }
+        },
+        {
+            "id": "b259384d-30fa-4828-a194-21e8fe49128c",
+            "gameId": 1607,
+            "name": {
+                "en": "The Monster Mash"
+            }
+        },
+        {
+            "id": "b9c2d65f-03a1-4cb1-ad9a-3526cd13a795",
+            "gameId": 1628,
+            "name": {
+                "en": "The War Against the Machines"
+            }
+        },
+        {
+            "id": "b6aa7609-b738-479b-9569-9dc25e9a79c7",
+            "gameId": 1618,
+            "name": {
+                "en": "The Wild Bunch"
+            }
+        },
+        {
+            "id": "e728e8af-d2f9-4fbc-a31e-eb3d58401bb3",
+            "gameId": 1609,
+            "name": {
+                "en": "Unicorn Flakes"
+            }
+        },
+        {
+            "id": "ea318bb8-c9a5-4724-8f14-ea08bb926917",
+            "gameId": 1600,
+            "name": {
+                "en": "Unrest for the Wicked"
+            }
+        },
+        {
+            "id": "5fd24dea-3ee7-45a5-8afd-0469768f09e5",
+            "gameId": 1617,
+            "name": {
+                "en": "Waste the Rainbow"
+            }
+        }
+    ],
+    "engagements": [
+        {
+            "id": "130a7abb-8e62-4f4b-8e69-9c1e97cd4f74",
+            "gameId": 4,
+            "name": {
+                "en": "Aces High"
+            }
+        },
+        {
+            "id": "127273f3-ea57-479f-8fb0-ee6c6585a5e3",
+            "gameId": 12,
+            "name": {
+                "en": "And the Flames Went Higher"
+            }
+        },
+        {
+            "id": "e417084b-1a6c-45bd-a4f3-0a26580f6a95",
+            "gameId": 8,
+            "name": {
+                "en": "Beast of Man"
+            }
+        },
+        {
+            "id": "27641649-1e6d-4db5-a9e1-1a0814a430b9",
+            "gameId": 1,
+            "name": {
+                "en": "Kill It with Fire"
+            }
+        },
+        {
+            "id": "840f7793-4093-4bc5-a3ff-4e5500c32b46",
+            "gameId": 13,
+            "name": {
+                "en": "Metal Fox Chaos"
+            }
+        },
+        {
+            "id": "06ff970f-0d9c-48ae-89af-71438c561240",
+            "gameId": 10,
+            "name": {
+                "en": "Patriot Games"
+            }
+        },
+        {
+            "id": "dfa27d49-432d-4c22-a4bc-19db7d055e75",
+            "gameId": 14,
+            "name": {
+                "en": "Rise of the Robots"
+            }
+        },
+        {
+            "id": "99691e62-0eb6-473b-860a-c936dfeb4f3f",
+            "gameId": 16,
+            "name": {
+                "en": "The Battle of Castrum Lacus Litore"
+            }
+        },
+        {
+            "id": "0ebcbb09-ebf8-4284-9d14-18823d0c0c64",
+            "gameId": 2,
+            "name": {
+                "en": "The Baying of the Hound(s)"
+            }
+        },
+        {
+            "id": "7b8e094d-df1f-4fb0-9001-6eb204c3e4d1",
+            "gameId": 6,
+            "name": {
+                "en": "The Final Furlong"
+            }
+        },
+        {
+            "id": "5232f812-cc5e-4935-b0b6-b6b117ba6a73",
+            "gameId": 9,
+            "name": {
+                "en": "The Fires of War"
+            }
+        },
+        {
+            "id": "ce498017-206e-4f77-8758-cff0c52994f0",
+            "gameId": 7,
+            "name": {
+                "en": "The Hunt for Red Choctober"
+            }
+        },
+        {
+            "id": "38f32229-7608-4b8c-844e-efa2d7b20900",
+            "gameId": 5,
+            "name": {
+                "en": "The Shadow of Death's Hand"
+            }
+        },
+        {
+            "id": "57bb5704-ae56-4923-afe9-aaa341a4d940",
+            "gameId": 11,
+            "name": {
+                "en": "Trampled under Hoof"
+            }
+        },
+        {
+            "id": "377ec88a-8abd-4885-8fab-dceeb49d12c1",
+            "gameId": 3,
+            "name": {
+                "en": "Vigil for the Lost"
+            }
+        },
+        {
+            "id": "df65db20-b0c9-4956-a00a-734fe9c4d7ad",
+            "gameId": 15,
+            "name": {
+                "en": "Where Strode the Behemoth"
+            }
+        }
+    ],
+    "aethernet": [
+        {
+            "id": "208c5a05-708a-47ff-abff-8fea1312cb17",
+            "gameId": 3575,
+            "name": {
+                "en": "Camp Steva"
+            }
+        },
+        {
+            "id": "ea912d3d-831b-4cc0-9314-3b2904ba20b1",
+            "gameId": 3531,
+            "name": {
+                "en": "Lunya's Stand"
+            }
+        },
+        {
+            "id": "2ce17378-d1e2-4954-a742-4d702342aebb",
+            "gameId": 3530,
+            "name": {
+                "en": "Olana's Stand"
+            }
+        },
+        {
+            "id": "8dec54f3-8913-4d70-80f2-94378c70a459",
+            "gameId": 3529,
+            "name": {
+                "en": "Utya's Aegis"
+            }
+        }
+    ]
+}

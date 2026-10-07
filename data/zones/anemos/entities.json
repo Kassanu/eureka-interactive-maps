@@ -1,0 +1,962 @@
+{
+    "enemies": [
+        {
+            "id": "22c27266-678a-4cd5-9957-7bbd757b9cd5",
+            "gameId": 6831,
+            "name": {
+                "en": "Abraxas"
+            }
+        },
+        {
+            "id": "4349c8dc-2c9c-4300-9d3e-49d98e8d408c",
+            "gameId": 6974,
+            "name": {
+                "en": "Anemos Anala"
+            }
+        },
+        {
+            "id": "9d0858d7-eb3a-44b2-8e97-df51b230da8f",
+            "gameId": 6975,
+            "name": {
+                "en": "Anemos Apa"
+            }
+        },
+        {
+            "id": "4281fd6b-77f7-4601-b1e6-1e0a96bc2582",
+            "gameId": 7051,
+            "name": {
+                "en": "Anemos Chaser"
+            }
+        },
+        {
+            "id": "92c48c3a-a417-4c5d-a972-55a280fc0765",
+            "gameId": 7039,
+            "name": {
+                "en": "Anemos Flan"
+            }
+        },
+        {
+            "id": "8b8bd29f-d327-4077-92de-635a0d0656d3",
+            "gameId": 7191,
+            "name": {
+                "en": "Anemos Gremlin"
+            }
+        },
+        {
+            "id": "63585c28-d4d3-4054-aacf-6a1b9cf6c8ae",
+            "gameId": 6822,
+            "name": {
+                "en": "Anemos Harpeia"
+            }
+        },
+        {
+            "id": "1d4a243d-8fe6-4041-b03a-cfe9e6a9a33d",
+            "gameId": 7195,
+            "name": {
+                "en": "Anemos Pegasus"
+            }
+        },
+        {
+            "id": "e2b8c800-21d6-410f-aa1e-0524f2493682",
+            "gameId": 6839,
+            "name": {
+                "en": "Anemos Sanuwa"
+            }
+        },
+        {
+            "id": "b95a677f-24b5-4353-a726-dedf6ac55900",
+            "gameId": 6808,
+            "name": {
+                "en": "Anemossling"
+            }
+        },
+        {
+            "id": "d0921724-3086-47b5-9366-10888d82d967",
+            "gameId": 7198,
+            "name": {
+                "en": "Arioch of the Isle"
+            }
+        },
+        {
+            "id": "1f569c4f-4d2c-4df3-810c-6da3d2482c44",
+            "gameId": 7046,
+            "name": {
+                "en": "Bezoar"
+            }
+        },
+        {
+            "id": "d6c4af5c-d5b7-4b1d-beb2-183a662b6f49",
+            "gameId": 6829,
+            "name": {
+                "en": "Bigfoot"
+            }
+        },
+        {
+            "id": "4ca4e5ca-d15e-4fe9-b71e-0798affaa283",
+            "gameId": 7199,
+            "name": {
+                "en": "Bitoso of the Isle"
+            }
+        },
+        {
+            "id": "5d3abe2f-3ae0-4e44-bed8-17515b809ef3",
+            "gameId": 6824,
+            "name": {
+                "en": "Black Wolf"
+            }
+        },
+        {
+            "id": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
+            "gameId": 6993,
+            "name": {
+                "en": "Blizzard Sprite"
+            }
+        },
+        {
+            "id": "ce872e9d-346f-4b17-a576-462b976c97ce",
+            "gameId": 6988,
+            "name": {
+                "en": "Coffinkeep"
+            }
+        },
+        {
+            "id": "6917c369-e698-4803-b1a5-625550402ad9",
+            "gameId": 7052,
+            "name": {
+                "en": "Crystal Wolf"
+            }
+        },
+        {
+            "id": "93165720-a3a2-426a-be76-009b104efa65",
+            "gameId": 6823,
+            "name": {
+                "en": "Darner"
+            }
+        },
+        {
+            "id": "957aa3a6-81b9-46c3-b905-d90b71c37696",
+            "gameId": 7050,
+            "name": {
+                "en": "Death Jacket"
+            }
+        },
+        {
+            "id": "c7577453-6040-4447-ae70-4c7b5ce76584",
+            "gameId": 7053,
+            "name": {
+                "en": "Death Mask"
+            }
+        },
+        {
+            "id": "c4b23836-38d8-4b3c-b21b-62467afc36cb",
+            "gameId": 7188,
+            "name": {
+                "en": "Defroster"
+            }
+        },
+        {
+            "id": "b197b21a-28a9-42cf-9289-1d3542eb8c05",
+            "gameId": 7193,
+            "name": {
+                "en": "Dhalmel of Nightmares"
+            }
+        },
+        {
+            "id": "5ce85272-6a58-4a8d-b163-c36585dde284",
+            "gameId": 6985,
+            "name": {
+                "en": "Duskfall Bhoot"
+            }
+        },
+        {
+            "id": "7d85f2d8-b749-43c3-a4f1-26e24ed780c6",
+            "gameId": 7185,
+            "name": {
+                "en": "Duskfall Dullahan"
+            }
+        },
+        {
+            "id": "fda437fa-ff3f-47a7-8b79-50c71d0b329a",
+            "gameId": 6986,
+            "name": {
+                "en": "Duskfall Mummy"
+            }
+        },
+        {
+            "id": "a338d439-e788-4faa-b76f-7c64d65522e6",
+            "gameId": 7222,
+            "name": {
+                "en": "Duskfall Skeleton"
+            }
+        },
+        {
+            "id": "02d2ffc1-92f6-4370-99c2-04685354e320",
+            "gameId": 6846,
+            "name": {
+                "en": "Eurekan Dahak"
+            }
+        },
+        {
+            "id": "e88f9545-7a62-4245-876c-b53b5474e032",
+            "gameId": 6810,
+            "name": {
+                "en": "Eurekan Screamer"
+            }
+        },
+        {
+            "id": "dd10e3bc-069d-402e-8df7-2f60544418dc",
+            "gameId": 7186,
+            "name": {
+                "en": "Ferromantoise"
+            }
+        },
+        {
+            "id": "7689f435-efaf-4936-af12-b16e3141ae3a",
+            "gameId": 6816,
+            "name": {
+                "en": "Flowering Sabotender"
+            }
+        },
+        {
+            "id": "05210288-36fb-4c24-bcfe-c862dbff624a",
+            "gameId": 6990,
+            "name": {
+                "en": "Fossil Dragon"
+            }
+        },
+        {
+            "id": "cf8d8ca9-afd2-45a4-8a8d-ca554c615133",
+            "gameId": 6973,
+            "name": {
+                "en": "Four-eyes"
+            }
+        },
+        {
+            "id": "ee7f392f-7e21-4bb0-ad64-dd6f23cf0703",
+            "gameId": 6836,
+            "name": {
+                "en": "Gardenkeeper"
+            }
+        },
+        {
+            "id": "0db6d3c9-0d8c-49b7-a0ba-e337c7f70076",
+            "gameId": 6838,
+            "name": {
+                "en": "Glacier Golem"
+            }
+        },
+        {
+            "id": "719c8e8a-6b4c-4406-b8c9-e267f618e04e",
+            "gameId": 6818,
+            "name": {
+                "en": "Glade Wivre"
+            }
+        },
+        {
+            "id": "627dc332-bd84-4ebf-b5b6-9159760b01fb",
+            "gameId": 6976,
+            "name": {
+                "en": "Guud Suud"
+            }
+        },
+        {
+            "id": "6a2913fa-2ead-4345-a3d5-1bf0b77d5026",
+            "gameId": 6812,
+            "name": {
+                "en": "Heartbroken Ochu"
+            }
+        },
+        {
+            "id": "2db131ca-6f8b-4deb-91ca-a19b4073a688",
+            "gameId": 6840,
+            "name": {
+                "en": "Henbane"
+            }
+        },
+        {
+            "id": "46335c95-be63-4d40-8e19-4f7d6da9edda",
+            "gameId": 6821,
+            "name": {
+                "en": "Hybrid Hog"
+            }
+        },
+        {
+            "id": "7a76f34b-1abc-43d7-801b-bcb6ae0285a2",
+            "gameId": 7045,
+            "name": {
+                "en": "Ignis Fatuus"
+            }
+        },
+        {
+            "id": "8d319725-8e9a-4a4c-8ccb-615d4089f5f2",
+            "gameId": 7044,
+            "name": {
+                "en": "Irregular Plasmoid"
+            }
+        },
+        {
+            "id": "47a90b0e-3d98-459b-841f-28ee5a2fde82",
+            "gameId": 6837,
+            "name": {
+                "en": "Khor Claw"
+            }
+        },
+        {
+            "id": "5b2fb085-0f94-4f8e-b048-f2ec9e3f5692",
+            "gameId": 7038,
+            "name": {
+                "en": "Lentic"
+            }
+        },
+        {
+            "id": "729139f7-2c0f-482c-90e6-8b073f28d697",
+            "gameId": 6828,
+            "name": {
+                "en": "Leopard"
+            }
+        },
+        {
+            "id": "60f1faac-383e-47ed-9db6-ce9083f81bd5",
+            "gameId": 7190,
+            "name": {
+                "en": "Lynx"
+            }
+        },
+        {
+            "id": "a571c400-599a-4f4f-a2a9-747fcaea42ff",
+            "gameId": 6972,
+            "name": {
+                "en": "Magia Fan"
+            }
+        },
+        {
+            "id": "d3fc3a39-16df-45f5-a24d-ca620eab099c",
+            "gameId": 7043,
+            "name": {
+                "en": "Mana Bomb"
+            }
+        },
+        {
+            "id": "f2750d2f-41f8-4e3b-afe4-626ee510ec7f",
+            "gameId": 7048,
+            "name": {
+                "en": "Mana Grenade"
+            }
+        },
+        {
+            "id": "9474578a-8a34-480d-bef0-600ef996e4d8",
+            "gameId": 7197,
+            "name": {
+                "en": "Mighty Craklaw"
+            }
+        },
+        {
+            "id": "9a85e8fb-c48a-4436-8510-252f983e7762",
+            "gameId": 6819,
+            "name": {
+                "en": "Migratory Chapuli"
+            }
+        },
+        {
+            "id": "e50325d5-6ea8-46a9-ab18-e72bf62a0c3e",
+            "gameId": 6843,
+            "name": {
+                "en": "Monoeye"
+            }
+        },
+        {
+            "id": "f105542b-3aa5-4281-a0bb-2359a440be55",
+            "gameId": 6834,
+            "name": {
+                "en": "Old Goobbue"
+            }
+        },
+        {
+            "id": "90abe68f-46ba-4023-a6eb-016959bb986f",
+            "gameId": 6845,
+            "name": {
+                "en": "Old World Zu"
+            }
+        },
+        {
+            "id": "abc66189-7b9f-4b18-ac09-43586dca5eae",
+            "gameId": 6832,
+            "name": {
+                "en": "Phobosuchus"
+            }
+        },
+        {
+            "id": "64bedd0b-a890-49b0-ac4e-1bd068b44b11",
+            "gameId": 6844,
+            "name": {
+                "en": "Plantoid"
+            }
+        },
+        {
+            "id": "4fc6c8db-487f-4e4a-87ce-2a4618059df9",
+            "gameId": 6827,
+            "name": {
+                "en": "Pneumaflayer"
+            }
+        },
+        {
+            "id": "129e66bc-a1d2-4d0c-9c70-a183e4bd1a3e",
+            "gameId": 6979,
+            "name": {
+                "en": "Primelephas"
+            }
+        },
+        {
+            "id": "0b6462d2-a5d1-4010-b3a1-48f4c6e589fe",
+            "gameId": 6833,
+            "name": {
+                "en": "Quickwater Snake"
+            }
+        },
+        {
+            "id": "a5f0c761-61db-40db-99e9-7cc47930599c",
+            "gameId": 6982,
+            "name": {
+                "en": "Rain Sprite"
+            }
+        },
+        {
+            "id": "1fb72c0a-ea44-46fd-a763-f64fada15d19",
+            "gameId": 7047,
+            "name": {
+                "en": "Red Bonnet"
+            }
+        },
+        {
+            "id": "c9fb8971-d308-4a13-885b-b21cdbf97b7c",
+            "gameId": 7194,
+            "name": {
+                "en": "Rockfin"
+            }
+        },
+        {
+            "id": "e227abd3-05cb-41d0-8560-6d61d1968657",
+            "gameId": 6809,
+            "name": {
+                "en": "Scape Leech"
+            }
+        },
+        {
+            "id": "9d876df1-a163-428b-9158-ef69588c4688",
+            "gameId": 6820,
+            "name": {
+                "en": "Sea Bishop"
+            }
+        },
+        {
+            "id": "ec9a1f1d-3e08-498e-9717-80e575efe6f7",
+            "gameId": 6811,
+            "name": {
+                "en": "Sea Pugil"
+            }
+        },
+        {
+            "id": "4fdd51b3-1d51-4e53-b640-f2d742ebf76c",
+            "gameId": 6807,
+            "name": {
+                "en": "Seaboard Angler"
+            }
+        },
+        {
+            "id": "125b8d8b-3b98-4d58-95db-97a836c7b290",
+            "gameId": 6813,
+            "name": {
+                "en": "Seaboard Ogrebon"
+            }
+        },
+        {
+            "id": "8848a51a-72f5-4606-914e-0585c5b4d5eb",
+            "gameId": 7192,
+            "name": {
+                "en": "Shadow Wing"
+            }
+        },
+        {
+            "id": "c4034cfe-11bb-45a0-9631-e1bf2262a1e3",
+            "gameId": 6989,
+            "name": {
+                "en": "Shadow Wraith"
+            }
+        },
+        {
+            "id": "dce1f595-53f1-46a7-a0f8-50a761d7d11b",
+            "gameId": 6984,
+            "name": {
+                "en": "Skeleton Noble"
+            }
+        },
+        {
+            "id": "5bdd4ae5-0d51-4040-ac6f-8fc5340826a1",
+            "gameId": 7187,
+            "name": {
+                "en": "Spangencrab"
+            }
+        },
+        {
+            "id": "c40a36ee-cfb0-467c-a0e2-2fd78dfce6ae",
+            "gameId": 6817,
+            "name": {
+                "en": "Squib"
+            }
+        },
+        {
+            "id": "3a85b011-95fb-4d71-a1a8-c3e9c1d0a094",
+            "gameId": 6835,
+            "name": {
+                "en": "Stalker Ziz"
+            }
+        },
+        {
+            "id": "5e5f3c4c-f0f9-488f-a10e-5de3c7c745dd",
+            "gameId": 6981,
+            "name": {
+                "en": "Tangie"
+            }
+        },
+        {
+            "id": "0bb4ca14-8bf3-4152-a8c3-246572059c84",
+            "gameId": 6987,
+            "name": {
+                "en": "Traveling Gourmand"
+            }
+        },
+        {
+            "id": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
+            "gameId": 6983,
+            "name": {
+                "en": "Typhoon Sprite"
+            }
+        },
+        {
+            "id": "d127c9e8-281f-42fa-8c17-03b1e4f9ec4e",
+            "gameId": 7196,
+            "name": {
+                "en": "Val Antlion"
+            }
+        },
+        {
+            "id": "42458c70-1aa3-4619-b94f-c589570586df",
+            "gameId": 6826,
+            "name": {
+                "en": "Val Bear"
+            }
+        },
+        {
+            "id": "f2c4864a-6b93-452e-ac4d-049e10f992fa",
+            "gameId": 7049,
+            "name": {
+                "en": "Val Biast"
+            }
+        },
+        {
+            "id": "310badc8-6257-4450-ba36-8bb6539552a4",
+            "gameId": 6842,
+            "name": {
+                "en": "Val Biloko"
+            }
+        },
+        {
+            "id": "dd6cc58a-16b5-4559-8d1d-4bcaa87c2677",
+            "gameId": 7042,
+            "name": {
+                "en": "Val Imp"
+            }
+        },
+        {
+            "id": "4535117f-c02e-488e-bb6e-f3a74ac5af9f",
+            "gameId": 6830,
+            "name": {
+                "en": "Val Leshy"
+            }
+        },
+        {
+            "id": "28015dc9-0aa7-4479-8e82-688a174e06f4",
+            "gameId": 7040,
+            "name": {
+                "en": "Val Revenant"
+            }
+        },
+        {
+            "id": "5085417b-2bfe-4d9e-8aa0-588fdf240a81",
+            "gameId": 6841,
+            "name": {
+                "en": "Val Skatene"
+            }
+        },
+        {
+            "id": "fe44d09c-d4a5-4a0d-ad6d-242bcfc4b5be",
+            "gameId": 6980,
+            "name": {
+                "en": "Val Specter"
+            }
+        },
+        {
+            "id": "c727695d-14f9-411c-b2b7-12d888fbe808",
+            "gameId": 6814,
+            "name": {
+                "en": "Valbol"
+            }
+        },
+        {
+            "id": "68206030-03c2-4a3c-85b6-24dd1cb1f4ae",
+            "gameId": 7041,
+            "name": {
+                "en": "Vesper Bat"
+            }
+        },
+        {
+            "id": "ddb07631-117d-4010-bfee-a128f9448985",
+            "gameId": 7189,
+            "name": {
+                "en": "Vespid"
+            }
+        },
+        {
+            "id": "5fabc5d3-bbc7-4a13-9fe7-be5452a9632c",
+            "gameId": 6977,
+            "name": {
+                "en": "Voidscale"
+            }
+        },
+        {
+            "id": "8baf4064-eb80-4241-9e4d-a7a223893247",
+            "gameId": 6825,
+            "name": {
+                "en": "Wild Baboulas"
+            }
+        },
+        {
+            "id": "2651fee0-64ff-4769-a41e-7cfcabbb334a",
+            "gameId": 7037,
+            "name": {
+                "en": "Wooly Woodchuck"
+            }
+        },
+        {
+            "id": "2fef4624-a8f0-4d65-bfe8-bea896a8574b",
+            "gameId": 6815,
+            "name": {
+                "en": "Xurble"
+            }
+        },
+        {
+            "id": "fee4f322-62f5-4d54-8680-ca80e6dfd29e",
+            "gameId": 6978,
+            "name": {
+                "en": "Zuniceratops"
+            }
+        }
+    ],
+    "bosses": [
+        {
+            "id": "41488f41-0021-4b9c-be9b-eb62bcdb6a63",
+            "gameId": 7177,
+            "name": {
+                "en": "Amarok"
+            }
+        },
+        {
+            "id": "08fed2d2-9dc8-4717-ac59-bf2657366bc2",
+            "gameId": 7171,
+            "name": {
+                "en": "Amemet"
+            }
+        },
+        {
+            "id": "98db43bd-d92c-426c-a464-470ed23bf787",
+            "gameId": 7168,
+            "name": {
+                "en": "Bombadeel"
+            }
+        },
+        {
+            "id": "8992dbd5-23d6-4b3c-9880-26ca6767d1b3",
+            "gameId": 7157,
+            "name": {
+                "en": "Callisto"
+            }
+        },
+        {
+            "id": "c1d1e01c-d19f-4d49-9e0a-28aafeaa050f",
+            "gameId": 7167,
+            "name": {
+                "en": "Caym"
+            }
+        },
+        {
+            "id": "b6f1b7d1-340f-41b6-a5f7-8138507e1d43",
+            "gameId": 7150,
+            "name": {
+                "en": "Fafnir"
+            }
+        },
+        {
+            "id": "2922ed3c-579c-4ee0-ac93-bce6c46761f3",
+            "gameId": 7158,
+            "name": {
+                "en": "Jahannam"
+            }
+        },
+        {
+            "id": "a7c78c16-8a41-48bc-bbab-3082d6afc7b2",
+            "gameId": 7165,
+            "name": {
+                "en": "Judgmental Julika"
+            }
+        },
+        {
+            "id": "f8cfe649-aa0d-4a79-b47e-d43c5e69e9bf",
+            "gameId": 7152,
+            "name": {
+                "en": "King Hazmat"
+            }
+        },
+        {
+            "id": "8fa74f4a-07c8-4143-acec-aa6e4a96e35d",
+            "gameId": 7147,
+            "name": {
+                "en": "Lamashtu"
+            }
+        },
+        {
+            "id": "3248e690-0ff7-4734-bf71-3cbb6f232869",
+            "gameId": 7160,
+            "name": {
+                "en": "Number"
+            }
+        },
+        {
+            "id": "79d867e8-17cf-41d3-907e-ff3e7ba04bc7",
+            "gameId": 7143,
+            "name": {
+                "en": "Pazuzu"
+            }
+        },
+        {
+            "id": "0d7e9c69-82de-4954-a899-9b49690354da",
+            "gameId": 7172,
+            "name": {
+                "en": "Polyphemus"
+            }
+        },
+        {
+            "id": "9a6dfad0-abcd-4c0a-8184-89e85bf7e2a4",
+            "gameId": 7169,
+            "name": {
+                "en": "Sabotender Corrido"
+            }
+        },
+        {
+            "id": "cffaec1b-71a5-4234-91aa-78a987709fd0",
+            "gameId": 4671,
+            "name": {
+                "en": "Serket"
+            }
+        },
+        {
+            "id": "7a484620-1cde-4c74-a586-1512b35b1bc1",
+            "gameId": 7148,
+            "name": {
+                "en": "Simurgh's Strider"
+            }
+        },
+        {
+            "id": "09a2a2e6-3a0c-45fa-8a49-9cbd12567626",
+            "gameId": 7170,
+            "name": {
+                "en": "Teles"
+            }
+        },
+        {
+            "id": "ea6ccaa0-6c53-4095-b09b-a7e01b3b6886",
+            "gameId": 7166,
+            "name": {
+                "en": "The Emperor of Anemos"
+            }
+        },
+        {
+            "id": "9abaac94-f89e-414f-a896-08b2b3f2bcc7",
+            "gameId": 7151,
+            "name": {
+                "en": "The Lord of Anemos"
+            }
+        },
+        {
+            "id": "941c3807-3c16-4a22-aaf3-ff59261adab4",
+            "gameId": 7173,
+            "name": {
+                "en": "The White Rider"
+            }
+        }
+    ],
+    "fates": [
+        {
+            "id": "4452f4a1-56b0-4634-9cf9-38d50e1a68f3",
+            "gameId": 1347,
+            "name": {
+                "en": "By Numbers"
+            }
+        },
+        {
+            "id": "615827b2-14de-4250-b476-0ce4e661e118",
+            "gameId": 1335,
+            "name": {
+                "en": "Caym What May"
+            }
+        },
+        {
+            "id": "c9e0c8bd-6097-4749-a44e-4d7334a03d4a",
+            "gameId": 1345,
+            "name": {
+                "en": "Disinherit the Wind"
+            }
+        },
+        {
+            "id": "0470ea1f-6c02-47a5-b3b2-be379e7b2dc7",
+            "gameId": 1346,
+            "name": {
+                "en": "Don't Judge Me, Morbol"
+            }
+        },
+        {
+            "id": "b5810241-55f2-44fe-a97d-f5a10586a267",
+            "gameId": 1338,
+            "name": {
+                "en": "Drama Lamashtu"
+            }
+        },
+        {
+            "id": "44805fe3-1404-4f04-abf1-fdf5bfd5e4cc",
+            "gameId": 1340,
+            "name": {
+                "en": "I Amarok"
+            }
+        },
+        {
+            "id": "293dffca-f815-45ee-a435-9631f39817ac",
+            "gameId": 1344,
+            "name": {
+                "en": "One Missed Callisto"
+            }
+        },
+        {
+            "id": "13d9da96-2ce9-4523-b86a-9e0bb79022d0",
+            "gameId": 1334,
+            "name": {
+                "en": "Prove Your Amemettle"
+            }
+        },
+        {
+            "id": "234eeabd-62f8-4fcd-88c0-bb79b7cb7212",
+            "gameId": 1339,
+            "name": {
+                "en": "Short Serket 2"
+            }
+        },
+        {
+            "id": "311a951b-f528-4cf7-9b2d-5112842f50ef",
+            "gameId": 1342,
+            "name": {
+                "en": "Simurghasbord"
+            }
+        },
+        {
+            "id": "181e3867-fadc-4586-ad56-63e069b185ab",
+            "gameId": 1337,
+            "name": {
+                "en": "Sing, Muse"
+            }
+        },
+        {
+            "id": "e5760267-545a-4635-a538-ed75b32e4680",
+            "gameId": 1333,
+            "name": {
+                "en": "Teles House"
+            }
+        },
+        {
+            "id": "58546fac-5aa2-4bed-8a01-12b3878dc131",
+            "gameId": 1336,
+            "name": {
+                "en": "The Killing of a Sacred Bombardier"
+            }
+        },
+        {
+            "id": "7eaa2429-db4a-465c-bafc-99101f8fc77f",
+            "gameId": 1348,
+            "name": {
+                "en": "The Shadow over Anemos"
+            }
+        },
+        {
+            "id": "244a9236-e8e5-4f9e-9569-9caf8755d9b1",
+            "gameId": 1328,
+            "name": {
+                "en": "The Swarm Never Sets"
+            }
+        },
+        {
+            "id": "4e336582-0086-4dba-9414-a74268cdb3f0",
+            "gameId": 1341,
+            "name": {
+                "en": "To the Mat"
+            }
+        },
+        {
+            "id": "eea88344-e143-4900-aa83-0170f774407b",
+            "gameId": 1332,
+            "name": {
+                "en": "Unsafety Dance"
+            }
+        },
+        {
+            "id": "1e93cf81-a875-49b0-a887-69f32e39d102",
+            "gameId": 1329,
+            "name": {
+                "en": "Wail in the Willows"
+            }
+        },
+        {
+            "id": "d693100e-199b-4515-8ee6-94bc7d48f430",
+            "gameId": 1343,
+            "name": {
+                "en": "When You Ride Alone"
+            }
+        },
+        {
+            "id": "65e9058e-eeef-4a36-850b-67bfdc8311fd",
+            "gameId": 1331,
+            "name": {
+                "en": "Wine and Honey"
+            }
+        }
+    ],
+    "aethernet": [
+        {
+            "id": "84774934-2bfe-482d-a77d-b58db413916a",
+            "gameId": 2429,
+            "name": {
+                "en": "Abandoned Laboratory"
+            }
+        },
+        {
+            "id": "a65b66bc-ba1e-42c9-947a-be5f7089c777",
+            "gameId": 2415,
+            "name": {
+                "en": "Port Surgate"
+            }
+        },
+        {
+            "id": "bf5976f5-2183-4adc-a085-72f886f6865c",
+            "gameId": 2436,
+            "name": {
+                "en": "Windtorn Cabin"
+            }
+        }
+    ]
+}
