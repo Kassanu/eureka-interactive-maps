@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-// The version of the zone JSON shape in assets/zoneJson, independent of the app version in
+// The version of the zone JSON shape in data/zones, independent of the app version in
 // package.json. Any change to that shape bumps this, which separates a stale contributor file
 // from a current one.
 

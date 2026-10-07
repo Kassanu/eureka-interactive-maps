@@ -4,10 +4,10 @@ import type { z } from 'zod'
 import { loadZone, referencedIds, zoneSlugs, zones } from '../../zones'
 import type { LoadedZone, RawZoneFile, StoredSectionDefinition, ZoneSlug } from '../../zones'
 
-const ZONE_DIR = join(process.cwd(), 'assets/zoneJson')
+const ZONE_DIR = join(process.cwd(), 'data/zones')
 
 export function zoneFilePath(slug: ZoneSlug): string {
-  return join(ZONE_DIR, `${slug}.json`)
+  return join(ZONE_DIR, slug, 'zone.json')
 }
 
 export function loadZoneFile(slug: ZoneSlug): RawZoneFile {

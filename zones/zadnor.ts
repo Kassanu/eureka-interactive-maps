@@ -5,7 +5,7 @@ export const zadnor: ZoneDefinition = {
   slug: 'zadnor',
   operation: 'bozja',
   accent: 'bg-indigo-500 hover:bg-indigo-700',
-  file: () => import('../assets/zoneJson/zadnor.json'),
+  file: () => import('../data/zones/zadnor/zone.json'),
   map: { image: () => import('../assets/images/maps/zadnor.jpg'), grid: GRID },
   sections: bozjaSections,
   filters: bozjaFilters,
