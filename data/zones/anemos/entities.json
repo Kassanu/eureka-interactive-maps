@@ -4,651 +4,930 @@
             "id": "22c27266-678a-4cd5-9957-7bbd757b9cd5",
             "gameId": 6831,
             "name": {
-                "en": "Abraxas"
+                "en": "Abraxas",
+                "ja": "アブラクサス",
+                "de": "Abraxas",
+                "fr": "Abraxas"
             }
         },
         {
             "id": "4349c8dc-2c9c-4300-9d3e-49d98e8d408c",
             "gameId": 6974,
             "name": {
-                "en": "Anemos Anala"
+                "en": "Anemos Anala",
+                "ja": "アネモス・アナラ",
+                "de": "Anemos-Anala",
+                "fr": "Anala Anemos"
             }
         },
         {
             "id": "9d0858d7-eb3a-44b2-8e97-df51b230da8f",
             "gameId": 6975,
             "name": {
-                "en": "Anemos Apa"
+                "en": "Anemos Apa",
+                "ja": "アネモス・アーパス",
+                "de": "Anemos-Apa",
+                "fr": "Apa Anemos"
             }
         },
         {
             "id": "4281fd6b-77f7-4601-b1e6-1e0a96bc2582",
             "gameId": 7051,
             "name": {
-                "en": "Anemos Chaser"
+                "en": "Anemos Chaser",
+                "ja": "アネモスチェイサー",
+                "de": "Anemos-Häscher",
+                "fr": "Chasseur Anemos"
             }
         },
         {
             "id": "92c48c3a-a417-4c5d-a972-55a280fc0765",
             "gameId": 7039,
             "name": {
-                "en": "Anemos Flan"
+                "en": "Anemos Flan",
+                "ja": "アネモス・プリン",
+                "de": "Anemos-Pudding",
+                "fr": "Flan Anemos"
             }
         },
         {
             "id": "8b8bd29f-d327-4077-92de-635a0d0656d3",
             "gameId": 7191,
             "name": {
-                "en": "Anemos Gremlin"
+                "en": "Anemos Gremlin",
+                "ja": "アネモス・グレムリン",
+                "de": "Anemos-Gremlin",
+                "fr": "Gremlin Anemos"
             }
         },
         {
             "id": "63585c28-d4d3-4054-aacf-6a1b9cf6c8ae",
             "gameId": 6822,
             "name": {
-                "en": "Anemos Harpeia"
+                "en": "Anemos Harpeia",
+                "ja": "アネモス・ハルペイア",
+                "de": "Anemos-Harpeia",
+                "fr": "Harpie Anemos"
             }
         },
         {
             "id": "1d4a243d-8fe6-4041-b03a-cfe9e6a9a33d",
             "gameId": 7195,
             "name": {
-                "en": "Anemos Pegasus"
+                "en": "Anemos Pegasus",
+                "ja": "アネモス・ペガサス",
+                "de": "Anemos-Pegasus",
+                "fr": "Pégase Anemos"
             }
         },
         {
             "id": "e2b8c800-21d6-410f-aa1e-0524f2493682",
             "gameId": 6839,
             "name": {
-                "en": "Anemos Sanuwa"
+                "en": "Anemos Sanuwa",
+                "ja": "アネモス・サヌワ",
+                "de": "Anemos-Sanuwa",
+                "fr": "Sanuwa Anemos"
             }
         },
         {
             "id": "b95a677f-24b5-4353-a726-dedf6ac55900",
             "gameId": 6808,
             "name": {
-                "en": "Anemossling"
+                "en": "Anemossling",
+                "ja": "アネモスモス",
+                "de": "Anemoosling",
+                "fr": "Anemoussemousse"
             }
         },
         {
             "id": "d0921724-3086-47b5-9366-10888d82d967",
             "gameId": 7198,
             "name": {
-                "en": "Arioch of the Isle"
+                "en": "Arioch of the Isle",
+                "ja": "アネモス・アリオク",
+                "de": "Insel-Arioch",
+                "fr": "Arioch Anemos"
             }
         },
         {
             "id": "1f569c4f-4d2c-4df3-810c-6da3d2482c44",
             "gameId": 7046,
             "name": {
-                "en": "Bezoar"
+                "en": "Bezoar",
+                "ja": "ベゾアール",
+                "de": "Bezonar",
+                "fr": "Bezonar"
             }
         },
         {
             "id": "d6c4af5c-d5b7-4b1d-beb2-183a662b6f49",
             "gameId": 6829,
             "name": {
-                "en": "Bigfoot"
+                "en": "Bigfoot",
+                "ja": "ビッグフット",
+                "de": "Bigfoot",
+                "fr": "Bigfoot"
             }
         },
         {
             "id": "4ca4e5ca-d15e-4fe9-b71e-0798affaa283",
             "gameId": 7199,
             "name": {
-                "en": "Bitoso of the Isle"
+                "en": "Bitoso of the Isle",
+                "ja": "アネモス・ビトソ",
+                "de": "Insel-Bitoso",
+                "fr": "Bitoso Anemos"
             }
         },
         {
             "id": "5d3abe2f-3ae0-4e44-bed8-17515b809ef3",
             "gameId": 6824,
             "name": {
-                "en": "Black Wolf"
+                "en": "Black Wolf",
+                "ja": "ブラックウルフ",
+                "de": "Schwarzer Wolf",
+                "fr": "Loup sombre"
             }
         },
         {
             "id": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
             "gameId": 6993,
             "name": {
-                "en": "Blizzard Sprite"
+                "en": "Blizzard Sprite",
+                "ja": "ブリザードスプライト",
+                "de": "Eisga-Exergon",
+                "fr": "Élémentaire des blizzards"
             }
         },
         {
             "id": "ce872e9d-346f-4b17-a576-462b976c97ce",
             "gameId": 6988,
             "name": {
-                "en": "Coffinkeep"
+                "en": "Coffinkeep",
+                "ja": "コフィン・キーパー",
+                "de": "Sargwächter",
+                "fr": "Gardien des cercueils"
             }
         },
         {
             "id": "6917c369-e698-4803-b1a5-625550402ad9",
             "gameId": 7052,
             "name": {
-                "en": "Crystal Wolf"
+                "en": "Crystal Wolf",
+                "ja": "クリスタルウルフ",
+                "de": "Kristallwolf",
+                "fr": "Loup de cristal"
             }
         },
         {
             "id": "93165720-a3a2-426a-be76-009b104efa65",
             "gameId": 6823,
             "name": {
-                "en": "Darner"
+                "en": "Darner",
+                "ja": "ダーナー",
+                "de": "Königslibelle",
+                "fr": "Calopteryx"
             }
         },
         {
             "id": "957aa3a6-81b9-46c3-b905-d90b71c37696",
             "gameId": 7050,
             "name": {
-                "en": "Death Jacket"
+                "en": "Death Jacket",
+                "ja": "デスジャケット",
+                "de": "Todeswespe",
+                "fr": "Astate mortelle"
             }
         },
         {
             "id": "c7577453-6040-4447-ae70-4c7b5ce76584",
             "gameId": 7053,
             "name": {
-                "en": "Death Mask"
+                "en": "Death Mask",
+                "ja": "デスマスク",
+                "de": "Todesmaske",
+                "fr": "Masque de mort"
             }
         },
         {
             "id": "c4b23836-38d8-4b3c-b21b-62467afc36cb",
             "gameId": 7188,
             "name": {
-                "en": "Defroster"
+                "en": "Defroster",
+                "ja": "デフロスター",
+                "de": "Entfroster",
+                "fr": "Dégivreur"
             }
         },
         {
             "id": "b197b21a-28a9-42cf-9289-1d3542eb8c05",
             "gameId": 7193,
             "name": {
-                "en": "Dhalmel of Nightmares"
+                "en": "Dhalmel of Nightmares",
+                "ja": "ナイトメア・ダルメル",
+                "de": "Albtraum-Dhalmel",
+                "fr": "Dhalmel du cauchemar"
             }
         },
         {
             "id": "5ce85272-6a58-4a8d-b163-c36585dde284",
             "gameId": 6985,
             "name": {
-                "en": "Duskfall Bhoot"
+                "en": "Duskfall Bhoot",
+                "ja": "ナイト・ブフート",
+                "de": "Dämmer-Bhut",
+                "fr": "Bhut nocturne"
             }
         },
         {
             "id": "7d85f2d8-b749-43c3-a4f1-26e24ed780c6",
             "gameId": 7185,
             "name": {
-                "en": "Duskfall Dullahan"
+                "en": "Duskfall Dullahan",
+                "ja": "ナイト・デュラハン",
+                "de": "Dämmer-Dullahan",
+                "fr": "Dullahan nocturne"
             }
         },
         {
             "id": "fda437fa-ff3f-47a7-8b79-50c71d0b329a",
             "gameId": 6986,
             "name": {
-                "en": "Duskfall Mummy"
+                "en": "Duskfall Mummy",
+                "ja": "ナイト・マミー",
+                "de": "Dämmer-Mumie",
+                "fr": "Momie nocturne"
             }
         },
         {
             "id": "a338d439-e788-4faa-b76f-7c64d65522e6",
             "gameId": 7222,
             "name": {
-                "en": "Duskfall Skeleton"
+                "en": "Duskfall Skeleton",
+                "ja": "ナイト・スケルトン",
+                "de": "Dämmer-Skelett",
+                "fr": "Squelette nocturne"
             }
         },
         {
             "id": "02d2ffc1-92f6-4370-99c2-04685354e320",
             "gameId": 6846,
             "name": {
-                "en": "Eurekan Dahak"
+                "en": "Eurekan Dahak",
+                "ja": "エウレカ・ダハーカ",
+                "de": "Eureka-Dahak",
+                "fr": "Dahaka d'Eurêka"
             }
         },
         {
             "id": "e88f9545-7a62-4245-876c-b53b5474e032",
             "gameId": 6810,
             "name": {
-                "en": "Eurekan Screamer"
+                "en": "Eurekan Screamer",
+                "ja": "エウレカ・スクリーマー",
+                "de": "Eureka-Schriller",
+                "fr": "Piailleur d'Eurêka"
             }
         },
         {
             "id": "dd10e3bc-069d-402e-8df7-2f60544418dc",
             "gameId": 7186,
             "name": {
-                "en": "Ferromantoise"
+                "en": "Ferromantoise",
+                "ja": "フェロマンタス",
+                "de": "Ferroman-Tamai",
+                "fr": "Ferromankhélone"
             }
         },
         {
             "id": "7689f435-efaf-4936-af12-b16e3141ae3a",
             "gameId": 6816,
             "name": {
-                "en": "Flowering Sabotender"
+                "en": "Flowering Sabotender",
+                "ja": "フラワーテンダー",
+                "de": "Blühender Kaktor",
+                "fr": "Pampa à fleurs"
             }
         },
         {
             "id": "05210288-36fb-4c24-bcfe-c862dbff624a",
             "gameId": 6990,
             "name": {
-                "en": "Fossil Dragon"
+                "en": "Fossil Dragon",
+                "ja": "ドラゴンフォシル",
+                "de": "Fossiler Drache",
+                "fr": "Dragon fossile"
             }
         },
         {
             "id": "cf8d8ca9-afd2-45a4-8a8d-ca554c615133",
             "gameId": 6973,
             "name": {
-                "en": "Four-eyes"
+                "en": "Four-eyes",
+                "ja": "フォーアイズ",
+                "de": "Vierauge",
+                "fr": "Quadriculus"
             }
         },
         {
             "id": "ee7f392f-7e21-4bb0-ad64-dd6f23cf0703",
             "gameId": 6836,
             "name": {
-                "en": "Gardenkeeper"
+                "en": "Gardenkeeper",
+                "ja": "ガーデンキーパー",
+                "de": "Gartenwächter",
+                "fr": "Golem jardinier"
             }
         },
         {
             "id": "0db6d3c9-0d8c-49b7-a0ba-e337c7f70076",
             "gameId": 6838,
             "name": {
-                "en": "Glacier Golem"
+                "en": "Glacier Golem",
+                "ja": "グレイシャーゴーレム",
+                "de": "Gletscher-Golem",
+                "fr": "Golem de glacier"
             }
         },
         {
             "id": "719c8e8a-6b4c-4406-b8c9-e267f618e04e",
             "gameId": 6818,
             "name": {
-                "en": "Glade Wivre"
+                "en": "Glade Wivre",
+                "ja": "グレード・ウィヴル",
+                "de": "Wald-Wivre",
+                "fr": "Wivre des clairières"
             }
         },
         {
             "id": "627dc332-bd84-4ebf-b5b6-9159760b01fb",
             "gameId": 6976,
             "name": {
-                "en": "Guud Suud"
+                "en": "Guud Suud",
+                "ja": "グードスード",
+                "de": "Guhtsu",
+                "fr": "Goudsoud"
             }
         },
         {
             "id": "6a2913fa-2ead-4345-a3d5-1bf0b77d5026",
             "gameId": 6812,
             "name": {
-                "en": "Heartbroken Ochu"
+                "en": "Heartbroken Ochu",
+                "ja": "ハートブレイク・オチュー",
+                "de": "Untröstliches Ochu",
+                "fr": "Otyugh brise-cœur"
             }
         },
         {
             "id": "2db131ca-6f8b-4deb-91ca-a19b4073a688",
             "gameId": 6840,
             "name": {
-                "en": "Henbane"
+                "en": "Henbane",
+                "ja": "ヘンベイン",
+                "de": "Bilsenkraut",
+                "fr": "Jusquiame noire"
             }
         },
         {
             "id": "46335c95-be63-4d40-8e19-4f7d6da9edda",
             "gameId": 6821,
             "name": {
-                "en": "Hybrid Hog"
+                "en": "Hybrid Hog",
+                "ja": "ハイブリッド・ホッグ",
+                "de": "Hybridenschwein",
+                "fr": "Verrat hybride"
             }
         },
         {
             "id": "7a76f34b-1abc-43d7-801b-bcb6ae0285a2",
             "gameId": 7045,
             "name": {
-                "en": "Ignis Fatuus"
+                "en": "Ignis Fatuus",
+                "ja": "イグニス・ファトゥス",
+                "de": "Ignis Fatuus",
+                "fr": "Ignis fatuus"
             }
         },
         {
             "id": "8d319725-8e9a-4a4c-8ccb-615d4089f5f2",
             "gameId": 7044,
             "name": {
-                "en": "Irregular Plasmoid"
+                "en": "Irregular Plasmoid",
+                "ja": "イレギュラー・プラズモイド",
+                "de": "Divergentes Plasmodium",
+                "fr": "Plasmoïde irrégulier"
             }
         },
         {
             "id": "47a90b0e-3d98-459b-841f-28ee5a2fde82",
             "gameId": 6837,
             "name": {
-                "en": "Khor Claw"
+                "en": "Khor Claw",
+                "ja": "コールクロウ",
+                "de": "Khor-Klaue",
+                "fr": "Griffe de khor"
             }
         },
         {
             "id": "5b2fb085-0f94-4f8e-b048-f2ec9e3f5692",
             "gameId": 7038,
             "name": {
-                "en": "Lentic"
+                "en": "Lentic",
+                "ja": "レンティックトード",
+                "de": "Tümpelkröte",
+                "fr": "Crapaud lenticulaire"
             }
         },
         {
             "id": "729139f7-2c0f-482c-90e6-8b073f28d697",
             "gameId": 6828,
             "name": {
-                "en": "Leopard"
+                "en": "Leopard",
+                "ja": "レオパード",
+                "de": "Leopard",
+                "fr": "Léopard"
             }
         },
         {
             "id": "60f1faac-383e-47ed-9db6-ce9083f81bd5",
             "gameId": 7190,
             "name": {
-                "en": "Lynx"
+                "en": "Lynx",
+                "ja": "リンクス",
+                "de": "Luchs",
+                "fr": "Lynx"
             }
         },
         {
             "id": "a571c400-599a-4f4f-a2a9-747fcaea42ff",
             "gameId": 6972,
             "name": {
-                "en": "Magia Fan"
+                "en": "Magia Fan",
+                "ja": "マギアファン",
+                "de": "Magia-Ventilator",
+                "fr": "Ventilateur Magia"
             }
         },
         {
             "id": "d3fc3a39-16df-45f5-a24d-ca620eab099c",
             "gameId": 7043,
             "name": {
-                "en": "Mana Bomb"
+                "en": "Mana Bomb",
+                "ja": "マナボム",
+                "de": "Mana-Bomber",
+                "fr": "Bombo de mana"
             }
         },
         {
             "id": "f2750d2f-41f8-4e3b-afe4-626ee510ec7f",
             "gameId": 7048,
             "name": {
-                "en": "Mana Grenade"
+                "en": "Mana Grenade",
+                "ja": "マナグレネード",
+                "de": "Mana-Granate",
+                "fr": "Grenado de mana"
             }
         },
         {
             "id": "9474578a-8a34-480d-bef0-600ef996e4d8",
             "gameId": 7197,
             "name": {
-                "en": "Mighty Craklaw"
+                "en": "Mighty Craklaw",
+                "ja": "マイティ・クラックロー",
+                "de": "Mächtiger Kraklaw",
+                "fr": "Craqulov massif"
             }
         },
         {
             "id": "9a85e8fb-c48a-4436-8510-252f983e7762",
             "gameId": 6819,
             "name": {
-                "en": "Migratory Chapuli"
+                "en": "Migratory Chapuli",
+                "ja": "ミグラトリー・チャプリ",
+                "de": "Wanderndes Chapuli",
+                "fr": "Chapuli migrateur"
             }
         },
         {
             "id": "e50325d5-6ea8-46a9-ab18-e72bf62a0c3e",
             "gameId": 6843,
             "name": {
-                "en": "Monoeye"
+                "en": "Monoeye",
+                "ja": "モノアイ",
+                "de": "Einauge",
+                "fr": "N'a-qu'un-œil"
             }
         },
         {
             "id": "f105542b-3aa5-4281-a0bb-2359a440be55",
             "gameId": 6834,
             "name": {
-                "en": "Old Goobbue"
+                "en": "Old Goobbue",
+                "ja": "オールド・グゥーブー",
+                "de": "Uralte Goobbue",
+                "fr": "Goobbue ancestral"
             }
         },
         {
             "id": "90abe68f-46ba-4023-a6eb-016959bb986f",
             "gameId": 6845,
             "name": {
-                "en": "Old World Zu"
+                "en": "Old World Zu",
+                "ja": "オールドワールド・ズー",
+                "de": "Sharlayanischer Zu",
+                "fr": "Zu du vieux continent"
             }
         },
         {
             "id": "abc66189-7b9f-4b18-ac09-43586dca5eae",
             "gameId": 6832,
             "name": {
-                "en": "Phobosuchus"
+                "en": "Phobosuchus",
+                "ja": "フォボスクス",
+                "de": "Phobosuchus",
+                "fr": "Phobosuchus"
             }
         },
         {
             "id": "64bedd0b-a890-49b0-ac4e-1bd068b44b11",
             "gameId": 6844,
             "name": {
-                "en": "Plantoid"
+                "en": "Plantoid",
+                "ja": "プラントイド",
+                "de": "Plantoid",
+                "fr": "Plantoïde"
             }
         },
         {
             "id": "4fc6c8db-487f-4e4a-87ce-2a4618059df9",
             "gameId": 6827,
             "name": {
-                "en": "Pneumaflayer"
+                "en": "Pneumaflayer",
+                "ja": "ニューマフレア",
+                "de": "Pneumaschinder",
+                "fr": "Flagelleur pneumatique"
             }
         },
         {
             "id": "129e66bc-a1d2-4d0c-9c70-a183e4bd1a3e",
             "gameId": 6979,
             "name": {
-                "en": "Primelephas"
+                "en": "Primelephas",
+                "ja": "プリメレファス",
+                "de": "Primelephas",
+                "fr": "Primelephas"
             }
         },
         {
             "id": "0b6462d2-a5d1-4010-b3a1-48f4c6e589fe",
             "gameId": 6833,
             "name": {
-                "en": "Quickwater Snake"
+                "en": "Quickwater Snake",
+                "ja": "ネロディア",
+                "de": "Nerodia",
+                "fr": "Nerodia"
             }
         },
         {
             "id": "a5f0c761-61db-40db-99e9-7cc47930599c",
             "gameId": 6982,
             "name": {
-                "en": "Rain Sprite"
+                "en": "Rain Sprite",
+                "ja": "レインスプライト",
+                "de": "Regen-Exergon",
+                "fr": "Élémentaire de pluie"
             }
         },
         {
             "id": "1fb72c0a-ea44-46fd-a763-f64fada15d19",
             "gameId": 7047,
             "name": {
-                "en": "Red Bonnet"
+                "en": "Red Bonnet",
+                "ja": "レッドボンネット",
+                "de": "Rotkappe",
+                "fr": "Chapeau rouge"
             }
         },
         {
             "id": "c9fb8971-d308-4a13-885b-b21cdbf97b7c",
             "gameId": 7194,
             "name": {
-                "en": "Rockfin"
+                "en": "Rockfin",
+                "ja": "ロックフィン",
+                "de": "Felsenflosse",
+                "fr": "Rocquin"
             }
         },
         {
             "id": "e227abd3-05cb-41d0-8560-6d61d1968657",
             "gameId": 6809,
             "name": {
-                "en": "Scape Leech"
+                "en": "Scape Leech",
+                "ja": "スケープ・リーチ",
+                "de": "Schaftegel",
+                "fr": "Sangsue pédonculée"
             }
         },
         {
             "id": "9d876df1-a163-428b-9158-ef69588c4688",
             "gameId": 6820,
             "name": {
-                "en": "Sea Bishop"
+                "en": "Sea Bishop",
+                "ja": "シー・ビショップ",
+                "de": "Seebischof",
+                "fr": "Évêque de mer"
             }
         },
         {
             "id": "ec9a1f1d-3e08-498e-9717-80e575efe6f7",
             "gameId": 6811,
             "name": {
-                "en": "Sea Pugil"
+                "en": "Sea Pugil",
+                "ja": "シー・プギル",
+                "de": "Küsten-Pugil",
+                "fr": "Pugil de mer"
             }
         },
         {
             "id": "4fdd51b3-1d51-4e53-b640-f2d742ebf76c",
             "gameId": 6807,
             "name": {
-                "en": "Seaboard Angler"
+                "en": "Seaboard Angler",
+                "ja": "ビーチ・アングラー",
+                "de": "Küsten-Anglerfisch",
+                "fr": "Lotte des rivages"
             }
         },
         {
             "id": "125b8d8b-3b98-4d58-95db-97a836c7b290",
             "gameId": 6813,
             "name": {
-                "en": "Seaboard Ogrebon"
+                "en": "Seaboard Ogrebon",
+                "ja": "ビーチ・オーガボン",
+                "de": "Küsten-Ogerbon",
+                "fr": "Ogrebon des rivages"
             }
         },
         {
             "id": "8848a51a-72f5-4606-914e-0585c5b4d5eb",
             "gameId": 7192,
             "name": {
-                "en": "Shadow Wing"
+                "en": "Shadow Wing",
+                "ja": "シャドウウィング",
+                "de": "Schattenschwinge",
+                "fr": "Aile des ombres"
             }
         },
         {
             "id": "c4034cfe-11bb-45a0-9631-e1bf2262a1e3",
             "gameId": 6989,
             "name": {
-                "en": "Shadow Wraith"
+                "en": "Shadow Wraith",
+                "ja": "シャドウ・レイス",
+                "de": "Schatten-Geist",
+                "fr": "Spectre des ombres"
             }
         },
         {
             "id": "dce1f595-53f1-46a7-a0f8-50a761d7d11b",
             "gameId": 6984,
             "name": {
-                "en": "Skeleton Noble"
+                "en": "Skeleton Noble",
+                "ja": "ノーブル・スケルトン",
+                "de": "Skelett-Edelmann",
+                "fr": "Squelette de noble"
             }
         },
         {
             "id": "5bdd4ae5-0d51-4040-ac6f-8fc5340826a1",
             "gameId": 7187,
             "name": {
-                "en": "Spangencrab"
+                "en": "Spangencrab",
+                "ja": "スパンゲンクラブ",
+                "de": "Spangenkrabbe",
+                "fr": "Crabe spangen"
             }
         },
         {
             "id": "c40a36ee-cfb0-467c-a0e2-2fd78dfce6ae",
             "gameId": 6817,
             "name": {
-                "en": "Squib"
+                "en": "Squib",
+                "ja": "スクイブ",
+                "de": "Kreiselkrabbe",
+                "fr": "Squib"
             }
         },
         {
             "id": "3a85b011-95fb-4d71-a1a8-c3e9c1d0a094",
             "gameId": 6835,
             "name": {
-                "en": "Stalker Ziz"
+                "en": "Stalker Ziz",
+                "ja": "ストーカー・ジズ",
+                "de": "Schleichender Ziz",
+                "fr": "Ziz traqueur"
             }
         },
         {
             "id": "5e5f3c4c-f0f9-488f-a10e-5de3c7c745dd",
             "gameId": 6981,
             "name": {
-                "en": "Tangie"
+                "en": "Tangie",
+                "ja": "タンギー",
+                "de": "Tangie",
+                "fr": "Tangie"
             }
         },
         {
             "id": "0bb4ca14-8bf3-4152-a8c3-246572059c84",
             "gameId": 6987,
             "name": {
-                "en": "Traveling Gourmand"
+                "en": "Traveling Gourmand",
+                "ja": "オールド・グルマン",
+                "de": "Uralter Gourmet",
+                "fr": "Gourmand bourlingueur"
             }
         },
         {
             "id": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
             "gameId": 6983,
             "name": {
-                "en": "Typhoon Sprite"
+                "en": "Typhoon Sprite",
+                "ja": "タイフーンスプライト",
+                "de": "Taifun-Exergon",
+                "fr": "Élémentaire de typhon"
             }
         },
         {
             "id": "d127c9e8-281f-42fa-8c17-03b1e4f9ec4e",
             "gameId": 7196,
             "name": {
-                "en": "Val Antlion"
+                "en": "Val Antlion",
+                "ja": "バル・アントリオン",
+                "de": "Val-Ameisenlöwe",
+                "fr": "Fourmilion de la Val"
             }
         },
         {
             "id": "42458c70-1aa3-4619-b94f-c589570586df",
             "gameId": 6826,
             "name": {
-                "en": "Val Bear"
+                "en": "Val Bear",
+                "ja": "バル・ベアー",
+                "de": "Val-Bär",
+                "fr": "Ours de la Val"
             }
         },
         {
             "id": "f2c4864a-6b93-452e-ac4d-049e10f992fa",
             "gameId": 7049,
             "name": {
-                "en": "Val Biast"
+                "en": "Val Biast",
+                "ja": "バル・ビアスト",
+                "de": "Val-Smei",
+                "fr": "Biast de la Val"
             }
         },
         {
             "id": "310badc8-6257-4450-ba36-8bb6539552a4",
             "gameId": 6842,
             "name": {
-                "en": "Val Biloko"
+                "en": "Val Biloko",
+                "ja": "バル・ビロコ",
+                "de": "Val-Biloko",
+                "fr": "Biloko de la Val"
             }
         },
         {
             "id": "dd6cc58a-16b5-4559-8d1d-4bcaa87c2677",
             "gameId": 7042,
             "name": {
-                "en": "Val Imp"
+                "en": "Val Imp",
+                "ja": "バル・インプ",
+                "de": "Val-Imp",
+                "fr": "Imp de la Val"
             }
         },
         {
             "id": "4535117f-c02e-488e-bb6e-f3a74ac5af9f",
             "gameId": 6830,
             "name": {
-                "en": "Val Leshy"
+                "en": "Val Leshy",
+                "ja": "バル・レーシー",
+                "de": "Val-Leschij",
+                "fr": "Liéchi de la Val"
             }
         },
         {
             "id": "28015dc9-0aa7-4479-8e82-688a174e06f4",
             "gameId": 7040,
             "name": {
-                "en": "Val Revenant"
+                "en": "Val Revenant",
+                "ja": "バル・レブナント",
+                "de": "Val-Wiedergänger",
+                "fr": "Revenant de la Val"
             }
         },
         {
             "id": "5085417b-2bfe-4d9e-8aa0-588fdf240a81",
             "gameId": 6841,
             "name": {
-                "en": "Val Skatene"
+                "en": "Val Skatene",
+                "ja": "バル・スカネテ",
+                "de": "Val-Skatene",
+                "fr": "Skate'ne de la Val"
             }
         },
         {
             "id": "fe44d09c-d4a5-4a0d-ad6d-242bcfc4b5be",
             "gameId": 6980,
             "name": {
-                "en": "Val Specter"
+                "en": "Val Specter",
+                "ja": "バル・スペクター",
+                "de": "Val-Schemen",
+                "fr": "Spector de la Val"
             }
         },
         {
             "id": "c727695d-14f9-411c-b2b7-12d888fbe808",
             "gameId": 6814,
             "name": {
-                "en": "Valbol"
+                "en": "Valbol",
+                "ja": "バルボル",
+                "de": "Vallbol",
+                "fr": "Valbol"
             }
         },
         {
             "id": "68206030-03c2-4a3c-85b6-24dd1cb1f4ae",
             "gameId": 7041,
             "name": {
-                "en": "Vesper Bat"
+                "en": "Vesper Bat",
+                "ja": "ベスパー・バット",
+                "de": "Abendstern-Fledermaus",
+                "fr": "Chauve-souris vespérale"
             }
         },
         {
             "id": "ddb07631-117d-4010-bfee-a128f9448985",
             "gameId": 7189,
             "name": {
-                "en": "Vespid"
+                "en": "Vespid",
+                "ja": "ヴェスペ",
+                "de": "Vespula",
+                "fr": "Vespidé"
             }
         },
         {
             "id": "5fabc5d3-bbc7-4a13-9fe7-be5452a9632c",
             "gameId": 6977,
             "name": {
-                "en": "Voidscale"
+                "en": "Voidscale",
+                "ja": "ヴォイドスケイル",
+                "de": "Nichtsschuppe",
+                "fr": "Vidécailles"
             }
         },
         {
             "id": "8baf4064-eb80-4241-9e4d-a7a223893247",
             "gameId": 6825,
             "name": {
-                "en": "Wild Baboulas"
+                "en": "Wild Baboulas",
+                "ja": "ワイルド・バブラス",
+                "de": "Wilder Baboulas",
+                "fr": "Baboulas sauvage"
             }
         },
         {
             "id": "2651fee0-64ff-4769-a41e-7cfcabbb334a",
             "gameId": 7037,
             "name": {
-                "en": "Wooly Woodchuck"
+                "en": "Wooly Woodchuck",
+                "ja": "ウッドチャック",
+                "de": "Murmeltier",
+                "fr": "Wuchak laineux"
             }
         },
         {
             "id": "2fef4624-a8f0-4d65-bfe8-bea896a8574b",
             "gameId": 6815,
             "name": {
-                "en": "Xurble"
+                "en": "Xurble",
+                "ja": "ズーブル",
+                "de": "Xurbel",
+                "fr": "Fourruche"
             }
         },
         {
             "id": "fee4f322-62f5-4d54-8680-ca80e6dfd29e",
             "gameId": 6978,
             "name": {
-                "en": "Zuniceratops"
+                "en": "Zuniceratops",
+                "ja": "ズニケラトプス",
+                "de": "Zuniceratops",
+                "fr": "Zunicératops"
             }
         }
     ],
@@ -657,140 +936,200 @@
             "id": "41488f41-0021-4b9c-be9b-eb62bcdb6a63",
             "gameId": 7177,
             "name": {
-                "en": "Amarok"
+                "en": "Amarok",
+                "ja": "アマロック",
+                "de": "Amarok",
+                "fr": "Amarok"
             }
         },
         {
             "id": "08fed2d2-9dc8-4717-ac59-bf2657366bc2",
             "gameId": 7171,
             "name": {
-                "en": "Amemet"
+                "en": "Amemet",
+                "ja": "アメミット",
+                "de": "Amemet",
+                "fr": "Amemet"
             }
         },
         {
             "id": "98db43bd-d92c-426c-a464-470ed23bf787",
             "gameId": 7168,
             "name": {
-                "en": "Bombadeel"
+                "en": "Bombadeel",
+                "ja": "ボンバディール",
+                "de": "Bombadeel",
+                "fr": "Bombadeel"
             }
         },
         {
             "id": "8992dbd5-23d6-4b3c-9880-26ca6767d1b3",
             "gameId": 7157,
             "name": {
-                "en": "Callisto"
+                "en": "Callisto",
+                "ja": "カリスト",
+                "de": "Callisto",
+                "fr": "Callisto"
             }
         },
         {
             "id": "c1d1e01c-d19f-4d49-9e0a-28aafeaa050f",
             "gameId": 7167,
             "name": {
-                "en": "Caym"
+                "en": "Caym",
+                "ja": "カイム",
+                "de": "Caym",
+                "fr": "Caym"
             }
         },
         {
             "id": "b6f1b7d1-340f-41b6-a5f7-8138507e1d43",
             "gameId": 7150,
             "name": {
-                "en": "Fafnir"
+                "en": "Fafnir",
+                "ja": "ファヴニル",
+                "de": "Fafnir",
+                "fr": "Fafnir"
             }
         },
         {
             "id": "2922ed3c-579c-4ee0-ac93-bce6c46761f3",
             "gameId": 7158,
             "name": {
-                "en": "Jahannam"
+                "en": "Jahannam",
+                "ja": "ジャハンナム",
+                "de": "Jahannam",
+                "fr": "Jahannam"
             }
         },
         {
             "id": "a7c78c16-8a41-48bc-bbab-3082d6afc7b2",
             "gameId": 7165,
             "name": {
-                "en": "Judgmental Julika"
+                "en": "Judgmental Julika",
+                "ja": "ジャッジメンタル・ジュリカ",
+                "de": "Verurteilende Julika",
+                "fr": "Julika"
             }
         },
         {
             "id": "f8cfe649-aa0d-4a79-b47e-d43c5e69e9bf",
             "gameId": 7152,
             "name": {
-                "en": "King Hazmat"
+                "en": "King Hazmat",
+                "ja": "キング・ハズマット",
+                "de": "Hazmat-König",
+                "fr": "Hazmat roi"
             }
         },
         {
             "id": "8fa74f4a-07c8-4143-acec-aa6e4a96e35d",
             "gameId": 7147,
             "name": {
-                "en": "Lamashtu"
+                "en": "Lamashtu",
+                "ja": "ラマシュトゥ",
+                "de": "Lamashtu",
+                "fr": "Lamashtu"
             }
         },
         {
             "id": "3248e690-0ff7-4734-bf71-3cbb6f232869",
             "gameId": 7160,
             "name": {
-                "en": "Number"
+                "en": "Number",
+                "ja": "ナンバーズ",
+                "de": "Zahl",
+                "fr": "Number"
             }
         },
         {
             "id": "79d867e8-17cf-41d3-907e-ff3e7ba04bc7",
             "gameId": 7143,
             "name": {
-                "en": "Pazuzu"
+                "en": "Pazuzu",
+                "ja": "パズズ",
+                "de": "Pazuzu",
+                "fr": "Pazuzu"
             }
         },
         {
             "id": "0d7e9c69-82de-4954-a899-9b49690354da",
             "gameId": 7172,
             "name": {
-                "en": "Polyphemus"
+                "en": "Polyphemus",
+                "ja": "ポリュペモス",
+                "de": "Polyphemus",
+                "fr": "Polyphemus"
             }
         },
         {
             "id": "9a6dfad0-abcd-4c0a-8184-89e85bf7e2a4",
             "gameId": 7169,
             "name": {
-                "en": "Sabotender Corrido"
+                "en": "Sabotender Corrido",
+                "ja": "サボテンダー・コリード",
+                "de": "Sabotender Corrido",
+                "fr": "Pampa corrido"
             }
         },
         {
             "id": "cffaec1b-71a5-4234-91aa-78a987709fd0",
             "gameId": 4671,
             "name": {
-                "en": "Serket"
+                "en": "Serket",
+                "ja": "セルケト",
+                "de": "Serket",
+                "fr": "Serket"
             }
         },
         {
             "id": "7a484620-1cde-4c74-a586-1512b35b1bc1",
             "gameId": 7148,
             "name": {
-                "en": "Simurgh's Strider"
+                "en": "Simurgh's Strider",
+                "ja": "シームルグ・ストライダー",
+                "de": "Simurghs Läufer",
+                "fr": "Trotteur de Simurgh"
             }
         },
         {
             "id": "09a2a2e6-3a0c-45fa-8a49-9cbd12567626",
             "gameId": 7170,
             "name": {
-                "en": "Teles"
+                "en": "Teles",
+                "ja": "テレス",
+                "de": "Teles",
+                "fr": "Teles"
             }
         },
         {
             "id": "ea6ccaa0-6c53-4095-b09b-a7e01b3b6886",
             "gameId": 7166,
             "name": {
-                "en": "The Emperor of Anemos"
+                "en": "The Emperor of Anemos",
+                "ja": "アネモス・エンペラー",
+                "de": "Anemos-Kaiser",
+                "fr": "Empereur d'Anemos"
             }
         },
         {
             "id": "9abaac94-f89e-414f-a896-08b2b3f2bcc7",
             "gameId": 7151,
             "name": {
-                "en": "The Lord of Anemos"
+                "en": "The Lord of Anemos",
+                "ja": "ロード・オブ・アネモス",
+                "de": "Prinz von Anemos",
+                "fr": "Seigneur d'Anemos"
             }
         },
         {
             "id": "941c3807-3c16-4a22-aaf3-ff59261adab4",
             "gameId": 7173,
             "name": {
-                "en": "The White Rider"
+                "en": "The White Rider",
+                "ja": "ホワイトライダー",
+                "de": "Weißer Reiter",
+                "fr": "Cavalier blanc"
             }
         }
     ],
@@ -799,140 +1138,200 @@
             "id": "4452f4a1-56b0-4634-9cf9-38d50e1a68f3",
             "gameId": 1347,
             "name": {
-                "en": "By Numbers"
+                "en": "By Numbers",
+                "ja": "主なき人形「ナンバーズ」",
+                "de": "Zahlenmäßige Überlegenheit",
+                "fr": "Défi : régler son compte à Number"
             }
         },
         {
             "id": "615827b2-14de-4250-b476-0ce4e661e118",
             "gameId": 1335,
             "name": {
-                "en": "Caym What May"
+                "en": "Caym What May",
+                "ja": "獣脚の怪人「カイム」",
+                "de": "Gerippeimpfung empfohlen",
+                "fr": "Défi : la bête humaine"
             }
         },
         {
             "id": "c9e0c8bd-6097-4749-a44e-4d7334a03d4a",
             "gameId": 1345,
             "name": {
-                "en": "Disinherit the Wind"
+                "en": "Disinherit the Wind",
+                "ja": "強風の妖精「ジャハンナム」",
+                "de": "Raus aus meinem Revier",
+                "fr": "Défi : tempête sur Eurêka"
             }
         },
         {
             "id": "0470ea1f-6c02-47a5-b3b2-be379e7b2dc7",
             "gameId": 1346,
             "name": {
-                "en": "Don't Judge Me, Morbol"
+                "en": "Don't Judge Me, Morbol",
+                "ja": "種まき「ジャッジメンタル・ジュリカ」",
+                "de": "Vernichtendes Unkraut",
+                "fr": "Défi : le jugement de Julika"
             }
         },
         {
             "id": "b5810241-55f2-44fe-a97d-f5a10586a267",
             "gameId": 1338,
             "name": {
-                "en": "Drama Lamashtu"
+                "en": "Drama Lamashtu",
+                "ja": "魔の王妃「ラマシュトゥ」",
+                "de": "Ein Königreich für kein Lama",
+                "fr": "Défi : la reine infernale"
             }
         },
         {
             "id": "44805fe3-1404-4f04-abf1-fdf5bfd5e4cc",
             "gameId": 1340,
             "name": {
-                "en": "I Amarok"
+                "en": "I Amarok",
+                "ja": "異界の魔犬「アマロック」",
+                "de": "Widerlegte Weisheit",
+                "fr": "Défi : l'insatiable cerbère"
             }
         },
         {
             "id": "293dffca-f815-45ee-a435-9631f39817ac",
             "gameId": 1344,
             "name": {
-                "en": "One Missed Callisto"
+                "en": "One Missed Callisto",
+                "ja": "蠢く死体「カリスト」",
+                "de": "Ränkeschmiede",
+                "fr": "Défi : un cadavre tout sauf exquis"
             }
         },
         {
             "id": "13d9da96-2ce9-4523-b86a-9e0bb79022d0",
             "gameId": 1334,
             "name": {
-                "en": "Prove Your Amemettle"
+                "en": "Prove Your Amemettle",
+                "ja": "貪り喰らう者「アメミット」",
+                "de": "Ich will so bleiben wie ich bin",
+                "fr": "Défi : le dévoreur"
             }
         },
         {
             "id": "234eeabd-62f8-4fcd-88c0-bb79b7cb7212",
             "gameId": 1339,
             "name": {
-                "en": "Short Serket 2"
+                "en": "Short Serket 2",
+                "ja": "幻の魔蠍「セルケト」",
+                "de": "Wütend wie ein Hurrikan",
+                "fr": "Défi : le scorpion mythique"
             }
         },
         {
             "id": "311a951b-f528-4cf7-9b2d-5112842f50ef",
             "gameId": 1342,
             "name": {
-                "en": "Simurghasbord"
+                "en": "Simurghasbord",
+                "ja": "憤怒の怪鳥「シームルグ・ストライダー」",
+                "de": "Futterneid",
+                "fr": "Défi : colère aviaire"
             }
         },
         {
             "id": "181e3867-fadc-4586-ad56-63e069b185ab",
             "gameId": 1337,
             "name": {
-                "en": "Sing, Muse"
+                "en": "Sing, Muse",
+                "ja": "高名なる巨人「ポリュペモス」",
+                "de": "Große Probleme auf kleiner Insel",
+                "fr": "Défi : le géant légendaire"
             }
         },
         {
             "id": "e5760267-545a-4635-a538-ed75b32e4680",
             "gameId": 1333,
             "name": {
-                "en": "Teles House"
+                "en": "Teles House",
+                "ja": "最後の美声「テレス」",
+                "de": "Zurück zu den Toten",
+                "fr": "Défi : l'ultime soupir de la beauté"
             }
         },
         {
             "id": "58546fac-5aa2-4bed-8a01-12b3878dc131",
             "gameId": 1336,
             "name": {
-                "en": "The Killing of a Sacred Bombardier"
+                "en": "The Killing of a Sacred Bombardier",
+                "ja": "腐臭の賢者「ボンバディール」",
+                "de": "Den Ball halte flach, den Witz lieber nicht",
+                "fr": "Défi : le sage putréfié"
             }
         },
         {
             "id": "7eaa2429-db4a-465c-bafc-99101f8fc77f",
             "gameId": 1348,
             "name": {
-                "en": "The Shadow over Anemos"
+                "en": "The Shadow over Anemos",
+                "ja": "大蛸の王者「ロード・オブ・アネモス」",
+                "de": "Küssen verboten",
+                "fr": "Défi : le Seigneur de la terre interdite"
             }
         },
         {
             "id": "244a9236-e8e5-4f9e-9569-9caf8755d9b1",
             "gameId": 1328,
             "name": {
-                "en": "The Swarm Never Sets"
+                "en": "The Swarm Never Sets",
+                "ja": "疾風の帝王「アネモス・エンペラー」",
+                "de": "Herr Kaiser",
+                "fr": "Défi : l'empereur des bourrasques"
             }
         },
         {
             "id": "4e336582-0086-4dba-9414-a74268cdb3f0",
             "gameId": 1341,
             "name": {
-                "en": "To the Mat"
+                "en": "To the Mat",
+                "ja": "燃える大王「キング・ハズマット」",
+                "de": "Heizkostenreduzierung",
+                "fr": "Défi : douche froide pour le hazmat roi"
             }
         },
         {
             "id": "eea88344-e143-4900-aa83-0170f774407b",
             "gameId": 1332,
             "name": {
-                "en": "Unsafety Dance"
+                "en": "Unsafety Dance",
+                "ja": "舞踏の大花「サボテンダー・コリード」",
+                "de": "Schmerzvoller Hüftschwung",
+                "fr": "Défi : la fleur d'Eurêka"
             }
         },
         {
             "id": "1e93cf81-a875-49b0-a887-69f32e39d102",
             "gameId": 1329,
             "name": {
-                "en": "Wail in the Willows"
+                "en": "Wail in the Willows",
+                "ja": "暴風の魔王「パズズ」",
+                "de": "Ein windiger Kerl",
+                "fr": "Défi : le démon des tempêtes"
             }
         },
         {
             "id": "d693100e-199b-4515-8ee6-94bc7d48f430",
             "gameId": 1343,
             "name": {
-                "en": "When You Ride Alone"
+                "en": "When You Ride Alone",
+                "ja": "勝利の騎士「ホワイトライダー」",
+                "de": "Kopflos",
+                "fr": "Défi : on m'appelle le cavalier blanc"
             }
         },
         {
             "id": "65e9058e-eeef-4a36-850b-67bfdc8311fd",
             "gameId": 1331,
             "name": {
-                "en": "Wine and Honey"
+                "en": "Wine and Honey",
+                "ja": "狂乱の暗竜「ファヴニル」",
+                "de": "Schlafende Drachen soll man nicht wecken",
+                "fr": "Défi : le dragon démentiel"
             }
         }
     ],
@@ -941,21 +1340,30 @@
             "id": "84774934-2bfe-482d-a77d-b58db413916a",
             "gameId": 2429,
             "name": {
-                "en": "Abandoned Laboratory"
+                "en": "Abandoned Laboratory",
+                "ja": "放棄された研究室",
+                "de": "Verlassenes Labor",
+                "fr": "Laboratoire abandonné"
             }
         },
         {
             "id": "a65b66bc-ba1e-42c9-947a-be5f7089c777",
             "gameId": 2415,
             "name": {
-                "en": "Port Surgate"
+                "en": "Port Surgate",
+                "ja": "ポート・サーゲイト",
+                "de": "Hafentor",
+                "fr": "Port Surgate"
             }
         },
         {
             "id": "bf5976f5-2183-4adc-a085-72f886f6865c",
             "gameId": 2436,
             "name": {
-                "en": "Windtorn Cabin"
+                "en": "Windtorn Cabin",
+                "ja": "破壊された山小屋",
+                "de": "Windschiefe Hütte",
+                "fr": "Refuge délabré"
             }
         }
     ]

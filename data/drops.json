@@ -4,371 +4,530 @@
             "id": "bff2ae91-8319-446c-960d-e69b6fc961c3",
             "gameId": "EventItem:2003838",
             "name": {
-                "en": "Abductor's Horn"
+                "en": "Abductor's Horn",
+                "ja": "アブダクターの角",
+                "de": "Abduktor-Horn",
+                "fr": "Corne du Ravisseur"
             }
         },
         {
             "id": "b4941121-446e-46f9-aff6-3ae8939a8096",
             "gameId": "Item:47744",
             "name": {
-                "en": "Azurite Demiatma"
+                "en": "Azurite Demiatma",
+                "ja": "青晶のデミアートマ",
+                "de": "Demi-Atma Azurit",
+                "fr": "Demi-âtma saphir"
             }
         },
         {
             "id": "0376f218-1972-4e70-af64-63185a4ac2d4",
             "gameId": "Item:47751",
             "name": {
-                "en": "Berserker's Soul Shard"
+                "en": "Berserker's Soul Shard",
+                "ja": "ソウルシャード:バーサーカー",
+                "de": "Berserker-Seelensplitter",
+                "fr": "Éclat d'âme de berserker"
             }
         },
         {
             "id": "f47533dc-4a87-47e4-85e3-3d2e0c3c3da4",
             "gameId": "Item:51972",
             "name": {
-                "en": "Blue Mage's Soul Shard"
+                "en": "Blue Mage's Soul Shard",
+                "ja": "ソウルシャード:青魔道士",
+                "de": "Blaumagier-Seelensplitter",
+                "fr": "Éclat d'âme de mage bleu"
             }
         },
         {
             "id": "1305994a-7892-44b0-a582-c8301e882353",
             "gameId": "Item:31135",
             "name": {
-                "en": "Bozjan Cluster"
+                "en": "Bozjan Cluster",
+                "ja": "ボズヤクラスター",
+                "de": "Bozja-Polykristall",
+                "fr": "Cristal bozjien"
             }
         },
         {
             "id": "9cc5a185-e088-442a-93f4-941f2827014b",
             "gameId": "Item:47748",
             "name": {
-                "en": "Caput Mortuum Demiatma"
+                "en": "Caput Mortuum Demiatma",
+                "ja": "紫晶のデミアートマ",
+                "de": "Demi-Atma Caput Mortuum",
+                "fr": "Demi-âtma améthyste"
             }
         },
         {
             "id": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
             "gameId": "Item:30889",
             "name": {
-                "en": "Forgotten Fragment of Awakening"
+                "en": "Forgotten Fragment of Awakening",
+                "ja": "未鑑定ロストシャード:催眠",
+                "de": "Unbegutachteter Frontsplitter der Hypnose",
+                "fr": "Éclat oublié non identifié d'hypnose"
             }
         },
         {
             "id": "eec92d34-c1fc-462e-b29d-e85ee6545588",
             "gameId": "Item:30888",
             "name": {
-                "en": "Forgotten Fragment of Care"
+                "en": "Forgotten Fragment of Care",
+                "ja": "未鑑定ロストシャード:治癒",
+                "de": "Unbegutachteter Frontsplitter der Heilung",
+                "fr": "Éclat oublié non identifié de guérison"
             }
         },
         {
             "id": "468e71c2-2a17-4cbf-8f64-ebf083fdbe40",
             "gameId": "Item:30884",
             "name": {
-                "en": "Forgotten Fragment of Caution"
+                "en": "Forgotten Fragment of Caution",
+                "ja": "未鑑定ロストシャード:新鋭",
+                "de": "Unbegutachteter Frontsplitter der Neuartigkeit",
+                "fr": "Éclat oublié non identifié de fougue"
             }
         },
         {
             "id": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
             "gameId": "Item:30893",
             "name": {
-                "en": "Forgotten Fragment of Compassion"
+                "en": "Forgotten Fragment of Compassion",
+                "ja": "未鑑定ロストシャード:祝福",
+                "de": "Unbegutachteter Frontsplitter des Segens",
+                "fr": "Éclat oublié non identifié de bénédiction"
             }
         },
         {
             "id": "5ea1bcd2-c537-4463-b736-edde3f0a57fc",
             "gameId": "Item:30887",
             "name": {
-                "en": "Forgotten Fragment of Ingenuity"
+                "en": "Forgotten Fragment of Ingenuity",
+                "ja": "未鑑定ロストシャード:熟練",
+                "de": "Unbegutachteter Frontsplitter der Unterweisung",
+                "fr": "Éclat oublié non identifié de maîtrise"
             }
         },
         {
             "id": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
             "gameId": "Item:30885",
             "name": {
-                "en": "Forgotten Fragment of Preparation"
+                "en": "Forgotten Fragment of Preparation",
+                "ja": "未鑑定ロストシャード:支援",
+                "de": "Unbegutachteter Frontsplitter der Unterstützung",
+                "fr": "Éclat oublié non identifié de soutien"
             }
         },
         {
             "id": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
             "gameId": "Item:30886",
             "name": {
-                "en": "Forgotten Fragment of Skill"
+                "en": "Forgotten Fragment of Skill",
+                "ja": "未鑑定ロストシャード:強化",
+                "de": "Unbegutachteter Frontsplitter der Verstärkung",
+                "fr": "Éclat oublié non identifié de perfectionnement"
             }
         },
         {
             "id": "4b0bb048-5929-46cb-a4c0-8b18df811548",
             "gameId": "Item:30890",
             "name": {
-                "en": "Forgotten Fragment of Support"
+                "en": "Forgotten Fragment of Support",
+                "ja": "未鑑定ロストシャード:献身",
+                "de": "Unbegutachteter Frontsplitter der Hingabe",
+                "fr": "Éclat oublié non identifié d'abnégation"
             }
         },
         {
             "id": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
             "gameId": "Item:30891",
             "name": {
-                "en": "Forgotten Fragment of Violence"
+                "en": "Forgotten Fragment of Violence",
+                "ja": "未鑑定ロストシャード:暗殺",
+                "de": "Unbegutachteter Frontsplitter des Meuchelmords",
+                "fr": "Éclat oublié non identifié d'élimination"
             }
         },
         {
             "id": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
             "gameId": "Item:31575",
             "name": {
-                "en": "Harrowing Memory of the Dying"
+                "en": "Harrowing Memory of the Dying",
+                "ja": "恐ろしき記憶の一塊",
+                "de": "Erinnerungsklumpen der Furcht",
+                "fr": "Amas mémoriel de terreur"
             }
         },
         {
             "id": "5e1db15f-7ad0-4313-9c53-44e713659bcf",
             "gameId": "Item:47746",
             "name": {
-                "en": "Malachite Demiatma"
+                "en": "Malachite Demiatma",
+                "ja": "緑晶のデミアートマ",
+                "de": "Demi-Atma Malachit",
+                "fr": "Demi-âtma émeraude"
             }
         },
         {
             "id": "2bd3247f-0ce4-4c24-af4f-d2258aa049e1",
             "gameId": "Item:51974",
             "name": {
-                "en": "Necromancer's Soul Shard"
+                "en": "Necromancer's Soul Shard",
+                "ja": "ソウルシャード:ネクロマンサー",
+                "de": "Nekromanten-Seelensplitter",
+                "fr": "Éclat d'âme de nécromancien"
             }
         },
         {
             "id": "af5015d9-3c31-41aa-b077-d7064f236f1a",
             "gameId": "Item:51981",
             "name": {
-                "en": "Notes on Algol"
+                "en": "Notes on Algol",
+                "ja": "探査記録:アルゴル",
+                "de": "Chronikeintrag „Algol“",
+                "fr": "Article sur Algol"
             }
         },
         {
             "id": "0f08ac4c-cf4c-43dc-8bf0-95fc391e1f03",
             "gameId": "Item:51979",
             "name": {
-                "en": "Notes on Arbatel"
+                "en": "Notes on Arbatel",
+                "ja": "探査記録:アルバテル",
+                "de": "Chronikeintrag „Arbatel“",
+                "fr": "Article sur Arbatel"
             }
         },
         {
             "id": "a0a3095f-7447-431b-8103-457b2817e1ba",
             "gameId": "Item:47732",
             "name": {
-                "en": "Notes on Black Chocobos"
+                "en": "Notes on Black Chocobos",
+                "ja": "探査記録:黒チョコボ",
+                "de": "Chronikeintrag „Schwarze Chocobos“",
+                "fr": "Article sur les chocobos noirs"
             }
         },
         {
             "id": "ca1c9938-2f6b-4c02-8871-5e7f917c27ba",
             "gameId": "Item:47738",
             "name": {
-                "en": "Notes on Persistent Pots"
+                "en": "Notes on Persistent Pots",
+                "ja": "探査記録:おねだりポット",
+                "de": "Chronikeintrag „Wunderpott“",
+                "fr": "Article sur les pots persistants"
             }
         },
         {
             "id": "e753c8f9-24ec-44af-9ff7-c9a87b50f0f4",
             "gameId": "Item:51985",
             "name": {
-                "en": "Notes on the Abductor"
+                "en": "Notes on the Abductor",
+                "ja": "探査記録:アブダクター",
+                "de": "Chronikeintrag „Abduktor“",
+                "fr": "Article sur le Ravisseur"
             }
         },
         {
             "id": "d8a4c416-6d4e-4b3b-b951-369d3ccc75c9",
             "gameId": "Item:51987",
             "name": {
-                "en": "Notes on the Alabaster Blade"
+                "en": "Notes on the Alabaster Blade",
+                "ja": "探査記録:アラバスターブレード",
+                "de": "Chronikeintrag „Alabaster-Klinge“",
+                "fr": "Article sur la Lame d'albâtre"
             }
         },
         {
             "id": "96250580-dc62-40b6-9ad2-d4801e3e1839",
             "gameId": "Item:51986",
             "name": {
-                "en": "Notes on the Claret Dragon"
+                "en": "Notes on the Claret Dragon",
+                "ja": "探査記録:ルブルムドラゴン",
+                "de": "Chronikeintrag „Rubrum-Drache“",
+                "fr": "Article sur le dragon rubrum"
             }
         },
         {
             "id": "e52c4bab-d99d-4870-af38-b1ca280eb1f8",
             "gameId": "Item:47728",
             "name": {
-                "en": "Notes on the Cloister Demon"
+                "en": "Notes on the Cloister Demon",
+                "ja": "探査記録:クロイスターデーモン",
+                "de": "Chronikeintrag „Klosterdämon“",
+                "fr": "Article sur le démon du Cloître"
             }
         },
         {
             "id": "21801e70-8aca-4ead-995a-4ceefa4958b5",
             "gameId": "Item:47730",
             "name": {
-                "en": "Notes on the Crescent Berserker"
+                "en": "Notes on the Crescent Berserker",
+                "ja": "探査記録:クレセント・バーサーカー",
+                "de": "Chronikeintrag „Kreszenter Berserker“",
+                "fr": "Article sur le berserker de Lunule"
             }
         },
         {
             "id": "84dfa5ab-7ffb-45be-8b42-27a4b999fee9",
             "gameId": "Item:51982",
             "name": {
-                "en": "Notes on the Metamorph"
+                "en": "Notes on the Metamorph",
+                "ja": "探査記録:メタモルファ",
+                "de": "Chronikeintrag „Metamorpha“",
+                "fr": "Article sur le métamorphe"
             }
         },
         {
             "id": "e863fb50-47c6-42b9-a0c8-a1ccfb72499a",
             "gameId": "Item:47729",
             "name": {
-                "en": "Notes on the Mythic Idol"
+                "en": "Notes on the Mythic Idol",
+                "ja": "探査記録:ミシカルアイドル",
+                "de": "Chronikeintrag „Mystisches Idol“",
+                "fr": "Article sur l'idole mythique"
             }
         },
         {
             "id": "232ddd0c-04fe-471c-be5e-87acfce182eb",
             "gameId": "Item:47731",
             "name": {
-                "en": "Notes on the Nymian Petalodus"
+                "en": "Notes on the Nymian Petalodus",
+                "ja": "探査記録:ニーム・ペタロドゥス",
+                "de": "Chronikeintrag „Nymeischer Petalodus“",
+                "fr": "Article sur le petalodus de Nym"
             }
         },
         {
             "id": "cff72114-4fc2-47c7-86f2-9ca55d661872",
             "gameId": "Item:51983",
             "name": {
-                "en": "Notes on the Pallmagia"
+                "en": "Notes on the Pallmagia",
+                "ja": "探査記録:ペイルマギア",
+                "de": "Chronikeintrag „Bleicher Magia“",
+                "fr": "Article sur Palimagia"
             }
         },
         {
             "id": "eb7d14f3-6fc3-4c16-b695-4d090a6a952d",
             "gameId": "Item:51984",
             "name": {
-                "en": "Notes on the Phantom Necromancer"
+                "en": "Notes on the Phantom Necromancer",
+                "ja": "探査記録:マギ・ネクロマンサー",
+                "de": "Chronikeintrag „Kreszenter Nekromant“",
+                "fr": "Article sur le nécromancien magi"
             }
         },
         {
             "id": "6de46609-8ad3-458e-94ff-0a71450ded5c",
             "gameId": "Item:51980",
             "name": {
-                "en": "Notes on the Tiny Mage"
+                "en": "Notes on the Tiny Mage",
+                "ja": "探査記録:タイニーメイジ",
+                "de": "Chronikeintrag „Winzige Magier“",
+                "fr": "Article sur le petit mage"
             }
         },
         {
             "id": "5cd6ebca-1fe2-440c-a194-daa9bb69877f",
             "gameId": "Item:47733",
             "name": {
-                "en": "Notes on the Trade Tortoise"
+                "en": "Notes on the Trade Tortoise",
+                "ja": "探査記録:コイントートス",
+                "de": "Chronikeintrag „Münzkröte“",
+                "fr": "Article sur la tortue à pièces"
             }
         },
         {
             "id": "df561ae3-efd9-4435-97fd-e1a1de04ab93",
             "gameId": "Action:47170",
             "name": {
-                "en": "Occult Aero III"
+                "en": "Occult Aero III",
+                "ja": "マギ・エアロガ",
+                "de": "Kreszentes Windga",
+                "fr": "Magi Méga Vent"
             }
         },
         {
             "id": "86e2a6ea-9048-454c-b947-59b05dcae34f",
             "gameId": "Item:49828",
             "name": {
-                "en": "Occult Bracelet of Blood"
+                "en": "Occult Bracelet of Blood",
+                "ja": "クレセントマギ・ファイターブレスレット",
+                "de": "Kreszentia-Armband des Kriegers",
+                "fr": "Bracelet de combattant magi de Lunule"
             }
         },
         {
             "id": "db7d2037-14c7-43d7-a330-e92f0665ebec",
             "gameId": "Item:49833",
             "name": {
-                "en": "Occult Bracelet of Magic"
+                "en": "Occult Bracelet of Magic",
+                "ja": "クレセントマギ・ソーサラーブレスレット",
+                "de": "Kreszentia-Armband des Magiers",
+                "fr": "Bracelet de mage magi de Lunule"
             }
         },
         {
             "id": "a7116a14-2794-41c5-9fe5-e2a691d48382",
             "gameId": "Item:49826",
             "name": {
-                "en": "Occult Earrings of Blood"
+                "en": "Occult Earrings of Blood",
+                "ja": "クレセントマギ・ファイターイヤリング",
+                "de": "Kreszentia-Ohrringe des Kriegers",
+                "fr": "Boucles d'oreilles de combattant magi de Lunule"
             }
         },
         {
             "id": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
             "gameId": "Item:49831",
             "name": {
-                "en": "Occult Earrings of Magic"
+                "en": "Occult Earrings of Magic",
+                "ja": "クレセントマギ・ソーサラーイヤリング",
+                "de": "Kreszentia-Ohrringe des Magiers",
+                "fr": "Boucles d'oreilles de mage magi de Lunule"
             }
         },
         {
             "id": "f8caf573-ed02-4b5e-9627-9d47be8a3716",
             "gameId": "Action:49086",
             "name": {
-                "en": "Occult Missile"
+                "en": "Occult Missile",
+                "ja": "マギ・ミサイル",
+                "de": "Kreszente Rakete",
+                "fr": "Magi Missile"
             }
         },
         {
             "id": "7d5ecdd1-7f60-4881-9790-43edb1115971",
             "gameId": "Item:49827",
             "name": {
-                "en": "Occult Necklace of Blood"
+                "en": "Occult Necklace of Blood",
+                "ja": "クレセントマギ・ファイターネックレス",
+                "de": "Kreszentia-Halsband des Kriegers",
+                "fr": "Collier de combattant magi de Lunule"
             }
         },
         {
             "id": "88932e24-78fc-434d-aa01-1892b55dd90e",
             "gameId": "Item:49832",
             "name": {
-                "en": "Occult Necklace of Magic"
+                "en": "Occult Necklace of Magic",
+                "ja": "クレセントマギ・ソーサラーネックレス",
+                "de": "Kreszentia-Halsband des Magiers",
+                "fr": "Collier de mage magi de Lunule"
             }
         },
         {
             "id": "b8b6a909-48e9-4fde-b8df-e31af9a343d8",
             "gameId": "Item:47757",
             "name": {
-                "en": "Oracle's Soul Shard"
+                "en": "Oracle's Soul Shard",
+                "ja": "ソウルシャード:予言士",
+                "de": "Seher-Seelensplitter",
+                "fr": "Éclat d'âme de devin"
             }
         },
         {
             "id": "76549db4-75a2-42d5-9057-526c83c313a7",
             "gameId": "Item:47749",
             "name": {
-                "en": "Orpiment Demiatma"
+                "en": "Orpiment Demiatma",
+                "ja": "黄晶のデミアートマ",
+                "de": "Demi-Atma Orpiment",
+                "fr": "Demi-âtma ambre"
             }
         },
         {
             "id": "248005f6-e60e-461d-8e08-0a829556225d",
             "gameId": "Item:50974",
             "name": {
-                "en": "Phantom Dispeller α"
+                "en": "Phantom Dispeller α",
+                "ja": "ファントムディスペラーα",
+                "de": "Entphantomisierer α",
+                "fr": "Dissipateur spirituel alpha"
             }
         },
         {
             "id": "4dd8dd1d-d288-477b-a30e-b0f26a22cdda",
             "gameId": "Item:50975",
             "name": {
-                "en": "Phantom Dispeller β"
+                "en": "Phantom Dispeller β",
+                "ja": "ファントムディスペラーβ",
+                "de": "Entphantomisierer β",
+                "fr": "Dissipateur spirituel bêta"
             }
         },
         {
             "id": "efc680fa-c4be-46d3-ba00-4c5cffa443d4",
             "gameId": "Item:50976",
             "name": {
-                "en": "Phantom Dispeller γ"
+                "en": "Phantom Dispeller γ",
+                "ja": "ファントムディスペラーγ",
+                "de": "Entphantomisierer γ",
+                "fr": "Dissipateur spirituel gamma"
             }
         },
         {
             "id": "4a9a1ac7-221b-45b7-8996-86a63baeb19b",
             "gameId": "Item:47752",
             "name": {
-                "en": "Ranger's Soul Shard"
+                "en": "Ranger's Soul Shard",
+                "ja": "ソウルシャード:狩人",
+                "de": "Jäger-Seelensplitter",
+                "fr": "Éclat d'âme de rôdeur"
             }
         },
         {
             "id": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
             "gameId": "Item:47747",
             "name": {
-                "en": "Realgar Demiatma"
+                "en": "Realgar Demiatma",
+                "ja": "橙晶のデミアートマ",
+                "de": "Demi-Atma Realgar",
+                "fr": "Demi-âtma corail"
             }
         },
         {
             "id": "7b2156a7-6463-43b4-aa47-d0e75428a385",
             "gameId": "Item:31574",
             "name": {
-                "en": "Sorrowful Memory of the Dying"
+                "en": "Sorrowful Memory of the Dying",
+                "ja": "悲しき記憶の一塊",
+                "de": "Erinnerungsklumpen der Trauer",
+                "fr": "Amas mémoriel de peine"
             }
         },
         {
             "id": "c847445e-be1e-4d67-9145-d74584c084c4",
             "gameId": "Item:31573",
             "name": {
-                "en": "Tortured Memory of the Dying"
+                "en": "Tortured Memory of the Dying",
+                "ja": "悩ましき記憶の一塊",
+                "de": "Erinnerungsklumpen des Schmerzes",
+                "fr": "Amas mémoriel de tourment"
             }
         },
         {
             "id": "5c08dc3b-61c5-4bbc-a6fc-22dd6537ef0a",
             "gameId": "Item:47745",
             "name": {
-                "en": "Verdigris Demiatma"
+                "en": "Verdigris Demiatma",
+                "ja": "碧晶のデミアートマ",
+                "de": "Demi-Atma Verdigris",
+                "fr": "Demi-âtma turquoise"
             }
         },
         {
             "id": "d7deb36f-0563-41a0-98f2-6371e3911488",
             "gameId": "Item:48008",
             "name": {
-                "en": "Voidsent Contract"
+                "en": "Voidsent Contract",
+                "ja": "大妖異の契約書",
+                "de": "Nichtsgesandten-Paktschrift",
+                "fr": "Parchemin abîmé"
             }
         }
     ]
