@@ -4,385 +4,550 @@
             "id": "0248f78e-2727-44c0-b5ad-0906ac3d06e8",
             "gameId": 9430,
             "name": {
-                "en": "4th Legion Armored Weapon"
+                "en": "4th Legion Armored Weapon",
+                "ja": "IVレギオン・アームドウェポン",
+                "de": "Panzerwaffe der IV. Legion",
+                "fr": "Arme blindée de la 4e légion"
             }
         },
         {
             "id": "e826e538-9731-4999-90d5-6b268417ecd6",
             "gameId": 9544,
             "name": {
-                "en": "4th Legion Avenger"
+                "en": "4th Legion Avenger",
+                "ja": "IVレギオン・アヴェンジャー",
+                "de": "Rächer der IV. Legion",
+                "fr": "Vengeur de la 4e légion"
             }
         },
         {
             "id": "f74e6992-4684-48d7-81cf-2b063372387f",
             "gameId": 9522,
             "name": {
-                "en": "4th Legion Death Claw"
+                "en": "4th Legion Death Claw",
+                "ja": "IVレギオン・デスクロー",
+                "de": "Todesklaue der IV. Legion",
+                "fr": "Griffe de mort de la 4e légion"
             }
         },
         {
             "id": "e979269b-8cce-4d30-9163-4fbbcf8ecccf",
             "gameId": 9547,
             "name": {
-                "en": "4th Legion Gunship"
+                "en": "4th Legion Gunship",
+                "ja": "IVレギオン・ガンシップ",
+                "de": "Kanonenschiff der IV. Legion",
+                "fr": "Vaisseau de la 4e légion"
             }
         },
         {
             "id": "233a3754-950f-4bb9-b5ef-2b0f85d4e1d0",
             "gameId": 9559,
             "name": {
-                "en": "4th Legion Hexadrone"
+                "en": "4th Legion Hexadrone",
+                "ja": "IVレギオン・ヘキサローラー",
+                "de": "Hexadrohne der IV. Legion",
+                "fr": "Hexadrone de la 4e légion"
             }
         },
         {
             "id": "3d5397f2-2655-4bb9-ab76-0867a0e75faf",
             "gameId": 9519,
             "name": {
-                "en": "4th Legion Nimrod"
+                "en": "4th Legion Nimrod",
+                "ja": "IVレギオン・ニムロッド",
+                "de": "Nimrod der IV. Legion",
+                "fr": "Nimrod de la 4e légion"
             }
         },
         {
             "id": "1254d9d2-ab56-42b3-adda-6c941b7a1f7c",
             "gameId": 9523,
             "name": {
-                "en": "4th Legion Roader"
+                "en": "4th Legion Roader",
+                "ja": "IVレギオン・マグナローダー",
+                "de": "Rotula der IV. Legion",
+                "fr": "Magna rouleur de la 4e légion"
             }
         },
         {
             "id": "d80ca519-1de3-4da7-bd93-6993b39efba1",
             "gameId": 9564,
             "name": {
-                "en": "4th Legion Scorpion"
+                "en": "4th Legion Scorpion",
+                "ja": "IVレギオン・ガードスコーピオン",
+                "de": "Skorpion der IV. Legion",
+                "fr": "Scorpion magitek de la 4e légion"
             }
         },
         {
             "id": "dcf1ebfe-d6c3-4198-8adc-f03f183cdbc9",
             "gameId": 9517,
             "name": {
-                "en": "4th Legion Slasher"
+                "en": "4th Legion Slasher",
+                "ja": "IVレギオン・スラッシャー",
+                "de": "Schlitzer der IV. Legion",
+                "fr": "Lacératrice de la 4e légion"
             }
         },
         {
             "id": "f10e37af-e270-4cb5-b9d7-b2e360470e19",
             "gameId": 9539,
             "name": {
-                "en": "4th Legion Vanguard"
+                "en": "4th Legion Vanguard",
+                "ja": "IVレギオン・ヴァンガード",
+                "de": "Frontbrecher der IV. Legion",
+                "fr": "Avant-garde de la 4e légion"
             }
         },
         {
             "id": "91304f88-7b14-4039-92fc-ef50fba7ce88",
             "gameId": 9578,
             "name": {
-                "en": "Bird of Barathrum"
+                "en": "Bird of Barathrum",
+                "ja": "バード・オブ・バラスルーム",
+                "de": "Herz des Barathrum",
+                "fr": "Oiseau de Barathrum"
             }
         },
         {
             "id": "dc168fa5-aa43-41ec-b62a-bb18fd63bdb5",
             "gameId": 9545,
             "name": {
-                "en": "Bozjan Antlion"
+                "en": "Bozjan Antlion",
+                "ja": "ボズヤ・アントリオン",
+                "de": "Bozja-Ameisenlöwe",
+                "fr": "Fourmilion de Bozja"
             }
         },
         {
             "id": "f7e9ba84-62c5-468b-bbab-62a34921ab72",
             "gameId": 9572,
             "name": {
-                "en": "Bozjan Anzu"
+                "en": "Bozjan Anzu",
+                "ja": "ボズヤ・アンズー",
+                "de": "Bozja-Anzu",
+                "fr": "Anzu de Bozja"
             }
         },
         {
             "id": "ba77aec0-0236-40ff-8e4a-4ce7afd73fe7",
             "gameId": 9550,
             "name": {
-                "en": "Bozjan Bandersnatch"
+                "en": "Bozjan Bandersnatch",
+                "ja": "ボズヤ・バンダースナッチ",
+                "de": "Bozja-Bandersnatch",
+                "fr": "Bandersnatch de Bozja"
             }
         },
         {
             "id": "21db9baf-4711-4e61-ba04-a015a7b0914e",
             "gameId": 9551,
             "name": {
-                "en": "Bozjan Biast"
+                "en": "Bozjan Biast",
+                "ja": "ボズヤ・ビアスト",
+                "de": "Bozja-Smei",
+                "fr": "Biast de Bozja"
             }
         },
         {
             "id": "81598c17-ec32-4410-b44f-1e812bb3a640",
             "gameId": 9540,
             "name": {
-                "en": "Bozjan Doblyn"
+                "en": "Bozjan Doblyn",
+                "ja": "ボズヤ・ドブラン",
+                "de": "Bozja-Dobalos",
+                "fr": "Doblyn de Bozja"
             }
         },
         {
             "id": "b3386a23-3319-4579-ab14-70ac5777cb85",
             "gameId": 9573,
             "name": {
-                "en": "Bozjan Doll"
+                "en": "Bozjan Doll",
+                "ja": "ボズヤ・ドール",
+                "de": "Bozja-Dhole",
+                "fr": "Poupée de Bozja"
             }
         },
         {
             "id": "00f30f35-5ffd-4efb-a33c-e298a9aa2894",
             "gameId": 9555,
             "name": {
-                "en": "Bozjan Dullahan"
+                "en": "Bozjan Dullahan",
+                "ja": "ボズヤ・デュラハン",
+                "de": "Bozja-Dullahan",
+                "fr": "Dullahan de Bozja"
             }
         },
         {
             "id": "33ee686a-ce4f-45ab-9b2f-ebaf3f0f05f0",
             "gameId": 9679,
             "name": {
-                "en": "Bozjan Elasmoth"
+                "en": "Bozjan Elasmoth",
+                "ja": "ボズヤ・エラスモス",
+                "de": "Bozja-Elasmoth",
+                "fr": "Erasmus de Bozja"
             }
         },
         {
             "id": "4e6f03b5-80fa-49b2-b707-5a57b7e86bb4",
             "gameId": 9560,
             "name": {
-                "en": "Bozjan Elbst"
+                "en": "Bozjan Elbst",
+                "ja": "ボズヤ・エルブスト",
+                "de": "Bozja-Elbst",
+                "fr": "Elbst de Bozja"
             }
         },
         {
             "id": "c0b51a34-bd74-4ff7-947c-df2dc43ca5e1",
             "gameId": 9534,
             "name": {
-                "en": "Bozjan Geshunpest"
+                "en": "Bozjan Geshunpest",
+                "ja": "ボズヤ・ゲシュンペスト",
+                "de": "Bozja-Gespenst",
+                "fr": "Gespenst de Bozja"
             }
         },
         {
             "id": "a45cddd0-e6d8-4aab-b70d-fe24c44f5a37",
             "gameId": 9569,
             "name": {
-                "en": "Bozjan Goobbue"
+                "en": "Bozjan Goobbue",
+                "ja": "ボズヤ・グゥーブー",
+                "de": "Bozja-Goobbue",
+                "fr": "Goobbue de Bozja"
             }
         },
         {
             "id": "e87b8f27-c4f6-45b7-ae65-637cda1f08be",
             "gameId": 9568,
             "name": {
-                "en": "Bozjan Gravekeeper"
+                "en": "Bozjan Gravekeeper",
+                "ja": "ボズヤ・グレイブキーパー",
+                "de": "Bozja-Grabwächter",
+                "fr": "Gardien de cimetière de Bozja"
             }
         },
         {
             "id": "b3412f70-63b5-4491-aed5-1369cf864da5",
             "gameId": 9515,
             "name": {
-                "en": "Bozjan Korrigan"
+                "en": "Bozjan Korrigan",
+                "ja": "ボズヤ・コリガン",
+                "de": "Bozja-Korrigane",
+                "fr": "Korrigan de Bozja"
             }
         },
         {
             "id": "6dfdc2df-2fb7-468d-885a-f6a5c194812a",
             "gameId": 9521,
             "name": {
-                "en": "Bozjan Matamata"
+                "en": "Bozjan Matamata",
+                "ja": "ボズヤ・マタマタ",
+                "de": "Bozja-Matamata",
+                "fr": "Matamata de Bozja"
             }
         },
         {
             "id": "552d3df0-aea2-4c2b-8100-cd58a289898d",
             "gameId": 9565,
             "name": {
-                "en": "Bozjan Monitor"
+                "en": "Bozjan Monitor",
+                "ja": "ボズヤ・モニター",
+                "de": "Bozja-Waran",
+                "fr": "Varan de Bozja"
             }
         },
         {
             "id": "e8402178-bb8b-4824-bd28-9341a296b2c5",
             "gameId": 9518,
             "name": {
-                "en": "Bozjan Mudpuppy"
+                "en": "Bozjan Mudpuppy",
+                "ja": "ボズヤ・マッドパピー",
+                "de": "Bozja-Olm",
+                "fr": "Protée de Bozja"
             }
         },
         {
             "id": "94bf115e-0604-4ba2-985a-30b838742e6d",
             "gameId": 9520,
             "name": {
-                "en": "Bozjan Nepenthes"
+                "en": "Bozjan Nepenthes",
+                "ja": "ボズヤ・ネペンテス",
+                "de": "Bozja-Nepenthes",
+                "fr": "Népenthès de Bozja"
             }
         },
         {
             "id": "9a7364c5-b2f1-4ec3-af82-8ff9d812c688",
             "gameId": 9567,
             "name": {
-                "en": "Bozjan Ochu"
+                "en": "Bozjan Ochu",
+                "ja": "ボズヤ・オチュー",
+                "de": "Bozja-Ochu",
+                "fr": "Otyugh de Bozja"
             }
         },
         {
             "id": "3d1da58f-6011-4c58-a43b-c119889d4491",
             "gameId": 9516,
             "name": {
-                "en": "Bozjan Orobon"
+                "en": "Bozjan Orobon",
+                "ja": "ボズヤ・オロボン",
+                "de": "Bozja-Orobon",
+                "fr": "Orobon de Bozja"
             }
         },
         {
             "id": "d38ccc34-6aaf-4265-97b4-27c9493534a8",
             "gameId": 9563,
             "name": {
-                "en": "Bozjan Phobosuchus"
+                "en": "Bozjan Phobosuchus",
+                "ja": "ボズヤ・フォボスクス",
+                "de": "Bozja-Phobosuchus",
+                "fr": "Phobosuchus de Bozja"
             }
         },
         {
             "id": "70ccfdee-5ad5-4757-8e4b-6ab5f44f3692",
             "gameId": 9562,
             "name": {
-                "en": "Bozjan Ranunculus"
+                "en": "Bozjan Ranunculus",
+                "ja": "ボズヤ・ラナンキュラス",
+                "de": "Bozja-Ranunculus",
+                "fr": "Renoncule de Bozja"
             }
         },
         {
             "id": "7ed3b152-f43d-4d1d-8912-55adf4d592ee",
             "gameId": 9575,
             "name": {
-                "en": "Bozjan Rider"
+                "en": "Bozjan Rider",
+                "ja": "ボズヤ・ライダー",
+                "de": "Bozja-Reiter",
+                "fr": "Cavalier de Bozja"
             }
         },
         {
             "id": "69e72a79-46a1-4d69-a421-71499270413c",
             "gameId": 9541,
             "name": {
-                "en": "Bozjan Sabotender"
+                "en": "Bozjan Sabotender",
+                "ja": "ボズヤ・サボテンダー",
+                "de": "Bozja-Kaktor",
+                "fr": "Pampa de Bozja"
             }
         },
         {
             "id": "b2d815f5-4486-4541-bd05-581b2094514d",
             "gameId": 9561,
             "name": {
-                "en": "Bozjan Screamer"
+                "en": "Bozjan Screamer",
+                "ja": "ボズヤ・スクリーマー",
+                "de": "Bozja-Schriller",
+                "fr": "Piailleur de Bozja"
             }
         },
         {
             "id": "78aade7b-b464-46d0-a352-dd7f81eada5a",
             "gameId": 9571,
             "name": {
-                "en": "Bozjan Snake"
+                "en": "Bozjan Snake",
+                "ja": "ボズヤ・ネロディア",
+                "de": "Bozja-Nerodia",
+                "fr": "Nerodia de Bozja"
             }
         },
         {
             "id": "e4cfcf76-b1b9-44fc-be09-e8bd612548ab",
             "gameId": 9549,
             "name": {
-                "en": "Bozjan Taipan"
+                "en": "Bozjan Taipan",
+                "ja": "ボズヤ・タイパン",
+                "de": "Bozja-Taipan",
+                "fr": "Taïpan de Bozja"
             }
         },
         {
             "id": "5210c310-8769-4345-8b67-f35d5d94fa80",
             "gameId": 9542,
             "name": {
-                "en": "Bozjan Tormentor"
+                "en": "Bozjan Tormentor",
+                "ja": "ボズヤ・トーメンター",
+                "de": "Bozja-Quäler",
+                "fr": "Tourmenteur de Bozja"
             }
         },
         {
             "id": "8f9770c7-4bd3-446d-8a0b-ea4b48e978f7",
             "gameId": 9570,
             "name": {
-                "en": "Bozjan Wadjet"
+                "en": "Bozjan Wadjet",
+                "ja": "ボズヤ・ウアジェット",
+                "de": "Bozja-Wadjet",
+                "fr": "Ouadjet de Bozja"
             }
         },
         {
             "id": "d015995a-aa14-4749-8f79-09f1222cf5df",
             "gameId": 9548,
             "name": {
-                "en": "Bozjan Wight"
+                "en": "Bozjan Wight",
+                "ja": "ボズヤ・スケルトン",
+                "de": "Bozja-Skelett",
+                "fr": "Squelette de Bozja"
             }
         },
         {
             "id": "35ebb30e-f927-4cea-bef8-c69c8f8b0e17",
             "gameId": 9546,
             "name": {
-                "en": "Bozjan Worm"
+                "en": "Bozjan Worm",
+                "ja": "ボズヤ・ウォーム",
+                "de": "Bozja-Wurm",
+                "fr": "Ver de Bozja"
             }
         },
         {
             "id": "dac8479f-c56b-4e0c-b400-149d53766a87",
             "gameId": 9535,
             "name": {
-                "en": "Bozjan Wraith"
+                "en": "Bozjan Wraith",
+                "ja": "ボズヤ・レイス",
+                "de": "Bozja-Geist",
+                "fr": "Spectre de Bozja"
             }
         },
         {
             "id": "aaff951b-4055-4a70-81f2-607ced4fc0c3",
             "gameId": 9577,
             "name": {
-                "en": "Clingy Clare"
+                "en": "Clingy Clare",
+                "ja": "クリンギー・クレア",
+                "de": "Klaudia die Klebrige",
+                "fr": "Claire la collante"
             }
         },
         {
             "id": "bf89b9d6-09d1-4381-a456-ecb3af8adfda",
             "gameId": 113,
             "name": {
-                "en": "Earth Sprite"
+                "en": "Earth Sprite",
+                "ja": "アーススプライト",
+                "de": "Erd-Exergon",
+                "fr": "Élémentaire de terre"
             }
         },
         {
             "id": "ae562958-0f76-4518-b87e-cb82cd4f48ee",
             "gameId": 9531,
             "name": {
-                "en": "Fern Flower"
+                "en": "Fern Flower",
+                "ja": "ファーンフラワー",
+                "de": "Farnblüte",
+                "fr": "Fleur de fougère"
             }
         },
         {
             "id": "cc3d0da6-36f9-4ddb-a861-452d39e3ae2b",
             "gameId": 9530,
             "name": {
-                "en": "Ink Claw"
+                "en": "Ink Claw",
+                "ja": "インククロウ",
+                "de": "Tintenstachel",
+                "fr": "Scorpion pinces d'encre"
             }
         },
         {
             "id": "cb0162d1-8ede-41b0-9b9d-443d50be7db6",
             "gameId": 9536,
             "name": {
-                "en": "Lightning Sprite"
+                "en": "Lightning Sprite",
+                "ja": "ライトニングスプライト",
+                "de": "Blitz-Exergon",
+                "fr": "Élémentaire de foudre"
             }
         },
         {
             "id": "f6bfe9aa-69bc-496a-8909-55a99715408e",
             "gameId": 9576,
             "name": {
-                "en": "Patty"
+                "en": "Patty",
+                "ja": "パティ",
+                "de": "Patty",
+                "fr": "Patty"
             }
         },
         {
             "id": "bcec917c-513c-4a03-acb3-c4cd5fb9fbf5",
             "gameId": 9558,
             "name": {
-                "en": "Psoglav"
+                "en": "Psoglav",
+                "ja": "ソーグラヴ",
+                "de": "Psoglav",
+                "fr": "Psoglav"
             }
         },
         {
             "id": "7e496f33-c41e-4110-bd65-184f562d6873",
             "gameId": 6943,
             "name": {
-                "en": "Red Chocobo"
+                "en": "Red Chocobo",
+                "ja": "赤チョコボ",
+                "de": "Roter Chocobo",
+                "fr": "Chocobo rouge"
             }
         },
         {
             "id": "51d040ba-053e-43ed-8042-1663cad4648f",
             "gameId": 9557,
             "name": {
-                "en": "Smok"
+                "en": "Smok",
+                "ja": "スモク",
+                "de": "Smok",
+                "fr": "Smok"
             }
         },
         {
             "id": "7034d578-7138-49ad-a3ed-ca6c348ff7ed",
             "gameId": 9532,
             "name": {
-                "en": "Tideborn Angel"
+                "en": "Tideborn Angel",
+                "ja": "ブルーエンジェル",
+                "de": "Blauengel",
+                "fr": "Dragon bleu"
             }
         },
         {
             "id": "5b4c35c8-62a3-49e2-88c9-2035b9d6006a",
             "gameId": 9556,
             "name": {
-                "en": "Viy"
+                "en": "Viy",
+                "ja": "ヴィイ",
+                "de": "Wij",
+                "fr": "Vij"
             }
         },
         {
             "id": "052bbeeb-c550-4051-b669-82b3ae5afc1d",
             "gameId": 56,
             "name": {
-                "en": "Water Sprite"
+                "en": "Water Sprite",
+                "ja": "ウォータースプライト",
+                "de": "Wasser-Exergon",
+                "fr": "Élémentaire d'eau"
             }
         },
         {
             "id": "6c537db4-da1b-46f6-8db8-eaaa21d02a9a",
             "gameId": 115,
             "name": {
-                "en": "Wind Sprite"
+                "en": "Wind Sprite",
+                "ja": "ウィンドスプライト",
+                "de": "Wind-Exergon",
+                "fr": "Élémentaire de vent"
             }
         }
     ],
@@ -391,224 +556,320 @@
             "id": "a4d3f9bb-64e2-44c4-985e-0e8435750d6c",
             "gameId": 1604,
             "name": {
-                "en": "All Pets Are Off"
+                "en": "All Pets Are Off",
+                "ja": "華麗なる珍獣使い",
+                "de": "Ungeheuerlich!",
+                "fr": "Belles plantes"
             }
         },
         {
             "id": "61d81054-ecda-43b3-97cf-0aa28bf50689",
             "gameId": 1606,
             "name": {
-                "en": "Brought to Heal"
+                "en": "Brought to Heal",
+                "ja": "恩徳の術士たち",
+                "de": "Nächstenliebe, Nächstenhiebe",
+                "fr": "Miséricorde impériale"
             }
         },
         {
             "id": "5e939b57-0d71-4873-a245-efd5c58771aa",
             "gameId": 1602,
             "name": {
-                "en": "Can Carnivorous Plants Bloom Even on a Battlefield?"
+                "en": "Can Carnivorous Plants Bloom Even on a Battlefield?",
+                "ja": "野生生物を排除せよ",
+                "de": "Linientreue um jeden Preis",
+                "fr": "Des racines et des crocs"
             }
         },
         {
             "id": "aed4ca8d-d738-4fd2-b1bd-a979ca5e77a9",
             "gameId": 1605,
             "name": {
-                "en": "Conflicting with the First Law"
+                "en": "Conflicting with the First Law",
+                "ja": "労働十号破壊命令",
+                "de": "Schufter-10 wird verschrottet",
+                "fr": "Que des numéros dix"
             }
         },
         {
             "id": "a8b1b62b-8dfb-4a29-b94b-b6ffb88cc07f",
             "gameId": 1624,
             "name": {
-                "en": "Demonstrably Demonic"
+                "en": "Demonstrably Demonic",
+                "ja": "血の匂いに誘われて",
+                "de": "Der Geruch der Angst",
+                "fr": "Par l'hémoglobine alléchés"
             }
         },
         {
             "id": "eaca8809-5c77-42b9-897c-a1dc6637912c",
             "gameId": 1622,
             "name": {
-                "en": "Desperately Seeking Something"
+                "en": "Desperately Seeking Something",
+                "ja": "戦場の盗掘者",
+                "de": "... fällt selbst hinein",
+                "fr": "Ceux qui creusent"
             }
         },
         {
             "id": "dc9805d5-b5fe-46db-aa23-90911e68fe9c",
             "gameId": 1625,
             "name": {
-                "en": "For Absent Friends"
+                "en": "For Absent Friends",
+                "ja": "燃え上がる南方戦線",
+                "de": "Eine neue Unordnung",
+                "fr": "Miséricorde vengeresse"
             }
         },
         {
             "id": "cdf0fc28-c953-47e1-b326-e6d53e07bb9e",
             "gameId": 1612,
             "name": {
-                "en": "Heavy Boots of Lead"
+                "en": "Heavy Boots of Lead",
+                "ja": "魔導レイバー破壊命令",
+                "de": "Gewaltsame Arbeitsniederlegung",
+                "fr": "Force ouvrière"
             }
         },
         {
             "id": "f4aaadbc-8ea2-45ce-98e3-80987440150d",
             "gameId": 1615,
             "name": {
-                "en": "Help Wanted"
+                "en": "Help Wanted",
+                "ja": "術士大隊の猛攻",
+                "de": "Jedes Leben zählt",
+                "fr": "Résister ou mourir"
             }
         },
         {
             "id": "15ca1cde-8f29-4fe0-8853-c78b31191110",
             "gameId": 1620,
             "name": {
-                "en": "I'm a Mechanical Man"
+                "en": "I'm a Mechanical Man",
+                "ja": "魔導レイバーB型破壊命令",
+                "de": "Gewaltsame Arbeitsniederlegung - Plan B",
+                "fr": "Plan B"
             }
         },
         {
             "id": "dedf73a5-4ac6-4c75-b1db-792291bd032f",
             "gameId": 1627,
             "name": {
-                "en": "Let Slip the Dogs of War"
+                "en": "Let Slip the Dogs of War",
+                "ja": "戦場の犬を解き放て",
+                "de": "Vor die Hunde gekommen",
+                "fr": "Brigade canine"
             }
         },
         {
             "id": "462db7db-661d-45f2-92cc-368eac4115ce",
             "gameId": 1601,
             "name": {
-                "en": "More Machine Now than Man"
+                "en": "More Machine Now than Man",
+                "ja": "有人魔導兵器の迎撃",
+                "de": "Auf zum Gegenangriff",
+                "fr": "Machines aux trousses"
             }
         },
         {
             "id": "5367b9ac-80ec-48d1-a174-8de3b01edc2e",
             "gameId": 1621,
             "name": {
-                "en": "Murder Death Kill"
+                "en": "Murder Death Kill",
+                "ja": "強化兵部隊の襲撃",
+                "de": "Neu und besser",
+                "fr": "Des machines et des hommes"
             }
         },
         {
             "id": "cddedb9c-e41e-4f70-aa7d-22b3002ed621",
             "gameId": 1619,
             "name": {
-                "en": "My Family and Other Animals"
+                "en": "My Family and Other Animals",
+                "ja": "豚面の勧誘者",
+                "de": "Ein rüpelhaftes Großmaul",
+                "fr": "L'incorruptible"
             }
         },
         {
             "id": "3b2e4953-5e2f-4f05-a449-7d02553b57ff",
             "gameId": 1613,
             "name": {
-                "en": "No Camping Allowed"
+                "en": "No Camping Allowed",
+                "ja": "野営地への先制攻撃",
+                "de": "Unfreundlicher Besuch",
+                "fr": "Idéaux irréconciliables"
             }
         },
         {
             "id": "67d9a241-069d-4589-9093-90442fdc1b29",
             "gameId": 1598,
             "name": {
-                "en": "None of Them Knew They Were Robots"
+                "en": "None of Them Knew They Were Robots",
+                "ja": "無人魔導兵器との会敵",
+                "de": "Nichts als Schrott",
+                "fr": "Les araignées de fer"
             }
         },
         {
             "id": "c73e190d-ee1d-4d75-beb1-9cb5c1b5aa36",
             "gameId": 1626,
             "name": {
-                "en": "Of Steel and Flame"
+                "en": "Of Steel and Flame",
+                "ja": "続・燃え上がる南方戦線",
+                "de": "Auf und ab",
+                "fr": "Le fer et le feu"
             }
         },
         {
             "id": "19e151b2-465b-47b1-afad-52bd0acfd964",
             "gameId": 1610,
             "name": {
-                "en": "Parts and Recreation"
+                "en": "Parts and Recreation",
+                "ja": "敵新兵器を調査せよ",
+                "de": "Aufräumen im Dienst der Wissenschaft",
+                "fr": "La bataille de l'innovation"
             }
         },
         {
             "id": "1c92fcd5-aef0-4e74-aabc-3ed5914151a6",
             "gameId": 1616,
             "name": {
-                "en": "Pyromancer Supreme"
+                "en": "Pyromancer Supreme",
+                "ja": "最強のパイロマンサー",
+                "de": "Der stärkste aller Pyromanten",
+                "fr": "Duel brûlant"
             }
         },
         {
             "id": "0018b70d-993e-4f85-ab74-f25c8b6f981d",
             "gameId": 1608,
             "name": {
-                "en": "Red (Chocobo) Alert"
+                "en": "Red (Chocobo) Alert",
+                "ja": "豚面と赤い馬鳥",
+                "de": "Großes Federlassen",
+                "fr": "Quand les chocobos voient rouge"
             }
         },
         {
             "id": "1b099cfa-c4e9-44a2-a466-f2b227e8cee6",
             "gameId": 1614,
             "name": {
-                "en": "Scavengers of Man's Sorrow"
+                "en": "Scavengers of Man's Sorrow",
+                "ja": "魂喰いの妖異たち",
+                "de": "Zurück ins Nichts",
+                "fr": "Les dévoreurs d'âmes"
             }
         },
         {
             "id": "fa2f27d8-6ec4-46ff-a9d0-e8ccce9b69b9",
             "gameId": 1603,
             "name": {
-                "en": "Seeq and Destroy"
+                "en": "Seeq and Destroy",
+                "ja": "豚面の魔獣使い",
+                "de": "Dem Rüpel seine Meute",
+                "fr": "Ménagerie guerrière"
             }
         },
         {
             "id": "2f750d52-3cfa-4aaa-aaec-5faeb101b1cc",
             "gameId": 1597,
             "name": {
-                "en": "Sneak & Spell"
+                "en": "Sneak & Spell",
+                "ja": "術士大隊との会敵",
+                "de": "Taktisches Gemetzel",
+                "fr": "Les yeux de l'ennemi"
             }
         },
         {
             "id": "e8bbf99c-1e4f-49e3-90ab-23676c17961a",
             "gameId": 1623,
             "name": {
-                "en": "Supplies Party"
+                "en": "Supplies Party",
+                "ja": "補給物資強奪作戦",
+                "de": "Deins wird meins",
+                "fr": "Casser la voie"
             }
         },
         {
             "id": "f4952a9b-c3a0-4d80-9a86-bf59c7bf7d9e",
             "gameId": 1599,
             "name": {
-                "en": "The Beasts Must Die"
+                "en": "The Beasts Must Die",
+                "ja": "忠犬との遭遇",
+                "de": "Husch, ins Körbchen!",
+                "fr": "Museler le Chien"
             }
         },
         {
             "id": "616aab36-fe71-4b40-8523-aca9d4229059",
             "gameId": 1611,
             "name": {
-                "en": "The Element of Supplies"
+                "en": "The Element of Supplies",
+                "ja": "整備場奇襲作戦",
+                "de": "Verhinderte Wartung",
+                "fr": "Couper les vivres"
             }
         },
         {
             "id": "b259384d-30fa-4828-a194-21e8fe49128c",
             "gameId": 1607,
             "name": {
-                "en": "The Monster Mash"
+                "en": "The Monster Mash",
+                "ja": "忠犬の逆襲",
+                "de": "Rache ist Blutwurst",
+                "fr": "Le retour du chien fidèle"
             }
         },
         {
             "id": "b9c2d65f-03a1-4cb1-ad9a-3526cd13a795",
             "gameId": 1628,
             "name": {
-                "en": "The War Against the Machines"
+                "en": "The War Against the Machines",
+                "ja": "シシニアスの実験場",
+                "de": "Ende Gelände",
+                "fr": "Cent mille guerriers de métal"
             }
         },
         {
             "id": "b6aa7609-b738-479b-9569-9dc25e9a79c7",
             "gameId": 1618,
             "name": {
-                "en": "The Wild Bunch"
+                "en": "The Wild Bunch",
+                "ja": "暴走魔獣の排除",
+                "de": "Revierkämpfe",
+                "fr": "Sans maîtres ni loi"
             }
         },
         {
             "id": "e728e8af-d2f9-4fbc-a31e-eb3d58401bb3",
             "gameId": 1609,
             "name": {
-                "en": "Unicorn Flakes"
+                "en": "Unicorn Flakes",
+                "ja": "潔白の脱走兵",
+                "de": "Llofii die Ausgebüxte",
+                "fr": "La licorne des plaines"
             }
         },
         {
             "id": "ea318bb8-c9a5-4724-8f14-ea08bb926917",
             "gameId": 1600,
             "name": {
-                "en": "Unrest for the Wicked"
+                "en": "Unrest for the Wicked",
+                "ja": "術士大隊への奇襲",
+                "de": "Wer rastet, der blutet",
+                "fr": "Pas de quartier"
             }
         },
         {
             "id": "5fd24dea-3ee7-45a5-8afd-0469768f09e5",
             "gameId": 1617,
             "name": {
-                "en": "Waste the Rainbow"
+                "en": "Waste the Rainbow",
+                "ja": "華麗なるお気に入り",
+                "de": "Das Ende einer schillernden Karriere",
+                "fr": "De toutes les couleurs"
             }
         }
     ],
@@ -617,112 +878,160 @@
             "id": "130a7abb-8e62-4f4b-8e69-9c1e97cd4f74",
             "gameId": 4,
             "name": {
-                "en": "Aces High"
+                "en": "Aces High",
+                "ja": "新型飛行型魔導アーマー「ガブリエル」",
+                "de": "Gabriel, die stählerne Schwinge",
+                "fr": "Force divine"
             }
         },
         {
             "id": "127273f3-ea57-479f-8fb0-ee6c6585a5e3",
             "gameId": 12,
             "name": {
-                "en": "And the Flames Went Higher"
+                "en": "And the Flames Went Higher",
+                "ja": "老練の魔道士「鉄火のサルトヴォアール」",
+                "de": "Sartauvoir Eisenfeuer",
+                "fr": "L'envol du phénix"
             }
         },
         {
             "id": "e417084b-1a6c-45bd-a4f3-0a26580f6a95",
             "gameId": 8,
             "name": {
-                "en": "Beast of Man"
+                "en": "Beast of Man",
+                "ja": "百獣使い「獣王ライアン」",
+                "de": "Lyon der Bestienkönig",
+                "fr": "Le Roi bestial"
             }
         },
         {
             "id": "27641649-1e6d-4db5-a9e1-1a0814a430b9",
             "gameId": 1,
             "name": {
-                "en": "Kill It with Fire"
+                "en": "Kill It with Fire",
+                "ja": "腐乱野菜「ピーリフール」",
+                "de": "Peeriefool, das faule Gemüse",
+                "fr": "Grandeur et pestilence"
             }
         },
         {
             "id": "840f7793-4093-4bc5-a3ff-4e5500c32b46",
             "gameId": 13,
             "name": {
-                "en": "Metal Fox Chaos"
+                "en": "Metal Fox Chaos",
+                "ja": "鋼鉄の魔獣「ダーインスレイヴ」",
+                "de": "Dáinsleif, Bestie aus Eisen",
+                "fr": "Le guerrier de métal"
             }
         },
         {
             "id": "06ff970f-0d9c-48ae-89af-71438c561240",
             "gameId": 10,
             "name": {
-                "en": "Patriot Games"
+                "en": "Patriot Games",
+                "ja": "拠点防衛魔導兵器「パトリオット」",
+                "de": "Verteidigungsmaschine Patriot",
+                "fr": "Les fusils du patriote"
             }
         },
         {
             "id": "dfa27d49-432d-4c22-a4bc-19db7d055e75",
             "gameId": 14,
             "name": {
-                "en": "Rise of the Robots"
+                "en": "Rise of the Robots",
+                "ja": "新たなる鉄巨人「魔導レイバーX型」",
+                "de": "Im Schatten von Modell X",
+                "fr": "Le soulèvement des machines"
             }
         },
         {
             "id": "99691e62-0eb6-473b-860a-c936dfeb4f3f",
             "gameId": 16,
             "name": {
-                "en": "The Battle of Castrum Lacus Litore"
+                "en": "The Battle of Castrum Lacus Litore",
+                "ja": "カストルム・ラクスリトレ攻城戦",
+                "de": "Sturm auf Castrum Lacus Litore",
+                "fr": "Assaut sur Castrum Lacus Litore"
             }
         },
         {
             "id": "0ebcbb09-ebf8-4284-9d14-18823d0c0c64",
             "gameId": 2,
             "name": {
-                "en": "The Baying of the Hound(s)"
+                "en": "The Baying of the Hound(s)",
+                "ja": "戦争の妖犬「カニスディルス」",
+                "de": "Die drei Mäuler des Canis dirus",
+                "fr": "Le chien des enfers"
             }
         },
         {
             "id": "7b8e094d-df1f-4fb0-9001-6eb204c3e4d1",
             "gameId": 6,
             "name": {
-                "en": "The Final Furlong"
+                "en": "The Final Furlong",
+                "ja": "怨念の死霊「スパルトイ」",
+                "de": "Spartoi der Gefürchtete",
+                "fr": "Menace spectrale"
             }
         },
         {
             "id": "5232f812-cc5e-4935-b0b6-b6b117ba6a73",
             "gameId": 9,
             "name": {
-                "en": "The Fires of War"
+                "en": "The Fires of War",
+                "ja": "炎獣使い「火焔百人隊」",
+                "de": "Die Flammenden Hundert",
+                "fr": "Brasier de guerre"
             }
         },
         {
             "id": "ce498017-206e-4f77-8758-cff0c52994f0",
             "gameId": 7,
             "name": {
-                "en": "The Hunt for Red Choctober"
+                "en": "The Hunt for Red Choctober",
+                "ja": "赤チョコボのヌシ「レッドコメット」",
+                "de": "Der Rote Meteor und seine Meute",
+                "fr": "Une ruée en rouge"
             }
         },
         {
             "id": "38f32229-7608-4b8c-844e-efa2d7b20900",
             "gameId": 5,
             "name": {
-                "en": "The Shadow of Death's Hand"
+                "en": "The Shadow of Death's Hand",
+                "ja": "黒き死鳥「アクババ」",
+                "de": "Akbaba, Tod von oben",
+                "fr": "Les ailes noires de la mort"
             }
         },
         {
             "id": "57bb5704-ae56-4923-afe9-aaa341a4d940",
             "gameId": 11,
             "name": {
-                "en": "Trampled under Hoof"
+                "en": "Trampled under Hoof",
+                "ja": "邪眼の妖獣「エアレー」",
+                "de": "Die bösen Blicke der Eale",
+                "fr": "L'œil du malin"
             }
         },
         {
             "id": "377ec88a-8abd-4885-8fab-dceeb49d12c1",
             "gameId": 3,
             "name": {
-                "en": "Vigil for the Lost"
+                "en": "Vigil for the Lost",
+                "ja": "高火力陸戦魔導兵器「ヴィジル」",
+                "de": "Vigil, Feuerkraft hoch zehn",
+                "fr": "Vigile de feu"
             }
         },
         {
             "id": "df65db20-b0c9-4956-a00a-734fe9c4d7ad",
             "gameId": 15,
             "name": {
-                "en": "Where Strode the Behemoth"
+                "en": "Where Strode the Behemoth",
+                "ja": "戦慄の角「チルヴニク」",
+                "de": "Der untote Chlevnik",
+                "fr": "Le mastodonte enragé"
             }
         }
     ],
@@ -731,28 +1040,40 @@
             "id": "208c5a05-708a-47ff-abff-8fea1312cb17",
             "gameId": 3575,
             "name": {
-                "en": "Camp Steva"
+                "en": "Camp Steva",
+                "ja": "ステヴァ野営地",
+                "de": "Steva-Feldposten",
+                "fr": "Campement de Steva"
             }
         },
         {
             "id": "ea912d3d-831b-4cc0-9314-3b2904ba20b1",
             "gameId": 3531,
             "name": {
-                "en": "Lunya's Stand"
+                "en": "Lunya's Stand",
+                "ja": "ルンヤ陣地",
+                "de": "Lunya-Trutz",
+                "fr": "Camp avancé de Lunya"
             }
         },
         {
             "id": "2ce17378-d1e2-4954-a742-4d702342aebb",
             "gameId": 3530,
             "name": {
-                "en": "Olana's Stand"
+                "en": "Olana's Stand",
+                "ja": "オランタ陣地",
+                "de": "Olana-Trutz",
+                "fr": "Camp avancé d'Olana"
             }
         },
         {
             "id": "8dec54f3-8913-4d70-80f2-94378c70a459",
             "gameId": 3529,
             "name": {
-                "en": "Utya's Aegis"
+                "en": "Utya's Aegis",
+                "ja": "ウトヤ前哨地",
+                "de": "Utya-Gemarkung",
+                "fr": "Avant-poste d'Utya"
             }
         }
     ]

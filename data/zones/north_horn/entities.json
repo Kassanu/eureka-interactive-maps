@@ -4,420 +4,600 @@
             "id": "c79338e1-f4f4-4c4d-8ba7-c43ba3b28774",
             "gameId": 14904,
             "name": {
-                "en": "Bird of the Crescent"
+                "en": "Bird of the Crescent",
+                "ja": "バード・オブ・クレセント",
+                "de": "Kreszentia-Vogel",
+                "fr": "Oiseau de Lunule"
             }
         },
         {
             "id": "d6b7e808-726c-496d-8a4c-2c892c019889",
             "gameId": 14903,
             "name": {
-                "en": "Crescent Accursed"
+                "en": "Crescent Accursed",
+                "ja": "クレセント・アカースド",
+                "de": "Kreszentia-Fluchträger",
+                "fr": "Damné de Lunule"
             }
         },
         {
             "id": "e1a963c2-05cc-4d67-abf2-c629386e71ec",
             "gameId": 14889,
             "name": {
-                "en": "Crescent Adamantoise"
+                "en": "Crescent Adamantoise",
+                "ja": "クレセント・アダマンタス",
+                "de": "Kreszentia-Adaman-Taimai",
+                "fr": "Adamankhélone de Lunule"
             }
         },
         {
             "id": "b427e590-95ab-4c7d-9dba-ab44689567a1",
             "gameId": 14905,
             "name": {
-                "en": "Crescent Anila"
+                "en": "Crescent Anila",
+                "ja": "クレセント・アニラ",
+                "de": "Kreszentia-Anila",
+                "fr": "Anila de Lunule"
             }
         },
         {
             "id": "ea57899a-130f-48aa-8170-1ef766560f3e",
             "gameId": 14907,
             "name": {
-                "en": "Crescent Arioch"
+                "en": "Crescent Arioch",
+                "ja": "クレセント・アリオク",
+                "de": "Kreszentia-Arioch",
+                "fr": "Arioch de Lunule"
             }
         },
         {
             "id": "fc1ec7a1-3e47-456d-a6fe-31aee33d07c4",
             "gameId": 14895,
             "name": {
-                "en": "Crescent Banemite"
+                "en": "Crescent Banemite",
+                "ja": "クレセント・ベーンマイト",
+                "de": "Kreszentia-Terrormilbe",
+                "fr": "Sarcopte de Lunule"
             }
         },
         {
             "id": "2142e094-4cb4-478e-b0b8-09e0784521bb",
             "gameId": 14869,
             "name": {
-                "en": "Crescent Belladonna"
+                "en": "Crescent Belladonna",
+                "ja": "クレセント・ベラドンナ",
+                "de": "Kreszentia-Belladonna",
+                "fr": "Belladone de Lunule"
             }
         },
         {
             "id": "5f10f8b2-42a2-4471-bd71-9ccbb1425f96",
             "gameId": 14860,
             "name": {
-                "en": "Crescent Bibliotaph"
+                "en": "Crescent Bibliotaph",
+                "ja": "クレセント・ビブリオタフ",
+                "de": "Kreszentia-Bibliotaph",
+                "fr": "Bibliotaphe de Lunule"
             }
         },
         {
             "id": "ce844e12-1659-48c6-80a8-616641b408f7",
             "gameId": 14887,
             "name": {
-                "en": "Crescent Big Horn"
+                "en": "Crescent Big Horn",
+                "ja": "クレセント・ビッグホーン",
+                "de": "Kreszentia-Großhorn",
+                "fr": "Encorné de Lunule"
             }
         },
         {
             "id": "9757c8e6-868d-4a84-8105-37e6e184063f",
             "gameId": 14877,
             "name": {
-                "en": "Crescent Bile"
+                "en": "Crescent Bile",
+                "ja": "クレセント・バイル",
+                "de": "Kreszentia-Galle",
+                "fr": "Bile de Lunule"
             }
         },
         {
             "id": "e8bf1944-448b-446c-b165-9a045c64c031",
             "gameId": 13898,
             "name": {
-                "en": "Crescent Blackguard"
+                "en": "Crescent Blackguard",
+                "ja": "クレセント・ブラックガード",
+                "de": "Kreszentia-Düsterwächter",
+                "fr": "Garde noir de Lunule"
             }
         },
         {
             "id": "6e44f95b-2442-456a-827d-9e83668e58d5",
             "gameId": 14914,
             "name": {
-                "en": "Crescent Bombadeel"
+                "en": "Crescent Bombadeel",
+                "ja": "クレセント・ボンバディール",
+                "de": "Kreszentia-Bombadeel",
+                "fr": "Bombadeel de Lunule"
             }
         },
         {
             "id": "b7a283e2-bf56-4efc-b067-b42ec3f3bf39",
             "gameId": 14909,
             "name": {
-                "en": "Crescent Carrier"
+                "en": "Crescent Carrier",
+                "ja": "クレセント・キャリアー",
+                "de": "Kreszentia-Träger",
+                "fr": "Transporteur de Lunule"
             }
         },
         {
             "id": "03354616-c55e-46ef-8e35-efe14b3957be",
             "gameId": 14862,
             "name": {
-                "en": "Crescent Cingulata"
+                "en": "Crescent Cingulata",
+                "ja": "クレセント・シングラータ",
+                "de": "Kreszentia-Gürteltier",
+                "fr": "Tatou de Lunule"
             }
         },
         {
             "id": "044a8fd5-86d3-444d-8540-7da1404582f2",
             "gameId": 14857,
             "name": {
-                "en": "Crescent Cliffkite"
+                "en": "Crescent Cliffkite",
+                "ja": "クレセント・クリフカイト",
+                "de": "Kreszentia-Gratgleiter",
+                "fr": "Milan des falaises de Lunule"
             }
         },
         {
             "id": "977a064e-b6f9-4d1d-aa7d-1176a80c66d6",
             "gameId": 14882,
             "name": {
-                "en": "Crescent Coeurl"
+                "en": "Crescent Coeurl",
+                "ja": "クレセント・クァール",
+                "de": "Kreszentia-Coeurl",
+                "fr": "Coeurl de Lunule"
             }
         },
         {
             "id": "c8ea7416-680c-4eca-8acc-4fed914db745",
             "gameId": 14900,
             "name": {
-                "en": "Crescent Craklaw"
+                "en": "Crescent Craklaw",
+                "ja": "クレセント・クラックロー",
+                "de": "Kreszentia-Kraklaw",
+                "fr": "Craqulov de Lunule"
             }
         },
         {
             "id": "57148707-5cb9-43f5-ac53-bf44431436fb",
             "gameId": 14859,
             "name": {
-                "en": "Crescent Dhara"
+                "en": "Crescent Dhara",
+                "ja": "クレセント・ダラ",
+                "de": "Kreszentia-Dhara",
+                "fr": "Dhara de Lunule"
             }
         },
         {
             "id": "75833a6a-c9da-41c6-b021-c12d77b86d5b",
             "gameId": 14879,
             "name": {
-                "en": "Crescent Elftoad"
+                "en": "Crescent Elftoad",
+                "ja": "クレセント・エルフトード",
+                "de": "Kreszentia-Elfenkröte",
+                "fr": "Crapaud elfique de Lunule"
             }
         },
         {
             "id": "41f9fb72-3928-439a-ba0e-cf02c9b8efaa",
             "gameId": 13930,
             "name": {
-                "en": "Crescent Flame"
+                "en": "Crescent Flame",
+                "ja": "クレセント・ホワイトフレイム",
+                "de": "Weiße Kreszentia-Flamme",
+                "fr": "Flamme blanche de Lunule"
             }
         },
         {
             "id": "a3b6391a-f40e-4d64-954b-9b349c8488fc",
             "gameId": 14899,
             "name": {
-                "en": "Crescent Gargoyle"
+                "en": "Crescent Gargoyle",
+                "ja": "クレセント・ガーゴイル",
+                "de": "Kreszentia-Gargoyle",
+                "fr": "Gargouille de Lunule"
             }
         },
         {
             "id": "8a1977e8-7f8b-4b70-b3e2-59a38c085a56",
             "gameId": 14883,
             "name": {
-                "en": "Crescent Gazellehawk"
+                "en": "Crescent Gazellehawk",
+                "ja": "クレセント・ガゼルホーク",
+                "de": "Kreszentia-Gazellenfalke",
+                "fr": "Frelon gazelle de Lunule"
             }
         },
         {
             "id": "91bcd2e2-c09b-48bf-a499-d6b47ee2b0f3",
             "gameId": 14771,
             "name": {
-                "en": "Crescent Gremlin"
+                "en": "Crescent Gremlin",
+                "ja": "クレセント・グレムリン",
+                "de": "Kreszentia-Gremlin",
+                "fr": "Gremlin de Lunule"
             }
         },
         {
             "id": "82c0f555-e9b9-42a9-ac7d-6d7fa10988c7",
             "gameId": 14913,
             "name": {
-                "en": "Crescent Gusion"
+                "en": "Crescent Gusion",
+                "ja": "クレセント・グシオン",
+                "de": "Kreszentia-Gusion",
+                "fr": "Gusion de Lunule"
             }
         },
         {
             "id": "679fe168-40cd-429a-bc34-a4f647e35d86",
             "gameId": 14884,
             "name": {
-                "en": "Crescent Harpeia"
+                "en": "Crescent Harpeia",
+                "ja": "クレセント・ハルペイア",
+                "de": "Kreszentia-Harpeia",
+                "fr": "Harpie de Lunule"
             }
         },
         {
             "id": "3bd7d0f3-12fb-4782-aa04-6d96481eff68",
             "gameId": 14901,
             "name": {
-                "en": "Crescent Haunt"
+                "en": "Crescent Haunt",
+                "ja": "クレセント・ハウント",
+                "de": "Kreszentia-Spuk",
+                "fr": "Tourmenteur de Lunule"
             }
         },
         {
             "id": "ec444d53-d64f-47b6-8a86-c0b3931548c8",
             "gameId": 14897,
             "name": {
-                "en": "Crescent Hellhound"
+                "en": "Crescent Hellhound",
+                "ja": "クレセント・ヘルハウンド",
+                "de": "Kreszentia-Höllenhund",
+                "fr": "Limier de Lunule"
             }
         },
         {
             "id": "12739b12-4fef-43a8-93a9-00d4d306a500",
             "gameId": 14876,
             "name": {
-                "en": "Crescent Huwasi"
+                "en": "Crescent Huwasi",
+                "ja": "クレセント・フワシ",
+                "de": "Kreszentia-Huwasi",
+                "fr": "Huwasi de Lunule"
             }
         },
         {
             "id": "e53dfade-1019-4a61-a23c-f7b7aa9a4a6a",
             "gameId": 14911,
             "name": {
-                "en": "Crescent Jester"
+                "en": "Crescent Jester",
+                "ja": "クレセント・ジェスター",
+                "de": "Kreszentia-Gaukler",
+                "fr": "Bouffon de Lunule"
             }
         },
         {
             "id": "1c0f9d82-6802-4732-8e56-1ba93c5fa774",
             "gameId": 14885,
             "name": {
-                "en": "Crescent Kaluk"
+                "en": "Crescent Kaluk",
+                "ja": "クレセント・カルク",
+                "de": "Kreszentia-Kaluk",
+                "fr": "Kaluk de Lunule"
             }
         },
         {
             "id": "37464d3d-e6d2-4eff-969a-e8d3e4f49b5a",
             "gameId": 14880,
             "name": {
-                "en": "Crescent Kargas"
+                "en": "Crescent Kargas",
+                "ja": "クレセント・カルガス",
+                "de": "Kreszentia-Kargas",
+                "fr": "Kargas de Lunule"
             }
         },
         {
             "id": "7699c754-1661-4800-a0b2-ec4802487f5f",
             "gameId": 14872,
             "name": {
-                "en": "Crescent Lorelei"
+                "en": "Crescent Lorelei",
+                "ja": "クレセント・ローレライ",
+                "de": "Kreszentia-Loreley",
+                "fr": "Lorelei de Lunule"
             }
         },
         {
             "id": "09d3b835-9cd2-4105-9886-3adfb62258d4",
             "gameId": 14878,
             "name": {
-                "en": "Crescent Medusa"
+                "en": "Crescent Medusa",
+                "ja": "クレセント・メデューサ",
+                "de": "Kreszentia-Medusa",
+                "fr": "Méduse de Lunule"
             }
         },
         {
             "id": "9f9786f4-cf5f-4d19-b122-38fa2c37e93b",
             "gameId": 14871,
             "name": {
-                "en": "Crescent Melia"
+                "en": "Crescent Melia",
+                "ja": "クレセント・メリアエ",
+                "de": "Kreszentia-Meliade",
+                "fr": "Mélia de Lunule"
             }
         },
         {
             "id": "236257f0-4fe1-431a-95a9-9b0a098734d3",
             "gameId": 14894,
             "name": {
-                "en": "Crescent Moss Fungus"
+                "en": "Crescent Moss Fungus",
+                "ja": "クレセント・モスフングス",
+                "de": "Kreszentia-Moosfungus",
+                "fr": "Mycose moisie de Lunule"
             }
         },
         {
             "id": "9431437b-72f9-43bc-a6d5-9ea610589bff",
             "gameId": 14902,
             "name": {
-                "en": "Crescent Nanka"
+                "en": "Crescent Nanka",
+                "ja": "クレセント・ナンカ",
+                "de": "Kreszentia-Nanka",
+                "fr": "Nanka de Lunule"
             }
         },
         {
             "id": "71b11030-d058-4f40-8c2d-a6e80ba43f29",
             "gameId": 14910,
             "name": {
-                "en": "Crescent Oiseau Rare"
+                "en": "Crescent Oiseau Rare",
+                "ja": "クレセント・オワゾーラール",
+                "de": "Kreszentia-Leierschwanz",
+                "fr": "Oiseau rare de Lunule"
             }
         },
         {
             "id": "c929197e-29e2-4c66-b667-ab77299ce22b",
             "gameId": 14819,
             "name": {
-                "en": "Crescent Onion"
+                "en": "Crescent Onion",
+                "ja": "クレセント・オニオン",
+                "de": "Kreszentia-Zwiebel",
+                "fr": "Oignon de Lunule"
             }
         },
         {
             "id": "ca28d577-7add-4338-a379-327d775b2054",
             "gameId": 14868,
             "name": {
-                "en": "Crescent Opken"
+                "en": "Crescent Opken",
+                "ja": "クレセント・オプケン",
+                "de": "Kreszentia-Opken",
+                "fr": "Opken de Lunule"
             }
         },
         {
             "id": "177f9a0f-fce9-4ad3-8908-9c3418c89953",
             "gameId": 14898,
             "name": {
-                "en": "Crescent Parthenope"
+                "en": "Crescent Parthenope",
+                "ja": "クレセント・コムサベラ",
+                "de": "Kreszentia-Parthenope",
+                "fr": "Parthénope de Lunule"
             }
         },
         {
             "id": "8510273a-1277-4d0b-904b-9d18a6d4e5ba",
             "gameId": 14888,
             "name": {
-                "en": "Crescent Ratel"
+                "en": "Crescent Ratel",
+                "ja": "クレセント・ラーテル",
+                "de": "Kreszentia-Ratel",
+                "fr": "Ratel de Lunule"
             }
         },
         {
             "id": "5c039d06-4f57-46a8-af4a-fb805191ef22",
             "gameId": 14890,
             "name": {
-                "en": "Crescent Regolith"
+                "en": "Crescent Regolith",
+                "ja": "クレセント・レゴリス",
+                "de": "Kreszentia-Regolith",
+                "fr": "Régolithe de Lunule"
             }
         },
         {
             "id": "a7d25e05-040e-4e50-a549-91c2db19a20f",
             "gameId": 14891,
             "name": {
-                "en": "Crescent Rock"
+                "en": "Crescent Rock",
+                "ja": "クレセント・リビングロック",
+                "de": "Kreszentia-Stein",
+                "fr": "Rocher vivant de Lunule"
             }
         },
         {
             "id": "92b7e981-a5b4-4fd8-8528-0b956c64e6ef",
             "gameId": 14893,
             "name": {
-                "en": "Crescent Rot-eyes"
+                "en": "Crescent Rot-eyes",
+                "ja": "クレセント・ロットアイズ",
+                "de": "Kreszentia-Fäulauge",
+                "fr": "Sapioculus de Lunule"
             }
         },
         {
             "id": "c7c4caa4-5afe-48fc-a495-c6f907b061c7",
             "gameId": 14874,
             "name": {
-                "en": "Crescent Salt Swallow"
+                "en": "Crescent Salt Swallow",
+                "ja": "クレセント・ソルトスワロー",
+                "de": "Kreszentia-Salzschwalbe",
+                "fr": "Hirondelle de sel de Lunule"
             }
         },
         {
             "id": "8364b089-8663-4482-8bdc-51c70ab91fb6",
             "gameId": 14881,
             "name": {
-                "en": "Crescent Sand Serpent"
+                "en": "Crescent Sand Serpent",
+                "ja": "クレセント・サンドサーペント",
+                "de": "Kreszentia-Sandschlange",
+                "fr": "Serpent des sables de Lunule"
             }
         },
         {
             "id": "4d77fe7d-0b40-4225-b7cb-78c15a3028c5",
             "gameId": 14870,
             "name": {
-                "en": "Crescent Sapria"
+                "en": "Crescent Sapria",
+                "ja": "クレセント・サプリア",
+                "de": "Kreszentia-Sapria",
+                "fr": "Sapria de Lunule"
             }
         },
         {
             "id": "43643768-6f22-4c27-ad18-90f53589a729",
             "gameId": 14875,
             "name": {
-                "en": "Crescent Soblyn"
+                "en": "Crescent Soblyn",
+                "ja": "クレセント・ソブラン",
+                "de": "Kreszentia-Sobalos",
+                "fr": "Soblyn de Lunule"
             }
         },
         {
             "id": "3f05b611-0110-490c-956f-1a8c31cfffaf",
             "gameId": 14922,
             "name": {
-                "en": "Crescent Stoneshell"
+                "en": "Crescent Stoneshell",
+                "ja": "クレセント・ストーンシェル",
+                "de": "Kreszentia-Steinschale",
+                "fr": "Coquepierre de Lunule"
             }
         },
         {
             "id": "e67cd27f-e369-4775-8ca6-5296bc2c58a6",
             "gameId": 14912,
             "name": {
-                "en": "Crescent Succubus"
+                "en": "Crescent Succubus",
+                "ja": "クレセント・サキュバス",
+                "de": "Kreszentia-Sukkubus",
+                "fr": "Succube de Lunule"
             }
         },
         {
             "id": "a94c99a6-8041-4b4c-864a-366719c38d26",
             "gameId": 14818,
             "name": {
-                "en": "Crescent Tomato"
+                "en": "Crescent Tomato",
+                "ja": "クレセント・トマト",
+                "de": "Kreszentia-Tomate",
+                "fr": "Tomate de Lunule"
             }
         },
         {
             "id": "276b2861-25ea-4cf4-af7e-5deb2b222792",
             "gameId": 14858,
             "name": {
-                "en": "Crescent Urolith"
+                "en": "Crescent Urolith",
+                "ja": "クレセント・ウロリス",
+                "de": "Kreszentia-Urolith",
+                "fr": "Urolithe de Lunule"
             }
         },
         {
             "id": "1a3a5b25-e8b6-4df8-987c-89f1426ef24f",
             "gameId": 14867,
             "name": {
-                "en": "Crescent Vinegaroon"
+                "en": "Crescent Vinegaroon",
+                "ja": "クレセント・ビネガロン",
+                "de": "Kreszentia-Geißelskorpion",
+                "fr": "Vinaigrier de Lunule"
             }
         },
         {
             "id": "8d9de304-ca2a-4a10-aa20-099ac3fa3b49",
             "gameId": 14908,
             "name": {
-                "en": "Crescent Wamoura"
+                "en": "Crescent Wamoura",
+                "ja": "クレセント・ワモーラ",
+                "de": "Kreszentia-Wamoura",
+                "fr": "Wamoura de Lunule"
             }
         },
         {
             "id": "1b6eeaee-9730-4d0b-874a-75f2760abeb6",
             "gameId": 14861,
             "name": {
-                "en": "Crescent Weapon"
+                "en": "Crescent Weapon",
+                "ja": "クレセント・ウェポン",
+                "de": "Kreszentia-Waffe",
+                "fr": "Arme de Lunule"
             }
         },
         {
             "id": "c1eb12d0-2b60-4305-83e8-a3eba6858c8c",
             "gameId": 14886,
             "name": {
-                "en": "Crescent Woolback"
+                "en": "Crescent Woolback",
+                "ja": "クレセント・ウールバック",
+                "de": "Kreszentia-Wollrücken",
+                "fr": "Dos-laineux de Lunule"
             }
         },
         {
             "id": "b67ea2ae-53ca-42ac-bd95-c7b6284c8e12",
             "gameId": 14863,
             "name": {
-                "en": "Crescent Worm"
+                "en": "Crescent Worm",
+                "ja": "クレセント・ウォーム",
+                "de": "Kreszentia-Wurm",
+                "fr": "Ver de Lunule"
             }
         },
         {
             "id": "32e5ae17-1e98-4446-9328-0a4624583e76",
             "gameId": 14873,
             "name": {
-                "en": "Crescent Wraith"
+                "en": "Crescent Wraith",
+                "ja": "クレセント・レイス",
+                "de": "Kreszentia-Geist",
+                "fr": "Spectre de Lunule"
             }
         },
         {
             "id": "244cd807-a796-4a1d-98fb-c7d404d9bf19",
             "gameId": 13914,
             "name": {
-                "en": "Crescent Zirnitra"
+                "en": "Crescent Zirnitra",
+                "ja": "クレセント・ジルニトラ",
+                "de": "Kreszentia-Zirnitra",
+                "fr": "Zirnitra de Lunule"
             }
         },
         {
             "id": "3800dc0f-11c6-4ccb-ad53-889cf2d07528",
             "gameId": 14864,
             "name": {
-                "en": "Crescent Zu"
+                "en": "Crescent Zu",
+                "ja": "クレセント・ズー",
+                "de": "Kreszentia-Montisaurus",
+                "fr": "Zu de Lunule"
             }
         }
     ],
@@ -426,196 +606,280 @@
             "id": "c443e36b-47e1-485b-aae3-ec559c143d29",
             "gameId": 14505,
             "name": {
-                "en": "Abductor"
+                "en": "Abductor",
+                "ja": "アブダクター",
+                "de": "Abduktor",
+                "fr": "Ravisseur"
             }
         },
         {
             "id": "d44a4aa7-b386-4e9c-8ee2-8c516e88c33a",
             "gameId": 14509,
             "name": {
-                "en": "Alabaster Blade"
+                "en": "Alabaster Blade",
+                "ja": "アラバスターブレード",
+                "de": "Alabaster-Klinge",
+                "fr": "Lame d'albâtre"
             }
         },
         {
             "id": "b28010aa-bd60-4758-87d0-e4b3004765e4",
             "gameId": 14790,
             "name": {
-                "en": "Algol"
+                "en": "Algol",
+                "ja": "アルゴル",
+                "de": "Algol",
+                "fr": "Algol"
             }
         },
         {
             "id": "ac1e5a89-9aed-4a8c-9560-2322e72fe931",
             "gameId": 14520,
             "name": {
-                "en": "Arbatel"
+                "en": "Arbatel",
+                "ja": "アルバテル",
+                "de": "Arbatel",
+                "fr": "Arbatel"
             }
         },
         {
             "id": "a6d9d874-07f4-41c8-965a-e086f30f36fb",
             "gameId": 14728,
             "name": {
-                "en": "Arch Kelpie"
+                "en": "Arch Kelpie",
+                "ja": "アーチケルピー",
+                "de": "Erz-Kelpie",
+                "fr": "Arch-kelpie"
             }
         },
         {
             "id": "c1529c46-7422-4c2f-8cd0-af59c9247633",
             "gameId": 14791,
             "name": {
-                "en": "Atlas Carbuncle"
+                "en": "Atlas Carbuncle",
+                "ja": "アトラス・カーバンクル",
+                "de": "Atlas-Karfunkel",
+                "fr": "Carbuncle atlas"
             }
         },
         {
             "id": "2a969cc4-7fe5-4e27-a19c-7c160859f7fd",
             "gameId": 14787,
             "name": {
-                "en": "Claret Dragon"
+                "en": "Claret Dragon",
+                "ja": "ルブルムドラゴン",
+                "de": "Rubrum-Drache",
+                "fr": "Dragon rubrum"
             }
         },
         {
             "id": "95b08cf3-1e93-40ac-8aad-29a8c1ce7031",
             "gameId": 14517,
             "name": {
-                "en": "Conjured Calofisteri"
+                "en": "Conjured Calofisteri",
+                "ja": "カロフィステリ・ダブル",
+                "de": "Calofisteri-Doppelgängerin",
+                "fr": "Clone de Calofisteri"
             }
         },
         {
             "id": "d95b87a1-b05c-488e-bbca-1f0a339699a5",
             "gameId": 14840,
             "name": {
-                "en": "Crescent Arachne"
+                "en": "Crescent Arachne",
+                "ja": "クレセント・アルケニー",
+                "de": "Kreszentia-Arachne",
+                "fr": "Arachné de Lunule"
             }
         },
         {
             "id": "f70843d3-6665-41af-9276-17161be22720",
             "gameId": 14785,
             "name": {
-                "en": "Cresceregina"
+                "en": "Cresceregina",
+                "ja": "クレセントレギナ",
+                "de": "Kreszentia-Königin",
+                "fr": "Regina coeurl du Croissant"
             }
         },
         {
             "id": "df280199-2292-43cb-816f-37cdd167f79f",
             "gameId": 14772,
             "name": {
-                "en": "Crimson Gremlin"
+                "en": "Crimson Gremlin",
+                "ja": "クリムゾン・グレムリン",
+                "de": "Purpur-Gremlin",
+                "fr": "Gremlin cramoisi"
             }
         },
         {
             "id": "61314b25-2079-4e03-8e2f-c52d338f2a35",
             "gameId": 14736,
             "name": {
-                "en": "Demi-Medusa"
+                "en": "Demi-Medusa",
+                "ja": "デミメデューサ",
+                "de": "Demi-Medusa",
+                "fr": "Demi-méduse"
             }
         },
         {
             "id": "03ac45f1-8b35-4aae-861e-1a45ca872047",
             "gameId": 14508,
             "name": {
-                "en": "Elm Gigas"
+                "en": "Elm Gigas",
+                "ja": "エルムギガース",
+                "de": "Elm-Gigas",
+                "fr": "Gigas d'orme"
             }
         },
         {
             "id": "67073a78-7091-4427-bd39-1bbda343f126",
             "gameId": 14726,
             "name": {
-                "en": "Evil-seer"
+                "en": "Evil-seer",
+                "ja": "イビルシーア",
+                "de": "Schreckensseher",
+                "fr": "Voyant maléfique"
             }
         },
         {
             "id": "cf6339e4-73fb-410b-a006-851c86942d1e",
             "gameId": 14775,
             "name": {
-                "en": "Greater Fan"
+                "en": "Greater Fan",
+                "ja": "グレート・ファン",
+                "de": "Großer Ventilator",
+                "fr": "Grand ventilateur"
             }
         },
         {
             "id": "a9a81895-30eb-4faa-b06e-802fbf6a0fa3",
             "gameId": 14765,
             "name": {
-                "en": "Iambe"
+                "en": "Iambe",
+                "ja": "イアムベー",
+                "de": "Iambe",
+                "fr": "Iambé"
             }
         },
         {
             "id": "00c37c0c-068d-41b8-a43f-433d9587bcc8",
             "gameId": 14735,
             "name": {
-                "en": "Machetaur"
+                "en": "Machetaur",
+                "ja": "ミノタウロス・マキア",
+                "de": "Minotaurus-Machia",
+                "fr": "Makhiataure"
             }
         },
         {
             "id": "4105fca5-5254-42d9-b08c-8a600b419096",
             "gameId": 14801,
             "name": {
-                "en": "Metamorph"
+                "en": "Metamorph",
+                "ja": "メタモルファ",
+                "de": "Metamorpha",
+                "fr": "Métamorphe"
             }
         },
         {
             "id": "a81e0a67-0e41-4375-a123-6cccad7ed19c",
             "gameId": 14714,
             "name": {
-                "en": "Pallmagia"
+                "en": "Pallmagia",
+                "ja": "ペイルマギア",
+                "de": "Bleicher Magia",
+                "fr": "Palimagia"
             }
         },
         {
             "id": "8e4c0c55-2fc1-467b-b0d1-224c9ac8ce69",
             "gameId": 14764,
             "name": {
-                "en": "Patient Kuribu"
+                "en": "Patient Kuribu",
+                "ja": "ペイシェント・クリブ",
+                "de": "Geduldige Kuribu",
+                "fr": "Kuribu patiente"
             }
         },
         {
             "id": "c0e51dfd-feb6-47ee-b00e-471c75a188ac",
             "gameId": 14747,
             "name": {
-                "en": "Pelekys"
+                "en": "Pelekys",
+                "ja": "ペレキュス",
+                "de": "Pelekos",
+                "fr": "Pélekus"
             }
         },
         {
             "id": "f2332fb0-faa1-4833-80de-73f9a2b5dc49",
             "gameId": 14523,
             "name": {
-                "en": "Phantom Hydra"
+                "en": "Phantom Hydra",
+                "ja": "マギ・ヒュドラ",
+                "de": "Kreszente Hydra",
+                "fr": "Hydre magi"
             }
         },
         {
             "id": "a187ce21-e319-4d39-94a9-5fc66d2649aa",
             "gameId": 14512,
             "name": {
-                "en": "Phantom Necromancer"
+                "en": "Phantom Necromancer",
+                "ja": "マギ・ネクロマンサー",
+                "de": "Kreszenter Nekromant",
+                "fr": "Nécromancien magi"
             }
         },
         {
             "id": "850ebfda-ef45-4a45-ac3e-175b80e90ea7",
             "gameId": 14767,
             "name": {
-                "en": "Regnant Chimera"
+                "en": "Regnant Chimera",
+                "ja": "レグナントキマイラ",
+                "de": "Herrscher-Chimäre",
+                "fr": "Chimère souveraine"
             }
         },
         {
             "id": "b398fa47-5afe-4aaa-b9c7-42c72d059a99",
             "gameId": 14762,
             "name": {
-                "en": "Ruin Hound"
+                "en": "Ruin Hound",
+                "ja": "ルーインハウンド",
+                "de": "Ruinen-Bluthund",
+                "fr": "Limier de la désolation"
             }
         },
         {
             "id": "5305166d-3ced-408a-95f2-860600e91efa",
             "gameId": 14738,
             "name": {
-                "en": "Sensual Sandy"
+                "en": "Sensual Sandy",
+                "ja": "センシュアル・サンディ",
+                "de": "Sinnliche Sandy",
+                "fr": "Sandy la sulfureuse"
             }
         },
         {
             "id": "f59af78d-9901-4841-865e-8b3c0e603b31",
             "gameId": 14776,
             "name": {
-                "en": "Stormcaller"
+                "en": "Stormcaller",
+                "ja": "ストームコーラー",
+                "de": "Sturmbeschwörer",
+                "fr": "Déchaîneur de tempêtes"
             }
         },
         {
             "id": "e4632731-b22b-43e4-b46c-753ae7f8d77f",
             "gameId": 14795,
             "name": {
-                "en": "Tiny Mage"
+                "en": "Tiny Mage",
+                "ja": "タイニーメイジ",
+                "de": "Winziger Magier",
+                "fr": "Petit mage"
             }
         }
     ],
@@ -624,91 +888,130 @@
             "id": "bd0f1a2c-3ff9-4542-a206-95f959f27a19",
             "gameId": 2081,
             "name": {
-                "en": "A Rotten Affair"
+                "en": "A Rotten Affair",
+                "ja": "腐都の守護者「ペイシェント・クリブ」",
+                "de": "Die ewige Wächterin",
+                "fr": "Défi : pas de patience pour la pourriture"
             }
         },
         {
             "id": "49eee442-c676-4a04-9d14-9d66eb89e4c0",
             "gameId": 2078,
             "name": {
-                "en": "Allure of the Occult"
+                "en": "Allure of the Occult",
+                "ja": "ため息モルボル「センシュアル・サンディ」",
+                "de": "Auf den Atem kommt es an",
+                "fr": "Défi : je t'aime... moi non plus"
             }
         },
         {
             "id": "ba0b76d1-d72a-45c4-8eb2-94c863a67b32",
             "gameId": 2072,
             "name": {
-                "en": "Daylight Pottery"
+                "en": "Daylight Pottery",
+                "ja": "隠されのマジックポット",
+                "de": "Versteckt im Pott",
+                "fr": "Cache-cache avec le pot"
             }
         },
         {
             "id": "2cd5b181-5b13-4a3f-bf5c-d2f4be0d0c39",
             "gameId": 2075,
             "name": {
-                "en": "Eye to Eye"
+                "en": "Eye to Eye",
+                "ja": "呪いの宝珠「イビルシーア」",
+                "de": "Auge um Auge",
+                "fr": "Défi : voyant malveillant"
             }
         },
         {
             "id": "42f519cc-f583-4b25-9185-326700fbdfab",
             "gameId": 2082,
             "name": {
-                "en": "Gale-force Encounter"
+                "en": "Gale-force Encounter",
+                "ja": "暴風の操者「ストームコーラー」",
+                "de": "Stürmischer Empfang",
+                "fr": "Défi : autant en emporte la tempête"
             }
         },
         {
             "id": "64b65f76-5787-41ac-9aca-69a23ab70674",
             "gameId": 2073,
             "name": {
-                "en": "In a Pot of Bother"
+                "en": "In a Pot of Bother",
+                "ja": "飛ばされのマジックポット",
+                "de": "Wind im Pott",
+                "fr": "Se prendre un vent, c'est pas de pot"
             }
         },
         {
             "id": "77f87fec-ca2c-4c9e-a2cf-46cd5f3955f8",
             "gameId": 2079,
             "name": {
-                "en": "Inconstant Gardener"
+                "en": "Inconstant Gardener",
+                "ja": "自滅の歌い手「イアムベー」",
+                "de": "Sing mir das Lied vom Tod",
+                "fr": "Défi : la diva destructrice"
             }
         },
         {
             "id": "ff14963a-e818-4864-ad69-2c700add4a05",
             "gameId": 2074,
             "name": {
-                "en": "Raging Thrall"
+                "en": "Raging Thrall",
+                "ja": "暴力の牛魔「ミノタウロス・マキア」",
+                "de": "Mit Kraft und Keule",
+                "fr": "Défi : quand le dopage fait des ravages"
             }
         },
         {
             "id": "55556c93-2b89-4840-b18c-d62c46368bf6",
             "gameId": 2083,
             "name": {
-                "en": "Scale Model"
+                "en": "Scale Model",
+                "ja": "模造の蛇人形「デミメデューサ」",
+                "de": "Stein zu Stein",
+                "fr": "Défi : rideau sur la méduse"
             }
         },
         {
             "id": "3b8f3c77-af6c-4f09-b690-0bb6c82b609f",
             "gameId": 2076,
             "name": {
-                "en": "Shoreline Showdown"
+                "en": "Shoreline Showdown",
+                "ja": "水辺の暴君「レグナントキマイラ」",
+                "de": "Wassertyrannei",
+                "fr": "Défi : chasse gardée"
             }
         },
         {
             "id": "cc16c643-17ae-48c1-be8c-660440058342",
             "gameId": 2080,
             "name": {
-                "en": "Territorial Dispute"
+                "en": "Territorial Dispute",
+                "ja": "遺跡荒らしの氷狼「ルーインハウンド」",
+                "de": "Der Hund von Kreszentia",
+                "fr": "Défi : un froid de loup"
             }
         },
         {
             "id": "b31e1eca-e47b-4517-b4d4-89ffaeb45ecd",
             "gameId": 2084,
             "name": {
-                "en": "Thunderregnum"
+                "en": "Thunderregnum",
+                "ja": "気高き雷獣「クレセントレギナ」",
+                "de": "Königliche Arroganz",
+                "fr": "Défi : la reine des coeurls brisés"
             }
         },
         {
             "id": "6ed44eee-3444-4638-9f98-83ef6e21a13d",
             "gameId": 2077,
             "name": {
-                "en": "Waved Away"
+                "en": "Waved Away",
+                "ja": "歴戦水馬「アーチケルピー」",
+                "de": "Mit allen Wassern gewaschen",
+                "fr": "Défi : une vie de combats"
             }
         }
     ],
@@ -717,105 +1020,150 @@
             "id": "137ed2fc-0302-40fe-8810-5f8d22494b49",
             "gameId": 56,
             "name": {
-                "en": "A Beast Unleashed"
+                "en": "A Beast Unleashed",
+                "ja": "反逆の使い魔「アトラス・カーバンクル」",
+                "de": "Rubinrote Rebellion",
+                "fr": "Défi : le familier se rebelle"
             }
         },
         {
             "id": "166b3264-54d0-4f25-a90b-6c60733a518b",
             "gameId": 63,
             "name": {
-                "en": "Accept No Imitators"
+                "en": "Accept No Imitators",
+                "ja": "変化の使い魔「メタモルファ」",
+                "de": "Mieses Mimikry",
+                "fr": "Défi : attention aux contrefaçons"
             }
         },
         {
             "id": "dd163d29-7d24-425c-86ec-0427fa4a5315",
             "gameId": 62,
             "name": {
-                "en": "Ahead of the Competition"
+                "en": "Ahead of the Competition",
+                "ja": "覚醒の多頭竜「マギ・ヒュドラ」",
+                "de": "Mehr Köpfe als Verstand",
+                "fr": "Défi : têtes à claques"
             }
         },
         {
             "id": "2ff7d64b-36ab-4879-b2ea-1fcb28b4cf58",
             "gameId": 59,
             "name": {
-                "en": "Appalling Behavior"
+                "en": "Appalling Behavior",
+                "ja": "呪いを継ぐ者「ペイルマギア」",
+                "de": "Verflucht noch eins",
+                "fr": "Défi : vert de rancœur"
             }
         },
         {
             "id": "e54c2125-0166-453a-8bbc-6f4e7a394429",
             "gameId": 53,
             "name": {
-                "en": "Cursed Resurgence"
+                "en": "Cursed Resurgence",
+                "ja": "暗紅の屍竜「ルブルムドラゴン」",
+                "de": "Gift und Kralle",
+                "fr": "Défi : dragon en décomposition"
             }
         },
         {
             "id": "5d39235b-d10a-4012-b0c0-1220a2a22263",
             "gameId": 57,
             "name": {
-                "en": "Dark Artistry"
+                "en": "Dark Artistry",
+                "ja": "死霊使いの亡霊「マギ・ネクロマンサー」",
+                "de": "Auf Tod komm raus",
+                "fr": "Défi : croisade pour un cadavre"
             }
         },
         {
             "id": "1f70915c-e261-4e18-badc-efe835e75db1",
             "gameId": 50,
             "name": {
-                "en": "Doubled Trouble"
+                "en": "Doubled Trouble",
+                "ja": "魔女の複製体「カロフィステリ・ダブル」",
+                "de": "Doppelt gehext hält besser",
+                "fr": "Défi : les dérives du clonage"
             }
         },
         {
             "id": "bc728b9d-bbd3-4300-a966-aa736bd3e6cf",
             "gameId": 58,
             "name": {
-                "en": "Familiar Tactics"
+                "en": "Familiar Tactics",
+                "ja": "求道の人造人間「エルムギガース」",
+                "de": "Auf dem Weg der Erleuchtung",
+                "fr": "Défi : la voie de l'orme"
             }
         },
         {
             "id": "f6df044c-78b0-431c-852a-c34d5b17c3cb",
             "gameId": 52,
             "name": {
-                "en": "Forbidden Folios"
+                "en": "Forbidden Folios",
+                "ja": "禁忌の魔道書「アルバテル」",
+                "de": "Verbotenes Wissen",
+                "fr": "Défi : magie taboue"
             }
         },
         {
             "id": "52e34f1d-75e6-49ef-9d03-35c0cd6d99aa",
             "gameId": 54,
             "name": {
-                "en": "Imbalanced Diet"
+                "en": "Imbalanced Diet",
+                "ja": "大食の呪鬼「アルゴル」",
+                "de": "Unersättliches Unheil",
+                "fr": "Défi : Algol l'insatiable"
             }
         },
         {
             "id": "0cfb568a-18c5-41ef-b0e2-b5769b7b9d23",
             "gameId": 61,
             "name": {
-                "en": "Lost on the Wind"
+                "en": "Lost on the Wind",
+                "ja": "絶島の誘拐者「アブダクター」",
+                "de": "Vom Winde verweht",
+                "fr": "Défi : alerte enlèvement"
             }
         },
         {
             "id": "237b2f37-f3df-4bd5-8f2b-38efebeb4ad9",
             "gameId": 49,
             "name": {
-                "en": "Many Mouths to Feed"
+                "en": "Many Mouths to Feed",
+                "ja": "四つ顎の魔樹「ペレキュス」",
+                "de": "Verfressen bis in die Wurzeln",
+                "fr": "Défi : appétit vorace"
             }
         },
         {
             "id": "f4d76b8e-f46e-4723-99cf-5022ee27ff7d",
             "gameId": 51,
             "name": {
-                "en": "Quarried Away"
+                "en": "Quarried Away",
+                "ja": "白の守護者「アラバスターブレード」",
+                "de": "Schwert und Stein",
+                "fr": "Défi : l'homme à albâtre"
             }
         },
         {
             "id": "c94e2eb7-2b1f-43b3-97ad-e277dda04a97",
             "gameId": 60,
             "name": {
-                "en": "Tiny Terror"
+                "en": "Tiny Terror",
+                "ja": "魔道兵団「タイニーメイジ」",
+                "de": "Klein aber oho",
+                "fr": "Défi : petits mais costauds"
             }
         },
         {
             "id": "6b9f65ce-1ade-45e6-b59b-9e677ec9bee7",
             "gameId": 55,
             "name": {
-                "en": "Web of Terror"
+                "en": "Web of Terror",
+                "ja": "猟奇の母蜘蛛「クレセント・アルケニー」",
+                "de": "Wie eine Fliege im Netz",
+                "fr": "Défi : cruelles chasseresses"
             }
         }
     ],
@@ -824,42 +1172,60 @@
             "id": "6473c6e6-aaca-4990-80ca-31312ea3911f",
             "gameId": 5574,
             "name": {
-                "en": "Moldering Outskirts"
+                "en": "Moldering Outskirts",
+                "ja": "腐敗した市街地前",
+                "de": "Eingang des Verdorbenen Viertels",
+                "fr": "Faubourgs décrépis"
             }
         },
         {
             "id": "1de13211-8c36-4028-9a71-4067f22cffb3",
             "gameId": 5571,
             "name": {
-                "en": "North Horn Base Camp"
+                "en": "North Horn Base Camp",
+                "ja": "探査隊の北部ベースキャンプ",
+                "de": "Nördliches Basislager der Expedition",
+                "fr": "Camp de base nord"
             }
         },
         {
             "id": "168b1b66-814a-46df-b0bd-f9b99c4d269b",
             "gameId": 5572,
             "name": {
-                "en": "Sinking Sanctuary"
+                "en": "Sinking Sanctuary",
+                "ja": "沈んだ聖堂前",
+                "de": "Versunkener Kircheneingang",
+                "fr": "Sanctuaire englouti"
             }
         },
         {
             "id": "487ea3fb-a303-4245-a2b7-88e8caa65a1d",
             "gameId": 5573,
             "name": {
-                "en": "Suspended Masonry"
+                "en": "Suspended Masonry",
+                "ja": "浮遊遺跡",
+                "de": "Schwebende Ruine",
+                "fr": "Structures suspendues"
             }
         },
         {
             "id": "281a4b26-f91a-417b-884e-107a477ae237",
             "gameId": 5576,
             "name": {
-                "en": "The Crown of Karnak"
+                "en": "The Crown of Karnak",
+                "ja": "カルナック城塞",
+                "de": "Festung Karnak",
+                "fr": "Couronne de Karnak"
             }
         },
         {
             "id": "865398ba-e649-4503-a99e-00968cc1ef0a",
             "gameId": 5575,
             "name": {
-                "en": "Unhallowed Hamlet"
+                "en": "Unhallowed Hamlet",
+                "ja": "妖火の漁村",
+                "de": "Finsterflammen-Fischerdorf",
+                "fr": "Hameau hanté"
             }
         }
     ],
@@ -868,77 +1234,110 @@
             "id": "42723125-b604-4caa-9b7b-202933a29307",
             "gameId": 5588,
             "name": {
-                "en": "Dark Territory"
+                "en": "Dark Territory",
+                "ja": "暗闇の領域",
+                "de": "Nichtssphäre",
+                "fr": "Territoire ténébreux"
             }
         },
         {
             "id": "822d3f20-44e2-40f0-99b9-c6aab3042722",
             "gameId": 5591,
             "name": {
-                "en": "Labyrinth of the Damned"
+                "en": "Labyrinth of the Damned",
+                "ja": "青光の地下監獄",
+                "de": "Phosphor-Kerker",
+                "fr": "Labyrinthe des damnés"
             }
         },
         {
             "id": "8932bf6d-a335-49b2-885d-9fd8bc027eb1",
             "gameId": 5586,
             "name": {
-                "en": "Moldering Streets"
+                "en": "Moldering Streets",
+                "ja": "腐敗した市街地",
+                "de": "Verdorbenes Viertel",
+                "fr": "Cité décrépie"
             }
         },
         {
             "id": "a8a8d1f7-b325-4e91-87c0-0ace6c7ef011",
             "gameId": 5571,
             "name": {
-                "en": "North Horn Base Camp"
+                "en": "North Horn Base Camp",
+                "ja": "探査隊の北部ベースキャンプ",
+                "de": "Nördliches Basislager der Expedition",
+                "fr": "Camp de base nord"
             }
         },
         {
             "id": "8dbf96ab-b438-4661-8e7f-1250def18197",
             "gameId": 5589,
             "name": {
-                "en": "Panoptical Pillar"
+                "en": "Panoptical Pillar",
+                "ja": "見晴らし塔",
+                "de": "Aussichtsturm",
+                "fr": "Mirador paisible"
             }
         },
         {
             "id": "3a06b133-10fe-4b0f-87c4-74be61a4dada",
             "gameId": 5590,
             "name": {
-                "en": "Shadowdeep"
+                "en": "Shadowdeep",
+                "ja": "妖火の湖",
+                "de": "See Finsterflamme",
+                "fr": "Lac spectral"
             }
         },
         {
             "id": "2c8cb2fa-f388-40e1-9062-0c9675f1fb42",
             "gameId": 5585,
             "name": {
-                "en": "Shrine of Spheres"
+                "en": "Shrine of Spheres",
+                "ja": "球体像の神殿",
+                "de": "Sphärenpalast",
+                "fr": "Temple des sphères"
             }
         },
         {
             "id": "287393fb-216e-4133-b5f9-dfedca4701a2",
             "gameId": 5582,
             "name": {
-                "en": "Sinking Sanctuary"
+                "en": "Sinking Sanctuary",
+                "ja": "沈んだ聖堂",
+                "de": "Versunkene Kirche",
+                "fr": "Sanctuaire englouti"
             }
         },
         {
             "id": "754982e6-619d-4786-be99-6e5f5a58d5ee",
             "gameId": 5573,
             "name": {
-                "en": "Suspended Masonry"
+                "en": "Suspended Masonry",
+                "ja": "浮遊遺跡",
+                "de": "Schwebende Ruine",
+                "fr": "Structures suspendues"
             }
         },
         {
             "id": "523123ed-9e7b-4e46-81ec-4f9537b85abf",
             "gameId": 5579,
             "name": {
-                "en": "The Crown of Karnak"
+                "en": "The Crown of Karnak",
+                "ja": "カルナック城塞",
+                "de": "Festung Karnak",
+                "fr": "La Couronne de Karnak"
             }
         },
         {
             "id": "c5b6b07c-21af-47b0-8a3a-3b6e9432aeed",
             "gameId": 5583,
             "name": {
-                "en": "The Marrowood"
+                "en": "The Marrowood",
+                "ja": "野晒し森",
+                "de": "Witterwald",
+                "fr": "Bois ballotés"
             }
         },
         {
@@ -959,7 +1358,10 @@
             "id": "f0d71f6c-253d-4a69-bb5c-7280b76bf48e",
             "gameId": 5575,
             "name": {
-                "en": "Unhallowed Hamlet"
+                "en": "Unhallowed Hamlet",
+                "ja": "妖火の漁村",
+                "de": "Finsterflammen-Fischerdorf",
+                "fr": "Hameau hanté"
             }
         }
     ],
@@ -968,42 +1370,60 @@
             "id": "f058f8e0-bc49-4e05-b876-aa3ad581ef24",
             "gameId": 49089,
             "name": {
-                "en": "Occult Aero II"
+                "en": "Occult Aero II",
+                "ja": "マギ・エアロラ",
+                "de": "Kreszentes Windra",
+                "fr": "Magi Extra Vent"
             }
         },
         {
             "id": "78e2ca00-3ac2-4ee3-a25a-972914006291",
             "gameId": 47170,
             "name": {
-                "en": "Occult Aero III"
+                "en": "Occult Aero III",
+                "ja": "マギ・エアロガ",
+                "de": "Kreszentes Windga",
+                "fr": "Magi Méga Vent"
             }
         },
         {
             "id": "78f836b9-20f0-429d-af84-a9d9bc06a27d",
             "gameId": 49087,
             "name": {
-                "en": "Occult Aqua Breath"
+                "en": "Occult Aqua Breath",
+                "ja": "マギ・アクアブレス",
+                "de": "Kreszenter Aqua-Atem",
+                "fr": "Magi Aquasouffle"
             }
         },
         {
             "id": "a3f83e6d-de0a-4cab-b17f-dc57e71cac97",
             "gameId": 49088,
             "name": {
-                "en": "Occult Mighty Guard"
+                "en": "Occult Mighty Guard",
+                "ja": "マギ・マイティガード",
+                "de": "Kreszente Totalabwehr",
+                "fr": "Magi Garde puissante"
             }
         },
         {
             "id": "5d3ae6f6-f793-44a3-a29a-a8e9119283cb",
             "gameId": 49086,
             "name": {
-                "en": "Occult Missile"
+                "en": "Occult Missile",
+                "ja": "マギ・ミサイル",
+                "de": "Kreszente Rakete",
+                "fr": "Magi Missile"
             }
         },
         {
             "id": "ecea2f0b-889c-4f1a-9f42-68f7731b6d58",
             "gameId": 49090,
             "name": {
-                "en": "Occult White Wind"
+                "en": "Occult White Wind",
+                "ja": "マギ・ホワイトウィンド",
+                "de": "Kreszenter Weißer Wind",
+                "fr": "Magi Vent blanc"
             }
         }
     ]

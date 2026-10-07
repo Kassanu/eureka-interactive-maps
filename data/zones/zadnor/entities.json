@@ -4,91 +4,130 @@
             "id": "09891522-5ef6-4a23-aab1-315459876235",
             "gameId": 10152,
             "name": {
-                "en": "Aglaophotis"
+                "en": "Aglaophotis",
+                "ja": "アグラフォーティス",
+                "de": "Aglaophotis",
+                "fr": "Aglaophotis"
             }
         },
         {
             "id": "88fd10bc-7393-4ec5-8b76-4ced663b5510",
             "gameId": 10135,
             "name": {
-                "en": "Anancus"
+                "en": "Anancus",
+                "ja": "アナンクス",
+                "de": "Anancus",
+                "fr": "Anancus"
             }
         },
         {
             "id": "e87ade0a-d4b8-413d-a5ab-2cf427b8f242",
             "gameId": 10153,
             "name": {
-                "en": "Earth Eater"
+                "en": "Earth Eater",
+                "ja": "アースイーター",
+                "de": "Erdverspeiser",
+                "fr": "Terraglouton"
             }
         },
         {
             "id": "56cd0d87-6395-4d87-bd5e-4860218492b3",
             "gameId": 10173,
             "name": {
-                "en": "Glyptodon"
+                "en": "Glyptodon",
+                "ja": "グリプトドン",
+                "de": "Glyptodon",
+                "fr": "Glyptodon"
             }
         },
         {
             "id": "d54db0c3-f911-4553-93eb-6f7c4d5d708f",
             "gameId": 114,
             "name": {
-                "en": "Ice Sprite"
+                "en": "Ice Sprite",
+                "ja": "アイススプライト",
+                "de": "Eis-Exergon",
+                "fr": "Élémentaire de glace"
             }
         },
         {
             "id": "7e7d4c90-7214-485c-94e3-15f13886e5dc",
             "gameId": 10126,
             "name": {
-                "en": "Lightning Sprite"
+                "en": "Lightning Sprite",
+                "ja": "ライトニングスプライト",
+                "de": "Blitz-Exergon",
+                "fr": "Élémentaire de foudre"
             }
         },
         {
             "id": "8b0f16b1-1dd8-4db7-8ff1-083849c9822d",
             "gameId": 10154,
             "name": {
-                "en": "Lord Ochu"
+                "en": "Lord Ochu",
+                "ja": "ロードオチュー",
+                "de": "Wege-Ochu",
+                "fr": "Otyugh suzerain"
             }
         },
         {
             "id": "c7975a06-5a5f-443a-be5a-0b76a10ca60c",
             "gameId": 10172,
             "name": {
-                "en": "Molten Scorpion"
+                "en": "Molten Scorpion",
+                "ja": "モルテンスコーピオン",
+                "de": "Schmelzskorpion",
+                "fr": "Scorpion post-exuvial"
             }
         },
         {
             "id": "8dffc90f-aa4d-4b37-8da2-29ad0d25c0c6",
             "gameId": 10137,
             "name": {
-                "en": "Stratogryph"
+                "en": "Stratogryph",
+                "ja": "ストラトグリフィン",
+                "de": "Strato-Greif",
+                "fr": "Stratogriffon"
             }
         },
         {
             "id": "84bd830b-f5a6-4019-b439-8dd207920a6a",
             "gameId": 10174,
             "name": {
-                "en": "Vapula"
+                "en": "Vapula",
+                "ja": "ヴァプラ",
+                "de": "Vapula",
+                "fr": "Vapula"
             }
         },
         {
             "id": "9b4f3715-f02a-4db4-847b-a007aea776ba",
             "gameId": 10136,
             "name": {
-                "en": "Vinegaroon Executioner"
+                "en": "Vinegaroon Executioner",
+                "ja": "ビネガロン・エクスキューショナー",
+                "de": "Geißelskorpion-Wächter",
+                "fr": "Vinaigrier exécuteur"
             }
         },
         {
             "id": "91049c5f-d334-4d30-a18c-1a6c600db2eb",
             "gameId": 56,
             "name": {
-                "en": "Water Sprite"
+                "en": "Water Sprite",
+                "ja": "ウォータースプライト",
+                "de": "Wasser-Exergon",
+                "fr": "Élémentaire d'eau"
             }
         },
         {
             "id": "e29844da-323c-4428-929b-20b6a7f0e114",
             "gameId": 115,
             "name": {
-                "en": "Wind Sprite"
+                "en": "Wind Sprite",
+                "ja": "ウィンドスプライト",
+                "de": "Wind-Exergon",
+                "fr": "Élémentaire de vent"
             }
         }
     ],
@@ -97,182 +136,260 @@
             "id": "b2320385-fa94-482e-9d56-4d8829d078df",
             "gameId": 1728,
             "name": {
-                "en": "A Just Pursuit"
+                "en": "A Just Pursuit",
+                "ja": "歳殺の手配犯",
+                "de": "Gesucht: Der mörderische Meister",
+                "fr": "Recherché dans deux pays"
             }
         },
         {
             "id": "b1d66ede-c379-4150-a3d5-d577ce87336a",
             "gameId": 1737,
             "name": {
-                "en": "A Relic Unleashed"
+                "en": "A Relic Unleashed",
+                "ja": "聖石片の脅威",
+                "de": "Dunkelfürst Famfrit",
+                "fr": "Sans issue"
             }
         },
         {
             "id": "276ca5cb-9f82-4de8-8f9f-37162cf87efa",
             "gameId": 1721,
             "name": {
-                "en": "A Wrench in the Reconnaissance Effort"
+                "en": "A Wrench in the Reconnaissance Effort",
+                "ja": "偵察魔導兵器の排除",
+                "de": "Beobachten verboten",
+                "fr": "Ni vu ni connu"
             }
         },
         {
             "id": "09345d2b-0dfb-413e-9f53-f701949d1936",
             "gameId": 1727,
             "name": {
-                "en": "An End to Atrocities"
+                "en": "An End to Atrocities",
+                "ja": "外道術士との決着",
+                "de": "Endkampf mit dem Ketzer",
+                "fr": "L'immaculée contre le malsain"
             }
         },
         {
             "id": "fd84f200-e055-47d1-9872-b1f4a384ffe5",
             "gameId": 1719,
             "name": {
-                "en": "An Immoral Dilemma"
+                "en": "An Immoral Dilemma",
+                "ja": "傍白の外道術士",
+                "de": "Ketzer Fabineau gibt sich die Ehre",
+                "fr": "Malheureuses retrouvailles"
             }
         },
         {
             "id": "84395f0c-d910-45cf-bec7-87d4287475f3",
             "gameId": 1722,
             "name": {
-                "en": "Another Pilot Episode"
+                "en": "Another Pilot Episode",
+                "ja": "再来の強化兵",
+                "de": "Rückkehr des Magitek-Soldaten",
+                "fr": "Dabog, soldat augmenté"
             }
         },
         {
             "id": "b24b9dc7-613c-40ff-9491-4a974295daba",
             "gameId": 1742,
             "name": {
-                "en": "Attack of the Machines"
+                "en": "Attack of the Machines",
+                "ja": "シシニアスの量産計画",
+                "de": "Magitek-Maschinen en masse",
+                "fr": "Fabrication en série"
             }
         },
         {
             "id": "1de5b276-21ee-4862-b3a7-f4abef2e71d2",
             "gameId": 1740,
             "name": {
-                "en": "Attack of the Supersoldiers"
+                "en": "Attack of the Supersoldiers",
+                "ja": "強化兵部隊の強襲",
+                "de": "Verstärkung für die Mech-Einheit",
+                "fr": "Il est plus d'un"
             }
         },
         {
             "id": "75db1663-cfe2-44e4-8548-554c684ee4a0",
             "gameId": 1723,
             "name": {
-                "en": "Breaking the Ice"
+                "en": "Breaking the Ice",
+                "ja": "術士大隊の迎撃",
+                "de": "Eiskalte Begegnung",
+                "fr": "Qui s'y frotte s'y pique"
             }
         },
         {
             "id": "0e716731-9880-4bdd-8b25-65948ecf9ed7",
             "gameId": 1725,
             "name": {
-                "en": "Challenge Accepted"
+                "en": "Challenge Accepted",
+                "ja": "立ちはだかる我執",
+                "de": "Größtmöglicher anzunehmender Unfall",
+                "fr": "Un problème de taille"
             }
         },
         {
             "id": "a2a3177b-eaba-4f68-b2a9-014d583a360f",
             "gameId": 1720,
             "name": {
-                "en": "Deadly Divination"
+                "en": "Deadly Divination",
+                "ja": "歳殺の陰陽士",
+                "de": "Mörderischer Onmyoji",
+                "fr": "Le prêtre pernicieux"
             }
         },
         {
             "id": "432ef199-9449-4379-b1dc-2f6a1682c550",
             "gameId": 1731,
             "name": {
-                "en": "Demented Mentor"
+                "en": "Demented Mentor",
+                "ja": "師弟の戦い",
+                "de": "Rettende Hiebe",
+                "fr": "Magie couleur sang"
             }
         },
         {
             "id": "b0a0fe0a-ef1d-4010-b43d-d462aae8920f",
             "gameId": 1739,
             "name": {
-                "en": "Hypertuned Havoc"
+                "en": "Hypertuned Havoc",
+                "ja": "黄金の強化兵",
+                "de": "Eine goldene Gelegenheit",
+                "fr": "Une opportunité en or"
             }
         },
         {
             "id": "9e3ff88a-3d2a-4412-a3aa-27bf532d8467",
             "gameId": 1736,
             "name": {
-                "en": "Mean-spirited"
+                "en": "Mean-spirited",
+                "ja": "歳殺の大捕物",
+                "de": "Haltet den Onmyoji!",
+                "fr": "Le trésor du clan Urabe"
             }
         },
         {
             "id": "493bba8f-10c2-4497-84f3-557dc9238153",
             "gameId": 1724,
             "name": {
-                "en": "Meet the Puppetmaster"
+                "en": "Meet the Puppetmaster",
+                "ja": "人形使いとの邂逅",
+                "de": "Lass die Puppen tanzen",
+                "fr": "Celui qui tire les ficelles"
             }
         },
         {
             "id": "e9eb0d5f-5df2-4c70-953a-f5eb48bdd0ee",
             "gameId": 1717,
             "name": {
-                "en": "Of Beasts and Braggadocio"
+                "en": "Of Beasts and Braggadocio",
+                "ja": "我執の魔獣使い",
+                "de": "Die allergrößte Bestienbändigerin aller Zeiten",
+                "fr": "Un jour, je serai la meilleure dresseuse"
             }
         },
         {
             "id": "93f48dfc-f5ff-4b47-a8ea-2bc27d8a9345",
             "gameId": 1718,
             "name": {
-                "en": "Parts and Parcel"
+                "en": "Parts and Parcel",
+                "ja": "忍者オボロの出陣",
+                "de": "Oboro auf der Jagd",
+                "fr": "Les astres du jour et de la nuit"
             }
         },
         {
             "id": "8d298a97-9da8-4955-b0e2-82683b926ed8",
             "gameId": 1735,
             "name": {
-                "en": "Seeq and You Will Find"
+                "en": "Seeq and You Will Find",
+                "ja": "豚面との再会",
+                "de": "Die Farbe des Blutes",
+                "fr": "Non, c'est non !"
             }
         },
         {
             "id": "cbb28d42-6028-43db-9820-53bd08e6229f",
             "gameId": 1732,
             "name": {
-                "en": "Sever the Strings"
+                "en": "Sever the Strings",
+                "ja": "人形使いとの死闘",
+                "de": "Endkampf mit dem Puppenspieler",
+                "fr": "Ainsi font les petites marionnettes"
             }
         },
         {
             "id": "34239b82-288e-4570-b6a8-f2ee8b725433",
             "gameId": 1734,
             "name": {
-                "en": "Still Only Counts as One"
+                "en": "Still Only Counts as One",
+                "ja": "華麗なるお披露目会",
+                "de": "Die Schillernde und ihr Schoßhund",
+                "fr": "Clarricie, sans défense ou presque"
             }
         },
         {
             "id": "8f8de3b6-3539-4a12-a1eb-4d3737505f20",
             "gameId": 1730,
             "name": {
-                "en": "Supersoldier Rising"
+                "en": "Supersoldier Rising",
+                "ja": "覚醒の強化兵",
+                "de": "Der Magitek-Soldat schlägt zurück",
+                "fr": "Guet-apens magitek"
             }
         },
         {
             "id": "33c7108a-25e7-4cbc-84df-20b9cb18f755",
             "gameId": 1729,
             "name": {
-                "en": "Tanking Up"
+                "en": "Tanking Up",
+                "ja": "疑似青龍壁の生命線",
+                "de": "Energie für Seiryu Zwo",
+                "fr": "Y a qu'à se baisser"
             }
         },
         {
             "id": "56e08fd6-119d-4751-82c7-2c229d2c6e51",
             "gameId": 1726,
             "name": {
-                "en": "Th'uban the Terrible"
+                "en": "Th'uban the Terrible",
+                "ja": "巨大古代獣との遭遇",
+                "de": "Bestien aus der Vorzeit",
+                "fr": "Le dernier des dinosaures"
             }
         },
         {
             "id": "2421275b-baae-4e87-9981-4333e356e41e",
             "gameId": 1733,
             "name": {
-                "en": "The Beasts Are Back"
+                "en": "The Beasts Are Back",
+                "ja": "折れない我執",
+                "de": "Die Allergrößte gibt nicht auf",
+                "fr": "Des bêtes en pagagaille"
             }
         },
         {
             "id": "33ed1bbb-e6f0-4461-8223-d83a97c90b34",
             "gameId": 1741,
             "name": {
-                "en": "The Student Becalms the Master"
+                "en": "The Student Becalms the Master",
+                "ja": "師弟の絆",
+                "de": "Rettende Hiebe Teil 2",
+                "fr": "L'élève dépasse le maître"
             }
         },
         {
             "id": "6127213b-0e44-4538-9be0-98deda037211",
             "gameId": 1738,
             "name": {
-                "en": "When Mages Rage"
+                "en": "When Mages Rage",
+                "ja": "術士大隊の反撃",
+                "de": "Was du heute kannst besorgen",
+                "fr": "Des cailloux, des cailloux, des cailloux !"
             }
         }
     ],
@@ -281,105 +398,150 @@
             "id": "787348ce-6d0d-4cc6-8c44-a3c075ede21d",
             "gameId": 29,
             "name": {
-                "en": "A Familiar Face"
+                "en": "A Familiar Face",
+                "ja": "模造統制者「IVレギオン・ハシュマリム」",
+                "de": "Hashmallim der Einiger",
+                "fr": "Le Grand Ordonnateur"
             }
         },
         {
             "id": "9775c44b-b140-4b52-a4be-20e334d78bbb",
             "gameId": 18,
             "name": {
-                "en": "Feeling the Burn"
+                "en": "Feeling the Burn",
+                "ja": "試作飛行型魔導アーマー「ブラックバーン」",
+                "de": "Schwarzbrands Testflug",
+                "fr": "On arrête le progrès"
             }
         },
         {
             "id": "fb9cdd63-fbf2-4696-bb8c-febd8e63fa40",
             "gameId": 20,
             "name": {
-                "en": "From Beyond the Grave"
+                "en": "From Beyond the Grave",
+                "ja": "模造密告者「IVレギオン・シュミハザ」",
+                "de": "Shemhazai der Verräter",
+                "fr": "Le Sycophante"
             }
         },
         {
             "id": "c5bbe044-0f06-40e4-9b74-99915fc9b208",
             "gameId": 23,
             "name": {
-                "en": "Head of the Snake"
+                "en": "Head of the Snake",
+                "ja": "第IV軍団分遣隊長「メネニウス」",
+                "de": "Menenius, Tribunus der IV. Legion",
+                "fr": "Mener par l'exemple"
             }
         },
         {
             "id": "431d2dc7-4cc7-4011-b50a-84cfef72afd3",
             "gameId": 22,
             "name": {
-                "en": "Here Comes the Cavalry"
+                "en": "Here Comes the Cavalry",
+                "ja": "鋼鉄の人馬「魔導騎兵大隊」",
+                "de": "Halb Pferd, halb Garlear",
+                "fr": "Un cavalier qui surgit hors de la nuit"
             }
         },
         {
             "id": "4c6f215d-8784-46e0-943b-f5a42cea4b6a",
             "gameId": 27,
             "name": {
-                "en": "Lean, Mean, Magitek Machines"
+                "en": "Lean, Mean, Magitek Machines",
+                "ja": "新兵器投入「機甲百人隊」",
+                "de": "Die Gepanzerte Zenturie",
+                "fr": "Réusinage de code"
             }
         },
         {
             "id": "3679f030-c8d0-4bd8-ab01-006099103055",
             "gameId": 30,
             "name": {
-                "en": "Looks to Die For"
+                "en": "Looks to Die For",
+                "ja": "輝ける虹蛇「アイダ」",
+                "de": "Regenbogenschlange Ayida",
+                "fr": "Écaillage en règle"
             }
         },
         {
             "id": "ccc16dd5-4d6e-46ee-9f4d-3eaddb55359c",
             "gameId": 25,
             "name": {
-                "en": "Never Cry Wolf"
+                "en": "Never Cry Wolf",
+                "ja": "邪悪なる氷狼「フローズヴィトニル」",
+                "de": "Eiswolf Hrodvitnir",
+                "fr": "Et n'y Hród'viens plus !"
             }
         },
         {
             "id": "8603e7d4-aa43-4d41-aba3-75671f539d43",
             "gameId": 17,
             "name": {
-                "en": "On Serpents' Wings"
+                "en": "On Serpents' Wings",
+                "ja": "妖霊使い「妖戦百人隊」",
+                "de": "Der Geistertrupp",
+                "fr": "Zirnitrop"
             }
         },
         {
             "id": "3995f4c8-b97e-4fc0-aaa1-9481e2df747c",
             "gameId": 31,
             "name": {
-                "en": "Taking the Lyon's Share"
+                "en": "Taking the Lyon's Share",
+                "ja": "戦慄の百獣使い「獣王ライアン」",
+                "de": "Revanche: Lyon der Bestienkönig",
+                "fr": "La revanche de Lyon"
             }
         },
         {
             "id": "5dc3e314-74fc-4d4a-98c3-8d4d319444fc",
             "gameId": 19,
             "name": {
-                "en": "The Broken Blade"
+                "en": "The Broken Blade",
+                "ja": "非業の強化兵「ハイパーチューンド・ダボグ」",
+                "de": "Hyper-Dabog, Stärkster unter Stärksten",
+                "fr": "Dabog l'hyper-renforcé"
             }
         },
         {
             "id": "ebd41b40-34b2-4c06-a790-8e6506641178",
             "gameId": 24,
             "name": {
-                "en": "There Would Be Blood"
+                "en": "There Would Be Blood",
+                "ja": "異界の廃王「ハンビ」",
+                "de": "Hanbi, König im Exil",
+                "fr": "Le Roi des cendres"
             }
         },
         {
             "id": "86e555a9-e0ce-4363-a4d2-8cbabfb06c0f",
             "gameId": 26,
             "name": {
-                "en": "Time to Burn"
+                "en": "Time to Burn",
+                "ja": "模造魔人「IVレギオン・ベリアス」",
+                "de": "Dämonid Belias",
+                "fr": "Le Titan"
             }
         },
         {
             "id": "242f8e58-715c-41ce-a086-6bf7122b9678",
             "gameId": 21,
             "name": {
-                "en": "With Diremite and Main"
+                "en": "With Diremite and Main",
+                "ja": "焦土の魔蠍「ヘデテト」",
+                "de": "Hedetet, Stachel des Karglands",
+                "fr": "C'est dans ma nature"
             }
         },
         {
             "id": "4b7233e6-c5c1-4fcd-8771-c13ca3fc4e5f",
             "gameId": 28,
             "name": {
-                "en": "Worn to a Shadow"
+                "en": "Worn to a Shadow",
+                "ja": "有角の凶鳥「アルコノスト」",
+                "de": "Alkonost, schrecklich und gefiedert",
+                "fr": "Oiseau d'enfer"
             }
         }
     ],
@@ -388,28 +550,40 @@
             "id": "f03ac947-058d-4a9a-9712-105ac9e90cef",
             "gameId": 3664,
             "name": {
-                "en": "Camp Vrdelnis"
+                "en": "Camp Vrdelnis",
+                "ja": "ヴァルデニス前哨地",
+                "de": "Vrdelnis-Gemarkung",
+                "fr": "Avant-poste de Vrdelnis"
             }
         },
         {
             "id": "a88ad358-4e4b-491a-b620-985b17b1ff2a",
             "gameId": 3667,
             "name": {
-                "en": "Hrmovir Point"
+                "en": "Hrmovir Point",
+                "ja": "アルマヴィル陣地",
+                "de": "Außenposten Hrmovir",
+                "fr": "Camp avancé de Hrmovir"
             }
         },
         {
             "id": "0cd63394-c4f8-4d2a-b0e6-fbf93a3f12a6",
             "gameId": 3666,
             "name": {
-                "en": "Ljeban Point"
+                "en": "Ljeban Point",
+                "ja": "イジェバン陣地",
+                "de": "Außenposten Ljeban",
+                "fr": "Camp avancé de Ljeban"
             }
         },
         {
             "id": "f6108572-adbd-4937-be42-7c62a460f2de",
             "gameId": 3665,
             "name": {
-                "en": "Zuprtik Point"
+                "en": "Zuprtik Point",
+                "ja": "スピタク陣地",
+                "de": "Außenposten Zuprtik",
+                "fr": "Camp avancé de Zuprtik"
             }
         }
     ]
