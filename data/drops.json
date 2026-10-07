@@ -1,0 +1,375 @@
+{
+    "drops": [
+        {
+            "id": "bff2ae91-8319-446c-960d-e69b6fc961c3",
+            "gameId": "EventItem:2003838",
+            "name": {
+                "en": "Abductor's Horn"
+            }
+        },
+        {
+            "id": "b4941121-446e-46f9-aff6-3ae8939a8096",
+            "gameId": "Item:47744",
+            "name": {
+                "en": "Azurite Demiatma"
+            }
+        },
+        {
+            "id": "0376f218-1972-4e70-af64-63185a4ac2d4",
+            "gameId": "Item:47751",
+            "name": {
+                "en": "Berserker's Soul Shard"
+            }
+        },
+        {
+            "id": "f47533dc-4a87-47e4-85e3-3d2e0c3c3da4",
+            "gameId": "Item:51972",
+            "name": {
+                "en": "Blue Mage's Soul Shard"
+            }
+        },
+        {
+            "id": "1305994a-7892-44b0-a582-c8301e882353",
+            "gameId": "Item:31135",
+            "name": {
+                "en": "Bozjan Cluster"
+            }
+        },
+        {
+            "id": "9cc5a185-e088-442a-93f4-941f2827014b",
+            "gameId": "Item:47748",
+            "name": {
+                "en": "Caput Mortuum Demiatma"
+            }
+        },
+        {
+            "id": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
+            "gameId": "Item:30889",
+            "name": {
+                "en": "Forgotten Fragment of Awakening"
+            }
+        },
+        {
+            "id": "eec92d34-c1fc-462e-b29d-e85ee6545588",
+            "gameId": "Item:30888",
+            "name": {
+                "en": "Forgotten Fragment of Care"
+            }
+        },
+        {
+            "id": "468e71c2-2a17-4cbf-8f64-ebf083fdbe40",
+            "gameId": "Item:30884",
+            "name": {
+                "en": "Forgotten Fragment of Caution"
+            }
+        },
+        {
+            "id": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
+            "gameId": "Item:30893",
+            "name": {
+                "en": "Forgotten Fragment of Compassion"
+            }
+        },
+        {
+            "id": "5ea1bcd2-c537-4463-b736-edde3f0a57fc",
+            "gameId": "Item:30887",
+            "name": {
+                "en": "Forgotten Fragment of Ingenuity"
+            }
+        },
+        {
+            "id": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
+            "gameId": "Item:30885",
+            "name": {
+                "en": "Forgotten Fragment of Preparation"
+            }
+        },
+        {
+            "id": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
+            "gameId": "Item:30886",
+            "name": {
+                "en": "Forgotten Fragment of Skill"
+            }
+        },
+        {
+            "id": "4b0bb048-5929-46cb-a4c0-8b18df811548",
+            "gameId": "Item:30890",
+            "name": {
+                "en": "Forgotten Fragment of Support"
+            }
+        },
+        {
+            "id": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
+            "gameId": "Item:30891",
+            "name": {
+                "en": "Forgotten Fragment of Violence"
+            }
+        },
+        {
+            "id": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
+            "gameId": "Item:31575",
+            "name": {
+                "en": "Harrowing Memory of the Dying"
+            }
+        },
+        {
+            "id": "5e1db15f-7ad0-4313-9c53-44e713659bcf",
+            "gameId": "Item:47746",
+            "name": {
+                "en": "Malachite Demiatma"
+            }
+        },
+        {
+            "id": "2bd3247f-0ce4-4c24-af4f-d2258aa049e1",
+            "gameId": "Item:51974",
+            "name": {
+                "en": "Necromancer's Soul Shard"
+            }
+        },
+        {
+            "id": "af5015d9-3c31-41aa-b077-d7064f236f1a",
+            "gameId": "Item:51981",
+            "name": {
+                "en": "Notes on Algol"
+            }
+        },
+        {
+            "id": "0f08ac4c-cf4c-43dc-8bf0-95fc391e1f03",
+            "gameId": "Item:51979",
+            "name": {
+                "en": "Notes on Arbatel"
+            }
+        },
+        {
+            "id": "a0a3095f-7447-431b-8103-457b2817e1ba",
+            "gameId": "Item:47732",
+            "name": {
+                "en": "Notes on Black Chocobos"
+            }
+        },
+        {
+            "id": "ca1c9938-2f6b-4c02-8871-5e7f917c27ba",
+            "gameId": "Item:47738",
+            "name": {
+                "en": "Notes on Persistent Pots"
+            }
+        },
+        {
+            "id": "e753c8f9-24ec-44af-9ff7-c9a87b50f0f4",
+            "gameId": "Item:51985",
+            "name": {
+                "en": "Notes on the Abductor"
+            }
+        },
+        {
+            "id": "d8a4c416-6d4e-4b3b-b951-369d3ccc75c9",
+            "gameId": "Item:51987",
+            "name": {
+                "en": "Notes on the Alabaster Blade"
+            }
+        },
+        {
+            "id": "96250580-dc62-40b6-9ad2-d4801e3e1839",
+            "gameId": "Item:51986",
+            "name": {
+                "en": "Notes on the Claret Dragon"
+            }
+        },
+        {
+            "id": "e52c4bab-d99d-4870-af38-b1ca280eb1f8",
+            "gameId": "Item:47728",
+            "name": {
+                "en": "Notes on the Cloister Demon"
+            }
+        },
+        {
+            "id": "21801e70-8aca-4ead-995a-4ceefa4958b5",
+            "gameId": "Item:47730",
+            "name": {
+                "en": "Notes on the Crescent Berserker"
+            }
+        },
+        {
+            "id": "84dfa5ab-7ffb-45be-8b42-27a4b999fee9",
+            "gameId": "Item:51982",
+            "name": {
+                "en": "Notes on the Metamorph"
+            }
+        },
+        {
+            "id": "e863fb50-47c6-42b9-a0c8-a1ccfb72499a",
+            "gameId": "Item:47729",
+            "name": {
+                "en": "Notes on the Mythic Idol"
+            }
+        },
+        {
+            "id": "232ddd0c-04fe-471c-be5e-87acfce182eb",
+            "gameId": "Item:47731",
+            "name": {
+                "en": "Notes on the Nymian Petalodus"
+            }
+        },
+        {
+            "id": "cff72114-4fc2-47c7-86f2-9ca55d661872",
+            "gameId": "Item:51983",
+            "name": {
+                "en": "Notes on the Pallmagia"
+            }
+        },
+        {
+            "id": "eb7d14f3-6fc3-4c16-b695-4d090a6a952d",
+            "gameId": "Item:51984",
+            "name": {
+                "en": "Notes on the Phantom Necromancer"
+            }
+        },
+        {
+            "id": "6de46609-8ad3-458e-94ff-0a71450ded5c",
+            "gameId": "Item:51980",
+            "name": {
+                "en": "Notes on the Tiny Mage"
+            }
+        },
+        {
+            "id": "5cd6ebca-1fe2-440c-a194-daa9bb69877f",
+            "gameId": "Item:47733",
+            "name": {
+                "en": "Notes on the Trade Tortoise"
+            }
+        },
+        {
+            "id": "df561ae3-efd9-4435-97fd-e1a1de04ab93",
+            "gameId": "Action:47170",
+            "name": {
+                "en": "Occult Aero III"
+            }
+        },
+        {
+            "id": "86e2a6ea-9048-454c-b947-59b05dcae34f",
+            "gameId": "Item:49828",
+            "name": {
+                "en": "Occult Bracelet of Blood"
+            }
+        },
+        {
+            "id": "db7d2037-14c7-43d7-a330-e92f0665ebec",
+            "gameId": "Item:49833",
+            "name": {
+                "en": "Occult Bracelet of Magic"
+            }
+        },
+        {
+            "id": "a7116a14-2794-41c5-9fe5-e2a691d48382",
+            "gameId": "Item:49826",
+            "name": {
+                "en": "Occult Earrings of Blood"
+            }
+        },
+        {
+            "id": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
+            "gameId": "Item:49831",
+            "name": {
+                "en": "Occult Earrings of Magic"
+            }
+        },
+        {
+            "id": "f8caf573-ed02-4b5e-9627-9d47be8a3716",
+            "gameId": "Action:49086",
+            "name": {
+                "en": "Occult Missile"
+            }
+        },
+        {
+            "id": "7d5ecdd1-7f60-4881-9790-43edb1115971",
+            "gameId": "Item:49827",
+            "name": {
+                "en": "Occult Necklace of Blood"
+            }
+        },
+        {
+            "id": "88932e24-78fc-434d-aa01-1892b55dd90e",
+            "gameId": "Item:49832",
+            "name": {
+                "en": "Occult Necklace of Magic"
+            }
+        },
+        {
+            "id": "b8b6a909-48e9-4fde-b8df-e31af9a343d8",
+            "gameId": "Item:47757",
+            "name": {
+                "en": "Oracle's Soul Shard"
+            }
+        },
+        {
+            "id": "76549db4-75a2-42d5-9057-526c83c313a7",
+            "gameId": "Item:47749",
+            "name": {
+                "en": "Orpiment Demiatma"
+            }
+        },
+        {
+            "id": "248005f6-e60e-461d-8e08-0a829556225d",
+            "gameId": "Item:50974",
+            "name": {
+                "en": "Phantom Dispeller α"
+            }
+        },
+        {
+            "id": "4dd8dd1d-d288-477b-a30e-b0f26a22cdda",
+            "gameId": "Item:50975",
+            "name": {
+                "en": "Phantom Dispeller β"
+            }
+        },
+        {
+            "id": "efc680fa-c4be-46d3-ba00-4c5cffa443d4",
+            "gameId": "Item:50976",
+            "name": {
+                "en": "Phantom Dispeller γ"
+            }
+        },
+        {
+            "id": "4a9a1ac7-221b-45b7-8996-86a63baeb19b",
+            "gameId": "Item:47752",
+            "name": {
+                "en": "Ranger's Soul Shard"
+            }
+        },
+        {
+            "id": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
+            "gameId": "Item:47747",
+            "name": {
+                "en": "Realgar Demiatma"
+            }
+        },
+        {
+            "id": "7b2156a7-6463-43b4-aa47-d0e75428a385",
+            "gameId": "Item:31574",
+            "name": {
+                "en": "Sorrowful Memory of the Dying"
+            }
+        },
+        {
+            "id": "c847445e-be1e-4d67-9145-d74584c084c4",
+            "gameId": "Item:31573",
+            "name": {
+                "en": "Tortured Memory of the Dying"
+            }
+        },
+        {
+            "id": "5c08dc3b-61c5-4bbc-a6fc-22dd6537ef0a",
+            "gameId": "Item:47745",
+            "name": {
+                "en": "Verdigris Demiatma"
+            }
+        },
+        {
+            "id": "d7deb36f-0563-41a0-98f2-6371e3911488",
+            "gameId": "Item:48008",
+            "name": {
+                "en": "Voidsent Contract"
+            }
+        }
+    ]
+}

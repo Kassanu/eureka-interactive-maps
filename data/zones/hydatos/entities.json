@@ -1,0 +1,577 @@
+{
+    "enemies": [
+        {
+            "id": "156a5e85-d005-4b1d-bf15-f99260694376",
+            "gameId": 8054,
+            "name": {
+                "en": "Crystal Claw"
+            }
+        },
+        {
+            "id": "d8c832fe-b91e-4ded-922b-a658b5fae59e",
+            "gameId": 8017,
+            "name": {
+                "en": "Dark Gaelicat"
+            }
+        },
+        {
+            "id": "68febe85-970f-491a-8570-341ca555966d",
+            "gameId": 8051,
+            "name": {
+                "en": "Dark Gargoyle"
+            }
+        },
+        {
+            "id": "23f58093-3b43-4249-ae91-2b989a1ad19d",
+            "gameId": 8038,
+            "name": {
+                "en": "Dark Void Monk"
+            }
+        },
+        {
+            "id": "c601c05d-45f7-46a7-a176-affa0b6233ec",
+            "gameId": 7176,
+            "name": {
+                "en": "Death Sprite"
+            }
+        },
+        {
+            "id": "d77693b2-dc24-46a4-8b04-43969fcba398",
+            "gameId": 8030,
+            "name": {
+                "en": "Eo'ghrah"
+            }
+        },
+        {
+            "id": "34106eb9-ece0-4271-8d6a-aa12518d6228",
+            "gameId": 8008,
+            "name": {
+                "en": "Eurekan Deathgaze"
+            }
+        },
+        {
+            "id": "de3fa45c-c2c2-496d-803e-e345439dbd67",
+            "gameId": 8039,
+            "name": {
+                "en": "Gorpokkur"
+            }
+        },
+        {
+            "id": "b06a4a6a-0480-4d51-875a-6938d16815ba",
+            "gameId": 8050,
+            "name": {
+                "en": "Hydatos Delphyne"
+            }
+        },
+        {
+            "id": "50593755-0428-4dbd-9d17-84d35038136d",
+            "gameId": 8022,
+            "name": {
+                "en": "Hydatos Elbst"
+            }
+        },
+        {
+            "id": "d6c6cc77-32f5-4ede-904d-e8f082d5fe02",
+            "gameId": 8046,
+            "name": {
+                "en": "Hydatos Gigantopithecus"
+            }
+        },
+        {
+            "id": "187e9af6-7fc0-41be-8e38-6295795c2aaa",
+            "gameId": 8018,
+            "name": {
+                "en": "Hydatos Grenade"
+            }
+        },
+        {
+            "id": "c51158b9-2baa-4142-80ed-22a1eab2b623",
+            "gameId": 8015,
+            "name": {
+                "en": "Hydatos Nix"
+            }
+        },
+        {
+            "id": "0478dbcd-dafc-4b2e-8711-d888c8c1aecb",
+            "gameId": 8048,
+            "name": {
+                "en": "Hydatos Peiste"
+            }
+        },
+        {
+            "id": "ea91d553-c9dc-4e42-9ea5-831aeca330d4",
+            "gameId": 8028,
+            "name": {
+                "en": "Hydatos Primelephas"
+            }
+        },
+        {
+            "id": "b317e0d3-52e0-4df3-bc4b-ac2e94565c72",
+            "gameId": 8012,
+            "name": {
+                "en": "Hydatos Pudding"
+            }
+        },
+        {
+            "id": "44b7b164-ad12-48e1-8375-0fe33f451548",
+            "gameId": 8011,
+            "name": {
+                "en": "Hydatos Slug"
+            }
+        },
+        {
+            "id": "27380891-ace7-4ea9-b9b9-1a729b76f26d",
+            "gameId": 8041,
+            "name": {
+                "en": "Hydatos Squib"
+            }
+        },
+        {
+            "id": "fca16f24-91f1-4404-a8d4-a70959d0c8bc",
+            "gameId": 8023,
+            "name": {
+                "en": "Hydatos Tsanahale"
+            }
+        },
+        {
+            "id": "053b2500-ffab-4365-bb50-473337ff08b1",
+            "gameId": 8019,
+            "name": {
+                "en": "Hydatos Vepar"
+            }
+        },
+        {
+            "id": "b0d394a0-54e8-4019-a390-ab548b948f57",
+            "gameId": 8058,
+            "name": {
+                "en": "Hydatos Wraith"
+            }
+        },
+        {
+            "id": "a8f95cc3-cfb4-42b5-b402-30df39cb89a7",
+            "gameId": 8052,
+            "name": {
+                "en": "Hydatos Zebu"
+            }
+        },
+        {
+            "id": "2948bd37-3d3b-43d0-bf32-2b48d025b33d",
+            "gameId": 8016,
+            "name": {
+                "en": "Hydatos Ziz"
+            }
+        },
+        {
+            "id": "4aec739a-fe92-4326-8015-809854212b74",
+            "gameId": 8013,
+            "name": {
+                "en": "Laboratory Coeurl"
+            }
+        },
+        {
+            "id": "ecb4dec8-fe04-4134-90ab-12218297a861",
+            "gameId": 8049,
+            "name": {
+                "en": "Laboratory Jackal"
+            }
+        },
+        {
+            "id": "3242a1fc-c17f-4671-aeef-95769c5a2a53",
+            "gameId": 8047,
+            "name": {
+                "en": "Laboratory Lion"
+            }
+        },
+        {
+            "id": "8435acf0-2f8f-4ca8-90bd-1145c1224347",
+            "gameId": 8020,
+            "name": {
+                "en": "Laboratory Rat"
+            }
+        },
+        {
+            "id": "7f165456-a556-44f0-ac87-78f13c5c260e",
+            "gameId": 8029,
+            "name": {
+                "en": "Lake Yabby"
+            }
+        },
+        {
+            "id": "fc97169b-11e3-4027-b512-660874bad5e0",
+            "gameId": 8033,
+            "name": {
+                "en": "Mammet #013BL"
+            }
+        },
+        {
+            "id": "365e0a2b-33f0-4ed7-b4a4-a9a64ec40ed4",
+            "gameId": 8021,
+            "name": {
+                "en": "Nestless Cockerel"
+            }
+        },
+        {
+            "id": "13f12d1b-b96b-47dc-9191-1b8166cc0485",
+            "gameId": 8025,
+            "name": {
+                "en": "Nomadic Matanga"
+            }
+        },
+        {
+            "id": "7be32a39-6270-40f2-b1d6-03743a375c11",
+            "gameId": 8037,
+            "name": {
+                "en": "Northern Tiger"
+            }
+        },
+        {
+            "id": "7f0a870e-a2c2-4ea4-aa53-8c213104c007",
+            "gameId": 8034,
+            "name": {
+                "en": "Rusted Dreadnaught"
+            }
+        },
+        {
+            "id": "9f663f15-e262-4ff0-9c92-1bfef631b96b",
+            "gameId": 8010,
+            "name": {
+                "en": "Sabotender Mariachi"
+            }
+        },
+        {
+            "id": "7dc21217-3e17-44cc-9c05-81763fa7c34d",
+            "gameId": 8036,
+            "name": {
+                "en": "Shugen Tengu"
+            }
+        },
+        {
+            "id": "0a2de65f-83db-40dd-92bf-3ac6d5f022d5",
+            "gameId": 7471,
+            "name": {
+                "en": "Snowmelt Sprite"
+            }
+        },
+        {
+            "id": "87a179ca-a85f-448b-acdf-9140718df4cc",
+            "gameId": 7469,
+            "name": {
+                "en": "Snowstorm Sprite"
+            }
+        },
+        {
+            "id": "9facccfc-51f6-41d5-8d12-c3ba93ccb419",
+            "gameId": 8043,
+            "name": {
+                "en": "Thor the Lost"
+            }
+        },
+        {
+            "id": "cc95e7c2-3cb3-4576-97e5-28034dd13190",
+            "gameId": 7470,
+            "name": {
+                "en": "Thunderstorm Sprite"
+            }
+        },
+        {
+            "id": "c63fa102-69b2-4b03-a52f-38ab641ff7e8",
+            "gameId": 8045,
+            "name": {
+                "en": "Tigerhawk"
+            }
+        },
+        {
+            "id": "7808d0b5-e0c7-4f74-8153-bb314dd5da4f",
+            "gameId": 8044,
+            "name": {
+                "en": "Unfound Ogre"
+            }
+        },
+        {
+            "id": "54d067ba-c97b-4c64-99c9-901317907ea2",
+            "gameId": 8027,
+            "name": {
+                "en": "Val Antelope"
+            }
+        },
+        {
+            "id": "02e0b4bb-c54e-452b-82b1-aa2249249ed4",
+            "gameId": 8014,
+            "name": {
+                "en": "Val Chigoe"
+            }
+        },
+        {
+            "id": "0e5f5625-0f86-43a1-a1d6-dc65bc671e5a",
+            "gameId": 7416,
+            "name": {
+                "en": "Val Mantis"
+            }
+        },
+        {
+            "id": "cd5de9b6-2ae8-4800-8c01-2db35d6ec79e",
+            "gameId": 7408,
+            "name": {
+                "en": "Val Mole"
+            }
+        },
+        {
+            "id": "ea23359b-f77b-407f-8cc4-404d1daab564",
+            "gameId": 8009,
+            "name": {
+                "en": "Val Nanka"
+            }
+        },
+        {
+            "id": "1c21b723-4b16-4e1a-82b6-326e9363c944",
+            "gameId": 8031,
+            "name": {
+                "en": "Val Nullchu"
+            }
+        },
+        {
+            "id": "ce14be87-9df0-4f8d-91ba-8a9111fe4dfa",
+            "gameId": 8026,
+            "name": {
+                "en": "Val Tulihand"
+            }
+        },
+        {
+            "id": "649f98a9-4327-4c1b-9208-f35489dbf160",
+            "gameId": 8032,
+            "name": {
+                "en": "Vivid Gastornis"
+            }
+        },
+        {
+            "id": "e2b20ba1-3315-4f31-a1ae-d9c4495630f2",
+            "gameId": 7445,
+            "name": {
+                "en": "Void Vouivre"
+            }
+        },
+        {
+            "id": "3922a738-98f0-4c2e-942f-6ab621ab8b06",
+            "gameId": 8053,
+            "name": {
+                "en": "Void Wyvern"
+            }
+        },
+        {
+            "id": "e09343ca-6830-4c06-b9aa-f9d64c2c7edc",
+            "gameId": 8024,
+            "name": {
+                "en": "Xzomit"
+            }
+        },
+        {
+            "id": "9998f29c-1758-4e9c-9841-a5e445f0b34c",
+            "gameId": 5945,
+            "name": {
+                "en": "Zu Nestling"
+            }
+        }
+    ],
+    "bosses": [
+        {
+            "id": "4d493fc6-99d6-4816-8cd2-600c6a4d20bc",
+            "gameId": 7965,
+            "name": {
+                "en": "Barong"
+            }
+        },
+        {
+            "id": "f82deec8-3fa7-423f-a72e-e8284f81e409",
+            "gameId": 7955,
+            "name": {
+                "en": "Ceto"
+            }
+        },
+        {
+            "id": "dece5322-cf76-4f6a-be08-f7a022c9093c",
+            "gameId": 7967,
+            "name": {
+                "en": "Daphne"
+            }
+        },
+        {
+            "id": "6102d856-4df7-4b58-96b4-0c669f10f7c7",
+            "gameId": 8072,
+            "name": {
+                "en": "Frostmane"
+            }
+        },
+        {
+            "id": "45fb8a3a-33ff-48bc-810c-828c75c6264e",
+            "gameId": 8063,
+            "name": {
+                "en": "Khalamari"
+            }
+        },
+        {
+            "id": "ea68274e-eac8-4da2-bffa-9f7f0a25840a",
+            "gameId": 7966,
+            "name": {
+                "en": "King Goldemar"
+            }
+        },
+        {
+            "id": "96314623-0151-4bf5-93ac-e326ad7f298a",
+            "gameId": 8068,
+            "name": {
+                "en": "Leuke"
+            }
+        },
+        {
+            "id": "f8d59be3-0d0f-4717-b6c4-88620ad70dc2",
+            "gameId": 8070,
+            "name": {
+                "en": "Molech"
+            }
+        },
+        {
+            "id": "2b545b13-bf76-4303-9442-b4f91ef038ff",
+            "gameId": 8073,
+            "name": {
+                "en": "Piasa"
+            }
+        },
+        {
+            "id": "cf3bd20d-fc8f-40c1-963e-eaaaf51a4ab0",
+            "gameId": 8061,
+            "name": {
+                "en": "Provenance Watcher"
+            }
+        },
+        {
+            "id": "be4bc405-c9f7-4a87-b768-084f5561c79b",
+            "gameId": 8069,
+            "name": {
+                "en": "Stegodon"
+            }
+        }
+    ],
+    "fates": [
+        {
+            "id": "3534949a-07a7-4809-adf7-c7cbe5ea2547",
+            "gameId": 1414,
+            "name": {
+                "en": "Bullheaded Berserker"
+            }
+        },
+        {
+            "id": "8e930413-d71c-4402-b83a-033896cdb804",
+            "gameId": 1417,
+            "name": {
+                "en": "Crawling Chaos"
+            }
+        },
+        {
+            "id": "620ae40b-d6a9-43ae-b512-2cd2dcc80b48",
+            "gameId": 1423,
+            "name": {
+                "en": "Crystalline Provenance"
+            }
+        },
+        {
+            "id": "e115c51a-46bb-456a-81fd-7620d1cc8cd4",
+            "gameId": 1425,
+            "name": {
+                "en": "Drink Me"
+            }
+        },
+        {
+            "id": "351b6b20-9d52-40f5-b18a-199e45b18cca",
+            "gameId": 1418,
+            "name": {
+                "en": "Duty-free"
+            }
+        },
+        {
+            "id": "e5ed356e-0eea-4f67-a08b-297854bbdb9d",
+            "gameId": 1416,
+            "name": {
+                "en": "Fearful Symmetry"
+            }
+        },
+        {
+            "id": "b541ed53-ae07-4bce-9f89-0619fd7a7bf3",
+            "gameId": 1413,
+            "name": {
+                "en": "From Tusk till Dawn"
+            }
+        },
+        {
+            "id": "a36c1c99-a7dd-46bd-a5a4-c5fe2d014085",
+            "gameId": 1424,
+            "name": {
+                "en": "I Don't Want to Believe"
+            }
+        },
+        {
+            "id": "9c16338b-d979-4633-b87b-4e56b8d86edb",
+            "gameId": 1412,
+            "name": {
+                "en": "I Ink, Therefore I Am"
+            }
+        },
+        {
+            "id": "04911fcb-6909-4dca-bdca-9bd01188a84c",
+            "gameId": 1419,
+            "name": {
+                "en": "Leukewarm Reception"
+            }
+        },
+        {
+            "id": "bd2e4ea2-03f1-4f28-8a65-6a490e6e4759",
+            "gameId": 1415,
+            "name": {
+                "en": "Mad, Bad, and Fabulous to Know"
+            }
+        },
+        {
+            "id": "15dac18f-39ff-4492-be6a-8b1ade84d6f7",
+            "gameId": 1420,
+            "name": {
+                "en": "Robber Barong"
+            }
+        },
+        {
+            "id": "526d0861-1fda-4c16-ab61-08ed6e83461d",
+            "gameId": 1421,
+            "name": {
+                "en": "Stone-cold Killer"
+            }
+        },
+        {
+            "id": "fb68d52b-97a8-4999-acb5-597ac01efbab",
+            "gameId": 1422,
+            "name": {
+                "en": "The Baldesion Arsenal: Expedition Support"
+            }
+        }
+    ],
+    "aethernet": [
+        {
+            "id": "260ecc62-72f0-446a-aead-969b3cee083b",
+            "gameId": 2876,
+            "name": {
+                "en": "Central Point"
+            }
+        },
+        {
+            "id": "68d64afb-5142-461d-b22a-5b1a4250e0ef",
+            "gameId": 2892,
+            "name": {
+                "en": "Dormitory"
+            }
+        },
+        {
+            "id": "f1b773d5-258e-4613-b5c5-3dc16a3d636b",
+            "gameId": 2891,
+            "name": {
+                "en": "Unverified Research"
+            }
+        }
+    ]
+}

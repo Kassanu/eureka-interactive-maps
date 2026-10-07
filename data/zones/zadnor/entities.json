@@ -1,0 +1,416 @@
+{
+    "enemies": [
+        {
+            "id": "09891522-5ef6-4a23-aab1-315459876235",
+            "gameId": 10152,
+            "name": {
+                "en": "Aglaophotis"
+            }
+        },
+        {
+            "id": "88fd10bc-7393-4ec5-8b76-4ced663b5510",
+            "gameId": 10135,
+            "name": {
+                "en": "Anancus"
+            }
+        },
+        {
+            "id": "e87ade0a-d4b8-413d-a5ab-2cf427b8f242",
+            "gameId": 10153,
+            "name": {
+                "en": "Earth Eater"
+            }
+        },
+        {
+            "id": "56cd0d87-6395-4d87-bd5e-4860218492b3",
+            "gameId": 10173,
+            "name": {
+                "en": "Glyptodon"
+            }
+        },
+        {
+            "id": "d54db0c3-f911-4553-93eb-6f7c4d5d708f",
+            "gameId": 114,
+            "name": {
+                "en": "Ice Sprite"
+            }
+        },
+        {
+            "id": "7e7d4c90-7214-485c-94e3-15f13886e5dc",
+            "gameId": 10126,
+            "name": {
+                "en": "Lightning Sprite"
+            }
+        },
+        {
+            "id": "8b0f16b1-1dd8-4db7-8ff1-083849c9822d",
+            "gameId": 10154,
+            "name": {
+                "en": "Lord Ochu"
+            }
+        },
+        {
+            "id": "c7975a06-5a5f-443a-be5a-0b76a10ca60c",
+            "gameId": 10172,
+            "name": {
+                "en": "Molten Scorpion"
+            }
+        },
+        {
+            "id": "8dffc90f-aa4d-4b37-8da2-29ad0d25c0c6",
+            "gameId": 10137,
+            "name": {
+                "en": "Stratogryph"
+            }
+        },
+        {
+            "id": "84bd830b-f5a6-4019-b439-8dd207920a6a",
+            "gameId": 10174,
+            "name": {
+                "en": "Vapula"
+            }
+        },
+        {
+            "id": "9b4f3715-f02a-4db4-847b-a007aea776ba",
+            "gameId": 10136,
+            "name": {
+                "en": "Vinegaroon Executioner"
+            }
+        },
+        {
+            "id": "91049c5f-d334-4d30-a18c-1a6c600db2eb",
+            "gameId": 56,
+            "name": {
+                "en": "Water Sprite"
+            }
+        },
+        {
+            "id": "e29844da-323c-4428-929b-20b6a7f0e114",
+            "gameId": 115,
+            "name": {
+                "en": "Wind Sprite"
+            }
+        }
+    ],
+    "skirmishes": [
+        {
+            "id": "b2320385-fa94-482e-9d56-4d8829d078df",
+            "gameId": 1728,
+            "name": {
+                "en": "A Just Pursuit"
+            }
+        },
+        {
+            "id": "b1d66ede-c379-4150-a3d5-d577ce87336a",
+            "gameId": 1737,
+            "name": {
+                "en": "A Relic Unleashed"
+            }
+        },
+        {
+            "id": "276ca5cb-9f82-4de8-8f9f-37162cf87efa",
+            "gameId": 1721,
+            "name": {
+                "en": "A Wrench in the Reconnaissance Effort"
+            }
+        },
+        {
+            "id": "09345d2b-0dfb-413e-9f53-f701949d1936",
+            "gameId": 1727,
+            "name": {
+                "en": "An End to Atrocities"
+            }
+        },
+        {
+            "id": "fd84f200-e055-47d1-9872-b1f4a384ffe5",
+            "gameId": 1719,
+            "name": {
+                "en": "An Immoral Dilemma"
+            }
+        },
+        {
+            "id": "84395f0c-d910-45cf-bec7-87d4287475f3",
+            "gameId": 1722,
+            "name": {
+                "en": "Another Pilot Episode"
+            }
+        },
+        {
+            "id": "b24b9dc7-613c-40ff-9491-4a974295daba",
+            "gameId": 1742,
+            "name": {
+                "en": "Attack of the Machines"
+            }
+        },
+        {
+            "id": "1de5b276-21ee-4862-b3a7-f4abef2e71d2",
+            "gameId": 1740,
+            "name": {
+                "en": "Attack of the Supersoldiers"
+            }
+        },
+        {
+            "id": "75db1663-cfe2-44e4-8548-554c684ee4a0",
+            "gameId": 1723,
+            "name": {
+                "en": "Breaking the Ice"
+            }
+        },
+        {
+            "id": "0e716731-9880-4bdd-8b25-65948ecf9ed7",
+            "gameId": 1725,
+            "name": {
+                "en": "Challenge Accepted"
+            }
+        },
+        {
+            "id": "a2a3177b-eaba-4f68-b2a9-014d583a360f",
+            "gameId": 1720,
+            "name": {
+                "en": "Deadly Divination"
+            }
+        },
+        {
+            "id": "432ef199-9449-4379-b1dc-2f6a1682c550",
+            "gameId": 1731,
+            "name": {
+                "en": "Demented Mentor"
+            }
+        },
+        {
+            "id": "b0a0fe0a-ef1d-4010-b43d-d462aae8920f",
+            "gameId": 1739,
+            "name": {
+                "en": "Hypertuned Havoc"
+            }
+        },
+        {
+            "id": "9e3ff88a-3d2a-4412-a3aa-27bf532d8467",
+            "gameId": 1736,
+            "name": {
+                "en": "Mean-spirited"
+            }
+        },
+        {
+            "id": "493bba8f-10c2-4497-84f3-557dc9238153",
+            "gameId": 1724,
+            "name": {
+                "en": "Meet the Puppetmaster"
+            }
+        },
+        {
+            "id": "e9eb0d5f-5df2-4c70-953a-f5eb48bdd0ee",
+            "gameId": 1717,
+            "name": {
+                "en": "Of Beasts and Braggadocio"
+            }
+        },
+        {
+            "id": "93f48dfc-f5ff-4b47-a8ea-2bc27d8a9345",
+            "gameId": 1718,
+            "name": {
+                "en": "Parts and Parcel"
+            }
+        },
+        {
+            "id": "8d298a97-9da8-4955-b0e2-82683b926ed8",
+            "gameId": 1735,
+            "name": {
+                "en": "Seeq and You Will Find"
+            }
+        },
+        {
+            "id": "cbb28d42-6028-43db-9820-53bd08e6229f",
+            "gameId": 1732,
+            "name": {
+                "en": "Sever the Strings"
+            }
+        },
+        {
+            "id": "34239b82-288e-4570-b6a8-f2ee8b725433",
+            "gameId": 1734,
+            "name": {
+                "en": "Still Only Counts as One"
+            }
+        },
+        {
+            "id": "8f8de3b6-3539-4a12-a1eb-4d3737505f20",
+            "gameId": 1730,
+            "name": {
+                "en": "Supersoldier Rising"
+            }
+        },
+        {
+            "id": "33c7108a-25e7-4cbc-84df-20b9cb18f755",
+            "gameId": 1729,
+            "name": {
+                "en": "Tanking Up"
+            }
+        },
+        {
+            "id": "56e08fd6-119d-4751-82c7-2c229d2c6e51",
+            "gameId": 1726,
+            "name": {
+                "en": "Th'uban the Terrible"
+            }
+        },
+        {
+            "id": "2421275b-baae-4e87-9981-4333e356e41e",
+            "gameId": 1733,
+            "name": {
+                "en": "The Beasts Are Back"
+            }
+        },
+        {
+            "id": "33ed1bbb-e6f0-4461-8223-d83a97c90b34",
+            "gameId": 1741,
+            "name": {
+                "en": "The Student Becalms the Master"
+            }
+        },
+        {
+            "id": "6127213b-0e44-4538-9be0-98deda037211",
+            "gameId": 1738,
+            "name": {
+                "en": "When Mages Rage"
+            }
+        }
+    ],
+    "engagements": [
+        {
+            "id": "787348ce-6d0d-4cc6-8c44-a3c075ede21d",
+            "gameId": 29,
+            "name": {
+                "en": "A Familiar Face"
+            }
+        },
+        {
+            "id": "9775c44b-b140-4b52-a4be-20e334d78bbb",
+            "gameId": 18,
+            "name": {
+                "en": "Feeling the Burn"
+            }
+        },
+        {
+            "id": "fb9cdd63-fbf2-4696-bb8c-febd8e63fa40",
+            "gameId": 20,
+            "name": {
+                "en": "From Beyond the Grave"
+            }
+        },
+        {
+            "id": "c5bbe044-0f06-40e4-9b74-99915fc9b208",
+            "gameId": 23,
+            "name": {
+                "en": "Head of the Snake"
+            }
+        },
+        {
+            "id": "431d2dc7-4cc7-4011-b50a-84cfef72afd3",
+            "gameId": 22,
+            "name": {
+                "en": "Here Comes the Cavalry"
+            }
+        },
+        {
+            "id": "4c6f215d-8784-46e0-943b-f5a42cea4b6a",
+            "gameId": 27,
+            "name": {
+                "en": "Lean, Mean, Magitek Machines"
+            }
+        },
+        {
+            "id": "3679f030-c8d0-4bd8-ab01-006099103055",
+            "gameId": 30,
+            "name": {
+                "en": "Looks to Die For"
+            }
+        },
+        {
+            "id": "ccc16dd5-4d6e-46ee-9f4d-3eaddb55359c",
+            "gameId": 25,
+            "name": {
+                "en": "Never Cry Wolf"
+            }
+        },
+        {
+            "id": "8603e7d4-aa43-4d41-aba3-75671f539d43",
+            "gameId": 17,
+            "name": {
+                "en": "On Serpents' Wings"
+            }
+        },
+        {
+            "id": "3995f4c8-b97e-4fc0-aaa1-9481e2df747c",
+            "gameId": 31,
+            "name": {
+                "en": "Taking the Lyon's Share"
+            }
+        },
+        {
+            "id": "5dc3e314-74fc-4d4a-98c3-8d4d319444fc",
+            "gameId": 19,
+            "name": {
+                "en": "The Broken Blade"
+            }
+        },
+        {
+            "id": "ebd41b40-34b2-4c06-a790-8e6506641178",
+            "gameId": 24,
+            "name": {
+                "en": "There Would Be Blood"
+            }
+        },
+        {
+            "id": "86e555a9-e0ce-4363-a4d2-8cbabfb06c0f",
+            "gameId": 26,
+            "name": {
+                "en": "Time to Burn"
+            }
+        },
+        {
+            "id": "242f8e58-715c-41ce-a086-6bf7122b9678",
+            "gameId": 21,
+            "name": {
+                "en": "With Diremite and Main"
+            }
+        },
+        {
+            "id": "4b7233e6-c5c1-4fcd-8771-c13ca3fc4e5f",
+            "gameId": 28,
+            "name": {
+                "en": "Worn to a Shadow"
+            }
+        }
+    ],
+    "aethernet": [
+        {
+            "id": "f03ac947-058d-4a9a-9712-105ac9e90cef",
+            "gameId": 3664,
+            "name": {
+                "en": "Camp Vrdelnis"
+            }
+        },
+        {
+            "id": "a88ad358-4e4b-491a-b620-985b17b1ff2a",
+            "gameId": 3667,
+            "name": {
+                "en": "Hrmovir Point"
+            }
+        },
+        {
+            "id": "0cd63394-c4f8-4d2a-b0e6-fbf93a3f12a6",
+            "gameId": 3666,
+            "name": {
+                "en": "Ljeban Point"
+            }
+        },
+        {
+            "id": "f6108572-adbd-4937-be42-7c62a460f2de",
+            "gameId": 3665,
+            "name": {
+                "en": "Zuprtik Point"
+            }
+        }
+    ]
+}
