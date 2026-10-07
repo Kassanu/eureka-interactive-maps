@@ -32,22 +32,22 @@ The easiest way to contribute is by keeping map data accurate and up to date. Ea
 
    Save checks every item before it writes anything. If there is an issue, nothing downloads and the editor lists what is wrong.
 
-4. Fork this repository and replace the corresponding JSON file in `assets/zoneJson/` with your updated file. The downloaded file keeps its zone's name, so it drops straight in.
+4. Fork this repository and replace the zone's file with your updated one. The download is named after its zone (`anemos.json`), and the file it replaces is `data/zones/anemos/zone.json`, so rename it to `zone.json` and put it in that zone's folder.
 
 5. Open a pull request with a description of what was changed (e.g. "Updated spawn position for X", "Added missing NM fate Y").
 
 The JSON files live in:
 
 ```
-assets/zoneJson/
-  anemos.json
-  pagos.json
-  pyros.json
-  hydatos.json
-  bozjansouthernfront.json
-  zadnor.json
-  south_horn.json
-  north_horn.json
+data/zones/
+  anemos/zone.json
+  pagos/zone.json
+  pyros/zone.json
+  hydatos/zone.json
+  bozjansouthernfront/zone.json
+  zadnor/zone.json
+  south_horn/zone.json
+  north_horn/zone.json
 ```
 
 Each file holds items and nothing else. What a section is called, what type it is, what order it draws in and which icon it uses live in `zones/`, so adding a zone means adding a module there rather than copying a template file.

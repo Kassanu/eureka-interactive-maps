@@ -5,7 +5,7 @@ export const pagos: ZoneDefinition = {
   slug: 'pagos',
   operation: 'eureka',
   accent: 'bg-blue-500 hover:bg-blue-700',
-  file: () => import('../assets/zoneJson/pagos.json'),
+  file: () => import('../data/zones/pagos/zone.json'),
   map: { image: () => import('../assets/images/maps/pagos.jpg'), grid: GRID },
   level: eurekaLevel,
   sections: eurekaSections,

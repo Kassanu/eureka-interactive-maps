@@ -11,7 +11,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 
 const ROOT = new URL('..', import.meta.url).pathname
-const ZONE_DIR = join(ROOT, 'assets/zoneJson')
+const ZONE_DIR = join(ROOT, 'data/zones')
 
 const SCHEMA_VERSION = 7
 
@@ -184,7 +184,7 @@ function migrateItem (item, { family, type, sectionKey }) {
 let changed = 0
 
 for (const [slug, family] of Object.entries(FAMILY)) {
-  const path = join(ZONE_DIR, `${slug}.json`)
+  const path = join(ZONE_DIR, slug, 'zone.json')
   const file = JSON.parse(readFileSync(path, 'utf8'))
   const sections = {}
 

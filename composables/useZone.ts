@@ -21,7 +21,7 @@ export function useZone(slug: ZoneSlug): UseZone {
       // An issue naming no section is the file itself, which leaves nothing to draw.
       const unreadable = loaded.issues.find(issue => issue.section === undefined)
       if (unreadable) {
-        error.value = `${slug}.json: ${unreadable.message}`
+        error.value = `data/zones/${slug}/zone.json: ${unreadable.message}`
         return
       }
 

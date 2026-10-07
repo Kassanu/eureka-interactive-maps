@@ -13,6 +13,10 @@ describe.each(zoneSlugs)('%s', slug => {
   const zone = zones[slug]
   const file = loadZoneFile(slug)
 
+  it('is the file its zone module imports', async () => {
+    expect((await zone.file()).default).toEqual(file)
+  })
+
   it('declares the current schema version', () => {
     expect(file.schemaVersion).toBe(ZONE_SCHEMA_VERSION)
   })
