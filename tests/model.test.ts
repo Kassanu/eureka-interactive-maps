@@ -122,9 +122,12 @@ describe('drop catalogue', () => {
   // These are game item names rather than app strings, so they resolve without the locale file
   // and stay that way until the glossary keyed by FFXIV Item id exists.
   it('names an item without reading the message file', () => {
-    const absent: Translate = () => {
-      throw new Error('a drop name was looked up as an app string')
-    }
+    const absent: Translate = Object.assign(
+      () => {
+        throw new Error('a drop name was looked up as an app string')
+      },
+      { locale: 'en' as const }
+    )
     expect(dropItems.label('occultmissile', absent)).toBe('Occult Missile')
   })
 

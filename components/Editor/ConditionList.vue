@@ -26,6 +26,7 @@
 
 <script setup lang="ts">
 import FormField from '~/components/Editor/FormField.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { times, weatherTypes } from '~/model/lookups'
 import type { Condition } from '~/model/items/conditions'
 
@@ -36,7 +37,7 @@ const props = defineProps<{
   label: string
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 function add() {
   const taken = new Set(props.conditions.map(condition => condition.weather))

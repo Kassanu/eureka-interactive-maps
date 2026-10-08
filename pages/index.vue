@@ -16,10 +16,11 @@
 
 <script setup lang="ts">
 import OperationZones from '~/components/OperationZones.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { SITE_NAME } from '~/site'
 import { operationKeys, operations, zoneSlugs, zoneFor, type OperationKey } from '~/zones'
 
-const { t } = useI18n()
+const t = useTranslate()
 
 const zonesOf = (operation: OperationKey) =>
   zoneSlugs.map(zoneFor).filter(zone => zone.operation === operation)

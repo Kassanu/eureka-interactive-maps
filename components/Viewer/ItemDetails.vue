@@ -90,6 +90,7 @@
 import { computed } from 'vue'
 import Conditions from '~/components/Viewer/Conditions.vue'
 import Field from '~/components/Viewer/Field.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { dropItems } from '~/model/lookups/drops'
 import {
   aggroTypes,
@@ -113,7 +114,7 @@ const props = defineProps<{
   zone: LoadedZone
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 // An empty list is no aggro and no weakness rather than an unrecorded one, so it reads as None.
 function list<K extends string>(lookup: Lookup<K>, keys: readonly K[]): string {

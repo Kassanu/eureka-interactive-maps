@@ -29,12 +29,13 @@
 import { computed, nextTick, provide } from 'vue'
 import { EurekaCanvas } from 'eureka-canvas'
 import EditorPanel from '~/components/Editor/EditorPanel.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { editorKey, useZoneEditor } from '~/composables/useZoneEditor'
 import { zoneFor, zoneMarkers, type Marker, type ZoneSlug } from '~/zones'
 
 const props = defineProps<{ slug: ZoneSlug }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 const editor = useZoneEditor(props.slug)
 const grid = zoneFor(props.slug).map.grid
 provide(editorKey, editor)

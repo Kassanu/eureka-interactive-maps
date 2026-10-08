@@ -6,6 +6,7 @@
 </template>
 
 <script setup lang="ts">
+import { useTranslate } from '~/composables/useTranslate'
 import { times, weatherTypes } from '~/model/lookups'
 import type { Condition } from '~/model/items/conditions'
 
@@ -15,5 +16,5 @@ defineProps<{
   conditions: readonly Condition[]
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 </script>

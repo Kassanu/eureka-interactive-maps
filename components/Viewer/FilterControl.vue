@@ -82,6 +82,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useTranslate } from '~/composables/useTranslate'
 import {
   NO_KEY,
   YES_KEY,
@@ -102,7 +103,7 @@ const props = defineProps<{
   state: FilterState
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 // A list this long is worth folding away: the skirmish and drop lists run past thirty.
 const LONG = 8
