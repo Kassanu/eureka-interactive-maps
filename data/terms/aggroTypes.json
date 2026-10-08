@@ -1,0 +1,20 @@
+{
+    "sight": {
+        "en": "Sight"
+    },
+    "truesight": {
+        "en": "True Sight"
+    },
+    "sound": {
+        "en": "Sound"
+    },
+    "proximity": {
+        "en": "Proximity"
+    },
+    "magic": {
+        "en": "Magic"
+    },
+    "blood": {
+        "en": "Blood"
+    }
+}

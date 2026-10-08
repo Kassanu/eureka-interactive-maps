@@ -1,0 +1,26 @@
+{
+    "n": {
+        "en": "North"
+    },
+    "ne": {
+        "en": "Northeast"
+    },
+    "e": {
+        "en": "East"
+    },
+    "se": {
+        "en": "Southeast"
+    },
+    "s": {
+        "en": "South"
+    },
+    "sw": {
+        "en": "Southwest"
+    },
+    "w": {
+        "en": "West"
+    },
+    "nw": {
+        "en": "Northwest"
+    }
+}

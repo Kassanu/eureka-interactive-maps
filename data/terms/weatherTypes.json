@@ -1,0 +1,32 @@
+{
+    "fairskies": {
+        "en": "Fair Skies"
+    },
+    "heatwave": {
+        "en": "Heat Wave"
+    },
+    "snow": {
+        "en": "Snow"
+    },
+    "blizzard": {
+        "en": "Blizzard"
+    },
+    "showers": {
+        "en": "Showers"
+    },
+    "thunderstorm": {
+        "en": "Thunderstorm"
+    },
+    "fog": {
+        "en": "Fog"
+    },
+    "umbralwind": {
+        "en": "Umbral Wind"
+    },
+    "gales": {
+        "en": "Gales"
+    },
+    "gloom": {
+        "en": "Gloom"
+    }
+}
