@@ -12,9 +12,11 @@
                             "y": 26.3
                         }
                     ],
-                    "boss": {
-                        "name": "Leucosia"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Leucosia"
+                        }
+                    ],
                     "drops": [],
                     "level": 35,
                     "element": "water",
@@ -29,6 +31,7 @@
                             "y": 26.3
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 35,
                     "element": "water",
@@ -43,9 +46,11 @@
                             "y": 29.6
                         }
                     ],
-                    "boss": {
-                        "name": "Flauros"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Flauros"
+                        }
+                    ],
                     "drops": [],
                     "level": 36,
                     "element": "lightning",
@@ -60,9 +65,11 @@
                             "y": 32
                         }
                     ],
-                    "boss": {
-                        "name": "The Sophist"
-                    },
+                    "bosses": [
+                        {
+                            "name": "The Sophist"
+                        }
+                    ],
                     "drops": [],
                     "level": 37,
                     "element": "wind",
@@ -77,9 +84,11 @@
                             "y": 37.3
                         }
                     ],
-                    "boss": {
-                        "name": "Graffiacane"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Graffiacane"
+                        }
+                    ],
                     "drops": [],
                     "level": 38,
                     "element": "ice",
@@ -94,9 +103,11 @@
                             "y": 28.9
                         }
                     ],
-                    "boss": {
-                        "name": "Askalaphos"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Askalaphos"
+                        }
+                    ],
                     "drops": [],
                     "level": 39,
                     "element": "wind",
@@ -111,9 +122,11 @@
                             "y": 14.3
                         }
                     ],
-                    "boss": {
-                        "name": "Grand Duke Batym"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Grand Duke Batym"
+                        }
+                    ],
                     "drops": [],
                     "level": 40,
                     "element": "earth",
@@ -128,9 +141,11 @@
                             "y": 14
                         }
                     ],
-                    "boss": {
-                        "name": "Aetolus"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Aetolus"
+                        }
+                    ],
                     "drops": [],
                     "level": 41,
                     "element": "lightning",
@@ -145,9 +160,11 @@
                             "y": 11.5
                         }
                     ],
-                    "boss": {
-                        "name": "Lesath"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Lesath"
+                        }
+                    ],
                     "drops": [],
                     "level": 42,
                     "element": "fire",
@@ -162,9 +179,11 @@
                             "y": 6.6
                         }
                     ],
-                    "boss": {
-                        "name": "Eldthurs"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Eldthurs"
+                        }
+                    ],
                     "drops": [],
                     "level": 43,
                     "element": "fire",
@@ -179,9 +198,11 @@
                             "y": 11.9
                         }
                     ],
-                    "boss": {
-                        "name": "Iris"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Iris"
+                        }
+                    ],
                     "drops": [],
                     "level": 44,
                     "element": "water",
@@ -196,9 +217,11 @@
                             "y": 7.9
                         }
                     ],
-                    "boss": {
-                        "name": "Lamebrix Strikebocks"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Lamebrix Strikebocks"
+                        }
+                    ],
                     "drops": [],
                     "level": 45,
                     "element": "earth",
@@ -213,9 +236,11 @@
                             "y": 9.1
                         }
                     ],
-                    "boss": {
-                        "name": "Dux"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Dux"
+                        }
+                    ],
                     "drops": [],
                     "level": 46,
                     "element": "lightning",
@@ -230,6 +255,7 @@
                             "y": 10.9
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 46,
                     "element": "earth",
@@ -244,9 +270,11 @@
                             "y": 11.6
                         }
                     ],
-                    "boss": {
-                        "name": "Lumber Jack"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Lumber Jack"
+                        }
+                    ],
                     "drops": [],
                     "level": 47,
                     "element": "earth",
@@ -261,9 +289,11 @@
                             "y": 14.9
                         }
                     ],
-                    "boss": {
-                        "name": "Glaukopis"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Glaukopis"
+                        }
+                    ],
                     "drops": [],
                     "level": 48,
                     "element": "fire",
@@ -278,9 +308,11 @@
                             "y": 34
                         }
                     ],
-                    "boss": {
-                        "name": "Ying-Yang"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Ying-Yang"
+                        }
+                    ],
                     "drops": [],
                     "level": 49,
                     "element": "water",
@@ -295,9 +327,11 @@
                             "y": 30
                         }
                     ],
-                    "boss": {
-                        "name": "Skoll"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Skoll"
+                        }
+                    ],
                     "drops": [],
                     "level": 50,
                     "element": "ice",
@@ -312,9 +346,11 @@
                             "y": 6.1
                         }
                     ],
-                    "boss": {
-                        "name": "Penthesilea"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Penthesilea"
+                        }
+                    ],
                     "drops": [],
                     "level": 50,
                     "element": "fire",

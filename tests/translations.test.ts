@@ -111,10 +111,10 @@ describe('where a block goes', () => {
     const i18n = translationsOf('Boss')
     let seen = 0
     for (const { label, shape } of sections) {
-      if (!('boss' in shape)) continue
-      const accepted = firstAccepted(shape, 'boss', [
-        { name: 'Boss', weakness: [], i18n },
-        { name: 'Boss', i18n },
+      if (!('bosses' in shape)) continue
+      const accepted = firstAccepted(shape, 'bosses', [
+        [{ name: 'Boss', weakness: [], i18n }],
+        [{ name: 'Boss', i18n }],
       ])
       expect(accepted, label).toBeDefined()
       seen++
@@ -127,8 +127,8 @@ describe('a translated zone', () => {
   it('comes back from a save as it went in, each block directly after its name', () => {
     const zone = hydrateZone('north_horn')
     const fates = zone.sections.find(section => section.key === 'fates')!.items
-    const fate = fates.find(item => 'boss' in item && item.boss !== undefined)!
-    const boss = (fate as { boss: { name: string } }).boss
+    const fate = fates.find(item => 'bosses' in item && item.bosses.length > 0)!
+    const boss = (fate as { bosses: { name: string }[] }).bosses[0]!
     const enemy = zone.sections.find(section => section.key === 'enemies')!.items[0]!
 
     Object.assign(fate, { i18n: translationsOf((fate as { name: string }).name) })
@@ -143,7 +143,7 @@ describe('a translated zone', () => {
       (item: { id: string }) => item.id === fate.id
     )
     expect(Object.keys(writtenFate).slice(1, 3)).toEqual(['name', 'i18n'])
-    expect(Object.keys(writtenFate.boss).slice(0, 2)).toEqual(['name', 'i18n'])
+    expect(Object.keys(writtenFate.bosses[0]).slice(0, 2)).toEqual(['name', 'i18n'])
 
     const read = parseSections(zoneFor('north_horn'), written)
     expect(read.issues).toEqual([])

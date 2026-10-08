@@ -13,6 +13,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 48
@@ -27,6 +28,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -46,6 +48,7 @@
                         }
                     ],
                     "icon": "engagements_duel",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 1
@@ -60,6 +63,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 48
@@ -74,6 +78,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -93,6 +98,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -112,6 +118,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -131,6 +138,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 24
@@ -145,6 +153,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 48
@@ -159,6 +168,7 @@
                         }
                     ],
                     "icon": "engagements_duel",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 1
@@ -173,6 +183,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -192,6 +203,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -211,6 +223,7 @@
                         }
                     ],
                     "icon": "engagements_duel",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 1
@@ -225,6 +238,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 48
@@ -239,6 +253,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [],
                     "participants": 24
@@ -253,6 +268,7 @@
                         }
                     ],
                     "icon": "engagements_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -276,6 +292,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -289,6 +306,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -302,6 +320,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -315,6 +334,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -328,6 +348,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -341,6 +362,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -354,6 +376,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -367,6 +390,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -380,6 +404,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -410,6 +435,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -440,6 +466,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -453,6 +480,7 @@
                         }
                     ],
                     "icon": "skirmishes_gather",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -466,6 +494,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -479,6 +508,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -492,6 +522,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -505,6 +536,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -518,6 +550,7 @@
                         }
                     ],
                     "icon": "skirmishes_defend",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -531,6 +564,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -549,6 +583,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -575,6 +610,7 @@
                         }
                     ],
                     "icon": "skirmishes_defend",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -601,6 +637,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -614,6 +651,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -627,6 +665,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": [
                         {
@@ -645,6 +684,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -658,6 +698,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -671,6 +712,7 @@
                         }
                     ],
                     "icon": "skirmishes_gather",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -684,6 +726,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -697,6 +740,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -710,6 +754,7 @@
                         }
                     ],
                     "icon": "skirmishes_slay",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -723,6 +768,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -736,6 +782,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 },
@@ -749,6 +796,7 @@
                         }
                     ],
                     "icon": "skirmishes_boss",
+                    "bosses": [],
                     "drops": [],
                     "spawns": []
                 }

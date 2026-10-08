@@ -12,6 +12,7 @@
                             "y": 26.9
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 20,
                     "element": "ice",
@@ -26,9 +27,11 @@
                             "y": 26
                         }
                     ],
-                    "boss": {
-                        "name": "The Snow Queen"
-                    },
+                    "bosses": [
+                        {
+                            "name": "The Snow Queen"
+                        }
+                    ],
                     "drops": [],
                     "level": 20,
                     "element": "ice",
@@ -43,9 +46,11 @@
                             "y": 28
                         }
                     ],
-                    "boss": {
-                        "name": "Taxim"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Taxim"
+                        }
+                    ],
                     "drops": [],
                     "level": 21,
                     "element": "earth",
@@ -60,9 +65,11 @@
                             "y": 30
                         }
                     ],
-                    "boss": {
-                        "name": "Ash Dragon"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Ash Dragon"
+                        }
+                    ],
                     "drops": [],
                     "level": 22,
                     "element": "fire",
@@ -77,9 +84,11 @@
                             "y": 26
                         }
                     ],
-                    "boss": {
-                        "name": "Glavoid"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Glavoid"
+                        }
+                    ],
                     "drops": [],
                     "level": 23,
                     "element": "earth",
@@ -94,9 +103,11 @@
                             "y": 21
                         }
                     ],
-                    "boss": {
-                        "name": "Anapos"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Anapos"
+                        }
+                    ],
                     "drops": [],
                     "level": 24,
                     "element": "water",
@@ -111,9 +122,11 @@
                             "y": 22.4
                         }
                     ],
-                    "boss": {
-                        "name": "Hakutaku"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Hakutaku"
+                        }
+                    ],
                     "drops": [],
                     "level": 25,
                     "element": "fire",
@@ -128,9 +141,11 @@
                             "y": 16.2
                         }
                     ],
-                    "boss": {
-                        "name": "King Igloo"
-                    },
+                    "bosses": [
+                        {
+                            "name": "King Igloo"
+                        }
+                    ],
                     "drops": [],
                     "level": 26,
                     "element": "ice",
@@ -145,9 +160,11 @@
                             "y": 10.5
                         }
                     ],
-                    "boss": {
-                        "name": "Asag"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Asag"
+                        }
+                    ],
                     "drops": [],
                     "level": 27,
                     "element": "lightning",
@@ -162,9 +179,11 @@
                             "y": 19.4
                         }
                     ],
-                    "boss": {
-                        "name": "Surabhi"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Surabhi"
+                        }
+                    ],
                     "drops": [],
                     "level": 28,
                     "element": "earth",
@@ -179,9 +198,11 @@
                             "y": 15.5
                         }
                     ],
-                    "boss": {
-                        "name": "King Arthro"
-                    },
+                    "bosses": [
+                        {
+                            "name": "King Arthro"
+                        }
+                    ],
                     "drops": [],
                     "level": 29,
                     "element": "water",
@@ -196,9 +217,14 @@
                             "y": 18.5
                         }
                     ],
-                    "boss": {
-                        "name": "Mindertaur/Eldertaur"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Mindertaur"
+                        },
+                        {
+                            "name": "Eldertaur"
+                        }
+                    ],
                     "drops": [],
                     "level": 30,
                     "element": "earth",
@@ -213,9 +239,11 @@
                             "y": 17.1
                         }
                     ],
-                    "boss": {
-                        "name": "Holy Cow"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Holy Cow"
+                        }
+                    ],
                     "drops": [],
                     "level": 31,
                     "element": "water",
@@ -230,6 +258,7 @@
                             "y": 21.4
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 28,
                     "element": "earth",
@@ -244,9 +273,11 @@
                             "y": 19
                         }
                     ],
-                    "boss": {
-                        "name": "Hadhayosh"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Hadhayosh"
+                        }
+                    ],
                     "drops": [],
                     "level": 32,
                     "element": "lightning",
@@ -261,9 +292,11 @@
                             "y": 20.2
                         }
                     ],
-                    "boss": {
-                        "name": "Horus"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Horus"
+                        }
+                    ],
                     "drops": [],
                     "level": 33,
                     "element": "fire",
@@ -278,9 +311,11 @@
                             "y": 25.3
                         }
                     ],
-                    "boss": {
-                        "name": "Arch Angra Mainyu"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Arch Angra Mainyu"
+                        }
+                    ],
                     "drops": [],
                     "level": 34,
                     "element": "wind",
@@ -295,9 +330,11 @@
                             "y": 14.5
                         }
                     ],
-                    "boss": {
-                        "name": "Copycat Cassie"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Copycat Cassie"
+                        }
+                    ],
                     "drops": [],
                     "level": 35,
                     "element": "ice",
@@ -312,9 +349,11 @@
                             "y": 18.7
                         }
                     ],
-                    "boss": {
-                        "name": "Louhi"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Louhi"
+                        }
+                    ],
                     "drops": [],
                     "level": 35,
                     "element": "ice",

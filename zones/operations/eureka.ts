@@ -14,12 +14,7 @@ import {
   type FilterScope,
 } from '../define/filters'
 import { ConditionsSchema } from '../../model/items/conditions'
-import {
-  AdaptationSchema,
-  BossSchema,
-  EnemySchema,
-  SpawnsFateSchema,
-} from '../../model/items/enemy'
+import { AdaptationSchema, EnemySchema, SpawnsFateSchema } from '../../model/items/enemy'
 import { ItemBaseSchema } from '../../model/items/base'
 import { EventBaseSchema } from '../../model/items/event'
 import { LootBaseSchema } from '../../model/items/loot'
@@ -59,7 +54,6 @@ export type EurekaEnemy = z.infer<typeof EurekaEnemySchema>
 
 export const EurekaEventSchema = EventBaseSchema.extend({
   level: LevelSchema,
-  boss: BossSchema.optional(),
   element: eurekaLookups.elements.key,
   // Absent means it spawns in any weather.
   weather: eurekaLookups.weatherTypes.keyOrNone,
@@ -186,6 +180,7 @@ export const eurekaSections = {
       level: { from: 1, to: 1 },
       element: 'fire',
       weather: '',
+      bosses: [],
       drops: [],
     }),
     drawStyle: 'circle',

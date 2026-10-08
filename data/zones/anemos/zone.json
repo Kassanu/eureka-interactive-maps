@@ -12,9 +12,11 @@
                             "y": 21.8
                         }
                     ],
-                    "boss": {
-                        "name": "Sabotender Corrido"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Sabotender Corrido"
+                        }
+                    ],
                     "drops": [],
                     "level": 1,
                     "element": "wind",
@@ -29,9 +31,11 @@
                             "y": 28.2
                         }
                     ],
-                    "boss": {
-                        "name": "The Lord of Anemos"
-                    },
+                    "bosses": [
+                        {
+                            "name": "The Lord of Anemos"
+                        }
+                    ],
                     "drops": [],
                     "level": 2,
                     "element": "water",
@@ -46,9 +50,11 @@
                             "y": 26.8
                         }
                     ],
-                    "boss": {
-                        "name": "Teles"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Teles"
+                        }
+                    ],
                     "drops": [],
                     "level": 3,
                     "element": "wind",
@@ -63,9 +69,11 @@
                             "y": 23.9
                         }
                     ],
-                    "boss": {
-                        "name": "The Emperor of Anemos"
-                    },
+                    "bosses": [
+                        {
+                            "name": "The Emperor of Anemos"
+                        }
+                    ],
                     "drops": [],
                     "level": 4,
                     "element": "wind",
@@ -80,9 +88,11 @@
                             "y": 23.3
                         }
                     ],
-                    "boss": {
-                        "name": "Callisto"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Callisto"
+                        }
+                    ],
                     "drops": [],
                     "level": 5,
                     "element": "earth",
@@ -97,9 +107,11 @@
                             "y": 22.7
                         }
                     ],
-                    "boss": {
-                        "name": "Number"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Number"
+                        }
+                    ],
                     "drops": [],
                     "level": 6,
                     "element": "lightning",
@@ -114,9 +126,11 @@
                             "y": 19.6
                         }
                     ],
-                    "boss": {
-                        "name": "Jahannam"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Jahannam"
+                        }
+                    ],
                     "drops": [],
                     "level": 7,
                     "element": "wind",
@@ -131,9 +145,11 @@
                             "y": 15.9
                         }
                     ],
-                    "boss": {
-                        "name": "Amemet"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Amemet"
+                        }
+                    ],
                     "drops": [],
                     "level": 8,
                     "element": "fire",
@@ -148,9 +164,11 @@
                             "y": 12.4
                         }
                     ],
-                    "boss": {
-                        "name": "Caym"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Caym"
+                        }
+                    ],
                     "drops": [],
                     "level": 9,
                     "element": "ice",
@@ -165,9 +183,11 @@
                             "y": 20.5
                         }
                     ],
-                    "boss": {
-                        "name": "Bombadeel"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Bombadeel"
+                        }
+                    ],
                     "drops": [],
                     "level": 10,
                     "element": "earth",
@@ -182,9 +202,11 @@
                             "y": 20
                         }
                     ],
-                    "boss": {
-                        "name": "Serket"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Serket"
+                        }
+                    ],
                     "drops": [],
                     "level": 11,
                     "element": "earth",
@@ -199,9 +221,11 @@
                             "y": 14.9
                         }
                     ],
-                    "boss": {
-                        "name": "Judgmental Julika"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Judgmental Julika"
+                        }
+                    ],
                     "drops": [],
                     "level": 12,
                     "element": "ice",
@@ -216,9 +240,11 @@
                             "y": 13.4
                         }
                     ],
-                    "boss": {
-                        "name": "The White Rider"
-                    },
+                    "bosses": [
+                        {
+                            "name": "The White Rider"
+                        }
+                    ],
                     "drops": [],
                     "level": 13,
                     "element": "lightning",
@@ -233,9 +259,11 @@
                             "y": 15
                         }
                     ],
-                    "boss": {
-                        "name": "Polyphemus"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Polyphemus"
+                        }
+                    ],
                     "drops": [],
                     "level": 14,
                     "element": "ice",
@@ -250,9 +278,11 @@
                             "y": 13.3
                         }
                     ],
-                    "boss": {
-                        "name": "Simurgh's Strider"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Simurgh's Strider"
+                        }
+                    ],
                     "drops": [],
                     "level": 15,
                     "element": "wind",
@@ -267,9 +297,11 @@
                             "y": 19.7
                         }
                     ],
-                    "boss": {
-                        "name": "King Hazmat"
-                    },
+                    "bosses": [
+                        {
+                            "name": "King Hazmat"
+                        }
+                    ],
                     "drops": [],
                     "level": 16,
                     "element": "fire",
@@ -284,9 +316,11 @@
                             "y": 21.9
                         }
                     ],
-                    "boss": {
-                        "name": "Fafnir"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Fafnir"
+                        }
+                    ],
                     "drops": [],
                     "level": 17,
                     "element": "fire",
@@ -301,9 +335,11 @@
                             "y": 17.9
                         }
                     ],
-                    "boss": {
-                        "name": "Amarok"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Amarok"
+                        }
+                    ],
                     "drops": [],
                     "level": 18,
                     "element": "ice",
@@ -318,9 +354,11 @@
                             "y": 25.3
                         }
                     ],
-                    "boss": {
-                        "name": "Lamashtu"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Lamashtu"
+                        }
+                    ],
                     "drops": [],
                     "level": 19,
                     "element": "wind",
@@ -335,9 +373,11 @@
                             "y": 21.7
                         }
                     ],
-                    "boss": {
-                        "name": "Pazuzu"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Pazuzu"
+                        }
+                    ],
                     "drops": [],
                     "level": 20,
                     "element": "wind",

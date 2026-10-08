@@ -5,6 +5,7 @@ import {
   encodeZone,
   firstAccepted,
   isOptionalField,
+  newBoss,
   parseSections,
   setField,
   shapeOf,
@@ -160,17 +161,15 @@ describe('asking a schema what it allows', () => {
     expect(isOptionalField(enemies, 'nothing-declares-this')).toBe(false)
   })
 
-  it('picks the richest boss shape each operation accepts', () => {
-    const rich = { name: 'New boss', weakness: [] }
-    const plain = { name: 'New boss' }
-    const candidates = [rich, plain]
-
+  it('makes a new boss in the one shape each operation accepts', () => {
     const eureka = shapeOf(zoneFor('anemos').sections.fates!.schema)
     const occult = shapeOf(zoneFor('north_horn').sections.fates!.schema)
+    const bozja = shapeOf(zoneFor('bozjansouthernfront').sections.skirmishes!.schema)
 
-    expect(firstAccepted(eureka, 'boss', candidates)).toEqual(plain)
-    expect(firstAccepted(occult, 'boss', candidates)).toEqual(rich)
-    expect(firstAccepted(eureka, 'boss', [{ name: '' }])).toBeUndefined()
+    expect(newBoss(eureka)).toEqual({ name: 'New boss' })
+    expect(newBoss(bozja)).toEqual({ name: 'New boss' })
+    expect(newBoss(occult)).toEqual({ name: 'New boss', weakness: [] })
+    expect(firstAccepted(eureka, 'bosses', [[{ name: '' }]])).toBeUndefined()
   })
 })
 

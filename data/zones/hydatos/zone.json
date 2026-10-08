@@ -12,6 +12,7 @@
                             "y": 21.6
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 50,
                     "element": "water",
@@ -26,9 +27,11 @@
                             "y": 25.6
                         }
                     ],
-                    "boss": {
-                        "name": "Khalamari"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Khalamari"
+                        }
+                    ],
                     "drops": [],
                     "level": 50,
                     "element": "water",
@@ -43,9 +46,11 @@
                             "y": 17.2
                         }
                     ],
-                    "boss": {
-                        "name": "Stegodon"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Stegodon"
+                        }
+                    ],
                     "drops": [],
                     "level": 51,
                     "element": "earth",
@@ -60,9 +65,11 @@
                             "y": 21.8
                         }
                     ],
-                    "boss": {
-                        "name": "Molech"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Molech"
+                        }
+                    ],
                     "drops": [],
                     "level": 52,
                     "element": "ice",
@@ -77,9 +84,11 @@
                             "y": 14.5
                         }
                     ],
-                    "boss": {
-                        "name": "Piasa"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Piasa"
+                        }
+                    ],
                     "drops": [],
                     "level": 53,
                     "element": "wind",
@@ -94,9 +103,11 @@
                             "y": 26.1
                         }
                     ],
-                    "boss": {
-                        "name": "Frostmane"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Frostmane"
+                        }
+                    ],
                     "drops": [],
                     "level": 54,
                     "element": "fire",
@@ -111,9 +122,11 @@
                             "y": 19
                         }
                     ],
-                    "boss": {
-                        "name": "Daphne"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Daphne"
+                        }
+                    ],
                     "drops": [],
                     "level": 55,
                     "element": "water",
@@ -128,9 +141,11 @@
                             "y": 23
                         }
                     ],
-                    "boss": {
-                        "name": "King Goldemar"
-                    },
+                    "bosses": [
+                        {
+                            "name": "King Goldemar"
+                        }
+                    ],
                     "drops": [],
                     "level": 56,
                     "element": "lightning",
@@ -145,9 +160,11 @@
                             "y": 26.4
                         }
                     ],
-                    "boss": {
-                        "name": "Leuke"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Leuke"
+                        }
+                    ],
                     "drops": [],
                     "level": 57,
                     "element": "earth",
@@ -162,9 +179,11 @@
                             "y": 25.3
                         }
                     ],
-                    "boss": {
-                        "name": "Barong"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Barong"
+                        }
+                    ],
                     "drops": [],
                     "level": 58,
                     "element": "fire",
@@ -179,9 +198,11 @@
                             "y": 14
                         }
                     ],
-                    "boss": {
-                        "name": "Ceto"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Ceto"
+                        }
+                    ],
                     "drops": [],
                     "level": 59,
                     "element": "water",
@@ -196,9 +217,11 @@
                             "y": 19.5
                         }
                     ],
-                    "boss": {
-                        "name": "Provenance Watcher"
-                    },
+                    "bosses": [
+                        {
+                            "name": "Provenance Watcher"
+                        }
+                    ],
                     "drops": [],
                     "level": 60,
                     "element": "fire",
@@ -213,6 +236,7 @@
                             "y": 29.2
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 60,
                     "element": "ice",
@@ -227,6 +251,7 @@
                             "y": 28.4
                         }
                     ],
+                    "bosses": [],
                     "drops": [],
                     "level": 60,
                     "element": "wind",

@@ -69,6 +69,7 @@
     "weather": "Weather",
     "icon": "Icon",
     "boss": "Boss",
+    "bosses": "Bosses",
     "bossName": "Boss Name",
     "bossWeakness": "Boss Weakness",
     "spawnsFate": "Spawns FATE",
@@ -122,6 +123,7 @@
     "confirmDelete": "You will be unable to recover this item after deleting. Are you sure?",
     "addCondition": "Add a condition",
     "addDrop": "Add a drop",
+    "addBoss": "Add a boss",
     "dropAmount": "How many drop",
     "dropRate": "Drop rate, left empty where it is not known",
     "addPosition": "Add another position",
@@ -132,7 +134,6 @@
     "spawnComplete": "Complete",
     "spawnAfter": "After",
     "spawnSeconds": "Seconds from the start",
-    "hasBoss": "This event is a boss fight",
     "mutates": "This enemy mutates",
     "adapts": "This enemy adapts"
   },

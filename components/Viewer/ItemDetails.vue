@@ -34,13 +34,10 @@
       {{ weatherTypes.label(item.weather, t) }}
     </Field>
 
-    <template v-if="'boss' in item && item.boss">
-      <Field :label="t('fields.boss')">{{ item.boss.name }}</Field>
-      <Field
-        v-if="'weakness' in item.boss && item.boss.weakness.length"
-        :label="t('fields.bossWeakness')"
-      >
-        {{ list(elements, item.boss.weakness) }}
+    <template v-for="(boss, index) in bosses" :key="index">
+      <Field :label="t('fields.boss')">{{ boss.name }}</Field>
+      <Field v-if="boss.weakness?.length" :label="t('fields.bossWeakness')">
+        {{ list(elements, boss.weakness) }}
       </Field>
     </template>
 
@@ -124,6 +121,12 @@ function list<K extends string>(lookup: Lookup<K>, keys: readonly K[]): string {
 }
 
 const level = computed(() => operations[props.zone.definition.operation].levelLabel(t))
+
+type Element = (typeof elements.keys)[number]
+
+const bosses = computed(() =>
+  ('bosses' in props.item ? props.item.bosses : []) as { name: string; weakness?: Element[] }[]
+)
 
 function labelOfId(id: string): string {
   const target = props.zone.byId.get(id)

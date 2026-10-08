@@ -12,12 +12,14 @@
                             "y": 34.5
                         }
                     ],
-                    "boss": {
-                        "name": "Dehumidifier",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Dehumidifier",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "verdigrisdemiatma",
@@ -35,12 +37,14 @@
                             "y": 32.7
                         }
                     ],
-                    "boss": {
-                        "name": "Observer",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Observer",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "azuritedemiatma",
@@ -58,12 +62,14 @@
                             "y": 22.3
                         }
                     ],
-                    "boss": {
-                        "name": "Sisyphus",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Sisyphus",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "malachitedemiatma",
@@ -81,12 +87,14 @@
                             "y": 15.1
                         }
                     ],
-                    "boss": {
-                        "name": "Advanced Aevis",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Advanced Aevis",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "realgardemiatma",
@@ -104,12 +112,14 @@
                             "y": 27
                         }
                     ],
-                    "boss": {
-                        "name": "Execrator",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Execrator",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "orpimentdemiatma",
@@ -127,12 +137,14 @@
                             "y": 26.5
                         }
                     ],
-                    "boss": {
-                        "name": "Ropross",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Ropross",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "orpimentdemiatma",
@@ -150,12 +162,14 @@
                             "y": 17.1
                         }
                     ],
-                    "boss": {
-                        "name": "Crescent Garula",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Crescent Garula",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "orpimentdemiatma",
@@ -177,12 +191,14 @@
                             "y": 32
                         }
                     ],
-                    "boss": {
-                        "name": "Havoc",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Havoc",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "verdigrisdemiatma",
@@ -204,12 +220,14 @@
                             "y": 34.8
                         }
                     ],
-                    "boss": {
-                        "name": "Nammu",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Nammu",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "azuritedemiatma",
@@ -227,12 +245,14 @@
                             "y": 21
                         }
                     ],
-                    "boss": {
-                        "name": "Lifereaper",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Lifereaper",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "caputmortuumdemiatma",
@@ -250,12 +270,14 @@
                             "y": 27.9
                         }
                     ],
-                    "boss": {
-                        "name": "Mad Mudarch",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Mad Mudarch",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "verdigrisdemiatma",
@@ -273,12 +295,14 @@
                             "y": 31.2
                         }
                     ],
-                    "boss": {
-                        "name": "Gilded Headstone",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Gilded Headstone",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "azuritedemiatma",
@@ -296,12 +320,14 @@
                             "y": 9.7
                         }
                     ],
-                    "boss": {
-                        "name": "Giant Bird",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Giant Bird",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "realgardemiatma",
@@ -323,12 +349,14 @@
                             "y": 37.5
                         }
                     ],
-                    "boss": {
-                        "name": "Cloister Demon",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Cloister Demon",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "verdigrisdemiatma",
@@ -362,10 +390,12 @@
                             "y": 16.1
                         }
                     ],
-                    "boss": {
-                        "name": "Megaloknight",
-                        "weakness": []
-                    },
+                    "bosses": [
+                        {
+                            "name": "Megaloknight",
+                            "weakness": []
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "caputmortuumdemiatma",
@@ -391,12 +421,14 @@
                             "y": 32.2
                         }
                     ],
-                    "boss": {
-                        "name": "Death Claw",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Death Claw",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "azuritedemiatma",
@@ -422,12 +454,14 @@
                             "y": 10.5
                         }
                     ],
-                    "boss": {
-                        "name": "Trade Tortoise",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Trade Tortoise",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "realgardemiatma",
@@ -457,12 +491,14 @@
                             "y": 24.9
                         }
                     ],
-                    "boss": {
-                        "name": "Repaired Lion",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Repaired Lion",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "caputmortuumdemiatma",
@@ -488,12 +524,14 @@
                             "y": 18.2
                         }
                     ],
-                    "boss": {
-                        "name": "Hinkypunk",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Hinkypunk",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "malachitedemiatma",
@@ -519,12 +557,14 @@
                             "y": 26.4
                         }
                     ],
-                    "boss": {
-                        "name": "Mythic Idol",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Mythic Idol",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "malachitedemiatma",
@@ -554,12 +594,14 @@
                             "y": 14.1
                         }
                     ],
-                    "boss": {
-                        "name": "Neo Garula",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Neo Garula",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "orpimentdemiatma",
@@ -585,12 +627,14 @@
                             "y": 20
                         }
                     ],
-                    "boss": {
-                        "name": "Lion Rampant",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Lion Rampant",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "caputmortuumdemiatma",
@@ -620,12 +664,14 @@
                             "y": 35.9
                         }
                     ],
-                    "boss": {
-                        "name": "Mysterious Mindflayer",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Mysterious Mindflayer",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "azuritedemiatma",
@@ -651,12 +697,14 @@
                             "y": 4.5
                         }
                     ],
-                    "boss": {
-                        "name": "Nymian Petalodus",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Nymian Petalodus",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "realgardemiatma",
@@ -686,12 +734,14 @@
                             "y": 28.6
                         }
                     ],
-                    "boss": {
-                        "name": "Black Star",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Black Star",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "orpimentdemiatma",
@@ -725,12 +775,14 @@
                             "y": 37.5
                         }
                     ],
-                    "boss": {
-                        "name": "Crescent Berserker",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Crescent Berserker",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "azuritedemiatma",
@@ -764,12 +816,14 @@
                             "y": 22.8
                         }
                     ],
-                    "boss": {
-                        "name": "Crystal Dragon",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Crystal Dragon",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "malachitedemiatma",
@@ -795,12 +849,14 @@
                             "y": 9.2
                         }
                     ],
-                    "boss": {
-                        "name": "Command Urn",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Command Urn",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "realgardemiatma",

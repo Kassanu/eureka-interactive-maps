@@ -17,7 +17,7 @@ type EntityGroups = Partial<Record<string, EntityEntry[]>>
 
 interface ZoneItem {
   name?: string
-  boss?: { name: string }
+  bosses?: { name: string }[]
   drops?: { item: string }[]
 }
 
@@ -55,9 +55,8 @@ describe.each(zoneSlugs)('%s', slug => {
     const names = englishNames(groups.bosses)
     const missing: string[] = []
     for (const [key, items] of sections(slug)) {
-      for (const { boss } of items) {
-        if (!boss) continue
-        for (const name of boss.name.split('/')) {
+      for (const { bosses = [] } of items) {
+        for (const { name } of bosses) {
           if (!names.has(name.toLowerCase())) missing.push(`${key}: ${name}`)
         }
       }

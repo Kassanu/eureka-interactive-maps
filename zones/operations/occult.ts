@@ -47,7 +47,7 @@ export const OccultBossSchema = BossSchema.extend({
 })
 
 export const OccultEventSchema = EventBaseSchema.extend({
-  boss: OccultBossSchema.optional(),
+  bosses: z.array(OccultBossSchema),
   // Empty means the event starts on its own.
   spawnedBy: OptionalItemRefSchema,
 })
@@ -131,7 +131,7 @@ export const occultSections = {
     schema: OccultEventSchema,
     drawStyle: 'circle',
     icon: item => item.icon ?? 'fate',
-    blank: (): Blank<OccultEvent> => ({ name: 'New FATE', drops: [], spawnedBy: '' }),
+    blank: (): Blank<OccultEvent> => ({ name: 'New FATE', bosses: [], drops: [], spawnedBy: '' }),
   }),
 
   critical_encounters: defineSection({
@@ -141,7 +141,12 @@ export const occultSections = {
     schema: OccultEventSchema,
     drawStyle: 'circle',
     icon: item => item.icon ?? 'engagements_boss',
-    blank: (): Blank<OccultEvent> => ({ name: 'New critical encounter', drops: [], spawnedBy: '' }),
+    blank: (): Blank<OccultEvent> => ({
+      name: 'New critical encounter',
+      bosses: [],
+      drops: [],
+      spawnedBy: '',
+    }),
   }),
 
   enemies: defineSection({
