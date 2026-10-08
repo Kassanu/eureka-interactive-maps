@@ -175,22 +175,7 @@
       </select>
     </FormField>
 
-    <template v-if="'boss' in shape">
-      <FormField :label="t('fields.boss')">
-        <label class="editor-checks">
-          <input :checked="hasBoss" type="checkbox" @change="toggleBoss">
-          <span>{{ t('editor.hasBoss') }}</span>
-        </label>
-      </FormField>
-      <template v-if="'boss' in item && item.boss">
-        <FormField :label="t('fields.bossName')">
-          <input v-model="item.boss.name" class="editor-input" type="text">
-        </FormField>
-        <FormField v-if="'weakness' in item.boss" :label="t('fields.bossWeakness')">
-          <KeyChecks :keys="item.boss.weakness" :options="elements.options()" />
-        </FormField>
-      </template>
-    </template>
+    <BossList v-if="'bosses' in item" :bosses="item.bosses" :create="createBoss" />
 
     <template v-if="'mutation' in shape">
       <FormField :label="t('fields.mutation')">
@@ -236,6 +221,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import BossList from '~/components/Editor/BossList.vue'
 import ConditionList from '~/components/Editor/ConditionList.vue'
 import DropList from '~/components/Editor/DropList.vue'
 import FormField from '~/components/Editor/FormField.vue'
@@ -259,8 +245,8 @@ import {
 import {
   BONUS_POOL,
   describeRef,
-  firstAccepted,
   isOptionalField,
+  newBoss,
   shapeOf,
   operations,
   setField,
@@ -289,8 +275,6 @@ const zone = computed(() => editor.zone.value as LoadedZone)
 const shape = computed(() => shapeOf(props.section.definition.schema))
 const iconOptional = computed(() => isOptionalField(shape.value, 'icon'))
 const level = computed(() => operations[zone.value.definition.operation].levelLabel(t))
-
-const hasBoss = computed(() => 'boss' in props.item && props.item.boss !== undefined)
 
 const fates = computed(() =>
   zone.value.sections
@@ -347,16 +331,5 @@ function toggleAdaptation(event: Event) {
   setOptional('adaptation', ticked(event) ? { conditions: [] } : undefined)
 }
 
-// `New boss` is written into the item's own `name` field, so it is data rather than UI text and
-// stays English in every locale.
-function toggleBoss(event: Event) {
-  if (!ticked(event)) {
-    setOptional('boss', undefined)
-    return
-  }
-  setOptional('boss', firstAccepted(shape.value, 'boss', [
-    { name: 'New boss', weakness: [] },
-    { name: 'New boss' },
-  ]))
-}
+const createBoss = () => newBoss(shape.value)
 </script>

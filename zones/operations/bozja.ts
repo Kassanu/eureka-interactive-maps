@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { DropsSchema } from '../../model/lookups/drops'
 import { IconKeySchema } from '../../model/icons'
 import { aggroTypes, attacks, mobFamilies, ranks } from '../../model/lookups'
-import { BossSchema, EnemySchema } from '../../model/items/enemy'
+import { EnemySchema } from '../../model/items/enemy'
 import { EventBaseSchema } from '../../model/items/event'
 import { PoiBaseSchema } from '../../model/items/poi'
 import { SpawnsSchema } from '../../model/items/spawns'
@@ -38,7 +38,6 @@ export const BozjaEnemySchema = EnemySchema.extend({
 export type BozjaEnemy = z.infer<typeof BozjaEnemySchema>
 
 export const BozjaEventSchema = EventBaseSchema.extend({
-  boss: BossSchema.optional(),
   spawns: SpawnsSchema,
 })
 
@@ -79,6 +78,7 @@ export const bozjaSections = {
       name: 'New engagement',
       icon: 'engagements_boss',
       participants: 48,
+      bosses: [],
       drops: [],
       spawns: [],
     }),
@@ -119,6 +119,7 @@ export const bozjaSections = {
     blank: (): Blank<BozjaSkirmish> => ({
       name: 'New skirmish',
       icon: 'skirmishes_slay',
+      bosses: [],
       drops: [],
       spawns: [],
     }),

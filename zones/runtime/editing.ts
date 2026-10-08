@@ -37,6 +37,17 @@ export function firstAccepted<T>(
   return candidates.find(candidate => shape[field]?.safeParse(candidate).success === true)
 }
 
+// `New boss` is data, not UI text, so it stays English in every locale. Each operation accepts
+// exactly one of the two shapes.
+export function newBoss(
+  shape: Readonly<Record<string, z.ZodType>>
+): { name: string; weakness?: string[] } | undefined {
+  return firstAccepted(shape, 'bosses', [
+    [{ name: 'New boss', weakness: [] as string[] }],
+    [{ name: 'New boss' }],
+  ])?.[0]
+}
+
 // Writing a field the schema makes optional. The shape says what is allowed, not the item: an
 // item does not carry a field it has none of. Passing undefined removes it.
 export function setField(

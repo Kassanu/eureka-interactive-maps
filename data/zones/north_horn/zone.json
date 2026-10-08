@@ -12,13 +12,15 @@
                             "y": 5.4
                         }
                     ],
-                    "boss": {
-                        "name": "Patient Kuribu",
-                        "weakness": [
-                            "wind",
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Patient Kuribu",
+                            "weakness": [
+                                "wind",
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -36,12 +38,14 @@
                             "y": 16.3
                         }
                     ],
-                    "boss": {
-                        "name": "Sensual Sandy",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Sensual Sandy",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -59,12 +63,14 @@
                             "y": 11.6
                         }
                     ],
-                    "boss": {
-                        "name": "Crimson Gremlin",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Crimson Gremlin",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -86,12 +92,14 @@
                             "y": 20.8
                         }
                     ],
-                    "boss": {
-                        "name": "Evil-seer",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Evil-seer",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -109,12 +117,14 @@
                             "y": 31
                         }
                     ],
-                    "boss": {
-                        "name": "Stormcaller",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Stormcaller",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -132,12 +142,14 @@
                             "y": 25.8
                         }
                     ],
-                    "boss": {
-                        "name": "Greater Fan",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Greater Fan",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -159,12 +171,14 @@
                             "y": 11.7
                         }
                     ],
-                    "boss": {
-                        "name": "Iambe",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Iambe",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -182,12 +196,14 @@
                             "y": 25.7
                         }
                     ],
-                    "boss": {
-                        "name": "Machetaur",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Machetaur",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -205,12 +221,14 @@
                             "y": 20.1
                         }
                     ],
-                    "boss": {
-                        "name": "Demi-Medusa",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Demi-Medusa",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -228,12 +246,14 @@
                             "y": 30.8
                         }
                     ],
-                    "boss": {
-                        "name": "Regnant Chimera",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Regnant Chimera",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -251,12 +271,14 @@
                             "y": 38.7
                         }
                     ],
-                    "boss": {
-                        "name": "Ruin Hound",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Ruin Hound",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -274,12 +296,14 @@
                             "y": 7.3
                         }
                     ],
-                    "boss": {
-                        "name": "Cresceregina",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Cresceregina",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -297,12 +321,14 @@
                             "y": 16.4
                         }
                     ],
-                    "boss": {
-                        "name": "Arch Kelpie",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Arch Kelpie",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -324,12 +350,14 @@
                             "y": 28.6
                         }
                     ],
-                    "boss": {
-                        "name": "Atlas Carbuncle",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Atlas Carbuncle",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -355,12 +383,14 @@
                             "y": 15.2
                         }
                     ],
-                    "boss": {
-                        "name": "Metamorph",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Metamorph",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -390,12 +420,14 @@
                             "y": 31.1
                         }
                     ],
-                    "boss": {
-                        "name": "Phantom Hydra",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Phantom Hydra",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -421,12 +453,14 @@
                             "y": 9.8
                         }
                     ],
-                    "boss": {
-                        "name": "Pallmagia",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Pallmagia",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "occultmissile",
@@ -464,12 +498,14 @@
                             "y": 24.5
                         }
                     ],
-                    "boss": {
-                        "name": "Claret Dragon",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Claret Dragon",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -499,12 +535,14 @@
                             "y": 4.3
                         }
                     ],
-                    "boss": {
-                        "name": "Phantom Necromancer",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Phantom Necromancer",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -538,12 +576,14 @@
                             "y": 20.2
                         }
                     ],
-                    "boss": {
-                        "name": "Conjured Calofisteri",
-                        "weakness": [
-                            "wind"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Conjured Calofisteri",
+                            "weakness": [
+                                "wind"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -569,12 +609,14 @@
                             "y": 35.8
                         }
                     ],
-                    "boss": {
-                        "name": "Elm Gigas",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Elm Gigas",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellergamma",
@@ -600,12 +642,14 @@
                             "y": 34.5
                         }
                     ],
-                    "boss": {
-                        "name": "Arbatel",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Arbatel",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -635,12 +679,14 @@
                             "y": 21.4
                         }
                     ],
-                    "boss": {
-                        "name": "Algol",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Algol",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -670,12 +716,14 @@
                             "y": 4.3
                         }
                     ],
-                    "boss": {
-                        "name": "Abductor",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Abductor",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "abductorshorn",
@@ -709,12 +757,14 @@
                             "y": 10.3
                         }
                     ],
-                    "boss": {
-                        "name": "Pelekys",
-                        "weakness": [
-                            "fire"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Pelekys",
+                            "weakness": [
+                                "fire"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",
@@ -740,12 +790,14 @@
                             "y": 8
                         }
                     ],
-                    "boss": {
-                        "name": "Alabaster Blade",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Alabaster Blade",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "occultaeroiii",
@@ -779,12 +831,14 @@
                             "y": 35.6
                         }
                     ],
-                    "boss": {
-                        "name": "Tiny Mage",
-                        "weakness": [
-                            "lightning"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Tiny Mage",
+                            "weakness": [
+                                "lightning"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispellerbeta",
@@ -814,12 +868,14 @@
                             "y": 18.8
                         }
                     ],
-                    "boss": {
-                        "name": "Crescent Arachne",
-                        "weakness": [
-                            "ice"
-                        ]
-                    },
+                    "bosses": [
+                        {
+                            "name": "Crescent Arachne",
+                            "weakness": [
+                                "ice"
+                            ]
+                        }
+                    ],
                     "drops": [
                         {
                             "item": "phantomdispelleralpha",

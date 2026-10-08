@@ -70,7 +70,7 @@ describe('the fields a form decides to draw', () => {
   it('declares optional fields that an item without one does not carry', () => {
     let seen = 0
     for (const { key, schema, item } of cases) {
-      for (const field of ['mutation', 'adaptation', 'boss', 'icon']) {
+      for (const field of ['mutation', 'adaptation', 'icon']) {
         const declared = schema.shape[field]
         if (!declared || declared.safeParse(undefined).success !== true) continue
         expect(field in (item as object), `${key}.${field}`).toBe(false)
@@ -122,10 +122,10 @@ describe('ticking a presence checkbox', () => {
     let seenPlain = 0
 
     for (const { key, schema } of cases) {
-      const boss = schema.shape.boss
-      if (!boss) continue
-      const rich = boss.safeParse(withWeakness).success
-      expect(boss.safeParse(rich ? withWeakness : plain).success, key).toBe(true)
+      const bosses = schema.shape.bosses
+      if (!bosses) continue
+      const rich = bosses.safeParse([withWeakness]).success
+      expect(bosses.safeParse([rich ? withWeakness : plain]).success, key).toBe(true)
       if (rich) seenRich++
       else seenPlain++
     }
