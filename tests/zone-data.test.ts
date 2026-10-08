@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest'
 import { ZONE_SCHEMA_VERSION } from '../zones'
-import { formatIssues, loadZoneFile, parseIssues, zoneSlugs, zones } from './helpers/zoneFiles'
+import {
+  formatIssues,
+  loadEntityFile,
+  loadZoneFile,
+  parseIssues,
+  zoneSlugs,
+  zones,
+} from './helpers/zoneFiles'
 import { mapImageSize } from './helpers/mapImages'
 
 // A map spans a fixed number of coordinate units, so pixels per unit follows the image's own
@@ -15,6 +22,10 @@ describe.each(zoneSlugs)('%s', slug => {
 
   it('is the file its zone module imports', async () => {
     expect((await zone.file()).default).toEqual(file)
+  })
+
+  it('has its zone module import its own entity file', async () => {
+    expect((await zone.entities()).default).toEqual(loadEntityFile(slug))
   })
 
   it('declares the current schema version', () => {

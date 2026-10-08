@@ -6,6 +6,7 @@ export const south_horn: ZoneDefinition = {
   operation: 'occult',
   accent: 'bg-yellow-500 hover:bg-yellow-700',
   file: () => import('../data/zones/south_horn/zone.json'),
+  entities: () => import('../data/zones/south_horn/entities.json'),
   map: { image: () => import('../assets/images/maps/south_horn.jpg'), grid: GRID },
   level: { from: 1, to: 30 },
   sections: southHornSections,

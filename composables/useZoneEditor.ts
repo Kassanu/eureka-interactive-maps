@@ -9,12 +9,14 @@ import {
   type Ref,
 } from 'vue'
 import type { Text, Translate } from '~/i18n/translate'
+import type { Lookup } from '~/model/lookups'
 import type { Position } from '~/model/primitives'
 import {
   ZONE_SCHEMA_VERSION,
   createItem,
   encodeZone,
   indexZone,
+  parseEntities,
   parseSections,
   zoneFileText,
   zoneFor,
@@ -75,6 +77,7 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
   const image = ref<string | null>(null)
   const error = ref<string | null>(null)
   const loadIssues = shallowRef<LoadIssue[]>([])
+  const entities = shallowRef<ReadonlyMap<string, Lookup<string>>>(new Map())
   const saveIssues = shallowRef<SaveIssue[]>([])
   const pending = shallowRef<Pending | null>(null)
   const search = ref('')
@@ -99,13 +102,15 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
     for (const item of items.value.get(key) ?? []) expanded.add(item.id)
   }
 
-  Promise.all([definition.file(), definition.map.image()])
-    .then(([file, source]) => {
+  Promise.all([definition.file(), definition.entities(), definition.map.image()])
+    .then(([file, entityFile, source]) => {
       const parsed = parseSections(definition, file.default)
+      const parsedEntities = parseEntities(definition, entityFile.default)
+      entities.value = parsedEntities.groups
       items.value = new Map(
         [...parsed.sections].map(([key, list]) => [key, reactive(list) as ZoneItem[]])
       )
-      loadIssues.value = parsed.issues
+      loadIssues.value = [...parsed.issues, ...parsedEntities.issues]
       image.value = source.default
     })
     .catch((cause: unknown) => {
@@ -115,7 +120,7 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
 
   const zone = computed<LoadedZone | null>(() => {
     if (items.value.size === 0) return null
-    return indexZone(definition, items.value, loadIssues.value)
+    return indexZone(definition, items.value, entities.value, loadIssues.value)
   })
 
   function listFor(sectionKey: string): ZoneItem[] {

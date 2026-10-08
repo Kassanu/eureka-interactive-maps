@@ -78,6 +78,7 @@ export interface ZoneDefinition {
   // Tailwind classes for the zone's button on the front page.
   accent: string
   file: Load<{ default: RawZoneFile }>
+  entities: Load<{ default: unknown }>
   map: ZoneMap
   level?: Bounds
   sections: Record<string, StoredSectionDefinition>

@@ -6,6 +6,7 @@ export const pyros: ZoneDefinition = {
   operation: 'eureka',
   accent: 'bg-red-500 hover:bg-red-700',
   file: () => import('../data/zones/pyros/zone.json'),
+  entities: () => import('../data/zones/pyros/entities.json'),
   map: { image: () => import('../assets/images/maps/pyros.jpg'), grid: GRID },
   level: eurekaLevel,
   sections: eurekaSections,
