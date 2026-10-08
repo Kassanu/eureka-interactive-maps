@@ -11,7 +11,7 @@ const placed = { id: '0f6b5f5e-3c1a-4b8e-9d2a-7e4c1b2a3d4f', positions: [{ x: 10
 
 const parses = (quest: object) => schema.safeParse({ ...placed, ...quest }).success
 const label = (quest: object) =>
-  itemLabel(quests, schema.parse({ ...placed, ...quest }) as ZoneItem)
+  itemLabel(quests, schema.parse({ ...placed, ...quest }) as ZoneItem)(english)
 
 describe('a quest', () => {
   it('carries a level and no name', () => {
@@ -51,12 +51,13 @@ describe('an item label', () => {
 
   it('is the name where the section declares no label', () => {
     const enemy = section('enemies').items[0]!
-    expect(itemLabel(section('enemies').definition, enemy)).toBe((enemy as { name: string }).name)
+    expect(itemLabel(section('enemies').definition, enemy)(english))
+      .toBe((enemy as { name: string }).name)
   })
 
   it('is empty for an item with neither', () => {
     const lockbox = section('lockboxes').items[0]!
-    expect(itemLabel(section('lockboxes').definition, lockbox)).toBe('')
+    expect(itemLabel(section('lockboxes').definition, lockbox)(english)).toBe('')
   })
 })
 

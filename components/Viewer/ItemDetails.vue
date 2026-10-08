@@ -127,7 +127,7 @@ const level = computed(() => operations[props.zone.definition.operation].levelLa
 
 function labelOfId(id: string): string {
   const target = props.zone.byId.get(id)
-  return target ? props.zone.labelOf(target) : ''
+  return target ? props.zone.labelOf(target)(t) : ''
 }
 
 // Bozja grades an enemy by one attack type it is weak to; the Occult zones list elements.

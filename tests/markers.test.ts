@@ -68,7 +68,7 @@ describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as con
   it('labels a marker with its name, and its level where it has one', () => {
     for (const marker of markers) {
       const item = zone.byId.get(marker.itemId)!
-      const name = zone.labelOf(item)
+      const name = zone.labelOf(item)(english)
       if (!name) {
         expect(marker.label).toBe('')
         continue

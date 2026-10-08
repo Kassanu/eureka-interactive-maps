@@ -50,7 +50,7 @@ export type FilterControl = 'toggles' | 'segmented' | 'range'
 // point at another section resolves those ids here, in the zone's own declaration order.
 export interface FilterScope<Item> {
   items: readonly Item[]
-  resolve: (ids: Iterable<string>) => { id: string; name: string }[]
+  resolve: (ids: Iterable<string>) => { id: string; label: Text }[]
 }
 
 export interface FilterDefinition<Item> {

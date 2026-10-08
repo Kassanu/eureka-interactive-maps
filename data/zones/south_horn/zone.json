@@ -2142,123 +2142,135 @@
             "items": [
                 {
                     "id": "79d62f50-0e5e-5497-bd58-2e890cbbcd0c",
-                    "name": "#5: Expedition Base Camp",
+                    "name": "Expedition Base Camp",
                     "positions": [
                         {
                             "x": 38.6,
                             "y": 7.6
                         }
-                    ]
+                    ],
+                    "recordNumber": 5
                 },
                 {
                     "id": "e9a8dfae-62ce-5b8c-9fcf-fbb6ae75152a",
-                    "name": "#7: Lost Citadel",
+                    "name": "Lost Citadel",
                     "positions": [
                         {
                             "x": 31.4,
                             "y": 17
                         }
-                    ]
+                    ],
+                    "recordNumber": 7
                 },
                 {
                     "id": "11d1fdbf-b068-5471-8e87-b7bcec008157",
-                    "name": "#9: Vanishing Slope",
+                    "name": "Vanishing Slope",
                     "positions": [
                         {
                             "x": 20.2,
                             "y": 12.2
                         }
-                    ]
+                    ],
+                    "recordNumber": 9
                 },
                 {
                     "id": "06159eea-3f36-5b63-aca4-ea2287951100",
-                    "name": "#12: Heathcliff",
+                    "name": "Heathcliff",
                     "positions": [
                         {
                             "x": 23.2,
                             "y": 21.5
                         }
-                    ]
+                    ],
+                    "recordNumber": 12
                 },
                 {
                     "id": "96feb1a2-d3fa-595f-b404-54fa3d9a0ec9",
-                    "name": "#13: The Fell Warren",
+                    "name": "The Fell Warren",
                     "positions": [
                         {
                             "x": 10.2,
                             "y": 22.5
                         }
-                    ]
+                    ],
+                    "recordNumber": 13
                 },
                 {
                     "id": "aada7f5a-c900-5032-8e7a-d8cf7585015b",
-                    "name": "#15: Shadowed City",
+                    "name": "Shadowed City",
                     "positions": [
                         {
                             "x": 24.2,
                             "y": 32.8
                         }
-                    ]
+                    ],
+                    "recordNumber": 15
                 },
                 {
                     "id": "0959a3ca-db85-52b6-a93f-8529c74b38a3",
-                    "name": "#18: Eldergrowth",
+                    "name": "Eldergrowth",
                     "positions": [
                         {
                             "x": 18.5,
                             "y": 33.8
                         }
-                    ]
+                    ],
+                    "recordNumber": 18
                 },
                 {
                     "id": "7b8b7541-f13d-58f5-8258-410a36a93162",
-                    "name": "#19: Abandoned Ascent",
+                    "name": "Abandoned Ascent",
                     "positions": [
                         {
                             "x": 15.6,
                             "y": 29.5
                         }
-                    ]
+                    ],
+                    "recordNumber": 19
                 },
                 {
                     "id": "dc65e57f-7307-5d27-aab4-60e2a87e3d92",
-                    "name": "#21: The Silent Streets",
+                    "name": "The Silent Streets",
                     "positions": [
                         {
                             "x": 36.6,
                             "y": 33.7
                         }
-                    ]
+                    ],
+                    "recordNumber": 21
                 },
                 {
                     "id": "13efa2f1-fe50-51a1-a95a-48a8974ee80b",
-                    "name": "#22: The Ancient Stoneworks",
+                    "name": "The Ancient Stoneworks",
                     "positions": [
                         {
                             "x": 36,
                             "y": 22.6
                         }
-                    ]
+                    ],
+                    "recordNumber": 22
                 },
                 {
                     "id": "13c949b5-9c2b-5992-bc34-0a538398501b",
-                    "name": "#23: The Wanderer's Haven",
+                    "name": "The Wanderer's Haven",
                     "positions": [
                         {
                             "x": 3.8,
                             "y": 5.8
                         }
-                    ]
+                    ],
+                    "recordNumber": 23
                 },
                 {
                     "id": "7527fcf1-8cbb-5ea4-b8ad-28662449638b",
-                    "name": "#24: The Brazier",
+                    "name": "The Brazier",
                     "positions": [
                         {
                             "x": 8.7,
                             "y": 35.9
                         }
-                    ]
+                    ],
+                    "recordNumber": 24
                 }
             ]
         },

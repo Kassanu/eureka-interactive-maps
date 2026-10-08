@@ -1,4 +1,5 @@
 import type { z } from 'zod'
+import type { Text } from '../../i18n/translate'
 import { iconPath } from '../../model/icons'
 import { itemLabel, spawnedByOf, spawnsFateOf, type ZoneItem } from './items'
 import { levelFilter, scopedFilter } from '../define/filters'
@@ -46,7 +47,7 @@ export interface LoadedZone {
   // end only, so `spawnersOf` is how either end is read. Several enemies can be named for one
   // FATE, which is why it answers with a list.
   spawnersOf: (id: string) => ZoneItem[]
-  labelOf: (item: ZoneItem) => string
+  labelOf: (item: ZoneItem) => Text
   issues: LoadIssue[]
 }
 
@@ -150,7 +151,8 @@ export function indexZone(
       .sort((a, b) => (order.get(a) ?? Infinity) - (order.get(b) ?? Infinity))
       .map(id => {
         const item = byId.get(id)
-        return { id, name: (item && labelOf(item)) || id }
+        const label: Text = t => (item ? labelOf(item)(t) : '') || id
+        return { id, label }
       })
 
   const zoneScope: FilterScope<never> = {

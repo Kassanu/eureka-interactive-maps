@@ -26,7 +26,7 @@
         {{ t('editor.notSaved', { count: editor.saveIssues.value.length }) }}
       </div>
       <div v-for="issue in editor.saveIssues.value" :key="issue.itemId">
-        {{ issue.section }}: {{ issue.name || issue.itemId }} - {{ issue.message }}
+        {{ issue.section }}: {{ issue.label(t) || issue.itemId }} - {{ issue.message }}
       </div>
     </div>
 

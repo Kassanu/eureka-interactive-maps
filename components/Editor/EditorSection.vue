@@ -42,5 +42,5 @@ const { t } = useI18n()
 const editor = useEditor()
 
 // What the search leaves, which is not the same as what the map shows.
-const matching = computed(() => props.section.items.filter(editor.matches))
+const matching = computed(() => props.section.items.filter(item => editor.matches(item, t)))
 </script>

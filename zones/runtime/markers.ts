@@ -10,7 +10,7 @@ import type { Spawn } from '../../model/items/spawns'
 // An item named for a reader following a reference: what it is called, and where to find it.
 export function describeRef(zone: LoadedZone, id: string | undefined, t: Translate): string {
   const item = id ? zone.byId.get(id) : undefined
-  const name = item ? zone.labelOf(item) : ''
+  const name = item ? zone.labelOf(item)(t) : ''
   if (!item || !name) return ''
   const [first] = item.positions
   return first ? t('item.at', { name, x: first.x, y: first.y }) : name
@@ -31,7 +31,7 @@ export interface Marker {
 }
 
 function markerLabel(section: LoadedSection, item: ZoneItem, t: Translate): string {
-  const name = itemLabel(section.definition, item)
+  const name = itemLabel(section.definition, item)(t)
   if (!name) return ''
   if (!('level' in item)) return name
   return t('item.atLevel', { name, level: formatLevel(item.level, t) })
