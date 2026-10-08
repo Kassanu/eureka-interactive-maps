@@ -229,6 +229,7 @@ import ItemPicker from '~/components/Editor/ItemPicker.vue'
 import KeyChecks from '~/components/Editor/KeyChecks.vue'
 import PositionList from '~/components/Editor/PositionList.vue'
 import SpawnList from '~/components/Editor/SpawnList.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { useEditor } from '~/composables/useZoneEditor'
 import { iconKeys, type IconKey } from '~/model/icons'
 import {
@@ -268,7 +269,7 @@ const ENEMY = ['enemy'] as const
 const ENEMY_OR_EVENT = ['enemy', 'event'] as const
 const SPELL = ['spell'] as const
 
-const { t } = useI18n()
+const t = useTranslate()
 const editor = useEditor()
 const zone = computed(() => editor.zone.value as LoadedZone)
 

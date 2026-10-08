@@ -33,12 +33,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import EditorItem from '~/components/Editor/EditorItem.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { useEditor } from '~/composables/useZoneEditor'
 import type { LoadedSection } from '~/zones'
 
 const props = defineProps<{ section: LoadedSection }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 const editor = useEditor()
 
 // What the search leaves, which is not the same as what the map shows.

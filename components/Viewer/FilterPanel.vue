@@ -85,6 +85,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref } from 'vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { NARROW, useWindowWidth } from '~/composables/useWindowWidth'
 import FilterControl from '~/components/Viewer/FilterControl.vue'
 import { activeCount, onlySection, toggleSection, type FilterState, type LoadedZone } from '~/zones'
@@ -96,7 +97,7 @@ const props = defineProps<{
 
 defineEmits<{ (e: 'reset'): void }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 const windowWidth = useWindowWidth()
 const panelExpanded = ref(true)
 

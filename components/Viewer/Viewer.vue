@@ -41,6 +41,7 @@ import { EurekaCanvas } from 'eureka-canvas'
 import FilterPanel from '~/components/Viewer/FilterPanel.vue'
 import ItemDetails from '~/components/Viewer/ItemDetails.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { useZone } from '~/composables/useZone'
 import {
   initialState,
@@ -53,7 +54,7 @@ import {
 
 const props = defineProps<{ slug: ZoneSlug }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 const { zone, image } = useZone(props.slug)
 const grid = zoneFor(props.slug).map.grid
 

@@ -8,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+import { useTranslate } from '~/composables/useTranslate'
 import type { LookupOption } from '~/model/lookups'
 
 // A field holding several keys of one lookup, edited in place. The list keeps the order keys were
@@ -17,7 +18,7 @@ const props = defineProps<{
   options: readonly LookupOption<string>[]
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 function toggle(key: string) {
   const index = props.keys.indexOf(key)

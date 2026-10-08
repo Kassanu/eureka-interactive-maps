@@ -24,6 +24,7 @@
 
 <script setup lang="ts">
 import ItemForm from '~/components/Editor/ItemForm.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { useEditor } from '~/composables/useZoneEditor'
 import { itemLabel, type LoadedSection, type ZoneItem } from '~/zones'
 
@@ -32,7 +33,7 @@ const props = defineProps<{
   item: ZoneItem
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 const editor = useEditor()
 
 // Holding Alt sets every item in the section to what this one was just set to, which is how a

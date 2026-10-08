@@ -56,11 +56,12 @@
 
 <script setup lang="ts">
 import EditorSection from '~/components/Editor/EditorSection.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { useEditor } from '~/composables/useZoneEditor'
 import type { LoadedZone } from '~/zones'
 
 defineProps<{ zone: LoadedZone }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 const editor = useEditor()
 </script>

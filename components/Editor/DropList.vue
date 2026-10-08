@@ -32,13 +32,14 @@
 
 <script setup lang="ts">
 import FormField from '~/components/Editor/FormField.vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { dropItems, type Drop } from '~/model/lookups/drops'
 
 // What an item drops, naming the shared catalogue rather than repeating an item's text. An
 // unknown rate leaves `percent` off rather than storing a zero that reads as "never drops".
 const props = defineProps<{ drops: Drop[] }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 function add() {
   props.drops.push({ item: dropItems.keys[0]!, amount: 1 })

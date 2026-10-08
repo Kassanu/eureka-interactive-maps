@@ -11,6 +11,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useTranslate } from '~/composables/useTranslate'
 import { describeRef, type LoadedZone, type SectionType } from '~/zones'
 
 // Picking another item in the same zone. Candidates come from the section types a reference is
@@ -25,7 +26,7 @@ const props = defineProps<{
 
 const emit = defineEmits<{ (e: 'update:modelValue', id: string): void }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 const groups = computed(() =>
   props.zone.sections
