@@ -1,7 +1,7 @@
 import { formatLevel, type Position } from '../../model/primitives'
 import type { Translate } from '../../i18n/translate'
 import { applyFilters, type FilterValue } from '../define/filters'
-import type { ZoneItem } from './items'
+import { itemLabel, type ZoneItem } from './items'
 import type { LoadedSection, LoadedZone } from './loading'
 import type { FilterState } from './state'
 import type { DrawStyle } from '../define/types'
@@ -10,9 +10,10 @@ import type { Spawn } from '../../model/items/spawns'
 // An item named for a reader following a reference: what it is called, and where to find it.
 export function describeRef(zone: LoadedZone, id: string | undefined, t: Translate): string {
   const item = id ? zone.byId.get(id) : undefined
-  if (!item?.name) return ''
+  const name = item ? zone.labelOf(item) : ''
+  if (!item || !name) return ''
   const [first] = item.positions
-  return first ? t('item.at', { name: item.name, x: first.x, y: first.y }) : item.name
+  return first ? t('item.at', { name, x: first.x, y: first.y }) : name
 }
 
 // An item spawning in three places is three markers, so each is its own hit target. `itemId` is
@@ -29,10 +30,11 @@ export interface Marker {
   coordinates: Position
 }
 
-function markerLabel(item: ZoneItem, t: Translate): string {
-  if (!item.name) return ''
-  if (!('level' in item)) return item.name
-  return t('item.atLevel', { name: item.name, level: formatLevel(item.level, t) })
+function markerLabel(section: LoadedSection, item: ZoneItem, t: Translate): string {
+  const name = itemLabel(section.definition, item)
+  if (!name) return ''
+  if (!('level' in item)) return name
+  return t('item.atLevel', { name, level: formatLevel(item.level, t) })
 }
 
 // Every point the map draws, in section order, so a higher order sits on top.
@@ -43,7 +45,7 @@ export function zoneMarkers(zone: LoadedZone, state: FilterState, t: Translate):
     for (const item of visibleItems(section, state.values)) {
       const shared = {
         itemId: item.id,
-        label: markerLabel(item, t),
+        label: markerLabel(section, item, t),
         icons: zone.iconsById.get(item.id) ?? [],
         drawStyle: section.definition.drawStyle,
       }

@@ -1,6 +1,6 @@
 import type { z } from 'zod'
 import { iconPath } from '../../model/icons'
-import { spawnedByOf, spawnsFateOf, type ZoneItem } from './items'
+import { itemLabel, spawnedByOf, spawnsFateOf, type ZoneItem } from './items'
 import { levelFilter, scopedFilter } from '../define/filters'
 import type { FilterScope, ScopedFilter, StoredFilterDefinition } from '../define/filters'
 import { RawZoneFileSchema, ZONE_SCHEMA_VERSION } from '../define/schema'
@@ -46,6 +46,7 @@ export interface LoadedZone {
   // end only, so `spawnersOf` is how either end is read. Several enemies can be named for one
   // FATE, which is why it answers with a list.
   spawnersOf: (id: string) => ZoneItem[]
+  labelOf: (item: ZoneItem) => string
   issues: LoadIssue[]
 }
 
@@ -133,17 +134,24 @@ export function indexZone(
 ): LoadedZone {
   const byId = new Map<string, ZoneItem>()
   const order = new Map<string, number>()
-  for (const items of parsed.values()) {
+  const definitionOf = new Map<string, StoredSectionDefinition | undefined>()
+  for (const [key, items] of parsed) {
     for (const item of items) {
       byId.set(item.id, item)
       order.set(item.id, order.size)
+      definitionOf.set(item.id, definition.sections[key])
     }
   }
+
+  const labelOf = (item: ZoneItem) => itemLabel(definitionOf.get(item.id), item)
 
   const resolve = (ids: Iterable<string>) =>
     [...new Set(ids)]
       .sort((a, b) => (order.get(a) ?? Infinity) - (order.get(b) ?? Infinity))
-      .map(id => ({ id, name: byId.get(id)?.name ?? id }))
+      .map(id => {
+        const item = byId.get(id)
+        return { id, name: (item && labelOf(item)) || id }
+      })
 
   const zoneScope: FilterScope<never> = {
     items: [...parsed.values()].flat() as never[],
@@ -215,6 +223,7 @@ export function indexZone(
     sectionOf,
     iconsById,
     spawnersOf,
+    labelOf,
     issues,
   }
 }

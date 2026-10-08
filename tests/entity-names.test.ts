@@ -42,8 +42,6 @@ describe.each(zoneSlugs)('%s', slug => {
   it('names every item after an entry in its section\'s group', () => {
     const missing: string[] = []
     for (const [key, items] of sections(slug)) {
-      // A quest's name is its level, which no game row holds.
-      if (key === 'quests') continue
       const names = englishNames(groups[key])
       for (const { name } of items) {
         if (name === undefined) continue

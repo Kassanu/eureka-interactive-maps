@@ -73,9 +73,10 @@ const sections = zoneSlugs.flatMap(slug =>
 )
 
 describe('where a block goes', () => {
-  it('is declared on every section, directly after the name', () => {
+  it('is declared on every section that takes a name, directly after the name', () => {
     for (const { label, shape } of sections) {
       const keys = Object.keys(shape)
+      if (!keys.includes('name')) continue
       expect(keys, label).toContain('i18n')
       expect(keys.indexOf('i18n'), label).toBe(keys.indexOf('name') + 1)
     }
@@ -130,9 +131,9 @@ describe('a translated zone', () => {
     const boss = (fate as { boss: { name: string } }).boss
     const enemy = zone.sections.find(section => section.key === 'enemies')!.items[0]!
 
-    Object.assign(fate, { i18n: translationsOf(fate.name!) })
+    Object.assign(fate, { i18n: translationsOf((fate as { name: string }).name) })
     Object.assign(boss, { i18n: translationsOf(boss.name) })
-    Object.assign(enemy, { i18n: translationsOf(enemy.name!) })
+    Object.assign(enemy, { i18n: translationsOf((enemy as { name: string }).name) })
 
     const { file, issues } = encodeZone(zone, ZONE_SCHEMA_VERSION)
     expect(issues).toEqual([])

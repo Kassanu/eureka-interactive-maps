@@ -2202,113 +2202,113 @@
             "items": [
                 {
                     "id": "82ebc1b3-df94-4364-800a-0892fd563b15",
-                    "name": "51a",
                     "positions": [
                         {
                             "x": 20.3,
                             "y": 24.8
                         }
                     ],
-                    "level": 51
+                    "level": 51,
+                    "part": 1
                 },
                 {
                     "id": "3bea5029-973b-4607-b67c-57921e7084c3",
-                    "name": "51b",
                     "positions": [
                         {
                             "x": 25.7,
                             "y": 30.7
                         }
                     ],
-                    "level": 51
+                    "level": 51,
+                    "part": 2
                 },
                 {
                     "id": "df583594-83c8-439e-9da6-a6f2376f2508",
-                    "name": "54a",
                     "positions": [
                         {
                             "x": 10.6,
                             "y": 29.6
                         }
                     ],
-                    "level": 54
+                    "level": 54,
+                    "part": 1
                 },
                 {
                     "id": "ac104ec8-ab37-42c7-a626-49b0b23b97b7",
-                    "name": "54b",
                     "positions": [
                         {
                             "x": 6.5,
                             "y": 15.7
                         }
                     ],
-                    "level": 54
+                    "level": 54,
+                    "part": 2
                 },
                 {
                     "id": "938b98e7-3aca-468c-914d-d4ca4c5e6a9c",
-                    "name": "54c",
                     "positions": [
                         {
                             "x": 10.6,
                             "y": 29.6
                         }
                     ],
-                    "level": 54
+                    "level": 54,
+                    "part": 3
                 },
                 {
                     "id": "7b3e77ea-a5db-410a-a716-c115b6e013cc",
-                    "name": "57a",
                     "positions": [
                         {
                             "x": 10.6,
                             "y": 29.6
                         }
                     ],
-                    "level": 57
+                    "level": 57,
+                    "part": 1
                 },
                 {
                     "id": "c824e372-e825-475c-a9b1-0947c5e54d58",
-                    "name": "57b",
                     "positions": [
                         {
                             "x": 31.3,
                             "y": 27.2
                         }
                     ],
-                    "level": 57
+                    "level": 57,
+                    "part": 2
                 },
                 {
                     "id": "0b8bcdc8-d750-4b17-b78e-6624f72865c5",
-                    "name": "57c",
                     "positions": [
                         {
                             "x": 31.3,
                             "y": 27.2
                         }
                     ],
-                    "level": 57
+                    "level": 57,
+                    "part": 3
                 },
                 {
                     "id": "a36c7f45-88cf-4d9f-9acf-956346335b44",
-                    "name": "60a",
                     "positions": [
                         {
                             "x": 31.3,
                             "y": 27.2
                         }
                     ],
-                    "level": 60
+                    "level": 60,
+                    "part": 1
                 },
                 {
                     "id": "4c7ead7a-23f2-4ac3-a177-cb75ce51cc3f",
-                    "name": "60b",
                     "positions": [
                         {
                             "x": 24,
                             "y": 30.6
                         }
                     ],
-                    "level": 60
+                    "level": 60,
+                    "part": 2
                 }
             ]
         },

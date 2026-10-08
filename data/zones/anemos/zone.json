@@ -2490,7 +2490,6 @@
             "items": [
                 {
                     "id": "6fec47f6-b379-4541-ab23-fe3d49de8117",
-                    "name": "3",
                     "positions": [
                         {
                             "x": 13.5,
@@ -2501,7 +2500,6 @@
                 },
                 {
                     "id": "e82d8f09-aca2-4fee-9bc0-b76d586dd96d",
-                    "name": "5",
                     "positions": [
                         {
                             "x": 24.4,
@@ -2512,7 +2510,6 @@
                 },
                 {
                     "id": "39099860-486d-45f8-ab41-0ffd2931ab6a",
-                    "name": "13",
                     "positions": [
                         {
                             "x": 20.9,
@@ -2523,25 +2520,25 @@
                 },
                 {
                     "id": "7794d59b-8060-4fca-8abf-04c308ac6cca",
-                    "name": "17a",
                     "positions": [
                         {
                             "x": 32.8,
                             "y": 18.3
                         }
                     ],
-                    "level": 17
+                    "level": 17,
+                    "part": 1
                 },
                 {
                     "id": "2e755f4c-a2c6-494f-819a-95adf30fd54c",
-                    "name": "17b",
                     "positions": [
                         {
                             "x": 25.5,
                             "y": 16.1
                         }
                     ],
-                    "level": 17
+                    "level": 17,
+                    "part": 2
                 }
             ]
         },

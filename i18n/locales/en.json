@@ -52,6 +52,7 @@
     "name": "Name",
     "level": "Level",
     "knowledgeLevel": "Knowledge Level",
+    "part": "Part",
     "rank": "Rank",
     "spellLevel": "Spell Level",
     "element": "Element",

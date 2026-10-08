@@ -20,6 +20,7 @@ import {
   EnemySchema,
   SpawnsFateSchema,
 } from '../../model/items/enemy'
+import { ItemBaseSchema } from '../../model/items/base'
 import { EventBaseSchema } from '../../model/items/event'
 import { LootBaseSchema } from '../../model/items/loot'
 import { PoiBaseSchema } from '../../model/items/poi'
@@ -69,6 +70,26 @@ export type EurekaEvent = z.infer<typeof EurekaEventSchema>
 export const EurekaLeveledPoiSchema = PoiBaseSchema.extend({ level: LevelSchema })
 export const EurekaPoiSchema = PoiBaseSchema
 
+// A quest has no name in the game: its level is what it is called, and `part` tells apart the
+// quests sharing one level.
+export const EurekaQuestSchema = ItemBaseSchema.omit({ name: true, i18n: true }).extend({
+  level: LevelSchema.check(ctx => {
+    if (ctx.value.from !== ctx.value.to) {
+      ctx.issues.push({ code: 'custom', input: ctx.value, message: 'a quest is at one level' })
+    }
+  }),
+  part: z.int().min(1).max(26).optional(),
+})
+
+export type EurekaQuest = z.infer<typeof EurekaQuestSchema>
+
+const PART_LETTERS = 'abcdefghijklmnopqrstuvwxyz'
+
+export function questLabel(quest: EurekaQuest): string {
+  const letter = quest.part === undefined ? '' : PART_LETTERS[quest.part - 1]
+  return `${quest.level.from}${letter}`
+}
+
 export const EurekaLootSchema = LootBaseSchema
 
 export type EurekaItem =
@@ -76,6 +97,7 @@ export type EurekaItem =
   | EurekaEvent
   | z.infer<typeof EurekaLeveledPoiSchema>
   | z.infer<typeof EurekaPoiSchema>
+  | EurekaQuest
   | z.infer<typeof EurekaLootSchema>
 
 // A weather and a time have to hold in the same condition block, so one filter owns both.
@@ -258,10 +280,11 @@ export const eurekaSections = {
     name: t => t('sections.quests'),
     type: 'poi',
     order: 2,
-    schema: EurekaLeveledPoiSchema,
+    schema: EurekaQuestSchema,
     drawStyle: 'default',
     icon: item => withOverride(item, 'quest'),
-    blank: (): Blank<z.infer<typeof EurekaLeveledPoiSchema>> => ({ level: { from: 1, to: 1 } }),
+    label: questLabel,
+    blank: (): Blank<EurekaQuest> => ({ level: { from: 1, to: 1 } }),
   }),
 
   lockboxes: defineSection({

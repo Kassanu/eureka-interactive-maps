@@ -14,6 +14,7 @@ interface Case {
   key: string
   type: string
   schema: z.ZodObject
+  labelled: boolean
   item: ZoneItem
 }
 
@@ -25,6 +26,7 @@ for (const slug of zoneSlugs) {
       key,
       type: section.type,
       schema: section.schema as z.ZodObject,
+      labelled: section.label !== undefined,
       item: createItem(section, { x: 5, y: 5 }),
     })
   }
@@ -39,11 +41,17 @@ function complaintsAbout(schema: z.ZodType, item: unknown, field: string): z.cor
 }
 
 describe('the fields a form decides to draw', () => {
-  // Every item may carry a name; a mob, an event and a spell have to. A coffer has none, which
-  // is why the panel falls back to its section's name for one.
-  it('takes a name on every item, and needs one on the named kinds', () => {
+  // Every item may carry a name but a quest, which its section labels instead; a mob, an event and
+  // a spell have to. A coffer has none, which is why the panel falls back to its section's name.
+  it('takes a name on every item no section labels, and needs one on the named kinds', () => {
     let seenRequired = 0
-    for (const { key, type, schema, item } of cases) {
+    let seenLabelled = 0
+    for (const { key, type, schema, labelled, item } of cases) {
+      if (labelled) {
+        expect('name' in schema.shape, key).toBe(false)
+        seenLabelled++
+        continue
+      }
       expect('name' in schema.shape, key).toBe(true)
       expect(complaintsAbout(schema, { ...item, name: 'Named' }, 'name'), key).toEqual([])
 
@@ -54,6 +62,7 @@ describe('the fields a form decides to draw', () => {
       if (required) seenRequired++
     }
     expect(seenRequired).toBeGreaterThan(0)
+    expect(seenLabelled).toBeGreaterThan(0)
   })
 
   // An item with no mutation does not carry the key at all, so a handler asking the item whether
