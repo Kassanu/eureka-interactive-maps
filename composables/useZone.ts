@@ -14,9 +14,9 @@ export function useZone(slug: ZoneSlug): UseZone {
 
   const definition = zoneFor(slug)
 
-  Promise.all([definition.file(), definition.map.image()])
-    .then(([file, source]) => {
-      const loaded = loadZone(definition, file.default)
+  Promise.all([definition.file(), definition.entities(), definition.map.image()])
+    .then(([file, entities, source]) => {
+      const loaded = loadZone(definition, file.default, entities.default)
 
       // An issue naming no section is the file itself, which leaves nothing to draw.
       const unreadable = loaded.issues.find(issue => issue.section === undefined)

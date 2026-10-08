@@ -10,7 +10,9 @@ import {
 } from '../zones'
 import type { ZoneSlug } from '../zones'
 import { english } from './helpers/messages'
-import { hydrateZone, loadZoneFile } from './helpers/zoneFiles'
+import { hydrateZone, loadEntityFile, loadZoneFile } from './helpers/zoneFiles'
+
+const anemosEntities = loadEntityFile('anemos')
 
 // The loader is what the viewer and the editor both run. These check what it hands them, using
 // the same call the app makes rather than a second copy of it.
@@ -137,7 +139,7 @@ describe('a zone whose file has drifted', () => {
     const before = items.length
     items[0] = { ...(items[0] as object), level: 'seventy' }
 
-    const zone = loadZone(zones.anemos, file)
+    const zone = loadZone(zones.anemos, file, anemosEntities)
     const enemies = zone.sections.find(section => section.key === 'enemies')
 
     expect(zone.issues).toHaveLength(1)
@@ -147,7 +149,8 @@ describe('a zone whose file has drifted', () => {
   })
 
   it('leaves a section its file does not mention empty', () => {
-    const zone = loadZone(zones.anemos, { schemaVersion: ZONE_SCHEMA_VERSION, sections: {} })
+    const empty = { schemaVersion: ZONE_SCHEMA_VERSION, sections: {} }
+    const zone = loadZone(zones.anemos, empty, anemosEntities)
     expect(zone.sections.map(s => s.key).sort()).toEqual(Object.keys(zones.anemos.sections).sort())
     expect(zone.drawable).toEqual([])
     expect(zone.scopedFilters).toEqual([])
@@ -158,13 +161,17 @@ describe('a zone whose file has drifted', () => {
 // this through parseSections, so neither can load a file the other would refuse.
 describe('a file this build cannot read', () => {
   const fileIssue = (input: unknown) => {
-    const zone = loadZone(zones.anemos, input)
+    const zone = loadZone(zones.anemos, input, anemosEntities)
     return zone.issues.find(issue => issue.section === undefined)
   }
 
   it('reports a stale schema version and reads no items', () => {
     const file = loadZoneFile('anemos')
-    const zone = loadZone(zones.anemos, { ...file, schemaVersion: ZONE_SCHEMA_VERSION - 1 })
+    const zone = loadZone(
+      zones.anemos,
+      { ...file, schemaVersion: ZONE_SCHEMA_VERSION - 1 },
+      anemosEntities
+    )
 
     expect(zone.issues).toHaveLength(1)
     expect(zone.issues[0]?.section).toBeUndefined()

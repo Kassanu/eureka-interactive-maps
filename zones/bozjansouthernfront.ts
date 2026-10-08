@@ -6,6 +6,7 @@ export const bozjansouthernfront: ZoneDefinition = {
   operation: 'bozja',
   accent: 'bg-purple-500 hover:bg-purple-700',
   file: () => import('../data/zones/bozjansouthernfront/zone.json'),
+  entities: () => import('../data/zones/bozjansouthernfront/entities.json'),
   map: { image: () => import('../assets/images/maps/bozjansouthernfront.jpg'), grid: GRID },
   sections: bozjaSections,
   filters: bozjaFilters,

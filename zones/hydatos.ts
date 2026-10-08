@@ -6,6 +6,7 @@ export const hydatos: ZoneDefinition = {
   operation: 'eureka',
   accent: 'bg-pink-500 hover:bg-pink-700',
   file: () => import('../data/zones/hydatos/zone.json'),
+  entities: () => import('../data/zones/hydatos/entities.json'),
   map: { image: () => import('../assets/images/maps/hydatos.jpg'), grid: GRID },
   level: eurekaLevel,
   sections: eurekaSections,

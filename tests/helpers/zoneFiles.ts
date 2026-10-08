@@ -14,6 +14,10 @@ export function loadZoneFile(slug: ZoneSlug): RawZoneFile {
   return JSON.parse(readFileSync(zoneFilePath(slug), 'utf8')) as RawZoneFile
 }
 
+export function loadEntityFile(slug: ZoneSlug): unknown {
+  return JSON.parse(readFileSync(join(ZONE_DIR, slug, 'entities.json'), 'utf8'))
+}
+
 export { referencedIds, zoneSlugs, zones }
 
 // One issue from one item, with array indices flattened out of the path so that the same defect
@@ -73,7 +77,7 @@ export function parseIssues(slug: ZoneSlug): GroupedIssue[] {
 // The loader the app runs, refusing to return a partial result: a zone that cannot be hydrated in
 // full is a zone whose data no longer matches the model, and the report says where.
 export function hydrateZone(slug: ZoneSlug): LoadedZone {
-  const loaded = loadZone(zones[slug], loadZoneFile(slug))
+  const loaded = loadZone(zones[slug], loadZoneFile(slug), loadEntityFile(slug))
   if (loaded.issues.length) {
     throw new Error(`${slug} does not parse:\n${formatIssues(parseIssues(slug))}`)
   }

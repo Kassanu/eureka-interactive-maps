@@ -58,12 +58,12 @@ describe('adding an item', () => {
     const definition = zones.anemos
     const { sections } = parseSections(definition, loadZoneFile('anemos'))
 
-    const before = indexZone(definition, sections)
+    const before = indexZone(definition, sections, new Map())
     const enemies = sections.get('enemies')!
     const item = createItem(definition.sections.enemies!, { x: 20, y: 20 })
     enemies.push(item)
 
-    const after = indexZone(definition, sections)
+    const after = indexZone(definition, sections, new Map())
     expect(before.byId.has(item.id)).toBe(false)
     expect(after.byId.get(item.id)).toBe(item)
     expect(after.sectionOf.get(item.id)?.key).toBe('enemies')
@@ -79,7 +79,7 @@ describe('a save that would not load back', () => {
     const broken = { ...enemies[0]!, name: '  padded  ' } as ZoneItem
     enemies.splice(0, 1, broken)
 
-    const { file, issues } = encodeZone(indexZone(definition, sections), ZONE_SCHEMA_VERSION)
+    const { file, issues } = encodeZone(indexZone(definition, sections, new Map()), ZONE_SCHEMA_VERSION)
 
     expect(file).toBeNull()
     expect(issues).toHaveLength(1)
@@ -97,7 +97,7 @@ describe('deleting an item', () => {
     const removed = enemies[0]!
     enemies.splice(0, 1)
 
-    const zone = indexZone(definition, sections)
+    const zone = indexZone(definition, sections, new Map())
     expect(zone.byId.has(removed.id)).toBe(false)
     expect(zone.sectionOf.has(removed.id)).toBe(false)
 
@@ -110,7 +110,7 @@ describe('the file a save writes', () => {
   it('carries the version this build reads, whatever the loaded file said', () => {
     const definition = zones.zadnor
     const { sections } = parseSections(definition, { schemaVersion: 2, sections: loadZoneFile('zadnor').sections })
-    const { file } = encodeZone(indexZone(definition, sections), ZONE_SCHEMA_VERSION)
+    const { file } = encodeZone(indexZone(definition, sections, new Map()), ZONE_SCHEMA_VERSION)
     expect(file?.schemaVersion).toBe(ZONE_SCHEMA_VERSION)
   })
 

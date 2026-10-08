@@ -1,6 +1,8 @@
 import type { z } from 'zod'
 import type { Text } from '../../i18n/translate'
+import { EntitySchema, entityGroupIssues, entityLookup, type Entity } from '../../model/entities'
 import { iconPath } from '../../model/icons'
+import type { Lookup } from '../../model/lookups'
 import { itemLabel, spawnedByOf, spawnsFateOf, type ZoneItem } from './items'
 import { levelFilter, scopedFilter } from '../define/filters'
 import type { FilterScope, ScopedFilter, StoredFilterDefinition } from '../define/filters'
@@ -48,6 +50,8 @@ export interface LoadedZone {
   // FATE, which is why it answers with a list.
   spawnersOf: (id: string) => ZoneItem[]
   labelOf: (item: ZoneItem) => Text
+  // One Lookup per group of the zone's entity file, keyed by entry id.
+  entities: ReadonlyMap<string, Lookup<string>>
   issues: LoadIssue[]
 }
 
@@ -102,9 +106,46 @@ export function parseSections(
   return { sections, issues }
 }
 
-export function loadZone(definition: ZoneDefinition, file: unknown): LoadedZone {
+// Nothing is drawn from an entity file, so an issue in one is reported against its group and
+// never stops the zone loading.
+export function parseEntities(
+  definition: ZoneDefinition,
+  input: unknown
+): { groups: Map<string, Lookup<string>>; issues: LoadIssue[] } {
+  const groups = new Map<string, Lookup<string>>()
+  const issues: LoadIssue[] = []
+  if (!input || typeof input !== 'object' || Array.isArray(input)) {
+    return { groups, issues: [{ section: 'entities', message: 'this is not an entity file' }] }
+  }
+
+  for (const [key, raw] of Object.entries(input)) {
+    const section = `entities.${key}`
+    if (key !== 'bosses' && !(key in definition.sections)) {
+      issues.push({ section, message: `${key} is not a section of this zone` })
+      continue
+    }
+    if (!Array.isArray(raw)) {
+      issues.push({ section, message: `${key} is not a list` })
+      continue
+    }
+
+    const entries: Entity[] = []
+    for (const [index, value] of raw.entries()) {
+      const result = EntitySchema.safeParse(value)
+      if (result.success) entries.push(result.data)
+      else issues.push({ section, index, message: result.error.issues[0]?.message ?? 'invalid' })
+    }
+    for (const message of entityGroupIssues(entries)) issues.push({ section, message })
+    groups.set(key, entityLookup(entries))
+  }
+
+  return { groups, issues }
+}
+
+export function loadZone(definition: ZoneDefinition, file: unknown, entities: unknown): LoadedZone {
   const { sections, issues } = parseSections(definition, file)
-  return indexZone(definition, sections, issues)
+  const parsed = parseEntities(definition, entities)
+  return indexZone(definition, sections, parsed.groups, [...issues, ...parsed.issues])
 }
 
 // A zone's own filters, which every section is offered. Built from static inputs, so the editor's
@@ -131,6 +172,7 @@ function zoneFilterDefinitions(definition: ZoneDefinition): StoredFilterDefiniti
 export function indexZone(
   definition: ZoneDefinition,
   parsed: Map<string, ZoneItem[]>,
+  entities: ReadonlyMap<string, Lookup<string>>,
   issues: LoadIssue[] = []
 ): LoadedZone {
   const byId = new Map<string, ZoneItem>()
@@ -226,6 +268,7 @@ export function indexZone(
     iconsById,
     spawnersOf,
     labelOf,
+    entities,
     issues,
   }
 }
