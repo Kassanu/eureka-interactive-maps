@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import type { Position } from '../../model/primitives'
 import { itemLabel, type ZoneItem } from './items'
+import type { Text } from '../../i18n/translate'
 import type { RawZoneFile } from '../define/schema'
 import type { LoadedZone } from './loading'
 import type { StoredSectionDefinition } from '../define/types'
@@ -72,7 +73,7 @@ export function referencedIds(value: unknown, found: string[] = []): string[] {
 export interface SaveIssue {
   section: string
   itemId: string
-  name: string
+  label: Text
   message: string
 }
 
@@ -98,7 +99,7 @@ export function encodeZone(
         issues.push({
           section: key,
           itemId: item.id,
-          name: itemLabel(definition.sections[key], item),
+          label: itemLabel(definition.sections[key], item),
           message: encoded.error.issues[0]?.message ?? 'invalid',
         })
         continue
@@ -120,7 +121,7 @@ export function encodeZone(
         issues.push({
           section: section.key,
           itemId: item.id,
-          name: itemLabel(section.definition, item),
+          label: itemLabel(section.definition, item),
           message: `points at ${reference}, which is not in this file`,
         })
       }

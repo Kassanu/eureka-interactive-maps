@@ -55,6 +55,7 @@
     "part": "Part",
     "rank": "Rank",
     "spellLevel": "Spell Level",
+    "recordNumber": "Record Number",
     "element": "Element",
     "coordinates": "Coordinates",
     "grade": "Grade",
@@ -101,6 +102,7 @@
   "item": {
     "at": "{name} ({x}, {y})",
     "atLevel": "{name} ({level})",
+    "recordEntry": "#{number}: {name}",
     "spawnKill": "Kill: {target}",
     "spawnComplete": "Complete: {target}"
   },

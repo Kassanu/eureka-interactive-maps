@@ -24,7 +24,17 @@
           min="1"
           max="26"
           class="editor-input"
-          @change="setPart"
+          @change="setOptionalNumber('part', $event)"
+        >
+      </FormField>
+
+      <FormField v-if="'recordNumber' in shape" :label="t('fields.recordNumber')">
+        <input
+          :value="'recordNumber' in item ? item.recordNumber ?? '' : ''"
+          type="number"
+          min="1"
+          class="editor-input"
+          @change="setOptionalNumber('recordNumber', $event)"
         >
       </FormField>
 
@@ -298,9 +308,9 @@ function rename(event: Event) {
   setOptional('name', value === '' ? undefined : value)
 }
 
-function setPart(event: Event) {
+function setOptionalNumber(field: string, event: Event) {
   const value = (event.target as HTMLInputElement).value
-  setOptional('part', value === '' ? undefined : Number(value))
+  setOptional(field, value === '' ? undefined : Number(value))
 }
 
 function setOptional(field: string, value: unknown) {

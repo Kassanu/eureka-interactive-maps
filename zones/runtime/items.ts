@@ -1,3 +1,4 @@
+import type { Text } from '../../i18n/translate'
 import type { StoredSectionDefinition } from '../define/types'
 import type { BozjaItem } from '../operations/bozja'
 import type { EurekaItem } from '../operations/eureka'
@@ -7,9 +8,9 @@ import type { OccultItem } from '../operations/occult'
 // declaring it, and a quest has no name, so a name is read through itemLabel.
 export type ZoneItem = BozjaItem | EurekaItem | OccultItem
 
-export function itemLabel(definition: StoredSectionDefinition | undefined, item: ZoneItem): string {
+export function itemLabel(definition: StoredSectionDefinition | undefined, item: ZoneItem): Text {
   if (definition?.label) return definition.label(item as never)
-  return 'name' in item ? item.name ?? '' : ''
+  return () => ('name' in item ? item.name ?? '' : '')
 }
 
 // Each operation records the spawn relation at one end only: Eureka names the FATE on the enemy,

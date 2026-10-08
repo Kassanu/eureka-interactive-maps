@@ -1,4 +1,4 @@
-import type { z } from 'zod'
+import { z } from 'zod'
 import { IconKeySchema } from '../../model/icons'
 import { aggroTypes, directions, elements, grades, spawnConditions } from '../../model/lookups'
 import { defineSection, type Blank } from '../define/types'
@@ -56,6 +56,14 @@ export type OccultEvent = z.infer<typeof OccultEventSchema>
 
 export const OccultPoiSchema = PoiBaseSchema
 
+// `recordNumber` is the point's entry in the in-game Occult Record, a list shared with NPCs and
+// items, so the numbers have gaps and cannot be derived from the file's order.
+export const OccultSurveyPointSchema = PoiBaseSchema.extend({
+  recordNumber: z.int().min(1).optional(),
+})
+
+export type OccultSurveyPoint = z.infer<typeof OccultSurveyPointSchema>
+
 export const OccultTreasureCofferSchema = LootBaseSchema.extend({
   grade: occultLookups.grades.key,
 })
@@ -89,6 +97,7 @@ export type OccultItem =
   | OccultSpell
   | OccultTreasureCoffer
   | z.infer<typeof OccultPoiSchema>
+  | OccultSurveyPoint
   | z.infer<typeof OccultBunnyCofferSchema>
 
 // The bonus half of a pot's source has no id to key on.
@@ -103,7 +112,7 @@ function poolFilter<Item extends { source: LootSource }>() {
       const fates = scope.resolve(
         scope.items.flatMap(item => (item.source.type === 'fate' ? [item.source.fateId] : []))
       )
-      const options: FilterOption[] = fates.map(fate => ({ key: fate.id, label: () => fate.name }))
+      const options: FilterOption[] = fates.map(fate => ({ key: fate.id, label: fate.label }))
       if (scope.items.some(item => item.source.type === 'bonus')) {
         options.push({ key: BONUS_POOL, label: t => t('values.bonusRoll') })
       }
@@ -175,10 +184,15 @@ export const occultSections = {
     name: t => t('sections.surveyPoints'),
     type: 'poi',
     order: 2,
-    schema: OccultPoiSchema,
+    schema: OccultSurveyPointSchema,
     drawStyle: 'default',
     icon: item => item.icon ?? 'pin',
-    blank: (): Blank<z.infer<typeof OccultPoiSchema>> => ({}),
+    label: point => t => {
+      const name = point.name ?? ''
+      if (point.recordNumber === undefined || !name) return name
+      return t('item.recordEntry', { number: point.recordNumber, name })
+    },
+    blank: (): Blank<OccultSurveyPoint> => ({}),
   }),
 
   treasure_coffers: defineSection({

@@ -14,6 +14,7 @@ import {
   zoneSlugs,
   type RawZoneFile,
 } from '../zones'
+import { english } from './helpers/messages'
 import { hydrateZone, loadZoneFile } from './helpers/zoneFiles'
 
 // What Save refuses to write, and what the loader says about a file it cannot fully read.
@@ -210,7 +211,7 @@ describe('resolving items outside a filter scope', () => {
 
     expect(resolved.map(item => item.id)).toEqual([declared[2], declared[5], declared[8]])
     for (const item of resolved) {
-      expect(item.name).toBe(zone.labelOf(zone.byId.get(item.id)!) || item.id)
+      expect(item.label(english)).toBe(zone.labelOf(zone.byId.get(item.id)!)(english) || item.id)
     }
   })
 
@@ -221,8 +222,9 @@ describe('resolving items outside a filter scope', () => {
       .find(candidate => candidate.definition.key === 'source')!
     const first = [...zone.byId.keys()][0]!
 
-    expect(filter.scope.resolve(['nope', first])).toEqual([
-      { id: first, name: zone.labelOf(zone.byId.get(first)!) || first },
+    const resolved = filter.scope.resolve(['nope', first])
+    expect(resolved.map(item => ({ id: item.id, name: item.label(english) }))).toEqual([
+      { id: first, name: zone.labelOf(zone.byId.get(first)!)(english) || first },
       { id: 'nope', name: 'nope' },
     ])
   })

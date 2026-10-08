@@ -283,7 +283,7 @@ export const eurekaSections = {
     schema: EurekaQuestSchema,
     drawStyle: 'default',
     icon: item => withOverride(item, 'quest'),
-    label: questLabel,
+    label: quest => () => questLabel(quest),
     blank: (): Blank<EurekaQuest> => ({ level: { from: 1, to: 1 } }),
   }),
 

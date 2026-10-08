@@ -10,7 +10,7 @@
       <button type="button" :title="t('editor.deleteItem')" @click="remove">
         <font-awesome-icon icon="times" class="cursor-pointer" />
       </button>
-      <span class="text-sm text-gray-600 truncate">{{ itemLabel(section.definition, item) || item.id }}</span>
+      <span class="text-sm text-gray-600 truncate">{{ itemLabel(section.definition, item)(t) || item.id }}</span>
       <button type="button" class="ml-auto" @click="editor.toggleExpanded(item.id)">
         <font-awesome-icon :icon="editor.isExpanded(item.id) ? 'caret-up' : 'caret-down'" class="cursor-pointer" />
       </button>

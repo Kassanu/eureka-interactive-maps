@@ -8,7 +8,7 @@ import {
   type InjectionKey,
   type Ref,
 } from 'vue'
-import type { Text } from '~/i18n/translate'
+import type { Text, Translate } from '~/i18n/translate'
 import type { Position } from '~/model/primitives'
 import {
   ZONE_SCHEMA_VERSION,
@@ -49,7 +49,7 @@ export interface UseZoneEditor {
   setVisible: (key: string, on: boolean) => void
   isExpanded: (key: string) => boolean
   toggleExpanded: (key: string) => void
-  matches: (item: ZoneItem) => boolean
+  matches: (item: ZoneItem, t: Translate) => boolean
   addTo: (section: LoadedSection) => void
   placePosition: (item: ZoneItem, point: Position) => void
   cancel: () => void
@@ -122,10 +122,10 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
     return items.value.get(sectionKey) ?? []
   }
 
-  function matches(item: ZoneItem): boolean {
+  function matches(item: ZoneItem, t: Translate): boolean {
     const term = search.value.trim().toLowerCase()
     if (!term) return true
-    const label = zone.value?.labelOf(item) ?? ''
+    const label = zone.value?.labelOf(item)(t) ?? ''
     return item.id.toLowerCase().includes(term) || label.toLowerCase().includes(term)
   }
 
@@ -139,7 +139,7 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
       kind: 'position',
       item,
       point,
-      label: () => zone.value?.labelOf(item) || item.id,
+      label: t => zone.value?.labelOf(item)(t) || item.id,
     }
   }
 

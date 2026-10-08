@@ -45,9 +45,7 @@ describe.each(zoneSlugs)('%s', slug => {
       const names = englishNames(groups[key])
       for (const { name } of items) {
         if (name === undefined) continue
-        // A survey point's name carries its record number, which the entry leaves out.
-        const bare = key === 'survey_points' ? name.replace(/^#\d+: /, '') : name
-        if (!names.has(bare.toLowerCase())) missing.push(`${key}: ${name}`)
+        if (!names.has(name.toLowerCase())) missing.push(`${key}: ${name}`)
       }
     }
     expect(missing).toEqual([])
