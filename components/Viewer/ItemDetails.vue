@@ -52,10 +52,10 @@
       {{ describeRef(zone, item.learnedFrom, t) }}
     </Field>
     <Field v-if="'requires' in item && item.requires" :label="t('fields.requires')">
-      {{ zone.byId.get(item.requires)?.name }}
+      {{ labelOfId(item.requires) }}
     </Field>
     <Field v-if="'replaces' in item && item.replaces" :label="t('fields.replaces')">
-      {{ zone.byId.get(item.replaces)?.name }}
+      {{ labelOfId(item.replaces) }}
     </Field>
 
     <template v-if="'mutation' in item && item.mutation">
@@ -124,6 +124,11 @@ function list<K extends string>(lookup: Lookup<K>, keys: readonly K[]): string {
 }
 
 const level = computed(() => operations[props.zone.definition.operation].levelLabel(t))
+
+function labelOfId(id: string): string {
+  const target = props.zone.byId.get(id)
+  return target ? props.zone.labelOf(target) : ''
+}
 
 // Bozja grades an enemy by one attack type it is weak to; the Occult zones list elements.
 const weakness = computed(() => {

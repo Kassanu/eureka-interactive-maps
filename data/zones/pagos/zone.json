@@ -3092,7 +3092,6 @@
             "items": [
                 {
                     "id": "2f70b9fb-d1ff-4e1b-a4db-36093c9f4999",
-                    "name": "21",
                     "positions": [
                         {
                             "x": 16.5,
@@ -3103,7 +3102,6 @@
                 },
                 {
                     "id": "bc1898df-4328-4e2f-b76f-250c2862b760",
-                    "name": "23",
                     "positions": [
                         {
                             "x": 26.7,
@@ -3114,40 +3112,38 @@
                 },
                 {
                     "id": "2a98e3d9-c28d-4a5b-944f-fcf5aa2cb8f3",
-                    "name": "25a",
                     "positions": [
                         {
                             "x": 30.9,
                             "y": 20.7
                         }
                     ],
-                    "level": 25
+                    "level": 25,
+                    "part": 1
                 },
                 {
                     "id": "defda867-9ea7-4c14-863d-0d9aa2fe314f",
-                    "name": "25b",
                     "positions": [
                         {
                             "x": 30.7,
                             "y": 21
                         }
                     ],
-                    "level": 25
+                    "level": 25,
+                    "part": 2
                 },
                 {
                     "id": "75c96554-8adf-431c-862c-9e017c5f4117",
-                    "name": "29",
                     "positions": [
                         {
                             "x": 9.9,
                             "y": 21.5
                         }
                     ],
-                    "level": 26
+                    "level": 29
                 },
                 {
                     "id": "f3563b03-3250-4552-9772-fd1eb9e56297",
-                    "name": "35",
                     "positions": [
                         {
                             "x": 21.8,

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import type { Position } from '../../model/primitives'
-import type { ZoneItem } from './items'
+import { itemLabel, type ZoneItem } from './items'
 import type { RawZoneFile } from '../define/schema'
 import type { LoadedZone } from './loading'
 import type { StoredSectionDefinition } from '../define/types'
@@ -98,7 +98,7 @@ export function encodeZone(
         issues.push({
           section: key,
           itemId: item.id,
-          name: item.name ?? '',
+          name: itemLabel(definition.sections[key], item),
           message: encoded.error.issues[0]?.message ?? 'invalid',
         })
         continue
@@ -120,7 +120,7 @@ export function encodeZone(
         issues.push({
           section: section.key,
           itemId: item.id,
-          name: item.name ?? '',
+          name: itemLabel(section.definition, item),
           message: `points at ${reference}, which is not in this file`,
         })
       }

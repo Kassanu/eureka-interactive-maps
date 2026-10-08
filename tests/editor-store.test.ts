@@ -189,12 +189,14 @@ describe('removing an item', () => {
 describe('search', () => {
   it('matches on name and on id, and everything when empty', async () => {
     const editor = await editorFor()
-    const item = sectionNamed(editor, 'enemies').items.find(candidate => candidate.name)!
+    const item = sectionNamed(editor, 'enemies').items[0]!
+    const name = editor.zone.value!.labelOf(item)
+    expect(name).not.toBe('')
 
     editor.search.value = ''
     expect(editor.matches(item)).toBe(true)
 
-    editor.search.value = item.name!.slice(0, 4).toUpperCase()
+    editor.search.value = name.slice(0, 4).toUpperCase()
     expect(editor.matches(item)).toBe(true)
 
     editor.search.value = item.id
@@ -202,6 +204,17 @@ describe('search', () => {
 
     editor.search.value = 'no item is called this'
     expect(editor.matches(item)).toBe(false)
+  })
+
+  it('finds a quest by its level and part', async () => {
+    const editor = await editorFor()
+    const quests = sectionNamed(editor, 'quests').items
+    const at17 = (part: number) =>
+      quests.find(item => 'part' in item && item.part === part && item.level.from === 17)!
+
+    editor.search.value = '17b'
+    expect(editor.matches(at17(2))).toBe(true)
+    expect(editor.matches(at17(1))).toBe(false)
   })
 })
 

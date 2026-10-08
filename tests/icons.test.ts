@@ -11,7 +11,7 @@ const zones = new Map(hydratedZones().map(zone => [zone.definition.slug, zone] a
 function iconsFor(slug: string, sectionKey: string, name: string): string[] {
   const zone = zones.get(slug)!
   const section = zone.sections.find(candidate => candidate.key === sectionKey)!
-  const item = section.items.find(candidate => candidate.name === name)
+  const item = section.items.find(candidate => 'name' in candidate && candidate.name === name)
   expect(item, `${slug}.${sectionKey} has no ${name}`).toBeDefined()
   return zone.iconsById.get(item!.id)!
 }

@@ -110,12 +110,13 @@ describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as con
   it('names an item a reference points at', () => {
     for (const item of zone.byId.values()) {
       const described = describeRef(zone, item.id, english)
-      if (!item.name) {
+      const name = zone.labelOf(item)
+      if (!name) {
         expect(described).toBe('')
         continue
       }
       const [first] = item.positions
-      expect(described).toBe(english('item.at', { name: item.name, x: first!.x, y: first!.y }))
+      expect(described).toBe(english('item.at', { name, x: first!.x, y: first!.y }))
     }
     expect(describeRef(zone, undefined, english)).toBe('')
     expect(describeRef(zone, 'not-an-id', english)).toBe('')

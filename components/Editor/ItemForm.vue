@@ -5,7 +5,7 @@
     </FormField>
 
     <FormField v-if="'name' in shape" :label="t('fields.name')">
-      <input :value="item.name ?? ''" class="editor-input" type="text" @change="rename">
+      <input :value="'name' in item ? item.name ?? '' : ''" class="editor-input" type="text" @change="rename">
     </FormField>
 
     <div class="editor-columns">
@@ -15,6 +15,17 @@
           <span class="text-xs">{{ t('common.to') }}</span>
           <input v-model.number="item.level.to" type="number" min="1" class="editor-input">
         </div>
+      </FormField>
+
+      <FormField v-if="'part' in shape" :label="t('fields.part')">
+        <input
+          :value="'part' in item ? item.part ?? '' : ''"
+          type="number"
+          min="1"
+          max="26"
+          class="editor-input"
+          @change="setPart"
+        >
       </FormField>
 
       <FormField v-if="'rank' in item" :label="t('fields.rank')">
@@ -285,6 +296,11 @@ const poolValue = computed(() =>
 function rename(event: Event) {
   const value = (event.target as HTMLInputElement).value
   setOptional('name', value === '' ? undefined : value)
+}
+
+function setPart(event: Event) {
+  const value = (event.target as HTMLInputElement).value
+  setOptional('part', value === '' ? undefined : Number(value))
 }
 
 function setOptional(field: string, value: unknown) {

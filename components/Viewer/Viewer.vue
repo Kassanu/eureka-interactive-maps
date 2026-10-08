@@ -79,7 +79,9 @@ const clicked = computed(() => {
   return {
     item,
     // A loot marker has no name of its own, so its section names it here where there is room.
-    heading: item.name || zone.value?.sectionOf.get(item.id)?.definition.name(t) || '',
+    heading: zone.value?.labelOf(item)
+      || zone.value?.sectionOf.get(item.id)?.definition.name(t)
+      || '',
     icons: zone.value?.iconsById.get(item.id) ?? [],
   }
 })

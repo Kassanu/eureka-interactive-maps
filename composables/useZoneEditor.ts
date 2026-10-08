@@ -125,7 +125,8 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
   function matches(item: ZoneItem): boolean {
     const term = search.value.trim().toLowerCase()
     if (!term) return true
-    return item.id.toLowerCase().includes(term) || (item.name ?? '').toLowerCase().includes(term)
+    const label = zone.value?.labelOf(item) ?? ''
+    return item.id.toLowerCase().includes(term) || label.toLowerCase().includes(term)
   }
 
   function addTo(section: LoadedSection) {
@@ -134,7 +135,12 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
 
   // The point, not its index: a row deleted while the map waits shifts every index after it.
   function placePosition(item: ZoneItem, point: Position) {
-    pending.value = { kind: 'position', item, point, label: () => item.name ?? item.id }
+    pending.value = {
+      kind: 'position',
+      item,
+      point,
+      label: () => zone.value?.labelOf(item) || item.id,
+    }
   }
 
   function cancel() {

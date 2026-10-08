@@ -47,7 +47,7 @@ describe('writing a zone back', () => {
     const zone = hydrateZone('anemos')
     const enemies = zone.sections.find(section => section.key === 'enemies')!
     const item = enemies.items[0]!
-    const named = item.name
+    const named = (item as { name?: string }).name
     Object.assign(item, { name: '  padded  ' })
 
     const { file, issues } = encodeZone(zone, ZONE_SCHEMA_VERSION)
@@ -210,7 +210,7 @@ describe('resolving items outside a filter scope', () => {
 
     expect(resolved.map(item => item.id)).toEqual([declared[2], declared[5], declared[8]])
     for (const item of resolved) {
-      expect(item.name).toBe(zone.byId.get(item.id)!.name ?? item.id)
+      expect(item.name).toBe(zone.labelOf(zone.byId.get(item.id)!) || item.id)
     }
   })
 
@@ -222,7 +222,7 @@ describe('resolving items outside a filter scope', () => {
     const first = [...zone.byId.keys()][0]!
 
     expect(filter.scope.resolve(['nope', first])).toEqual([
-      { id: first, name: zone.byId.get(first)!.name ?? first },
+      { id: first, name: zone.labelOf(zone.byId.get(first)!) || first },
       { id: 'nope', name: 'nope' },
     ])
   })

@@ -19,6 +19,8 @@ export interface SectionDefinition<S extends z.ZodType> {
   drawStyle: DrawStyle
   icon: (item: z.infer<S>) => IconKey
   badges?: (item: z.infer<S>) => IconKey[]
+  // What an item is called where it has no name of its own.
+  label?: (item: z.infer<S>) => string
   filters?: FilterDefinition<z.infer<S>>[]
   blank: () => Blank<z.infer<S>>
 }
@@ -37,6 +39,7 @@ export interface StoredSectionDefinition {
   drawStyle: DrawStyle
   icon: (item: never) => IconKey
   badges?: (item: never) => IconKey[]
+  label?: (item: never) => string
   filters?: StoredFilterDefinition[]
   blank: () => object
 }
