@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import type { Text, Translate } from '../../i18n/translate'
+import { inLocale, type Localized } from '../localized'
 
 // A closed domain of keys and the text each one displays. One declaration produces the runtime
 // validator, the TypeScript union and the option list a select renders, so a key cannot exist in
@@ -9,8 +10,9 @@ import type { Text, Translate } from '../../i18n/translate'
 // declares a subset of a domain: the Occult zones allow four elements where Eureka allows six,
 // and subset() narrows the enum so a value legal in one zone fails to parse in another.
 //
-// `defineLookup` reads a label from the locale file under `lookups.<namespace>.<key>`;
-// `defineNames` holds the text itself, for a domain of game names rather than app strings.
+// `defineTable` reads each label from a table of Localized values in the active locale, and the
+// table's own key order is the order every option list follows. `defineNames` holds English text
+// for the drop names, which have no table yet.
 
 export interface LookupOption<K extends string> {
   key: K
@@ -33,12 +35,10 @@ export interface Lookup<K extends string> {
   subset<S extends K>(keys: readonly S[]): Lookup<S>
 }
 
-export function defineLookup<const K extends string>(
-  namespace: string,
-  keys: readonly K[]
-): Lookup<K> {
+export function defineTable<const K extends string>(entries: Readonly<Record<K, Localized>>): Lookup<K> {
+  const keys = Object.keys(entries) as K[]
   const labels = {} as Record<K, Text>
-  for (const key of keys) labels[key] = (t: Translate) => t(`lookups.${namespace}.${key}`)
+  for (const key of keys) labels[key] = (t: Translate) => inLocale(entries[key], t.locale)
   return buildLookup(keys, labels)
 }
 

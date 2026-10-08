@@ -1,0 +1,20 @@
+{
+    "fire": {
+        "en": "Fire"
+    },
+    "earth": {
+        "en": "Earth"
+    },
+    "lightning": {
+        "en": "Lightning"
+    },
+    "water": {
+        "en": "Water"
+    },
+    "wind": {
+        "en": "Wind"
+    },
+    "ice": {
+        "en": "Ice"
+    }
+}

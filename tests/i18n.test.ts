@@ -4,7 +4,6 @@ import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES, TRANSLATED_LOCALE_CODES } from '../i18n/locales'
 import { ENGLISH_ONLY_PATHS, localizedRoutes, siteRoutes } from '../i18n/routes'
-import * as lookups from '../model/lookups'
 import { zoneSlugs } from '../zones'
 
 const localesDir = fileURLToPath(new URL('../i18n/locales', import.meta.url))
@@ -100,35 +99,6 @@ describe('the zone messages', () => {
   })
 })
 
-// A lookup builds its keys from the domain name and the item's own key, so the scan below cannot
-// see them. A key with no message fails in model.test.ts, where `english` throws; the other
-// direction, a message no domain declares, fails here.
-describe('the lookup messages', () => {
-  const messages = messagesFor(DEFAULT_LOCALE).lookups as Messages
-
-  // A Lookup is invariant in its key type, so the module's exports do not narrow to one type.
-  // The key set is all this block reads.
-  const domains = Object.entries(lookups)
-    .flatMap(([name, value]): [string, readonly string[]][] =>
-      typeof value === 'object' && value !== null && 'keys' in value && 'labels' in value
-        ? [[name, (value as { keys: readonly string[] }).keys]]
-        : [])
-
-  it('finds the declared domains at all, so an empty list cannot pass this file', () => {
-    expect(domains.length).toBeGreaterThan(5)
-  })
-
-  it('names every declared domain and no others', () => {
-    expect(Object.keys(messages).sort()).toEqual(domains.map(([name]) => name).sort())
-  })
-
-  it('holds one message per key of the domain and no others', () => {
-    for (const [name, keys] of domains) {
-      expect(Object.keys(messages[name] as Messages).sort(), name).toEqual([...keys].sort())
-    }
-  })
-})
-
 // The two halves of "adding a language means adding one locale file": a key the app names has to
 // be in the file, and a key in the file has to be named, or a translator is handed dead strings.
 describe('the English file and the source', () => {
@@ -143,13 +113,11 @@ describe('the English file and the source', () => {
     expect([...named].filter(key => !english.has(key)).sort()).toEqual([])
   })
 
-  // `zones.<slug>.*` and `lookups.<domain>.*` are built rather than written out, and the two
-  // blocks above already assert each set against what declares it.
-  const BUILT = ['zones.', 'lookups.']
-
+  // `zones.<slug>.*` is built rather than written out, and the zone block above asserts it
+  // against the registry.
   it('names every key it defines', () => {
     const unused = [...english.keys()]
-      .filter(key => !BUILT.some(prefix => key.startsWith(prefix)) && !named.has(key))
+      .filter(key => !key.startsWith('zones.') && !named.has(key))
       .sort()
     expect(unused).toEqual([])
   })
