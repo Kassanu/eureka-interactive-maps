@@ -1,7 +1,7 @@
 import { formatLevel, type Position } from '../../model/primitives'
 import type { Translate } from '../../i18n/translate'
 import { applyFilters, type FilterValue } from '../define/filters'
-import { itemLabel, type ZoneItem } from './items'
+import type { ZoneItem } from './items'
 import type { LoadedSection, LoadedZone } from './loading'
 import type { FilterState } from './state'
 import type { DrawStyle } from '../define/types'
@@ -30,8 +30,8 @@ export interface Marker {
   coordinates: Position
 }
 
-function markerLabel(section: LoadedSection, item: ZoneItem, t: Translate): string {
-  const name = itemLabel(section.definition, item)(t)
+function markerLabel(zone: LoadedZone, item: ZoneItem, t: Translate): string {
+  const name = zone.labelOf(item)(t)
   if (!name) return ''
   if (!('level' in item)) return name
   return t('item.atLevel', { name, level: formatLevel(item.level, t) })
@@ -45,7 +45,7 @@ export function zoneMarkers(zone: LoadedZone, state: FilterState, t: Translate):
     for (const item of visibleItems(section, state.values)) {
       const shared = {
         itemId: item.id,
-        label: markerLabel(section, item, t),
+        label: markerLabel(zone, item, t),
         icons: zone.iconsById.get(item.id) ?? [],
         drawStyle: section.definition.drawStyle,
       }

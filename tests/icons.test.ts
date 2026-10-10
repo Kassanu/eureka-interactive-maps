@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { iconPaths } from '../model/icons'
+import { english } from './helpers/messages'
 import { hydratedZones } from './helpers/zoneFiles'
 
 // What a marker actually draws. Asserting the resolved path is in the registry says only that a
@@ -11,7 +12,7 @@ const zones = new Map(hydratedZones().map(zone => [zone.definition.slug, zone] a
 function iconsFor(slug: string, sectionKey: string, name: string): string[] {
   const zone = zones.get(slug)!
   const section = zone.sections.find(candidate => candidate.key === sectionKey)!
-  const item = section.items.find(candidate => 'name' in candidate && candidate.name === name)
+  const item = section.items.find(candidate => zone.labelOf(candidate)(english) === name)
   expect(item, `${slug}.${sectionKey} has no ${name}`).toBeDefined()
   return zone.iconsById.get(item!.id)!
 }

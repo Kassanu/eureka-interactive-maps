@@ -1,7 +1,24 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { hydrateZone, loadZoneFile, referencedIds, zoneFilePath, zoneSlugs } from './helpers/zoneFiles'
+import dropsFile from '../data/drops.json'
+import {
+  hydrateZone,
+  loadEntityFile,
+  loadZoneFile,
+  referencedIds,
+  zoneFilePath,
+  zoneSlugs,
+} from './helpers/zoneFiles'
+
+interface RawItem {
+  id: string
+  entity?: string
+  bosses?: { entity: string }[]
+  drops?: { entity: string }[]
+}
+
+const dropIds = new Set(dropsFile.drops.map(entry => entry.id))
 
 // Hydrating a file is what the app does at load, so these check what it may rely on afterwards:
 // that every reference finds its target, and that writing the file back produces what it came
@@ -22,6 +39,31 @@ describe.each(zoneSlugs)('%s', slug => {
         const { id, ...rest } = item as { id: string }
         for (const reference of referencedIds(rest)) {
           if (!zone.byId.has(reference)) unresolved.push(`${section.key}/${id} -> ${reference}`)
+        }
+      }
+    }
+
+    expect(unresolved).toEqual([])
+  })
+
+  // An item's own entity is held by the group its section key names, a boss's by `bosses`, and a
+  // drop's by data/drops.json. Read off the files, not through the loader.
+  it('resolves every entity inside its group', () => {
+    const groups = loadEntityFile(slug) as Record<string, { id: string }[]>
+    const held = (group: string) => new Set((groups[group] ?? []).map(entry => entry.id))
+    const bosses = held('bosses')
+    const unresolved: string[] = []
+
+    for (const [key, section] of Object.entries(loadZoneFile(slug).sections)) {
+      const own = held(key)
+      for (const item of (section.items ?? []) as RawItem[]) {
+        const at = `${key}/${item.id}`
+        if (item.entity !== undefined && !own.has(item.entity)) unresolved.push(`${at} -> ${item.entity}`)
+        for (const { entity } of item.bosses ?? []) {
+          if (!bosses.has(entity)) unresolved.push(`${at} boss -> ${entity}`)
+        }
+        for (const { entity } of item.drops ?? []) {
+          if (!dropIds.has(entity)) unresolved.push(`${at} drop -> ${entity}`)
         }
       }
     }

@@ -1,11 +1,11 @@
 {
-    "schemaVersion": 9,
+    "schemaVersion": 10,
     "sections": {
         "fates": {
             "items": [
                 {
                     "id": "87be7b92-7fc7-4d1c-a7db-e5bad586ab87",
-                    "name": "Unsafety Dance",
+                    "entity": "eea88344-e143-4900-aa83-0170f774407b",
                     "positions": [
                         {
                             "x": 14.1,
@@ -14,7 +14,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Sabotender Corrido"
+                            "entity": "9a6dfad0-abcd-4c0a-8184-89e85bf7e2a4"
                         }
                     ],
                     "drops": [],
@@ -24,7 +24,7 @@
                 },
                 {
                     "id": "3bcc5ab7-694f-4c49-bc4d-6a41dcd3c9a8",
-                    "name": "The Shadow over Anemos",
+                    "entity": "7eaa2429-db4a-465c-bafc-99101f8fc77f",
                     "positions": [
                         {
                             "x": 27.8,
@@ -33,7 +33,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "The Lord of Anemos"
+                            "entity": "9abaac94-f89e-414f-a896-08b2b3f2bcc7"
                         }
                     ],
                     "drops": [],
@@ -43,7 +43,7 @@
                 },
                 {
                     "id": "a6d6fa7c-3153-447d-97f0-121c34cece29",
-                    "name": "Teles House",
+                    "entity": "e5760267-545a-4635-a538-ed75b32e4680",
                     "positions": [
                         {
                             "x": 26,
@@ -52,7 +52,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Teles"
+                            "entity": "09a2a2e6-3a0c-45fa-8a49-9cbd12567626"
                         }
                     ],
                     "drops": [],
@@ -62,7 +62,7 @@
                 },
                 {
                     "id": "45476998-181d-4abe-bcad-5ff7053f96f2",
-                    "name": "The Swarm Never Sets",
+                    "entity": "244a9236-e8e5-4f9e-9569-9caf8755d9b1",
                     "positions": [
                         {
                             "x": 17.2,
@@ -71,7 +71,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "The Emperor of Anemos"
+                            "entity": "ea6ccaa0-6c53-4095-b09b-a7e01b3b6886"
                         }
                     ],
                     "drops": [],
@@ -81,7 +81,7 @@
                 },
                 {
                     "id": "ca960bea-91c9-431f-a94d-180a80b27be4",
-                    "name": "One Missed Callisto",
+                    "entity": "293dffca-f815-45ee-a435-9631f39817ac",
                     "positions": [
                         {
                             "x": 27.8,
@@ -90,7 +90,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Callisto"
+                            "entity": "8992dbd5-23d6-4b3c-9880-26ca6767d1b3"
                         }
                     ],
                     "drops": [],
@@ -100,7 +100,7 @@
                 },
                 {
                     "id": "e6b3ef2d-b09b-49b0-9b6a-49604e91eeb2",
-                    "name": "By Numbers",
+                    "entity": "4452f4a1-56b0-4634-9cf9-38d50e1a68f3",
                     "positions": [
                         {
                             "x": 23.2,
@@ -109,7 +109,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Number"
+                            "entity": "3248e690-0ff7-4734-bf71-3cbb6f232869"
                         }
                     ],
                     "drops": [],
@@ -119,7 +119,7 @@
                 },
                 {
                     "id": "cf9d830b-f8f1-4ba0-b203-1df070223844",
-                    "name": "Disinherit the Wind",
+                    "entity": "c9e0c8bd-6097-4749-a44e-4d7334a03d4a",
                     "positions": [
                         {
                             "x": 19.1,
@@ -128,7 +128,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Jahannam"
+                            "entity": "2922ed3c-579c-4ee0-ac93-bce6c46761f3"
                         }
                     ],
                     "drops": [],
@@ -138,7 +138,7 @@
                 },
                 {
                     "id": "30c0a8ec-081c-4e60-a45f-735e1542c0ab",
-                    "name": "Prove Your Amemettle",
+                    "entity": "13d9da96-2ce9-4523-b86a-9e0bb79022d0",
                     "positions": [
                         {
                             "x": 14.7,
@@ -147,7 +147,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Amemet"
+                            "entity": "08fed2d2-9dc8-4717-ac59-bf2657366bc2"
                         }
                     ],
                     "drops": [],
@@ -157,7 +157,7 @@
                 },
                 {
                     "id": "b26d7dbf-7d6f-4c11-9386-8c7845fbbba6",
-                    "name": "Caym What May",
+                    "entity": "615827b2-14de-4250-b476-0ce4e661e118",
                     "positions": [
                         {
                             "x": 12.6,
@@ -166,7 +166,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Caym"
+                            "entity": "c1d1e01c-d19f-4d49-9e0a-28aafeaa050f"
                         }
                     ],
                     "drops": [],
@@ -176,7 +176,7 @@
                 },
                 {
                     "id": "bb1a1de7-690f-4703-943d-2b3386dfac31",
-                    "name": "The Killing of a Sacred Bombardier",
+                    "entity": "58546fac-5aa2-4bed-8a01-12b3878dc131",
                     "positions": [
                         {
                             "x": 28.5,
@@ -185,7 +185,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Bombadeel"
+                            "entity": "98db43bd-d92c-426c-a464-470ed23bf787"
                         }
                     ],
                     "drops": [],
@@ -195,7 +195,7 @@
                 },
                 {
                     "id": "effcc0e3-d09f-4d46-a3b2-47f0305e143e",
-                    "name": "Short Serket 2",
+                    "entity": "234eeabd-62f8-4fcd-88c0-bb79b7cb7212",
                     "positions": [
                         {
                             "x": 24,
@@ -204,7 +204,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Serket"
+                            "entity": "cffaec1b-71a5-4234-91aa-78a987709fd0"
                         }
                     ],
                     "drops": [],
@@ -214,7 +214,7 @@
                 },
                 {
                     "id": "384fca33-8953-440e-b72e-e4184d82aec6",
-                    "name": "Don't Judge Me, Morbol",
+                    "entity": "0470ea1f-6c02-47a5-b3b2-be379e7b2dc7",
                     "positions": [
                         {
                             "x": 22.2,
@@ -223,7 +223,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Judgmental Julika"
+                            "entity": "a7c78c16-8a41-48bc-bbab-3082d6afc7b2"
                         }
                     ],
                     "drops": [],
@@ -233,7 +233,7 @@
                 },
                 {
                     "id": "9f995194-a1c0-4d97-ae94-7f31a43fa616",
-                    "name": "When You Ride Alone",
+                    "entity": "d693100e-199b-4515-8ee6-94bc7d48f430",
                     "positions": [
                         {
                             "x": 20,
@@ -242,7 +242,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "The White Rider"
+                            "entity": "941c3807-3c16-4a22-aaf3-ff59261adab4"
                         }
                     ],
                     "drops": [],
@@ -252,7 +252,7 @@
                 },
                 {
                     "id": "d046d757-56b1-438d-9269-70f32c69a32d",
-                    "name": "Sing, Muse",
+                    "entity": "181e3867-fadc-4586-ad56-63e069b185ab",
                     "positions": [
                         {
                             "x": 26.2,
@@ -261,7 +261,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Polyphemus"
+                            "entity": "0d7e9c69-82de-4954-a899-9b49690354da"
                         }
                     ],
                     "drops": [],
@@ -271,7 +271,7 @@
                 },
                 {
                     "id": "a151515c-b44e-4009-9609-c33891bb2907",
-                    "name": "Simurghasbord",
+                    "entity": "311a951b-f528-4cf7-9b2d-5112842f50ef",
                     "positions": [
                         {
                             "x": 28.8,
@@ -280,7 +280,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Simurgh's Strider"
+                            "entity": "7a484620-1cde-4c74-a586-1512b35b1bc1"
                         }
                     ],
                     "drops": [],
@@ -290,7 +290,7 @@
                 },
                 {
                     "id": "dd0a1536-e8f0-49e3-bc2a-85e4b3433cc3",
-                    "name": "To the Mat",
+                    "entity": "4e336582-0086-4dba-9414-a74268cdb3f0",
                     "positions": [
                         {
                             "x": 35.2,
@@ -299,7 +299,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "King Hazmat"
+                            "entity": "f8cfe649-aa0d-4a79-b47e-d43c5e69e9bf"
                         }
                     ],
                     "drops": [],
@@ -309,7 +309,7 @@
                 },
                 {
                     "id": "6d0466b5-2d8d-4f83-b1b5-5b4871801b23",
-                    "name": "Wine and Honey",
+                    "entity": "65e9058e-eeef-4a36-850b-67bfdc8311fd",
                     "positions": [
                         {
                             "x": 34.6,
@@ -318,7 +318,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Fafnir"
+                            "entity": "b6f1b7d1-340f-41b6-a5f7-8138507e1d43"
                         }
                     ],
                     "drops": [],
@@ -328,7 +328,7 @@
                 },
                 {
                     "id": "07b48f39-cefb-41dc-bcfe-bcf2b9cd582c",
-                    "name": "I Amarok",
+                    "entity": "44805fe3-1404-4f04-abf1-fdf5bfd5e4cc",
                     "positions": [
                         {
                             "x": 8.2,
@@ -337,7 +337,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Amarok"
+                            "entity": "41488f41-0021-4b9c-be9b-eb62bcdb6a63"
                         }
                     ],
                     "drops": [],
@@ -347,7 +347,7 @@
                 },
                 {
                     "id": "a7f56787-4c1c-42b4-a67c-eb04849c92d1",
-                    "name": "Drama Lamashtu",
+                    "entity": "b5810241-55f2-44fe-a97d-f5a10586a267",
                     "positions": [
                         {
                             "x": 8.2,
@@ -356,7 +356,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Lamashtu"
+                            "entity": "8fa74f4a-07c8-4143-acec-aa6e4a96e35d"
                         }
                     ],
                     "drops": [],
@@ -366,7 +366,7 @@
                 },
                 {
                     "id": "b15bbfee-e288-4768-a734-cdf3b4ce0813",
-                    "name": "Wail in the Willows",
+                    "entity": "1e93cf81-a875-49b0-a887-69f32e39d102",
                     "positions": [
                         {
                             "x": 7.3,
@@ -375,7 +375,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Pazuzu"
+                            "entity": "79d867e8-17cf-41d3-907e-ff3e7ba04bc7"
                         }
                     ],
                     "drops": [],
@@ -389,7 +389,7 @@
             "items": [
                 {
                     "id": "69767375-35ee-4b23-8a32-9e2351cfe129",
-                    "name": "Val Revenant",
+                    "entity": "28015dc9-0aa7-4479-8e82-688a174e06f4",
                     "positions": [
                         {
                             "x": 15.8,
@@ -404,7 +404,7 @@
                 },
                 {
                     "id": "27922a7a-74cc-4a4d-a8b2-cdd5bce61405",
-                    "name": "Ignis Fatuus",
+                    "entity": "7a76f34b-1abc-43d7-801b-bcb6ae0285a2",
                     "positions": [
                         {
                             "x": 16.1,
@@ -419,7 +419,7 @@
                 },
                 {
                     "id": "7aa1f552-9572-4dfb-afc3-1c7418a8e8ea",
-                    "name": "Anemossling",
+                    "entity": "b95a677f-24b5-4353-a726-dedf6ac55900",
                     "positions": [
                         {
                             "x": 15.2,
@@ -434,7 +434,7 @@
                 },
                 {
                     "id": "436641d2-b5de-42d4-b256-091309650113",
-                    "name": "Squib",
+                    "entity": "c40a36ee-cfb0-467c-a0e2-2fd78dfce6ae",
                     "positions": [
                         {
                             "x": 20.8,
@@ -449,7 +449,7 @@
                 },
                 {
                     "id": "26aa0522-c061-498c-a757-6f88846e4273",
-                    "name": "Wooly Woodchuck",
+                    "entity": "2651fee0-64ff-4769-a41e-7cfcabbb334a",
                     "positions": [
                         {
                             "x": 20.5,
@@ -464,7 +464,7 @@
                 },
                 {
                     "id": "fb27c9b5-70e9-4b8d-b610-8679c869de49",
-                    "name": "Eurekan Screamer",
+                    "entity": "e88f9545-7a62-4245-876c-b53b5474e032",
                     "positions": [
                         {
                             "x": 13.5,
@@ -479,7 +479,7 @@
                 },
                 {
                     "id": "34c61311-3944-4f85-9d3e-a901c776974a",
-                    "name": "Sea Pugil",
+                    "entity": "ec9a1f1d-3e08-498e-9717-80e575efe6f7",
                     "positions": [
                         {
                             "x": 22.6,
@@ -494,7 +494,7 @@
                 },
                 {
                     "id": "fab008a2-2c35-44ab-b1a9-60b2a2c69c6d",
-                    "name": "Heartbroken Ochu",
+                    "entity": "6a2913fa-2ead-4345-a3d5-1bf0b77d5026",
                     "positions": [
                         {
                             "x": 13.3,
@@ -509,7 +509,7 @@
                 },
                 {
                     "id": "8a47b4e5-acb2-4930-ac1c-ed2a546d0c51",
-                    "name": "Bezoar",
+                    "entity": "1f569c4f-4d2c-4df3-810c-6da3d2482c44",
                     "positions": [
                         {
                             "x": 12.6,
@@ -524,7 +524,7 @@
                 },
                 {
                     "id": "ed9daeed-c7c4-4f20-8d4e-b0d373d69d59",
-                    "name": "Lentic",
+                    "entity": "5b2fb085-0f94-4f8e-b048-f2ec9e3f5692",
                     "positions": [
                         {
                             "x": 13,
@@ -539,7 +539,7 @@
                 },
                 {
                     "id": "2e4a56c3-917b-4ef9-8674-93e2e300d095",
-                    "name": "Seaboard Angler",
+                    "entity": "4fdd51b3-1d51-4e53-b640-f2d742ebf76c",
                     "positions": [
                         {
                             "x": 20.7,
@@ -554,7 +554,7 @@
                 },
                 {
                     "id": "89298df4-4e05-4419-ac15-351bf2ba6602",
-                    "name": "Valbol",
+                    "entity": "c727695d-14f9-411c-b2b7-12d888fbe808",
                     "positions": [
                         {
                             "x": 13,
@@ -569,7 +569,7 @@
                 },
                 {
                     "id": "c2e09918-eb9f-40e2-ade8-6d161f5f1303",
-                    "name": "Skeleton Noble",
+                    "entity": "dce1f595-53f1-46a7-a0f8-50a761d7d11b",
                     "positions": [
                         {
                             "x": 15.1,
@@ -586,7 +586,7 @@
                 },
                 {
                     "id": "299dda0c-bd09-485c-9c03-5be8d76419d3",
-                    "name": "Vesper Bat",
+                    "entity": "68206030-03c2-4a3c-85b6-24dd1cb1f4ae",
                     "positions": [
                         {
                             "x": 22.9,
@@ -601,7 +601,7 @@
                 },
                 {
                     "id": "2ff22aa5-40a2-464c-977f-e28bee390650",
-                    "name": "Seaboard Ogrebon",
+                    "entity": "125b8d8b-3b98-4d58-95db-97a836c7b290",
                     "positions": [
                         {
                             "x": 20.5,
@@ -616,7 +616,7 @@
                 },
                 {
                     "id": "88e8e7e0-b165-4420-a129-abe3e5b47ba1",
-                    "name": "Val Imp",
+                    "entity": "dd6cc58a-16b5-4559-8d1d-4bcaa87c2677",
                     "positions": [
                         {
                             "x": 12.9,
@@ -631,7 +631,7 @@
                 },
                 {
                     "id": "b7bbec26-9750-4782-972c-ed5ef8206bee",
-                    "name": "Xurble",
+                    "entity": "2fef4624-a8f0-4d65-bfe8-bea896a8574b",
                     "positions": [
                         {
                             "x": 15.9,
@@ -646,7 +646,7 @@
                 },
                 {
                     "id": "30688cc0-0f23-483a-bcdb-fa5566a06a92",
-                    "name": "Scape Leech",
+                    "entity": "e227abd3-05cb-41d0-8560-6d61d1968657",
                     "positions": [
                         {
                             "x": 26.8,
@@ -661,7 +661,7 @@
                 },
                 {
                     "id": "de4378e6-d688-4820-b4f6-166c74f7db60",
-                    "name": "Red Bonnet",
+                    "entity": "1fb72c0a-ea44-46fd-a763-f64fada15d19",
                     "positions": [
                         {
                             "x": 12.9,
@@ -676,7 +676,7 @@
                 },
                 {
                     "id": "151540b9-84ca-45f5-b6b8-0f8be38aeac2",
-                    "name": "Mana Bomb",
+                    "entity": "d3fc3a39-16df-45f5-a24d-ca620eab099c",
                     "positions": [
                         {
                             "x": 12.7,
@@ -691,7 +691,7 @@
                 },
                 {
                     "id": "f29b41b6-ff68-46f4-9cd6-53f8e2b4655c",
-                    "name": "Flowering Sabotender",
+                    "entity": "7689f435-efaf-4936-af12-b16e3141ae3a",
                     "positions": [
                         {
                             "x": 14.4,
@@ -706,7 +706,7 @@
                 },
                 {
                     "id": "b159ab02-1c2c-4f8e-9d31-284d61906813",
-                    "name": "Glade Wivre",
+                    "entity": "719c8e8a-6b4c-4406-b8c9-e267f618e04e",
                     "positions": [
                         {
                             "x": 26.9,
@@ -721,7 +721,7 @@
                 },
                 {
                     "id": "97f09136-4fd5-41a7-95bb-b8a04c7cc79b",
-                    "name": "Migratory Chapuli",
+                    "entity": "9a85e8fb-c48a-4436-8510-252f983e7762",
                     "positions": [
                         {
                             "x": 28.3,
@@ -736,7 +736,7 @@
                 },
                 {
                     "id": "42b4e28a-addf-41cc-82ba-c49cc6081958",
-                    "name": "Irregular Plasmoid",
+                    "entity": "8d319725-8e9a-4a4c-8ccb-615d4089f5f2",
                     "positions": [
                         {
                             "x": 28.2,
@@ -751,7 +751,7 @@
                 },
                 {
                     "id": "84bab830-79bc-46e5-a972-f3e52596ea3f",
-                    "name": "Sea Bishop",
+                    "entity": "9d876df1-a163-428b-9158-ef69588c4688",
                     "positions": [
                         {
                             "x": 28.1,
@@ -766,7 +766,7 @@
                 },
                 {
                     "id": "34416847-3873-4a56-86fe-2ef35e028d91",
-                    "name": "Anemos Flan",
+                    "entity": "92c48c3a-a417-4c5d-a972-55a280fc0765",
                     "positions": [
                         {
                             "x": 26.7,
@@ -781,7 +781,7 @@
                 },
                 {
                     "id": "12ed661e-fd2a-4fec-b2ba-33722d1de7c7",
-                    "name": "Hybrid Hog",
+                    "entity": "46335c95-be63-4d40-8e19-4f7d6da9edda",
                     "positions": [
                         {
                             "x": 15.3,
@@ -796,7 +796,7 @@
                 },
                 {
                     "id": "f75b29cc-e3e2-40b2-ade7-b89aa32df387",
-                    "name": "Anemos Harpeia",
+                    "entity": "63585c28-d4d3-4054-aacf-6a1b9cf6c8ae",
                     "positions": [
                         {
                             "x": 24.4,
@@ -811,7 +811,7 @@
                 },
                 {
                     "id": "f56aef2e-32f4-4023-92c7-a2415725221d",
-                    "name": "Duskfall Bhoot",
+                    "entity": "5ce85272-6a58-4a8d-b163-c36585dde284",
                     "positions": [
                         {
                             "x": 24.4,
@@ -828,7 +828,7 @@
                 },
                 {
                     "id": "55dfd375-76f7-457b-98e5-496dbdc43b05",
-                    "name": "Crystal Wolf",
+                    "entity": "6917c369-e698-4803-b1a5-625550402ad9",
                     "positions": [
                         {
                             "x": 19.8,
@@ -843,7 +843,7 @@
                 },
                 {
                     "id": "5cf73271-36c5-455e-932d-ad143db5b562",
-                    "name": "Black Wolf",
+                    "entity": "5d3abe2f-3ae0-4e44-bed8-17515b809ef3",
                     "positions": [
                         {
                             "x": 19.6,
@@ -858,7 +858,7 @@
                 },
                 {
                     "id": "bae42ff4-ca76-48c7-a241-644dc6e7b417",
-                    "name": "Mana Grenade",
+                    "entity": "f2750d2f-41f8-4e3b-afe4-626ee510ec7f",
                     "positions": [
                         {
                             "x": 23.3,
@@ -873,7 +873,7 @@
                 },
                 {
                     "id": "25e361fb-e7db-4a42-86fa-a360cbc31eb9",
-                    "name": "Val Biast",
+                    "entity": "f2c4864a-6b93-452e-ac4d-049e10f992fa",
                     "positions": [
                         {
                             "x": 22.6,
@@ -888,7 +888,7 @@
                 },
                 {
                     "id": "93411664-7532-4269-8f9d-b0c4a1d87769",
-                    "name": "Darner",
+                    "entity": "93165720-a3a2-426a-be76-009b104efa65",
                     "positions": [
                         {
                             "x": 16.3,
@@ -903,7 +903,7 @@
                 },
                 {
                     "id": "788f51e1-bc0f-4ee5-ada7-c639670d3194",
-                    "name": "Death Jacket",
+                    "entity": "957aa3a6-81b9-46c3-b905-d90b71c37696",
                     "positions": [
                         {
                             "x": 22.7,
@@ -918,7 +918,7 @@
                 },
                 {
                     "id": "2cd5168f-ffde-461d-9021-1663cd02ede2",
-                    "name": "Wild Baboulas",
+                    "entity": "8baf4064-eb80-4241-9e4d-a7a223893247",
                     "positions": [
                         {
                             "x": 22.5,
@@ -933,7 +933,7 @@
                 },
                 {
                     "id": "338fa044-3ced-4543-ba73-a44184a313f9",
-                    "name": "Val Bear",
+                    "entity": "42458c70-1aa3-4619-b94f-c589570586df",
                     "positions": [
                         {
                             "x": 25.9,
@@ -948,7 +948,7 @@
                 },
                 {
                     "id": "bdf7f156-d472-449a-88d2-391af61c1fac",
-                    "name": "Duskfall Skeleton",
+                    "entity": "a338d439-e788-4faa-b76f-7c64d65522e6",
                     "positions": [
                         {
                             "x": 23.9,
@@ -963,7 +963,7 @@
                 },
                 {
                     "id": "f670d493-9e95-488b-95e3-9b820796b38b",
-                    "name": "Anemos Chaser",
+                    "entity": "4281fd6b-77f7-4601-b1e6-1e0a96bc2582",
                     "positions": [
                         {
                             "x": 18.5,
@@ -978,7 +978,7 @@
                 },
                 {
                     "id": "adcad8cb-3986-4ab7-8728-7196f8e354b6",
-                    "name": "Leopard",
+                    "entity": "729139f7-2c0f-482c-90e6-8b073f28d697",
                     "positions": [
                         {
                             "x": 19.7,
@@ -993,7 +993,7 @@
                 },
                 {
                     "id": "bf013d82-f24f-444b-aade-1d04ae2ad836",
-                    "name": "Pneumaflayer",
+                    "entity": "4fc6c8db-487f-4e4a-87ce-2a4618059df9",
                     "positions": [
                         {
                             "x": 22,
@@ -1008,7 +1008,7 @@
                 },
                 {
                     "id": "713e3767-a1cf-45a7-9022-7ebaa0e61bf1",
-                    "name": "Val Leshy",
+                    "entity": "4535117f-c02e-488e-bb6e-f3a74ac5af9f",
                     "positions": [
                         {
                             "x": 19,
@@ -1023,7 +1023,7 @@
                 },
                 {
                     "id": "048de163-4b94-4f0a-acdb-6afab01b01e9",
-                    "name": "Bigfoot",
+                    "entity": "d6c4af5c-d5b7-4b1d-beb2-183a662b6f49",
                     "positions": [
                         {
                             "x": 19.7,
@@ -1038,7 +1038,7 @@
                 },
                 {
                     "id": "e41e9870-60a0-4d69-b206-ef832f012f50",
-                    "name": "Abraxas",
+                    "entity": "22c27266-678a-4cd5-9957-7bbd757b9cd5",
                     "positions": [
                         {
                             "x": 17.5,
@@ -1053,7 +1053,7 @@
                 },
                 {
                     "id": "7f41845b-69d8-49c7-97a7-2d809772b488",
-                    "name": "Ferromantoise",
+                    "entity": "dd10e3bc-069d-402e-8df7-2f60544418dc",
                     "positions": [
                         {
                             "x": 23.1,
@@ -1068,7 +1068,7 @@
                 },
                 {
                     "id": "ceab1d0d-850c-4604-bd53-8f197020ef70",
-                    "name": "Death Mask",
+                    "entity": "c7577453-6040-4447-ae70-4c7b5ce76584",
                     "positions": [
                         {
                             "x": 29.4,
@@ -1085,7 +1085,7 @@
                 },
                 {
                     "id": "d5502473-b2fa-4c24-8c6f-74113f2debe0",
-                    "name": "Phobosuchus",
+                    "entity": "abc66189-7b9f-4b18-ac09-43586dca5eae",
                     "positions": [
                         {
                             "x": 29.5,
@@ -1100,7 +1100,7 @@
                 },
                 {
                     "id": "97b3f7cf-a3d3-4e6e-a1f3-2f0d3c310522",
-                    "name": "Stalker Ziz",
+                    "entity": "3a85b011-95fb-4d71-a1a8-c3e9c1d0a094",
                     "positions": [
                         {
                             "x": 14.9,
@@ -1115,7 +1115,7 @@
                 },
                 {
                     "id": "b106461d-3720-44f6-a95d-74686321d462",
-                    "name": "Duskfall Mummy",
+                    "entity": "fda437fa-ff3f-47a7-8b79-50c71d0b329a",
                     "positions": [
                         {
                             "x": 17.8,
@@ -1132,7 +1132,7 @@
                 },
                 {
                     "id": "d26f4f97-a361-4d18-8888-5a744a529b77",
-                    "name": "Spangencrab",
+                    "entity": "5bdd4ae5-0d51-4040-ac6f-8fc5340826a1",
                     "positions": [
                         {
                             "x": 29.4,
@@ -1147,7 +1147,7 @@
                 },
                 {
                     "id": "3fb45177-3b3b-4884-877c-8b84e01c94ea",
-                    "name": "Old Goobbue",
+                    "entity": "f105542b-3aa5-4281-a0bb-2359a440be55",
                     "positions": [
                         {
                             "x": 29.2,
@@ -1162,7 +1162,7 @@
                 },
                 {
                     "id": "89bb9f72-29c6-4bc5-8885-1c84b78d1915",
-                    "name": "Gardenkeeper",
+                    "entity": "ee7f392f-7e21-4bb0-ad64-dd6f23cf0703",
                     "positions": [
                         {
                             "x": 13.4,
@@ -1177,7 +1177,7 @@
                 },
                 {
                     "id": "1c91ef82-94b4-4716-9a13-9d45c4b0a217",
-                    "name": "Quickwater Snake",
+                    "entity": "0b6462d2-a5d1-4010-b3a1-48f4c6e589fe",
                     "positions": [
                         {
                             "x": 12.6,
@@ -1192,7 +1192,7 @@
                 },
                 {
                     "id": "af80b7cd-605e-4a4b-8875-8cc7c3985751",
-                    "name": "Traveling Gourmand",
+                    "entity": "0bb4ca14-8bf3-4152-a8c3-246572059c84",
                     "positions": [
                         {
                             "x": 27.2,
@@ -1209,7 +1209,7 @@
                 },
                 {
                     "id": "05121de3-92d1-49ab-a7b6-6026a10085b1",
-                    "name": "Defroster",
+                    "entity": "c4b23836-38d8-4b3c-b21b-62467afc36cb",
                     "positions": [
                         {
                             "x": 27.7,
@@ -1224,7 +1224,7 @@
                 },
                 {
                     "id": "e0c2cde3-fe84-4c8e-8c51-a2a7c68b8e79",
-                    "name": "Glacier Golem",
+                    "entity": "0db6d3c9-0d8c-49b7-a0ba-e337c7f70076",
                     "positions": [
                         {
                             "x": 18.1,
@@ -1239,7 +1239,7 @@
                 },
                 {
                     "id": "92a1410d-96c6-4be3-8b6c-06be544cc2ab",
-                    "name": "Vespid",
+                    "entity": "ddb07631-117d-4010-bfee-a128f9448985",
                     "positions": [
                         {
                             "x": 22.5,
@@ -1254,7 +1254,7 @@
                 },
                 {
                     "id": "f6accaa6-f6c5-4017-b72f-b76bd92d3dc0",
-                    "name": "Khor Claw",
+                    "entity": "47a90b0e-3d98-459b-841f-28ee5a2fde82",
                     "positions": [
                         {
                             "x": 23.6,
@@ -1269,7 +1269,7 @@
                 },
                 {
                     "id": "fca43896-c6aa-4aa7-b397-9dcccb8220dd",
-                    "name": "Henbane",
+                    "entity": "2db131ca-6f8b-4deb-91ca-a19b4073a688",
                     "positions": [
                         {
                             "x": 20.7,
@@ -1284,7 +1284,7 @@
                 },
                 {
                     "id": "af990f20-7fe7-4803-891e-758f54467b92",
-                    "name": "Lynx",
+                    "entity": "60f1faac-383e-47ed-9db6-ce9083f81bd5",
                     "positions": [
                         {
                             "x": 22.3,
@@ -1299,7 +1299,7 @@
                 },
                 {
                     "id": "33a3900c-e1dd-4a9f-aab4-44e989076ac8",
-                    "name": "Anemos Sanuwa",
+                    "entity": "e2b8c800-21d6-410f-aa1e-0524f2493682",
                     "positions": [
                         {
                             "x": 21.9,
@@ -1314,7 +1314,7 @@
                 },
                 {
                     "id": "404c3720-b799-4d01-816e-af4855df1212",
-                    "name": "Val Biloko",
+                    "entity": "310badc8-6257-4450-ba36-8bb6539552a4",
                     "positions": [
                         {
                             "x": 20.5,
@@ -1329,7 +1329,7 @@
                 },
                 {
                     "id": "c11194b7-aebb-4356-9c87-e8ea591b456a",
-                    "name": "Val Skatene",
+                    "entity": "5085417b-2bfe-4d9e-8aa0-588fdf240a81",
                     "positions": [
                         {
                             "x": 19,
@@ -1344,7 +1344,7 @@
                 },
                 {
                     "id": "964b0dbe-0f98-425a-8ac6-5c0b4701df1c",
-                    "name": "Anemos Gremlin",
+                    "entity": "8b8bd29f-d327-4077-92de-635a0d0656d3",
                     "positions": [
                         {
                             "x": 21.6,
@@ -1359,7 +1359,7 @@
                 },
                 {
                     "id": "3f69041b-a9f9-4a47-ba5d-d672a5402a9e",
-                    "name": "Duskfall Dullahan",
+                    "entity": "7d85f2d8-b749-43c3-a4f1-26e24ed780c6",
                     "positions": [
                         {
                             "x": 19.3,
@@ -1376,7 +1376,7 @@
                 },
                 {
                     "id": "14a23384-b11e-4b7b-810e-629770d2d506",
-                    "name": "Shadow Wing",
+                    "entity": "8848a51a-72f5-4606-914e-0585c5b4d5eb",
                     "positions": [
                         {
                             "x": 24.9,
@@ -1391,7 +1391,7 @@
                 },
                 {
                     "id": "3f4e4421-cccb-41e1-b4bc-34556704e7cc",
-                    "name": "Monoeye",
+                    "entity": "e50325d5-6ea8-46a9-ab18-e72bf62a0c3e",
                     "positions": [
                         {
                             "x": 26.4,
@@ -1406,7 +1406,7 @@
                 },
                 {
                     "id": "9637381e-2ab9-4949-bc1c-1c21c65c65b5",
-                    "name": "Plantoid",
+                    "entity": "64bedd0b-a890-49b0-ac4e-1bd068b44b11",
                     "positions": [
                         {
                             "x": 26.4,
@@ -1421,7 +1421,7 @@
                 },
                 {
                     "id": "7709f863-f35d-48df-ad29-7dbb7f11ae99",
-                    "name": "Coffinkeep",
+                    "entity": "ce872e9d-346f-4b17-a576-462b976c97ce",
                     "positions": [
                         {
                             "x": 28.1,
@@ -1438,7 +1438,7 @@
                 },
                 {
                     "id": "6f948d15-3cd9-433f-9ddb-c879c178b6a5",
-                    "name": "Dhalmel of Nightmares",
+                    "entity": "b197b21a-28a9-42cf-9289-1d3542eb8c05",
                     "positions": [
                         {
                             "x": 27.5,
@@ -1453,7 +1453,7 @@
                 },
                 {
                     "id": "ea88a0c5-d1c7-43ab-acf3-0b2650bab09b",
-                    "name": "Eurekan Dahak",
+                    "entity": "02d2ffc1-92f6-4370-99c2-04685354e320",
                     "positions": [
                         {
                             "x": 28.9,
@@ -1468,7 +1468,7 @@
                 },
                 {
                     "id": "87ab59fb-9ca2-415b-8f7c-8b1477f0c585",
-                    "name": "Old World Zu",
+                    "entity": "90abe68f-46ba-4023-a6eb-016959bb986f",
                     "positions": [
                         {
                             "x": 27.7,
@@ -1483,7 +1483,7 @@
                 },
                 {
                     "id": "06d17f97-e8de-46d6-b17e-d73801fbe2fb",
-                    "name": "Rockfin",
+                    "entity": "c9fb8971-d308-4a13-885b-b21cdbf97b7c",
                     "positions": [
                         {
                             "x": 32.9,
@@ -1498,7 +1498,7 @@
                 },
                 {
                     "id": "e65fac36-9868-43f0-9514-7951050e04eb",
-                    "name": "Anemos Anala",
+                    "entity": "4349c8dc-2c9c-4300-9d3e-49d98e8d408c",
                     "positions": [
                         {
                             "x": 32.5,
@@ -1513,7 +1513,7 @@
                 },
                 {
                     "id": "aef856a7-43d5-4552-b151-090d04fa2680",
-                    "name": "Magia Fan",
+                    "entity": "a571c400-599a-4f4f-a2a9-747fcaea42ff",
                     "positions": [
                         {
                             "x": 31.8,
@@ -1528,7 +1528,7 @@
                 },
                 {
                     "id": "1ebd521e-a685-40a0-a90c-5b3c51fe8d11",
-                    "name": "Val Antlion",
+                    "entity": "d127c9e8-281f-42fa-8c17-03b1e4f9ec4e",
                     "positions": [
                         {
                             "x": 35.5,
@@ -1543,7 +1543,7 @@
                 },
                 {
                     "id": "0f2db1ee-a08f-4b77-8c24-7541fd69f972",
-                    "name": "Anemos Pegasus",
+                    "entity": "1d4a243d-8fe6-4041-b03a-cfe9e6a9a33d",
                     "positions": [
                         {
                             "x": 34.9,
@@ -1558,7 +1558,7 @@
                 },
                 {
                     "id": "b878c03b-7756-4e72-8109-650d5d83f56d",
-                    "name": "Anemos Apa",
+                    "entity": "9d0858d7-eb3a-44b2-8e97-df51b230da8f",
                     "positions": [
                         {
                             "x": 32.6,
@@ -1573,7 +1573,7 @@
                 },
                 {
                     "id": "913a3a23-0faa-4b62-91e1-86125134b68d",
-                    "name": "Fossil Dragon",
+                    "entity": "05210288-36fb-4c24-bcfe-c862dbff624a",
                     "positions": [
                         {
                             "x": 33.8,
@@ -1590,7 +1590,7 @@
                 },
                 {
                     "id": "9af5de8b-d934-4389-9f24-c0607772a65f",
-                    "name": "Mighty Craklaw",
+                    "entity": "9474578a-8a34-480d-bef0-600ef996e4d8",
                     "positions": [
                         {
                             "x": 9.5,
@@ -1605,7 +1605,7 @@
                 },
                 {
                     "id": "30b1d629-6b0a-47f5-9104-cf01fd439c8f",
-                    "name": "Voidscale",
+                    "entity": "5fabc5d3-bbc7-4a13-9fe7-be5452a9632c",
                     "positions": [
                         {
                             "x": 8.2,
@@ -1620,7 +1620,7 @@
                 },
                 {
                     "id": "ce3bde7c-982e-4a32-8672-ebc8fdb1a308",
-                    "name": "Guud Suud",
+                    "entity": "627dc332-bd84-4ebf-b5b6-9159760b01fb",
                     "positions": [
                         {
                             "x": 8.3,
@@ -1635,7 +1635,7 @@
                 },
                 {
                     "id": "75b1f3b0-8c16-4d52-9aea-cd6ca9393965",
-                    "name": "Four-eyes",
+                    "entity": "cf8d8ca9-afd2-45a4-8a8d-ca554c615133",
                     "positions": [
                         {
                             "x": 7.6,
@@ -1652,7 +1652,7 @@
                 },
                 {
                     "id": "03d5b114-df21-4480-a273-c20cd3e521f3",
-                    "name": "Bitoso Of The Isle",
+                    "entity": "4ca4e5ca-d15e-4fe9-b71e-0798affaa283",
                     "positions": [
                         {
                             "x": 7.8,
@@ -1667,7 +1667,7 @@
                 },
                 {
                     "id": "808c4230-f65e-423e-a396-8a4540b4622b",
-                    "name": "Arioch Of The Isle",
+                    "entity": "d0921724-3086-47b5-9366-10888d82d967",
                     "positions": [
                         {
                             "x": 7.8,
@@ -1682,7 +1682,7 @@
                 },
                 {
                     "id": "15e67f3c-f74e-4093-bf9e-47d2606c50c0",
-                    "name": "Val Specter",
+                    "entity": "fe44d09c-d4a5-4a0d-ad6d-242bcfc4b5be",
                     "positions": [
                         {
                             "x": 8.8,
@@ -1697,7 +1697,7 @@
                 },
                 {
                     "id": "0c01baf8-8db9-4668-8851-6a55bfdbaca8",
-                    "name": "Zuniceratops",
+                    "entity": "fee4f322-62f5-4d54-8680-ca80e6dfd29e",
                     "positions": [
                         {
                             "x": 9.8,
@@ -1712,7 +1712,7 @@
                 },
                 {
                     "id": "afaeb911-3b08-4dac-890f-80aa32d1c922",
-                    "name": "Primelephas",
+                    "entity": "129e66bc-a1d2-4d0c-9c70-a183e4bd1a3e",
                     "positions": [
                         {
                             "x": 9.7,
@@ -1727,7 +1727,7 @@
                 },
                 {
                     "id": "13831af9-c8d7-4fb2-963f-dfaeb85a2b7d",
-                    "name": "Tangie",
+                    "entity": "5e5f3c4c-f0f9-488f-a10e-5de3c7c745dd",
                     "positions": [
                         {
                             "x": 7.6,
@@ -1742,7 +1742,7 @@
                 },
                 {
                     "id": "a77b17ef-15d7-42cd-9305-d3d0021d2b2f",
-                    "name": "Shadow Wraith",
+                    "entity": "c4034cfe-11bb-45a0-9631-e1bf2262a1e3",
                     "positions": [
                         {
                             "x": 8.7,
@@ -1759,7 +1759,7 @@
                 },
                 {
                     "id": "60704dd7-8fc2-472f-9c03-3dd4349a6b53",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 22,
@@ -1776,7 +1776,7 @@
                 },
                 {
                     "id": "c68339a2-5dec-4744-b34f-b78b679d7533",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 15.4,
@@ -1793,7 +1793,7 @@
                 },
                 {
                     "id": "c6e32145-a35a-4dce-b961-df4a6ca24f3e",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 19.5,
@@ -1810,7 +1810,7 @@
                 },
                 {
                     "id": "cc8e80c2-5e9d-4f16-8e8a-fc00c8be6a82",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 13.4,
@@ -1827,7 +1827,7 @@
                 },
                 {
                     "id": "2f6e1b6b-e4bc-4941-a492-52fc25226270",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 19,
@@ -1844,7 +1844,7 @@
                 },
                 {
                     "id": "0f9cccb6-705d-4632-9d29-5591fa391052",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 24,
@@ -1861,7 +1861,7 @@
                 },
                 {
                     "id": "85f0ab03-18c6-4623-98b1-6d0841cd6e4c",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 25.9,
@@ -1878,7 +1878,7 @@
                 },
                 {
                     "id": "018af00e-608e-4ebc-8acd-2471041f05d8",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 25,
@@ -1895,7 +1895,7 @@
                 },
                 {
                     "id": "ef17e3de-5cce-4244-ba06-9de7f14a8011",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 34.6,
@@ -1912,7 +1912,7 @@
                 },
                 {
                     "id": "e0e1fbda-d117-424d-8d5d-af2f130b020c",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 34.3,
@@ -1929,7 +1929,7 @@
                 },
                 {
                     "id": "320837ce-dcff-402b-8f63-6c5d31148576",
-                    "name": "Blizzard Sprite",
+                    "entity": "dffdd7ed-619f-40e6-8d1a-3ae76a87b2e9",
                     "positions": [
                         {
                             "x": 29.3,
@@ -1946,7 +1946,7 @@
                 },
                 {
                     "id": "adf1769d-dd51-4349-ae29-534455f40f61",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 25.5,
@@ -1963,7 +1963,7 @@
                 },
                 {
                     "id": "388c896b-1c29-4f4d-9a6a-ab8a17c60deb",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 19.1,
@@ -1980,7 +1980,7 @@
                 },
                 {
                     "id": "dbf27f82-c6f7-4c1b-8ebe-10ac9c5830de",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 17.1,
@@ -1997,7 +1997,7 @@
                 },
                 {
                     "id": "07a0c06e-74b9-41b5-939d-4c2a22a08539",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 17,
@@ -2014,7 +2014,7 @@
                 },
                 {
                     "id": "bb424f13-0379-43c1-aa4a-9c0ea4fb880b",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 20.4,
@@ -2031,7 +2031,7 @@
                 },
                 {
                     "id": "bf8b5001-c768-4531-97cc-31f8a18c80b9",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 29.5,
@@ -2048,7 +2048,7 @@
                 },
                 {
                     "id": "3ac4de1c-48ec-449d-8dfd-5eeeb96eedff",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 32.9,
@@ -2065,7 +2065,7 @@
                 },
                 {
                     "id": "e5a1021d-bb97-45fc-8cfd-354796f6355e",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 30.8,
@@ -2082,7 +2082,7 @@
                 },
                 {
                     "id": "558ae180-02e8-4b33-a5fa-cb44978d3c99",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 11.5,
@@ -2099,7 +2099,7 @@
                 },
                 {
                     "id": "5bfe2814-4820-4865-8285-c1f2eed07bb0",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 8.6,
@@ -2116,7 +2116,7 @@
                 },
                 {
                     "id": "ff5246e0-8945-41dd-9e17-5b5e787c0484",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 9.2,
@@ -2133,7 +2133,7 @@
                 },
                 {
                     "id": "48b3ae38-a5e9-4959-9cda-47782ebde499",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 14.9,
@@ -2150,7 +2150,7 @@
                 },
                 {
                     "id": "2f8ef068-ff10-44de-b60d-7bc7b745f63f",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 25.6,
@@ -2167,7 +2167,7 @@
                 },
                 {
                     "id": "358df2bd-7c6c-4dc8-9b51-2f0f30c0d7c6",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 29.9,
@@ -2184,7 +2184,7 @@
                 },
                 {
                     "id": "07780391-5469-4c5d-9c2f-1f47f6aa3d7a",
-                    "name": "Typhoon Sprite",
+                    "entity": "87935eb0-3f75-4216-bfc1-fcc2c0cad85f",
                     "positions": [
                         {
                             "x": 32.5,
@@ -2201,7 +2201,7 @@
                 },
                 {
                     "id": "c3ff0513-93da-4291-81ce-502468a8613a",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 23.3,
@@ -2218,7 +2218,7 @@
                 },
                 {
                     "id": "842680e5-bbdb-40cc-bb96-910d6b1ff7e0",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 29.5,
@@ -2235,7 +2235,7 @@
                 },
                 {
                     "id": "92e2e788-dc6d-4d17-a121-9a9359d5c9d4",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 24.2,
@@ -2252,7 +2252,7 @@
                 },
                 {
                     "id": "b236cc33-ad07-40d6-bbf7-1e92a16a5a66",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 27,
@@ -2269,7 +2269,7 @@
                 },
                 {
                     "id": "d8854ff9-09ec-49d1-9a4c-b8e5461ecb26",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 20.8,
@@ -2286,7 +2286,7 @@
                 },
                 {
                     "id": "254a8046-7441-4eaf-a0bb-d6f670699c4f",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 22.4,
@@ -2303,7 +2303,7 @@
                 },
                 {
                     "id": "4bcbae9a-d1aa-4321-948e-b37e89c2542b",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 22,
@@ -2320,7 +2320,7 @@
                 },
                 {
                     "id": "5575b9a7-db61-43c1-bb4e-03b16c804706",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 17.8,
@@ -2337,7 +2337,7 @@
                 },
                 {
                     "id": "7533601f-d1bc-4d3b-a434-297b15b3fe1c",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 21.9,
@@ -2354,7 +2354,7 @@
                 },
                 {
                     "id": "3c3bffc4-f0c8-47a1-9379-4500e72fe0f4",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 10.2,
@@ -2371,7 +2371,7 @@
                 },
                 {
                     "id": "0c4f54cd-28b3-460c-92e4-6b1c4bf411e2",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 10.7,
@@ -2388,7 +2388,7 @@
                 },
                 {
                     "id": "a6014452-d32b-4512-8781-7002d3db0b4b",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 14.7,
@@ -2405,7 +2405,7 @@
                 },
                 {
                     "id": "f9dfb743-5ef5-470a-ad15-f92a2c01712f",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 13.1,
@@ -2422,7 +2422,7 @@
                 },
                 {
                     "id": "b00c73ac-4837-495f-afb5-ad0c9d766ad0",
-                    "name": "Rain Sprite",
+                    "entity": "a5f0c761-61db-40db-99e9-7cc47930599c",
                     "positions": [
                         {
                             "x": 12.2,
@@ -2439,7 +2439,7 @@
                 },
                 {
                     "id": "52c8792f-b0f3-4a78-87b6-bda5a89faf38",
-                    "name": "Val Specter",
+                    "entity": "fe44d09c-d4a5-4a0d-ad6d-242bcfc4b5be",
                     "positions": [
                         {
                             "x": 6.8,
@@ -2456,7 +2456,7 @@
                 },
                 {
                     "id": "db82f36c-75a9-479f-8898-62d1711d042f",
-                    "name": "Stalker Ziz",
+                    "entity": "3a85b011-95fb-4d71-a1a8-c3e9c1d0a094",
                     "positions": [
                         {
                             "x": 12.9,
@@ -2471,7 +2471,7 @@
                 },
                 {
                     "id": "134987e9-7cfd-4b80-9db6-fbac046f8215",
-                    "name": "Abraxas",
+                    "entity": "22c27266-678a-4cd5-9957-7bbd757b9cd5",
                     "positions": [
                         {
                             "x": 14.6,
@@ -2493,7 +2493,7 @@
             "items": [
                 {
                     "id": "5f10c6e4-c1b4-4240-8e80-f32dd814e5e4",
-                    "name": "Port Surgate",
+                    "entity": "a65b66bc-ba1e-42c9-947a-be5f7089c777",
                     "positions": [
                         {
                             "x": 18.7,
@@ -2504,7 +2504,7 @@
                 },
                 {
                     "id": "7082525e-6fd7-4798-8ef0-b93a2f182fb8",
-                    "name": "Windtorn Cabin",
+                    "entity": "bf5976f5-2183-4adc-a085-72f886f6865c",
                     "positions": [
                         {
                             "x": 30.2,
@@ -2515,7 +2515,7 @@
                 },
                 {
                     "id": "516e73d1-7797-4f22-8f13-4d034dce1c17",
-                    "name": "Abandoned Laboratory",
+                    "entity": "84774934-2bfe-482d-a77d-b58db413916a",
                     "positions": [
                         {
                             "x": 14,

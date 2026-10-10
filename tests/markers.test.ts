@@ -7,17 +7,40 @@ import {
   toggleSection,
   visibleItems,
   zoneMarkers,
+  type LoadedZone,
   type ZoneSlug,
 } from '../zones'
 import { iconKeys, iconPath } from '../model/icons'
 import { formatLevel } from '../model/primitives'
-import { english } from './helpers/messages'
+import { english, japanese } from './helpers/messages'
 import { hydratedZones } from './helpers/zoneFiles'
 
 // What the viewer draws. `nuxt generate` only proves the shell rendered, because zone data loads
 // in the browser, so the marker list is checked here instead.
 
 const loaded = hydratedZones()
+
+describe('a name', () => {
+  const zoneNamed = (slug: ZoneSlug) => loaded.find(zone => zone.definition.slug === slug)!
+  const itemLabelled = (zone: LoadedZone, label: string) =>
+    [...zone.byId.values()].find(item => zone.labelOf(item)(english) === label)!
+
+  it('is read from the entity file in the reader\'s locale', () => {
+    const pagos = zoneNamed('pagos')
+    const ameretat = itemLabelled(pagos, 'Ameretat')
+    expect(pagos.labelOf(ameretat)(japanese)).toBe('アムルタート')
+    const marker = zoneMarkers(pagos, initialState(pagos), japanese)
+      .find(candidate => candidate.itemId === ameretat.id)
+    expect(marker?.label).toMatch(/^アムルタート \(/)
+  })
+
+  it('falls back to English where its entry has no translation', () => {
+    const northHorn = zoneNamed('north_horn')
+    const watch = [...northHorn.byId.values()]
+      .find(item => northHorn.labelOf(item)(english).endsWith(': The Windward Watch'))!
+    expect(northHorn.labelOf(watch)(japanese)).toBe(northHorn.labelOf(watch)(english))
+  })
+})
 
 describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as const))('%s', (slug, zone) => {
   const state = initialState(zone)

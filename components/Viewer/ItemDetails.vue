@@ -35,7 +35,7 @@
     </Field>
 
     <template v-for="(boss, index) in bosses" :key="index">
-      <Field :label="t('fields.boss')">{{ boss.name }}</Field>
+      <Field :label="t('fields.boss')">{{ bossNames?.label(boss.entity, t) }}</Field>
       <Field v-if="boss.weakness?.length" :label="t('fields.bossWeakness')">
         {{ list(elements, boss.weakness) }}
       </Field>
@@ -73,7 +73,7 @@
 
     <Field v-if="'drops' in item && item.drops.length" :label="t('fields.drops')" stacked>
       <div v-for="(drop, index) in item.drops" :key="index">
-        {{ dropItems.label(drop.item, t) }} ({{ drop.amount }})<span v-if="drop.percent != null">
+        {{ dropEntities.label(drop.entity, t) }} ({{ drop.amount }})<span v-if="drop.percent != null">
           {{ drop.percent }}%</span>
       </div>
     </Field>
@@ -91,7 +91,7 @@ import { computed } from 'vue'
 import Conditions from '~/components/Viewer/Conditions.vue'
 import Field from '~/components/Viewer/Field.vue'
 import { useTranslate } from '~/composables/useTranslate'
-import { dropItems } from '~/model/lookups/drops'
+import { dropEntities } from '~/model/entities'
 import {
   aggroTypes,
   attacks,
@@ -104,7 +104,14 @@ import {
   type Lookup,
 } from '~/model/lookups'
 import { formatLevel } from '~/model/primitives'
-import { describeRef, describeSpawn, operations, type LoadedZone, type ZoneItem } from '~/zones'
+import {
+  BOSSES_GROUP,
+  describeRef,
+  describeSpawn,
+  operations,
+  type LoadedZone,
+  type ZoneItem,
+} from '~/zones'
 
 // Every row the panel can draw, in the order it draws them. Which rows appear follows from the
 // item's own type: `in` narrows to the members declaring the field, so a row cannot read one an
@@ -126,8 +133,10 @@ const level = computed(() => operations[props.zone.definition.operation].levelLa
 type Element = (typeof elements.keys)[number]
 
 const bosses = computed(() =>
-  ('bosses' in props.item ? props.item.bosses : []) as { name: string; weakness?: Element[] }[]
+  ('bosses' in props.item ? props.item.bosses : []) as { entity: string; weakness?: Element[] }[]
 )
+
+const bossNames = computed(() => props.zone.entities.get(BOSSES_GROUP))
 
 function labelOfId(id: string): string {
   const target = props.zone.byId.get(id)

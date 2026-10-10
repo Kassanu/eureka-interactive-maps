@@ -18,7 +18,7 @@ import { AdaptationSchema, EnemySchema, SpawnsFateSchema } from '../../model/ite
 import { ItemBaseSchema } from '../../model/items/base'
 import { EventBaseSchema } from '../../model/items/event'
 import { LootBaseSchema } from '../../model/items/loot'
-import { PoiBaseSchema } from '../../model/items/poi'
+import { EntityPoiBaseSchema, PoiBaseSchema } from '../../model/items/poi'
 import { LevelSchema } from '../../model/primitives'
 
 // Anemos, Pagos, Pyros and Hydatos, which differ only in their items and their map image.
@@ -61,12 +61,12 @@ export const EurekaEventSchema = EventBaseSchema.extend({
 
 export type EurekaEvent = z.infer<typeof EurekaEventSchema>
 
-export const EurekaLeveledPoiSchema = PoiBaseSchema.extend({ level: LevelSchema })
+export const EurekaLeveledPoiSchema = EntityPoiBaseSchema.extend({ level: LevelSchema })
 export const EurekaPoiSchema = PoiBaseSchema
 
 // A quest has no name in the game: its level is what it is called, and `part` tells apart the
 // quests sharing one level.
-export const EurekaQuestSchema = ItemBaseSchema.omit({ name: true, i18n: true }).extend({
+export const EurekaQuestSchema = ItemBaseSchema.extend({
   level: LevelSchema.check(ctx => {
     if (ctx.value.from !== ctx.value.to) {
       ctx.issues.push({ code: 'custom', input: ctx.value, message: 'a quest is at one level' })
@@ -176,7 +176,6 @@ export const eurekaSections = {
     order: 10,
     schema: EurekaEventSchema,
     blank: (): Blank<EurekaEvent> => ({
-      name: 'New FATE',
       level: { from: 1, to: 1 },
       element: 'fire',
       weather: '',
@@ -193,7 +192,6 @@ export const eurekaSections = {
     order: 9,
     schema: EurekaEnemySchema,
     blank: (): Blank<EurekaEnemy> => ({
-      name: 'New monster',
       level: { from: 1, to: 1 },
       element: 'fire',
       aggro: [],

@@ -1,10 +1,10 @@
 import { z } from 'zod'
-import { DropsSchema } from '../../model/lookups/drops'
+import { DropsSchema } from '../../model/items/drops'
 import { IconKeySchema } from '../../model/icons'
 import { aggroTypes, attacks, mobFamilies, ranks } from '../../model/lookups'
 import { EnemySchema } from '../../model/items/enemy'
 import { EventBaseSchema } from '../../model/items/event'
-import { PoiBaseSchema } from '../../model/items/poi'
+import { EntityPoiBaseSchema } from '../../model/items/poi'
 import { SpawnsSchema } from '../../model/items/spawns'
 import { defineSection, type Blank } from '../define/types'
 import {
@@ -52,7 +52,7 @@ export const BozjaSkirmishSchema = BozjaEventSchema.extend({
   icon: IconKeySchema,
 })
 
-export const BozjaPoiSchema = PoiBaseSchema
+export const BozjaPoiSchema = EntityPoiBaseSchema
 
 export type BozjaEngagement = z.infer<typeof BozjaEngagementSchema>
 export type BozjaSkirmish = z.infer<typeof BozjaSkirmishSchema>
@@ -75,7 +75,6 @@ export const bozjaSections = {
     order: 11,
     schema: BozjaEngagementSchema,
     blank: (): Blank<BozjaEngagement> => ({
-      name: 'New engagement',
       icon: 'engagements_boss',
       participants: 48,
       bosses: [],
@@ -100,12 +99,14 @@ export const bozjaSections = {
       optionsFilter({
         key: 'which',
         label: t => t('filters.engagements'),
-        options: scope =>
-          scope.items.map(item => ({
-            key: item.id,
-            label: () => item.name,
-            group: item.participants === 1 ? DUELS_GROUP : ENGAGEMENTS_GROUP,
-          })),
+        options: scope => {
+          const groups = new Map(scope.items.map(item => [
+            item.id,
+            item.participants === 1 ? DUELS_GROUP : ENGAGEMENTS_GROUP,
+          ]))
+          return scope.resolve(groups.keys())
+            .map(({ id, label }) => ({ key: id, label, group: groups.get(id) }))
+        },
         get: (item: BozjaEngagement) => item.id,
       }),
     ],
@@ -117,7 +118,6 @@ export const bozjaSections = {
     order: 10,
     schema: BozjaSkirmishSchema,
     blank: (): Blank<BozjaSkirmish> => ({
-      name: 'New skirmish',
       icon: 'skirmishes_slay',
       bosses: [],
       drops: [],
@@ -129,7 +129,8 @@ export const bozjaSections = {
       optionsFilter({
         key: 'which',
         label: t => t('filters.skirmishes'),
-        options: scope => scope.items.map(item => ({ key: item.id, label: () => item.name })),
+        options: scope =>
+          scope.resolve(scope.items.map(item => item.id)).map(({ id, label }) => ({ key: id, label })),
         get: (item: BozjaSkirmish) => item.id,
       }),
     ],
@@ -141,7 +142,6 @@ export const bozjaSections = {
     order: 2,
     schema: BozjaEnemySchema,
     blank: (): Blank<BozjaEnemy> => ({
-      name: 'New enemy',
       rank: '1',
       aggro: [],
       family: [],

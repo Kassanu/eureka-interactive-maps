@@ -14,7 +14,7 @@ import { OptionalItemRefSchema } from '../../model/items/base'
 import { BossSchema, EnemySchema, SpawnsFateSchema } from '../../model/items/enemy'
 import { EventBaseSchema } from '../../model/items/event'
 import { LootBaseSchema, LootSourceSchema, type LootSource } from '../../model/items/loot'
-import { PoiBaseSchema } from '../../model/items/poi'
+import { EntityPoiBaseSchema } from '../../model/items/poi'
 import { SpellBaseSchema } from '../../model/items/spell'
 import { LevelSchema } from '../../model/primitives'
 
@@ -54,11 +54,11 @@ export const OccultEventSchema = EventBaseSchema.extend({
 
 export type OccultEvent = z.infer<typeof OccultEventSchema>
 
-export const OccultPoiSchema = PoiBaseSchema
+export const OccultPoiSchema = EntityPoiBaseSchema
 
 // `recordNumber` is the point's entry in the in-game Occult Record, a list shared with NPCs and
 // items, so the numbers have gaps and cannot be derived from the file's order.
-export const OccultSurveyPointSchema = PoiBaseSchema.extend({
+export const OccultSurveyPointSchema = EntityPoiBaseSchema.extend({
   recordNumber: z.int().min(1).optional(),
 })
 
@@ -131,7 +131,7 @@ export const occultSections = {
     schema: OccultEventSchema,
     drawStyle: 'circle',
     icon: item => item.icon ?? 'fate',
-    blank: (): Blank<OccultEvent> => ({ name: 'New FATE', bosses: [], drops: [], spawnedBy: '' }),
+    blank: (): Blank<OccultEvent> => ({ bosses: [], drops: [], spawnedBy: '' }),
   }),
 
   critical_encounters: defineSection({
@@ -141,12 +141,7 @@ export const occultSections = {
     schema: OccultEventSchema,
     drawStyle: 'circle',
     icon: item => item.icon ?? 'engagements_boss',
-    blank: (): Blank<OccultEvent> => ({
-      name: 'New critical encounter',
-      bosses: [],
-      drops: [],
-      spawnedBy: '',
-    }),
+    blank: (): Blank<OccultEvent> => ({ bosses: [], drops: [], spawnedBy: '' }),
   }),
 
   enemies: defineSection({
@@ -155,7 +150,6 @@ export const occultSections = {
     order: 9,
     schema: OccultEnemySchema,
     blank: (): Blank<OccultEnemy> => ({
-      name: 'New enemy',
       level: { from: 1, to: 1 },
       aggro: [],
       weakness: [],
@@ -192,10 +186,10 @@ export const occultSections = {
     schema: OccultSurveyPointSchema,
     drawStyle: 'default',
     icon: item => item.icon ?? 'pin',
-    label: point => t => {
-      const name = point.name ?? ''
-      if (point.recordNumber === undefined || !name) return name
-      return t('item.recordEntry', { number: point.recordNumber, name })
+    label: (point, name) => t => {
+      const text = name(t)
+      if (point.recordNumber === undefined || !text) return text
+      return t('item.recordEntry', { number: point.recordNumber, name: text })
     },
     blank: (): Blank<OccultSurveyPoint> => ({}),
   }),
@@ -247,7 +241,6 @@ export const northHornSections = {
     order: 12,
     schema: OccultSpellSchema,
     blank: (): Blank<OccultSpell> => ({
-      name: 'New spell',
       spellLevel: 1,
       icon: 'spell_occult_missile',
       learnedFrom: '',

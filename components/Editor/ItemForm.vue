@@ -4,8 +4,13 @@
       <input :value="item.id" class="editor-input" type="text" readonly>
     </FormField>
 
-    <FormField v-if="'name' in shape" :label="t('fields.name')">
-      <input :value="'name' in item ? item.name ?? '' : ''" class="editor-input" type="text" @change="rename">
+    <FormField v-if="'entity' in shape" :label="t('fields.name')">
+      <select :value="'entity' in item ? item.entity : ''" class="editor-input" @change="setEntity">
+        <option v-if="!('entity' in item)" value="" disabled />
+        <option v-for="option in entityOptions" :key="option.key" :value="option.key">
+          {{ option.label(t) }}
+        </option>
+      </select>
     </FormField>
 
     <div class="editor-columns">
@@ -175,7 +180,7 @@
       </select>
     </FormField>
 
-    <BossList v-if="'bosses' in item" :bosses="item.bosses" :create="createBoss" />
+    <BossList v-if="'bosses' in item" :bosses="item.bosses" :options="bossOptions" :create="createBoss" />
 
     <template v-if="'mutation' in shape">
       <FormField :label="t('fields.mutation')">
@@ -245,6 +250,7 @@ import {
 } from '~/model/lookups'
 import {
   BONUS_POOL,
+  BOSSES_GROUP,
   describeRef,
   isOptionalField,
   newBoss,
@@ -288,9 +294,12 @@ const poolValue = computed(() =>
   'source' in props.item && props.item.source.type === 'fate' ? props.item.source.fateId : BONUS_POOL
 )
 
-function rename(event: Event) {
-  const value = (event.target as HTMLInputElement).value
-  setOptional('name', value === '' ? undefined : value)
+const entityOptions = computed(() => zone.value.entities.get(props.section.key)?.options() ?? [])
+const bosses = computed(() => zone.value.entities.get(BOSSES_GROUP))
+const bossOptions = computed(() => bosses.value?.options() ?? [])
+
+function setEntity(event: Event) {
+  setField(props.item, shape.value, 'entity', (event.target as HTMLSelectElement).value)
 }
 
 function setOptionalNumber(field: string, event: Event) {
@@ -332,5 +341,5 @@ function toggleAdaptation(event: Event) {
   setOptional('adaptation', ticked(event) ? { conditions: [] } : undefined)
 }
 
-const createBoss = () => newBoss(shape.value)
+const createBoss = () => newBoss(shape.value, bosses.value)
 </script>

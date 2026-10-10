@@ -39,5 +39,5 @@ export const attacks = defineTable(attacksTerms)
 // something else. The labels are bare, so whatever names the field supplies the word "rank".
 export const ranks = defineTable(ranksTerms)
 
-export { defineNames, defineTable } from './define'
+export { defineTable } from './define'
 export type { Lookup, LookupOption } from './define'

@@ -10,7 +10,7 @@
       <button type="button" :title="t('editor.deleteItem')" @click="remove">
         <font-awesome-icon icon="times" class="cursor-pointer" />
       </button>
-      <span class="text-sm text-gray-600 truncate">{{ itemLabel(section.definition, item)(t) || item.id }}</span>
+      <span class="text-sm text-gray-600 truncate">{{ label }}</span>
       <button type="button" class="ml-auto" @click="editor.toggleExpanded(item.id)">
         <font-awesome-icon :icon="editor.isExpanded(item.id) ? 'caret-up' : 'caret-down'" class="cursor-pointer" />
       </button>
@@ -23,10 +23,11 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import ItemForm from '~/components/Editor/ItemForm.vue'
 import { useTranslate } from '~/composables/useTranslate'
 import { useEditor } from '~/composables/useZoneEditor'
-import { itemLabel, type LoadedSection, type ZoneItem } from '~/zones'
+import type { LoadedSection, ZoneItem } from '~/zones'
 
 const props = defineProps<{
   section: LoadedSection
@@ -35,6 +36,8 @@ const props = defineProps<{
 
 const t = useTranslate()
 const editor = useEditor()
+
+const label = computed(() => editor.zone.value?.labelOf(props.item)(t) || props.item.id)
 
 // Holding Alt sets every item in the section to what this one was just set to, which is how a
 // section of eighty coffers is cleared off the map in one click.

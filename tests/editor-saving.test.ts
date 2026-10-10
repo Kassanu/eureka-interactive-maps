@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import {
+  BOSSES_GROUP,
   ZONE_SCHEMA_VERSION,
   encodeZone,
   firstAccepted,
@@ -49,14 +50,14 @@ describe('writing a zone back', () => {
     const zone = hydrateZone('anemos')
     const enemies = zone.sections.find(section => section.key === 'enemies')!
     const item = enemies.items[0]!
-    const named = (item as { name?: string }).name
-    Object.assign(item, { name: '  padded  ' })
+    const level = (item as { level: object }).level
+    Object.assign(item, { level: { from: 9, to: 3 } })
 
     const { file, issues } = encodeZone(zone, ZONE_SCHEMA_VERSION)
     expect(file).toBeNull()
     expect(issues.some(issue => issue.itemId === item.id)).toBe(true)
 
-    Object.assign(item, { name: named })
+    Object.assign(item, { level })
     expect(encodeZone(zone, ZONE_SCHEMA_VERSION).file).not.toBeNull()
   })
 })
@@ -98,55 +99,50 @@ describe('reading a zone file', () => {
 
 describe('writing a field the schema makes optional', () => {
   // The item does not carry a field it has none of, so a guard that asks the item refuses to add
-  // the very thing that is missing. This is what made the Name box a no-op on every unnamed item.
+  // the very thing that is missing.
   it('adds a field the item does not have but the schema allows', () => {
-    const shape = { name: true, icon: true }
+    const shape = { part: true, icon: true }
     const item: Record<string, unknown> = { id: 'a' }
 
-    setField(item, shape, 'name', 'Given a name')
-    expect(item.name).toBe('Given a name')
+    setField(item, shape, 'part', 2)
+    expect(item.part).toBe(2)
   })
 
   it('removes the field when given nothing', () => {
-    const shape = { name: true }
-    const item: Record<string, unknown> = { id: 'a', name: 'Had one' }
+    const shape = { part: true }
+    const item: Record<string, unknown> = { id: 'a', part: 1 }
 
-    setField(item, shape, 'name', undefined)
-    expect('name' in item).toBe(false)
+    setField(item, shape, 'part', undefined)
+    expect('part' in item).toBe(false)
   })
 
   it('ignores a field the schema does not declare', () => {
     const item: Record<string, unknown> = { id: 'a' }
-    setField(item, { name: true }, 'rank', '3')
+    setField(item, { part: true }, 'rank', '3')
     expect('rank' in item).toBe(false)
   })
 
-  // Every unnamed item the data ships: a coffer, a pot, a lockbox, an elemental. The box is drawn
-  // for all of them because the schema declares the field, so writing to it has to work for all
-  // of them too.
-  it('names every shipped item whose section offers a name box', () => {
-    let named = 0
+  it('re-picks the entity of every shipped item whose section offers an entity select', () => {
+    let picked = 0
     for (const slug of zoneSlugs) {
       const zone = hydrateZone(slug)
       for (const section of zone.sections) {
-        const shape = (section.definition.schema as unknown as {
-          shape: Record<string, unknown>
-        }).shape
-        if (!('name' in shape)) continue
+        const shape = shapeOf(section.definition.schema)
+        if (!('entity' in shape)) continue
 
-        for (const item of section.items.filter(candidate => !('name' in candidate))) {
-          setField(item, shape, 'name', 'Named by the editor')
-          expect((item as { name?: string }).name, `${slug}.${section.key}`)
-            .toBe('Named by the editor')
+        const last = zone.entities.get(section.key)!.keys.at(-1)!
+        for (const item of section.items) {
+          setField(item, shape, 'entity', last)
+          expect((item as { entity?: string }).entity, `${slug}.${section.key}`).toBe(last)
           expect(
             z.safeEncode(section.definition.schema as z.ZodType, item).success,
             `${slug}.${section.key}`
           ).toBe(true)
-          named++
+          picked++
         }
       }
     }
-    expect(named).toBeGreaterThan(500)
+    expect(picked).toBe(911)
   })
 })
 
@@ -166,10 +162,14 @@ describe('asking a schema what it allows', () => {
     const occult = shapeOf(zoneFor('north_horn').sections.fates!.schema)
     const bozja = shapeOf(zoneFor('bozjansouthernfront').sections.skirmishes!.schema)
 
-    expect(newBoss(eureka)).toEqual({ name: 'New boss' })
-    expect(newBoss(bozja)).toEqual({ name: 'New boss' })
-    expect(newBoss(occult)).toEqual({ name: 'New boss', weakness: [] })
-    expect(firstAccepted(eureka, 'bosses', [[{ name: '' }]])).toBeUndefined()
+    const bosses = hydrateZone('anemos').entities.get(BOSSES_GROUP)!
+    const entity = bosses.keys[0]
+
+    expect(newBoss(eureka, bosses)).toEqual({ entity })
+    expect(newBoss(bozja, bosses)).toEqual({ entity })
+    expect(newBoss(occult, bosses)).toEqual({ entity, weakness: [] })
+    expect(newBoss(eureka, undefined)).toBeUndefined()
+    expect(firstAccepted(eureka, 'bosses', [[{ name: 'Mindertaur' }]])).toBeUndefined()
   })
 })
 

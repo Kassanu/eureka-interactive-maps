@@ -11,8 +11,7 @@ import { inLocale, type Localized } from '../localized'
 // and subset() narrows the enum so a value legal in one zone fails to parse in another.
 //
 // `defineTable` reads each label from a table of Localized values in the active locale, and the
-// table's own key order is the order every option list follows. `defineNames` holds English text
-// for the drop names, which have no table yet.
+// table's own key order is the order every option list follows.
 
 export interface LookupOption<K extends string> {
   key: K
@@ -39,13 +38,6 @@ export function defineTable<const K extends string>(entries: Readonly<Record<K, 
   const keys = Object.keys(entries) as K[]
   const labels = {} as Record<K, Text>
   for (const key of keys) labels[key] = (t: Translate) => inLocale(entries[key], t.locale)
-  return buildLookup(keys, labels)
-}
-
-export function defineNames<const K extends string>(names: Record<K, string>): Lookup<K> {
-  const keys = Object.keys(names) as K[]
-  const labels = {} as Record<K, Text>
-  for (const key of keys) labels[key] = () => names[key]
   return buildLookup(keys, labels)
 }
 

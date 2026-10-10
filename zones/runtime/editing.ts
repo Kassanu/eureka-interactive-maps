@@ -1,9 +1,10 @@
 import { z } from 'zod'
 import type { Position } from '../../model/primitives'
-import { itemLabel, type ZoneItem } from './items'
+import type { Lookup } from '../../model/lookups'
+import type { ZoneItem } from './items'
 import type { Text } from '../../i18n/translate'
 import type { RawZoneFile } from '../define/schema'
-import type { LoadedZone } from './loading'
+import { BOSSES_GROUP, type LoadedZone } from './loading'
 import type { StoredSectionDefinition } from '../define/types'
 
 // Making and saving changes. Reading a zone is the loader's business.
@@ -37,14 +38,17 @@ export function firstAccepted<T>(
   return candidates.find(candidate => shape[field]?.safeParse(candidate).success === true)
 }
 
-// `New boss` is data, not UI text, so it stays English in every locale. Each operation accepts
-// exactly one of the two shapes.
+// A new boss is the group's first entry until another is picked. Each operation accepts exactly
+// one of the two shapes.
 export function newBoss(
-  shape: Readonly<Record<string, z.ZodType>>
-): { name: string; weakness?: string[] } | undefined {
+  shape: Readonly<Record<string, z.ZodType>>,
+  bosses: Lookup<string> | undefined
+): { entity: string; weakness?: string[] } | undefined {
+  const entity = bosses?.keys[0]
+  if (entity === undefined) return undefined
   return firstAccepted(shape, 'bosses', [
-    [{ name: 'New boss', weakness: [] as string[] }],
-    [{ name: 'New boss' }],
+    [{ entity, weakness: [] as string[] }],
+    [{ entity }],
   ])?.[0]
 }
 
@@ -64,8 +68,8 @@ export function setField(
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/
 
-// Every id in a zone file is a uuid and nothing else in the data is, so any uuid-shaped string
-// anywhere in an item is a reference to another.
+// An entity id is a uuid too, and is only ever held under `entity`. Any other uuid-shaped string
+// anywhere in an item is a reference to another item.
 export function referencedIds(value: unknown, found: string[] = []): string[] {
   if (typeof value === 'string') {
     if (UUID.test(value)) found.push(value)
@@ -76,9 +80,23 @@ export function referencedIds(value: unknown, found: string[] = []): string[] {
     return found
   }
   if (value && typeof value === 'object') {
-    for (const entry of Object.values(value)) referencedIds(entry, found)
+    for (const [key, entry] of Object.entries(value)) {
+      if (key !== 'entity') referencedIds(entry, found)
+    }
   }
   return found
+}
+
+// The entities an item names that the zone's entity file does not hold: its own in the group its
+// section key names, and each boss's in BOSSES_GROUP. A drop's is refused by its schema.
+function unresolvedEntities(zone: LoadedZone, sectionKey: string, item: ZoneItem): string[] {
+  const held = (group: string, entity: string) => zone.entities.get(group)?.keys.includes(entity)
+  const missing: string[] = []
+  if ('entity' in item && !held(sectionKey, item.entity)) missing.push(item.entity)
+  for (const boss of 'bosses' in item ? item.bosses : []) {
+    if (!held(BOSSES_GROUP, boss.entity)) missing.push(boss.entity)
+  }
+  return missing
 }
 
 export interface SaveIssue {
@@ -110,7 +128,7 @@ export function encodeZone(
         issues.push({
           section: key,
           itemId: item.id,
-          label: itemLabel(definition.sections[key], item),
+          label: zone.labelOf(item),
           message: encoded.error.issues[0]?.message ?? 'invalid',
         })
         continue
@@ -132,8 +150,16 @@ export function encodeZone(
         issues.push({
           section: section.key,
           itemId: item.id,
-          label: itemLabel(section.definition, item),
+          label: zone.labelOf(item),
           message: `points at ${reference}, which is not in this file`,
+        })
+      }
+      for (const entity of unresolvedEntities(zone, section.key, item)) {
+        issues.push({
+          section: section.key,
+          itemId: item.id,
+          label: zone.labelOf(item),
+          message: `names the entity ${entity}, which the zone's entity file does not hold`,
         })
       }
     }
