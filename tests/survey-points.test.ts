@@ -1,48 +1,51 @@
 import { describe, expect, it } from 'vitest'
 import type { z } from 'zod'
-import { initialState, itemLabel, zoneMarkers, zones } from '../zones'
-import type { ZoneItem } from '../zones'
+import { initialState, zoneMarkers, zones } from '../zones'
 import { english } from './helpers/messages'
 import { hydrateZone, loadZoneFile } from './helpers/zoneFiles'
 
 const points = zones.north_horn.sections.survey_points!
 const schema = points.schema as z.ZodType
-const placed = { id: '3e1c9a7b-5d2f-4c8e-a1b6-9f0d2e4c6a8b', positions: [{ x: 10, y: 10 }] }
+const placed = {
+  id: '3e1c9a7b-5d2f-4c8e-a1b6-9f0d2e4c6a8b',
+  entity: '7c2d4e6f-1a3b-4c5d-8e9f-0a1b2c3d4e5f',
+  positions: [{ x: 10, y: 10 }],
+}
 
 const parses = (point: object) => schema.safeParse({ ...placed, ...point }).success
-const label = (point: object) =>
-  itemLabel(points, schema.parse({ ...placed, ...point }) as ZoneItem)(english)
+const label = (point: object, name: string) =>
+  points.label!(schema.parse({ ...placed, ...point }) as never, () => name)(english)
 
 describe('a survey point', () => {
   it('may be placed before its record number is known', () => {
-    expect(parses({ name: 'North Horn Base Camp' })).toBe(true)
-    expect(parses({ name: 'North Horn Base Camp', recordNumber: 31 })).toBe(true)
+    expect(parses({})).toBe(true)
+    expect(parses({ recordNumber: 31 })).toBe(true)
   })
 
   it('holds its record number as a positive integer', () => {
-    expect(parses({ name: 'North Horn Base Camp', recordNumber: 0 })).toBe(false)
-    expect(parses({ name: 'North Horn Base Camp', recordNumber: 1.5 })).toBe(false)
-    expect(parses({ name: 'North Horn Base Camp', recordNumber: '31' })).toBe(false)
+    expect(parses({ recordNumber: 0 })).toBe(false)
+    expect(parses({ recordNumber: 1.5 })).toBe(false)
+    expect(parses({ recordNumber: '31' })).toBe(false)
   })
 })
 
 describe('a survey point label', () => {
-  it('reads as the record number and then the name', () => {
-    expect(label({ name: 'North Horn Base Camp', recordNumber: 31 })).toBe('#31: North Horn Base Camp')
+  it('reads as the record number and then its entity\'s name', () => {
+    expect(label({ recordNumber: 31 }, 'North Horn Base Camp')).toBe('#31: North Horn Base Camp')
   })
 
   it('is the name alone without a record number', () => {
-    expect(label({ name: 'North Horn Base Camp' })).toBe('North Horn Base Camp')
+    expect(label({}, 'North Horn Base Camp')).toBe('North Horn Base Camp')
   })
 
   it('is empty without a name', () => {
-    expect(label({ recordNumber: 31 })).toBe('')
+    expect(label({ recordNumber: 31 }, '')).toBe('')
   })
 })
 
 interface ShippedPoint {
   id: string
-  name: string
+  entity: string
   recordNumber?: number
 }
 
@@ -63,7 +66,9 @@ describe.each(Object.entries(COUNTS))('%s', (slug, count) => {
   })
 
   it('names every survey point by its place alone', () => {
-    expect(shipped.filter(point => point.name.startsWith('#')).map(point => point.name)).toEqual([])
+    const entries = hydrateZone(slug as keyof typeof COUNTS).entities.get('survey_points')!
+    const names = shipped.map(point => entries.label(point.entity, english))
+    expect(names.filter(name => name === '' || name.startsWith('#'))).toEqual([])
   })
 })
 

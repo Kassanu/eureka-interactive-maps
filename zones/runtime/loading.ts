@@ -3,7 +3,7 @@ import type { Text } from '../../i18n/translate'
 import { EntitySchema, entityGroupIssues, entityLookup, type Entity } from '../../model/entities'
 import { iconPath } from '../../model/icons'
 import type { Lookup } from '../../model/lookups'
-import { itemLabel, spawnedByOf, spawnsFateOf, type ZoneItem } from './items'
+import { spawnedByOf, spawnsFateOf, type ZoneItem } from './items'
 import { levelFilter, scopedFilter } from '../define/filters'
 import type { FilterScope, ScopedFilter, StoredFilterDefinition } from '../define/filters'
 import { RawZoneFileSchema, ZONE_SCHEMA_VERSION } from '../define/schema'
@@ -49,8 +49,10 @@ export interface LoadedZone {
   // end only, so `spawnersOf` is how either end is read. Several enemies can be named for one
   // FATE, which is why it answers with a list.
   spawnersOf: (id: string) => ZoneItem[]
+  // The item's entity's name in the translator's locale, through its section's label hook.
   labelOf: (item: ZoneItem) => Text
-  // One Lookup per group of the zone's entity file, keyed by entry id.
+  // One Lookup per group of the zone's entity file, keyed by entry id: a group per entity section,
+  // named by its key, and BOSSES_GROUP.
   entities: ReadonlyMap<string, Lookup<string>>
   issues: LoadIssue[]
 }
@@ -106,6 +108,8 @@ export function parseSections(
   return { sections, issues }
 }
 
+export const BOSSES_GROUP = 'bosses'
+
 // Nothing is drawn from an entity file, so an issue in one is reported against its group and
 // never stops the zone loading.
 export function parseEntities(
@@ -120,7 +124,7 @@ export function parseEntities(
 
   for (const [key, raw] of Object.entries(input)) {
     const section = `entities.${key}`
-    if (key !== 'bosses' && !(key in definition.sections)) {
+    if (key !== BOSSES_GROUP && !(key in definition.sections)) {
       issues.push({ section, message: `${key} is not a section of this zone` })
       continue
     }
@@ -177,16 +181,22 @@ export function indexZone(
 ): LoadedZone {
   const byId = new Map<string, ZoneItem>()
   const order = new Map<string, number>()
-  const definitionOf = new Map<string, StoredSectionDefinition | undefined>()
+  const keyOf = new Map<string, string>()
   for (const [key, items] of parsed) {
     for (const item of items) {
       byId.set(item.id, item)
       order.set(item.id, order.size)
-      definitionOf.set(item.id, definition.sections[key])
+      keyOf.set(item.id, key)
     }
   }
 
-  const labelOf = (item: ZoneItem) => itemLabel(definitionOf.get(item.id), item)
+  const labelOf = (item: ZoneItem): Text => {
+    const key = keyOf.get(item.id)
+    const group = key === undefined ? undefined : entities.get(key)
+    const name: Text = t => ('entity' in item && group ? group.label(item.entity, t) : '')
+    const hook = key === undefined ? undefined : definition.sections[key]?.label
+    return hook ? hook(item as never, name) : name
+  }
 
   const resolve = (ids: Iterable<string>) =>
     [...new Set(ids)]

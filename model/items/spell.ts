@@ -1,11 +1,9 @@
 import { z } from 'zod'
-import { NameSchema } from '../primitives'
-import { ItemBaseSchema, ItemRefSchema, OptionalItemRefSchema } from './base'
+import { EntityItemBaseSchema, ItemRefSchema, OptionalItemRefSchema } from './base'
 
 // A phantom blue mage spell. The icon it draws is the `icon` key every item carries; nothing
 // about a spell derives one.
-export const SpellBaseSchema = ItemBaseSchema.extend({
-  name: NameSchema,
+export const SpellBaseSchema = EntityItemBaseSchema.extend({
   spellLevel: z.int().min(1),
   // The enemy or critical encounter that teaches it. Named for the relation rather than `source`,
   // which loot uses for something else entirely.

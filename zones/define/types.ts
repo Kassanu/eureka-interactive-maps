@@ -19,14 +19,15 @@ export interface SectionDefinition<S extends z.ZodType> {
   drawStyle: DrawStyle
   icon: (item: z.infer<S>) => IconKey
   badges?: (item: z.infer<S>) => IconKey[]
-  // What an item is called where it has no name of its own.
-  label?: (item: z.infer<S>) => Text
+  // What an item is called. `name` is its entity's name, empty in a section without entities.
+  label?: (item: z.infer<S>, name: Text) => Text
   filters?: FilterDefinition<z.infer<S>>[]
   blank: () => Blank<z.infer<S>>
 }
 
-// A new item before it has an id or a place on the map.
-export type Blank<Item> = Omit<Item, 'id' | 'positions'>
+// A new item before it has an id, a place on the map or an entity. Save refuses it until it is
+// given an entity.
+export type Blank<Item> = Omit<Item, 'id' | 'positions' | 'entity'>
 
 // A section with its item type erased. defineSection enforces the typing on the way in; reading
 // one back gives `never`, so a consumer casts at the point it applies a function to an item it
@@ -39,7 +40,7 @@ export interface StoredSectionDefinition {
   drawStyle: DrawStyle
   icon: (item: never) => IconKey
   badges?: (item: never) => IconKey[]
-  label?: (item: never) => Text
+  label?: (item: never, name: Text) => Text
   filters?: StoredFilterDefinition[]
   blank: () => object
 }

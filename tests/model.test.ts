@@ -2,7 +2,8 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { DropSchema, dropItems } from '../model/lookups/drops'
+import { dropEntities } from '../model/entities'
+import { DropSchema } from '../model/items/drops'
 import { iconKeys, iconPaths } from '../model/icons'
 import * as lookups from '../model/lookups'
 import {
@@ -112,28 +113,13 @@ describe('icons', () => {
   })
 })
 
-describe('drop catalogue', () => {
-  it('labels every key', () => {
-    for (const key of dropItems.keys) {
-      expect(dropItems.label(key, english), key).toBeTruthy()
-    }
-  })
-
-  // These are game item names rather than app strings, so they resolve without the locale file
-  // and stay that way until the glossary keyed by FFXIV Item id exists.
-  it('names an item without reading the message file', () => {
-    const absent: Translate = Object.assign(
-      () => {
-        throw new Error('a drop name was looked up as an app string')
-      },
-      { locale: 'en' as const }
-    )
-    expect(dropItems.label('occultmissile', absent)).toBe('Occult Missile')
-  })
-
-  it('gives every item a distinct name', () => {
-    const names = dropItems.keys.map(key => dropItems.labels[key](english))
-    expect(new Set(names).size).toBe(names.length)
+describe('a drop', () => {
+  it('names an entry in data/drops.json and nothing else', () => {
+    const held = dropEntities.keys[0]!
+    expect(z.safeParse(DropSchema, { entity: held, amount: 1 }).success).toBe(true)
+    expect(z.safeParse(DropSchema, { entity: '0d9e8f7a-6b5c-4d3e-9f2a-1b0c9d8e7f6a', amount: 1 }).success)
+      .toBe(false)
+    expect(z.safeParse(DropSchema, { item: 'occultmissile', amount: 1 }).success).toBe(false)
   })
 })
 
@@ -247,10 +233,10 @@ describe('a constraint the data never violates', () => {
   })
 
   it('rejects a drop of nothing', () => {
-    const anyDrop = dropItems.keys[0]!
-    expect(z.safeParse(DropSchema, { item: anyDrop, amount: 0 }).success).toBe(false)
-    expect(z.safeParse(DropSchema, { item: anyDrop, amount: -1 }).success).toBe(false)
-    expect(z.safeParse(DropSchema, { item: anyDrop, amount: 1 }).success).toBe(true)
+    const anyDrop = dropEntities.keys[0]!
+    expect(z.safeParse(DropSchema, { entity: anyDrop, amount: 0 }).success).toBe(false)
+    expect(z.safeParse(DropSchema, { entity: anyDrop, amount: -1 }).success).toBe(false)
+    expect(z.safeParse(DropSchema, { entity: anyDrop, amount: 1 }).success).toBe(true)
   })
 
   it('rejects a level range that runs backwards', () => {

@@ -1,11 +1,11 @@
 {
-    "schemaVersion": 9,
+    "schemaVersion": 10,
     "sections": {
         "fates": {
             "items": [
                 {
                     "id": "fe4d3b9b-12b0-5011-bb0a-2433603d4b7b",
-                    "name": "A Delicate Balance",
+                    "entity": "ab8c72b4-2b70-4505-afe8-e54ca700cf4e",
                     "positions": [
                         {
                             "x": 14.1,
@@ -14,7 +14,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Dehumidifier",
+                            "entity": "d7f66173-4a97-42f6-9436-4a871669f98e",
                             "weakness": [
                                 "ice"
                             ]
@@ -22,7 +22,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "verdigrisdemiatma",
+                            "entity": "5c08dc3b-61c5-4bbc-a6fc-22dd6537ef0a",
                             "amount": 1
                         }
                     ],
@@ -30,7 +30,7 @@
                 },
                 {
                     "id": "e59f07d5-95be-566d-bc64-fdc991474e94",
-                    "name": "A Prying Eye",
+                    "entity": "1755d60b-eba6-4c45-895a-346c573bb54e",
                     "positions": [
                         {
                             "x": 20.1,
@@ -39,7 +39,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Observer",
+                            "entity": "24fc9636-666e-4d54-80f7-8cae9bbe3db2",
                             "weakness": [
                                 "wind"
                             ]
@@ -47,7 +47,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "azuritedemiatma",
+                            "entity": "b4941121-446e-46f9-aff6-3ae8939a8096",
                             "amount": 1
                         }
                     ],
@@ -55,7 +55,7 @@
                 },
                 {
                     "id": "05ac7702-6e58-5bdd-8dfe-a54269589d3e",
-                    "name": "An Unending Duty",
+                    "entity": "50cba394-7157-443f-90c5-d43b62880756",
                     "positions": [
                         {
                             "x": 17,
@@ -64,7 +64,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Sisyphus",
+                            "entity": "b15417ae-7225-43c8-a126-e1a79f3471cf",
                             "weakness": [
                                 "fire"
                             ]
@@ -72,7 +72,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "malachitedemiatma",
+                            "entity": "5e1db15f-7ad0-4313-9c53-44e713659bcf",
                             "amount": 1
                         }
                     ],
@@ -80,7 +80,7 @@
                 },
                 {
                     "id": "112d4dbb-9bc6-56fb-8f14-4a8ef517ffe0",
-                    "name": "Brain Drain",
+                    "entity": "833e32d4-d580-40d8-b758-24bcb9aa1b66",
                     "positions": [
                         {
                             "x": 20.6,
@@ -89,7 +89,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Advanced Aevis",
+                            "entity": "5fbbabac-8a0d-4d7b-8e07-b4df19d1db8e",
                             "weakness": [
                                 "ice"
                             ]
@@ -97,7 +97,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "realgardemiatma",
+                            "entity": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
                             "amount": 1
                         }
                     ],
@@ -105,7 +105,7 @@
                 },
                 {
                     "id": "b7108010-a1f3-5839-990f-f7433aba7dc1",
-                    "name": "Fatal Allure",
+                    "entity": "afc1491c-455a-44b2-b41d-fc36a3187bcc",
                     "positions": [
                         {
                             "x": 22.9,
@@ -114,7 +114,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Execrator",
+                            "entity": "9bc40b27-0b1e-4809-a93c-cc0567a74d9e",
                             "weakness": [
                                 "wind"
                             ]
@@ -122,7 +122,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "orpimentdemiatma",
+                            "entity": "76549db4-75a2-42d5-9057-526c83c313a7",
                             "amount": 1
                         }
                     ],
@@ -130,7 +130,7 @@
                 },
                 {
                     "id": "180be147-cca5-54fa-86a4-709a6f332391",
-                    "name": "King of the Crescent",
+                    "entity": "996dd36c-638d-4aef-94d1-35d3ff4c02d1",
                     "positions": [
                         {
                             "x": 17,
@@ -139,7 +139,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Ropross",
+                            "entity": "5f35c78e-25ea-4dee-ac05-eb32f3c728e1",
                             "weakness": [
                                 "fire"
                             ]
@@ -147,7 +147,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "orpimentdemiatma",
+                            "entity": "76549db4-75a2-42d5-9057-526c83c313a7",
                             "amount": 1
                         }
                     ],
@@ -155,7 +155,7 @@
                 },
                 {
                     "id": "ee3020bf-31e5-5a1f-ae0c-508675873c36",
-                    "name": "Persistent Pots",
+                    "entity": "4e8641a8-e63a-434c-98b6-af79f185485a",
                     "positions": [
                         {
                             "x": 25.6,
@@ -164,7 +164,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Crescent Garula",
+                            "entity": "6cb72b7b-f2aa-4484-b63d-6c15d36740e8",
                             "weakness": [
                                 "fire"
                             ]
@@ -172,11 +172,11 @@
                     ],
                     "drops": [
                         {
-                            "item": "orpimentdemiatma",
+                            "entity": "76549db4-75a2-42d5-9057-526c83c313a7",
                             "amount": 1
                         },
                         {
-                            "item": "notesonpersistentpots",
+                            "entity": "ca1c9938-2f6b-4c02-8871-5e7f917c27ba",
                             "amount": 1
                         }
                     ],
@@ -184,7 +184,7 @@
                 },
                 {
                     "id": "bf33773c-c374-5f94-9b2d-b7ec61d9bf0d",
-                    "name": "Pleading Pots",
+                    "entity": "bc0c2815-6fb5-42a2-8135-39b02e069600",
                     "positions": [
                         {
                             "x": 11.9,
@@ -193,7 +193,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Havoc",
+                            "entity": "e9059c04-a155-4345-881c-af4065904f93",
                             "weakness": [
                                 "lightning"
                             ]
@@ -201,11 +201,11 @@
                     ],
                     "drops": [
                         {
-                            "item": "verdigrisdemiatma",
+                            "entity": "5c08dc3b-61c5-4bbc-a6fc-22dd6537ef0a",
                             "amount": 1
                         },
                         {
-                            "item": "notesonpersistentpots",
+                            "entity": "ca1c9938-2f6b-4c02-8871-5e7f917c27ba",
                             "amount": 1
                         }
                     ],
@@ -213,7 +213,7 @@
                 },
                 {
                     "id": "fe1ffe25-796a-507d-9437-1b71e2152600",
-                    "name": "Rough Waters",
+                    "entity": "5d1bb19c-e425-4fb0-a0a5-ce3ad42d4d6f",
                     "positions": [
                         {
                             "x": 24.6,
@@ -222,7 +222,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Nammu",
+                            "entity": "2392fd23-73a4-4b34-8c34-8d35ad14de84",
                             "weakness": [
                                 "lightning"
                             ]
@@ -230,7 +230,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "azuritedemiatma",
+                            "entity": "b4941121-446e-46f9-aff6-3ae8939a8096",
                             "amount": 1
                         }
                     ],
@@ -238,7 +238,7 @@
                 },
                 {
                     "id": "015205e0-353c-5e00-9b4b-fb023b509f04",
-                    "name": "Serving Darkness",
+                    "entity": "1382098b-8eed-4307-afbd-c9e3d1f5d81d",
                     "positions": [
                         {
                             "x": 29.6,
@@ -247,7 +247,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Lifereaper",
+                            "entity": "587759d9-19f1-4310-95aa-155311b5b0a1",
                             "weakness": [
                                 "fire"
                             ]
@@ -255,7 +255,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "caputmortuumdemiatma",
+                            "entity": "9cc5a185-e088-442a-93f4-941f2827014b",
                             "amount": 1
                         }
                     ],
@@ -263,7 +263,7 @@
                 },
                 {
                     "id": "80f4af26-6cfa-5fea-814b-764fc42a816f",
-                    "name": "Sworn to Soil",
+                    "entity": "16d04659-e40f-421d-87cf-2f80a66a50dc",
                     "positions": [
                         {
                             "x": 9.5,
@@ -272,7 +272,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Mad Mudarch",
+                            "entity": "edbf1438-1f76-474f-870f-e44de423cb38",
                             "weakness": [
                                 "ice"
                             ]
@@ -280,7 +280,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "verdigrisdemiatma",
+                            "entity": "5c08dc3b-61c5-4bbc-a6fc-22dd6537ef0a",
                             "amount": 1
                         }
                     ],
@@ -288,7 +288,7 @@
                 },
                 {
                     "id": "a2bbf46e-36af-5365-b05c-215416652230",
-                    "name": "The Golden Guardian",
+                    "entity": "48425553-427a-4aa9-8c5a-7098223ea252",
                     "positions": [
                         {
                             "x": 28.8,
@@ -297,7 +297,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Gilded Headstone",
+                            "entity": "d5011c28-5c9e-4543-9628-ea621586ad41",
                             "weakness": [
                                 "lightning"
                             ]
@@ -305,7 +305,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "azuritedemiatma",
+                            "entity": "b4941121-446e-46f9-aff6-3ae8939a8096",
                             "amount": 1
                         }
                     ],
@@ -313,7 +313,7 @@
                 },
                 {
                     "id": "9cc6982c-a091-50c9-886b-1625cecaa573",
-                    "name": "The Winged Terror",
+                    "entity": "956e4f73-6c6f-4b6b-a190-e24b77e60af2",
                     "positions": [
                         {
                             "x": 10.4,
@@ -322,7 +322,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Giant Bird",
+                            "entity": "f5b46197-d0ef-4620-acd7-96e6b3b0896b",
                             "weakness": [
                                 "wind"
                             ]
@@ -330,7 +330,7 @@
                     ],
                     "drops": [
                         {
-                            "item": "realgardemiatma",
+                            "entity": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
                             "amount": 1
                         }
                     ],
@@ -342,7 +342,7 @@
             "items": [
                 {
                     "id": "d77478f1-e89e-527b-92dc-7d6e6e3838f2",
-                    "name": "Calamity Bound",
+                    "entity": "4c301e5e-2fb6-4600-bce7-13472406424f",
                     "positions": [
                         {
                             "x": 14.5,
@@ -351,7 +351,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Cloister Demon",
+                            "entity": "5caf6380-81ef-4083-a4d5-fe22772d9789",
                             "weakness": [
                                 "ice"
                             ]
@@ -359,23 +359,23 @@
                     ],
                     "drops": [
                         {
-                            "item": "verdigrisdemiatma",
+                            "entity": "5c08dc3b-61c5-4bbc-a6fc-22dd6537ef0a",
                             "amount": 1
                         },
                         {
-                            "item": "notesonthecloisterdemon",
+                            "entity": "e52c4bab-d99d-4870-af38-b1ca280eb1f8",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofblood",
+                            "entity": "a7116a14-2794-41c5-9fe5-e2a691d48382",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofmagic",
+                            "entity": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
                             "amount": 1
                         },
                         {
-                            "item": "voidsentcontract",
+                            "entity": "d7deb36f-0563-41a0-98f2-6371e3911488",
                             "amount": 1
                         }
                     ],
@@ -383,7 +383,7 @@
                 },
                 {
                     "id": "55a80d97-9d8f-54f6-b329-aafc4f90bce9",
-                    "name": "Company of Stone",
+                    "entity": "b7cb0707-1327-45e8-904d-76539903ec5a",
                     "positions": [
                         {
                             "x": 35,
@@ -392,21 +392,21 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Megaloknight",
+                            "entity": "d9c57702-a2ee-4b28-9cb6-6d26fb39f54a",
                             "weakness": []
                         }
                     ],
                     "drops": [
                         {
-                            "item": "caputmortuumdemiatma",
+                            "entity": "9cc5a185-e088-442a-93f4-941f2827014b",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofblood",
+                            "entity": "7d5ecdd1-7f60-4881-9790-43edb1115971",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofmagic",
+                            "entity": "88932e24-78fc-434d-aa01-1892b55dd90e",
                             "amount": 1
                         }
                     ],
@@ -414,7 +414,7 @@
                 },
                 {
                     "id": "674ba46b-ba75-5ab4-816c-b29fea1359de",
-                    "name": "Crawling Death",
+                    "entity": "ea208769-ef41-4b70-ae4c-eb608861257a",
                     "positions": [
                         {
                             "x": 35.1,
@@ -423,7 +423,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Death Claw",
+                            "entity": "f9d158f7-c4e5-42b3-9b67-1558b16c5373",
                             "weakness": [
                                 "ice"
                             ]
@@ -431,15 +431,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "azuritedemiatma",
+                            "entity": "b4941121-446e-46f9-aff6-3ae8939a8096",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofblood",
+                            "entity": "a7116a14-2794-41c5-9fe5-e2a691d48382",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofmagic",
+                            "entity": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
                             "amount": 1
                         }
                     ],
@@ -447,7 +447,7 @@
                 },
                 {
                     "id": "8ba3d820-d2b3-5fdf-a0ac-243b55d6110c",
-                    "name": "Cursed Concern",
+                    "entity": "22f2a0a3-711e-4239-911d-db4a55727fab",
                     "positions": [
                         {
                             "x": 22.9,
@@ -456,7 +456,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Trade Tortoise",
+                            "entity": "499fafc2-dddc-428c-b534-989c0d0387ca",
                             "weakness": [
                                 "ice"
                             ]
@@ -464,19 +464,19 @@
                     ],
                     "drops": [
                         {
-                            "item": "realgardemiatma",
+                            "entity": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
                             "amount": 1
                         },
                         {
-                            "item": "notesonthetradetortoise",
+                            "entity": "5cd6ebca-1fe2-440c-a194-daa9bb69877f",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofblood",
+                            "entity": "7d5ecdd1-7f60-4881-9790-43edb1115971",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofmagic",
+                            "entity": "88932e24-78fc-434d-aa01-1892b55dd90e",
                             "amount": 1
                         }
                     ],
@@ -484,7 +484,7 @@
                 },
                 {
                     "id": "920b96a6-d1f8-53f2-9e35-7280fa00532a",
-                    "name": "Eternal Watch",
+                    "entity": "4fac835d-17f4-4236-a9ea-13a54cfe1e03",
                     "positions": [
                         {
                             "x": 38.8,
@@ -493,7 +493,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Repaired Lion",
+                            "entity": "1c1f81e2-15a2-494d-a23c-8e926a5471c3",
                             "weakness": [
                                 "lightning"
                             ]
@@ -501,15 +501,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "caputmortuumdemiatma",
+                            "entity": "9cc5a185-e088-442a-93f4-941f2827014b",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofblood",
+                            "entity": "7d5ecdd1-7f60-4881-9790-43edb1115971",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofmagic",
+                            "entity": "88932e24-78fc-434d-aa01-1892b55dd90e",
                             "amount": 1
                         }
                     ],
@@ -517,7 +517,7 @@
                 },
                 {
                     "id": "34029bbd-00e0-520b-9cd1-dabf74f0de67",
-                    "name": "Flame of Dusk",
+                    "entity": "0f4e9feb-cb5d-44ee-9198-41a88b9f2c01",
                     "positions": [
                         {
                             "x": 10.1,
@@ -526,7 +526,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Hinkypunk",
+                            "entity": "0074820f-9346-41ba-b67c-48a5d3660d4a",
                             "weakness": [
                                 "wind"
                             ]
@@ -534,15 +534,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "malachitedemiatma",
+                            "entity": "5e1db15f-7ad0-4313-9c53-44e713659bcf",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofblood",
+                            "entity": "86e2a6ea-9048-454c-b947-59b05dcae34f",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofmagic",
+                            "entity": "db7d2037-14c7-43d7-a330-e92f0665ebec",
                             "amount": 1
                         }
                     ],
@@ -550,7 +550,7 @@
                 },
                 {
                     "id": "3b114065-b514-5bfe-b78e-9fbc1ba74b18",
-                    "name": "From Times Bygone",
+                    "entity": "ac5718b1-5ddc-4389-bef9-70075cd9a18a",
                     "positions": [
                         {
                             "x": 5.5,
@@ -559,7 +559,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Mythic Idol",
+                            "entity": "2b4705a6-b8d2-431a-be60-e6384a6a0bfe",
                             "weakness": [
                                 "lightning"
                             ]
@@ -567,19 +567,19 @@
                     ],
                     "drops": [
                         {
-                            "item": "malachitedemiatma",
+                            "entity": "5e1db15f-7ad0-4313-9c53-44e713659bcf",
                             "amount": 1
                         },
                         {
-                            "item": "notesonthemythicidol",
+                            "entity": "e863fb50-47c6-42b9-a0c8-a1ccfb72499a",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofblood",
+                            "entity": "86e2a6ea-9048-454c-b947-59b05dcae34f",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofmagic",
+                            "entity": "db7d2037-14c7-43d7-a330-e92f0665ebec",
                             "amount": 1
                         }
                     ],
@@ -587,7 +587,7 @@
                 },
                 {
                     "id": "110c70cd-8615-5ae2-93a3-f4d2baf2e065",
-                    "name": "Noise Complaint",
+                    "entity": "9d00d6a0-0fde-4f2a-b920-f4cce3722018",
                     "positions": [
                         {
                             "x": 30.5,
@@ -596,7 +596,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Neo Garula",
+                            "entity": "e31c6980-ef2f-4cb5-af51-ac1cea3a9dba",
                             "weakness": [
                                 "fire"
                             ]
@@ -604,15 +604,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "orpimentdemiatma",
+                            "entity": "76549db4-75a2-42d5-9057-526c83c313a7",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofblood",
+                            "entity": "7d5ecdd1-7f60-4881-9790-43edb1115971",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofmagic",
+                            "entity": "88932e24-78fc-434d-aa01-1892b55dd90e",
                             "amount": 1
                         }
                     ],
@@ -620,7 +620,7 @@
                 },
                 {
                     "id": "0d1f8437-7f45-5ddd-be68-bcc7b29e36d2",
-                    "name": "On the Hunt",
+                    "entity": "d93f8e5f-94d2-404b-909c-abdbf7cf44ae",
                     "positions": [
                         {
                             "x": 34,
@@ -629,7 +629,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Lion Rampant",
+                            "entity": "e46d32a5-2c78-476c-ae68-f502b231589f",
                             "weakness": [
                                 "lightning"
                             ]
@@ -637,19 +637,19 @@
                     ],
                     "drops": [
                         {
-                            "item": "caputmortuumdemiatma",
+                            "entity": "9cc5a185-e088-442a-93f4-941f2827014b",
                             "amount": 1
                         },
                         {
-                            "item": "oraclessoulshard",
+                            "entity": "b8b6a909-48e9-4fde-b8df-e31af9a343d8",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofblood",
+                            "entity": "7d5ecdd1-7f60-4881-9790-43edb1115971",
                             "amount": 1
                         },
                         {
-                            "item": "occultnecklaceofmagic",
+                            "entity": "88932e24-78fc-434d-aa01-1892b55dd90e",
                             "amount": 1
                         }
                     ],
@@ -657,7 +657,7 @@
                 },
                 {
                     "id": "c917e6dc-a5d4-551a-9122-fcede72fc0ac",
-                    "name": "Scourge of the Mind",
+                    "entity": "3d4b8aea-fc1a-42de-baa7-3b3aef6780b6",
                     "positions": [
                         {
                             "x": 27.4,
@@ -666,7 +666,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Mysterious Mindflayer",
+                            "entity": "43753f32-6263-4068-b78e-0df2dfacae57",
                             "weakness": [
                                 "fire"
                             ]
@@ -674,15 +674,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "azuritedemiatma",
+                            "entity": "b4941121-446e-46f9-aff6-3ae8939a8096",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofblood",
+                            "entity": "a7116a14-2794-41c5-9fe5-e2a691d48382",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofmagic",
+                            "entity": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
                             "amount": 1
                         }
                     ],
@@ -690,7 +690,7 @@
                 },
                 {
                     "id": "5ccf1134-049e-5022-a928-32debefbf192",
-                    "name": "Shark Attack",
+                    "entity": "078b67ea-12f4-4dad-a6ca-1561957d5b4e",
                     "positions": [
                         {
                             "x": 19.1,
@@ -699,7 +699,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Nymian Petalodus",
+                            "entity": "dddd20ae-737e-487f-8934-28af850e7caa",
                             "weakness": [
                                 "lightning"
                             ]
@@ -707,19 +707,19 @@
                     ],
                     "drops": [
                         {
-                            "item": "realgardemiatma",
+                            "entity": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
                             "amount": 1
                         },
                         {
-                            "item": "notesonthenymianpetalodus",
+                            "entity": "232ddd0c-04fe-471c-be5e-87acfce182eb",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofblood",
+                            "entity": "86e2a6ea-9048-454c-b947-59b05dcae34f",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofmagic",
+                            "entity": "db7d2037-14c7-43d7-a330-e92f0665ebec",
                             "amount": 1
                         }
                     ],
@@ -727,7 +727,7 @@
                 },
                 {
                     "id": "9ceab593-3195-5ea4-8e19-026f651129fb",
-                    "name": "The Black Regiment",
+                    "entity": "22bbb9db-1c63-4db6-943a-d91ed177e21c",
                     "positions": [
                         {
                             "x": 30.5,
@@ -736,7 +736,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Black Star",
+                            "entity": "81c9899d-c376-4f67-b677-877d8e42b9cd",
                             "weakness": [
                                 "lightning"
                             ]
@@ -744,23 +744,23 @@
                     ],
                     "drops": [
                         {
-                            "item": "orpimentdemiatma",
+                            "entity": "76549db4-75a2-42d5-9057-526c83c313a7",
                             "amount": 1
                         },
                         {
-                            "item": "rangerssoulshard",
+                            "entity": "4a9a1ac7-221b-45b7-8996-86a63baeb19b",
                             "amount": 1
                         },
                         {
-                            "item": "notesonblackchocobos",
+                            "entity": "a0a3095f-7447-431b-8103-457b2817e1ba",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofblood",
+                            "entity": "a7116a14-2794-41c5-9fe5-e2a691d48382",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofmagic",
+                            "entity": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
                             "amount": 1
                         }
                     ],
@@ -768,7 +768,7 @@
                 },
                 {
                     "id": "fb506d49-f74d-55fb-8e05-00b7de1d8bdf",
-                    "name": "The Unbridled",
+                    "entity": "3a4aa7b6-39c5-41b1-a14a-978409d04c04",
                     "positions": [
                         {
                             "x": 33.9,
@@ -777,7 +777,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Crescent Berserker",
+                            "entity": "3f3d8956-431f-4d36-8ae5-3f8d334bcd66",
                             "weakness": [
                                 "fire"
                             ]
@@ -785,23 +785,23 @@
                     ],
                     "drops": [
                         {
-                            "item": "azuritedemiatma",
+                            "entity": "b4941121-446e-46f9-aff6-3ae8939a8096",
                             "amount": 1
                         },
                         {
-                            "item": "berserkerssoulshard",
+                            "entity": "0376f218-1972-4e70-af64-63185a4ac2d4",
                             "amount": 1
                         },
                         {
-                            "item": "notesonthecrescentberserker",
+                            "entity": "21801e70-8aca-4ead-995a-4ceefa4958b5",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofblood",
+                            "entity": "a7116a14-2794-41c5-9fe5-e2a691d48382",
                             "amount": 1
                         },
                         {
-                            "item": "occultearringsofmagic",
+                            "entity": "626fadfd-4b66-4bab-b3f3-ad508aa76132",
                             "amount": 1
                         }
                     ],
@@ -809,7 +809,7 @@
                 },
                 {
                     "id": "c4ec8aef-903b-56b3-b125-db2a50ef05ae",
-                    "name": "Trial by Claw",
+                    "entity": "e6a67ec3-2117-4e9f-81da-362864617e59",
                     "positions": [
                         {
                             "x": 13,
@@ -818,7 +818,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Crystal Dragon",
+                            "entity": "6e2cc3cc-6d97-4a11-9fcc-09ace04d2c44",
                             "weakness": [
                                 "wind"
                             ]
@@ -826,15 +826,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "malachitedemiatma",
+                            "entity": "5e1db15f-7ad0-4313-9c53-44e713659bcf",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofblood",
+                            "entity": "86e2a6ea-9048-454c-b947-59b05dcae34f",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofmagic",
+                            "entity": "db7d2037-14c7-43d7-a330-e92f0665ebec",
                             "amount": 1
                         }
                     ],
@@ -842,7 +842,7 @@
                 },
                 {
                     "id": "3f39ff68-72f3-5836-bd67-477bffaad241",
-                    "name": "With Extreme Prejudice",
+                    "entity": "2428f3d9-c869-4442-bb2e-741f82774117",
                     "positions": [
                         {
                             "x": 14.5,
@@ -851,7 +851,7 @@
                     ],
                     "bosses": [
                         {
-                            "name": "Command Urn",
+                            "entity": "fe4ff59d-67ee-4c85-babc-7d0643ff1b42",
                             "weakness": [
                                 "lightning"
                             ]
@@ -859,15 +859,15 @@
                     ],
                     "drops": [
                         {
-                            "item": "realgardemiatma",
+                            "entity": "afedc717-e7c5-4fe9-ae57-c4708790fd79",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofblood",
+                            "entity": "86e2a6ea-9048-454c-b947-59b05dcae34f",
                             "amount": 1
                         },
                         {
-                            "item": "occultbraceletofmagic",
+                            "entity": "db7d2037-14c7-43d7-a330-e92f0665ebec",
                             "amount": 1
                         }
                     ],
@@ -879,7 +879,7 @@
             "items": [
                 {
                     "id": "2952d79e-ba06-5e0a-bc67-53c408337911",
-                    "name": "Animated Doll",
+                    "entity": "2b39133c-71fc-44aa-8ba6-44fb8d6444e7",
                     "positions": [
                         {
                             "x": 36,
@@ -896,7 +896,7 @@
                 },
                 {
                     "id": "11da9836-3814-55dd-9253-15d79c58a69d",
-                    "name": "Arcapetrified Netzach",
+                    "entity": "61d0dab4-da9c-411d-a38b-b5ebc2c09f37",
                     "positions": [
                         {
                             "x": 7,
@@ -915,7 +915,7 @@
                 },
                 {
                     "id": "19611a02-ec0a-58db-bc54-b7eabf20285b",
-                    "name": "Crescent Aetherscab",
+                    "entity": "9a487876-33eb-4a52-92d3-8ccab700b906",
                     "positions": [
                         {
                             "x": 13,
@@ -932,7 +932,7 @@
                 },
                 {
                     "id": "a11c22d1-afd7-5162-a441-d9d891bc1bdd",
-                    "name": "Crescent Apa",
+                    "entity": "8a86bbfd-3db7-4fb5-8215-dbfc74b1ed14",
                     "positions": [
                         {
                             "x": 5,
@@ -949,7 +949,7 @@
                 },
                 {
                     "id": "cf9f3242-c855-5bff-9814-be05048d201e",
-                    "name": "Crescent Armor",
+                    "entity": "5aacbf69-daff-40f7-a1a6-d8301facb9dd",
                     "positions": [
                         {
                             "x": 36,
@@ -969,7 +969,7 @@
                 },
                 {
                     "id": "8dc135d7-3fe3-598c-92ec-702f3a425677",
-                    "name": "Crescent Bachelor",
+                    "entity": "e02a6ba1-0d74-4f3d-b3f9-d54b4973d864",
                     "positions": [
                         {
                             "x": 34,
@@ -986,7 +986,7 @@
                 },
                 {
                     "id": "69211a2c-95d8-52f0-9693-d9634eefb479",
-                    "name": "Crescent Bandersnatch",
+                    "entity": "a7a59b84-8b26-450a-a467-7f8ad7c62c6d",
                     "positions": [
                         {
                             "x": 36,
@@ -1005,7 +1005,7 @@
                 },
                 {
                     "id": "2933a52b-5ea8-5b91-a740-dbbff4b617ba",
-                    "name": "Crescent Blackguard",
+                    "entity": "7fb011bc-0d45-4114-9a6c-8971bc870927",
                     "positions": [
                         {
                             "x": 32,
@@ -1022,7 +1022,7 @@
                 },
                 {
                     "id": "0169a9dd-b83a-5bfd-9788-b312e9b844b9",
-                    "name": "Crescent Blood Demon",
+                    "entity": "fc6c1717-7c11-4079-8cab-2e73ed27285e",
                     "positions": [
                         {
                             "x": 28,
@@ -1039,7 +1039,7 @@
                 },
                 {
                     "id": "8eadf330-af39-5292-96fd-926025212ae6",
-                    "name": "Crescent Bomb",
+                    "entity": "b27972d3-2c98-42ff-8b07-9c7e4fcf25f3",
                     "positions": [
                         {
                             "x": 30.8,
@@ -1059,7 +1059,7 @@
                 },
                 {
                     "id": "a6227484-07fc-5760-ad88-7359a7a43a94",
-                    "name": "Crescent Brachiosaur",
+                    "entity": "8057a911-96ab-4eed-9f5f-7b5c3b4b19a5",
                     "positions": [
                         {
                             "x": 15,
@@ -1076,7 +1076,7 @@
                 },
                 {
                     "id": "c54a7724-c424-51ed-952b-f77e07e37d38",
-                    "name": "Crescent Byblos",
+                    "entity": "51044766-a07b-4c13-a067-ddc779482949",
                     "positions": [
                         {
                             "x": 7,
@@ -1093,7 +1093,7 @@
                 },
                 {
                     "id": "63adfa4e-4658-59cf-aff0-2939bc3f43a0",
-                    "name": "Crescent Caoineag",
+                    "entity": "3e78b562-d830-4a47-8227-4f65b6c72459",
                     "positions": [
                         {
                             "x": 19,
@@ -1115,7 +1115,7 @@
                 },
                 {
                     "id": "619d98e8-d701-5895-b2c6-ad7ff4e8b187",
-                    "name": "Crescent Catoblepas",
+                    "entity": "d215da13-d144-4af7-9185-1da40270291b",
                     "positions": [
                         {
                             "x": 23,
@@ -1132,7 +1132,7 @@
                 },
                 {
                     "id": "c2933e27-decf-5b6a-834c-978a40bcf9ba",
-                    "name": "Crescent Cetus",
+                    "entity": "9ced06d3-6d6f-487f-bf69-f34ced517664",
                     "positions": [
                         {
                             "x": 22,
@@ -1149,7 +1149,7 @@
                 },
                 {
                     "id": "6f06cb12-d097-5d63-89c5-dffa25d9ff8b",
-                    "name": "Crescent Chaochu",
+                    "entity": "e5585ad6-9ce5-4946-86d2-8119d114797f",
                     "positions": [
                         {
                             "x": 32,
@@ -1168,7 +1168,7 @@
                 },
                 {
                     "id": "da1ad18d-21e9-5606-bb77-8d02a36565eb",
-                    "name": "Crescent Chimera",
+                    "entity": "538ebb0d-7e38-4a10-998b-6c28cb6a18f7",
                     "positions": [
                         {
                             "x": 11,
@@ -1187,7 +1187,7 @@
                 },
                 {
                     "id": "2d064abb-0967-5e1e-acc1-ce54fe65a015",
-                    "name": "Crescent Claw",
+                    "entity": "aeeeae4a-fa7d-4820-9e06-1fa3c10b0984",
                     "positions": [
                         {
                             "x": 13,
@@ -1204,7 +1204,7 @@
                 },
                 {
                     "id": "752f831a-599e-5948-abdb-276f656613dd",
-                    "name": "Crescent Collagen",
+                    "entity": "60062853-2f89-4c26-b4ca-224f1cb225b4",
                     "positions": [
                         {
                             "x": 8,
@@ -1221,7 +1221,7 @@
                 },
                 {
                     "id": "3b770888-5002-5dac-9f7c-dc12792a3562",
-                    "name": "Crescent Demon Pawn",
+                    "entity": "c29a0cd7-6b96-42e3-b21c-4ad7a9654e21",
                     "positions": [
                         {
                             "x": 30,
@@ -1238,7 +1238,7 @@
                 },
                 {
                     "id": "62ebe5f7-9536-5bc3-9d59-7238c18901cb",
-                    "name": "Crescent Dhruva",
+                    "entity": "fe73e318-de03-4d26-ad34-420c340c74bf",
                     "positions": [
                         {
                             "x": 38.6,
@@ -1260,7 +1260,7 @@
                 },
                 {
                     "id": "e39fee2f-632e-5b7b-9fd6-da696a213851",
-                    "name": "Crescent Diplocaulus",
+                    "entity": "ec948266-4e24-48ad-b2e5-6c8a0ffea895",
                     "positions": [
                         {
                             "x": 18,
@@ -1277,7 +1277,7 @@
                 },
                 {
                     "id": "1bd7f103-96e5-572e-9973-5cd5ab17d9d7",
-                    "name": "Crescent Dirty Eye",
+                    "entity": "63d290e4-7141-4ad7-aa3e-47398999778f",
                     "positions": [
                         {
                             "x": 32,
@@ -1294,7 +1294,7 @@
                 },
                 {
                     "id": "2366a46b-04e5-5c88-8650-d86f01f2a269",
-                    "name": "Crescent Dullahan",
+                    "entity": "5720c6a2-59b0-4f53-9b23-b2886e497b93",
                     "positions": [
                         {
                             "x": 12,
@@ -1317,7 +1317,7 @@
                 },
                 {
                     "id": "bf5df803-0506-5c32-bc46-bf6855210da6",
-                    "name": "Crescent Echos",
+                    "entity": "8d68f584-19b0-4eb0-b759-6094b2e3c79a",
                     "positions": [
                         {
                             "x": 22,
@@ -1336,7 +1336,7 @@
                 },
                 {
                     "id": "d1ce3e56-1795-5c09-93c0-b33f72a82354",
-                    "name": "Crescent Fan",
+                    "entity": "1d50f7ed-7016-47c1-8f4f-e355afddf053",
                     "positions": [
                         {
                             "x": 36,
@@ -1353,7 +1353,7 @@
                 },
                 {
                     "id": "c8b36911-ad32-5d9d-a403-cdfe763cf2af",
-                    "name": "Crescent Flame",
+                    "entity": "f1d1a760-a6f2-4497-8542-3d480912e3c0",
                     "positions": [
                         {
                             "x": 8,
@@ -1372,7 +1372,7 @@
                 },
                 {
                     "id": "93035e9d-bf41-5d5c-84fb-7a98ee869356",
-                    "name": "Crescent Flying Lizard",
+                    "entity": "801b37bd-dc45-479b-b442-5d6a1c11913b",
                     "positions": [
                         {
                             "x": 37,
@@ -1391,7 +1391,7 @@
                 },
                 {
                     "id": "5639c027-d994-5741-a754-5d91c289f07f",
-                    "name": "Crescent Foobar",
+                    "entity": "3078e6dd-6eae-4051-bbdf-f62a37445433",
                     "positions": [
                         {
                             "x": 7,
@@ -1410,7 +1410,7 @@
                 },
                 {
                     "id": "4902cc74-3cab-50c9-aca1-e5a074b087b5",
-                    "name": "Crescent Foper",
+                    "entity": "89b2f4d8-9b88-4fb2-8825-087e247299e0",
                     "positions": [
                         {
                             "x": 16,
@@ -1427,7 +1427,7 @@
                 },
                 {
                     "id": "59d1a0d7-7109-585b-a4f4-5a7bf32cb5d4",
-                    "name": "Crescent Gaelicat",
+                    "entity": "ce5d45e4-a5ff-49fd-8c5f-4645712c9e9c",
                     "positions": [
                         {
                             "x": 37,
@@ -1446,7 +1446,7 @@
                 },
                 {
                     "id": "29e89935-c90c-5627-8c07-4b8914e75556",
-                    "name": "Crescent Garula",
+                    "entity": "846fa50c-3b68-4d83-a729-f495242dad5d",
                     "positions": [
                         {
                             "x": 33,
@@ -1465,7 +1465,7 @@
                 },
                 {
                     "id": "35632587-540d-5b96-ab27-5802f29c5ebc",
-                    "name": "Crescent Geshunpest",
+                    "entity": "a3414265-0ef4-4725-b286-72dc9dcde78b",
                     "positions": [
                         {
                             "x": 13,
@@ -1487,7 +1487,7 @@
                 },
                 {
                     "id": "d596877e-e42c-58d8-b264-35c8b4e3dacc",
-                    "name": "Crescent Ghost",
+                    "entity": "d1cc4ba6-9caa-4f78-83f9-38e96c0d61ce",
                     "positions": [
                         {
                             "x": 30,
@@ -1509,7 +1509,7 @@
                 },
                 {
                     "id": "33d21433-325e-5e3a-9396-a42dc7a42ba3",
-                    "name": "Crescent Golem",
+                    "entity": "a84038b8-f21d-4b8a-b3ef-a89be3c551e0",
                     "positions": [
                         {
                             "x": 12,
@@ -1526,7 +1526,7 @@
                 },
                 {
                     "id": "6bd63c71-ea0c-5b13-b6b0-3ca1c959591f",
-                    "name": "Crescent Goobbue",
+                    "entity": "5c769c0c-5d69-4033-9c2c-2d74950b4c8b",
                     "positions": [
                         {
                             "x": 20,
@@ -1543,7 +1543,7 @@
                 },
                 {
                     "id": "2527291b-8d25-52fd-a371-c6a006d226a9",
-                    "name": "Crescent Gourmand",
+                    "entity": "0c175764-4c9b-4df6-a778-28bdd64cb7cf",
                     "positions": [
                         {
                             "x": 17,
@@ -1563,7 +1563,7 @@
                 },
                 {
                     "id": "90d33b4a-1dd7-59cd-843f-d59f648c6987",
-                    "name": "Crescent Haagenti",
+                    "entity": "581e680c-142e-4ea9-ac6a-5cb18d6ea59e",
                     "positions": [
                         {
                             "x": 4,
@@ -1582,7 +1582,7 @@
                 },
                 {
                     "id": "63506ee2-d353-5ed3-bc88-47f0539c0e38",
-                    "name": "Crescent Harpuia",
+                    "entity": "f7d26abb-fc9e-45db-a51f-6d0fe5b98be8",
                     "positions": [
                         {
                             "x": 11,
@@ -1599,7 +1599,7 @@
                 },
                 {
                     "id": "8cbfecc2-fa47-566a-b014-849d5fbc2abc",
-                    "name": "Crescent Headstone",
+                    "entity": "974a8ecb-a0b3-40f5-a8ff-ec5fb71b6bc4",
                     "positions": [
                         {
                             "x": 31,
@@ -1616,7 +1616,7 @@
                 },
                 {
                     "id": "cedeee9a-dfa6-5cde-bf40-339339c91dca",
-                    "name": "Crescent Inkstain",
+                    "entity": "a6d80cc9-7199-4962-a63b-ac01f1017405",
                     "positions": [
                         {
                             "x": 13,
@@ -1635,7 +1635,7 @@
                 },
                 {
                     "id": "b4e8948a-8ed8-5bcc-84f5-ef1ec7349ae8",
-                    "name": "Crescent Karlabos",
+                    "entity": "b1352a59-2ce5-4cea-a5e3-98dd64c4f262",
                     "positions": [
                         {
                             "x": 23,
@@ -1652,7 +1652,7 @@
                 },
                 {
                     "id": "a45339d3-f12d-543e-aa03-8886e3775842",
-                    "name": "Crescent Leshy",
+                    "entity": "d66770ab-e5cc-423d-b411-d3198725cb46",
                     "positions": [
                         {
                             "x": 28,
@@ -1669,7 +1669,7 @@
                 },
                 {
                     "id": "76e63c18-bf3b-5ec1-ad2a-db52416c3052",
-                    "name": "Crescent Lion Statant",
+                    "entity": "e6a4e644-fd09-42a8-a144-b76dc72c524c",
                     "positions": [
                         {
                             "x": 37,
@@ -1688,7 +1688,7 @@
                 },
                 {
                     "id": "3ca52e3c-441d-5a9f-a11c-0c91496975e6",
-                    "name": "Crescent Marolith",
+                    "entity": "c069c64d-0c23-41f6-8585-8a343b2378dd",
                     "positions": [
                         {
                             "x": 32,
@@ -1705,7 +1705,7 @@
                 },
                 {
                     "id": "a76b86f3-6f49-58a7-93d6-f843297e7274",
-                    "name": "Crescent Meraevis",
+                    "entity": "3ef01e43-acf4-40d7-aa58-f8ad68e51a74",
                     "positions": [
                         {
                             "x": 25,
@@ -1722,7 +1722,7 @@
                 },
                 {
                     "id": "754390a0-5f4b-553c-a756-17a6742877af",
-                    "name": "Crescent Mimic",
+                    "entity": "6b81be01-e6c8-4820-8a5b-7d0ed3ac5726",
                     "positions": [
                         {
                             "x": 27.6,
@@ -1744,7 +1744,7 @@
                 },
                 {
                     "id": "135c005a-69bc-5c35-8a31-d41b75e6f55f",
-                    "name": "Crescent Monk",
+                    "entity": "2e61942a-7752-44dc-8391-c4590c7cca8d",
                     "positions": [
                         {
                             "x": 27,
@@ -1761,7 +1761,7 @@
                 },
                 {
                     "id": "96ee34d9-e0fc-5317-8f9c-f0f025a2d787",
-                    "name": "Crescent Mousse",
+                    "entity": "f3d25819-bdbd-4b4f-b76b-91f7d15ef7e3",
                     "positions": [
                         {
                             "x": 33.4,
@@ -1783,7 +1783,7 @@
                 },
                 {
                     "id": "720c9a29-add4-58de-8b1c-eeca9b54fd6d",
-                    "name": "Crescent Panther",
+                    "entity": "9690fb80-edf2-4a9a-a855-2f8b5ed53835",
                     "positions": [
                         {
                             "x": 29,
@@ -1800,7 +1800,7 @@
                 },
                 {
                     "id": "5ca3d5bf-81fd-511d-92f2-afd8c03c71bc",
-                    "name": "Crescent Petalodite",
+                    "entity": "693f9ecb-f3e8-4a06-b5c2-b69f4cf2239d",
                     "positions": [
                         {
                             "x": 17,
@@ -1817,7 +1817,7 @@
                 },
                 {
                     "id": "c69b00c6-5998-50c3-b086-683a43191916",
-                    "name": "Crescent Rosebear",
+                    "entity": "2940570e-5e1a-48d5-a30c-60d388948bd1",
                     "positions": [
                         {
                             "x": 16,
@@ -1834,7 +1834,7 @@
                 },
                 {
                     "id": "cb8444e5-1360-51c8-950c-6d4760f29ad6",
-                    "name": "Crescent Satana",
+                    "entity": "685f640c-04e1-44ea-9eea-a00734ccb043",
                     "positions": [
                         {
                             "x": 11,
@@ -1853,7 +1853,7 @@
                 },
                 {
                     "id": "99315734-e614-570d-a3f7-fd9376ec6b79",
-                    "name": "Crescent Snapweed",
+                    "entity": "d2099b86-2706-4b6f-8d9c-13f11b513d3e",
                     "positions": [
                         {
                             "x": 32,
@@ -1870,7 +1870,7 @@
                 },
                 {
                     "id": "411aa027-a8a9-5053-bf4e-dd07f57b4525",
-                    "name": "Crescent Taurus",
+                    "entity": "e31b5d4d-e724-4c8a-8d7d-74e5095f8e85",
                     "positions": [
                         {
                             "x": 13,
@@ -1887,7 +1887,7 @@
                 },
                 {
                     "id": "ae062836-f2f7-5ad1-bb16-486a1a14c9e2",
-                    "name": "Crescent Tormentor",
+                    "entity": "69d0eef3-db0c-461a-bd53-3cf8003d3268",
                     "positions": [
                         {
                             "x": 37,
@@ -1904,7 +1904,7 @@
                 },
                 {
                     "id": "6de570e5-c589-5ee6-9926-57c8fc8d2936",
-                    "name": "Crescent Triceratops",
+                    "entity": "ff75a7c9-2975-4b04-8a55-6a70d917d357",
                     "positions": [
                         {
                             "x": 27,
@@ -1921,7 +1921,7 @@
                 },
                 {
                     "id": "8620e008-f264-5b77-8db1-c271514c3068",
-                    "name": "Crescent Troubadour",
+                    "entity": "75d65cec-802f-4ff1-a4e5-3543d8008851",
                     "positions": [
                         {
                             "x": 30,
@@ -1943,7 +1943,7 @@
                 },
                 {
                     "id": "f3e7938b-d6fa-510b-aa0b-6af112c921af",
-                    "name": "Crescent Uragnite",
+                    "entity": "14e6e63e-918b-45d8-a83b-3208c1b32910",
                     "positions": [
                         {
                             "x": 15,
@@ -1960,7 +1960,7 @@
                 },
                 {
                     "id": "2b610896-7cbc-5137-bd50-f370f81eb54c",
-                    "name": "Crescent Void Viper",
+                    "entity": "21143764-9fe5-499e-a605-b87223b061b8",
                     "positions": [
                         {
                             "x": 14,
@@ -1977,7 +1977,7 @@
                 },
                 {
                     "id": "f8ecbf58-21cd-5e81-a0f0-1b8381486bbb",
-                    "name": "Crescent Zaghnal",
+                    "entity": "cc88e1c4-a369-445d-827d-3a163a2f11d3",
                     "positions": [
                         {
                             "x": 8,
@@ -1994,7 +1994,7 @@
                 },
                 {
                     "id": "8d7ad645-3396-5632-b139-35820a8c6aeb",
-                    "name": "Crescent Zangbeto",
+                    "entity": "f91f5440-6148-4b2f-ae2a-0bab2331d450",
                     "positions": [
                         {
                             "x": 6,
@@ -2013,7 +2013,7 @@
                 },
                 {
                     "id": "9d84d828-b546-5841-80ab-ff0ca7f11b22",
-                    "name": "Crescent Zaratan",
+                    "entity": "9a192073-39dd-412c-a77a-d10dc02fcb05",
                     "positions": [
                         {
                             "x": 7,
@@ -2032,7 +2032,7 @@
                 },
                 {
                     "id": "f421f35c-0729-5ac0-98c3-19fc82a53d5b",
-                    "name": "Crescent Zirnitra",
+                    "entity": "84f0e45c-bd68-4f17-b526-130e5de9e2e5",
                     "positions": [
                         {
                             "x": 9,
@@ -2051,7 +2051,7 @@
                 },
                 {
                     "id": "709ea093-2ae3-56e1-b1ac-8b4a1d2d1cdb",
-                    "name": "Lesser Cry of Havoc",
+                    "entity": "96e6503d-8046-4edf-be46-465e496a490c",
                     "positions": [
                         {
                             "x": 7,
@@ -2070,7 +2070,7 @@
                 },
                 {
                     "id": "72733075-70cc-5977-8ddf-0902efd5b1b4",
-                    "name": "Menacing Dahak",
+                    "entity": "e0349e4f-6415-4810-a08a-aa7c7da32882",
                     "positions": [
                         {
                             "x": 10,
@@ -2087,7 +2087,7 @@
                 },
                 {
                     "id": "be08dd25-4387-5dd9-95ff-8b65151ca127",
-                    "name": "Occult Golem",
+                    "entity": "fb815ba2-5587-4557-b895-e54965ee33e2",
                     "positions": [
                         {
                             "x": 11,
@@ -2104,7 +2104,7 @@
                 },
                 {
                     "id": "dc2354ec-92f1-531e-86c2-e8c670a96303",
-                    "name": "Occult Isleblazer",
+                    "entity": "af7d2a7e-ddcc-4964-8a7a-fc8782f487c4",
                     "positions": [
                         {
                             "x": 9,
@@ -2123,7 +2123,7 @@
                 },
                 {
                     "id": "4ad3dcea-52a6-5577-bf91-3be29160b621",
-                    "name": "Occult Sculpture",
+                    "entity": "7bac4ed2-a23c-41d9-aabf-4e24bd24d3a4",
                     "positions": [
                         {
                             "x": 36,
@@ -2144,7 +2144,7 @@
             "items": [
                 {
                     "id": "896bd816-9d77-5d13-9159-d1306ecdcfea",
-                    "name": "Expedition Base Camp",
+                    "entity": "a7a21a60-d452-4af3-8f2f-800f0c86281d",
                     "positions": [
                         {
                             "x": 38,
@@ -2154,7 +2154,7 @@
                 },
                 {
                     "id": "fd2cd68d-abc7-5a4f-a334-50fef40af688",
-                    "name": "The Wanderer's Haven",
+                    "entity": "def32bdf-43cb-409e-8b1f-5a5490fe57aa",
                     "positions": [
                         {
                             "x": 17.9,
@@ -2164,7 +2164,7 @@
                 },
                 {
                     "id": "ae577c59-3ea8-5f59-bba2-b5f534b41710",
-                    "name": "Crystallized Caverns",
+                    "entity": "f06ab71b-b08b-4a0c-9c0b-198880ab063b",
                     "positions": [
                         {
                             "x": 14.1,
@@ -2174,7 +2174,7 @@
                 },
                 {
                     "id": "28e2bb54-df97-5971-83d3-880ce4a7a49c",
-                    "name": "Stonemarsh",
+                    "entity": "1c38a411-dc4e-4e21-b822-7d05f776dcdc",
                     "positions": [
                         {
                             "x": 13.7,
@@ -2184,7 +2184,7 @@
                 },
                 {
                     "id": "2cd53224-ab7f-5f59-aaae-deb9efe258e2",
-                    "name": "Eldergrowth",
+                    "entity": "1eaea910-5587-4dce-948f-9d2cbb1dd0c5",
                     "positions": [
                         {
                             "x": 27.5,
@@ -2198,7 +2198,7 @@
             "items": [
                 {
                     "id": "79d62f50-0e5e-5497-bd58-2e890cbbcd0c",
-                    "name": "Expedition Base Camp",
+                    "entity": "cc0fb1b8-0e70-4e4f-9cd2-cbcdde61cb94",
                     "positions": [
                         {
                             "x": 38.6,
@@ -2209,7 +2209,7 @@
                 },
                 {
                     "id": "e9a8dfae-62ce-5b8c-9fcf-fbb6ae75152a",
-                    "name": "Lost Citadel",
+                    "entity": "3574137a-1499-4cd8-8703-4ce1d8b733ae",
                     "positions": [
                         {
                             "x": 31.4,
@@ -2220,7 +2220,7 @@
                 },
                 {
                     "id": "11d1fdbf-b068-5471-8e87-b7bcec008157",
-                    "name": "Vanishing Slope",
+                    "entity": "ddd1019f-5485-4f2d-b0bc-7217c835921f",
                     "positions": [
                         {
                             "x": 20.2,
@@ -2231,7 +2231,7 @@
                 },
                 {
                     "id": "06159eea-3f36-5b63-aca4-ea2287951100",
-                    "name": "Heathcliff",
+                    "entity": "274f1dcb-30c6-48d1-a41d-5a5fecc2e0b2",
                     "positions": [
                         {
                             "x": 23.2,
@@ -2242,7 +2242,7 @@
                 },
                 {
                     "id": "96feb1a2-d3fa-595f-b404-54fa3d9a0ec9",
-                    "name": "The Fell Warren",
+                    "entity": "830486ff-4bb1-47fd-b7b7-106b5fa5e328",
                     "positions": [
                         {
                             "x": 10.2,
@@ -2253,7 +2253,7 @@
                 },
                 {
                     "id": "aada7f5a-c900-5032-8e7a-d8cf7585015b",
-                    "name": "Shadowed City",
+                    "entity": "fe94c622-7d3d-4dde-9c26-7da0b432c198",
                     "positions": [
                         {
                             "x": 24.2,
@@ -2264,7 +2264,7 @@
                 },
                 {
                     "id": "0959a3ca-db85-52b6-a93f-8529c74b38a3",
-                    "name": "Eldergrowth",
+                    "entity": "208cdbb1-6d55-4c68-9a7b-9f5e2d72d2fc",
                     "positions": [
                         {
                             "x": 18.5,
@@ -2275,7 +2275,7 @@
                 },
                 {
                     "id": "7b8b7541-f13d-58f5-8258-410a36a93162",
-                    "name": "Abandoned Ascent",
+                    "entity": "27e1a8de-d628-42d2-8b2d-3b1161ab8373",
                     "positions": [
                         {
                             "x": 15.6,
@@ -2286,7 +2286,7 @@
                 },
                 {
                     "id": "dc65e57f-7307-5d27-aab4-60e2a87e3d92",
-                    "name": "The Silent Streets",
+                    "entity": "d1b78227-c84e-48bd-92d4-fd9673a055aa",
                     "positions": [
                         {
                             "x": 36.6,
@@ -2297,7 +2297,7 @@
                 },
                 {
                     "id": "13efa2f1-fe50-51a1-a95a-48a8974ee80b",
-                    "name": "The Ancient Stoneworks",
+                    "entity": "3ee3d4ee-b5eb-46cf-9373-fd672f3fe589",
                     "positions": [
                         {
                             "x": 36,
@@ -2308,7 +2308,7 @@
                 },
                 {
                     "id": "13c949b5-9c2b-5992-bc34-0a538398501b",
-                    "name": "The Wanderer's Haven",
+                    "entity": "6e87eea9-846b-4e87-9096-9650d10fb7cc",
                     "positions": [
                         {
                             "x": 3.8,
@@ -2319,7 +2319,7 @@
                 },
                 {
                     "id": "7527fcf1-8cbb-5ea4-b8ad-28662449638b",
-                    "name": "The Brazier",
+                    "entity": "5ad2e2c6-a184-4231-86c5-25ef09bff4af",
                     "positions": [
                         {
                             "x": 8.7,

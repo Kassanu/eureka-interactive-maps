@@ -1,25 +1,19 @@
 import { z } from 'zod'
+import { EntityRefSchema } from '../entities'
 import { aggroTypes } from '../lookups'
-import { NameSchema, TranslationsSchema } from '../primitives'
-import { ItemBaseSchema, OptionalItemRefSchema } from './base'
+import { EntityItemBaseSchema, OptionalItemRefSchema } from './base'
 import { ConditionsSchema } from './conditions'
 
-// An enemy the map places carries an id and a position; a boss appears wherever its event does,
-// so it carries the traits and none of the placement.
-
-// Traits an enemy has whether or not the map places it.
-export const EnemyTraitsSchema = z.strictObject({
-  name: NameSchema,
-  aggro: aggroTypes.list,
-})
-
+// A boss appears wherever its event does, so it carries no placement. Its `entity` is an entry in
+// the zone's `bosses` group.
 export const BossSchema = z.strictObject({
-  name: NameSchema,
-  i18n: TranslationsSchema.optional(),
+  entity: EntityRefSchema,
 })
 
 // Eureka and the Occult zones grade one by level, Bozja and Zadnor by rank.
-export const EnemySchema = ItemBaseSchema.extend(EnemyTraitsSchema.shape)
+export const EnemySchema = EntityItemBaseSchema.extend({
+  aggro: aggroTypes.list,
+})
 
 // Presence says the enemy adapts; an empty list means nobody has sourced the conditions yet.
 export const AdaptationSchema = z.strictObject({

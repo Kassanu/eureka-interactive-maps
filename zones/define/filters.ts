@@ -1,4 +1,5 @@
-import { dropItems, type Drop } from '../../model/lookups/drops'
+import { dropEntities } from '../../model/entities'
+import type { Drop } from '../../model/items/drops'
 import type { Lookup } from '../../model/lookups'
 import type { Text } from '../../i18n/translate'
 import { levelOverlaps, type Level } from '../../model/primitives'
@@ -268,8 +269,8 @@ export function dropsFilter<Item>(): FilterDefinition<Item> {
   return keysFilter({
     key: 'drops',
     label: t => t('fields.drops'),
-    lookup: dropItems,
-    get: item => get(item)?.map(drop => drop.item),
+    lookup: dropEntities,
+    get: item => get(item)?.map(drop => drop.entity),
     noneLabel: t => t('values.nothing'),
     applicable: item => get(item) !== undefined,
   })

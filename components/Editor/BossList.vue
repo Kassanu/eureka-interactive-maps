@@ -8,7 +8,11 @@
 
     <div v-for="(boss, index) in bosses" :key="index">
       <div class="editor-row">
-        <input v-model="boss.name" class="editor-input" type="text" :title="t('fields.bossName')">
+        <select v-model="boss.entity" class="editor-input" :title="t('fields.bossName')">
+          <option v-for="option in options" :key="option.key" :value="option.key">
+            {{ option.label(t) }}
+          </option>
+        </select>
         <button type="button" class="editor-button editor-remove" @click="bosses.splice(index, 1)">
           <font-awesome-icon icon="times" />
         </button>
@@ -23,20 +27,23 @@
 <script setup lang="ts">
 import FormField from '~/components/Editor/FormField.vue'
 import KeyChecks from '~/components/Editor/KeyChecks.vue'
-import { elements } from '~/model/lookups'
+import { useTranslate } from '~/composables/useTranslate'
+import { elements, type LookupOption } from '~/model/lookups'
 
 interface Boss {
-  name: string
+  entity: string
   weakness?: string[]
 }
 
-// `create` returns a boss in the shape the item's operation records.
+// `create` returns a boss in the shape the item's operation records, or nothing where the zone
+// has no bosses to pick from.
 const props = defineProps<{
   bosses: Boss[]
+  options: readonly LookupOption<string>[]
   create: () => Boss | undefined
 }>()
 
-const { t } = useI18n()
+const t = useTranslate()
 
 function add() {
   const boss = props.create()

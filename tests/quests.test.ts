@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { z } from 'zod'
-import { initialState, itemLabel, zoneMarkers, zones } from '../zones'
+import { initialState, zoneMarkers, zones } from '../zones'
 import type { ZoneItem } from '../zones'
 import { english } from './helpers/messages'
 import { hydrateZone, loadZoneFile } from './helpers/zoneFiles'
@@ -11,12 +11,13 @@ const placed = { id: '0f6b5f5e-3c1a-4b8e-9d2a-7e4c1b2a3d4f', positions: [{ x: 10
 
 const parses = (quest: object) => schema.safeParse({ ...placed, ...quest }).success
 const label = (quest: object) =>
-  itemLabel(quests, schema.parse({ ...placed, ...quest }) as ZoneItem)(english)
+  quests.label!(schema.parse({ ...placed, ...quest }) as never, () => 'unread')(english)
 
 describe('a quest', () => {
   it('carries a level and no name', () => {
     expect(parses({ level: 17 })).toBe(true)
     expect(parses({ name: '17a', level: 17 })).toBe(false)
+    expect(parses({ entity: '4b1d7c2e-8a3f-4e6b-9c0d-1f2a3b4c5d6e', level: 17 })).toBe(false)
   })
 
   it('is at one level', () => {
@@ -49,15 +50,16 @@ describe('an item label', () => {
   const hydatos = hydrateZone('hydatos')
   const section = (key: string) => hydatos.sections.find(candidate => candidate.key === key)!
 
-  it('is the name where the section declares no label', () => {
-    const enemy = section('enemies').items[0]!
-    expect(itemLabel(section('enemies').definition, enemy)(english))
-      .toBe((enemy as { name: string }).name)
+  it('is the entity\'s name where the section declares no label', () => {
+    const enemy = section('enemies').items[0] as { entity: string } & ZoneItem
+    const name = hydatos.entities.get('enemies')!.label(enemy.entity, english)
+    expect(name).not.toBe('')
+    expect(hydatos.labelOf(enemy)(english)).toBe(name)
   })
 
   it('is empty for an item with neither', () => {
     const lockbox = section('lockboxes').items[0]!
-    expect(itemLabel(section('lockboxes').definition, lockbox)(english)).toBe('')
+    expect(hydatos.labelOf(lockbox)(english)).toBe('')
   })
 })
 

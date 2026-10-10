@@ -28,6 +28,8 @@ function entrySchema(gameId: z.ZodType<number | string>): z.ZodType<Entity> {
 
 export const EntitySchema = entrySchema(z.int().positive())
 
+export const EntityRefSchema = z.uuid()
+
 // Item, EventItem and Action ids overlap, so a drop's gameId names its sheet.
 export const DropEntitySchema = entrySchema(z.string().regex(/^(Item|EventItem|Action):[1-9]\d*$/))
 

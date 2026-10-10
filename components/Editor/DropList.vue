@@ -7,8 +7,8 @@
     </template>
 
     <div v-for="(drop, index) in drops" :key="index" class="editor-row">
-      <select v-model="drop.item" class="editor-input">
-        <option v-for="option in dropItems.options()" :key="option.key" :value="option.key">
+      <select v-model="drop.entity" class="editor-input">
+        <option v-for="option in dropEntities.options()" :key="option.key" :value="option.key">
           {{ option.label(t) }}
         </option>
       </select>
@@ -33,16 +33,16 @@
 <script setup lang="ts">
 import FormField from '~/components/Editor/FormField.vue'
 import { useTranslate } from '~/composables/useTranslate'
-import { dropItems, type Drop } from '~/model/lookups/drops'
+import { dropEntities } from '~/model/entities'
+import type { Drop } from '~/model/items/drops'
 
-// What an item drops, naming the shared catalogue rather than repeating an item's text. An
-// unknown rate leaves `percent` off rather than storing a zero that reads as "never drops".
+// An unknown rate leaves `percent` off rather than storing a zero that reads as "never drops".
 const props = defineProps<{ drops: Drop[] }>()
 
 const t = useTranslate()
 
 function add() {
-  props.drops.push({ item: dropItems.keys[0]!, amount: 1 })
+  props.drops.push({ entity: dropEntities.keys[0]!, amount: 1 })
 }
 
 function rate(event: Event, drop: Drop) {

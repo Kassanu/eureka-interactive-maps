@@ -29,3 +29,9 @@ export const english: Translate = Object.assign(
   },
   { locale: 'en' as const }
 )
+
+// A Japanese page whose app text has no translation yet: names resolve in ja, messages in English.
+export const japanese: Translate = Object.assign(
+  (key: string, named?: Record<string, unknown>) => english(key, named),
+  { locale: 'ja' as const }
+)

@@ -1,11 +1,11 @@
 {
-    "schemaVersion": 9,
+    "schemaVersion": 10,
     "sections": {
         "engagements": {
             "items": [
                 {
                     "id": "a96e32e9-5418-466e-9a55-d8882a897b6d",
-                    "name": "On Serpents' Wings",
+                    "entity": "8603e7d4-aa43-4d41-aba3-75671f539d43",
                     "positions": [
                         {
                             "x": 31.5,
@@ -25,7 +25,7 @@
                 },
                 {
                     "id": "ee5a2da1-51dd-4710-9cd0-995a860afe95",
-                    "name": "A Familiar Face",
+                    "entity": "787348ce-6d0d-4cc6-8c44-a3c075ede21d",
                     "positions": [
                         {
                             "x": 28,
@@ -45,7 +45,7 @@
                 },
                 {
                     "id": "140d2b2a-d64e-43ed-b562-210d58013357",
-                    "name": "From Beyond the Grave",
+                    "entity": "fb9cdd63-fbf2-4696-bb8c-febd8e63fa40",
                     "positions": [
                         {
                             "x": 20.3,
@@ -60,7 +60,7 @@
                 },
                 {
                     "id": "b5fe13c2-1614-4936-8dcf-abd0e3e3c358",
-                    "name": "With Diremite and Main",
+                    "entity": "242f8e58-715c-41ce-a086-6bf7122b9678",
                     "positions": [
                         {
                             "x": 17.1,
@@ -75,7 +75,7 @@
                 },
                 {
                     "id": "92e556eb-5396-45e8-ba7f-122b60a27b3a",
-                    "name": "The Broken Blade",
+                    "entity": "5dc3e314-74fc-4d4a-98c3-8d4d319444fc",
                     "positions": [
                         {
                             "x": 26.5,
@@ -90,7 +90,7 @@
                 },
                 {
                     "id": "6d114f73-dbf1-4915-a20f-af51a60cf6b9",
-                    "name": "Here Comes the Cavalry",
+                    "entity": "431d2dc7-4cc7-4011-b50a-84cfef72afd3",
                     "positions": [
                         {
                             "x": 6.5,
@@ -110,7 +110,7 @@
                 },
                 {
                     "id": "c027cd86-a9e9-487f-8aa8-f51b4a0bc82d",
-                    "name": "Never Cry Wolf",
+                    "entity": "ccc16dd5-4d6e-46ee-9f4d-3eaddb55359c",
                     "positions": [
                         {
                             "x": 4.9,
@@ -130,7 +130,7 @@
                 },
                 {
                     "id": "32f1636a-718e-497a-8ea6-3bfb72af6e26",
-                    "name": "There Would Be Blood",
+                    "entity": "ebd41b40-34b2-4c06-a790-8e6506641178",
                     "positions": [
                         {
                             "x": 13.7,
@@ -145,7 +145,7 @@
                 },
                 {
                     "id": "0b8d31d4-a2b3-456b-a509-84d7e0cc9836",
-                    "name": "Time to Burn",
+                    "entity": "86e555a9-e0ce-4363-a4d2-8cbabfb06c0f",
                     "positions": [
                         {
                             "x": 10.5,
@@ -160,7 +160,7 @@
                 },
                 {
                     "id": "4a761e0a-4951-4fda-9a94-6dc1f0d0d950",
-                    "name": "Head of the Snake",
+                    "entity": "c5bbe044-0f06-40e4-9b74-99915fc9b208",
                     "positions": [
                         {
                             "x": 5.3,
@@ -175,7 +175,7 @@
                 },
                 {
                     "id": "bd661714-3a54-4049-9fb0-836f757b25a2",
-                    "name": "Feeling the Burn",
+                    "entity": "9775c44b-b140-4b52-a4be-20e334d78bbb",
                     "positions": [
                         {
                             "x": 16.7,
@@ -190,7 +190,7 @@
                 },
                 {
                     "id": "f56b0ecd-b787-4181-95b4-a8a0f872d573",
-                    "name": "Lean, Mean, Magitek Machines",
+                    "entity": "4c6f215d-8784-46e0-943b-f5a42cea4b6a",
                     "positions": [
                         {
                             "x": 15.3,
@@ -205,7 +205,7 @@
                 },
                 {
                     "id": "5f0d8b7e-1290-4db3-8d36-30050be9088a",
-                    "name": "Looks to Die For",
+                    "entity": "3679f030-c8d0-4bd8-ab01-006099103055",
                     "positions": [
                         {
                             "x": 17.5,
@@ -220,7 +220,7 @@
                 },
                 {
                     "id": "f8952455-dbaa-495f-a737-c0d283d9703f",
-                    "name": "Worn to a Shadow",
+                    "entity": "4b7233e6-c5c1-4fcd-8771-c13ca3fc4e5f",
                     "positions": [
                         {
                             "x": 11.9,
@@ -235,7 +235,7 @@
                 },
                 {
                     "id": "30bb61c3-6eff-42d1-9605-014a8247a987",
-                    "name": "Taking the Lyon's Share",
+                    "entity": "3995f4c8-b97e-4fc0-aaa1-9481e2df747c",
                     "positions": [
                         {
                             "x": 22.5,
@@ -254,7 +254,7 @@
             "items": [
                 {
                     "id": "2d2db340-750a-4c36-89cb-73cc029fb255",
-                    "name": "A Wrench in the Reconnaissance Effort",
+                    "entity": "276ca5cb-9f82-4de8-8f9f-37162cf87efa",
                     "positions": [
                         {
                             "x": 29.4,
@@ -268,7 +268,7 @@
                 },
                 {
                     "id": "acc4ff11-5d6e-4dd1-9ec5-9aaee54fece4",
-                    "name": "An Immoral Dilemma",
+                    "entity": "fd84f200-e055-47d1-9872-b1f4a384ffe5",
                     "positions": [
                         {
                             "x": 22.8,
@@ -282,7 +282,7 @@
                 },
                 {
                     "id": "d05ea007-3922-4102-a004-37aad13398d6",
-                    "name": "Another Pilot Episode",
+                    "entity": "84395f0c-d910-45cf-bec7-87d4287475f3",
                     "positions": [
                         {
                             "x": 28.1,
@@ -296,7 +296,7 @@
                 },
                 {
                     "id": "dcc01fa9-993b-4fce-9a82-c8a2b9f0e88a",
-                    "name": "Breaking the Ice",
+                    "entity": "75db1663-cfe2-44e4-8548-554c684ee4a0",
                     "positions": [
                         {
                             "x": 24.9,
@@ -310,7 +310,7 @@
                 },
                 {
                     "id": "87c2e0d5-0847-4f10-ba80-a037ed41ebd7",
-                    "name": "Deadly Divination",
+                    "entity": "a2a3177b-eaba-4f68-b2a9-014d583a360f",
                     "positions": [
                         {
                             "x": 24.9,
@@ -324,7 +324,7 @@
                 },
                 {
                     "id": "f558a2b7-798d-42be-b2c8-5c3572fa49a7",
-                    "name": "Meet the Puppetmaster",
+                    "entity": "493bba8f-10c2-4497-84f3-557dc9238153",
                     "positions": [
                         {
                             "x": 24.1,
@@ -338,7 +338,7 @@
                 },
                 {
                     "id": "8769a471-1965-44a0-84c1-be76b3ff0fb6",
-                    "name": "Of Beasts and Braggadocio",
+                    "entity": "e9eb0d5f-5df2-4c70-953a-f5eb48bdd0ee",
                     "positions": [
                         {
                             "x": 24.1,
@@ -352,7 +352,7 @@
                 },
                 {
                     "id": "bde6942f-ede8-4519-86ff-8df433ae5d54",
-                    "name": "Parts and Parcel",
+                    "entity": "93f48dfc-f5ff-4b47-a8ea-2bc27d8a9345",
                     "positions": [
                         {
                             "x": 22.8,
@@ -366,7 +366,7 @@
                 },
                 {
                     "id": "17051636-44e8-45c5-9226-201245cbf0cf",
-                    "name": "A Just Pursuit",
+                    "entity": "b2320385-fa94-482e-9d56-4d8829d078df",
                     "positions": [
                         {
                             "x": 11.7,
@@ -380,7 +380,7 @@
                 },
                 {
                     "id": "bf8325c1-f86f-4fb8-8d07-416c9685d6b5",
-                    "name": "An End to Atrocities",
+                    "entity": "09345d2b-0dfb-413e-9f53-f701949d1936",
                     "positions": [
                         {
                             "x": 4.9,
@@ -394,7 +394,7 @@
                 },
                 {
                     "id": "e24896ea-a32a-4a98-9037-ffde7e45eff3",
-                    "name": "Challenge Accepted",
+                    "entity": "0e716731-9880-4bdd-8b25-65948ecf9ed7",
                     "positions": [
                         {
                             "x": 7.2,
@@ -408,7 +408,7 @@
                 },
                 {
                     "id": "284eec3a-b4c9-486c-9271-6b2be67b5bd5",
-                    "name": "Demented Mentor",
+                    "entity": "432ef199-9449-4379-b1dc-2f6a1682c550",
                     "positions": [
                         {
                             "x": 7.2,
@@ -422,7 +422,7 @@
                 },
                 {
                     "id": "f46bac5b-3305-42fb-ae5c-2d6c0806cb9e",
-                    "name": "Sever the Strings",
+                    "entity": "cbb28d42-6028-43db-9820-53bd08e6229f",
                     "positions": [
                         {
                             "x": 11.7,
@@ -436,7 +436,7 @@
                 },
                 {
                     "id": "acf941ae-f508-43e0-84a5-08c5dfb93bb2",
-                    "name": "Supersoldier Rising",
+                    "entity": "8f8de3b6-3539-4a12-a1eb-4d3737505f20",
                     "positions": [
                         {
                             "x": 8.1,
@@ -450,7 +450,7 @@
                 },
                 {
                     "id": "2d5a0354-79ea-4970-ab23-b9a553da316b",
-                    "name": "Tanking Up",
+                    "entity": "33c7108a-25e7-4cbc-84df-20b9cb18f755",
                     "positions": [
                         {
                             "x": 8.1,
@@ -464,7 +464,7 @@
                 },
                 {
                     "id": "db2165a0-7f21-46e9-a288-eed3f09b3dbc",
-                    "name": "Th'uban the Terrible",
+                    "entity": "56e08fd6-119d-4751-82c7-2c229d2c6e51",
                     "positions": [
                         {
                             "x": 8.6,
@@ -478,7 +478,7 @@
                 },
                 {
                     "id": "86cdb3d2-4ec5-48dc-8b15-8bab870d1be5",
-                    "name": "A Relic Unleashed",
+                    "entity": "b1d66ede-c379-4150-a3d5-d577ce87336a",
                     "positions": [
                         {
                             "x": 25.5,
@@ -492,7 +492,7 @@
                 },
                 {
                     "id": "d72aa703-c79d-450c-acf5-7ba8c95da61f",
-                    "name": "Attack of the Machines",
+                    "entity": "b24b9dc7-613c-40ff-9491-4a974295daba",
                     "positions": [
                         {
                             "x": 12.1,
@@ -506,7 +506,7 @@
                 },
                 {
                     "id": "0c3471e5-5e0f-40ea-8bc0-012414e1581c",
-                    "name": "Attack of the Supersoldiers",
+                    "entity": "1de5b276-21ee-4862-b3a7-f4abef2e71d2",
                     "positions": [
                         {
                             "x": 16.7,
@@ -520,7 +520,7 @@
                 },
                 {
                     "id": "57f5038b-0287-42c6-9e26-ede25d4e05d1",
-                    "name": "Hypertuned Havoc",
+                    "entity": "b0a0fe0a-ef1d-4010-b43d-d462aae8920f",
                     "positions": [
                         {
                             "x": 16.7,
@@ -534,7 +534,7 @@
                 },
                 {
                     "id": "c739d1d4-7c37-481b-9a3a-61cc40e03016",
-                    "name": "Mean-spirited",
+                    "entity": "9e3ff88a-3d2a-4412-a3aa-27bf532d8467",
                     "positions": [
                         {
                             "x": 25.5,
@@ -548,7 +548,7 @@
                 },
                 {
                     "id": "54dd7289-2b9d-438e-a5b7-486f880c7853",
-                    "name": "Seeq and You Will Find",
+                    "entity": "8d298a97-9da8-4955-b0e2-82683b926ed8",
                     "positions": [
                         {
                             "x": 20.4,
@@ -562,7 +562,7 @@
                 },
                 {
                     "id": "54d84f9d-5d04-4f58-b8c7-4b291a95776f",
-                    "name": "Still Only Counts as One",
+                    "entity": "34239b82-288e-4570-b6a8-f2ee8b725433",
                     "positions": [
                         {
                             "x": 14.6,
@@ -576,7 +576,7 @@
                 },
                 {
                     "id": "5d1595ea-a0d3-48b3-9253-618ad68e389e",
-                    "name": "The Beasts Are Back",
+                    "entity": "2421275b-baae-4e87-9981-4333e356e41e",
                     "positions": [
                         {
                             "x": 25.5,
@@ -590,7 +590,7 @@
                 },
                 {
                     "id": "2d37dad0-81fe-427e-ad20-ed5cc5d797d9",
-                    "name": "The Student Becalms the Master",
+                    "entity": "33ed1bbb-e6f0-4461-8223-d83a97c90b34",
                     "positions": [
                         {
                             "x": 14.6,
@@ -604,7 +604,7 @@
                 },
                 {
                     "id": "f26fbade-3265-469d-ac99-6ea49c6b6eda",
-                    "name": "When Mages Rage",
+                    "entity": "6127213b-0e44-4538-9be0-98deda037211",
                     "positions": [
                         {
                             "x": 20.4,
@@ -622,7 +622,7 @@
             "items": [
                 {
                     "id": "32b445af-2dd7-4b59-8705-6d75ec1ff1de",
-                    "name": "Lightning Sprite",
+                    "entity": "7e7d4c90-7214-485c-94e3-15f13886e5dc",
                     "positions": [
                         {
                             "x": 30.5,
@@ -642,7 +642,7 @@
                 },
                 {
                     "id": "d50b3b7f-043a-4256-ba1b-1085cd811be8",
-                    "name": "Water Sprite",
+                    "entity": "91049c5f-d334-4d30-a18c-1a6c600db2eb",
                     "positions": [
                         {
                             "x": 31.5,
@@ -662,7 +662,7 @@
                 },
                 {
                     "id": "019df375-7bc8-4450-9bea-1cbf975b1250",
-                    "name": "Ice Sprite",
+                    "entity": "d54db0c3-f911-4553-93eb-6f7c4d5d708f",
                     "positions": [
                         {
                             "x": 21,
@@ -682,7 +682,7 @@
                 },
                 {
                     "id": "9adf192c-2042-4523-b933-c43488aa1a6c",
-                    "name": "Wind Sprite",
+                    "entity": "e29844da-323c-4428-929b-20b6a7f0e114",
                     "positions": [
                         {
                             "x": 15.5,
@@ -702,7 +702,7 @@
                 },
                 {
                     "id": "86913728-0e27-42b0-b3e8-c98e42f722ce",
-                    "name": "Wind Sprite",
+                    "entity": "e29844da-323c-4428-929b-20b6a7f0e114",
                     "positions": [
                         {
                             "x": 7,
@@ -722,7 +722,7 @@
                 },
                 {
                     "id": "e9083a7a-6701-4fcf-9af4-1e464952bd2c",
-                    "name": "Lightning Sprite",
+                    "entity": "7e7d4c90-7214-485c-94e3-15f13886e5dc",
                     "positions": [
                         {
                             "x": 8,
@@ -742,7 +742,7 @@
                 },
                 {
                     "id": "95fd59d0-659c-4d70-a1a8-a75c7018e776",
-                    "name": "Ice Sprite",
+                    "entity": "d54db0c3-f911-4553-93eb-6f7c4d5d708f",
                     "positions": [
                         {
                             "x": 13.2,
@@ -762,7 +762,7 @@
                 },
                 {
                     "id": "c88a9788-faa8-45e9-bb2e-75124d3e5f3d",
-                    "name": "Water Sprite",
+                    "entity": "91049c5f-d334-4d30-a18c-1a6c600db2eb",
                     "positions": [
                         {
                             "x": 4.4,
@@ -782,7 +782,7 @@
                 },
                 {
                     "id": "65408068-2e45-4cc9-9386-5b6ddf1d5942",
-                    "name": "Water Sprite",
+                    "entity": "91049c5f-d334-4d30-a18c-1a6c600db2eb",
                     "positions": [
                         {
                             "x": 5.7,
@@ -802,7 +802,7 @@
                 },
                 {
                     "id": "5d6409ed-f72b-4acf-bcf2-4dec766372ed",
-                    "name": "Lightning Sprite",
+                    "entity": "7e7d4c90-7214-485c-94e3-15f13886e5dc",
                     "positions": [
                         {
                             "x": 11.7,
@@ -822,7 +822,7 @@
                 },
                 {
                     "id": "0b894d47-e38b-418b-acbe-bb657972f4ff",
-                    "name": "Ice Sprite",
+                    "entity": "d54db0c3-f911-4553-93eb-6f7c4d5d708f",
                     "positions": [
                         {
                             "x": 22.8,
@@ -842,7 +842,7 @@
                 },
                 {
                     "id": "5593170e-90e3-47b5-a2c2-eb8a460ab813",
-                    "name": "Wind Sprite",
+                    "entity": "e29844da-323c-4428-929b-20b6a7f0e114",
                     "positions": [
                         {
                             "x": 17.9,
@@ -862,7 +862,7 @@
                 },
                 {
                     "id": "79060e21-0953-4947-9fc7-5508731cea39",
-                    "name": "Vinegaroon Executioner",
+                    "entity": "9b4f3715-f02a-4db4-847b-a007aea776ba",
                     "positions": [
                         {
                             "x": 32.1,
@@ -879,7 +879,7 @@
                 },
                 {
                     "id": "691772e3-23fb-4b93-a821-24b3d1b014a1",
-                    "name": "Anancus",
+                    "entity": "88fd10bc-7393-4ec5-8b76-4ced663b5510",
                     "positions": [
                         {
                             "x": 24.3,
@@ -896,7 +896,7 @@
                 },
                 {
                     "id": "8a42ec05-e4fd-443f-b2a3-966f8819dfd9",
-                    "name": "Stratogryph",
+                    "entity": "8dffc90f-aa4d-4b37-8da2-29ad0d25c0c6",
                     "positions": [
                         {
                             "x": 16.8,
@@ -913,7 +913,7 @@
                 },
                 {
                     "id": "0f0d1d8b-8997-4085-8c08-24707b010e33",
-                    "name": "Earth Eater",
+                    "entity": "e87ade0a-d4b8-413d-a5ab-2cf427b8f242",
                     "positions": [
                         {
                             "x": 12.7,
@@ -930,7 +930,7 @@
                 },
                 {
                     "id": "4b713209-ac95-44b4-adec-dd4b84db1d52",
-                    "name": "Aglaophotis",
+                    "entity": "09891522-5ef6-4a23-aab1-315459876235",
                     "positions": [
                         {
                             "x": 8.8,
@@ -947,7 +947,7 @@
                 },
                 {
                     "id": "b0f596ae-4f4f-492e-8c4e-7f8245cd5475",
-                    "name": "Lord Ochu",
+                    "entity": "8b0f16b1-1dd8-4db7-8ff1-083849c9822d",
                     "positions": [
                         {
                             "x": 4,
@@ -964,7 +964,7 @@
                 },
                 {
                     "id": "489e1ce7-d53d-4f0c-a839-2bb6c3cd3852",
-                    "name": "Glyptodon",
+                    "entity": "56cd0d87-6395-4d87-bd5e-4860218492b3",
                     "positions": [
                         {
                             "x": 12,
@@ -981,7 +981,7 @@
                 },
                 {
                     "id": "f155435c-3733-4924-a4e9-384ac4855b2f",
-                    "name": "Molten Scorpion",
+                    "entity": "c7975a06-5a5f-443a-be5a-0b76a10ca60c",
                     "positions": [
                         {
                             "x": 19.3,
@@ -998,7 +998,7 @@
                 },
                 {
                     "id": "410d5569-0b4b-4867-80ee-e2bb16c3ee58",
-                    "name": "Vapula",
+                    "entity": "84bd830b-f5a6-4019-b439-8dd207920a6a",
                     "positions": [
                         {
                             "x": 20.6,
@@ -1019,7 +1019,7 @@
             "items": [
                 {
                     "id": "46a40b9b-0d39-429d-86fe-492caf7b91a8",
-                    "name": "Camp Vrdelnis",
+                    "entity": "f03ac947-058d-4a9a-9712-105ac9e90cef",
                     "positions": [
                         {
                             "x": 35.1,
@@ -1029,7 +1029,7 @@
                 },
                 {
                     "id": "11c4b1f8-6cdc-4e44-af10-2a53a053c18a",
-                    "name": "Zuprtik Point",
+                    "entity": "f6108572-adbd-4937-be42-7c62a460f2de",
                     "positions": [
                         {
                             "x": 14.5,
@@ -1039,7 +1039,7 @@
                 },
                 {
                     "id": "e648182e-d29a-47fe-bc68-bd8979d066ae",
-                    "name": "Ljeban Point",
+                    "entity": "0cd63394-c4f8-4d2a-b0e6-fbf93a3f12a6",
                     "positions": [
                         {
                             "x": 7.4,
@@ -1049,7 +1049,7 @@
                 },
                 {
                     "id": "d077eac2-b0a5-45fd-95f5-20d2bc8ae1a9",
-                    "name": "Hrmovir Point",
+                    "entity": "a88ad358-4e4b-491a-b620-985b17b1ff2a",
                     "positions": [
                         {
                             "x": 23.7,

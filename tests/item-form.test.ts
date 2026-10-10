@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { z } from 'zod'
 import { createItem, zoneSlugs, zones } from '../zones'
 import type { ZoneItem, ZoneSlug } from '../zones'
-import { dropItems } from '../model/lookups/drops'
+import { dropEntities } from '../model/entities'
 import { weatherTypes } from '../model/lookups'
 
 // The item form builds objects the schemas have to accept: a mutation the moment its checkbox is
@@ -14,9 +14,10 @@ interface Case {
   key: string
   type: string
   schema: z.ZodObject
-  labelled: boolean
   item: ZoneItem
 }
+
+const ENTITY = '6d5c4b3a-2f1e-4d0c-9b8a-7f6e5d4c3b2a'
 
 const cases: Case[] = []
 for (const slug of zoneSlugs) {
@@ -26,14 +27,13 @@ for (const slug of zoneSlugs) {
       key,
       type: section.type,
       schema: section.schema as z.ZodObject,
-      labelled: section.label !== undefined,
       item: createItem(section, { x: 5, y: 5 }),
     })
   }
 }
 
-// A new item is valid apart from a reference it cannot invent, so these check what a form change
-// does to it rather than whether it started perfect.
+// A new item is valid apart from a reference or an entity it cannot invent, so these check what a
+// form change does to it rather than whether it started perfect.
 function complaintsAbout(schema: z.ZodType, item: unknown, field: string): z.core.$ZodIssue[] {
   const parsed = schema.safeParse(item)
   if (parsed.success) return []
@@ -41,27 +41,28 @@ function complaintsAbout(schema: z.ZodType, item: unknown, field: string): z.cor
 }
 
 describe('the fields a form decides to draw', () => {
-  // Every item may carry a name but a quest, whose section labels it from other fields; a mob, an
-  // event and a spell have to. A coffer has none, which is why the panel falls back to its section.
-  it('takes a name on every item, or labels it otherwise, and needs one on the named kinds', () => {
-    let seenRequired = 0
-    let seenUnnamed = 0
-    for (const { key, type, schema, labelled, item } of cases) {
-      if (!('name' in schema.shape)) {
-        expect(labelled, key).toBe(true)
-        seenUnnamed++
+  it('needs an entity on the kinds the game names, and takes no name anywhere', () => {
+    const named = new Set<string>()
+    for (const { key, type, schema, item } of cases) {
+      expect('name' in schema.shape, key).toBe(false)
+      if (!('entity' in schema.shape)) {
+        expect(['enemy', 'event', 'spell'].includes(type), key).toBe(false)
         continue
       }
-      expect(complaintsAbout(schema, { ...item, name: 'Named' }, 'name'), key).toEqual([])
-
-      const unnamed = { ...item } as Record<string, unknown>
-      delete unnamed.name
-      const required = complaintsAbout(schema, unnamed, 'name').length > 0
-      expect(required, key).toBe(['enemy', 'event', 'spell'].includes(type))
-      if (required) seenRequired++
+      expect(complaintsAbout(schema, item, 'entity').length, key).toBeGreaterThan(0)
+      expect(complaintsAbout(schema, { ...item, entity: ENTITY }, 'entity'), key).toEqual([])
+      named.add(key)
     }
-    expect(seenRequired).toBeGreaterThan(0)
-    expect(seenUnnamed).toBeGreaterThan(0)
+    expect([...named].sort()).toEqual([
+      'aethernet',
+      'critical_encounters',
+      'enemies',
+      'engagements',
+      'fates',
+      'skirmishes',
+      'spells',
+      'survey_points',
+    ])
   })
 
   // An item with no mutation does not carry the key at all, so a handler asking the item whether
@@ -116,8 +117,8 @@ describe('ticking a presence checkbox', () => {
   // The form asks the schema whether a boss records a weakness rather than knowing which
   // operation it is looking at, so the two shapes have to stay distinguishable.
   it('makes a boss of whichever shape its own operation records', () => {
-    const withWeakness = { name: 'New boss', weakness: [] }
-    const plain = { name: 'New boss' }
+    const withWeakness = { entity: ENTITY, weakness: [] }
+    const plain = { entity: ENTITY }
     let seenRich = 0
     let seenPlain = 0
 
@@ -139,7 +140,7 @@ describe('adding a row to a list', () => {
   it('adds a drop the schema accepts', () => {
     for (const { key, schema, item } of cases) {
       if (!('drops' in schema.shape)) continue
-      const dropped = { ...item, drops: [{ item: dropItems.keys[0]!, amount: 1 }] }
+      const dropped = { ...item, drops: [{ entity: dropEntities.keys[0]!, amount: 1 }] }
       expect(complaintsAbout(schema, dropped, 'drops'), key).toEqual([])
     }
   })

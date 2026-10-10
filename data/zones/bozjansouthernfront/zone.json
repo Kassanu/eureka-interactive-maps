@@ -1,11 +1,11 @@
 {
-    "schemaVersion": 9,
+    "schemaVersion": 10,
     "sections": {
         "engagements": {
             "items": [
                 {
                     "id": "6f856f96-d516-4932-a36d-7fe06070949a",
-                    "name": "The Baying of the Hound(s)",
+                    "entity": "0ebcbb09-ebf8-4284-9d14-18823d0c0c64",
                     "positions": [
                         {
                             "x": 22,
@@ -20,7 +20,7 @@
                 },
                 {
                     "id": "2d094f75-dbf5-493f-a96b-01d956be2ab1",
-                    "name": "Vigil for the Lost",
+                    "entity": "377ec88a-8abd-4885-8fab-dceeb49d12c1",
                     "positions": [
                         {
                             "x": 27.9,
@@ -40,7 +40,7 @@
                 },
                 {
                     "id": "28c7ca10-9645-4ea1-b162-9d8399f2f6a0",
-                    "name": "Aces High",
+                    "entity": "130a7abb-8e62-4f4b-8e69-9c1e97cd4f74",
                     "positions": [
                         {
                             "x": 31.6,
@@ -55,7 +55,7 @@
                 },
                 {
                     "id": "dbb14450-772c-46f9-b712-b9018fcb42a2",
-                    "name": "The Shadow of Death's Hand",
+                    "entity": "38f32229-7608-4b8c-844e-efa2d7b20900",
                     "positions": [
                         {
                             "x": 35.4,
@@ -70,7 +70,7 @@
                 },
                 {
                     "id": "04dff65f-3716-43d1-91e6-b6545ad9202f",
-                    "name": "Kill It with Fire",
+                    "entity": "27641649-1e6d-4db5-a9e1-1a0814a430b9",
                     "positions": [
                         {
                             "x": 17,
@@ -90,7 +90,7 @@
                 },
                 {
                     "id": "35a3df50-4854-4d2b-bd1a-c050096ea6c4",
-                    "name": "The Final Furlong",
+                    "entity": "7b8e094d-df1f-4fb0-9001-6eb204c3e4d1",
                     "positions": [
                         {
                             "x": 31.5,
@@ -110,7 +110,7 @@
                 },
                 {
                     "id": "1816511b-3ae7-400d-ac09-95f4feb97955",
-                    "name": "The Hunt for Red Choctober",
+                    "entity": "ce498017-206e-4f77-8758-cff0c52994f0",
                     "positions": [
                         {
                             "x": 26.9,
@@ -130,7 +130,7 @@
                 },
                 {
                     "id": "8dc3290d-686f-411e-b8de-95eb0b3f8c1b",
-                    "name": "The Fires of War",
+                    "entity": "5232f812-cc5e-4935-b0b6-b6b117ba6a73",
                     "positions": [
                         {
                             "x": 20.5,
@@ -145,7 +145,7 @@
                 },
                 {
                     "id": "ac7323df-5a1c-40ec-aba0-48ad25a27976",
-                    "name": "Patriot Games",
+                    "entity": "06ff970f-0d9c-48ae-89af-71438c561240",
                     "positions": [
                         {
                             "x": 14.1,
@@ -160,7 +160,7 @@
                 },
                 {
                     "id": "9e9b9e82-d01f-4a16-9f8d-ced60a1acd3a",
-                    "name": "Beast of Man",
+                    "entity": "e417084b-1a6c-45bd-a4f3-0a26580f6a95",
                     "positions": [
                         {
                             "x": 23.2,
@@ -175,7 +175,7 @@
                 },
                 {
                     "id": "b5a003a3-2bd8-4fb0-9255-9ebedb0f2a31",
-                    "name": "Rise of the Robots",
+                    "entity": "dfa27d49-432d-4c22-a4bc-19db7d055e75",
                     "positions": [
                         {
                             "x": 20.7,
@@ -195,7 +195,7 @@
                 },
                 {
                     "id": "a9cfa0a6-9f6b-4dac-bf82-6e4bc30e556b",
-                    "name": "Metal Fox Chaos",
+                    "entity": "840f7793-4093-4bc5-a3ff-4e5500c32b46",
                     "positions": [
                         {
                             "x": 14.2,
@@ -215,7 +215,7 @@
                 },
                 {
                     "id": "350eace7-998d-424b-814a-0ade659616c3",
-                    "name": "And the Flames Went Higher",
+                    "entity": "127273f3-ea57-479f-8fb0-ee6c6585a5e3",
                     "positions": [
                         {
                             "x": 18.7,
@@ -230,7 +230,7 @@
                 },
                 {
                     "id": "ae3b7dd2-84ef-4d88-8895-b7b51284529d",
-                    "name": "Where Strode the Behemoth",
+                    "entity": "df65db20-b0c9-4956-a00a-734fe9c4d7ad",
                     "positions": [
                         {
                             "x": 23.6,
@@ -245,7 +245,7 @@
                 },
                 {
                     "id": "35ef6853-666d-4e89-9798-9baa20a0185c",
-                    "name": "Trampled under Hoof",
+                    "entity": "57bb5704-ae56-4923-afe9-aaa341a4d940",
                     "positions": [
                         {
                             "x": 9.9,
@@ -260,7 +260,7 @@
                 },
                 {
                     "id": "9de3693c-b878-4a6d-b97d-38299bfb4054",
-                    "name": "The Battle of Castrum Lacus Litore",
+                    "entity": "99691e62-0eb6-473b-860a-c936dfeb4f3f",
                     "positions": [
                         {
                             "x": 19.6,
@@ -284,7 +284,7 @@
             "items": [
                 {
                     "id": "14f52f3b-d12d-4f74-a7d4-61d1210374e4",
-                    "name": "Sneak & Spell",
+                    "entity": "2f750d52-3cfa-4aaa-aaec-5faeb101b1cc",
                     "positions": [
                         {
                             "x": 20.2,
@@ -298,7 +298,7 @@
                 },
                 {
                     "id": "fd2fe868-83f6-4c3e-9743-896e2a9a4341",
-                    "name": "The Beasts Must Die",
+                    "entity": "f4952a9b-c3a0-4d80-9a86-bf59c7bf7d9e",
                     "positions": [
                         {
                             "x": 20.2,
@@ -312,7 +312,7 @@
                 },
                 {
                     "id": "a7e77b5d-14a5-4686-8b47-180c4695b2b5",
-                    "name": "None of Them Knew They Were Robots",
+                    "entity": "67d9a241-069d-4589-9093-90442fdc1b29",
                     "positions": [
                         {
                             "x": 24.4,
@@ -326,7 +326,7 @@
                 },
                 {
                     "id": "b63e850f-10aa-43e1-98c6-2942bf28a2a5",
-                    "name": "Unrest for the Wicked",
+                    "entity": "ea318bb8-c9a5-4724-8f14-ea08bb926917",
                     "positions": [
                         {
                             "x": 24.4,
@@ -340,7 +340,7 @@
                 },
                 {
                     "id": "2ab18753-a433-4649-9f9a-1cc73eac4334",
-                    "name": "Brought to Heal",
+                    "entity": "61d81054-ecda-43b3-97cf-0aa28bf50689",
                     "positions": [
                         {
                             "x": 28.6,
@@ -354,7 +354,7 @@
                 },
                 {
                     "id": "f0f5531d-999f-43f7-9171-21e9b1ba93ed",
-                    "name": "Seeq and Destroy",
+                    "entity": "fa2f27d8-6ec4-46ff-a9d0-e8ccce9b69b9",
                     "positions": [
                         {
                             "x": 28.6,
@@ -368,7 +368,7 @@
                 },
                 {
                     "id": "69d572b8-1682-4141-8623-3bbb48737efd",
-                    "name": "Can Carnivorous Plants Bloom Even on a Battlefield?",
+                    "entity": "5e939b57-0d71-4873-a245-efd5c58771aa",
                     "positions": [
                         {
                             "x": 33.6,
@@ -382,7 +382,7 @@
                 },
                 {
                     "id": "debeb8cc-64d7-4475-b1d3-b6bf9300f0fb",
-                    "name": "Conflicting with the First Law",
+                    "entity": "aed4ca8d-d738-4fd2-b1bd-a979ca5e77a9",
                     "positions": [
                         {
                             "x": 33.6,
@@ -396,7 +396,7 @@
                 },
                 {
                     "id": "074e37ef-e316-4e13-9d54-e2560248ef9b",
-                    "name": "All Pets Are Off",
+                    "entity": "a4d3f9bb-64e2-44c4-985e-0e8435750d6c",
                     "positions": [
                         {
                             "x": 17,
@@ -427,7 +427,7 @@
                 },
                 {
                     "id": "701da551-51b4-4447-9be1-1990af101774",
-                    "name": "More Machine Now than Man",
+                    "entity": "462db7db-661d-45f2-92cc-368eac4115ce",
                     "positions": [
                         {
                             "x": 27.9,
@@ -458,7 +458,7 @@
                 },
                 {
                     "id": "f3bbdfa4-432b-4542-9ba6-7e660ec06183",
-                    "name": "Scavengers of Man's Sorrow",
+                    "entity": "1b099cfa-c4e9-44a2-a466-f2b227e8cee6",
                     "positions": [
                         {
                             "x": 25.3,
@@ -472,7 +472,7 @@
                 },
                 {
                     "id": "25338bf2-c4ce-4a5f-8593-4a80f9f39eaf",
-                    "name": "Parts and Recreation",
+                    "entity": "19e151b2-465b-47b1-afad-52bd0acfd964",
                     "positions": [
                         {
                             "x": 25.3,
@@ -486,7 +486,7 @@
                 },
                 {
                     "id": "3ffb302e-77e1-44f3-97f8-0ba3b03743d5",
-                    "name": "The Monster Mash",
+                    "entity": "b259384d-30fa-4828-a194-21e8fe49128c",
                     "positions": [
                         {
                             "x": 30.8,
@@ -500,7 +500,7 @@
                 },
                 {
                     "id": "8c15c907-a432-4447-a8f4-1eb6274b2960",
-                    "name": "Heavy Boots of Lead",
+                    "entity": "cdf0fc28-c953-47e1-b326-e6d53e07bb9e",
                     "positions": [
                         {
                             "x": 30.8,
@@ -514,7 +514,7 @@
                 },
                 {
                     "id": "21c0d479-f797-4702-81cc-b96b64ff8f05",
-                    "name": "The Element of Supplies",
+                    "entity": "616aab36-fe71-4b40-8523-aca9d4229059",
                     "positions": [
                         {
                             "x": 17.6,
@@ -528,7 +528,7 @@
                 },
                 {
                     "id": "cfaafc3d-975b-488b-9f34-f0043940c9ca",
-                    "name": "No Camping Allowed",
+                    "entity": "3b2e4953-5e2f-4f05-a449-7d02553b57ff",
                     "positions": [
                         {
                             "x": 17.6,
@@ -542,7 +542,7 @@
                 },
                 {
                     "id": "6c693117-ce3e-4a5f-89be-6aef2ec2ee0d",
-                    "name": "Help Wanted",
+                    "entity": "f4aaadbc-8ea2-45ce-98e3-80987440150d",
                     "positions": [
                         {
                             "x": 18.1,
@@ -556,7 +556,7 @@
                 },
                 {
                     "id": "a6bda95c-ef76-432b-8a64-496c0250904a",
-                    "name": "Pyromancer Supreme",
+                    "entity": "1c92fcd5-aef0-4e74-aabc-3ed5914151a6",
                     "positions": [
                         {
                             "x": 18.1,
@@ -575,7 +575,7 @@
                 },
                 {
                     "id": "e94f8624-5302-47d9-b40a-3593f99aff66",
-                    "name": "Red (Chocobo) Alert",
+                    "entity": "0018b70d-993e-4f85-ab74-f25c8b6f981d",
                     "positions": [
                         {
                             "x": 26.9,
@@ -602,7 +602,7 @@
                 },
                 {
                     "id": "0f03feb4-71fd-4718-b4d7-5883e9208d6a",
-                    "name": "Unicorn Flakes",
+                    "entity": "e728e8af-d2f9-4fbc-a31e-eb3d58401bb3",
                     "positions": [
                         {
                             "x": 31.5,
@@ -629,7 +629,7 @@
                 },
                 {
                     "id": "0ffd6063-0564-479e-9bc8-efbac36a91c4",
-                    "name": "Demonstrably Demonic",
+                    "entity": "a8b1b62b-8dfb-4a29-b94b-b6ffb88cc07f",
                     "positions": [
                         {
                             "x": 11.2,
@@ -643,7 +643,7 @@
                 },
                 {
                     "id": "9bcfff0f-fee3-49ac-8bf4-da5eddac3282",
-                    "name": "The War Against the Machines",
+                    "entity": "b9c2d65f-03a1-4cb1-ad9a-3526cd13a795",
                     "positions": [
                         {
                             "x": 11.2,
@@ -657,7 +657,7 @@
                 },
                 {
                     "id": "fbb8a392-d682-4be2-9156-41d127c4ae3f",
-                    "name": "Murder Death Kill",
+                    "entity": "5367b9ac-80ec-48d1-a174-8de3b01edc2e",
                     "positions": [
                         {
                             "x": 14,
@@ -676,7 +676,7 @@
                 },
                 {
                     "id": "6bc0c8c7-03e6-465c-bbe2-a8c8f59d355d",
-                    "name": "Let Slip the Dogs of War",
+                    "entity": "dedf73a5-4ac6-4c75-b1db-792291bd032f",
                     "positions": [
                         {
                             "x": 14,
@@ -690,7 +690,7 @@
                 },
                 {
                     "id": "ee6c16cd-a25d-488a-8fab-a852387f0544",
-                    "name": "The Wild Bunch",
+                    "entity": "b6aa7609-b738-479b-9569-9dc25e9a79c7",
                     "positions": [
                         {
                             "x": 20.8,
@@ -704,7 +704,7 @@
                 },
                 {
                     "id": "f7b1a764-915e-4a60-8737-a8711355ced4",
-                    "name": "Supplies Party",
+                    "entity": "e8bbf99c-1e4f-49e3-90ab-23676c17961a",
                     "positions": [
                         {
                             "x": 20.8,
@@ -718,7 +718,7 @@
                 },
                 {
                     "id": "a6cf5c96-9663-434d-a861-d5ab31c4c6e8",
-                    "name": "Desperately Seeking Something",
+                    "entity": "eaca8809-5c77-42b9-897c-a1dc6637912c",
                     "positions": [
                         {
                             "x": 24.4,
@@ -732,7 +732,7 @@
                 },
                 {
                     "id": "9da142fa-f48b-471b-a9cc-70332340099c",
-                    "name": "Waste the Rainbow",
+                    "entity": "5fd24dea-3ee7-45a5-8afd-0469768f09e5",
                     "positions": [
                         {
                             "x": 24.4,
@@ -746,7 +746,7 @@
                 },
                 {
                     "id": "dc60dbe9-3eee-48f9-a0fc-9a8ec21f750b",
-                    "name": "My Family and Other Animals",
+                    "entity": "cddedb9c-e41e-4f70-aa7d-22b3002ed621",
                     "positions": [
                         {
                             "x": 11.3,
@@ -760,7 +760,7 @@
                 },
                 {
                     "id": "a8d79769-58d9-47da-be03-71d968875128",
-                    "name": "I'm a Mechanical Man",
+                    "entity": "15ca1cde-8f29-4fe0-8853-c78b31191110",
                     "positions": [
                         {
                             "x": 20.7,
@@ -774,7 +774,7 @@
                 },
                 {
                     "id": "f45e0dd1-3942-4f9a-9b11-4460baf37571",
-                    "name": "For Absent Friends",
+                    "entity": "dc9805d5-b5fe-46db-aa23-90911e68fe9c",
                     "positions": [
                         {
                             "x": 14.2,
@@ -788,7 +788,7 @@
                 },
                 {
                     "id": "83f30088-e0e1-409f-a69a-df20cbfac568",
-                    "name": "Of Steel and Flame",
+                    "entity": "c73e190d-ee1d-4d75-beb1-9cb5c1b5aa36",
                     "positions": [
                         {
                             "x": 14.2,
@@ -806,7 +806,7 @@
             "items": [
                 {
                     "id": "15592f7b-3970-46d5-a6ac-3beaa5e79a29",
-                    "name": "Bozjan Nepenthes",
+                    "entity": "94bf115e-0604-4ba2-985a-30b838742e6d",
                     "positions": [
                         {
                             "x": 16.2,
@@ -822,12 +822,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofskill",
+                            "entity": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
                             "amount": 1,
                             "percent": 20
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -836,7 +836,7 @@
                 },
                 {
                     "id": "cdbb6219-7dc9-4c13-8532-f6e4a96b9955",
-                    "name": "Bozjan Orobon",
+                    "entity": "3d1da58f-6011-4c58-a43b-c119889d4491",
                     "positions": [
                         {
                             "x": 17.9,
@@ -852,12 +852,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofskill",
+                            "entity": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
                             "amount": 1,
                             "percent": 20
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -866,7 +866,7 @@
                 },
                 {
                     "id": "9d37b614-2642-44b2-896e-64185a4826b3",
-                    "name": "4th Legion Roader",
+                    "entity": "1254d9d2-ab56-42b3-adda-6c941b7a1f7c",
                     "positions": [
                         {
                             "x": 19,
@@ -892,12 +892,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -906,7 +906,7 @@
                 },
                 {
                     "id": "a7360056-1917-4f5c-b8e9-477534079166",
-                    "name": "4th Legion Nimrod",
+                    "entity": "3d5397f2-2655-4bb9-ab76-0867a0e75faf",
                     "positions": [
                         {
                             "x": 19,
@@ -932,12 +932,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -946,7 +946,7 @@
                 },
                 {
                     "id": "e9e95852-5548-4d54-b9db-a5f2ca5267b0",
-                    "name": "4th Legion Slasher",
+                    "entity": "dcf1ebfe-d6c3-4198-8adc-f03f183cdbc9",
                     "positions": [
                         {
                             "x": 19,
@@ -972,12 +972,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -986,7 +986,7 @@
                 },
                 {
                     "id": "2be6d523-3d13-40c5-9da5-0152c2014364",
-                    "name": "4th Legion Death Claw",
+                    "entity": "f74e6992-4684-48d7-81cf-2b063372387f",
                     "positions": [
                         {
                             "x": 19,
@@ -1012,12 +1012,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1026,7 +1026,7 @@
                 },
                 {
                     "id": "0abac2a8-9675-427f-9ffa-46ce340190c4",
-                    "name": "Bozjan Mudpuppy",
+                    "entity": "e8402178-bb8b-4824-bd28-9341a296b2c5",
                     "positions": [
                         {
                             "x": 21.6,
@@ -1042,12 +1042,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofskill",
+                            "entity": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1056,7 +1056,7 @@
                 },
                 {
                     "id": "f23de491-7879-4466-8605-08ccb4696cf5",
-                    "name": "Tideborn Angel",
+                    "entity": "7034d578-7138-49ad-a3ed-ca6c348ff7ed",
                     "positions": [
                         {
                             "x": 20.4,
@@ -1073,7 +1073,7 @@
                 },
                 {
                     "id": "035f507a-c704-4b07-af7d-5cab60aea52c",
-                    "name": "Bozjan Korrigan",
+                    "entity": "b3412f70-63b5-4491-aed5-1369cf864da5",
                     "positions": [
                         {
                             "x": 21.5,
@@ -1089,12 +1089,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofskill",
+                            "entity": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1103,7 +1103,7 @@
                 },
                 {
                     "id": "9610a645-9365-43c2-a287-f65d49874586",
-                    "name": "Bozjan Matamata",
+                    "entity": "6dfdc2df-2fb7-468d-885a-f6a5c194812a",
                     "positions": [
                         {
                             "x": 31.3,
@@ -1119,12 +1119,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofskill",
+                            "entity": "f2d55cb2-4e4c-4d38-807b-e104625e879e",
                             "amount": 3,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1133,7 +1133,7 @@
                 },
                 {
                     "id": "0aa3610f-f5b9-4055-bcf5-d8548e9a03d7",
-                    "name": "Ink Claw",
+                    "entity": "cc3d0da6-36f9-4ddb-a861-452d39e3ae2b",
                     "positions": [
                         {
                             "x": 35,
@@ -1149,12 +1149,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcaution",
+                            "entity": "468e71c2-2a17-4cbf-8f64-ebf083fdbe40",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1168,7 +1168,7 @@
                 },
                 {
                     "id": "f6415c10-ebf5-488b-a9be-5a68774d8786",
-                    "name": "Fern Flower",
+                    "entity": "ae562958-0f76-4518-b87e-cb82cd4f48ee",
                     "positions": [
                         {
                             "x": 26,
@@ -1184,12 +1184,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcaution",
+                            "entity": "468e71c2-2a17-4cbf-8f64-ebf083fdbe40",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1203,7 +1203,7 @@
                 },
                 {
                     "id": "28d1fd33-f290-4ad6-8bf0-ba23f8280d6f",
-                    "name": "Bozjan Doblyn",
+                    "entity": "81598c17-ec32-4410-b44f-1e812bb3a640",
                     "positions": [
                         {
                             "x": 28.5,
@@ -1221,12 +1221,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 10
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1235,7 +1235,7 @@
                 },
                 {
                     "id": "52588d34-a851-4459-ac3d-747c7f558258",
-                    "name": "4th Legion Vanguard",
+                    "entity": "f10e37af-e270-4cb5-b9d7-b2e360470e19",
                     "positions": [
                         {
                             "x": 25.4,
@@ -1269,12 +1269,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 10
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1283,7 +1283,7 @@
                 },
                 {
                     "id": "6d2ca070-a5aa-450a-a9dd-87dfc7f87864",
-                    "name": "4th Legion Avenger",
+                    "entity": "e826e538-9731-4999-90d5-6b268417ecd6",
                     "positions": [
                         {
                             "x": 25.4,
@@ -1317,12 +1317,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1331,7 +1331,7 @@
                 },
                 {
                     "id": "cc250b7d-6c3c-49dd-89a3-d5bbb21bb83a",
-                    "name": "4th Legion Gunship",
+                    "entity": "e979269b-8cce-4d30-9163-4fbbcf8ecccf",
                     "positions": [
                         {
                             "x": 25.4,
@@ -1365,12 +1365,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1379,7 +1379,7 @@
                 },
                 {
                     "id": "d673669f-192d-4f53-84b2-880eff8b3f02",
-                    "name": "Bozjan Bandersnatch",
+                    "entity": "ba77aec0-0236-40ff-8e4a-4ce7afd73fe7",
                     "positions": [
                         {
                             "x": 23.7,
@@ -1397,12 +1397,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 75
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1411,7 +1411,7 @@
                 },
                 {
                     "id": "e08016ba-a099-4c31-b60f-636448388679",
-                    "name": "Bozjan Antlion",
+                    "entity": "dc168fa5-aa43-41ec-b62a-bb18fd63bdb5",
                     "positions": [
                         {
                             "x": 22.5,
@@ -1429,12 +1429,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1443,7 +1443,7 @@
                 },
                 {
                     "id": "7ef598df-0240-4653-b77c-f2e01171651b",
-                    "name": "Bozjan Worm",
+                    "entity": "35ebb30e-f927-4cea-bef8-c69c8f8b0e17",
                     "positions": [
                         {
                             "x": 25.6,
@@ -1461,12 +1461,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1475,7 +1475,7 @@
                 },
                 {
                     "id": "71c93d96-d709-41ad-a821-b501247c69f8",
-                    "name": "Lightning Sprite",
+                    "entity": "cb0162d1-8ede-41b0-9b9d-443d50be7db6",
                     "positions": [
                         {
                             "x": 27,
@@ -1494,12 +1494,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcare",
+                            "entity": "eec92d34-c1fc-462e-b29d-e85ee6545588",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1508,7 +1508,7 @@
                 },
                 {
                     "id": "ca5f5ca2-a19a-4749-8d44-c24b9b24e8b1",
-                    "name": "Viy",
+                    "entity": "5b4c35c8-62a3-49e2-88c9-2035b9d6006a",
                     "positions": [
                         {
                             "x": 28.3,
@@ -1524,12 +1524,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofingenuity",
+                            "entity": "5ea1bcd2-c537-4463-b736-edde3f0a57fc",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1543,7 +1543,7 @@
                 },
                 {
                     "id": "5996911a-e60b-48b2-91e4-0939f87d39a8",
-                    "name": "Bozjan Tormentor",
+                    "entity": "5210c310-8769-4345-8b67-f35d5d94fa80",
                     "positions": [
                         {
                             "x": 28.2,
@@ -1561,12 +1561,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1575,7 +1575,7 @@
                 },
                 {
                     "id": "99b2ab38-927a-4cbd-9076-9b2261e4bbde",
-                    "name": "Psoglav",
+                    "entity": "bcec917c-513c-4a03-acb3-c4cd5fb9fbf5",
                     "positions": [
                         {
                             "x": 32.8,
@@ -1591,12 +1591,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofingenuity",
+                            "entity": "5ea1bcd2-c537-4463-b736-edde3f0a57fc",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1610,7 +1610,7 @@
                 },
                 {
                     "id": "9a8c7130-bd9a-4b55-99b6-9ffd0c3c1b58",
-                    "name": "Red Chocobo",
+                    "entity": "7e496f33-c41e-4110-bd65-184f562d6873",
                     "positions": [
                         {
                             "x": 28.8,
@@ -1628,12 +1628,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1642,7 +1642,7 @@
                 },
                 {
                     "id": "2189feb6-9714-4914-960e-ec5e165a967c",
-                    "name": "Bozjan Sabotender",
+                    "entity": "69e72a79-46a1-4d69-a421-71499270413c",
                     "positions": [
                         {
                             "x": 29.5,
@@ -1660,12 +1660,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 10
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1674,7 +1674,7 @@
                 },
                 {
                     "id": "27f926f9-5f6b-4c08-a601-138333901147",
-                    "name": "Smok",
+                    "entity": "51d040ba-053e-43ed-8042-1663cad4648f",
                     "positions": [
                         {
                             "x": 15.4,
@@ -1690,12 +1690,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofingenuity",
+                            "entity": "5ea1bcd2-c537-4463-b736-edde3f0a57fc",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1709,7 +1709,7 @@
                 },
                 {
                     "id": "d20e2e31-bda8-40e1-9f25-f2e7848f8f5e",
-                    "name": "Bozjan Taipan",
+                    "entity": "e4cfcf76-b1b9-44fc-be09-e8bd612548ab",
                     "positions": [
                         {
                             "x": 15.9,
@@ -1727,12 +1727,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1741,7 +1741,7 @@
                 },
                 {
                     "id": "7bb527e0-2a09-4373-9558-a69dea869178",
-                    "name": "Bozjan Biast",
+                    "entity": "21db9baf-4711-4e61-ba04-a015a7b0914e",
                     "positions": [
                         {
                             "x": 20.2,
@@ -1759,12 +1759,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofawakening",
+                            "entity": "52b37ad4-cdf7-490f-b2b7-85f61809d0b8",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1773,7 +1773,7 @@
                 },
                 {
                     "id": "034c7d02-fba5-4353-81ab-69dc27cc1b54",
-                    "name": "Clingy Clare",
+                    "entity": "aaff951b-4055-4a70-81f2-607ced4fc0c3",
                     "positions": [
                         {
                             "x": 17.6,
@@ -1789,12 +1789,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofviolence",
+                            "entity": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1808,7 +1808,7 @@
                 },
                 {
                     "id": "0e216aa5-501a-4867-a766-9d01c5ae9a4e",
-                    "name": "Bozjan Rider",
+                    "entity": "7ed3b152-f43d-4d1d-8912-55adf4d592ee",
                     "positions": [
                         {
                             "x": 22.4,
@@ -1826,12 +1826,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofviolence",
+                            "entity": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
                             "amount": 5,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1840,7 +1840,7 @@
                 },
                 {
                     "id": "57cb9c07-99da-4e57-964e-0ff9f554b5fe",
-                    "name": "4th Legion Hexadrone",
+                    "entity": "233a3754-950f-4bb9-b5ef-2b0f85d4e1d0",
                     "positions": [
                         {
                             "x": 21,
@@ -1862,12 +1862,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 10
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 10
                         }
@@ -1876,7 +1876,7 @@
                 },
                 {
                     "id": "c96df57c-a3e7-4bc4-b836-84e837736805",
-                    "name": "4th Legion Scorpion",
+                    "entity": "d80ca519-1de3-4da7-bd93-6993b39efba1",
                     "positions": [
                         {
                             "x": 21,
@@ -1898,12 +1898,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1912,7 +1912,7 @@
                 },
                 {
                     "id": "9e2919a3-13e4-4c36-a821-7a2c04123d2e",
-                    "name": "4th Legion Armored Weapon",
+                    "entity": "0248f78e-2727-44c0-b5ad-0906ac3d06e8",
                     "positions": [
                         {
                             "x": 21,
@@ -1934,12 +1934,12 @@
                     "weakness": "magical",
                     "drops": [
                         {
-                            "item": "bozjancluster",
+                            "entity": "1305994a-7892-44b0-a582-c8301e882353",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1948,7 +1948,7 @@
                 },
                 {
                     "id": "37eb5e3f-e81b-452a-97a5-5c667e395de2",
-                    "name": "Bozjan Monitor",
+                    "entity": "552d3df0-aea2-4c2b-8100-cd58a289898d",
                     "positions": [
                         {
                             "x": 21,
@@ -1966,12 +1966,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -1980,7 +1980,7 @@
                 },
                 {
                     "id": "aefa412a-0229-4d20-b7e7-1c77d84f3ba2",
-                    "name": "Bozjan Gravekeeper",
+                    "entity": "e87b8f27-c4f6-45b7-ae65-637cda1f08be",
                     "positions": [
                         {
                             "x": 19.9,
@@ -1998,12 +1998,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofviolence",
+                            "entity": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2012,7 +2012,7 @@
                 },
                 {
                     "id": "1175b7ac-da01-46db-a0d0-44b9a2fb9dff",
-                    "name": "Bozjan Goobbue",
+                    "entity": "a45cddd0-e6d8-4aab-b70d-fe24c44f5a37",
                     "positions": [
                         {
                             "x": 18.9,
@@ -2030,12 +2030,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 75
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2044,7 +2044,7 @@
                 },
                 {
                     "id": "0013f7f8-18e5-4328-afd0-0456a75526e0",
-                    "name": "Bozjan Wadjet",
+                    "entity": "8f9770c7-4bd3-446d-8a0b-ea4b48e978f7",
                     "positions": [
                         {
                             "x": 16.7,
@@ -2062,12 +2062,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 75
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2076,7 +2076,7 @@
                 },
                 {
                     "id": "12c0ea84-8f14-4381-ae43-29abefbaf5ff",
-                    "name": "Bozjan Ochu",
+                    "entity": "9a7364c5-b2f1-4ec3-af82-8ff9d812c688",
                     "positions": [
                         {
                             "x": 12.4,
@@ -2094,12 +2094,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 50
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2108,7 +2108,7 @@
                 },
                 {
                     "id": "5a81eb78-88e6-48df-b87e-5370772280b9",
-                    "name": "Bozjan Snake",
+                    "entity": "78aade7b-b464-46d0-a352-dd7f81eada5a",
                     "positions": [
                         {
                             "x": 12.7,
@@ -2126,12 +2126,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 75
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2140,7 +2140,7 @@
                 },
                 {
                     "id": "7b346690-bb97-4f47-9b6a-d5808501193a",
-                    "name": "Bozjan Phobosuchus",
+                    "entity": "d38ccc34-6aaf-4265-97b4-27c9493534a8",
                     "positions": [
                         {
                             "x": 11.9,
@@ -2158,12 +2158,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2172,7 +2172,7 @@
                 },
                 {
                     "id": "0104b13b-e3ed-4922-9a06-4b57f17b939f",
-                    "name": "Bozjan Ranunculus",
+                    "entity": "70ccfdee-5ad5-4757-8e4b-6ab5f44f3692",
                     "positions": [
                         {
                             "x": 9.6,
@@ -2190,12 +2190,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 25
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2204,7 +2204,7 @@
                 },
                 {
                     "id": "5ae4c405-638e-412f-b6e4-300d9425be08",
-                    "name": "Bozjan Elbst",
+                    "entity": "4e6f03b5-80fa-49b2-b707-5a57b7e86bb4",
                     "positions": [
                         {
                             "x": 9.7,
@@ -2222,12 +2222,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 10
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2236,7 +2236,7 @@
                 },
                 {
                     "id": "df3ac519-9ec2-4c71-b79a-0a325b5c47d4",
-                    "name": "Bozjan Screamer",
+                    "entity": "b2d815f5-4486-4541-bd05-581b2094514d",
                     "positions": [
                         {
                             "x": 11,
@@ -2254,12 +2254,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 10
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2268,7 +2268,7 @@
                 },
                 {
                     "id": "76e7d1cd-b3ba-483f-95a7-f1ee359c8f3d",
-                    "name": "Bozjan Anzu",
+                    "entity": "f7e9ba84-62c5-468b-bbab-62a34921ab72",
                     "positions": [
                         {
                             "x": 21.9,
@@ -2286,12 +2286,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2300,7 +2300,7 @@
                 },
                 {
                     "id": "1a4e2948-1372-4c40-8732-275a7e8dccfe",
-                    "name": "Wind Sprite",
+                    "entity": "6c537db4-da1b-46f6-8db8-eaaa21d02a9a",
                     "positions": [
                         {
                             "x": 22.6,
@@ -2319,12 +2319,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofsupport",
+                            "entity": "4b0bb048-5929-46cb-a4c0-8b18df811548",
                             "amount": 2,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2333,7 +2333,7 @@
                 },
                 {
                     "id": "ebfe5ce6-16c9-4784-91fb-341dbc5f2a00",
-                    "name": "Lightning Sprite",
+                    "entity": "cb0162d1-8ede-41b0-9b9d-443d50be7db6",
                     "positions": [
                         {
                             "x": 12.4,
@@ -2352,12 +2352,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofsupport",
+                            "entity": "4b0bb048-5929-46cb-a4c0-8b18df811548",
                             "amount": 1,
                             "percent": 75
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2366,7 +2366,7 @@
                 },
                 {
                     "id": "008357c3-2dee-4a37-97d0-06ebb3097089",
-                    "name": "Tideborn Angel",
+                    "entity": "7034d578-7138-49ad-a3ed-ca6c348ff7ed",
                     "positions": [
                         {
                             "x": 19,
@@ -2382,12 +2382,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcaution",
+                            "entity": "468e71c2-2a17-4cbf-8f64-ebf083fdbe40",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2401,7 +2401,7 @@
                 },
                 {
                     "id": "5fef34c8-59e5-496f-92a4-3eda6082dfa3",
-                    "name": "Patty",
+                    "entity": "f6bfe9aa-69bc-496a-8909-55a99715408e",
                     "positions": [
                         {
                             "x": 8.4,
@@ -2417,12 +2417,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofviolence",
+                            "entity": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2436,7 +2436,7 @@
                 },
                 {
                     "id": "e50f4590-4810-4d64-96c5-09ccd1d92066",
-                    "name": "Bird of Barathrum",
+                    "entity": "91304f88-7b14-4039-92fc-ef50fba7ce88",
                     "positions": [
                         {
                             "x": 23.6,
@@ -2452,12 +2452,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofviolence",
+                            "entity": "fc3d8010-9a2c-479b-a5d2-d64d00546c5a",
                             "amount": 20,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2471,7 +2471,7 @@
                 },
                 {
                     "id": "d0b31f66-49d2-4758-9c32-bfa7e29bdcf3",
-                    "name": "Earth Sprite",
+                    "entity": "bf89b9d6-09d1-4381-a456-ecb3af8adfda",
                     "positions": [
                         {
                             "x": 25.4,
@@ -2490,12 +2490,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofpreparation",
+                            "entity": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2504,7 +2504,7 @@
                 },
                 {
                     "id": "d1e863d1-e79c-4559-a72f-e3917fd7d94a",
-                    "name": "Water Sprite",
+                    "entity": "052bbeeb-c550-4051-b669-82b3ae5afc1d",
                     "positions": [
                         {
                             "x": 31.7,
@@ -2523,12 +2523,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofpreparation",
+                            "entity": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
                             "amount": 2,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2537,7 +2537,7 @@
                 },
                 {
                     "id": "ab7b26f8-12dc-4c07-be0a-6079f316bdc9",
-                    "name": "Wind Sprite",
+                    "entity": "6c537db4-da1b-46f6-8db8-eaaa21d02a9a",
                     "positions": [
                         {
                             "x": 29.4,
@@ -2556,12 +2556,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofpreparation",
+                            "entity": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2570,7 +2570,7 @@
                 },
                 {
                     "id": "ba881e36-5d53-48d1-802e-633661651f08",
-                    "name": "Lightning Sprite",
+                    "entity": "cb0162d1-8ede-41b0-9b9d-443d50be7db6",
                     "positions": [
                         {
                             "x": 35.4,
@@ -2589,12 +2589,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofpreparation",
+                            "entity": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
                             "amount": 5,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2603,7 +2603,7 @@
                 },
                 {
                     "id": "803c2e52-9000-4464-b72f-02ec27b4247b",
-                    "name": "Water Sprite",
+                    "entity": "052bbeeb-c550-4051-b669-82b3ae5afc1d",
                     "positions": [
                         {
                             "x": 30.2,
@@ -2622,12 +2622,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcare",
+                            "entity": "eec92d34-c1fc-462e-b29d-e85ee6545588",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2636,7 +2636,7 @@
                 },
                 {
                     "id": "238b1566-bca7-4d40-9b0e-bf37bfcdab1d",
-                    "name": "Wind Sprite",
+                    "entity": "6c537db4-da1b-46f6-8db8-eaaa21d02a9a",
                     "positions": [
                         {
                             "x": 21.2,
@@ -2655,12 +2655,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcare",
+                            "entity": "eec92d34-c1fc-462e-b29d-e85ee6545588",
                             "amount": 2,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2669,7 +2669,7 @@
                 },
                 {
                     "id": "cc0921cc-b9dc-4081-a10a-c3ba8cf35fd8",
-                    "name": "Earth Sprite",
+                    "entity": "bf89b9d6-09d1-4381-a456-ecb3af8adfda",
                     "positions": [
                         {
                             "x": 16,
@@ -2688,12 +2688,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcare",
+                            "entity": "eec92d34-c1fc-462e-b29d-e85ee6545588",
                             "amount": 3,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2702,7 +2702,7 @@
                 },
                 {
                     "id": "bd513812-ec28-4af8-944c-20241450f390",
-                    "name": "Water Sprite",
+                    "entity": "052bbeeb-c550-4051-b669-82b3ae5afc1d",
                     "positions": [
                         {
                             "x": 17,
@@ -2721,12 +2721,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofsupport",
+                            "entity": "4b0bb048-5929-46cb-a4c0-8b18df811548",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2735,7 +2735,7 @@
                 },
                 {
                     "id": "6f6c0c7e-9517-45a2-865e-644b10b4efbf",
-                    "name": "Earth Sprite",
+                    "entity": "bf89b9d6-09d1-4381-a456-ecb3af8adfda",
                     "positions": [
                         {
                             "x": 20.6,
@@ -2754,12 +2754,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofsupport",
+                            "entity": "4b0bb048-5929-46cb-a4c0-8b18df811548",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2768,7 +2768,7 @@
                 },
                 {
                     "id": "30f43acd-1d00-4264-a789-f2a9703416c1",
-                    "name": "Bozjan Geshunpest",
+                    "entity": "c0b51a34-bd74-4ff7-947c-df2dc43ca5e1",
                     "positions": [
                         {
                             "x": 24,
@@ -2786,12 +2786,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofpreparation",
+                            "entity": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
                             "amount": 2,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2800,7 +2800,7 @@
                 },
                 {
                     "id": "129c5ae8-08ed-4051-a399-4caf4a5b06ec",
-                    "name": "Bozjan Wraith",
+                    "entity": "dac8479f-c56b-4e0c-b400-149d53766a87",
                     "positions": [
                         {
                             "x": 35.4,
@@ -2818,12 +2818,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofpreparation",
+                            "entity": "c6496518-5d15-4ef6-b9cb-537e0e656e16",
                             "amount": 5,
                             "percent": 100
                         },
                         {
-                            "item": "torturedmemoryofthedying",
+                            "entity": "c847445e-be1e-4d67-9145-d74584c084c4",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2832,7 +2832,7 @@
                 },
                 {
                     "id": "a4e0f2fb-eb55-40ce-bb1f-64cc6268781b",
-                    "name": "Bozjan Wight",
+                    "entity": "d015995a-aa14-4749-8f79-09f1222cf5df",
                     "positions": [
                         {
                             "x": 23.9,
@@ -2850,12 +2850,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcare",
+                            "entity": "eec92d34-c1fc-462e-b29d-e85ee6545588",
                             "amount": 2,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2864,7 +2864,7 @@
                 },
                 {
                     "id": "b20b4138-84be-4036-94dd-a4163ebfa519",
-                    "name": "Bozjan Dullahan",
+                    "entity": "00f30f35-5ffd-4efb-a33c-e298a9aa2894",
                     "positions": [
                         {
                             "x": 32.3,
@@ -2882,12 +2882,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcare",
+                            "entity": "eec92d34-c1fc-462e-b29d-e85ee6545588",
                             "amount": 5,
                             "percent": 100
                         },
                         {
-                            "item": "sorrowfulmemoryofthedying",
+                            "entity": "7b2156a7-6463-43b4-aa47-d0e75428a385",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2896,7 +2896,7 @@
                 },
                 {
                     "id": "1271e70a-8e28-4950-9c21-5fb7da639325",
-                    "name": "Bozjan Doll",
+                    "entity": "b3386a23-3319-4579-ab14-70ac5777cb85",
                     "positions": [
                         {
                             "x": 24,
@@ -2914,12 +2914,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2928,7 +2928,7 @@
                 },
                 {
                     "id": "acce43a0-760f-489e-96c5-b7ed2cedca5c",
-                    "name": "Bozjan Elasmoth",
+                    "entity": "33ee686a-ce4f-45ab-9b2f-ebaf3f0f05f0",
                     "positions": [
                         {
                             "x": 24.8,
@@ -2946,12 +2946,12 @@
                     "weakness": "",
                     "drops": [
                         {
-                            "item": "fragmentofcompassion",
+                            "entity": "a6ba26b0-38e7-43b9-8330-c6905ceabca4",
                             "amount": 1,
                             "percent": 100
                         },
                         {
-                            "item": "harrowingmemoryofthedying",
+                            "entity": "74f3d2f5-93d5-450d-a96e-1edbc0cca6a3",
                             "amount": 1,
                             "percent": 1
                         }
@@ -2964,7 +2964,7 @@
             "items": [
                 {
                     "id": "0726da05-a47f-4e95-aa96-a8706958a797",
-                    "name": "Utya's Aegis",
+                    "entity": "8dec54f3-8913-4d70-80f2-94378c70a459",
                     "positions": [
                         {
                             "x": 14.9,
@@ -2974,7 +2974,7 @@
                 },
                 {
                     "id": "b41d7523-5c19-4489-9fb6-f7b20a430bed",
-                    "name": "Olana's Stand",
+                    "entity": "2ce17378-d1e2-4954-a742-4d702342aebb",
                     "positions": [
                         {
                             "x": 28.6,
@@ -2984,7 +2984,7 @@
                 },
                 {
                     "id": "9edde380-b80f-48e8-b787-b81cce610cae",
-                    "name": "Lunya's Stand",
+                    "entity": "ea912d3d-831b-4cc0-9314-3b2904ba20b1",
                     "positions": [
                         {
                             "x": 13.8,
@@ -2994,7 +2994,7 @@
                 },
                 {
                     "id": "779d083b-4078-4e86-ba6e-159b6a2234ba",
-                    "name": "Camp Steva",
+                    "entity": "208c5a05-708a-47ff-abff-8fea1312cb17",
                     "positions": [
                         {
                             "x": 22.3,
