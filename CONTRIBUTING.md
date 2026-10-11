@@ -57,3 +57,46 @@ Each file holds items and nothing else. What a section is called, what type it i
 Each of those files opens with a `"schemaVersion"` line. It records the shape the file was written against, and the editor fills it in for you every time you Save. Leave it alone: don't delete it, and don't change its number by hand.
 
 If a pull request is rejected because the version is out of date, the data format changed after you downloaded your copy. Open the zone's editor again, redo your change there, and download a fresh file.
+
+## Translations
+
+The site is available in English, Japanese (`ja`), German (`de`) and French (`fr`), the languages the game itself supports. Translations are contributed like any other change: edit the file and open a pull request. Text that has not been translated yet is shown in English.
+
+Please avoid submitting machine translations as they are. The aim is to use the words players actually use when talking about the game.
+
+Text is kept in three places, depending on where it comes from.
+
+### Names from the game
+
+The names of enemies, bosses, FATEs, aethernet and everything else placed on the map are in each zone's `entities.json`, next to its `zone.json` (for example `data/zones/anemos/entities.json`). Drop names are in `data/drops.json`.
+
+These names come directly from the game, in every language. If one is missing, including one the editor does not list, add it to that file in the group it belongs to (`enemies`, `bosses`, `fates` and so on) with only its English name:
+
+```json
+{
+    "name": {
+        "en": "English name here"
+    }
+}
+```
+
+Every new name is checked against the game by hand. Once the change is live on the site, the editor lists it.
+
+### Game terms
+
+Terms such as weather, elements, time of day and enemy families are in `data/terms/`, one file for each kind (`weatherTypes.json`, `elements.json` and so on). Each entry holds every language side by side:
+
+```json
+"snow": {
+    "en": "Snow",
+    "ja": "雪",
+    "de": "Schnee",
+    "fr": "Neige"
+}
+```
+
+To add a translation, or to suggest a better one, add or edit the line for your language.
+
+### Site text
+
+Buttons, headings, labels and page descriptions are in `i18n/locales/`, one file for each language (`ja.json`, `de.json`, `fr.json`). `en.json` holds every line. To translate a line, copy it from `en.json` into the same place in your language's file and replace the English. Leave out any line you have not translated rather than leaving it empty, so the English is shown instead.
