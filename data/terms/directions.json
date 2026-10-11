@@ -1,26 +1,50 @@
 {
     "n": {
-        "en": "North"
+        "en": "North",
+        "ja": "北",
+        "de": "Norden",
+        "fr": "Nord"
     },
     "ne": {
-        "en": "Northeast"
+        "en": "Northeast",
+        "ja": "北東",
+        "de": "Nordosten",
+        "fr": "Nord-est"
     },
     "e": {
-        "en": "East"
+        "en": "East",
+        "ja": "東",
+        "de": "Osten",
+        "fr": "Est"
     },
     "se": {
-        "en": "Southeast"
+        "en": "Southeast",
+        "ja": "南東",
+        "de": "Südosten",
+        "fr": "Sud-est"
     },
     "s": {
-        "en": "South"
+        "en": "South",
+        "ja": "南",
+        "de": "Süden",
+        "fr": "Sud"
     },
     "sw": {
-        "en": "Southwest"
+        "en": "Southwest",
+        "ja": "南西",
+        "de": "Südwesten",
+        "fr": "Sud-ouest"
     },
     "w": {
-        "en": "West"
+        "en": "West",
+        "ja": "西",
+        "de": "Westen",
+        "fr": "Ouest"
     },
     "nw": {
-        "en": "Northwest"
+        "en": "Northwest",
+        "ja": "北西",
+        "de": "Nordwesten",
+        "fr": "Nord-ouest"
     }
 }

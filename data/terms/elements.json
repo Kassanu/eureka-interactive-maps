@@ -1,20 +1,32 @@
 {
     "fire": {
-        "en": "Fire"
+        "en": "Fire",
+        "ja": "火",
+        "de": "Feuer",
+        "fr": "Feu"
     },
     "earth": {
-        "en": "Earth"
+        "en": "Earth",
+        "ja": "土"
     },
     "lightning": {
-        "en": "Lightning"
+        "en": "Lightning",
+        "ja": "雷",
+        "de": "Blitz"
     },
     "water": {
-        "en": "Water"
+        "en": "Water",
+        "ja": "水",
+        "de": "Wasser"
     },
     "wind": {
-        "en": "Wind"
+        "en": "Wind",
+        "ja": "風",
+        "fr": "Vent"
     },
     "ice": {
-        "en": "Ice"
+        "en": "Ice",
+        "ja": "氷",
+        "de": "Eis"
     }
 }

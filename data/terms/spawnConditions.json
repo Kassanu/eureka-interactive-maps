@@ -1,6 +1,9 @@
 {
     "night": {
-        "en": "Night"
+        "en": "Night",
+        "ja": "夜",
+        "de": "Nacht",
+        "fr": "Nuit"
     },
     "clearskies": {
         "en": "Clear Skies",

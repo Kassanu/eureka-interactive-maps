@@ -1,5 +1,24 @@
 {
+  "filters": {
+    "weatherGroup": "Wetter",
+    "skirmishes": "Scharmützel"
+  },
+  "fields": {
+    "level": "Stufe",
+    "knowledgeLevel": "Wissensstufe",
+    "element": "Element",
+    "weather": "Wetter"
+  },
+  "sections": {
+    "fates": "FATEs",
+    "aethernet": "Ätherytennetz",
+    "quests": "Aufträge",
+    "skirmishes": "Scharmützel",
+    "treasureCoffers": "Schatztruhen"
+  },
   "operations": {
+    "eureka": "Das Verbotene Land Eureka",
+    "bozja": "Die Königinnenwache",
     "occult": "Kreszentia"
   },
   "zones": {

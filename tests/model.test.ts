@@ -73,7 +73,7 @@ describe('lookups', () => {
       expect(lookups.ranks.label(key, english), key).not.toContain(field)
     }
     expect(lookups.ranks.label('3', english)).toBe('3')
-    expect(lookups.ranks.label('star', english)).toBe('Star')
+    expect(lookups.ranks.label('star', english)).toBe('★')
   })
 
   it('narrows to a subset and rejects a key outside the domain', () => {
