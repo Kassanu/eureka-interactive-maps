@@ -1,1 +1,31 @@
-{}
+{
+  "operations": {
+    "occult": "Kreszentia"
+  },
+  "zones": {
+    "anemos": {
+      "name": "Eureka Anemos"
+    },
+    "pagos": {
+      "name": "Eureka Pagos"
+    },
+    "pyros": {
+      "name": "Eureka Pyros"
+    },
+    "hydatos": {
+      "name": "Eureka Hydatos"
+    },
+    "bozjansouthernfront": {
+      "name": "Bozja-Südfront"
+    },
+    "zadnor": {
+      "name": "Zadnor-Hochebene"
+    },
+    "south_horn": {
+      "name": "Südliches Kreszentia"
+    },
+    "north_horn": {
+      "name": "Nördliches Kreszentia"
+    }
+  }
+}

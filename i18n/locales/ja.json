@@ -1,1 +1,31 @@
-{}
+{
+  "operations": {
+    "occult": "三日月島"
+  },
+  "zones": {
+    "anemos": {
+      "name": "エウレカ：アネモス帯"
+    },
+    "pagos": {
+      "name": "エウレカ：パゴス帯"
+    },
+    "pyros": {
+      "name": "エウレカ：ピューロス帯"
+    },
+    "hydatos": {
+      "name": "エウレカ：ヒュダトス帯"
+    },
+    "bozjansouthernfront": {
+      "name": "南方ボズヤ戦線"
+    },
+    "zadnor": {
+      "name": "ザトゥノル高原"
+    },
+    "south_horn": {
+      "name": "三日月島南部"
+    },
+    "north_horn": {
+      "name": "三日月島北部"
+    }
+  }
+}

@@ -1,1 +1,31 @@
-{}
+{
+  "operations": {
+    "occult": "Île de Lunule"
+  },
+  "zones": {
+    "anemos": {
+      "name": "Eurêka Anemos"
+    },
+    "pagos": {
+      "name": "Eurêka Pagos"
+    },
+    "pyros": {
+      "name": "Eurêka Pyros"
+    },
+    "hydatos": {
+      "name": "Eurêka Hydatos"
+    },
+    "bozjansouthernfront": {
+      "name": "Front sud de Bozja"
+    },
+    "zadnor": {
+      "name": "Hauts plateaux de Zadnor"
+    },
+    "south_horn": {
+      "name": "Île de Lunule méridionale"
+    },
+    "north_horn": {
+      "name": "Île de Lunule septentrionale"
+    }
+  }
+}

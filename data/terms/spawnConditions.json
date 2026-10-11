@@ -3,15 +3,27 @@
         "en": "Night"
     },
     "clearskies": {
-        "en": "Clear Skies"
+        "en": "Clear Skies",
+        "ja": "快晴",
+        "de": "Klar",
+        "fr": "Dégagé"
     },
     "clouds": {
-        "en": "Clouds"
+        "en": "Clouds",
+        "ja": "曇り",
+        "de": "Wolkig",
+        "fr": "Couvert"
     },
     "atmosphericphantasms": {
-        "en": "Atmospheric Phantasms"
+        "en": "Atmospheric Phantasms",
+        "ja": "幻怪",
+        "de": "Phantasmagorien",
+        "fr": "Fantasmes"
     },
     "rain": {
-        "en": "Rain"
+        "en": "Rain",
+        "ja": "雨",
+        "de": "Regnerisch",
+        "fr": "Pluie"
     }
 }

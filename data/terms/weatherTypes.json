@@ -1,32 +1,62 @@
 {
     "fairskies": {
-        "en": "Fair Skies"
+        "en": "Fair Skies",
+        "ja": "晴れ",
+        "de": "Heiter",
+        "fr": "Clair"
     },
     "heatwave": {
-        "en": "Heat Wave"
+        "en": "Heat Waves",
+        "ja": "灼熱波",
+        "de": "Gluthitze",
+        "fr": "Torride"
     },
     "snow": {
-        "en": "Snow"
+        "en": "Snow",
+        "ja": "雪",
+        "de": "Schnee",
+        "fr": "Neige"
     },
     "blizzard": {
-        "en": "Blizzard"
+        "en": "Blizzards",
+        "ja": "吹雪",
+        "de": "Schneesturm",
+        "fr": "Blizzard"
     },
     "showers": {
-        "en": "Showers"
+        "en": "Showers",
+        "ja": "暴雨",
+        "de": "Wolkenbruch",
+        "fr": "Pluie torrentielle"
     },
     "thunderstorm": {
-        "en": "Thunderstorm"
+        "en": "Thunderstorms",
+        "ja": "雷雨",
+        "de": "Gewitter",
+        "fr": "Orages violents"
     },
     "fog": {
-        "en": "Fog"
+        "en": "Fog",
+        "ja": "霧",
+        "de": "Neblig",
+        "fr": "Brouillard"
     },
     "umbralwind": {
-        "en": "Umbral Wind"
+        "en": "Umbral Wind",
+        "ja": "霊風",
+        "de": "Schattenwind",
+        "fr": "Vent ombral"
     },
     "gales": {
-        "en": "Gales"
+        "en": "Gales",
+        "ja": "暴風",
+        "de": "Stürmisch",
+        "fr": "Vents violents"
     },
     "gloom": {
-        "en": "Gloom"
+        "en": "Gloom",
+        "ja": "妖霧",
+        "de": "Unheimlich",
+        "fr": "Nébuleux"
     }
 }
