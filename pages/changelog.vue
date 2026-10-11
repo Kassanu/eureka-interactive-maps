@@ -2,7 +2,7 @@
   <div id="changelog" class="base-page flex flex-col flex-grow">
     <div class="flex-grow flex justify-center">
       <div class="flex flex-col w-full max-w-2xl px-4 py-8">
-        <h1 class="text-2xl text-white mb-6">Changelog</h1>
+        <h1 class="text-2xl text-white mb-6">{{ t('changelog.heading') }}</h1>
         <div
           v-for="entry in entries"
           :key="entry.version"
@@ -22,6 +22,5 @@
 <script setup lang="ts">
 import entries from '~/assets/changelog.json'
 
-// The path is listed in ENGLISH_ONLY_PATHS too, and the two have to agree.
-defineI18nRoute({ locales: ['en'] })
+const { t } = useI18n()
 </script>

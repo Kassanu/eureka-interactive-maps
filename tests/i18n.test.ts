@@ -4,7 +4,8 @@ import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES, TRANSLATED_LOCALE_CODES } from '../i18n/locales'
 import { flatten, type Messages } from '../i18n/messages'
-import { ENGLISH_ONLY_PATHS, localizedRoutes, siteRoutes } from '../i18n/routes'
+import { entryRedirect, localizedPath, localizedRoutes, switchedPath } from '../i18n/routes'
+import { CONTENT_PATHS, EDITOR_PATHS } from '../site'
 import { zoneSlugs } from '../zones'
 
 const localesDir = fileURLToPath(new URL('../i18n/locales', import.meta.url))
@@ -170,19 +171,78 @@ describe('localizedRoutes', () => {
   })
 })
 
-describe('siteRoutes', () => {
-  const routes = siteRoutes(['/', '/map/anemos'])
+describe('switchedPath', () => {
+  const sitePaths = [...CONTENT_PATHS, ...EDITOR_PATHS]
+  const prerendered = new Set(localizedRoutes(sitePaths))
 
-  it('prerenders each English-only path once and under no locale prefix', () => {
-    for (const path of ENGLISH_ONLY_PATHS) {
-      expect(routes.filter(route => route === path), path).toEqual([path])
-      for (const code of LOCALE_CODES) {
-        expect(routes, path).not.toContain(`/${code}${path}`)
-      }
+  it('swaps the locale prefix and keeps the rest of the path', () => {
+    expect(switchedPath('/map/anemos', 'de')).toBe('/de/map/anemos')
+    expect(switchedPath('/de/map/anemos', 'en')).toBe('/map/anemos')
+    expect(switchedPath('/de/map/anemos', 'ja')).toBe('/ja/map/anemos')
+    expect(switchedPath('/fr/map/pagos/edit', 'de')).toBe('/de/map/pagos/edit')
+    expect(switchedPath('/contribute', 'fr')).toBe('/fr/contribute')
+    expect(switchedPath('/fr/changelog', 'en')).toBe('/changelog')
+  })
+
+  it('switches the root without leaving a trailing slash', () => {
+    expect(switchedPath('/', 'de')).toBe('/de')
+    expect(switchedPath('/de', 'en')).toBe('/')
+    expect(switchedPath('/de', 'fr')).toBe('/fr')
+    expect(switchedPath('/de/', 'en')).toBe('/')
+  })
+
+  it('leaves a page where it is when asked for its own locale', () => {
+    expect(switchedPath('/ja/map/anemos', 'ja')).toBe('/ja/map/anemos')
+    expect(switchedPath('/map/anemos', 'en')).toBe('/map/anemos')
+  })
+
+  it('takes every page in every locale to the same page in every other', () => {
+    const wrong = sitePaths.flatMap(path =>
+      LOCALE_CODES.flatMap(from =>
+        LOCALE_CODES.map(to => ({ from: localizedPath(path, from), to }))
+          .filter(({ from, to }) => switchedPath(from, to) !== localizedPath(path, to))
+          .map(({ from, to }) => `${from} to ${to} gave ${switchedPath(from, to)}`)
+      )
+    )
+    expect(wrong).toEqual([])
+  })
+
+  it('never sends a visitor to a page the build did not generate', () => {
+    const missing = [...prerendered]
+      .flatMap(path => LOCALE_CODES.map(code => switchedPath(path, code)))
+      .filter(target => !prerendered.has(target))
+    expect(missing).toEqual([])
+  })
+
+  it('prerenders contribute and changelog in every locale', () => {
+    for (const code of TRANSLATED_LOCALE_CODES) {
+      expect(prerendered).toContain(`/${code}/contribute`)
+      expect(prerendered).toContain(`/${code}/changelog`)
+    }
+  })
+})
+
+describe('entryRedirect', () => {
+  it('sends the bare root to the stored locale', () => {
+    for (const code of TRANSLATED_LOCALE_CODES) {
+      expect(entryRedirect('/', code)).toBe(`/${code}`)
     }
   })
 
-  it('still expands the localized paths', () => {
-    expect(routes).toContain('/de/map/anemos')
+  it('leaves the root alone with no choice, the default, or a code the site does not declare', () => {
+    expect(entryRedirect('/', undefined)).toBeUndefined()
+    expect(entryRedirect('/', null)).toBeUndefined()
+    expect(entryRedirect('/', DEFAULT_LOCALE)).toBeUndefined()
+    expect(entryRedirect('/', 'xx')).toBeUndefined()
+    expect(entryRedirect('/', '')).toBeUndefined()
+  })
+
+  it('never redirects a page other than the root', () => {
+    const paths = localizedRoutes([...CONTENT_PATHS, ...EDITOR_PATHS]).filter(path => path !== '/')
+    for (const path of paths) {
+      for (const code of TRANSLATED_LOCALE_CODES) {
+        expect(entryRedirect(path, code), `${path} with ${code}`).toBeUndefined()
+      }
+    }
   })
 })

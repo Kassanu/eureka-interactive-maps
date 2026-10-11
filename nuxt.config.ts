@@ -1,21 +1,12 @@
 import { DEFAULT_LOCALE, LOCALES } from './i18n/locales'
-import { ENGLISH_ONLY_PATHS, siteRoutes } from './i18n/routes'
-import { SITE_NAME, SITE_ORIGIN } from './site'
-import { zoneSlugs } from './zones'
-
-// The map routes are dynamic, so the crawler cannot find them by shape. Naming them from the
-// registry is what keeps a zone added there from shipping unprerendered.
-const contentPaths = ['/', ...zoneSlugs.map(slug => `/map/${slug}`)]
-
-// Prerendered like everything else, and deliberately absent from the sitemap: the editor is how a
-// contributor produces a file, not a page to send a searcher to.
-const editorPaths = zoneSlugs.map(slug => `/map/${slug}/edit`)
+import { localizedRoutes } from './i18n/routes'
+import { CONTENT_PATHS, EDITOR_PATHS, SITE_NAME, SITE_ORIGIN } from './site'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      routes: siteRoutes([...contentPaths, ...editorPaths]),
+      routes: localizedRoutes([...CONTENT_PATHS, ...EDITOR_PATHS]),
     },
   },
   vite: {
@@ -58,12 +49,9 @@ export default defineNuxtConfig({
     sitemaps: false,
     // The sitemap is its own list rather than a filter of the prerender list, so the editor routes
     // never arrive to be excluded again. `_i18nTransform` expands a path across the locale set with
-    // the alternates the i18n integration builds; the English-only paths take no prefix.
+    // the alternates the i18n integration builds.
     excludeAppSources: true,
-    urls: [
-      ...contentPaths.map(loc => ({ loc, _i18nTransform: true })),
-      ...ENGLISH_ONLY_PATHS.map(loc => ({ loc })),
-    ],
+    urls: CONTENT_PATHS.map(loc => ({ loc, _i18nTransform: true })),
     // Every column the styled view offers is one this sitemap deliberately does not emit.
     xsl: false,
   },
