@@ -25,8 +25,7 @@ export interface SectionDefinition<S extends z.ZodType> {
   blank: () => Blank<z.infer<S>>
 }
 
-// A new item before it has an id, a place on the map or an entity. Save refuses it until it is
-// given an entity.
+// A new item before it has an id, a place on the map or the entity picked for it.
 export type Blank<Item> = Omit<Item, 'id' | 'positions' | 'entity'>
 
 // A section with its item type erased. defineSection enforces the typing on the way in; reading

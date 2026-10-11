@@ -8,7 +8,7 @@ import {
   parseEntities,
   parseSections,
   referencedIds,
-  shapeOf,
+  takesEntity,
   zoneFileText,
   zones,
 } from '../zones'
@@ -39,23 +39,18 @@ describe.each(loaded.map(zone => [zone.definition.slug as ZoneSlug, zone] as con
     expect(zoneFileText(file!)).toBe(readFileSync(zoneFilePath(slug), 'utf8'))
   })
 
-  it('makes a new item of every section that its own schema accepts once its entity is picked', () => {
+  it('makes a new item of every section that its own schema accepts, given its pick where it takes one', () => {
     for (const [key, section] of Object.entries(definition.sections)) {
-      const item = createItem(section, { x: 12, y: 34 })
+      const entity = takesEntity(section) ? zone.entities.get(key)?.keys[0] : undefined
+      if (takesEntity(section)) expect(entity, key).toBeDefined()
+      const item = createItem(section, { x: 12, y: 34 }, entity)
       const schema = section.schema as z.ZodType
 
       expect(item.id, key).toMatch(/^[0-9a-f-]{36}$/)
       expect(item.positions, key).toEqual([{ x: 12, y: 34 }])
-      expect('entity' in item, key).toBe(false)
+      expect('entity' in item ? item.entity : undefined, key).toBe(entity)
 
-      const takesEntity = 'entity' in shapeOf(schema)
-      const first = zone.entities.get(key)?.keys[0]
-      if (takesEntity) {
-        expect(first, key).toBeDefined()
-        expect(schema.safeParse(item).success, key).toBe(false)
-      }
-
-      const parsed = schema.safeParse(takesEntity ? { ...item, entity: first } : item)
+      const parsed = schema.safeParse(item)
       // A field naming another item starts empty, which is the one thing a new item may fail on.
       const blocking = parsed.success
         ? []
@@ -137,16 +132,17 @@ describe('a save that would not load back', () => {
     expect(issues[0]?.message).toContain(UNHELD)
   })
 
-  it('names a new item until its entity is picked, then writes it', () => {
+  it('names an entity item that has none, and writes one made with its pick', () => {
     const { definition, sections, groups, index } = editable('anemos')
-    const item = createItem(definition.sections.enemies!, { x: 20, y: 20 })
-    sections.get('enemies')!.push(item)
+    const enemies = sections.get('enemies')!
+    const bare = createItem(definition.sections.enemies!, { x: 20, y: 20 })
+    enemies.push(bare)
 
-    const unpicked = encodeZone(index(), ZONE_SCHEMA_VERSION)
-    expect(unpicked.file).toBeNull()
-    expect(unpicked.issues.map(issue => issue.itemId)).toEqual([item.id])
+    const refused = encodeZone(index(), ZONE_SCHEMA_VERSION)
+    expect(refused.file).toBeNull()
+    expect(refused.issues.map(issue => issue.itemId)).toEqual([bare.id])
 
-    Object.assign(item, { entity: groups.get('enemies')!.keys[0] })
+    enemies.splice(-1, 1, createItem(definition.sections.enemies!, { x: 20, y: 20 }, groups.get('enemies')!.keys[0]))
     const picked = encodeZone(index(), ZONE_SCHEMA_VERSION)
     expect(picked.issues).toEqual([])
     const written = picked.file!.sections.enemies!.items!.at(-1) as Record<string, unknown>

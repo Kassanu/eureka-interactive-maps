@@ -6,7 +6,6 @@
 
     <FormField v-if="'entity' in shape" :label="t('fields.name')">
       <select :value="'entity' in item ? item.entity : ''" class="editor-input" @change="setEntity">
-        <option v-if="!('entity' in item)" value="" disabled />
         <option v-for="option in entityOptions" :key="option.key" :value="option.key">
           {{ option.label(t) }}
         </option>
@@ -180,7 +179,12 @@
       </select>
     </FormField>
 
-    <BossList v-if="'bosses' in item" :bosses="item.bosses" :options="bossOptions" :create="createBoss" />
+    <BossList
+      v-if="'bosses' in item && (bossOptions.length || item.bosses.length)"
+      :bosses="item.bosses"
+      :options="bossOptions"
+      :create="createBoss"
+    />
 
     <template v-if="'mutation' in shape">
       <FormField :label="t('fields.mutation')">
