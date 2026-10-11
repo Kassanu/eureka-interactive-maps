@@ -10,6 +10,7 @@
       :maximum-zoom="grid.maximumZoom"
       :positions="markers"
       positions-id-key="id"
+      :canvas-style="canvasStyle"
       @click="closePanel"
       @clicked-element="openPanel"
     />
@@ -43,6 +44,7 @@ import ItemDetails from '~/components/Viewer/ItemDetails.vue'
 import ItemInformation from '~/components/Viewer/ItemInformation.vue'
 import { useTranslate } from '~/composables/useTranslate'
 import { useZone } from '~/composables/useZone'
+import { canvasStyleFor } from '~/i18n/fonts'
 import {
   initialState,
   zoneFor,
@@ -57,6 +59,7 @@ const props = defineProps<{ slug: ZoneSlug }>()
 const t = useTranslate()
 const { zone, image } = useZone(props.slug)
 const grid = zoneFor(props.slug).map.grid
+const canvasStyle = computed(() => canvasStyleFor(t.locale))
 
 const state = ref<FilterState | null>(null)
 watch(zone, loaded => { state.value = loaded ? initialState(loaded) : null }, { immediate: true })
