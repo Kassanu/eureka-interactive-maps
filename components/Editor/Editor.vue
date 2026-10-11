@@ -19,6 +19,7 @@
       :maximum-zoom="grid.maximumZoom"
       :positions="markers"
       positions-id-key="id"
+      :canvas-style="canvasStyle"
       @click="onCanvasClick"
       @clicked-element="reveal"
     />
@@ -31,6 +32,7 @@ import { EurekaCanvas } from 'eureka-canvas'
 import EditorPanel from '~/components/Editor/EditorPanel.vue'
 import { useTranslate } from '~/composables/useTranslate'
 import { editorKey, useZoneEditor } from '~/composables/useZoneEditor'
+import { canvasStyleFor } from '~/i18n/fonts'
 import { zoneFor, zoneMarkers, type Marker, type ZoneSlug } from '~/zones'
 
 const props = defineProps<{ slug: ZoneSlug }>()
@@ -38,6 +40,7 @@ const props = defineProps<{ slug: ZoneSlug }>()
 const t = useTranslate()
 const editor = useZoneEditor(props.slug)
 const grid = zoneFor(props.slug).map.grid
+const canvasStyle = computed(() => canvasStyleFor(t.locale))
 provide(editorKey, editor)
 
 const bannerText = computed(() => {
