@@ -117,6 +117,16 @@ describe('reading a zone\'s entity file', () => {
     expect([...groups.keys()]).toEqual(['enemies'])
   })
 
+  it('reports a group for a section whose items name no entity, and builds no lookup for it', () => {
+    const { groups, issues } = read({ lockboxes: [], quests: [], enemies: [entry({})] })
+    expect(issues.map(issue => issue.section)).toEqual(['entities.lockboxes', 'entities.quests'])
+    expect([...groups.keys()]).toEqual(['enemies'])
+  })
+
+  it('reports a group named after a property every object has', () => {
+    expect(read({ constructor: [] }).issues.map(issue => issue.section)).toEqual(['entities.constructor'])
+  })
+
   it('takes a bosses group in a zone with bosses or not', () => {
     expect(read({ bosses: [entry({})] }).issues).toEqual([])
   })
@@ -163,10 +173,15 @@ describe('the shipped entities', () => {
     expect(enemies.label(ameretat, translator('ja'))).toBe('アムルタート')
   })
 
+  const drops = JSON.parse(readFileSync(join(process.cwd(), 'data/drops.json'), 'utf8')) as {
+    drops: unknown[]
+  }
+
+  it('hold the drops under one key and nothing beside it', () => {
+    expect(Object.keys(drops), 'data/drops.json holds "drops" and nothing else').toEqual(['drops'])
+  })
+
   it('read every drop with no issue', () => {
-    const drops = JSON.parse(readFileSync(join(process.cwd(), 'data/drops.json'), 'utf8')) as {
-      drops: unknown[]
-    }
     const parsed = drops.drops.map(value => DropEntitySchema.safeParse(value))
     expect(parsed.filter(result => !result.success)).toEqual([])
     expect(entityGroupIssues(parsed.map(result => result.data!))).toEqual([])
