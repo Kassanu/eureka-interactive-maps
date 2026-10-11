@@ -18,6 +18,7 @@ import {
   indexZone,
   parseEntities,
   parseSections,
+  takesEntity,
   zoneFileText,
   zoneFor,
   type LoadIssue,
@@ -31,9 +32,10 @@ import {
 // The editor's state. Items are parsed once and edited in place, so a form binds to the field it
 // changes; the indexes and markers are recomputed from them.
 
-// What the map is waiting for a click to tell it.
+// What the map is waiting for a click to tell it. An add's label names what it places: the picked
+// entity, or the section where there is none.
 export type Pending =
-  | { kind: 'add'; sectionKey: string; label: Text }
+  | { kind: 'add'; sectionKey: string; entity?: string; label: Text }
   | { kind: 'position'; item: ZoneItem; point: Position; label: Text }
 
 export interface UseZoneEditor {
@@ -52,7 +54,7 @@ export interface UseZoneEditor {
   isExpanded: (key: string) => boolean
   toggleExpanded: (key: string) => void
   matches: (item: ZoneItem, t: Translate) => boolean
-  addTo: (section: LoadedSection) => void
+  addTo: (section: LoadedSection, entity?: string) => void
   placePosition: (item: ZoneItem, point: Position) => void
   cancel: () => void
   clickMap: (position: Position) => void
@@ -134,8 +136,20 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
     return item.id.toLowerCase().includes(term) || label.toLowerCase().includes(term)
   }
 
-  function addTo(section: LoadedSection) {
-    pending.value = { kind: 'add', sectionKey: section.key, label: section.definition.name }
+  // An item is placed with its entity already picked, so none sits in the editor without one.
+  function addTo(section: LoadedSection, entity?: string) {
+    if (takesEntity(section.definition) !== (entity !== undefined)) return
+    if (entity === undefined) {
+      pending.value = { kind: 'add', sectionKey: section.key, label: section.definition.name }
+      return
+    }
+    const group = zone.value?.entities.get(section.key)
+    pending.value = {
+      kind: 'add',
+      sectionKey: section.key,
+      entity,
+      label: t => group?.label(entity, t) ?? entity,
+    }
   }
 
   // The point, not its index: a row deleted while the map waits shifts every index after it.
@@ -158,7 +172,7 @@ export function useZoneEditor(slug: ZoneSlug): UseZoneEditor {
 
     if (waiting.kind === 'add') {
       const section = definition.sections[waiting.sectionKey]
-      if (section) listFor(waiting.sectionKey).push(createItem(section, position))
+      if (section) listFor(waiting.sectionKey).push(createItem(section, position, waiting.entity))
     } else {
       const at = waiting.item.positions.indexOf(waiting.point)
       if (at !== -1) waiting.item.positions.splice(at, 1, position)

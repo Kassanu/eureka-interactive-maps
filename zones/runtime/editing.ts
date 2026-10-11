@@ -10,14 +10,23 @@ import type { StoredSectionDefinition } from '../define/types'
 // Making and saving changes. Reading a zone is the loader's business.
 
 // The id is minted here and nowhere else: `blank` cannot return one.
-export function createItem(section: StoredSectionDefinition, position: Position): ZoneItem {
-  return { ...section.blank(), id: crypto.randomUUID(), positions: [position] } as ZoneItem
+export function createItem(
+  section: StoredSectionDefinition,
+  position: Position,
+  entity?: string
+): ZoneItem {
+  const picked = entity === undefined ? {} : { entity }
+  return { ...section.blank(), id: crypto.randomUUID(), ...picked, positions: [position] } as ZoneItem
 }
 
 // A section's schema as a record of its fields, which is what says whether a field is allowed
 // rather than whether one item happens to carry it.
 export function shapeOf(schema: z.ZodType): Readonly<Record<string, z.ZodType>> {
   return (schema as z.ZodObject).shape as Readonly<Record<string, z.ZodType>>
+}
+
+export function takesEntity(section: StoredSectionDefinition): boolean {
+  return 'entity' in shapeOf(section.schema)
 }
 
 // Whether the schema lets the field be left off entirely.

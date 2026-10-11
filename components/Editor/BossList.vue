@@ -1,7 +1,7 @@
 <template>
   <FormField :label="t('fields.bosses')">
     <template #actions>
-      <button type="button" class="editor-button" :title="t('editor.addBoss')" @click="add">
+      <button v-if="options.length" type="button" class="editor-button" :title="t('editor.addBoss')" @click="add">
         <font-awesome-icon icon="plus" />
       </button>
     </template>

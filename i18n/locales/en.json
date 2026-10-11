@@ -114,6 +114,8 @@
     "loadProblems": "{count} problems reading this file.",
     "file": "file",
     "placeItem": "Click the map to place a new item in {section}.",
+    "placeEntity": "Click the map to place {entity}.",
+    "pickEntity": "Pick what to place",
     "moveItem": "Click the map to move {item}.",
     "cancelHint": "Click this message to cancel.",
     "toggleSection": "Show or hide this section on the map",

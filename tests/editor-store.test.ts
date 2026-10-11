@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { nextTick } from 'vue'
 import { useZoneEditor, type UseZoneEditor } from '~/composables/useZoneEditor'
-import type { LoadedSection, ZoneItem } from '~/zones'
-import { english } from './helpers/messages'
+import { ZONE_SCHEMA_VERSION, encodeZone, type LoadedSection, type ZoneItem } from '~/zones'
+import { english, japanese } from './helpers/messages'
 
 // The editor's store, driven the way its components drive it. Everything here is a plain function
 // over refs, so none of it needs a mounted component or a DOM.
@@ -96,11 +96,19 @@ describe('the point a move is waiting on', () => {
 })
 
 describe('placing a new item', () => {
-  it('waits for the map and then puts the item where it was clicked', async () => {
+  function abraxas(editor: UseZoneEditor): string {
+    const enemies = editor.zone.value!.entities.get('enemies')!
+    const entity = enemies.keys.find(key => enemies.label(key, english) === 'Abraxas')
+    expect(entity, 'Abraxas').toBeDefined()
+    return entity!
+  }
+
+  it('waits for the map and then puts the picked entity where it was clicked', async () => {
     const editor = await editorFor()
     const before = sectionNamed(editor, 'enemies').items.length
+    const entity = abraxas(editor)
 
-    editor.addTo(sectionNamed(editor, 'enemies'))
+    editor.addTo(sectionNamed(editor, 'enemies'), entity)
     expect(editor.pending.value?.kind).toBe('add')
 
     editor.clickMap({ x: 12, y: 34 })
@@ -108,8 +116,59 @@ describe('placing a new item', () => {
 
     const items = sectionNamed(editor, 'enemies').items
     expect(items.length).toBe(before + 1)
-    expect(items[items.length - 1]!.positions).toEqual([{ x: 12, y: 34 }])
+    const placed = items[items.length - 1]!
+    expect(placed.positions).toEqual([{ x: 12, y: 34 }])
+    expect('entity' in placed && placed.entity).toBe(entity)
     expect(editor.pending.value).toBeNull()
+  })
+
+  it('waits for nothing in an entity section until an entity is picked', async () => {
+    const editor = await editorFor()
+    const before = editor.zone.value!.byId.size
+
+    editor.addTo(sectionNamed(editor, 'enemies'))
+    expect(editor.pending.value).toBeNull()
+
+    editor.clickMap({ x: 12, y: 34 })
+    await nextTick()
+    expect(editor.zone.value!.byId.size).toBe(before)
+  })
+
+  it('places an item in a section without entities, and refuses it an entity', async () => {
+    const editor = await editorFor()
+    const lockboxes = sectionNamed(editor, 'lockboxes')
+
+    editor.addTo(lockboxes, abraxas(editor))
+    expect(editor.pending.value).toBeNull()
+
+    editor.addTo(lockboxes)
+    editor.clickMap({ x: 5, y: 6 })
+    await nextTick()
+
+    const placed = sectionNamed(editor, 'lockboxes').items.at(-1)!
+    expect(placed.positions).toEqual([{ x: 5, y: 6 }])
+    expect('entity' in placed).toBe(false)
+  })
+
+  it('saves what it placed without complaint, entity second', async () => {
+    const editor = await editorFor()
+    editor.addTo(sectionNamed(editor, 'enemies'), abraxas(editor))
+    editor.clickMap({ x: 12, y: 34 })
+    await nextTick()
+
+    const { file, issues } = encodeZone(editor.zone.value!, ZONE_SCHEMA_VERSION)
+    expect(issues).toEqual([])
+    const written = file!.sections.enemies!.items!.at(-1) as Record<string, unknown>
+    expect(Object.keys(written).slice(0, 3)).toEqual(['id', 'entity', 'positions'])
+  })
+
+  it('names the picked entity while it waits, in the page locale', async () => {
+    const editor = await editorFor()
+    editor.addTo(sectionNamed(editor, 'enemies'), abraxas(editor))
+
+    const waiting = editor.pending.value!
+    expect(waiting.label(english)).toBe('Abraxas')
+    expect(waiting.label(japanese)).toBe('アブラクサス')
   })
 
   it('does nothing on a map click nobody asked for', async () => {

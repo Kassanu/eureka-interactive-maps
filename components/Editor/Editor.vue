@@ -43,9 +43,10 @@ provide(editorKey, editor)
 const bannerText = computed(() => {
   const waiting = editor.pending.value
   if (!waiting) return ''
-  return waiting.kind === 'add'
+  if (waiting.kind === 'position') return t('editor.moveItem', { item: waiting.label(t) })
+  return waiting.entity === undefined
     ? t('editor.placeItem', { section: waiting.label(t) })
-    : t('editor.moveItem', { item: waiting.label(t) })
+    : t('editor.placeEntity', { entity: waiting.label(t) })
 })
 
 // The editor hides sections and items directly rather than through a filter, so it hands the
