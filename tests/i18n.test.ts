@@ -2,7 +2,13 @@ import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES, TRANSLATED_LOCALE_CODES } from '../i18n/locales'
+import {
+  DEFAULT_LOCALE,
+  LOCALES,
+  LOCALE_CODES,
+  TRANSLATED_LOCALE_CODES,
+  type LocaleCode,
+} from '../i18n/locales'
 import { flatten, type Messages } from '../i18n/messages'
 import { entryRedirect, localizedPath, localizedRoutes, switchedPath } from '../i18n/routes'
 import { CONTENT_PATHS, EDITOR_PATHS } from '../site'
@@ -16,6 +22,15 @@ function messagesFor(code: string): Messages {
 
 function placeholders(message: string): string[] {
   return [...message.matchAll(/\{(\w+)\}/g)].map(match => match[1]).sort()
+}
+
+function blankMessages(code: LocaleCode, messages: Messages): string[] {
+  const fix = code === DEFAULT_LOCALE
+    ? 'Add the text.'
+    : 'Add the text, or remove the key so the English is shown.'
+  return [...flatten(messages)]
+    .filter(([, message]) => !message.trim())
+    .map(([key]) => `i18n/locales/${code}.json: "${key}" is blank. ${fix}`)
 }
 
 // Everything the app itself renders from. `tests/` is left out on purpose: a key only a test names
@@ -110,6 +125,28 @@ describe('the English file and the source', () => {
       .filter(key => !key.startsWith('zones.') && !named.has(key))
       .sort()
     expect(unused).toEqual([])
+  })
+})
+
+// vue-i18n renders a blank message as it stands rather than falling back to English.
+describe('every locale file', () => {
+  it('names the file and the key of each blank message', () => {
+    expect(blankMessages('de', {
+      nav: { home: '', about: 'Über' },
+      title: '   ',
+      heading: '　',
+    })).toEqual([
+      'i18n/locales/de.json: "nav.home" is blank. Add the text, or remove the key so the English is shown.',
+      'i18n/locales/de.json: "title" is blank. Add the text, or remove the key so the English is shown.',
+      'i18n/locales/de.json: "heading" is blank. Add the text, or remove the key so the English is shown.',
+    ])
+    expect(blankMessages('en', { nav: { home: '' } })).toEqual([
+      'i18n/locales/en.json: "nav.home" is blank. Add the text.',
+    ])
+  })
+
+  it('holds no blank message', () => {
+    expect(LOCALE_CODES.flatMap(code => blankMessages(code, messagesFor(code)))).toEqual([])
   })
 })
 
