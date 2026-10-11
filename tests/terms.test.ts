@@ -37,6 +37,12 @@ describe('the term tables', () => {
       .toEqual(domains.map(([name]) => name).sort())
   })
 
+  it('are each reachable through termTables, which translation coverage counts', () => {
+    const tables = lookups.termTables as Record<string, Record<string, unknown>>
+    expect(Object.keys(tables).sort()).toEqual(domains.map(([name]) => name).sort())
+    for (const [name, keys] of domains) expect(Object.keys(tables[name]!).sort(), name).toEqual([...keys].sort())
+  })
+
   it.each(domains)('%s parses as Localized names', name => {
     const table = JSON.parse(termText(name)) as Record<string, unknown>
     for (const [key, entry] of Object.entries(table)) {

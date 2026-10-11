@@ -3,25 +3,14 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { DEFAULT_LOCALE, LOCALES, LOCALE_CODES, TRANSLATED_LOCALE_CODES } from '../i18n/locales'
+import { flatten, type Messages } from '../i18n/messages'
 import { ENGLISH_ONLY_PATHS, localizedRoutes, siteRoutes } from '../i18n/routes'
 import { zoneSlugs } from '../zones'
 
 const localesDir = fileURLToPath(new URL('../i18n/locales', import.meta.url))
 
-type Messages = { [key: string]: string | Messages }
-
 function messagesFor(code: string): Messages {
   return JSON.parse(readFileSync(`${localesDir}/${code}.json`, 'utf8'))
-}
-
-function flatten(messages: Messages, prefix = ''): Map<string, string> {
-  const flat = new Map<string, string>()
-  for (const [key, value] of Object.entries(messages)) {
-    const path = prefix ? `${prefix}.${key}` : key
-    if (typeof value === 'string') flat.set(path, value)
-    else for (const [nested, text] of flatten(value, path)) flat.set(nested, text)
-  }
-  return flat
 }
 
 function placeholders(message: string): string[] {

@@ -51,4 +51,6 @@ export function entityLookup(entries: readonly Entity[]): Lookup<string> {
   return defineTable(Object.fromEntries(entries.map(entry => [entry.id, entry.name])))
 }
 
-export const dropEntities = entityLookup(dropsFile.drops)
+export const dropEntries: readonly Entity[] = dropsFile.drops
+
+export const dropEntities = entityLookup(dropEntries)
