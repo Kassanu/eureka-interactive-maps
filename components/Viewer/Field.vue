@@ -3,8 +3,8 @@
     <span class="font-bold">{{ label }}:</span> <slot />
   </div>
   <div v-else class="flex">
-    <div class="font-bold mr-2 flex-shrink-0">{{ label }}:</div>
-    <div><slot /></div>
+    <div class="font-bold mr-2 max-w-[45%]">{{ label }}:</div>
+    <div class="min-w-0 flex-1"><slot /></div>
   </div>
 </template>
 

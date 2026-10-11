@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="flex flex-col text-sm">
+  <footer id="footer" class="flex flex-col px-4 text-sm">
     <div class="flex flex-wrap justify-center gap-x-1">
       <NuxtLinkLocale class="hover:text-white" to="/">{{ t('nav.home') }}</NuxtLinkLocale>
       <span>-</span>

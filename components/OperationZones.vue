@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col flex-1 mb-4 sm:mb-0">
-    <h2 class="text-white text-xl font-bold mb-2 text-center whitespace-nowrap">{{ title }}</h2>
+  <div class="flex flex-col mb-4 sm:mb-0 sm:grid sm:grid-rows-subgrid">
+    <h2 class="text-white text-xl font-bold mb-2 text-center text-balance sm:self-end">{{ title }}</h2>
     <NuxtLinkLocale
       v-for="zone in zones"
       :key="zone.slug"
       :to="`/map/${zone.slug}`"
-      class="text-white text-center font-bold py-3 px-4 mb-2"
+      class="flex items-center justify-center text-white text-center font-bold py-3 px-4 mb-2"
       :class="zone.accent"
     >
       {{ t(`zones.${zone.slug}.name`) }}
