@@ -1,5 +1,20 @@
 {
+  "fields": {
+    "level": "Niveau",
+    "knowledgeLevel": "Niveau de savoir",
+    "element": "Élément",
+    "criticalEncounter": "Confrontation critique"
+  },
+  "sections": {
+    "fates": "ALÉA",
+    "enemies": "Ennemis",
+    "quests": "Quêtes",
+    "treasureCoffers": "Coffres au trésor",
+    "pots": "Pots persistants"
+  },
   "operations": {
+    "eureka": "La terre interdite d'Eurêka",
+    "bozja": "Garde-la-Reine",
     "occult": "Île de Lunule"
   },
   "zones": {

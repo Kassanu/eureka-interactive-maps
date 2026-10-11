@@ -1,5 +1,30 @@
 {
+  "filters": {
+    "weatherGroup": "天候",
+    "engagements": "クリティカルエンゲージメント",
+    "duels": "一騎打ち",
+    "skirmishes": "スカーミッシュ"
+  },
+  "fields": {
+    "level": "Level",
+    "knowledgeLevel": "ナレッジレベル",
+    "element": "Element",
+    "weather": "天候",
+    "criticalEncounter": "クリティカルエンカウント"
+  },
+  "sections": {
+    "fates": "F.A.T.E.",
+    "monsters": "モンスター",
+    "quests": "クエスト",
+    "engagements": "クリティカルエンゲージメント",
+    "skirmishes": "スカーミッシュ",
+    "criticalEncounters": "クリティカルエンカウント",
+    "treasureCoffers": "宝箱",
+    "pots": "おねだりポット"
+  },
   "operations": {
+    "eureka": "禁断の地 エウレカ",
+    "bozja": "セイブ・ザ・クイーン",
     "occult": "三日月島"
   },
   "zones": {

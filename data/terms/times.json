@@ -1,9 +1,15 @@
 {
     "day": {
-        "en": "Day"
+        "en": "Day",
+        "ja": "昼",
+        "de": "Tag",
+        "fr": "Jour"
     },
     "night": {
-        "en": "Night"
+        "en": "Night",
+        "ja": "夜",
+        "de": "Nacht",
+        "fr": "Nuit"
     },
     "any": {
         "en": "Any"
