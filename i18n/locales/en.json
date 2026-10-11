@@ -2,7 +2,22 @@
   "nav": {
     "home": "Home",
     "contribute": "Contribute",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "language": "Language"
+  },
+  "contribute": {
+    "code": {
+      "heading": "I want to help code!",
+      "body": "This application is fully open source! If you would like to contribute, please make a pull request at one of the GitHub projects!"
+    },
+    "data": {
+      "heading": "I want to update map data!",
+      "body": "If you don't know how to code but would still like to help, each map has an admin panel which allows you to edit all of the data. Visit one of the links below to enter the editors and make all of your changes and hit the \"{save}\" button. A .json file will be downloaded to your computer. You can send that file to me through email, Discord, or by making a pull request."
+    },
+    "editorLink": "{zone} Editor"
+  },
+  "changelog": {
+    "heading": "Changelog"
   },
   "meta": {
     "site": {

@@ -1,12 +1,27 @@
 <template>
   <footer id="footer" class="flex flex-col text-sm">
-    <div class="flex justify-center space-x-1">
+    <div class="flex flex-wrap justify-center gap-x-1">
       <NuxtLinkLocale class="hover:text-white" to="/">{{ t('nav.home') }}</NuxtLinkLocale>
       <span>-</span>
-      <!-- Plain links: these two pages exist in English only, so a localized href would 404. -->
-      <NuxtLink class="hover:text-white" to="/contribute">{{ t('nav.contribute') }}</NuxtLink>
+      <NuxtLinkLocale class="hover:text-white" to="/contribute">{{ t('nav.contribute') }}</NuxtLinkLocale>
       <span>-</span>
-      <NuxtLink class="hover:text-white" to="/changelog">{{ t('nav.changelog') }}</NuxtLink>
+      <NuxtLinkLocale class="hover:text-white" to="/changelog">{{ t('nav.changelog') }}</NuxtLinkLocale>
+      <span>|</span>
+      <!-- Each language is named in itself, the same on every page, so the names are not message keys. -->
+      <nav class="flex flex-wrap justify-center gap-x-1" :aria-label="t('nav.language')">
+        <template v-for="(option, index) in LOCALES" :key="option.code">
+          <span v-if="index > 0">·</span>
+          <span v-if="option.code === locale" class="text-white" :lang="option.language">{{ option.name }}</span>
+          <NuxtLink
+            v-else
+            class="hover:text-white"
+            :to="switchedPath(route.path, option.code)"
+            :lang="option.language"
+            :hreflang="option.language"
+            @click="choice = option.code"
+          >{{ option.name }}</NuxtLink>
+        </template>
+      </nav>
     </div>
     <!-- Square Enix's trademark notice, reproduced verbatim and left out of the message files. -->
     <div class="flex justify-center">
@@ -17,6 +32,12 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+import { useLocaleChoice } from '~/composables/useLocaleChoice'
+import { LOCALES } from '~/i18n/locales'
+import { switchedPath } from '~/i18n/routes'
+
+const { t, locale } = useI18n()
+const route = useRoute()
+const choice = useLocaleChoice()
 const currentYear: number = new Date().getFullYear()
 </script>
