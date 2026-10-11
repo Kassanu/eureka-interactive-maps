@@ -1,6 +1,6 @@
 <template>
   <div class="mb-3">
-    <div class="flex items-center gap-2 mb-1">
+    <div class="flex flex-wrap items-center gap-2 mb-1">
       <span class="text-sm font-bold" :title="definition.title?.(t)">{{ definition.label(t) }}</span>
       <span v-if="!untouched" class="text-xs text-gray-400">{{ summary }}</span>
       <button
@@ -42,7 +42,7 @@
         v-for="choice in choices"
         :key="choice.label"
         type="button"
-        class="text-sm px-3 py-1 border border-gray-600 first:rounded-l last:rounded-r transition-colors"
+        class="flex-1 text-sm px-3 py-1 border border-gray-600 first:rounded-l last:rounded-r transition-colors"
         :class="sameKeys(choice.keys) ? 'bg-gray-600 text-white' : 'text-gray-400 hover:text-white'"
         @click="setKeys(state, filter.stateKey, choice.keys)"
       >
