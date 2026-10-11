@@ -110,6 +110,16 @@ export function parseSections(
 
 export const BOSSES_GROUP = 'bosses'
 
+// A section's schema as a record of its fields, which is what says whether a field is allowed
+// rather than whether one item happens to carry it.
+export function shapeOf(schema: z.ZodType): Readonly<Record<string, z.ZodType>> {
+  return (schema as z.ZodObject).shape as Readonly<Record<string, z.ZodType>>
+}
+
+export function takesEntity(section: StoredSectionDefinition): boolean {
+  return 'entity' in shapeOf(section.schema)
+}
+
 // Nothing is drawn from an entity file, so an issue in one is reported against its group and
 // never stops the zone loading.
 export function parseEntities(
@@ -124,8 +134,13 @@ export function parseEntities(
 
   for (const [key, raw] of Object.entries(input)) {
     const section = `entities.${key}`
-    if (key !== BOSSES_GROUP && !(key in definition.sections)) {
+    const owner = Object.hasOwn(definition.sections, key) ? definition.sections[key] : undefined
+    if (key !== BOSSES_GROUP && !owner) {
       issues.push({ section, message: `${key} is not a section of this zone` })
+      continue
+    }
+    if (owner && !takesEntity(owner)) {
+      issues.push({ section, message: `${key} items name no entity, so nothing reads this group` })
       continue
     }
     if (!Array.isArray(raw)) {

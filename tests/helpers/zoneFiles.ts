@@ -4,10 +4,18 @@ import type { z } from 'zod'
 import { loadZone, referencedIds, zoneSlugs, zones } from '../../zones'
 import type { LoadedZone, RawZoneFile, StoredSectionDefinition, ZoneSlug } from '../../zones'
 
-const ZONE_DIR = join(process.cwd(), 'data/zones')
+export const ZONE_DIR = join(process.cwd(), 'data/zones')
+
+export function zoneFileName(slug: string): string {
+  return `data/zones/${slug}/zone.json`
+}
+
+export function entityFileName(slug: string): string {
+  return `data/zones/${slug}/entities.json`
+}
 
 export function zoneFilePath(slug: ZoneSlug): string {
-  return join(ZONE_DIR, slug, 'zone.json')
+  return join(process.cwd(), zoneFileName(slug))
 }
 
 export function loadZoneFile(slug: ZoneSlug): RawZoneFile {
@@ -15,7 +23,7 @@ export function loadZoneFile(slug: ZoneSlug): RawZoneFile {
 }
 
 export function loadEntityFile(slug: ZoneSlug): unknown {
-  return JSON.parse(readFileSync(join(ZONE_DIR, slug, 'entities.json'), 'utf8'))
+  return JSON.parse(readFileSync(join(process.cwd(), entityFileName(slug)), 'utf8'))
 }
 
 export { referencedIds, zoneSlugs, zones }
@@ -32,7 +40,8 @@ export interface GroupedIssue {
 }
 
 function normalisePath(path: readonly PropertyKey[]): string {
-  return path.map(part => (typeof part === 'number' ? '[]' : String(part))).join('.') || '(root)'
+  const joined = path.map(part => (typeof part === 'number' ? '[]' : `.${String(part)}`)).join('')
+  return joined.replace(/^\./, '') || '(root)'
 }
 
 // Parses every item of every section against that section's schema and returns what failed,
@@ -100,21 +109,24 @@ export function hydratedZones(): LoadedZone[] {
 }
 
 function describeItem(item: unknown): string {
-  if (item && typeof item === 'object' && 'id' in item) {
-    const named = item as { id?: unknown; name?: unknown }
-    return `${String(named.name ?? '')} ${String(named.id ?? '')}`.trim()
-  }
-  return ''
+  const id = item && typeof item === 'object' ? (item as { id?: unknown }).id : undefined
+  return typeof id === 'string' ? id : '(an item with no id)'
 }
 
-// An enum's message lists every key it allows, which for the drop catalogue is 66 of them. The
-// path already says which field is wrong, so the message is cut to the part that adds something.
+// An enum's message lists every key it allows, which for a drop is every entry in data/drops.json.
+// The path already says which field is wrong, so the message is cut to the part that adds something.
 function shorten(message: string): string {
   return message.length <= 96 ? message : `${message.slice(0, 93)}...`
 }
 
+export function formatIssue(issue: GroupedIssue): string {
+  const items = issue.count === 1
+    ? `item ${issue.example}`
+    : `${issue.count} items, such as ${issue.example}`
+  const field = issue.path === '(root)' ? '' : `${issue.path}: `
+  return `${zoneFileName(issue.zone)}: ${issue.section} ${items}: ${field}${shorten(issue.message)}`
+}
+
 export function formatIssues(issues: GroupedIssue[]): string {
-  return issues
-    .map(i => `  ${String(i.count).padStart(4)}x  ${i.section}.${i.path}\n           ${shorten(i.message)}\n           eg ${i.example}`)
-    .join('\n')
+  return issues.map(formatIssue).join('\n')
 }

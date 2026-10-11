@@ -3,10 +3,12 @@ import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import dropsFile from '../data/drops.json'
 import {
+  entityFileName,
   hydrateZone,
   loadEntityFile,
   loadZoneFile,
   referencedIds,
+  zoneFileName,
   zoneFilePath,
   zoneSlugs,
 } from './helpers/zoneFiles'
@@ -25,7 +27,11 @@ const dropIds = new Set(dropsFile.drops.map(entry => entry.id))
 // from. They cannot pass before a zone parses, which is deliberate: a partial hydration would be
 // a green test over data the app could not draw.
 
+const SAVE_FROM_EDITOR = 'Save the zone from its editor rather than editing the file by hand'
+
 describe.each(zoneSlugs)('%s', slug => {
+  const name = zoneFileName(slug)
+
   it('hydrates every section in full', () => {
     expect(() => hydrateZone(slug)).not.toThrow()
   })
@@ -38,7 +44,9 @@ describe.each(zoneSlugs)('%s', slug => {
       for (const item of section.items) {
         const { id, ...rest } = item as { id: string }
         for (const reference of referencedIds(rest)) {
-          if (!zone.byId.has(reference)) unresolved.push(`${section.key}/${id} -> ${reference}`)
+          if (zone.byId.has(reference)) continue
+          unresolved.push(`${name}: ${section.key} item ${id} points at ${reference}, `
+            + 'which is not an item in this file')
         }
       }
     }
@@ -50,6 +58,7 @@ describe.each(zoneSlugs)('%s', slug => {
   // drop's by data/drops.json. Read off the files, not through the loader.
   it('resolves every entity inside its group', () => {
     const groups = loadEntityFile(slug) as Record<string, { id: string }[]>
+    const entities = entityFileName(slug)
     const held = (group: string) => new Set((groups[group] ?? []).map(entry => entry.id))
     const bosses = held('bosses')
     const unresolved: string[] = []
@@ -57,13 +66,18 @@ describe.each(zoneSlugs)('%s', slug => {
     for (const [key, section] of Object.entries(loadZoneFile(slug).sections)) {
       const own = held(key)
       for (const item of (section.items ?? []) as RawItem[]) {
-        const at = `${key}/${item.id}`
-        if (item.entity !== undefined && !own.has(item.entity)) unresolved.push(`${at} -> ${item.entity}`)
+        const at = `${name}: ${key} item ${item.id}`
+        if (item.entity !== undefined && !own.has(item.entity)) {
+          unresolved.push(`${at} names the entity ${item.entity}, `
+            + `which the "${key}" group of ${entities} does not hold`)
+        }
         for (const { entity } of item.bosses ?? []) {
-          if (!bosses.has(entity)) unresolved.push(`${at} boss -> ${entity}`)
+          if (bosses.has(entity)) continue
+          unresolved.push(`${at} has the boss ${entity}, `
+            + `which the "bosses" group of ${entities} does not hold`)
         }
         for (const { entity } of item.drops ?? []) {
-          if (!dropIds.has(entity)) unresolved.push(`${at} drop -> ${entity}`)
+          if (!dropIds.has(entity)) unresolved.push(`${at} drops ${entity}, which data/drops.json does not hold`)
         }
       }
     }
@@ -79,13 +93,17 @@ describe.each(zoneSlugs)('%s', slug => {
       const original = raw.sections[section.key].items ?? []
       const schema = section.definition.schema as z.ZodType
       section.items.forEach((item, index) => {
-        expect(z.encode(schema, item), `${section.key}[${index}]`).toEqual(original[index])
+        expect(
+          z.encode(schema, item),
+          `${name}: ${section.key} item ${item.id} would be saved differently. ${SAVE_FROM_EDITOR}`
+        ).toEqual(original[index])
       })
     }
   })
 
   it('is written the way the editor writes a file', () => {
     const onDisk = readFileSync(zoneFilePath(slug), 'utf8')
-    expect(onDisk).toBe(`${JSON.stringify(loadZoneFile(slug), null, 4)}\n`)
+    expect(onDisk, `${name} is not laid out the way the editor saves it. ${SAVE_FROM_EDITOR}`)
+      .toBe(`${JSON.stringify(loadZoneFile(slug), null, 4)}\n`)
   })
 })
