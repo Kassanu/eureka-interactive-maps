@@ -125,11 +125,12 @@ export function takesEntity(section: StoredSectionDefinition): boolean {
 export function parseEntities(
   definition: ZoneDefinition,
   input: unknown
-): { groups: Map<string, Lookup<string>>; issues: LoadIssue[] } {
+): { groups: Map<string, Lookup<string>>; entries: Map<string, Entity[]>; issues: LoadIssue[] } {
   const groups = new Map<string, Lookup<string>>()
+  const entries = new Map<string, Entity[]>()
   const issues: LoadIssue[] = []
   if (!input || typeof input !== 'object' || Array.isArray(input)) {
-    return { groups, issues: [{ section: 'entities', message: 'this is not an entity file' }] }
+    return { groups, entries, issues: [{ section: 'entities', message: 'this is not an entity file' }] }
   }
 
   for (const [key, raw] of Object.entries(input)) {
@@ -148,17 +149,18 @@ export function parseEntities(
       continue
     }
 
-    const entries: Entity[] = []
+    const parsed: Entity[] = []
     for (const [index, value] of raw.entries()) {
       const result = EntitySchema.safeParse(value)
-      if (result.success) entries.push(result.data)
+      if (result.success) parsed.push(result.data)
       else issues.push({ section, index, message: result.error.issues[0]?.message ?? 'invalid' })
     }
-    for (const message of entityGroupIssues(entries)) issues.push({ section, message })
-    groups.set(key, entityLookup(entries))
+    for (const message of entityGroupIssues(parsed)) issues.push({ section, message })
+    groups.set(key, entityLookup(parsed))
+    entries.set(key, parsed)
   }
 
-  return { groups, issues }
+  return { groups, entries, issues }
 }
 
 export function loadZone(definition: ZoneDefinition, file: unknown, entities: unknown): LoadedZone {

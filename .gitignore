@@ -14,6 +14,7 @@ logs
 *.log
 
 # Misc
+translation-coverage.html
 .DS_Store
 .fleet
 .idea

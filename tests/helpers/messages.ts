@@ -1,8 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
+import type { Messages } from '../../i18n/messages'
 import type { Translate } from '../../i18n/translate'
-
-type Messages = { [key: string]: string | Messages }
 
 const messages = JSON.parse(
   readFileSync(join(process.cwd(), 'i18n/locales/en.json'), 'utf8')
