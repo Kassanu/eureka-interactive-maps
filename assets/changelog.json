@@ -1,5 +1,10 @@
 [
   {
+    "version": "v3.0.1",
+    "date": "2026-10-12",
+    "description": "Fixed every click on a freshly loaded map opening the same marker until the map was zoomed."
+  },
+  {
     "version": "v3.0.0",
     "date": "2026-10-11",
     "description": "Added multi-language support. Added Japanese, German and French translations of map entities, taken from the game."
